@@ -1,0 +1,30 @@
+wiki class
+    mob > retrieve drop tables in their categories, merging duplicate categories such as in black demons
+
+drop table 'dtable' class
+    download all images in a drop table
+
+gui class 'logger'
+    drops tab control: create a new tab for each drop table category
+    edit drop log control: on the right of side the tabs, offset to tab position
+    edit selected drops control: on the bottom the tabs, offset to tab position
+^^^^^^^^^^^^^^^^^^^^ completed ^^^^^^^^^^^^^^^^
+https://code.visualstudio.com/docs/editor/github
+
+revert/undo wiki class changes > upload to private github repo > commit each new change to github repo
+
+merge duplicate drop tables eg. for 'black demon' in wiki get
+
+the drop table class method that sends information to the logger gui:
+    - combine categories below X drops so there are no useless tabs with a small amount of drops
+    - if the total amount of drops is lower then X combine them. ignoring the rare drop table
+
+gui class for selecting a mob and file
+    option to add mobs to a list control that is filled with a few defaults
+    option to search list control
+    display image of currently selected mob
+    store logged mob between sessions
+
+use wiki class to retrieve links to high res images for dropTables.GetImages()
+
+add examples to wiki class outputs eg. the drop table layout
