@@ -33,7 +33,7 @@ class class_wiki {
             entry.tableDrops := table
             output.push(entry)
         }
-        output := this._MergeDuplicateTables(output)
+        ; output := this._MergeDuplicateTables(output)
         ; output := this._MergeDuplicateDrops(output)
         return output
     }
