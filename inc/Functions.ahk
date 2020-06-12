@@ -13,5 +13,5 @@ OnWM_LBUTTONDOWN(wParam, lParam, msg, hWnd) {
     id := SubStr(OutputAssociatedVar, InStr(OutputAssociatedVar, "#") + 1)
     obj := dropTable.GetDrop(id)
     
-    tooltip, % obj.itemName
+    tooltip, % obj.itemQuantity " x " obj.itemName
 }

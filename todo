@@ -25,11 +25,16 @@ the drop table class method that sends information to the logger gui:
     - combine categories below X drops so there are no useless tabs with a small amount of drops
     - if the total amount of drops is lower then X combine them. ignoring the rare drop table
 
-^^^^^^^^^^^^^^^^^^^^ completed ^^^^^^^^^^^^^^^^
-
 use wiki class to retrieve links to high res images for dropTables.GetImages()
 
+^^^^^^^^^^^^^^^^^^^^ completed ^^^^^^^^^^^^^^^^
+
+handle gui log tab3 not scaling properly, happened recently can compare older working versions to debug
+
 refactor dropLog class
+
+handle multiple items with different quantities after merging eg. 'adamanite bar' or 'coins' for black demons
+    per table, merge them into one drop with all quantities combined with a separator so they can individually be used
 
 gui class for selecting a mob and file
     option to add mobs to a list control that is filled with a few defaults

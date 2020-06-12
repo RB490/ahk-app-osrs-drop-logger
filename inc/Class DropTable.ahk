@@ -6,13 +6,12 @@ class class_DropTable {
         returns             = nothing
     */
     GetDrops(input) {
-        this.minTableSize := 5 ; tables below this many itmes get merged together
+        this.minTableSize := 32 ; tables below this many itemes get merged together. rdt has 33 drops
         
         If !(g_debug)
             SplashTextOn, 300, 75, % A_ScriptName, Retrieving drop table for %input%...
         
         ; this.obj := wiki.GetDroptables(input)
-        ; this._GetImages()
         ; FileAppend, % json.dump(this.obj,,2), % A_ScriptDir "\Debug_DropTables.json"
         this.obj := json.load(FileRead(A_ScriptDir "\Debug_DropTables.json"))
         this.obj := this._MergeDuplicateTables()
@@ -20,6 +19,8 @@ class class_DropTable {
         obj := this._MergeSmallTables()
         this.obj.push(obj)
         this.obj := this._RenameTables()
+        
+        this._GetImages()
 
         SplashTextOff
     }
@@ -53,17 +54,22 @@ class class_DropTable {
             obj := this.obj[A_Index].tableDrops
             loop % obj.length() {
                 html := obj[A_Index].itemImage
+                itemHtml := SubStr(html, InStr(html, "/w/") + 3) ; normal name 'Slayer's enchantment' html wiki name 'Slayer%27s_enchantment'
+                itemHtml := SubStr(itemHtml, 1, InStr(itemHtml, ">") - 2)
                 item := obj[A_Index].itemName
-                
-                ; retrieve image relative path eg. '/images/a/a5/Superior_dragon_bones.png?105c4"'
-                html := SubStr(html, InStr(html, "src=") + 6)
-                html := SubStr(html, 1, InStr(html, "?") - 1)
-                
-                link := wiki.url "/" html
+
                 path := g_itemImgsPath "\" item ".png"
-                
-                If !FileExist(path)
-                    DownloadToFile(link, path)
+                If FileExist(path)
+                    continue
+
+                If (item = "Nothing") ; 'Nothing' is a drop in rare drop tables
+                    FileCopy, % A_ScriptDir "\res\img\Nothing.png", % path, 0
+                else {
+                    url := wiki.GetImageUrl(itemHtml)
+                    DownloadToFile(url, path)
+                }
+
+                tooltip % A_Index
             }
         }
     }

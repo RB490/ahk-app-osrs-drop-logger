@@ -2,6 +2,39 @@ class class_wiki {
     __New() {
         this.url := "https://oldschool.runescape.wiki"
     }
+    
+    /*
+    GetImageUrl
+        param <input>      = {string} context sensitive wiki page containing item eg. 'Rune_axe'
+        returns            = {string} url to high res image
+    */
+    GetImageUrl(input) {
+        baseUrl := "https://oldschool.runescape.wiki"
+        html := DownloadToString(baseUrl "/w/" input)
+        
+        needleThumb = src="/images/thumb
+        needleDetail := input "_detail"
+
+        ; find line containing relative url to our image
+        loop, parse, html, `n
+        {
+            If (InStr(A_LoopField, needleThumb)) and (InStr(A_LoopField, needleDetail)) {
+                html := A_LoopField
+                break
+            }
+        }
+
+        ; parse html to retrieve relative image url
+        html := SubStr(html, InStr(html, "src=") + 5)
+        html := SubStr(html, 1, InStr(html, "?") - 1)
+
+        ; replace xxxpx eg. 800px with default size
+        ; current example: /images/thumb/2/20/Black_sword_detail.png/100px-Black_sword_detail.png
+        pixels := SubStr(html, InStr(html, ".png/") + 5)
+        pixels := SubStr(pixels, 1, InStr(pixels, "px-") - 1)
+        html := StrReplace(html, pixels, 100)
+        return baseUrl html
+    }
 
     /*
     GetDroptables
