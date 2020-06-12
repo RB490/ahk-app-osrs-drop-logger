@@ -43,12 +43,14 @@ class class_gui_logger extends gui {
                 If (rowDrops = maxRowDrops)
                     rowDrops := 0
 
+                dropImg := g_itemImgsPath "\" drops[A_Index].itemName ".png"
+
                 If (A_Index = 1)
-                    this.Add("picture", "x+0 section w" dropSize " h" dropSize " border", g_itemImgsPath "\" drops[A_Index].itemName ".png") ; first drop
+                    this.Add("picture", "x+0 section w" dropSize " h" dropSize " border", dropImg) ; first drop
                 else if !(rowDrops)
-                    this.Add("picture", "xs ys+" dropSize " section w" dropSize " h" dropSize " border", g_itemImgsPath "\" drops[A_Index].itemName ".png") ; first drop of a new row
+                    this.Add("picture", "xs ys+" dropSize " section w" dropSize " h" dropSize " border", dropImg) ; first drop of a new row
                 else
-                    this.Add("picture", "xp+" dropSize "  w" dropSize " h" dropSize " border", g_itemImgsPath "\" drops[A_Index].itemName ".png") ; add normal drop
+                    this.Add("picture", "xp+" dropSize "  w" dropSize " h" dropSize " border", dropImg) ; add normal drop
 
                 rowDrops++
             }

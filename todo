@@ -8,12 +8,12 @@ gui class 'logger'
     drops tab control: create a new tab for each drop table category
     edit drop log control: on the right of side the tabs, offset to tab position
     edit selected drops control: on the bottom the tabs, offset to tab position
-^^^^^^^^^^^^^^^^^^^^ completed ^^^^^^^^^^^^^^^^
 https://code.visualstudio.com/docs/editor/github
 
 revert/undo wiki class changes > upload to private github repo > commit each new change to github repo
 
 merge duplicate drop tables eg. for 'black demon' in wiki get
+^^^^^^^^^^^^^^^^^^^^ completed ^^^^^^^^^^^^^^^^
 
 the drop table class method that sends information to the logger gui:
     - combine categories below X drops so there are no useless tabs with a small amount of drops

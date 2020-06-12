@@ -1,6 +1,7 @@
 ; Script options
     #SingleInstance, Force
     #NoEnv ; Recommended for performance and compatibility with future AutoHotkey releases.
+    SetBatchLines, -1
     OnExit("ExitFunc")
 
 ; Global vars
@@ -27,6 +28,7 @@ return
 ; Includes
     #Include, <JSON>
     #Include, <class gui>
+    #Include, <CommandFunctions>
     #Include, %A_ScriptDir%\inc
     #Include Class DropTable.ahk
     #Include Class Gui Logger.ahk
