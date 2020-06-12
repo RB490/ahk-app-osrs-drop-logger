@@ -4,9 +4,8 @@ class class_wiki {
     }
     
     /*
-    GetImageUrl
         param <input>      = {string} context sensitive wiki page containing item eg. 'Rune_axe'
-        returns            = {string} url to high res image
+        returns            = {string} url to high res image example: https://oldschool.runescape.wiki/images/thumb/4/45/Ashes_detail.png/100px-Ashes_detail.png
     */
     GetImageUrl(input) {
         baseUrl := "https://oldschool.runescape.wiki"
@@ -33,13 +32,14 @@ class class_wiki {
         pixels := SubStr(html, InStr(html, ".png/") + 5)
         pixels := SubStr(pixels, 1, InStr(pixels, "px-") - 1)
         html := StrReplace(html, pixels, 100)
-        return baseUrl html
+
+        output := baseUrl html
+        return output
     }
 
     /*
-    GetDroptables
         param <input>      = {string} context sensitive wiki page containing drop tables eg. 'Vorkath'
-        returns            = {object} drop table 
+        returns            = {object} drop table, example @ "\res\class_wiki.GetDroptables('Black_demon').txt"
     */
     GetDroptables(input) {
         html := DownloadToString(this.url "/w/" input)
@@ -70,7 +70,6 @@ class class_wiki {
     }
 
     /*
-    _GetTable
         param <whichTable>      = {integer} number of table to retrieve following com format aka the start at 0
         returns                 = {object} drop table 
     */
@@ -106,7 +105,6 @@ class class_wiki {
     }
 
     /*
-    _GetTableTitle
         param <html>            = {string} html of wiki page containing drop tables
         param <whichTable>      = {integer} number of table to retrieve following com format aka the start at 0
         returns                 = {string} table title 

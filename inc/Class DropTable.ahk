@@ -1,9 +1,9 @@
+; purpose = modify and retrieve drop tables information
 class class_DropTable {
     
     /*
         param <input>       = {string} context sensitive wiki page containing drop tables eg. 'Vorkath'
-        purpose             = retrieve a mob's drop table, download drops and mob image
-        returns             = nothing
+        purpose             = retrieve a mob's drop table and download drop item images
     */
     GetDrops(input) {
         this.minTableSize := 32 ; tables below this many itemes get merged together. rdt has 33 drops
@@ -11,24 +11,26 @@ class class_DropTable {
         If !(g_debug)
             SplashTextOn, 300, 75, % A_ScriptName, Retrieving drop table for %input%...
         
+        ;;; retrieve drop tables
         ; this.obj := wiki.GetDroptables(input)
         ; FileAppend, % json.dump(this.obj,,2), % A_ScriptDir "\Debug_DropTables.json"
         this.obj := json.load(FileRead(A_ScriptDir "\Debug_DropTables.json"))
-        this.obj := this._MergeDuplicateTables()
-        this.obj := this._MergeDuplicateTableDrops()
-        obj := this._MergeSmallTables()
-        this.obj.push(obj)
-        this.obj := this._RenameTables()
-        
-        this._GetImages()
 
+        ;;; retrieve drop images
+        this._GetItemImages()
+
+        ;;; modify drop tables
+        this._ObjMergeDupeTables()
+        this._ObjMergeDupeDrops()
+        this._ObjMergeSmallTables()
+        this._ObjRenameTables()
+        
         SplashTextOff
     }
 
     /*
         param <input>       = {integer} number of drop
-        purpose             = return found drop in drop table
-        returns             = {object} drop information
+        returns             = {object} found drop information
     */
     GetDrop(input) {
         loop % this.obj.length() {
@@ -44,12 +46,8 @@ class class_DropTable {
         return output
     }
 
-    /*
-        param <input>       = nothing
-        purpose             = download images of all items in the drop table
-        returns             = nothing
-    */
-    _GetImages() {
+    ; purpose = download images of all items in the drop table
+    _GetItemImages() {
         loop % this.obj.length() {
             obj := this.obj[A_Index].tableDrops
             loop % obj.length() {
@@ -74,7 +72,8 @@ class class_DropTable {
         }
     }
 
-    _MergeSmallTables() {
+    ; purpose = merge the drops from smaller tables into a main table
+    _ObjMergeSmallTables() {
         mergedDrops := {}
 
         loop % this.obj.length() {
@@ -103,36 +102,11 @@ class class_DropTable {
         output := {}
         output.tableDrops := mergedDrops
         output.tableTitle := "Main"
-        return output
+        this.obj.push(output)
     }
 
-    /*
-        param <input>       = nothing
-        purpose             =   rename categories eg. 'weapons and armor' into 'gear'
-                                merge categories with less than X items into a main category
-        returns             = {object} formatted object for the log gui
-    */
-    _RenameTables() {
-        obj := this.obj.Clone()
-
-        ; rename categories eg. 'weapons and armor' into 'gear'
-        For table in obj {
-            Switch obj[table].tableTitle {
-                case "Weapons and armour":
-                    obj[table].tableTitle := "Gear"
-                case "Rare Drop Table":
-                    obj[table].tableTitle := "RDT"
-                case "Rare and Gem drop table":
-                    obj[table].tableTitle := "RDT + Gems"
-                case "Fletching materials":
-                    obj[table].tableTitle := "Fletch"
-            }
-        }
-        return obj
-    }
-
-    ; returns             = {object} a rebuild drop tables object merging the drops from duplicate tables eg. in 'black demon'
-    _MergeDuplicateTables() {
+    ; purpose = merge the drops from duplicate tables eg. in 'black demon'
+    _ObjMergeDupeTables() {
         output := {}
         totalTables := this.obj.length()
 
@@ -153,28 +127,11 @@ class class_DropTable {
                 output.push(entry)
             }
         }
-        return output
+        this.obj := output
     }
 
-    /*
-        param <obj>         = drop tables object
-        param <input>       = 'tableTitle' to be searched
-        returns             = {integer} 0 if not found else table index
-    */
-    _FindTable(obj, input) {
-        If !(obj.length())
-            return false
-
-        loop % obj.length() {
-            title := obj[A_Index].tableTitle
-
-            If (title = input)
-                return A_Index
-        }
-        return false
-    }
-
-    _MergeDuplicateTableDrops() {
+    ; purpose = merge duplicate drops inside each table which can occur eg. in 'black demon'
+    _ObjMergeDupeDrops() {
         obj := this.obj.clone()
 
         loop % obj.length() {
@@ -193,10 +150,56 @@ class class_DropTable {
 
             obj[A_Index].tableDrops := newTable
         }
-        return obj
+        this.obj := obj
     }
 
-    ; obj = drop table object, input = item drop object
+    ; purpose = rename categories eg. 'weapons and armor' into 'gear'
+    _ObjRenameTables() {
+        obj := this.obj
+
+        For table in obj {
+            
+            renamedTitle := ""
+
+            Switch obj[table].tableTitle {
+                case "Weapons and armour":
+                    renamedTitle := "Gear"
+                case "Rare Drop Table":
+                    renamedTitle := "RDT"
+                case "Rare and Gem drop table":
+                    renamedTitle := "RDT + Gems"
+                case "Fletching materials":
+                    renamedTitle := "Fletch"
+            }
+
+            If (renamedTitle)
+                obj[table].tableTitle := renamedTitle
+        }
+    }
+
+    /*
+        param <obj>         = {object} drop tables object
+        param <input>       = {string} 'tableTitle' to be searched
+        returns             = {integer} table index if found, false if not
+    */
+    _FindTable(obj, input) {
+        If !(obj.length())
+            return false
+
+        loop % obj.length() {
+            title := obj[A_Index].tableTitle
+
+            If (title = input)
+                return A_Index
+        }
+        return false
+    }
+
+    /*
+        param <obj>         = {object} drop table object
+        param <input>       = {object} item drop object
+        returns             = {bool} true if found inside specified drop table
+    */
     _FindDrop(obj, input) {
         If !(obj.length())
             return false

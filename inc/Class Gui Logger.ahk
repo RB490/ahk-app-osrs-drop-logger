@@ -7,7 +7,7 @@ class class_gui_logger extends gui {
         this.marginSize := 10
 
         ; controls
-        this.Add("tab3", "h300", "")
+        this.Add("tab3", "", "")
         this._LoadDrops()
 
         DetectHiddenWindows, On ; for ControlGetPos
@@ -24,7 +24,7 @@ class class_gui_logger extends gui {
 
     _LoadDrops() {
         this.Margin(0, 0)
-        dropSize := 27
+        dropSize := 30 ; 27 is close to ingame inventory
         maxRowDrops := 10 ; after this amount of drops a new row is started
 
         loop % dropTable.obj.length() {
