@@ -6,6 +6,8 @@ class class_DropTable {
         returns             = nothing
     */
     GetDrops(input) {
+        this.minTableSize := 5 ; tables below this many itmes get merged together
+        
         If !(g_debug)
             SplashTextOn, 300, 75, % A_ScriptName, Retrieving drop table for %input%...
         
@@ -15,6 +17,8 @@ class class_DropTable {
         this.obj := json.load(FileRead(A_ScriptDir "\Debug_DropTables.json"))
         this.obj := this._MergeDuplicateTables()
         this.obj := this._MergeDuplicateTableDrops()
+        obj := this._MergeSmallTables()
+        this.obj.push(obj)
         this.obj := this._RenameTables()
 
         SplashTextOff
@@ -62,6 +66,38 @@ class class_DropTable {
                     DownloadToFile(link, path)
             }
         }
+    }
+
+    _MergeSmallTables() {
+        mergedDrops := {}
+
+        loop % this.obj.length() {
+            table := A_Index
+            drops := this.obj[A_Index].tableDrops
+
+            If (drops.length() > this.minTableSize)
+                Continue
+
+            loop % drops.length() {
+                mergedDrops.push(drops[A_Index])
+            }
+
+            this.obj.Delete(table)
+        }
+
+        ; restructure entire drop tables object because .Delete() changes the object layout to indexed eg.   "2": {    "tableDrops": [
+        newObj := {}
+        loop % this.obj.length() {
+            If !(this.obj[A_Index].tableTitle)
+                continue
+            newObj.push(this.obj[A_Index])
+        }
+        this.obj := newObj
+
+        output := {}
+        output.tableDrops := mergedDrops
+        output.tableTitle := "Main"
+        return output
     }
 
     /*

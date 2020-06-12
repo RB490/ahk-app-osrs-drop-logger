@@ -19,12 +19,13 @@ retrieve item object from gui log on mouse click
     assign variable to item image to be retrieved with MouseGetPos containing,
     item name and occurence, then search drop log object with found occurence to get the exact item
     this does require log gui to use the same object as the drop log class
-    
-^^^^^^^^^^^^^^^^^^^^ completed ^^^^^^^^^^^^^^^^
+
 
 the drop table class method that sends information to the logger gui:
     - combine categories below X drops so there are no useless tabs with a small amount of drops
     - if the total amount of drops is lower then X combine them. ignoring the rare drop table
+
+^^^^^^^^^^^^^^^^^^^^ completed ^^^^^^^^^^^^^^^^
 
 use wiki class to retrieve links to high res images for dropTables.GetImages()
 

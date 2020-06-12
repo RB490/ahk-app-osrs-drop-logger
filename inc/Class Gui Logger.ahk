@@ -7,7 +7,7 @@ class class_gui_logger extends gui {
         this.marginSize := 10
 
         ; controls
-        this.Add("tab3",, "")
+        this.Add("tab3", "h300", "")
         this._LoadDrops()
 
         DetectHiddenWindows, On ; for ControlGetPos
