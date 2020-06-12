@@ -13,18 +13,25 @@ https://code.visualstudio.com/docs/editor/github
 revert/undo wiki class changes > upload to private github repo > commit each new change to github repo
 
 merge duplicate drop tables eg. for 'black demon' in wiki get
+
+retrieve item object from gui log on mouse click
+    different drop tables can contain the same item with different quantities,
+    assign variable to item image to be retrieved with MouseGetPos containing,
+    item name and occurence, then search drop log object with found occurence to get the exact item
+    this does require log gui to use the same object as the drop log class
+    
 ^^^^^^^^^^^^^^^^^^^^ completed ^^^^^^^^^^^^^^^^
 
 the drop table class method that sends information to the logger gui:
     - combine categories below X drops so there are no useless tabs with a small amount of drops
     - if the total amount of drops is lower then X combine them. ignoring the rare drop table
 
+use wiki class to retrieve links to high res images for dropTables.GetImages()
+
+refactor dropLog class
+
 gui class for selecting a mob and file
     option to add mobs to a list control that is filled with a few defaults
     option to search list control
     display image of currently selected mob
     store logged mob between sessions
-
-use wiki class to retrieve links to high res images for dropTables.GetImages()
-
-add examples to wiki class outputs eg. the drop table layout

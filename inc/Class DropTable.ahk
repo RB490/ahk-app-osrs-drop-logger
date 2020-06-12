@@ -15,8 +15,28 @@ class class_DropTable {
         this.obj := json.load(FileRead(A_ScriptDir "\Debug_DropTables.json"))
         this.obj := this._MergeDuplicateTables()
         this.obj := this._MergeDuplicateTableDrops()
+        this.obj := this._RenameTables()
 
         SplashTextOff
+    }
+
+    /*
+        param <input>       = {integer} number of drop
+        purpose             = return found drop in drop table
+        returns             = {object} drop information
+    */
+    GetDrop(input) {
+        loop % this.obj.length() {
+            table := A_Index
+            loop % this.obj[table].tableDrops.length() {
+                totalItems++
+                If (totalItems = input) {
+                    output := this.obj[table].tableDrops[A_Index]
+                    break, 2
+                }
+            }
+        }
+        return output
     }
 
     /*
@@ -50,7 +70,7 @@ class class_DropTable {
                                 merge categories with less than X items into a main category
         returns             = {object} formatted object for the log gui
     */
-    GetDropsFormatted() {
+    _RenameTables() {
         obj := this.obj.Clone()
 
         ; rename categories eg. 'weapons and armor' into 'gear'
@@ -60,13 +80,13 @@ class class_DropTable {
                     obj[table].tableTitle := "Gear"
                 case "Rare Drop Table":
                     obj[table].tableTitle := "RDT"
+                case "Rare and Gem drop table":
+                    obj[table].tableTitle := "RDT + Gems"
                 case "Fletching materials":
                     obj[table].tableTitle := "Fletch"
             }
         }
-
-        ; msgbox end of %A_ThisFunc%
-        return this.obj
+        return obj
     }
 
     ; returns             = {object} a rebuild drop tables object merging the drops from duplicate tables eg. in 'black demon'

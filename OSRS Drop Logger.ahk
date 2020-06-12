@@ -3,6 +3,7 @@
     #NoEnv ; Recommended for performance and compatibility with future AutoHotkey releases.
     SetBatchLines, -1
     OnExit("ExitFunc")
+    OnMessage(0x201, "OnWM_LBUTTONDOWN")
 
 ; Global vars
     global  g_debug         := true
@@ -17,13 +18,15 @@
     FileRead, Input, % A_ScriptDir "\settings.json"
     If (Input) and !(Input = "{}") and !(Input = """" """") ; double quotes
         settings := json.load(Input)
-    
+
     dropTable.GetDrops("Black_demon")
     logGui.Setup()
 return
 
 ; Global hotkeys
     ~^s::reload
+    f1::
+    return
 
 ; Includes
     #Include, <JSON>

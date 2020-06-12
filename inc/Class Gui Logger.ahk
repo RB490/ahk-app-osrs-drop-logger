@@ -27,11 +27,9 @@ class class_gui_logger extends gui {
         dropSize := 27
         maxRowDrops := 10 ; after this amount of drops a new row is started
 
-        obj := dropTable.GetDropsFormatted()
-
-        loop % obj.length() {
-            tab := obj[A_Index].tableTitle
-            drops := obj[A_Index].tableDrops
+        loop % dropTable.obj.length() {
+            tab := dropTable.obj[A_Index].tableTitle
+            drops := dropTable.obj[A_Index].tableDrops
 
             ; add tab
             GuiControl,, SysTabControl321, % tab
@@ -44,13 +42,16 @@ class class_gui_logger extends gui {
                     rowDrops := 0
 
                 dropImg := g_itemImgsPath "\" drops[A_Index].itemName ".png"
+                
+                totalItems++
+                dropVar := "g_vLogGuiItem#" totalItems
 
                 If (A_Index = 1)
-                    this.Add("picture", "x+0 section w" dropSize " h" dropSize " border", dropImg) ; first drop
+                    this.AddGlobal("picture", "x+0 section w" dropSize " h" dropSize " v" dropVar " border", dropImg) ; first drop
                 else if !(rowDrops)
-                    this.Add("picture", "xs ys+" dropSize " section w" dropSize " h" dropSize " border", dropImg) ; first drop of a new row
+                    this.AddGlobal("picture", "xs ys+" dropSize " section w" dropSize " h" dropSize " v" dropVar " border", dropImg) ; first drop of a new row
                 else
-                    this.Add("picture", "xp+" dropSize "  w" dropSize " h" dropSize " border", dropImg) ; add normal drop
+                    this.AddGlobal("picture", "xp+" dropSize "  w" dropSize " h" dropSize " v" dropVar " border", dropImg) ; add normal drop
 
                 rowDrops++
             }
