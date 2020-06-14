@@ -38,18 +38,34 @@ wiki class refactoring
 
 ^^^^^^^^^^^^^^^^^^^^ completed ^^^^^^^^^^^^^^^^
 
+drop log class
+    write it so it can support trips deaths and drops
+
 handle multiple items with different quantities after merging eg. 'adamanite bar' or 'coins' for black demons
     per table, merge them into one drop with all quantities combined with a separator so they can individually be used
 
 separate images in log gui
-    could be done by adding white space to image file, wiki might have a feature for this
+    could be done by adding white space to image file, wiki might have a feature for this <IT DOESNT...>
     could be done by first adding an image control with a border and then a smaller image control inside that with the image in it
-
-drop log class
-    write it so it can support trips deaths and drops
+    could be done by retrieving the item from the grand exchange - up to date item ids can be found
+        @ https://github.com/runelite/runelite/blob/master/runelite-api/src/main/java/net/runelite/api/ItemID.java
+        these images have white space in them by default
+        if no valid image is on the grand exchange try wiki high detail method otherwise use the html icon
+        apparently osrs has a ge api? https://github.com/Chasesc/OSRS-API-Wrapper
+        whip = http://services.runescape.com/m=itemdb_oldschool/api/catalogue/detail.json?item=4151
+        note, sometimes the api does not load, or is slow..
 
 gui class for selecting a mob and file
     option to add mobs to a list control that is filled with a few defaults
     option to search list control
     display image of currently selected mob
     store logged mob between sessions
+
+optimizing
+    test the program
+        - which processes take up the most amount of load time, reduce those
+        - large drop logs
+    
+    bulk file download
+    goal: function that calls separate script file to download files (images) quickly,
+        use this in the drop table class to get images fast

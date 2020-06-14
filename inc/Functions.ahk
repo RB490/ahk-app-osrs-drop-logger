@@ -7,8 +7,10 @@ OnWM_LBUTTONDOWN(wParam, lParam, msg, hWnd) {
     MouseGetPos, OutputVarX, OutputVarY, OutputVarWin, OutputVarControl
     GuiControlGet, OutputAssociatedVar, Name, % OutputVarControl
 
-    If !(OutputAssociatedVar)
+    If !(OutputAssociatedVar) {
+        tooltip
         return
+    }
 
     id := SubStr(OutputAssociatedVar, InStr(OutputAssociatedVar, "#") + 1)
     obj := dropTable.GetDrop(id)
