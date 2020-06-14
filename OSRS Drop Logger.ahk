@@ -11,6 +11,7 @@
     global  wiki            := new class_wiki
     global  logGui          := new class_gui_logger("Log Gui")
     global  dropTable       := new class_dropTable
+    global  dropLog         := new class_dropLog
     global  settings        := {}
 
 ; Auto-execute
@@ -20,6 +21,7 @@
         settings := json.load(Input)
 
     dropTable.GetDrops("Black_demon")
+    dropLog.Load()
     logGui.Setup()
 return
 
@@ -34,6 +36,7 @@ return
     #Include, <CommandFunctions>
     #Include, %A_ScriptDir%\inc
     #Include Class DropTable.ahk
+    #Include Class DropLog.ahk
     #Include Class Gui Logger.ahk
     #Include Class Wiki.ahk
     #Include Functions.ahk

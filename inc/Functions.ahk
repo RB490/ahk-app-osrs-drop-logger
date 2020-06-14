@@ -17,3 +17,12 @@ OnWM_LBUTTONDOWN(wParam, lParam, msg, hWnd) {
     
     tooltip, % obj.itemQuantity " x " obj.itemName
 }
+
+ObjFullyClone(obj)
+{
+	nobj := obj.Clone()
+	for k,v in nobj
+		if IsObject(v)
+			nobj[k] := A_ThisFunc.(v)
+	return nobj
+}

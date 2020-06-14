@@ -36,10 +36,19 @@ drop table class refactoring
 
 wiki class refactoring
 
-^^^^^^^^^^^^^^^^^^^^ completed ^^^^^^^^^^^^^^^^
 
 drop log class
-    write it so it can support trips deaths and drops
+    write it so it can support trips, deaths obviously drops and also UNDO/REDO
+    UNDO/REDO
+        before making any change, save an entire copy of the object, and use this to undo/redo as normal
+
+        obj.clone() copies the key-value pairs into a new object, but since i use objects it copies the references to the object,
+        this is called a 'shallow' copy' need a deep copy function or write files to disk and json load etc,
+        though that seems really ineficient especially with large files
+
+^^^^^^^^^^^^^^^^^^^^ completed ^^^^^^^^^^^^^^^^
+
+integrate drop log gui and drop log class
 
 handle multiple items with different quantities after merging eg. 'adamanite bar' or 'coins' for black demons
     per table, merge them into one drop with all quantities combined with a separator so they can individually be used
