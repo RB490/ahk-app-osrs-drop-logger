@@ -57,14 +57,7 @@ integrate drop log gui and drop log class
 
 add example of small drop log containing every aspect, trip, kill with a single or multiple drops deaths etc.
 
-^^^^^^^^^^^^^^^^^^^^ completed ^^^^^^^^^^^^^^^^
-
-handle items 'formats'
-    different quantities
-        eg. 'adamanite bar' or 'coins' for black demons has a bunch of duplicates
-        either merge them into one drop combining the quantities and then display
-        a gui based on the different quantities allowing different inputs, though that 
-        still adds an extra click. maybe just keep it 'as is'
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ completed ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     
 gui class for selecting a mob and file
     option to add mobs to a list control that is filled with a few defaults
@@ -74,8 +67,16 @@ gui class for selecting a mob and file
     open file with drop log class
     show log gui
 
-bugs
-    gui log > select a drop > select the same drop right after > no response, why this delay?
+handle item quantities
+    some items appear multiple times per table with different quantities eg. 'coins' in 'black demon'
+        combine them?
+    varierty of different quantity formats eg.
+        1
+        N/A
+        3,000
+        250–499
+        20,000–81,000
+        ^ <quantity> + ' (noted)'
 
 log gui shizzle
     create a nice layout once all the necessary components are functional
@@ -91,6 +92,9 @@ log gui shizzle
             apparently osrs has a ge api? https://github.com/Chasesc/OSRS-API-Wrapper
             whip = http://services.runescape.com/m=itemdb_oldschool/api/catalogue/detail.json?item=4151
             note, sometimes the api does not load, or is slow..
+
+bugs
+    gui log > select a drop > select the same drop right after > no response, why this delay?
 
 optimizing
     test the program

@@ -39,7 +39,7 @@ class class_wiki {
 
     /*
         param <input>      = {string} context sensitive wiki page containing drop tables eg. 'Vorkath'
-        returns            = {object} drop table, example @ "\res\class_wiki.GetDroptables('Black_demon').txt"
+        returns            = {object} drop table, example @ "\res\example class_wiki.GetDroptables('Black_demon').json"
     */
     GetDroptables(input) {
         html := DownloadToString(this.url "/w/" input)

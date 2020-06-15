@@ -13,8 +13,8 @@ class class_DropTable {
         
         ;;; retrieve drop tables
         ; this.obj := wiki.GetDroptables(input)
-        ; FileAppend, % json.dump(this.obj,,2), % A_ScriptDir "\Debug_DropTables.json"
-        this.obj := json.load(FileRead(A_ScriptDir "\Debug_DropTables.json"))
+        ; FileAppend, % json.dump(this.obj,,2), % A_ScriptDir "\res\example class_wiki.GetDroptables('Black_demon').json"
+        this.obj := json.load(FileRead(A_ScriptDir "\res\example class_wiki.GetDroptables('Black_demon').json"))
 
         ;;; retrieve drop images
         this._GetItemImages()
