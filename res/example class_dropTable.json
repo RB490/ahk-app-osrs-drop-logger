@@ -1,0 +1,56 @@
+[
+  {
+    "deaths": [
+      {
+        "deathEnd": "20200615145700",
+        "deathStart": "20200615145659"
+      }
+    ],
+    "drops": [
+      [
+        {
+          "itemName": "Coins",
+          "itemQuantity": "3,000"
+        },
+        {
+          "itemName": "Loop half of key",
+          "itemQuantity": "1"
+        },
+        {
+          "itemName": "Tooth half of key",
+          "itemQuantity": "1"
+        }
+      ],
+      [
+        {
+          "itemName": "Law rune",
+          "itemQuantity": "15"
+        }
+      ]
+    ],
+    "tripEnd": "20200615145703",
+    "tripStart": "20200615145651"
+  },
+  {
+    "deaths": [
+      {
+        "deathEnd": "20200615145718",
+        "deathStart": "20200615145717"
+      }
+    ],
+    "drops": [
+      [
+        {
+          "itemName": "Dragon med helm",
+          "itemQuantity": "1"
+        },
+        {
+          "itemName": "Death rune",
+          "itemQuantity": "45"
+        }
+      ]
+    ],
+    "tripEnd": "",
+    "tripStart": "20200615145704"
+  }
+]

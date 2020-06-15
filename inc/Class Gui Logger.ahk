@@ -1,6 +1,14 @@
 class class_gui_logger extends gui {
     Setup() {
         ; events
+        this.Events["_BtnClear"] := this.ClearDrops.Bind(this)
+        this.Events["_Btn+Kill"] := this.AddKill.Bind(this)
+        this.Events["_BtnUndo"] := this.Undo.Bind(this)
+        this.Events["_BtnRedo"] := this.Redo.Bind(this)
+        this.Events["_BtnStartTrip"] := this.StartTrip.Bind(this)
+        this.Events["_BtnEndTrip"] := this.EndTrip.Bind(this)
+        this.Events["_BtnStartDeath"] := this.StartDeath.Bind(this)
+        this.Events["_BtnEndDeath"] := this.EndDeath.Bind(this)
 
         ; properties
         this.SetDefault() ; set as default for GuiControl
@@ -13,13 +21,113 @@ class class_gui_logger extends gui {
         DetectHiddenWindows, On ; for ControlGetPos
         ControlGetPos , tabX, tabY, tabW, tabH, SysTabControl321, % this.ahkid
         var = tabX = %tabX% %A_Tab% tabY = %tabY% %A_Tab% tabW = %tabW% %A_Tab% tabH = %tabH%
-        this.Add("edit", "w" tabW, "<currently selected drops> " A_Tab var)
+        this.Add("edit", "w" tabW + 165 " r1", "")
 
-        this.Add("edit", "x" tabW + (this.marginSize * 2) " y" this.marginSize - 1 " w200 h" tabH, "<drop log>")
+        this.Add("button", "x+" this.marginSize " glogGui_BtnHandler", "Clear")
+
+        this.Add("edit", "x" tabW + (this.marginSize * 2) " y" this.marginSize - 1 " w200 h" tabH, "")
+
+        this.Add("button", "x10 glogGui_BtnHandler", "+ Kill")
+        this.Add("button", "glogGui_BtnHandler", "Undo")
+        this.Add("button", "glogGui_BtnHandler", "Redo")
+        this.Add("button", "glogGui_BtnHandler", "Start trip")
+        this.Add("button", "glogGui_BtnHandler", "End trip")
+        this.Add("button", "glogGui_BtnHandler", "Start death")
+        this.Add("button", "glogGui_BtnHandler", "End death")
 
         ; show
         this.Show()
-        ; this.Show("w450 h250")
+        this.Update()
+
+        ; dropLog.Debug()
+    }
+
+    Update() {
+        this.SetText("edit2", dropLog.Get())
+
+        ; buttons
+        If (dropLog.TripActive()) {
+            this.Control("Enable", "+ Kill")
+            this.Control("Enable", "Undo")
+            this.Control("Enable", "Redo")
+            this.Control("Disable", "Start trip")
+            this.Control("Enable", "End trip")
+            this.Control("Enable", "Start death")
+            this.Control("Enable", "End death")
+        } else {
+            this.Control("Disable", "+ Kill")
+            this.Control("Disable", "Undo")
+            this.Control("Disable", "Redo")
+            this.Control("Enable", "Start trip")
+            this.Control("Disable", "End trip")
+            this.Control("Disable", "Start death")
+            this.Control("Disable", "End death")
+            return
+        }
+
+        If (dropLog.redoActions.length())
+            this.Control("Enable", "Redo")
+        else
+            this.Control("Disable", "Redo")
+
+        If (dropLog.undoActions.length())
+            this.Control("Enable", "Undo")
+        else
+            this.Control("Disable", "Undo")
+
+        If (dropLog.DeathActive()) {
+            this.Control("Disable", "Start death")
+            this.Control("Enable", "End death")
+            this.Control("Disable", "End trip")
+        } else {
+            this.Control("Enable", "Start death")
+            this.Control("Disable", "End death")
+        }
+
+        clipboard := json.dump(dropLog.obj,,2)
+    }
+
+    ClearDrops() {
+        g_selectedDrops := {}
+        this.SetText("Edit1")
+    }
+
+    AddKill() {
+        result := dropLog.Add(g_selectedDrops)
+        If !(result)
+            return
+        this.ClearDrops()
+        this.Update()
+    }
+
+    Undo() {
+        dropLog.Undo()
+        this.Update()
+    }
+
+    Redo() {
+        dropLog.Redo()
+        this.Update()
+    }
+
+    StartTrip() {
+        dropLog.StartTrip()
+        this.Update()
+    }
+
+    EndTrip() {
+        dropLog.EndTrip()
+        this.Update()
+    }
+
+    StartDeath() {
+        dropLog.StartDeath()
+        this.Update()
+    }
+
+    EndDeath() {
+        dropLog.EndDeath()
+        this.Update()
     }
 
     _LoadDrops() {
@@ -61,3 +169,22 @@ class class_gui_logger extends gui {
         this.Margin(this.marginSize, this.marginSize) ; restore margin size
     }
 }
+
+logGui_BtnHandler:
+    ; get active button text without spaces
+    ControlGetFocus, OutputControl, A
+    ControlGetText, OutputControlText, % OutputControl, A
+    OutputControlText := StrReplace(OutputControlText, A_Space)
+
+    ; call the class's method
+    for a, b in class_gui_logger.Instances 
+		if (a = A_Gui+0)
+			b["Events"]["_Btn" OutputControlText].Call()
+return
+
+logGui_Close:
+    ; call the class's method
+    for a, b in class_gui_logger.Instances 
+		if (a = A_Gui+0)
+			b["Events"]["_BtnClose"].Call()
+return

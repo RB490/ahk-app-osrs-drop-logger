@@ -46,29 +46,51 @@ drop log class
         this is called a 'shallow' copy' need a deep copy function or write files to disk and json load etc,
         though that seems really ineficient especially with large files
 
+integrate drop log gui and drop log class
+    start trip > add some drops > undo some drops > add more drops > redo > BUG
+        something with a link between 'this.changes' and 'this.undonechanges'
+        could look at how clips manager does this?
+    how to handle all the different 'cases' eg. user tries to start new death   
+        without a trip currently active
+    apply checks when ending trip
+        death should be ended
+
+add example of small drop log containing every aspect, trip, kill with a single or multiple drops deaths etc.
+
 ^^^^^^^^^^^^^^^^^^^^ completed ^^^^^^^^^^^^^^^^
 
-integrate drop log gui and drop log class
-
-handle multiple items with different quantities after merging eg. 'adamanite bar' or 'coins' for black demons
-    per table, merge them into one drop with all quantities combined with a separator so they can individually be used
-
-separate images in log gui
-    could be done by adding white space to image file, wiki might have a feature for this <IT DOESNT...>
-    could be done by first adding an image control with a border and then a smaller image control inside that with the image in it
-    could be done by retrieving the item from the grand exchange - up to date item ids can be found
-        @ https://github.com/runelite/runelite/blob/master/runelite-api/src/main/java/net/runelite/api/ItemID.java
-        these images have white space in them by default
-        if no valid image is on the grand exchange try wiki high detail method otherwise use the html icon
-        apparently osrs has a ge api? https://github.com/Chasesc/OSRS-API-Wrapper
-        whip = http://services.runescape.com/m=itemdb_oldschool/api/catalogue/detail.json?item=4151
-        note, sometimes the api does not load, or is slow..
-
+handle items 'formats'
+    different quantities
+        eg. 'adamanite bar' or 'coins' for black demons has a bunch of duplicates
+        either merge them into one drop combining the quantities and then display
+        a gui based on the different quantities allowing different inputs, though that 
+        still adds an extra click. maybe just keep it 'as is'
+    
 gui class for selecting a mob and file
     option to add mobs to a list control that is filled with a few defaults
     option to search list control
     display image of currently selected mob
     store logged mob between sessions
+    open file with drop log class
+    show log gui
+
+bugs
+    gui log > select a drop > select the same drop right after > no response, why this delay?
+
+log gui shizzle
+    create a nice layout once all the necessary components are functional
+    combine buttons eg. start death can change into end death and ending a trip
+        while death is active should automatically end the death
+    separate drop images
+        could be done by adding white space to image file, wiki might have a feature for this <IT DOESNT...>
+        could be done by first adding an image control with a border and then a smaller image control inside that with the image in it
+        could be done by retrieving the item from the grand exchange - up to date item ids can be found
+            @ https://github.com/runelite/runelite/blob/master/runelite-api/src/main/java/net/runelite/api/ItemID.java
+            these images have white space in them by default
+            if no valid image is on the grand exchange try wiki high detail method otherwise use the html icon
+            apparently osrs has a ge api? https://github.com/Chasesc/OSRS-API-Wrapper
+            whip = http://services.runescape.com/m=itemdb_oldschool/api/catalogue/detail.json?item=4151
+            note, sometimes the api does not load, or is slow..
 
 optimizing
     test the program

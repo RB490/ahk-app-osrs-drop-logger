@@ -8,6 +8,7 @@
 ; Global vars
     global  g_debug         := true
     global  g_itemImgsPath  := A_ScriptDir "\res\img\items"
+    global  g_selectedDrops := {}
     global  wiki            := new class_wiki
     global  logGui          := new class_gui_logger("Log Gui")
     global  dropTable       := new class_dropTable
@@ -21,13 +22,18 @@
         settings := json.load(Input)
 
     dropTable.GetDrops("Black_demon")
-    dropLog.Load()
+    dropLog.Load("some input")
     logGui.Setup()
 return
 
 ; Global hotkeys
     ~^s::reload
     f1::
+    return
+
+; Labels
+    disableTooltip:
+        tooltip
     return
 
 ; Includes
