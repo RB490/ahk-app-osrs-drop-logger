@@ -6,23 +6,22 @@
     OnMessage(0x201, "OnWM_LBUTTONDOWN")
 
 ; Global vars
-    global  g_debug         := true
-    global  g_itemImgsPath  := A_ScriptDir "\res\img\items"
-    global  g_itemIdsPath   := A_ScriptDir "\res\itemIds.json"
-    global  g_selectedDrops := {}
-    global  wiki            := new class_wiki
-    global  runeLite        := new class_runeLite
-    global  logGui          := new class_gui_logger("Log Gui")
-    global  dropTable       := new class_dropTable
-    global  dropLog         := new class_dropLog
-    global  settings        := {}
+    global  g_debug             := true
+    global  g_path_itemImages   := A_ScriptDir "\res\img\items"
+    global  g_path_itemIds      := A_ScriptDir "\res\itemIds.json"
+    global  g_selectedDrops     := {}
+    global  wiki                := new class_wiki
+    global  runeLite            := new class_runeLite
+    global  logGui              := new class_gui_logger("Log Gui")
+    global  dropTable           := new class_dropTable
+    global  dropLog             := new class_dropLog
+    global  settings            := {}
 
 ; Auto-execute
-    FileCreateDir, % g_itemImgsPath
+    FileCreateDir, % g_path_itemImages
     FileRead, Input, % A_ScriptDir "\settings.json"
     If (Input) and !(Input = "{}") and !(Input = """" """") ; double quotes
         settings := json.load(Input)
-
 
     dropTable.GetDrops("Black_demon")
     dropLog.Load("some input")

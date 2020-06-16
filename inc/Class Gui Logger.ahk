@@ -152,7 +152,7 @@ class class_gui_logger extends gui {
                 If (drops[A_Index].itemName = "Nothing")
                     dropImg := A_ScriptDir "\res\img\Nothing.png"
                 else
-                    dropImg := g_itemImgsPath "\" runeLite.GetId(drops[A_Index].itemName) ".png"
+                    dropImg := g_path_itemImages "\" runeLite.GetId(drops[A_Index].itemName) ".png"
 
                 totalItems++
                 dropVar := "g_vLogGuiItem#" totalItems

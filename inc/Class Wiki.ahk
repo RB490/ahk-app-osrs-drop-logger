@@ -8,8 +8,7 @@ class class_wiki {
         returns            = {string} url to high res image example: https://oldschool.runescape.wiki/images/thumb/4/45/Ashes_detail.png/100px-Ashes_detail.png
     */
     GetImageUrl(input) {
-        baseUrl := "https://oldschool.runescape.wiki"
-        html := DownloadToString(baseUrl "/w/" input)
+        html := DownloadToString(this.url "/w/" input)
         
         needleThumb = src="/images/thumb
         needleDetail := input "_detail"

@@ -56,7 +56,7 @@ class class_DropTable {
                     continue
                 itemId := runeLite.GetId(item)
 
-                path := g_itemImgsPath "\" itemId ".png"
+                path := g_path_itemImages "\" itemId ".png"
                 If FileExist(path)
                     continue
 

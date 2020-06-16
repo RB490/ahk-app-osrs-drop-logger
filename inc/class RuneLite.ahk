@@ -5,7 +5,7 @@ class class_runeLite {
         this.apiMainUrl := "https://static.runelite.net/api/http-service/"
         this.apiUrl := this._GetApiUrl()
 
-        If !(FileExist(g_itemIdsPath))
+        If !(FileExist(g_path_itemIds))
             this._DownloadItemIdFile()
 
         this._LoadItemIdFile()
@@ -72,7 +72,7 @@ class class_runeLite {
     }
 
     _LoadItemIdFile() {
-        this.obj := json.load(FileRead(g_itemIdsPath))
+        this.obj := json.load(FileRead(g_path_itemIds))
     }
 
     _DownloadItemIdFile() {
@@ -93,7 +93,7 @@ class class_runeLite {
             ; obj.push({itemName: itemName, itemId: itemId})
             obj[itemName] := itemId
         }
-        FileDelete, % g_itemIdsPath
-        FileAppend, % json.dump(obj,,2), % g_itemIdsPath
+        FileDelete, % g_path_itemIds
+        FileAppend, % json.dump(obj,,2), % g_path_itemIds
     }
 }
