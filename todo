@@ -85,15 +85,21 @@ log gui separate drop images
 
 cleanup / refactor the complete mess that is this code right now after ^
 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ completed ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wiki class > modify user input for wiki class inside the wiki class using a method
 
 gui class for selecting a mob and file
-    option to add mobs to a list control that is filled with a few defaults
-    option to search list control
-    display image of currently selected mob
-    store logged mob between sessions
-    open file with drop log class
-    show log gui
+    feature
+        option to add mobs to a list control that is filled with a few defaults
+        option to search list control
+        display image of currently selected mob
+        store logged mob between sessions
+    functionality
+        open drop log file with drop log class
+        show log gui
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ completed ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+separate runelite class 'item id' stuff and 'api' stuff? same for wiki with getimgurl and the table things
 
 handle item quantities
     some items appear multiple times per table with different quantities eg. 'coins' in 'black demon'
@@ -110,6 +116,14 @@ log gui shizzle
     create a nice layout once all the necessary components are functional
     combine buttons eg. start death can change into end death and ending a trip
         while death is active should automatically end the death
+
+add ability to use proper mobs / items images by figuring out/ trying ahk resizing methods:
+    irfanview?
+    ResConImg() : https://www.autohotkey.com/boards/viewtopic.php?t=2505
+        also supports adding border to image, which is exactly what i need for item images < see last comment:
+            https://autohotkey.com/board/topic/51035-add-border-on-images/
+
+use wiki api in wiki class
 
 bugs
     gui log > select a drop > select the same drop right after > no response, why this delay?

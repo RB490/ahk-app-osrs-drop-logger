@@ -1,20 +1,24 @@
 ; purpose = modify and retrieve drop tables information
 class class_DropTable {
-    
+    __New() {
+        this.minTableSize := 32 ; tables below this many itemes get merged together. rdt has 33 drops
+    }
+
     /*
         param <input>       = {string} context sensitive wiki page containing drop tables eg. 'Vorkath'
         purpose             = retrieve a mob's drop table and download drop item images
+        returns             = {boolean} true if successfull
     */
     GetDrops(input) {
-        this.minTableSize := 32 ; tables below this many itemes get merged together. rdt has 33 drops
-        
         If !(g_debug)
             SplashTextOn, 300, 75, % A_ScriptName, Retrieving drop table for %input%...
-        
+
         ;;; retrieve drop tables
-        ; this.obj := wiki.GetDroptables(input)
+        this.obj := wiki.GetDroptables(input)
+        If !(IsObject(this.obj))
+            return false
         ; FileAppend, % json.dump(this.obj,,2), % A_ScriptDir "\info\example class_wiki.GetDroptables('Black_demon').json"
-        this.obj := json.load(FileRead(A_ScriptDir "\info\example class_wiki.GetDroptables('Black_demon').json"))
+        ; this.obj := json.load(FileRead(A_ScriptDir "\info\example class_wiki.GetDroptables('Black_demon').json"))
 
         ;;; retrieve drop images
         this._GetItemImages()
@@ -26,6 +30,7 @@ class class_DropTable {
         this._ObjRenameTables()
         
         SplashTextOff
+        return true
     }
 
     /*

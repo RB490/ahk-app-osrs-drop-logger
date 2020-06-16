@@ -3,13 +3,45 @@ class class_wiki {
         this.url := "https://oldschool.runescape.wiki"
     }
     
+    ; converts input to wiki url case
+    _EncodeText(input) {
+        StringLower, output, input
+        output := StrReplace(input, A_Space, "_")
+        StringUpper, output, output, T
+        return output
+    }
+
     /*
-        param <input>      = {string} context sensitive wiki page containing item eg. 'Rune_axe'
+        param <input>      = {string} wiki page containing item eg. 'Skeletal wyvern'
+        returns            = {string} url to high res image example: https://oldschool.runescape.wiki/images/6/6f/Skeletal_Wyvern.png
+    */
+    GetMobUrl(input) {
+        input := this._EncodeText(input)
+
+        html := DownloadToString(this.url "/w/" input)
+
+        needle = src="/images/thumb
+        loop, parse, html, `n
+        {
+            If (InStr(A_LoopField, needle)) {
+                html := A_LoopField
+                break
+            }
+        }
+        html := SubStr(html, InStr(html, "src=") + 5)
+        html := SubStr(html, 1, InStr(html, ".png/") + 3)
+        html := StrReplace(html, "/thumb")
+        return this.url html
+    }
+
+    /*
+        param <input>      = {string} wiki page containing item eg. 'Rune axe'
         returns            = {string} url to high res image example: https://oldschool.runescape.wiki/images/thumb/4/45/Ashes_detail.png/100px-Ashes_detail.png
     */
     GetImageUrl(input) {
+        input := this._EncodeText(input)
         html := DownloadToString(this.url "/w/" input)
-        
+
         needleThumb = src="/images/thumb
         needleDetail := input "_detail"
 
@@ -37,10 +69,12 @@ class class_wiki {
     }
 
     /*
-        param <input>      = {string} context sensitive wiki page containing drop tables eg. 'Vorkath'
-        returns            = {object} drop table, example @ "\info\example class_wiki.GetDroptables('Black_demon').json"
+        param <input>      = {string} wiki page containing drop tables eg. 'Vorkath'
+        returns            =  success {object} drop table, example @ "\info\example class_wiki.GetDroptables('Black_demon').json"
+                              failure {integer} false
     */
     GetDroptables(input) {
+        input := this._EncodeText(input)
         html := DownloadToString(this.url "/w/" input)
         doc := ComObjCreate("HTMLfile")
         vHtml = <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -48,6 +82,8 @@ class class_wiki {
         doc.write(html)
 
         this.tables := doc.getElementsByTagName("table")
+        If !(this.tables.length)
+            return false
 
         output := {}
         loop, % this.tables.length {

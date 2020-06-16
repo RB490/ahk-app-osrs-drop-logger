@@ -47,6 +47,11 @@ class class_runeLite {
     _EncodeItem(input) {
         output := input
 
+
+        ; remove members/f2p markings
+        output := StrReplace(output, "(m)")
+        output := StrReplace(output, "(f)")
+
         ; remove brackets
         output := StrReplace(output, "(", "") ; eg. defence potion(3)
         output := StrReplace(output, ")", "")
