@@ -13,8 +13,8 @@ class class_DropTable {
         
         ;;; retrieve drop tables
         ; this.obj := wiki.GetDroptables(input)
-        ; FileAppend, % json.dump(this.obj,,2), % A_ScriptDir "\res\example class_wiki.GetDroptables('Black_demon').json"
-        this.obj := json.load(FileRead(A_ScriptDir "\res\example class_wiki.GetDroptables('Black_demon').json"))
+        ; FileAppend, % json.dump(this.obj,,2), % A_ScriptDir "\info\example class_wiki.GetDroptables('Black_demon').json"
+        this.obj := json.load(FileRead(A_ScriptDir "\info\example class_wiki.GetDroptables('Black_demon').json"))
 
         ;;; retrieve drop images
         this._GetItemImages()
@@ -51,23 +51,18 @@ class class_DropTable {
         loop % this.obj.length() {
             obj := this.obj[A_Index].tableDrops
             loop % obj.length() {
-                html := obj[A_Index].itemImage
-                itemHtml := SubStr(html, InStr(html, "/w/") + 3) ; normal name 'Slayer's enchantment' html wiki name 'Slayer%27s_enchantment'
-                itemHtml := SubStr(itemHtml, 1, InStr(itemHtml, ">") - 2)
                 item := obj[A_Index].itemName
+                If (item = "Nothing")
+                    continue
+                itemId := runeLite.GetId(item)
 
-                path := g_itemImgsPath "\" item ".png"
+                path := g_itemImgsPath "\" itemId ".png"
                 If FileExist(path)
                     continue
 
-                If (item = "Nothing") ; 'Nothing' is a drop in rare drop tables
-                    FileCopy, % A_ScriptDir "\res\img\Nothing.png", % path, 0
-                else {
-                    url := wiki.GetImageUrl(itemHtml)
-                    DownloadToFile(url, path)
-                }
+                url := runeLite.GetImgUrl(itemId)
 
-                tooltip % A_Index
+                DownloadToFile(url, path)
             }
         }
     }

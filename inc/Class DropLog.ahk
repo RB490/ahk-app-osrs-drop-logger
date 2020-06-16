@@ -1,4 +1,4 @@
-; example in res\example class_dropTable.json
+; example in info\example class_dropTable.json
 class class_dropLog {   
     ; output = {string} containing current trip drops
     Get() {

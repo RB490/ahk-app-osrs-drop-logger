@@ -8,8 +8,10 @@
 ; Global vars
     global  g_debug         := true
     global  g_itemImgsPath  := A_ScriptDir "\res\img\items"
+    global  g_itemIdsPath   := A_ScriptDir "\res\itemIds.json"
     global  g_selectedDrops := {}
     global  wiki            := new class_wiki
+    global  runeLite        := new class_runeLite
     global  logGui          := new class_gui_logger("Log Gui")
     global  dropTable       := new class_dropTable
     global  dropLog         := new class_dropLog
@@ -20,6 +22,7 @@
     FileRead, Input, % A_ScriptDir "\settings.json"
     If (Input) and !(Input = "{}") and !(Input = """" """") ; double quotes
         settings := json.load(Input)
+
 
     dropTable.GetDrops("Black_demon")
     dropLog.Load("some input")
@@ -43,6 +46,7 @@ return
     #Include, %A_ScriptDir%\inc
     #Include Class DropTable.ahk
     #Include Class DropLog.ahk
+    #Include Class RuneLite.ahk
     #Include Class Gui Logger.ahk
     #Include Class Wiki.ahk
     #Include Functions.ahk
