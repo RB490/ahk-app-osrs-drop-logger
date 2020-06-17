@@ -13,12 +13,12 @@
     global  g_selectedDrops     := {}
     global  g_selectedMob
     global  g_path_dropLog
-    global  wiki                := new class_wiki
-    global  runeLite            := new class_runeLite
+    global  runeLiteApi         := new class_api_runeLite
+    global  wikiApi             := new class_api_wiki
+    global  dropLog             := new class_dropLog
+    global  dropTable           := new class_dropTable
     global  logGui              := new class_gui_logger("Log Gui")
     global  mobGui              := new class_gui_mob("Mob Gui")
-    global  dropTable           := new class_dropTable
-    global  dropLog             := new class_dropLog
     global  settings            := {}
 
 ; Auto-execute
@@ -28,10 +28,10 @@
     If (Input) and !(Input = "{}") and !(Input = """" """") ; double quotes
         settings := json.load(Input)
 
-    ; dropTable.GetDrops("Black_demon")
+    dropTable.GetDrops("goblin")
     ; dropLog.Load("some input")
-    ; logGui.Setup()
-    mobGui.Setup()
+    logGui.Setup()
+    ; mobGui.Setup()
 return
 
 ; Global hotkeys
@@ -51,10 +51,10 @@ return
     #Include, <class gui>
     #Include, <CommandFunctions>
     #Include, %A_ScriptDir%\inc
-    #Include Class DropTable.ahk
+    #Include Class Api RuneLite.ahk
+    #Include Class Api Wiki.ahk
     #Include Class DropLog.ahk
-    #Include Class RuneLite.ahk
+    #Include Class DropTable.ahk
     #Include Class Gui Logger.ahk
     #Include Class Gui Mob.ahk
-    #Include Class Wiki.ahk
     #Include Functions.ahk

@@ -97,13 +97,17 @@ gui class for selecting a mob and file
         open drop log file with drop log class
         show log gui
 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ completed ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 separate runelite class 'item id' stuff and 'api' stuff? same for wiki with getimgurl and the table things
 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ completed ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+completely rewrite drop log class, check total lines before and after
+
+add loading and saving drop logs functionality
+
 handle item quantities
-    some items appear multiple times per table with different quantities eg. 'coins' in 'black demon'
-        combine them?
+    some items appear multiple times per table with different quantities eg. 'coins' in 'black demon' or 'goblin'
+        combine them. but quantities need to be preserved
     varierty of different quantity formats eg.
         1
         N/A
@@ -128,11 +132,15 @@ use wiki api in wiki class
 bugs
     gui log > select a drop > select the same drop right after > no response, why this delay?
 
+add stats class
+
+look at older versions of the program for functionality eg. add current trip information (in the program title or somewhere else)
+
 optimizing
     test the program
         - which processes take up the most amount of load time, reduce those
         - large drop logs
     
     bulk file download
-    goal: function that calls separate script file to download files (images) quickly,
-        use this in the drop table class to get images fast
+        goal: function that calls separate script file to download files (images) quickly,
+            use this in the drop table class to get images fast

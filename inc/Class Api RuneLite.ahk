@@ -1,9 +1,8 @@
 ; retrieve item ids from runelite source code
-class class_runeLite {
+class class_api_runeLite {
     __New() {
         this.itemIdUrl := "https://raw.githubusercontent.com/runelite/runelite/master/runelite-api/src/main/java/net/runelite/api/ItemID.java"
         this.apiMainUrl := "https://static.runelite.net/api/http-service/"
-        this.apiUrl := this._GetApiUrl()
 
         If !(FileExist(g_path_itemIds))
             this._DownloadItemIdFile()
@@ -12,9 +11,13 @@ class class_runeLite {
     }
 
     GetImgUrl(itemId) {
+        If !(this.apiUrl)
+            this.apiUrl := this._GetApiUrl()
+
         return this.apiUrl "/cache/item/" itemId "/image"
     }
 
+    ; get current version api url eg. 'HTTPS://api.runelite.net/runelite-1.6.19'
     _GetApiUrl() {
         html := DownloadToString(this.apiMainUrl)
 

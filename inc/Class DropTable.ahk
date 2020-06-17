@@ -14,11 +14,11 @@ class class_DropTable {
             SplashTextOn, 300, 75, % A_ScriptName, Retrieving drop table for %input%...
 
         ;;; retrieve drop tables
-        this.obj := wiki.GetDroptables(input)
+        this.obj := wikiApi.GetDroptables(input)
         If !(IsObject(this.obj))
             return false
-        ; FileAppend, % json.dump(this.obj,,2), % A_ScriptDir "\info\example class_wiki.GetDroptables('Black_demon').json"
-        ; this.obj := json.load(FileRead(A_ScriptDir "\info\example class_wiki.GetDroptables('Black_demon').json"))
+        ; FileAppend, % json.dump(this.obj,,2), % A_ScriptDir "\info\example class_api_wiki.GetDroptables('Black_demon').json"
+        ; this.obj := json.load(FileRead(A_ScriptDir "\info\example class_api_wiki.GetDroptables('Black_demon').json"))
 
         ;;; retrieve drop images
         this._GetItemImages()
@@ -27,6 +27,7 @@ class class_DropTable {
         this._ObjMergeDupeTables()
         this._ObjMergeDupeDrops()
         this._ObjMergeSmallTables()
+        ; this._ObjMergeSameQuantityDrops()
         this._ObjRenameTables()
         
         SplashTextOff
@@ -59,13 +60,13 @@ class class_DropTable {
                 item := obj[A_Index].itemName
                 If (item = "Nothing")
                     continue
-                itemId := runeLite.GetId(item)
+                itemId := runeLiteApi.GetId(item)
 
                 path := g_path_itemImages "\" itemId ".png"
                 If FileExist(path)
                     continue
 
-                url := runeLite.GetImgUrl(itemId)
+                url := runeLiteApi.GetImgUrl(itemId)
 
                 DownloadToFile(url, path)
             }
@@ -105,6 +106,38 @@ class class_DropTable {
         this.obj.push(output)
     }
 
+    ; purpose = merge multiple drops of the same item, preserving the different quantities
+    _ObjMergeSameQuantityDrops() {
+        
+        clipboard := json.dump(this.obj,,2) 
+        msgbox looping  clipboard
+        
+        loop % this.obj.length() {
+            output := {}
+            table := this.obj[A_Index]
+
+            loop % table.tableDrops.length() {
+                drop := table.tableDrops[A_Index]
+                
+                msgbox % drop
+
+                dropPos := this._FindDrop(output, drop)
+                If (dropPos)
+                    msgbox % dropPos
+
+
+                If !(dropPos)
+                    output.push(drop)
+                else
+                    output[dropPos].itemQuantity := "this is a test"
+                    ; output[dropPos].itemQuantity := output[dropPos].itemQuantity "#" drop.itemQuantity
+            }
+            this.obj[A_Index].tableDrops := output ; replace table
+        }
+        clipboard := json.dump(this.obj,,2)
+        msgbox
+    }
+
     ; purpose = merge the drops from duplicate tables eg. in 'black demon'
     _ObjMergeDupeTables() {
         output := {}
@@ -142,7 +175,7 @@ class class_DropTable {
             loop % table.length() {
                 drop := table[A_Index]
                 
-                isDuplicate := this._FindDrop(newTable, drop)
+                isDuplicate := this._FindDrop(newTable, drop, "identicalQuantity")
 
                 If !(isDuplicate)
                     newTable.push(drop)
@@ -198,17 +231,23 @@ class class_DropTable {
     /*
         param <obj>         = {object} drop table object
         param <input>       = {object} item drop object
-        returns             = {bool} true if found inside specified drop table
+        returns             = {integer} index if found inside specified drop table
     */
-    _FindDrop(obj, input) {
+    _FindDrop(obj, input, identicalQuantity := false) {
         If !(obj.length())
             return false
-        
+
         loop % obj.length() {
             haystack := obj[A_Index]
 
-            If (haystack.itemName = input.itemName) and (haystack.itemQuantity = input.itemQuantity)
-                return true
+            If (identicalQuantity) {
+                If (haystack.itemName = input.itemName) and (haystack.itemQuantity = input.itemQuantity)
+                    return A_Index
+                continue
+            }
+
+            If (haystack.itemName = input.itemName)
+                return A_Index
         }
         return false
     }

@@ -61,7 +61,7 @@ class class_gui_mob extends gui {
     _LoadMobImage() {
         path := g_path_mobImages "\" settings.selectedMob ".png"
         If !(FileExist(path)) {
-            url := wiki.GetMobUrl(settings.selectedMob)
+            url := wikiApi.GetMobUrl(settings.selectedMob)
             DownloadToFile(url, path)
         }
 
