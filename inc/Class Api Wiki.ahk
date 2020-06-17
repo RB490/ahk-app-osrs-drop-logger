@@ -70,10 +70,10 @@ class class_api_wiki {
 
     /*
         param <input>      = {string} wiki page containing drop tables eg. 'Vorkath'
-        returns            =  success {object} drop table, example @ "\info\example class_api_wiki.GetDroptables('Black_demon').json"
+        returns            =  success {object} drop table, example @ "\info\example class_api_wiki.GetDropTables('Black_demon').json"
                               failure {integer} false
     */
-    GetDroptables(input) {
+    GetDropTables(input) {
         input := this._EncodeText(input)
         html := DownloadToString(this.url "/w/" input)
         doc := ComObjCreate("HTMLfile")
@@ -97,8 +97,8 @@ class class_api_wiki {
             table := this._GetTable(A_Index-1)
 
             entry := {}
-            entry.tableTitle := title
-            entry.tableDrops := table
+            entry.title := title
+            entry.drops := table
             output.push(entry)
         }
         return output
@@ -122,17 +122,17 @@ class class_api_wiki {
                 cell := row.cells[A_Index-1]
                 
                 If (A_Index = 1)
-                    item.itemImage := cell.innerHtml
+                    item.iconHtml := cell.innerHtml
                 If (A_Index = 2)
-                    item.itemName := cell.innerText
+                    item.name := cell.innerText
                 If (A_Index = 3)
-                    item.itemQuantity := cell.innerText
+                    item.quantity := cell.innerText
                 If (A_Index = 4)
-                    item.itemRarity := cell.innerText
+                    item.rarity := cell.innerText
                 If (A_Index = 5)
-                    item.itemPrice := cell.innerText
+                    item.price := cell.innerText
                 If (A_Index = 6)
-                    item.itemHighAlch := cell.innerText
+                    item.highAlchPrice := cell.innerText
             }
             output.push(item)
        }

@@ -9,22 +9,22 @@
     "drops": [
       [
         {
-          "itemName": "Coins",
-          "itemQuantity": "3,000"
+          "name": "Coins",
+          "quantity": "3,000"
         },
         {
-          "itemName": "Loop half of key",
-          "itemQuantity": "1"
+          "name": "Loop half of key",
+          "quantity": "1"
         },
         {
-          "itemName": "Tooth half of key",
-          "itemQuantity": "1"
+          "name": "Tooth half of key",
+          "quantity": "1"
         }
       ],
       [
         {
-          "itemName": "Law rune",
-          "itemQuantity": "15"
+          "name": "Law rune",
+          "quantity": "15"
         }
       ]
     ],
@@ -41,12 +41,12 @@
     "drops": [
       [
         {
-          "itemName": "Dragon med helm",
-          "itemQuantity": "1"
+          "name": "Dragon med helm",
+          "quantity": "1"
         },
         {
-          "itemName": "Death rune",
-          "itemQuantity": "45"
+          "name": "Death rune",
+          "quantity": "45"
         }
       ]
     ],

@@ -59,6 +59,9 @@ class class_gui_mob extends gui {
     }
 
     _LoadMobImage() {
+        If !(settings.selectedMob)
+            return  
+        
         path := g_path_mobImages "\" settings.selectedMob ".png"
         If !(FileExist(path)) {
             url := wikiApi.GetMobUrl(settings.selectedMob)
@@ -73,6 +76,11 @@ class class_gui_mob extends gui {
         this.update()
     }
 
+    SearchBoxReset() {
+        this.SetText("edit1")
+        this.Update()
+    }
+
     BtnAdd() {
         ; receive input
         input := this.GetText("edit1")
@@ -83,15 +91,17 @@ class class_gui_mob extends gui {
         ; check if mob already exists
         If (settings.mobs.HasKey(input)) {
             settings.selectedMob := input
-            this.SetText("edit1")
-            this.Update()
+            this.SearchBoxReset()
             return
         }
 
         ; check if input is a mob with drop tables
-        isValidMob := dropTable.GetDrops(newMob)
-        If !(isValidMob)
+        isValidMob := dropTable.Get(input)
+        If !(isValidMob) {
+            msgbox, 4160, , % A_ThisFunc ": Could not find drop table for '" input "'!"
+            this.SearchBoxReset()
             return
+        }
 
         ; save mob
         If !(IsObject(settings.mobs))
@@ -100,8 +110,7 @@ class class_gui_mob extends gui {
 
         ; apply new mob
         settings.selectedMob := input
-        this.SetText("edit1")
-        this.Update()
+        this.SearchBoxReset()
     }
 
     BtnLog() {
@@ -114,7 +123,7 @@ class class_gui_mob extends gui {
         }
         g_path_dropLog := SelectedFile
 
-        dropTable.GetDrops(settings.selectedMob)
+        dropTable.Get(settings.selectedMob)
         dropLog.Load(g_path_dropLog)
         logGui.Setup()
     }

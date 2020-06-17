@@ -20,15 +20,15 @@ OnWM_LBUTTONDOWN(wParam, lParam, msg, hWnd) {
 
     id := SubStr(OutputAssociatedVar, InStr(OutputAssociatedVar, "#") + 1)
     obj := dropTable.GetDrop(id)
-    Obj.Delete("itemHighAlch")
-    Obj.Delete("itemImage")
-    Obj.Delete("itemPrice")
-    Obj.Delete("itemRarity")
+    Obj.Delete("iconHtml")
+    Obj.Delete("highAlchPrice")
+    Obj.Delete("price")
+    Obj.Delete("rarity")
 
     g_selectedDrops.push(obj)
 
     loop % g_selectedDrops.length()
-        drops .= g_selectedDrops[A_Index].itemQuantity " x " g_selectedDrops[A_Index].itemName ", "
+        drops .= g_selectedDrops[A_Index].quantity " x " g_selectedDrops[A_Index].name ", "
     drops := RTrim(drops, ", ")
 
     logGui.SetText("edit1", drops)

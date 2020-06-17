@@ -136,8 +136,8 @@ class class_gui_logger extends gui {
         maxRowDrops := 10 ; after this amount of drops a new row is started
 
         loop % dropTable.obj.length() {
-            tab := dropTable.obj[A_Index].tableTitle
-            drops := dropTable.obj[A_Index].tableDrops
+            tab := dropTable.obj[A_Index].title
+            drops := dropTable.obj[A_Index].drops
 
             ; add tab
             GuiControl,, SysTabControl321, % tab
@@ -149,10 +149,10 @@ class class_gui_logger extends gui {
                 If (rowDrops = maxRowDrops)
                     rowDrops := 0
 
-                If (drops[A_Index].itemName = "Nothing")
+                If (drops[A_Index].name = "Nothing")
                     dropImg := A_ScriptDir "\res\img\Nothing.png"
                 else
-                    dropImg := g_path_itemImages "\" runeLiteApi.GetId(drops[A_Index].itemName) ".png"
+                    dropImg := g_path_itemImages "\" runeLiteApi.GetId(drops[A_Index].name) ".png"
 
                 totalItems++
                 dropVar := "g_vLogGuiItem#" totalItems

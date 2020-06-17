@@ -1,253 +1,198 @@
-; purpose = modify and retrieve drop tables information
-class class_DropTable {
-    __New() {
-        this.minTableSize := 32 ; tables below this many itemes get merged together. rdt has 33 drops
+Class class_dropTable {
+    
+    /*
+        param <input>       = {integer} number of drop going through all tables
+        returns             = {object} found drop information
+    */
+    GetDrop(input) {
+        tables := this.obj
+        loop % tables.length() {
+            table := tables[A_Index]
+            drops := table.drops
+
+            loop % drops.length() {
+                drop := drops[A_Index]
+                loopedDrops++
+                If (loopedDrops = input)
+                    return drop
+            }
+        }
+        msgbox, 4160, , % A_ThisFunc ": Could not find drop '" input "'!"
     }
 
-    /*
-        param <input>       = {string} context sensitive wiki page containing drop tables eg. 'Vorkath'
-        purpose             = retrieve a mob's drop table and download drop item images
-        returns             = {boolean} true if successfull
-    */
-    GetDrops(input) {
+    ; input = {string} wiki page containing drop tables
+    Get(input) {
         If !(g_debug)
             SplashTextOn, 300, 75, % A_ScriptName, Retrieving drop table for %input%...
-
-        ;;; retrieve drop tables
+        
         this.obj := wikiApi.GetDroptables(input)
         If !(IsObject(this.obj))
             return false
-        ; FileAppend, % json.dump(this.obj,,2), % A_ScriptDir "\info\example class_api_wiki.GetDroptables('Black_demon').json"
-        ; this.obj := json.load(FileRead(A_ScriptDir "\info\example class_api_wiki.GetDroptables('Black_demon').json"))
 
-        ;;; retrieve drop images
-        this._GetItemImages()
+        this._TablesMergeDuplicates()
+        this._TablesMergeBelowX()
+        this._TablesRenaming()
+        this._DropsDeleteDuplicates()
+        this._DropsMergeQuantities()
+        this._DropsGetImages()
 
-        ;;; modify drop tables
-        this._ObjMergeDupeTables()
-        this._ObjMergeDupeDrops()
-        this._ObjMergeSmallTables()
-        ; this._ObjMergeSameQuantityDrops()
-        this._ObjRenameTables()
-        
         SplashTextOff
         return true
     }
 
-    /*
-        param <input>       = {integer} number of drop
-        returns             = {object} found drop information
-    */
-    GetDrop(input) {
-        loop % this.obj.length() {
-            table := A_Index
-            loop % this.obj[table].tableDrops.length() {
-                totalItems++
-                If (totalItems = input) {
-                    output := this.obj[table].tableDrops[A_Index]
-                    break, 2
-                }
-            }
-        }
-        return output
-    }
-
-    ; purpose = download images of all items in the drop table
-    _GetItemImages() {
-        loop % this.obj.length() {
-            obj := this.obj[A_Index].tableDrops
-            loop % obj.length() {
-                item := obj[A_Index].itemName
-                If (item = "Nothing")
-                    continue
-                itemId := runeLiteApi.GetId(item)
-
-                path := g_path_itemImages "\" itemId ".png"
-                If FileExist(path)
-                    continue
-
-                url := runeLiteApi.GetImgUrl(itemId)
-
-                DownloadToFile(url, path)
-            }
-        }
-    }
-
-    ; purpose = merge the drops from smaller tables into a main table
-    _ObjMergeSmallTables() {
-        mergedDrops := {}
-
-        loop % this.obj.length() {
-            table := A_Index
-            drops := this.obj[A_Index].tableDrops
-
-            If (drops.length() > this.minTableSize)
-                Continue
-
-            loop % drops.length() {
-                mergedDrops.push(drops[A_Index])
-            }
-
-            this.obj.Delete(table)
-        }
-
-        ; restructure entire drop tables object because .Delete() changes the object layout to indexed eg.   "2": {    "tableDrops": [
-        newObj := {}
-        loop % this.obj.length() {
-            If !(this.obj[A_Index].tableTitle)
-                continue
-            newObj.push(this.obj[A_Index])
-        }
-        this.obj := newObj
-
+    ; purpose = merge the drops from tables with identical names eg. '100%' in 'black demon'
+    _TablesMergeDuplicates() {
         output := {}
-        output.tableDrops := mergedDrops
-        output.tableTitle := "Main"
-        this.obj.push(output)
-    }
+        tables := this.obj
+        loop % tables.length() {
+            table := tables[A_Index]
+            drops := table.drops
 
-    ; purpose = merge multiple drops of the same item, preserving the different quantities
-    _ObjMergeSameQuantityDrops() {
-        
-        clipboard := json.dump(this.obj,,2) 
-        msgbox looping  clipboard
-        
-        loop % this.obj.length() {
-            output := {}
-            table := this.obj[A_Index]
-
-            loop % table.tableDrops.length() {
-                drop := table.tableDrops[A_Index]
-                
-                msgbox % drop
-
-                dropPos := this._FindDrop(output, drop)
-                If (dropPos)
-                    msgbox % dropPos
-
-
-                If !(dropPos)
-                    output.push(drop)
-                else
-                    output[dropPos].itemQuantity := "this is a test"
-                    ; output[dropPos].itemQuantity := output[dropPos].itemQuantity "#" drop.itemQuantity
-            }
-            this.obj[A_Index].tableDrops := output ; replace table
-        }
-        clipboard := json.dump(this.obj,,2)
-        msgbox
-    }
-
-    ; purpose = merge the drops from duplicate tables eg. in 'black demon'
-    _ObjMergeDupeTables() {
-        output := {}
-        totalTables := this.obj.length()
-
-        loop % totalTables {
-            title := this.obj[A_Index].tableTitle
-            drops := this.obj[A_Index].tableDrops
-            
-            foundDuplicateTable := this._FindTable(output, title)
-
-            If (foundDuplicateTable) {
-                loop % drops.length()
-                    output[foundDuplicateTable].tableDrops.push(drops[A_Index])
-            }
-            else {
-                entry := {}
-                entry.tableTitle := title
-                entry.tableDrops := drops
-                output.push(entry)
-            }
+            found := this._FindTable(output, table.title)
+            If (found) ; add drops from duplicate table to the one already in output
+                loop % drops.length() 
+                    output[found].drops.push(drops[A_Index])
+            else
+                output.push(table)
         }
         this.obj := output
     }
 
-    ; purpose = merge duplicate drops inside each table which can occur eg. in 'black demon'
-    _ObjMergeDupeDrops() {
-        obj := this.obj.clone()
+    ; purpose = merge tables below x into a main table
+    _TablesMergeBelowX() {
+        tablesMergeBelowX := 32
 
-        loop % obj.length() {
-            table := obj[A_Index].tableDrops
-            newTable := {}
+        output := {}
+        output.push({title: "Main", drops: {}})
 
-            ; rebuild this table drop by drop, checking if the drop is not already in the new table
-            loop % table.length() {
-                drop := table[A_Index]
-                
-                isDuplicate := this._FindDrop(newTable, drop, "identicalQuantity")
+        tables := this.obj
+        loop % tables.length() {
+            table := tables[A_Index]
+            drops := table.drops
 
-                If !(isDuplicate)
-                    newTable.push(drop)
+            If (drops.length() >= tablesMergeBelowX) {
+                output.push(table)
+                Continue
             }
 
-            obj[A_Index].tableDrops := newTable
+            loop % drops.length()
+                output[1].drops.push(drops[A_Index])
         }
-        this.obj := obj
+        this.obj := output
     }
 
-    ; purpose = rename categories eg. 'weapons and armor' into 'gear'
-    _ObjRenameTables() {
-        obj := this.obj
+    ; purpose = give tables a shorter name
+    _TablesRenaming() {
+        tables := this.obj
 
-        For table in obj {
-            
-            renamedTitle := ""
+        For table in tables {
+            newTitle := ""
 
-            Switch obj[table].tableTitle {
+            Switch tables[table].title {
                 case "Weapons and armour":
-                    renamedTitle := "Gear"
+                    newTitle := "Gear"
                 case "Rare Drop Table":
-                    renamedTitle := "RDT"
+                    newTitle := "RDT"
                 case "Rare and Gem drop table":
-                    renamedTitle := "RDT + Gems"
+                    newTitle := "RDT + Gems"
                 case "Fletching materials":
-                    renamedTitle := "Fletch"
+                    newTitle := "Fletch"
             }
 
-            If (renamedTitle)
-                obj[table].tableTitle := renamedTitle
+            If (newTitle)
+                tables[table].title := newTitle
         }
     }
 
+    ; purpose = remove drops with identical names and quantitites
+    _DropsDeleteDuplicates() {
+        tables := this.obj
+        loop % tables.length() {
+            table := tables[A_Index]
+            output := {}
+            loop % table.drops.length() {
+                drop := table.drops[A_Index]
+                isDuplicate := this._FindDrop(output, drop, "matchQuantity")
+                If (isDuplicate)
+                    Continue
+                output.push(drop)
+            }
+            this.obj[A_Index].drops := output
+        }
+    }
+
+    ; purpose = merge identical drops combining their quantitites
+    _DropsMergeQuantities() {
+        tables := this.obj
+        loop % tables.length() {
+            table := tables[A_Index]
+            output := {}
+            loop % table.drops.length() {
+                drop := table.drops[A_Index]
+
+                isDuplicate := this._FindDrop(output, drop)
+                If (isDuplicate) {
+                    output[isDuplicate].quantity .= "#" drop.quantity
+                    Continue
+                }
+                output.push(drop)
+            }
+            this.obj[A_Index].drops := output
+        }
+    }
+
+    ; retrieve any missing images
+    _DropsGetImages() {
+        tables := this.obj
+        loop % tables.length() {
+            table := tables[A_Index]
+            loop % table.drops.length() {
+                drop := table.drops[A_Index]
+                If (drop.name = "Nothing")
+                    Continue
+                id := runeLiteApi.GetId(drop.name)
+                path := g_path_itemImages "\" id ".png"
+                If FileExist(path)
+                    Continue
+                url := runeLiteApi.GetImgUrl(id)
+                DownloadToFile(url, path)
+            }
+        }
+    }
+    
     /*
-        param <obj>         = {object} drop tables object
-        param <input>       = {string} 'tableTitle' to be searched
+        param <tables>      = {object} drop tables object
+        param <tableTitle>  = {string} table title to be searched
         returns             = {integer} table index if found, false if not
     */
-    _FindTable(obj, input) {
-        If !(obj.length())
-            return false
-
-        loop % obj.length() {
-            title := obj[A_Index].tableTitle
-
-            If (title = input)
+    _FindTable(tables, tableTitle) {
+        loop % tables.length() {
+            table := tables[A_Index]
+            If (table.title = tableTitle)
                 return A_Index
         }
         return false
     }
 
     /*
-        param <obj>         = {object} drop table object
-        param <input>       = {object} item drop object
-        returns             = {integer} index if found inside specified drop table
+        param <table>       = {object} a single drop table
+        param <drop>        = {object} drop to be searched
+        returns             = {integer} index of found item or false
     */
-    _FindDrop(obj, input, identicalQuantity := false) {
-        If !(obj.length())
-            return false
-
-        loop % obj.length() {
-            haystack := obj[A_Index]
-
-            If (identicalQuantity) {
-                If (haystack.itemName = input.itemName) and (haystack.itemQuantity = input.itemQuantity)
+    _FindDrop(table, drop, matchQuantity := false) {
+        loop % table.length() {
+            haystack := table[A_Index]
+            
+            If (matchQuantity) {
+                If (haystack.name = drop.name) and (haystack.quantity = drop.quantity)
                     return A_Index
-                continue
+                else
+                    Continue
             }
-
-            If (haystack.itemName = input.itemName)
-                return A_Index
+            else
+                If (haystack.name = drop.name)
+                    return A_Index
+            
         }
         return false
     }

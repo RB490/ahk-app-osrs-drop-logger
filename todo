@@ -99,9 +99,11 @@ gui class for selecting a mob and file
 
 separate runelite class 'item id' stuff and 'api' stuff? same for wiki with getimgurl and the table things
 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ completed ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+completely rewrite drop table class, check total lines before and after
 
-completely rewrite drop log class, check total lines before and after
+update example files
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ completed ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 add loading and saving drop logs functionality
 

@@ -8,11 +8,11 @@
 ; Global vars
     global  g_debug             := true
     global  g_path_itemImages   := A_ScriptDir "\res\img\items"
-    global  g_path_mobImages   := A_ScriptDir "\res\img\mobs"
+    global  g_path_mobImages    := A_ScriptDir "\res\img\mobs"
     global  g_path_itemIds      := A_ScriptDir "\res\itemIds.json"
-    global  g_selectedDrops     := {}
-    global  g_selectedMob
     global  g_path_dropLog
+    global  g_selectedMob
+    global  g_selectedDrops     := {}
     global  runeLiteApi         := new class_api_runeLite
     global  wikiApi             := new class_api_wiki
     global  dropLog             := new class_dropLog
@@ -28,10 +28,10 @@
     If (Input) and !(Input = "{}") and !(Input = """" """") ; double quotes
         settings := json.load(Input)
 
-    dropTable.GetDrops("goblin")
+    ; dropTable.Get("black demon")
     ; dropLog.Load("some input")
-    logGui.Setup()
-    ; mobGui.Setup()
+    ; logGui.Setup()
+    mobGui.Setup()
 return
 
 ; Global hotkeys

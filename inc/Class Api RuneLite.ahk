@@ -92,14 +92,14 @@ class class_api_runeLite {
         {
             If !(InStr(A_LoopField, "="))
                 Continue
-            itemName := SubStr(A_LoopField, InStr(A_Loopfield, "public static final int") + 24)
-            itemName := SubStr(itemName, 1, InStr(itemName, "=") - 2)
+            item := SubStr(A_LoopField, InStr(A_Loopfield, "public static final int") + 24)
+            item := SubStr(item, 1, InStr(item, "=") - 2)
             
-            itemId := SubStr(A_LoopField, InStr(A_Loopfield, "=") + 2)
-            itemId := RTrim(itemId, ";")
+            id := SubStr(A_LoopField, InStr(A_Loopfield, "=") + 2)
+            id := RTrim(id, ";")
 
-            ; obj.push({itemName: itemName, itemId: itemId})
-            obj[itemName] := itemId
+            ; obj.push({item: item, id: id})
+            obj[item] := id
         }
         FileDelete, % g_path_itemIds
         FileAppend, % json.dump(obj,,2), % g_path_itemIds

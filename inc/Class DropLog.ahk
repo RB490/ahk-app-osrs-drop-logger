@@ -6,7 +6,7 @@ class class_dropLog {
         loop % obj.length() {
             kill := A_Index
             loop % obj[A_Index].length()
-                drops .= obj[kill][A_Index].itemQuantity " x " obj[kill][A_Index].itemName ", "
+                drops .= obj[kill][A_Index].quantity " x " obj[kill][A_Index].name ", "
             
             drops := RTrim(drops, ", ")
             drops .= "`r `n"
@@ -50,8 +50,8 @@ class class_dropLog {
     ; input = {object} retrieved by dropLog.GetDrop() containing drop information
     Add(input) {
         If !(input.length()) {
-            input.itemName := "Nothing"
-            input.itemQuantity := "N/A"
+            input.name := "Nothing"
+            input.quantity := "N/A"
         }
 
         this.redoActions := {}
