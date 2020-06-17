@@ -66,10 +66,18 @@ class class_gui_quantity extends gui {
             obj.integers := integers
         }
 
+        ; disable log gui
+        logGui.Disable()
+
         ; recreate window if it already exists
         if (WinExist(this.ahkid))
             this.Destroy()
-        this.__New(this.inputObj.name A_Space obj.low " - " obj.high)
+        guiName := this.inputObj.name A_Space
+        If (obj.low)
+            guiName := guiName obj.low " - " obj.high
+        this.__New(guiName)
+
+        this.Owner(logGui.hwnd)
 
         ; events
         this.Events["_HotkeyEnter"] := this.BtnSubmit.Bind(this)
@@ -78,13 +86,13 @@ class class_gui_quantity extends gui {
 
         ; properties
         this.Margin(0, 0)
-        this.Options("+toolwindow +labelquantityGui_")
+        this.Options("+toolwindow  +labelquantityGui_")
         totalButtons := obj.integers.length()
         maxRowLength := 5
         controlSize := 50
 
         ; controls
-        this.Font("s28")
+        this.Font("s29")
         this.Add("edit", "w" controlSize * (maxRowLength - 2) " h" controlSize " center number", obj.middle)
         this.Font("s15")
         this.Add("button", "x+0 w" controlSize * 2 " h" controlSize " gquantityGui_BtnHandler", "Enter")
@@ -121,6 +129,8 @@ class class_gui_quantity extends gui {
         this.Show("x" mouseX - (guiW / 2) " y" mouseY - (guiH / 2))
         DetectHiddenWindows, Off
         WinWaitClose, % this.ahkid
+        logGui.Enable()
+        WinActivate, % logGui.ahkid
     }
 
     ; input = {integer}

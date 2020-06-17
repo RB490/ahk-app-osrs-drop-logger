@@ -33,11 +33,6 @@
     dropLog.Load("some input")
     dropLog.StartTrip()
     logGui.Setup()
-    ; mobGui.Setup()
-
-    ; drop := dropTable.GetDrop(1)
-    ; quantityGui.Get(drop.Quantity)
-    ; quantityGui.Setup()
 return
 
 ; Global hotkeys

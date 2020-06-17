@@ -131,35 +131,40 @@ OnWM_LBUTTONDOWN > handle a variety of different item quantities
         range above X eg. 15 show edit control, possibly pre-loaded with lowest or middle range value
         range above X eg. 15 show slider control, with lowest and highest range values
         possible solution = show edit control always and add buttons after that
-    
+
+bug gui log > select a drop > select the same drop right after > no response, why this delay?
+    solution: something to do with how microsoft coded WM_LBUTTONDOWN(), if you click in different spots on the image its fine
+
+class_gui_quantity > disable logGui while its open
+
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ completed ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-add loading and saving drop logs functionality
+refactor > class_gui_quantity
 
-log gui shizzle
+feature > loading and saving drop logs
+
+gui stuff > log
     create a nice layout once all the necessary components are functional
     combine buttons eg. start death can change into end death and ending a trip
         while death is active should automatically end the death
 
-add ability to use proper mobs / items images by figuring out/ trying ahk resizing methods:
-    irfanview?
-    ResConImg() : https://www.autohotkey.com/boards/viewtopic.php?t=2505
-        also supports adding border to image, which is exactly what i need for item images < see last comment:
-            https://autohotkey.com/board/topic/51035-add-border-on-images/
+refactor > use wiki api in wiki class
 
-use wiki api in wiki class
+feature > add stats class
 
-bugs
-    gui log > select a drop > select the same drop right after > no response, why this delay?
+feature > achieve feature parity with older versions. check older versions
+    eg. add current trip information (in the program title or somewhere else)
 
-add stats class
+optimize > test the program
+    which processes take up the most amount of load time, reduce those
+    large drop logs
 
-look at older versions of the program for functionality eg. add current trip information (in the program title or somewhere else)
-
-optimizing
-    test the program
-        - which processes take up the most amount of load time, reduce those
-        - large drop logs
+feature > images
+    add ability to use proper mobs / items images by figuring out/ trying ahk resizing methods:
+        irfanview?
+        ResConImg() : https://www.autohotkey.com/boards/viewtopic.php?t=2505
+            also supports adding border to image, which is exactly what i need for item images < see last comment:
+                https://autohotkey.com/board/topic/51035-add-border-on-images/
     
     bulk file download
         goal: function that calls separate script file to download files (images) quickly,
