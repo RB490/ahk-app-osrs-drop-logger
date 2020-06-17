@@ -11,6 +11,36 @@ class class_api_wiki {
         return output
     }
 
+    ; input = {string} wiki item quantities eg:
+        ; 1
+        ; N/A
+        ; 3,000
+        ; 250–499
+        ; 20,000–81,000
+        ; ^ <quantity> + ' (noted)'
+    ; output = {string} with 'junk' removed eg. 3,000 > 3000
+    _DecodeQuantity(input) {
+        output := input
+        If (output = "N/A")
+            output := 1
+        output := StrReplace(output, ",")
+        output := StrReplace(output, " (noted)")
+
+        ; replace any character besides integers with "-" because the wiki uses a weird dash
+        ; in their quantitites that glitches out ahk eg. 250-499 becomes 250â€“499
+        loop, parse, output
+        {
+            If A_LoopField is Integer
+                LoopField .= A_LoopField
+            else
+                LoopField .= "-"
+
+        }
+        output := LoopField
+
+        return output
+    }
+
     /*
         param <input>      = {string} wiki page containing item eg. 'Skeletal wyvern'
         returns            = {string} url to high res image example: https://oldschool.runescape.wiki/images/6/6f/Skeletal_Wyvern.png
@@ -126,7 +156,7 @@ class class_api_wiki {
                 If (A_Index = 2)
                     item.name := cell.innerText
                 If (A_Index = 3)
-                    item.quantity := cell.innerText
+                    item.quantity := this._DecodeQuantity(cell.innerText)
                 If (A_Index = 4)
                     item.rarity := cell.innerText
                 If (A_Index = 5)

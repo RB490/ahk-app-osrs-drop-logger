@@ -19,6 +19,7 @@
     global  dropTable           := new class_dropTable
     global  logGui              := new class_gui_logger("Log Gui")
     global  mobGui              := new class_gui_mob("Mob Gui")
+    global  quantityGui         := new class_gui_quantity("Quantity Gui")
     global  settings            := {}
 
 ; Auto-execute
@@ -28,10 +29,15 @@
     If (Input) and !(Input = "{}") and !(Input = """" """") ; double quotes
         settings := json.load(Input)
 
-    ; dropTable.Get("black demon")
-    ; dropLog.Load("some input")
-    ; logGui.Setup()
-    mobGui.Setup()
+    dropTable.Get("black demon")
+    dropLog.Load("some input")
+    dropLog.StartTrip()
+    logGui.Setup()
+    ; mobGui.Setup()
+
+    ; drop := dropTable.GetDrop(1)
+    ; quantityGui.Get(drop.Quantity)
+    ; quantityGui.Setup()
 return
 
 ; Global hotkeys
@@ -57,4 +63,5 @@ return
     #Include Class DropTable.ahk
     #Include Class Gui Logger.ahk
     #Include Class Gui Mob.ahk
+    #Include Class Gui Quantity.ahk
     #Include Functions.ahk

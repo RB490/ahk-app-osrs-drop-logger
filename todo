@@ -103,11 +103,7 @@ completely rewrite drop table class, check total lines before and after
 
 update example files
 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ completed ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-add loading and saving drop logs functionality
-
-handle item quantities
+drop log > combine item quantities
     some items appear multiple times per table with different quantities eg. 'coins' in 'black demon' or 'goblin'
         combine them. but quantities need to be preserved
     varierty of different quantity formats eg.
@@ -117,6 +113,28 @@ handle item quantities
         250–499
         20,000–81,000
         ^ <quantity> + ' (noted)'
+
+weird wiki dash '-' thing is converted to gibberish in autohotkey making it difficult to use functins like SubStr()
+
+OnWM_LBUTTONDOWN > handle a variety of different item quantities
+    examples
+        1
+        N/A
+        3,000
+        250–499
+        20,000–81,000
+        ^ <quantity> + ' (noted)'
+        ...and some items will have a combination of these
+    show multiple guis or a single gui with input styles for each quantity:
+        1 = 1 button
+        range between X eg. 15 show 15 buttons
+        range above X eg. 15 show edit control, possibly pre-loaded with lowest or middle range value
+        range above X eg. 15 show slider control, with lowest and highest range values
+        possible solution = show edit control always and add buttons after that
+    
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ completed ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+add loading and saving drop logs functionality
 
 log gui shizzle
     create a nice layout once all the necessary components are functional

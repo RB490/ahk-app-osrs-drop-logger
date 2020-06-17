@@ -25,6 +25,11 @@ OnWM_LBUTTONDOWN(wParam, lParam, msg, hWnd) {
     Obj.Delete("price")
     Obj.Delete("rarity")
 
+    If InStr(obj.quantity, "#")
+        obj.quantity := quantityGui.Get(obj)
+    If !(obj.quantity)
+        return
+
     g_selectedDrops.push(obj)
 
     loop % g_selectedDrops.length()
@@ -41,4 +46,12 @@ ObjFullyClone(obj)
 		if IsObject(v)
 			nobj[k] := A_ThisFunc.(v)
 	return nobj
+}
+
+ansi2utf8(str)
+{
+	FileOpen(".utf8", "w", "UTF-8-RAW").Write(str)
+	FileRead, str_utf8, .utf8
+	FileDelete, .utf8
+	Return, str_utf8
 }

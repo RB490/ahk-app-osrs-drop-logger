@@ -14,7 +14,7 @@ Class class_dropTable {
                 drop := drops[A_Index]
                 loopedDrops++
                 If (loopedDrops = input)
-                    return drop
+                    return ObjFullyClone(drop)
             }
         }
         msgbox, 4160, , % A_ThisFunc ": Could not find drop '" input "'!"
