@@ -18,7 +18,7 @@
     global  wikiApi             := new class_api_wiki
     global  dropLog             := new class_drop_log
     global  dropTable           := new class_drop_table
-    global  logGui              := new class_gui_logger("Log Gui")
+    global  logGui              := new class_gui_log("Log Gui")
     global  mobGui              := new class_gui_mob("Mob Gui")
     global  quantityGui         := new class_gui_quantity("Quantity Gui")
     global  settings            := {}
@@ -37,6 +37,9 @@
     ; mobGui.Setup()
     
     ; msgbox hi there
+
+    ; quantityGui.Debug_Get()
+    ; return
 
     dropLog.Load(g_path_dropLog)
     logGui.Setup()

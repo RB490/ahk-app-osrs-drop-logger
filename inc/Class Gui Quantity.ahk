@@ -1,13 +1,28 @@
 class class_gui_quantity extends gui {
     /*
         input = {object} item object from 'dropTable.GetDrop()' this method uses 
-            input.quantity which contains one or multiple wiki drop table quantities separated by '#'
+            input.quantity  contains one or multiple wiki drop table quantities separated by '#'
             example: 132#30#44#220#460#250-499#250#500-749#500-999
+        
+        purpose =  sets this.obj eg:
+            {
+                "high": 999,
+                "integersObj": [
+                    "132",
+                    "30",
+                    "44",
+                    "220",
+                    "460",
+                    "250"
+                ],
+                "low": 250
+            }
     */
     Get(input) {
-        this.inputObj := input
-        arr := StrSplit(this.inputObj.quantity, "#")
-        objInts := {}
+        this.obj := {}
+        this.obj.dropName := input.name
+        arr := StrSplit(input.quantity, "#")
+        ints := {}
         
         ; get lowest & highest range
         loop % arr.length() {
@@ -26,58 +41,44 @@ class class_gui_quantity extends gui {
                 arr.Delete(A_Index)
             }
             else
-                objInts.push(arr[A_Index])
+                ints.push(arr[A_Index])
         }
 
-        obj := {}
-        obj.low := recordLow
-        obj.high := recordHigh
-        obj.middle := (obj.high - obj.low) / 2 + obj.low
-        obj.middle := Round(obj.middle)
-        obj.integers := objInts
+        this.obj.lowestQuantity := recordLow
+        this.obj.highestQuantity := recordHigh
+        middle := (recordHigh - recordLow) / 2 + recordLow
+        middle := Round(middle)
+         If (middle = 0)
+            middle := ints[1]
+        this.obj.medianQuantity := middle
+        this.obj.integersObj := ints
 
-        this.Setup(obj)
+        this.Setup()
         return this.output
     }
-    
 
-    /*
-    ; obj = {object} containing information received by Get() method. example:
-        {
-            "high": 999,
-            "integers": [
-                "132",
-                "30",
-                "44",
-                "220",
-                "460",
-                "250"
-            ],
-            "low": 250
-        }
-    */
-    Setup(obj:="") {
-        If !(obj) {
-            integers := [123, 30, 44, 220, 460, 250, 9001]
-            obj := {}
-            obj.high := 999
-            obj.middle := 375
-            obj.low := 250
-            obj.integers := integers
-        }
+    Debug_Get() {
+        integersObj := [123, 30, 44, 220, 460, 250, 9001]
+        obj := {}
+        obj.highestQuantity := 999
+        obj.medianQuantity := 375
+        obj.lowestQuantity := 250
+        obj.integersObj := integersObj
+        this.obj := obj
+        this.Setup()
+        return this.output
+    }
 
-        ; disable log gui
+    Setup() {
         logGui.Disable()
 
         ; recreate window if it already exists
         if (WinExist(this.ahkid))
             this.Destroy()
-        guiName := this.inputObj.name A_Space
-        If (obj.low)
-            guiName := guiName obj.low " - " obj.high
+        guiName := this.obj.dropName A_Space
+        If (this.obj.lowestQuantity)
+            guiName := guiName this.obj.lowestQuantity " - " this.obj.highestQuantity
         this.__New(guiName)
-
-        this.Owner(logGui.hwnd)
 
         ; events
         this.Events["_HotkeyEnter"] := this.BtnSubmit.Bind(this)
@@ -85,15 +86,16 @@ class class_gui_quantity extends gui {
         this.Events["_BtnEnter"] := this.BtnSubmit.Bind(this)
 
         ; properties
+        this.Owner(logGui.hwnd)
         this.Margin(0, 0)
         this.Options("+toolwindow  +labelquantityGui_")
-        totalButtons := obj.integers.length()
+        totalButtons := this.obj.integersObj.length()
         maxRowLength := 5
         controlSize := 50
 
         ; controls
         this.Font("s29")
-        this.Add("edit", "w" controlSize * (maxRowLength - 2) " h" controlSize " center number", obj.middle)
+        this.Add("edit", "w" controlSize * (maxRowLength - 2) " h" controlSize " center number", this.obj.medianQuantity)
         this.Font("s15")
         this.Add("button", "x+0 w" controlSize * 2 " h" controlSize " gquantityGui_BtnHandler", "Enter")
 
@@ -102,9 +104,9 @@ class class_gui_quantity extends gui {
                 rowLength := 0
 
             If (A_Index = 1) or !(rowLength)
-                this.Add("button", "x0 w" controlSize " h" controlSize " gquantityGui_BtnHandler", obj.integers[A_Index])
+                this.Add("button", "x0 w" controlSize " h" controlSize " gquantityGui_BtnHandler", this.obj.integersObj[A_Index])
             else
-                this.Add("button", "x+0 w" controlSize " h" controlSize " gquantityGui_BtnHandler", obj.integers[A_Index])
+                this.Add("button", "x+0 w" controlSize " h" controlSize " gquantityGui_BtnHandler", this.obj.integersObj[A_Index])
 
             rowLength++
         }
@@ -129,12 +131,14 @@ class class_gui_quantity extends gui {
         this.Show("x" mouseX - (guiW / 2) " y" mouseY - (guiH / 2))
         DetectHiddenWindows, Off
         WinWaitClose, % this.ahkid
+
+        ; on closing
         logGui.Enable()
         WinActivate, % logGui.ahkid
     }
 
     ; input = {integer}
-    IntegerHandler(input) {
+    BtnIntegerHandler(input) {
         this.output := input
         this.Destroy()
     }
@@ -155,8 +159,9 @@ quantityGui_BtnHandler:
     ControlGetText, OutputControlText, % OutputControl, A
     OutputControlText := StrReplace(OutputControlText, A_Space)
 
+    ; call specific method if a integer button is pressed
     If OutputControlText is Integer
-        quantityGui.IntegerHandler(OutputControlText)
+        quantityGui.BtnIntegerHandler(OutputControlText)
 
     ; call the class's method
     for a, b in class_gui_quantity.Instances 

@@ -1,4 +1,4 @@
-class class_gui_logger extends gui {
+class class_gui_log extends gui {
     Setup() {
         ; events
         this.Events["_BtnClear"] := this.ClearDrops.Bind(this)
@@ -40,8 +40,6 @@ class class_gui_logger extends gui {
         ; show
         this.Show()
         this.Update()
-
-        ; dropLog.Debug()
     }
 
     Update() {
@@ -186,14 +184,14 @@ logGui_BtnHandler:
     OutputControlText := StrReplace(OutputControlText, A_Space)
 
     ; call the class's method
-    for a, b in class_gui_logger.Instances 
+    for a, b in class_gui_log.Instances 
 		if (a = A_Gui+0)
 			b["Events"]["_Btn" OutputControlText].Call()
 return
 
 logGui_Close:
     ; call the class's method
-    for a, b in class_gui_logger.Instances 
+    for a, b in class_gui_log.Instances 
 		if (a = A_Gui+0)
 			b["Events"]["_BtnClose"].Call()
 return

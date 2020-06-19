@@ -139,11 +139,11 @@ class_gui_quantity > disable logGui while its open
 
 feature > loading and saving drop logs
 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ completed ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 bug > 'black demon' drop log main tab choose addy bar, edit field is set to 0
 
 refactor > class_gui_quantity
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ completed ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 feature > gui log
     create a nice layout once all the necessary components are functional
@@ -168,6 +168,7 @@ feature > add stats class
 feature > achieve feature parity with older versions. check older versions
     eg. add current trip information (in the program title or somewhere else)
 
-optimize > test the program
-    which processes take up the most amount of load time, reduce those
+optimize > test the program using tick count function/class
     large drop logs
+    which processes take up the most amount of load time, reduce those
+        pretty slow update onto log gui after selecting a custom quantity through quantity gui
