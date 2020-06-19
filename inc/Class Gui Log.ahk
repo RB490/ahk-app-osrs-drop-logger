@@ -9,9 +9,11 @@ class class_gui_logger extends gui {
         this.Events["_BtnEndTrip"] := this.EndTrip.Bind(this)
         this.Events["_BtnStartDeath"] := this.StartDeath.Bind(this)
         this.Events["_BtnEndDeath"] := this.EndDeath.Bind(this)
+        this.Events["_BtnClose"] := this.Close.Bind(this)
 
         ; properties
         this.SetDefault() ; set as default for GuiControl
+        this.Options("+labellogGui_") ; set as default for GuiControl
         this.marginSize := 10
 
         ; controls
@@ -170,6 +172,10 @@ class class_gui_logger extends gui {
 
         this.Tab("") ; Future controls are not part of any tab control.
         this.Margin(this.marginSize, this.marginSize) ; restore margin size
+    }
+
+    Close() {
+        exitapp
     }
 }
 

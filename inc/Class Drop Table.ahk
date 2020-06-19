@@ -1,4 +1,4 @@
-Class class_dropTable {
+Class class_drop_table {
     
     /*
         param <input>       = {integer} number of drop going through all tables

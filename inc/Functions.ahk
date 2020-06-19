@@ -1,6 +1,8 @@
 ExitFunc(ExitReason, ExitCode) {
-    FileDelete, % A_ScriptDir "\settings.json"
-    FileAppend, % json.dump(settings,,2), % A_ScriptDir "\settings.json"
+    FileDelete, % g_path_settings
+    FileAppend, % json.dump(settings,,2), % g_path_settings
+
+    dropLog.Save()
 }
 
 OnWM_LBUTTONDOWN(wParam, lParam, msg, hWnd) {
@@ -46,12 +48,4 @@ ObjFullyClone(obj)
 		if IsObject(v)
 			nobj[k] := A_ThisFunc.(v)
 	return nobj
-}
-
-ansi2utf8(str)
-{
-	FileOpen(".utf8", "w", "UTF-8-RAW").Write(str)
-	FileRead, str_utf8, .utf8
-	FileDelete, .utf8
-	Return, str_utf8
 }

@@ -1,5 +1,5 @@
-; output example in info\example class_dropLog.json
-class class_dropLog {   
+; output example in info\example class_drop_log.json
+class class_drop_log {   
     ; output = {string} containing current trip drops
     Get() {
         obj := this.obj[this.obj.length()].drops
@@ -14,16 +14,37 @@ class class_dropLog {
         return drops
     }
 
-    ; input = {string} path to existing drop log file
+    ; (optional) input = {string} path to existing drop log file
     ; purpose = create drop log object
-    Load(input) {
-        this.obj := {}
+    Load(logFile:="") {
+        If !(logFile)
+            this._SetFile()
+
         this.undoActions := {}
         this.redoActions := {}
+
+        content := json.load(FileRead(g_path_dropLog))
+        If (IsObject(content))
+            this.obj := content
+        else
+            this.obj := {}
+    }
+
+    _SetFile() {
+        FileSelectFile, SelectedFile, 2, % manageGui.GetText("Edit1"), Select drop log, Json (*.json)
+        If !(SelectedFile) {
+            msgbox, 4160, , % A_ThisFunc ": Can't log without a log file"
+            reload
+        }
+        SplitPath, SelectedFile , OutFileName, OutDir, OutExtension, OutNameNoExt, OutDrive
+        g_path_dropLog := OutDir "\" OutNameNoExt ".json"
     }
 
     Save() {
-
+        If !(this.obj.length())
+            return
+        FileDelete, % g_path_dropLog
+        FileAppend, % json.dump(this.obj,,2), % g_path_dropLog
     }
 
     Undo() {

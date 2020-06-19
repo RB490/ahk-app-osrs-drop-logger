@@ -137,16 +137,29 @@ bug gui log > select a drop > select the same drop right after > no response, wh
 
 class_gui_quantity > disable logGui while its open
 
+feature > loading and saving drop logs
+
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ completed ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+bug > 'black demon' drop log main tab choose addy bar, edit field is set to 0
 
 refactor > class_gui_quantity
 
-feature > loading and saving drop logs
-
-gui stuff > log
+feature > gui log
     create a nice layout once all the necessary components are functional
     combine buttons eg. start death can change into end death and ending a trip
         while death is active should automatically end the death
+
+    images
+        add ability to use proper mobs / items images by figuring out/ trying ahk resizing methods:
+            irfanview?
+            ResConImg() : https://www.autohotkey.com/boards/viewtopic.php?t=2505
+                also supports adding border to image, which is exactly what i need for item images < see last comment:
+                    https://autohotkey.com/board/topic/51035-add-border-on-images/
+        
+        bulk file download
+            goal: function that calls separate script file to download files (images) quickly,
+                use this in the drop table class to get images fast
 
 refactor > use wiki api in wiki class
 
@@ -158,14 +171,3 @@ feature > achieve feature parity with older versions. check older versions
 optimize > test the program
     which processes take up the most amount of load time, reduce those
     large drop logs
-
-feature > images
-    add ability to use proper mobs / items images by figuring out/ trying ahk resizing methods:
-        irfanview?
-        ResConImg() : https://www.autohotkey.com/boards/viewtopic.php?t=2505
-            also supports adding border to image, which is exactly what i need for item images < see last comment:
-                https://autohotkey.com/board/topic/51035-add-border-on-images/
-    
-    bulk file download
-        goal: function that calls separate script file to download files (images) quickly,
-            use this in the drop table class to get images fast
