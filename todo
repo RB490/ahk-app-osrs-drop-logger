@@ -143,32 +143,80 @@ bug > 'black demon' drop log main tab choose addy bar, edit field is set to 0
 
 refactor > class_gui_quantity
 
+feature > achieve feature parity with older versions. check older versions  eg. add current trip information (in the program title or somewhere else)
+
+gui log
+    feature > status bar with current mob & drop log file? though its already in the mob gui
+    feature > create a nice layout once all the necessary components are functional
+                - combine buttons eg. start death can change into end death and ending a trip
+                while death is active should automatically end the death
+                - size & position buttons based on how often theyre used
+                    +kill
+                    new trip
+                    start/end trip
+                    start/end death
+                    undo
+                    redo
+                    
+save snippet working example from: https://www.autohotkey.com/boards/viewtopic.php?t=30979
+
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ completed ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-feature > gui log
-    create a nice layout once all the necessary components are functional
-    combine buttons eg. start death can change into end death and ending a trip
-        while death is active should automatically end the death
+refactor global variables into caps lock with underscores eg:
+    dropLog.Get()           = CLASS_DROP_LOG.Get() or _DROP_LOG.Get()
+    g_path_mobImages        = PATH_MOB_IMAGES
+    g_logGui_btnToggleTrip  = HWND_BTN_TOGGLE_TRIP
 
-    images
-        add ability to use proper mobs / items images by figuring out/ trying ahk resizing methods:
-            irfanview?
-            ResConImg() : https://www.autohotkey.com/boards/viewtopic.php?t=2505
-                also supports adding border to image, which is exactly what i need for item images < see last comment:
-                    https://autohotkey.com/board/topic/51035-add-border-on-images/
-        
-        bulk file download
-            goal: function that calls separate script file to download files (images) quickly,
-                use this in the drop table class to get images fast
+drop log.get()
+    feature > add ---trip--- dividers between trips in drop log.get()
+    feature > add ---death--- divider between in drop log.get()
+    feature > add space between drops in drop log.get()
 
-refactor > use wiki api in wiki class
+gui log
+    feature > show trip number, kill number and current trip duration in title bar
+    feature > remember position
 
-feature > add stats class
+refactoring > rename mob gui to something more descriptive because it has multiple purposes:
+    selecting a mob
+    selecting a drop log
+    choosing a preset which selects the two above
 
-feature > achieve feature parity with older versions. check older versions
-    eg. add current trip information (in the program title or somewhere else)
+stats
+    feature > gui stats
+    feature > stats class
+
+feature > choosing drop log file that does not exist > ask to create file
+
+feature > modify mob select to look like it did in 'rewrite 1', example is in /info/
+
+feature > gui new preset
+    could write 'show under mouse' option to local gui class, and use it for presets + integer input
+
+feature > gui settings, tabs:
+    main page
+        gui log item size and row width
+    about page
+    or a single window with the information on it
 
 optimize > test the program using tick count function/class
     large drop logs
     which processes take up the most amount of load time, reduce those
         pretty slow update onto log gui after selecting a custom quantity through quantity gui
+
+feature > mob images
+        add ability to use proper mobs / items images by figuring out/ trying ahk resizing methods:
+            irfanview?
+            ResConImg() : https://www.autohotkey.com/boards/viewtopic.php?t=2505
+                also supports adding border to image, which is exactly what i need for item images < see last comment:
+                    https://autohotkey.com/board/topic/51035-add-border-on-images/
+            gdip
+                download image from runelite api
+                center image on canvas
+                add border around canvas
+                for multi quantity drops, add marking to top left of the image eg: '*'
+        
+        add proper icons for log gui > cleanup/refactor
+
+        bulk file download
+            goal: function that calls separate script file to download files (images) quickly,
+                use this in the drop table class to get images fast

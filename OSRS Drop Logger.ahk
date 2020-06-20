@@ -6,22 +6,29 @@
     OnMessage(0x201, "OnWM_LBUTTONDOWN")
 
 ; Global vars
-    global  g_debug             := true
-    global  g_path_itemImages   := A_ScriptDir "\res\img\items"
-    global  g_path_mobImages    := A_ScriptDir "\res\img\mobs"
-    global  g_path_itemIds      := A_ScriptDir "\res\itemIds.json"
-    global  g_path_settings     := A_ScriptDir "\settings.json"
-    global  g_path_dropLog      := "D:\Downloads\debugLog.json"
+    global  g_debug                     := true
+    global  g_path_itemImages           := A_ScriptDir "\res\img\items"
+    global  g_path_mobImages            := A_ScriptDir "\res\img\mobs"
+    global  g_path_itemIds              := A_ScriptDir "\res\itemIds.json"
+    global  g_path_settings             := A_ScriptDir "\settings.json"
+    global  g_path_dropLog              := "D:\Downloads\debugLog.json"
+    global  g_selectedDrops             := {}
     global  g_selectedMob
-    global  g_selectedDrops     := {}
-    global  runeLiteApi         := new class_api_runeLite
-    global  wikiApi             := new class_api_wiki
-    global  dropLog             := new class_drop_log
-    global  dropTable           := new class_drop_table
-    global  logGui              := new class_gui_log("Log Gui")
-    global  mobGui              := new class_gui_mob("Mob Gui")
-    global  quantityGui         := new class_gui_quantity("Quantity Gui")
-    global  settings            := {}
+    global  g_logGui_BtnClearDrops
+    global  g_logGui_btnToggleTrip
+    global  g_logGui_btnToggleDeath
+    global  g_logGui_btnNewTrip
+    global  g_logGui_btnUndo
+    global  g_logGui_btnRedo
+    global  g_logGui_btnKill
+    global  runeLiteApi                 := new class_api_runeLite
+    global  wikiApi                     := new class_api_wiki
+    global  dropLog                     := new class_drop_log
+    global  dropTable                   := new class_drop_table
+    global  logGui                      := new class_gui_log("Log Gui")
+    global  mobGui                      := new class_gui_mob("Mob Gui")
+    global  quantityGui                 := new class_gui_quantity("Quantity Gui")
+    global  settings                    := {}
 
 ; Auto-execute
     FileCreateDir, % g_path_itemImages
