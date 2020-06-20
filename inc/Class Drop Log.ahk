@@ -23,7 +23,7 @@ class class_drop_log {
         this.undoActions := {}
         this.redoActions := {}
 
-        content := json.load(FileRead(g_path_dropLog))
+        content := json.load(FileRead(PATH_DROP_LOG))
         If (IsObject(content))
             this.obj := content
         else
@@ -37,14 +37,14 @@ class class_drop_log {
             reload
         }
         SplitPath, SelectedFile , OutFileName, OutDir, OutExtension, OutNameNoExt, OutDrive
-        g_path_dropLog := OutDir "\" OutNameNoExt ".json"
+        PATH_DROP_LOG := OutDir "\" OutNameNoExt ".json"
     }
 
     Save() {
         If !(this.obj.length())
             return
-        FileDelete, % g_path_dropLog
-        FileAppend, % json.dump(this.obj,,2), % g_path_dropLog
+        FileDelete, % PATH_DROP_LOG
+        FileAppend, % json.dump(this.obj,,2), % PATH_DROP_LOG
     }
 
     Undo() {
@@ -68,7 +68,7 @@ class class_drop_log {
         this.obj := obj
     }
 
-    ; input = {object} retrieved by dropLog.GetDrop() containing drop information
+    ; input = {object} retrieved by DROP_LOG.GetDrop() containing drop information
     Add(input) {
         If !(input.length()) {
             input.name := "Nothing"

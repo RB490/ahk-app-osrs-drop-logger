@@ -6,50 +6,49 @@
     OnMessage(0x201, "OnWM_LBUTTONDOWN")
 
 ; Global vars
-    global  g_debug                     := true
-    global  g_path_itemImages           := A_ScriptDir "\res\img\items"
-    global  g_path_mobImages            := A_ScriptDir "\res\img\mobs"
-    global  g_path_itemIds              := A_ScriptDir "\res\itemIds.json"
-    global  g_path_settings             := A_ScriptDir "\settings.json"
-    global  g_path_dropLog              := "D:\Downloads\debugLog.json"
-    global  g_selectedDrops             := {}
-    global  g_selectedMob
-    global  g_logGui_BtnClearDrops
-    global  g_logGui_btnToggleTrip
-    global  g_logGui_btnToggleDeath
-    global  g_logGui_btnNewTrip
-    global  g_logGui_btnUndo
-    global  g_logGui_btnRedo
-    global  g_logGui_btnKill
-    global  runeLiteApi                 := new class_api_runeLite
-    global  wikiApi                     := new class_api_wiki
-    global  dropLog                     := new class_drop_log
-    global  dropTable                   := new class_drop_table
-    global  logGui                      := new class_gui_log("Log Gui")
-    global  mobGui                      := new class_gui_mob("Mob Gui")
-    global  quantityGui                 := new class_gui_quantity("Quantity Gui")
-    global  settings                    := {}
+    global  DEBUG_MODE                  := true
+    global  PATH_ITEM_IMAGES            := A_ScriptDir "\res\img\items"
+    global  PATH_MOB_IMAGES             := A_ScriptDir "\res\img\mobs"
+    global  PATH_ITEM_IDS               := A_ScriptDir "\res\itemIds.json"
+    global  PATH_SETTINGS               := A_ScriptDir "\SETTINGS_OBJ.json"
+    global  PATH_DROP_LOG               := "D:\Downloads\debugLog.json"
+    global  SETTINGS_OBJ                := {}
+    global  SELECTED_DROPS              := {}
+    global  RUNELITE_API                := new class_api_runeLite
+    global  WIKI_API                    := new class_api_wiki
+    global  DROP_LOG                    := new class_drop_log
+    global  DROP_TABLE                  := new class_drop_table
+    global  LOG_GUI                     := new class_gui_log("Log Gui")
+    global  MOB_GUI                     := new class_gui_mob("Mob Gui")
+    global  QUANTITY_GUI                := new class_gui_quantity("Quantity Gui")
+    global  _BTN_CLEAR_DROPS            ; log gui
+    global  _BTN_TOGGLE_TRIP            ; log gui
+    global  _BTN_TOGGLE_DEATH           ; log gui
+    global  _BTN_NEW_TRIP               ; log gui
+    global  _BTN_UNDO                   ; log gui
+    global  _BTN_REDO                   ; log gui
+    global  _BTN_KILL                   ; log gui
 
 ; Auto-execute
-    FileCreateDir, % g_path_itemImages
-    FileCreateDir, % g_path_mobImages
-    settings := json.load(FileRead(g_path_settings))
-        If !(IsObject(settings))
-            settings := {}
+    FileCreateDir, % PATH_ITEM_IMAGES
+    FileCreateDir, % PATH_MOB_IMAGES
+    SETTINGS_OBJ := json.load(FileRead(PATH_SETTINGS))
+        If !(IsObject(SETTINGS_OBJ))
+            SETTINGS_OBJ := {}
 
-    dropTable.Get("black demon")
-    ; dropLog.Load("some input")
-    ; dropLog.StartTrip()
-    ; logGui.Setup()
-    ; mobGui.Setup()
+    DROP_TABLE.Get("black demon")
+    ; DROP_LOG.Load("some input")
+    ; DROP_LOG.StartTrip()
+    ; LOG_GUI.Setup()
+    ; MOB_GUI.Setup()
     
     ; msgbox hi there
 
-    ; quantityGui.Debug_Get()
+    ; QUANTITY_GUI.Debug_Get()
     ; return
 
-    dropLog.Load(g_path_dropLog)
-    logGui.Setup()
+    DROP_LOG.Load(PATH_DROP_LOG)
+    LOG_GUI.Setup()
 return
 
 ; Global hotkeys

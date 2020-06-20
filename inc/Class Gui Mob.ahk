@@ -40,7 +40,7 @@ class class_gui_mob extends gui {
         input := this.GetText("Edit1")
 
         ; build display var
-        for mob, v in settings.mobs
+        for mob, v in SETTINGS_OBJ.mobs
             If (InStr(mob, input))
                 output .= mob "|"
         output := RTrim(output, "|")
@@ -48,23 +48,23 @@ class class_gui_mob extends gui {
         ; update listbox
         GuiControl,, ListBox1 , |
         GuiControl,, ListBox1 , % output
-        GuiControl, Choose, ListBox1, % settings.selectedMob
+        GuiControl, Choose, ListBox1, % SETTINGS_OBJ.selectedMob
     }
 
     ListBoxHandler() {
-        settings.selectedMob := this.GuiControlGet("", "ListBox1")
+        SETTINGS_OBJ.selectedMob := this.GuiControlGet("", "ListBox1")
         this.ControlFocus("edit1") ; prevent ctrl+s from changing current mob
 
         this._LoadMobImage()
     }
 
     _LoadMobImage() {
-        If !(settings.selectedMob)
+        If !(SETTINGS_OBJ.selectedMob)
             return  
         
-        path := g_path_mobImages "\" settings.selectedMob ".png"
+        path := PATH_MOB_IMAGES "\" SETTINGS_OBJ.selectedMob ".png"
         If !(FileExist(path)) {
-            url := wikiApi.GetMobUrl(settings.selectedMob)
+            url := WIKI_API.GetMobUrl(SETTINGS_OBJ.selectedMob)
             DownloadToFile(url, path)
         }
 
@@ -89,14 +89,14 @@ class class_gui_mob extends gui {
         StringUpper, input, input, T
 
         ; check if mob already exists
-        If (settings.mobs.HasKey(input)) {
-            settings.selectedMob := input
+        If (SETTINGS_OBJ.mobs.HasKey(input)) {
+            SETTINGS_OBJ.selectedMob := input
             this.SearchBoxReset()
             return
         }
 
         ; check if input is a mob with drop tables
-        isValidMob := dropTable.Get(input)
+        isValidMob := DROP_TABLE.Get(input)
         If !(isValidMob) {
             msgbox, 4160, , % A_ThisFunc ": Could not find drop table for '" input "'!"
             this.SearchBoxReset()
@@ -104,12 +104,12 @@ class class_gui_mob extends gui {
         }
 
         ; save mob
-        If !(IsObject(settings.mobs))
-            settings.mobs := {}
-        settings.mobs[input] := ""
+        If !(IsObject(SETTINGS_OBJ.mobs))
+            SETTINGS_OBJ.mobs := {}
+        SETTINGS_OBJ.mobs[input] := ""
 
         ; apply new mob
-        settings.selectedMob := input
+        SETTINGS_OBJ.selectedMob := input
         this.SearchBoxReset()
     }
 
@@ -121,19 +121,19 @@ class class_gui_mob extends gui {
             this.Show()
             return
         }
-        g_path_dropLog := SelectedFile
+        PATH_DROP_LOG := SelectedFile
 
-        dropTable.Get(settings.selectedMob)
-        dropLog.Load(g_path_dropLog)
-        logGui.Setup()
+        DROP_TABLE.Get(SETTINGS_OBJ.selectedMob)
+        DROP_LOG.Load(PATH_DROP_LOG)
+        LOG_GUI.Setup()
     }
 }
 
 mobGui_ContextMenu:
-    If !(settings.selectedMob)
+    If !(SETTINGS_OBJ.selectedMob)
         return
     
-    mobMenuMob := settings.selectedMob
+    mobMenuMob := SETTINGS_OBJ.selectedMob
 
     menu, mobMenu, add
     menu, mobMenu, DeleteAll
@@ -142,8 +142,8 @@ mobGui_ContextMenu:
 return
 
 mobMenu_removeMob:
-    settings.mobs.Delete(settings.selectedMob)
-    settings.selectedMob := ""
+    SETTINGS_OBJ.mobs.Delete(SETTINGS_OBJ.selectedMob)
+    SETTINGS_OBJ.selectedMob := ""
     mobGui.Update()
 return
 

@@ -24,7 +24,7 @@ the drop table class method that sends information to the logger gui:
     - combine categories below X drops so there are no useless tabs with a small amount of drops
     - if the total amount of drops is lower then X combine them. ignoring the rare drop table
 
-use wiki class to retrieve links to high res images for dropTables.GetImages()
+use wiki class to retrieve links to high res images for DROP_TABLEs.GetImages()
 
 handle gui log tab3 not scaling properly, happened recently can compare older working versions to debug
 
@@ -135,7 +135,7 @@ OnWM_LBUTTONDOWN > handle a variety of different item quantities
 bug gui log > select a drop > select the same drop right after > no response, why this delay?
     solution: something to do with how microsoft coded WM_LBUTTONDOWN(), if you click in different spots on the image its fine
 
-class_gui_quantity > disable logGui while its open
+class_gui_quantity > disable LOG_GUI while its open
 
 feature > loading and saving drop logs
 
@@ -160,12 +160,12 @@ gui log
                     
 save snippet working example from: https://www.autohotkey.com/boards/viewtopic.php?t=30979
 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ completed ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 refactor global variables into caps lock with underscores eg:
-    dropLog.Get()           = CLASS_DROP_LOG.Get() or _DROP_LOG.Get()
-    g_path_mobImages        = PATH_MOB_IMAGES
-    g_logGui_btnToggleTrip  = HWND_BTN_TOGGLE_TRIP
+    DROP_LOG.Get()           = CLASS_DROP_LOG.Get() or _DROP_LOG.Get()
+    PATH_MOB_IMAGES        = PATH_MOB_IMAGES
+    _BTN_TOGGLE_TRIP  = HWND_BTN_TOGGLE_TRIP
+    
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ completed ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 drop log.get()
     feature > add ---trip--- dividers between trips in drop log.get()

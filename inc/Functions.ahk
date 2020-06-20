@@ -1,8 +1,8 @@
 ExitFunc(ExitReason, ExitCode) {
-    FileDelete, % g_path_settings
-    FileAppend, % json.dump(settings,,2), % g_path_settings
+    FileDelete, % PATH_SETTINGS
+    FileAppend, % json.dump(settings,,2), % PATH_SETTINGS
 
-    dropLog.Save()
+    DROP_LOG.Save()
 }
 
 OnWM_LBUTTONDOWN(wParam, lParam, msg, hWnd) {
@@ -14,31 +14,31 @@ OnWM_LBUTTONDOWN(wParam, lParam, msg, hWnd) {
         return
     }
 
-    If !(dropLog.TripActive()) {
+    If !(DROP_LOG.TripActive()) {
         tooltip No trip started!
         SetTimer, disableTooltip, -250
         return
     }
 
     id := SubStr(OutputAssociatedVar, InStr(OutputAssociatedVar, "#") + 1)
-    obj := dropTable.GetDrop(id)
+    obj := DROP_TABLE.GetDrop(id)
     Obj.Delete("iconHtml")
     Obj.Delete("highAlchPrice")
     Obj.Delete("price")
     Obj.Delete("rarity")
 
     If InStr(obj.quantity, "#")
-        obj.quantity := quantityGui.Get(obj)
+        obj.quantity := QUANTITY_GUI.Get(obj)
     If !(obj.quantity)
         return
 
-    g_selectedDrops.push(obj)
+    SELECTED_DROPS.push(obj)
 
-    loop % g_selectedDrops.length()
-        drops .= g_selectedDrops[A_Index].quantity " x " g_selectedDrops[A_Index].name ", "
+    loop % SELECTED_DROPS.length()
+        drops .= SELECTED_DROPS[A_Index].quantity " x " SELECTED_DROPS[A_Index].name ", "
     drops := RTrim(drops, ", ")
 
-    logGui.SetText("edit1", drops)
+    LOG_GUI.SetText("edit1", drops)
 }
 
 ObjFullyClone(obj)

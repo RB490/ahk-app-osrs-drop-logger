@@ -22,10 +22,10 @@ Class class_drop_table {
 
     ; input = {string} wiki page containing drop tables
     Get(input) {
-        If !(g_debug)
+        If !(DEBUG_MODE)
             SplashTextOn, 300, 75, % A_ScriptName, Retrieving drop table for %input%...
         
-        this.obj := wikiApi.GetDroptables(input)
+        this.obj := WIKI_API.GetDroptables(input)
         If !(IsObject(this.obj))
             return false
 
@@ -150,11 +150,11 @@ Class class_drop_table {
                 drop := table.drops[A_Index]
                 If (drop.name = "Nothing")
                     Continue
-                id := runeLiteApi.GetId(drop.name)
-                path := g_path_itemImages "\" id ".png"
+                id := RUNELITE_API.GetId(drop.name)
+                path := PATH_ITEM_IMAGES "\" id ".png"
                 If FileExist(path)
                     Continue
-                url := runeLiteApi.GetImgUrl(id)
+                url := RUNELITE_API.GetImgUrl(id)
                 DownloadToFile(url, path)
             }
         }

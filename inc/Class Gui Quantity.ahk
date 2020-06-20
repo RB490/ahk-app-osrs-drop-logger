@@ -1,6 +1,6 @@
 class class_gui_quantity extends gui {
     /*
-        input = {object} item object from 'dropTable.GetDrop()' this method uses 
+        input = {object} item object from 'DROP_TABLE.GetDrop()' this method uses 
             input.quantity  contains one or multiple wiki drop table quantities separated by '#'
             example: 132#30#44#220#460#250-499#250#500-749#500-999
         
@@ -70,7 +70,7 @@ class class_gui_quantity extends gui {
     }
 
     Setup() {
-        logGui.Disable()
+        LOG_GUI.Disable()
 
         ; recreate window if it already exists
         if (WinExist(this.ahkid))
@@ -86,7 +86,7 @@ class class_gui_quantity extends gui {
         this.Events["_BtnEnter"] := this.BtnSubmit.Bind(this)
 
         ; properties
-        this.Owner(logGui.hwnd)
+        this.Owner(LOG_GUI.hwnd)
         this.Margin(0, 0)
         this.Options("+toolwindow  +labelquantityGui_")
         totalButtons := this.obj.integersObj.length()
@@ -133,8 +133,8 @@ class class_gui_quantity extends gui {
         WinWaitClose, % this.ahkid
 
         ; on closing
-        logGui.Enable()
-        WinActivate, % logGui.ahkid
+        LOG_GUI.Enable()
+        WinActivate, % LOG_GUI.ahkid
     }
 
     ; input = {integer}
@@ -161,7 +161,7 @@ quantityGui_BtnHandler:
 
     ; call specific method if a integer button is pressed
     If OutputControlText is Integer
-        quantityGui.BtnIntegerHandler(OutputControlText)
+        QUANTITY_GUI.BtnIntegerHandler(OutputControlText)
 
     ; call the class's method
     for a, b in class_gui_quantity.Instances 

@@ -4,7 +4,7 @@ class class_api_runeLite {
         this.itemIdUrl := "https://raw.githubusercontent.com/runelite/runelite/master/runelite-api/src/main/java/net/runelite/api/ItemID.java"
         this.apiMainUrl := "https://static.runelite.net/api/http-service/"
 
-        If !(FileExist(g_path_itemIds))
+        If !(FileExist(PATH_ITEM_IDS))
             this._DownloadItemIdFile()
 
         this._LoadItemIdFile()
@@ -80,7 +80,7 @@ class class_api_runeLite {
     }
 
     _LoadItemIdFile() {
-        this.obj := json.load(FileRead(g_path_itemIds))
+        this.obj := json.load(FileRead(PATH_ITEM_IDS))
     }
 
     _DownloadItemIdFile() {
@@ -101,7 +101,7 @@ class class_api_runeLite {
             ; obj.push({item: item, id: id})
             obj[item] := id
         }
-        FileDelete, % g_path_itemIds
-        FileAppend, % json.dump(obj,,2), % g_path_itemIds
+        FileDelete, % PATH_ITEM_IDS
+        FileAppend, % json.dump(obj,,2), % PATH_ITEM_IDS
     }
 }
