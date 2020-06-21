@@ -1,12 +1,11 @@
 LoadSettings() {
     SETTINGS_OBJ := json.load(FileRead(PATH_SETTINGS))
-        If !(IsObject(SETTINGS_OBJ))
+        If !(IsObject(SETTINGS_OBJ)) {
+            SETTINGS_OBJ := {}
             LoadDefaultSettings()
+        }
 
-    CheckCriticalSettings()
-}
-
-CheckCriticalSettings() {
+    ; critical settings
     If (SETTINGS_OBJ.logGuiDropSize < MIN_DROP_SIZE) or (SETTINGS_OBJ.logGuiDropSize > MAX_DROP_SIZE)
         LoadDefaultSettings()
     
@@ -15,8 +14,6 @@ CheckCriticalSettings() {
 }
 
 LoadDefaultSettings() {
-    SETTINGS_OBJ := {}
-
     SETTINGS_OBJ.logGuiDropSize := 33 ; 33 is close to ingame inventory
     SETTINGS_OBJ.logGuiMaxRowDrops := 8
 }
@@ -94,4 +91,22 @@ ObjFullyClone(obj)
 		if IsObject(v)
 			nobj[k] := A_ThisFunc.(v)
 	return nobj
+}
+
+; aligns to the left, or center if square button and size is correct
+GuiButtonIcon(Handle, File, Index := 0, Size := 12, Margin := 1, Align := 5)
+{
+    Size -= Margin
+    Psz := A_PtrSize = "" ? 4 : A_PtrSize, DW := "UInt", Ptr := A_PtrSize = "" ? DW : "Ptr"
+    VarSetCapacity( button_il, 20 + Psz, 0 )
+    NumPut( normal_il := DllCall( "ImageList_Create", DW, Size, DW, Size, DW, 0x21, DW, 1, DW, 1 ), button_il, 0, Ptr )
+    NumPut( Align, button_il, 16 + Psz, DW )
+    SendMessage, BCM_SETIMAGELIST := 5634, 0, &button_il,, AHK_ID %Handle%
+    return IL_Add( normal_il, File, Index )
+}
+
+; centers together with text
+SetButtonIcon(hButton, File, Index, Size := 16) {
+    hIcon := LoadPicture(File, "h" . Size . " Icon" . Index, _)
+    SendMessage 0xF7, 1, %hIcon%,, ahk_id %hButton% ; BM_SETIMAGE
 }

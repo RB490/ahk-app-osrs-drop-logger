@@ -200,12 +200,6 @@ feature > gui log small settings menu button with icon
         github repo
         some usefull information about the program, maybe how it functions, dependencies runelite/osrs wiki
 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ completed ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-refactor > gui log > especially involving MAX_DROP_SIZE, 'logGuiDropSize' and SavePos() CheckPos()
-
-refactor > LoadSettings / CheckCriticalSettings / LoadDefaultSettings this is messy
-
 bug > manually change settings file to have invalid value for 'logGuiDropSize' or 'logGuiMaxRowDrops' > program error
     check imporant keys on program startup and restore them if needed
     LoadSettings()
@@ -214,29 +208,29 @@ bug > manually change settings file to have invalid value for 'logGuiDropSize' o
         check critical keys, key + value
             failure > set default settings
 
+gui log > add proper icons
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ completed ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+since the runelite item icons are transparent it might be possible to reize/move them with code inside an image control
+    or try that GuiButtonIcon() which definetly allows for resizing
+    https://www.autohotkey.com/docs/commands/LoadPicture.htm
+    GuiControl allows to set image inside picture control, resized
+
+refactor > gui log > especially involving MAX_DROP_SIZE, 'logGuiDropSize' and SavePos() CheckPos()
+
+refactor > LoadSettings / CheckCriticalSettings / LoadDefaultSettings this is messy
+    load settings > load default settings for missing values
+    settings
+        every setting key should be added, possibly with empty value, right from the start
+        dont reference setting object since code, instead pull variable from settings and use that
+            ^ why? it seems like a good idea but im wrecked right now at 07:15 after waking up at around 01:00 for no reason
+
 stats
     feature > gui stats
     feature > stats class
 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ finishing touches ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-feature > mob images
-        add ability to use proper mobs / items images by figuring out/ trying ahk resizing methods:
-            irfanview?
-            ResConImg() : https://www.autohotkey.com/boards/viewtopic.php?t=2505
-                also supports adding border to image, which is exactly what i need for item images < see last comment:
-                    https://autohotkey.com/board/topic/51035-add-border-on-images/
-            gdip
-                download image from runelite api
-                center image on canvas
-                add border around canvas
-                for multi quantity drops, add marking to top left of the image eg: '*'
-        
-        add proper icons for log gui > cleanup/refactor
-
-        bulk file download
-            goal: function that calls separate script file to download files (images) quickly,
-                use this in the drop table class to get images fast
 
 figure out miliseconds and 'FormatTime': https://www.autohotkey.com/boards/viewtopic.php?t=64641
 
@@ -250,3 +244,22 @@ optimize > test the program using tick count function/class
     large drop logs
     which processes take up the most amount of load time, reduce those -- check speed different with/without SetBatchLines -1
         pretty slow update onto log gui after selecting a custom quantity through quantity gui
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ (temporarily) archived ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+feature > mob images
+    process mob and item images to be perfectly scaled, centered and bordered
+        irfanview?
+        ResConImg() : https://www.autohotkey.com/boards/viewtopic.php?t=2505
+            also supports adding border to image, which is exactly what i need for item images < see last comment:
+                https://autohotkey.com/board/topic/51035-add-border-on-images/
+        gdip
+            download image from runelite api
+            center image on canvas
+            add border around canvas
+            for multi quantity drops, add marking to top left of the image eg: '*'
+    
+feature > bulk file download
+    goal: function that calls separate script file to download files (images) quickly,
+        use this in the drop table class to get images fast

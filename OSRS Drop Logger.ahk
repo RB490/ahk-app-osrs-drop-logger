@@ -11,6 +11,7 @@
     global  DEBUG_MODE                  := true
     global  PATH_ITEM_IMAGES            := A_ScriptDir "\res\img\items"
     global  PATH_MOB_IMAGES             := A_ScriptDir "\res\img\mobs"
+    global  PATH_GUI_ICONS              := A_ScriptDir "\res\img\icons"
     global  PATH_ITEM_IDS               := A_ScriptDir "\res\itemIds.json"
     global  PATH_SETTINGS               := A_ScriptDir "\settings.json"
     global  PATH_DROP_LOG               := "D:\Downloads\debugLog.json"
