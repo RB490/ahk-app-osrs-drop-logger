@@ -1,3 +1,17 @@
+Timer() {
+    static startTime, timerActive
+ 
+    If !(timerActive) {
+        timerActive := true
+        startTime := A_TickCount
+    }
+    else {
+        timerActive := false
+        elapsedTime := A_TickCount - startTime
+        MsgBox,  %elapsedTime% milliseconds have elapsed.
+    }
+}
+
 LoadSettings() {
     SETTINGS_OBJ := json.load(FileRead(PATH_SETTINGS))
         If !(IsObject(SETTINGS_OBJ)) {
@@ -30,6 +44,7 @@ ExitFunc(ExitReason, ExitCode) {
 ; input = {string} 'encode' or 'decode'
 ; purpose = DROP_LOG.GetFormattedLog() uses timestamps to put events in the right order,
 ;   add A_MSec to prevent multiple actions in the same second overwriting eachother
+; note = turns out decoding isn't necessary as 'EnvAdd' / 'EnvSub' ignore the added msecs
 ConvertTimeStamp(encodeOrDecode, timeStamp) {
     sleep 1 ; wait 1 milisecond so actions in DROP_LOG.GetFormattedLog() don't execute on the same milisecond
     

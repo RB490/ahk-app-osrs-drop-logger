@@ -1,6 +1,4 @@
 {
-  "guiLogX": 1419,
-  "guiLogY": 12,
-  "logGuiDropSize": 32,
-  "logGuiMaxRowDrops": 7
+  "logGuiDropSize": 33,
+  "logGuiMaxRowDrops": 8
 }

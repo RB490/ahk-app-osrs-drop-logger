@@ -1,0 +1,127 @@
+[
+  {
+    "deaths": [
+      {
+        "deathEnd": "20200621183326114",
+        "deathStart": "20200621183322674"
+      }
+    ],
+    "kills": [
+      {
+        "drops": [
+          {
+            "name": "Fire rune",
+            "quantity": "150"
+          },
+          {
+            "name": "Grimy dwarf weed",
+            "quantity": "1"
+          }
+        ],
+        "killEnd": "20200621183319315"
+      },
+      {
+        "drops": [
+          {
+            "name": "Grimy irit leaf",
+            "quantity": "1"
+          },
+          {
+            "name": "Grimy ranarr weed",
+            "quantity": "1"
+          }
+        ],
+        "killEnd": "20200621183321081"
+      },
+      {
+        "drops": [
+          {
+            "name": "Mithril sq shield",
+            "quantity": "1"
+          }
+        ],
+        "killEnd": "20200621183329924"
+      }
+    ],
+    "tripEnd": "20200621183334566",
+    "tripStart": "20200621183314362"
+  },
+  {
+    "deaths": [
+      {
+        "deathEnd": "20200621183343596",
+        "deathStart": "20200621183343394"
+      }
+    ],
+    "kills": [
+      {
+        "drops": [
+          {
+            "name": "Long bone",
+            "quantity": "1"
+          }
+        ],
+        "killEnd": "20200621183337049"
+      },
+      {
+        "drops": [
+          {
+            "name": "Curved bone",
+            "quantity": "1"
+          }
+        ],
+        "killEnd": "20200621183337596"
+      },
+      {
+        "drops": [
+          {
+            "name": "Steel bar",
+            "quantity": "1"
+          },
+          {
+            "name": "Lobster",
+            "quantity": "1"
+          },
+          {
+            "name": "Grimy lantadyme",
+            "quantity": "1"
+          }
+        ],
+        "killEnd": "20200621183339268"
+      },
+      {
+        "drops": [
+          {
+            "name": "Big bones",
+            "quantity": "1"
+          },
+          {
+            "name": "Blood rune",
+            "quantity": "5"
+          }
+        ],
+        "killEnd": "20200621183341283"
+      },
+      {
+        "drops": [
+          {
+            "name": "Ensouled giant head",
+            "quantity": "1"
+          }
+        ],
+        "killEnd": "20200621183342316"
+      },
+      {
+        "drops": [
+          {
+            "name": "Fire giant bone",
+            "quantity": "1"
+          }
+        ],
+        "killEnd": "20200621183345971"
+      }
+    ],
+    "tripEnd": "20200621183348019",
+    "tripStart": "20200621183334582"
+  }
+]

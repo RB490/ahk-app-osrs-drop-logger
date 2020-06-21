@@ -12,14 +12,14 @@
     global  PATH_ITEM_IMAGES            := A_ScriptDir "\res\img\items"
     global  PATH_MOB_IMAGES             := A_ScriptDir "\res\img\mobs"
     global  PATH_GUI_ICONS              := A_ScriptDir "\res\img\icons"
-    global  PATH_ITEM_IDS               := A_ScriptDir "\res\itemIds.json"
+    global  PATH_RUNELITE_JSON          := A_ScriptDir "\res\runelite.json"
     global  PATH_SETTINGS               := A_ScriptDir "\settings.json"
-    global  PATH_DROP_LOG               := "D:\Downloads\debugLog.json"
     global  SETTINGS_OBJ                := {}
     global  SELECTED_DROPS              := {}
     global  RUNELITE_API                := new ClassApiRunelite
     global  WIKI_API                    := new ClassApiWiki
     global  DROP_LOG                    := new ClassDropLog
+    global  DROP_STATS                  := new ClassDropStats
     global  DROP_TABLE                  := new ClassDropTable
     global  LOG_GUI                     := new ClassGuiLog("")
     global  MAIN_GUI                    := new ClassGuiMain("Main Gui")
@@ -42,17 +42,35 @@
     FileCreateDir, % PATH_MOB_IMAGES
     LoadSettings()
 
+    ; Timer()
+    msgbox % RUNELITE_API.GetItemId("Cabbage seed")
+    ; Timer()
+    return
+
+    ; DROP_LOG.Load("D:\Programming and projects\ahk-app-osrs-drop-logger\info\example ClassDropLog.json")
+    DROP_LOG.Load("D:\Programming and projects\ahk-app-osrs-drop-logger\info\example ClassDropLog 5k.json")
+    ; DROP_LOG.Load("D:\Programming and projects\ahk-app-osrs-drop-logger\info\example ClassDropLog 10k.json")
+    ; DROP_LOG.Load("D:\Programming and projects\ahk-app-osrs-drop-logger\info\example ClassDropLog 100k.json")
+    DROP_STATS.Calculate()
+    return
+    debugLog := "D:\Downloads\debugLog.json"
     ; MAIN_GUI.Setup()
-    DROP_TABLE.Get("fire giant")
-    FileDelete, % PATH_DROP_LOG
-    DROP_LOG.Load(PATH_DROP_LOG)
-    LOG_GUI.Setup()
+    ; DROP_TABLE.Get("fire giant")
+    ; FileDelete, % debugLog
+    ; DROP_LOG.Load(debugLog)
+    ; LOG_GUI.Setup()
 return
 
 ; Global hotkeys
     ~^s::
         If !(A_IsCompiled)
             reload
+    return
+    ~f1::
+        If !(DEBUG_MODE)
+            return
+        clipboard := json.dump(DROP_LOG.obj,,2)
+        msgbox copied
     return
 
 ; Labels
@@ -70,6 +88,7 @@ return
     #Include Class Api RuneLite.ahk
     #Include Class Api Wiki.ahk
     #Include Class Drop Log.ahk
+    #Include Class Drop Stats.ahk
     #Include Class Drop Table.ahk
     #Include Class Gui Log.ahk
     #Include Class Gui Main.ahk

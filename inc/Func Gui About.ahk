@@ -19,7 +19,7 @@ GuiAbout() {
     gui about: add, link, gGuiAbout_BtnWiki, <a id="A">%url%</a>
     url := WIKI_API.url "/api.php"
     gui about: add, link, gGuiAbout_BtnBtnWikiApi, <a id="A">https://oldschool.runescape.wiki/api.php/</a>
-    url := RUNELITE_API.apiMainUrl
+    url := RUNELITE_API.apiHubUrl
     gui about: add, link, gGuiAbout_BtnRuneLiteApi, <a id="A">https://static.runelite.net/api/http-service/</a>
 
     gui about: show, , About
@@ -38,5 +38,5 @@ GuiAbout_BtnBtnWikiApi:
 return
 
 GuiAbout_BtnRuneLiteApi:
-    run % RUNELITE_API.apiMainUrl
+    run % RUNELITE_API.apiHubUrl
 return

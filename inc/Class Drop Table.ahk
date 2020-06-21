@@ -150,11 +150,11 @@ Class ClassDropTable {
                 drop := table.drops[A_Index]
                 If (drop.name = "Nothing")
                     Continue
-                id := RUNELITE_API.GetId(drop.name)
+                id := RUNELITE_API.GetItemId(drop.name)
                 path := PATH_ITEM_IMAGES "\" id ".png"
                 If FileExist(path)
                     Continue
-                url := RUNELITE_API.GetImgUrl(id)
+                url := RUNELITE_API.GetItemImgUrl(drop.name)
                 DownloadToFile(url, path)
             }
         }
