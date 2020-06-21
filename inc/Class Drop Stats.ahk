@@ -7,15 +7,21 @@ Class ClassDropStats {
     Calculate() {
         this.obj := ObjFullyClone(DROP_LOG.obj)
 
-        ; timer()
-        totalKills := this._getTotalKills()
-        totalDeaths := this._getTotalDeaths()
+        timer()
         totalTrips := this._getTotalTrips()
+        totalKills := this._getTotalKills()
+        totalDrops  := this._getTotalDrops()
+        totalDeaths := this._getTotalDeaths()
         totalTime  := this._getTotalTime()
         totalDeadTime  := this._getTotalDeadTime()
-        ; timer()
+        totalDropsValue := this._getTotalDropsValue() ; requires processing
+        timer()
 
-        msgbox % totalDeadTime
+        msgbox % totalDropsValue
+    }
+
+    _getTotalTrips() {
+        return this.obj.length()
     }
 
     _getTotalKills() {
@@ -28,6 +34,20 @@ Class ClassDropStats {
         return output
     }
 
+    _getTotalDrops() {
+        obj := this.obj
+        loop % obj.length() {
+            trip := obj[A_Index]
+
+            loop % trip.kills.length() {
+                kill := trip.kills[A_Index]
+
+                output += kill.drops.length()
+            }
+        }
+        return output
+    }
+
     _getTotalDeaths() {
         obj := this.obj
         loop % obj.length() {
@@ -36,10 +56,6 @@ Class ClassDropStats {
             output += trip.deaths.length()
         }
         return output
-    }
-
-    _getTotalTrips() {
-        return this.obj.length()
     }
 
     _getTotalTime() {
@@ -71,6 +87,24 @@ Class ClassDropStats {
                 duration := death.deathEnd
                 EnvSub, duration, % death.deathStart, Seconds
                 output += duration
+            }
+        }
+        return output
+    }
+
+    _getTotalDropsValue() {
+        obj := this.obj
+        loop % obj.length() {
+            trip := obj[A_Index]
+
+            loop % trip.kills.length() {
+                kill := trip.kills[A_Index]
+
+                loop % kill.drops.length() {
+                    drop := kill.drops[A_Index]
+
+                    output += RUNELITE_API.GetItemPrice(drop.name)
+                }
             }
         }
         return output

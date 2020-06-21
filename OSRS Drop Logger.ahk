@@ -42,15 +42,10 @@
     FileCreateDir, % PATH_MOB_IMAGES
     LoadSettings()
 
-    ; Timer()
-    msgbox % RUNELITE_API.GetItemId("Cabbage seed")
-    ; Timer()
-    return
-
-    ; DROP_LOG.Load("D:\Programming and projects\ahk-app-osrs-drop-logger\info\example ClassDropLog.json")
-    DROP_LOG.Load("D:\Programming and projects\ahk-app-osrs-drop-logger\info\example ClassDropLog 5k.json")
-    ; DROP_LOG.Load("D:\Programming and projects\ahk-app-osrs-drop-logger\info\example ClassDropLog 10k.json")
-    ; DROP_LOG.Load("D:\Programming and projects\ahk-app-osrs-drop-logger\info\example ClassDropLog 100k.json")
+    ; DROP_LOG.Load("D:\Programming and projects\ahk-app-osrs-drop-logger\info\ClassDropLog.json")
+    DROP_LOG.Load("D:\Programming and projects\ahk-app-osrs-drop-logger\info\ClassDropLog 5k.json")
+    ; DROP_LOG.Load("D:\Programming and projects\ahk-app-osrs-drop-logger\info\ClassDropLog 10k.json")
+    ; DROP_LOG.Load("D:\Programming and projects\ahk-app-osrs-drop-logger\info\ClassDropLog 100k.json")
     DROP_STATS.Calculate()
     return
     debugLog := "D:\Downloads\debugLog.json"

@@ -8,26 +8,15 @@ Class ClassApiRunelite {
     }
 
     GetItemId(itemString) {
-        loop % this.obj.length() {
-            item := this.obj[A_Index]
-            
-            If (item.name = itemString)
-                return item.id
-        }
+        return this.obj[itemString].id
     }
 
     GetItemImgUrl(itemString) {
-        itemId := this.GetItemId(itemString)
-        return this.apiUrl "/cache/item/" itemId "/image"
+        return this.apiUrl "/cache/item/" this.GetItemId(itemString) "/image"
     }
 
     GetItemPrice(itemString) {
-        loop % this.obj.length() {
-            item := this.obj[A_Index]
-            
-            If (item.name = itemString)
-                return item.id
-        }
+        return this.obj[itemString].price
     }
 
     ; get current version api url eg. 'HTTPS://api.runelite.net/runelite-1.6.19'
@@ -51,8 +40,16 @@ Class ClassApiRunelite {
         
         input := DownloadToString(this.apiUrl "/item/prices")
         obj := json.load(input)
+
+        ; adjust format
+        output := {}
+        loop % obj.length() {
+            item := obj[A_Index]
+            output[item.name] := obj[A_Index]
+        }
+
         FileDelete % PATH_RUNELITE_JSON
-        FileAppend, % json.dump(obj,,2), % PATH_RUNELITE_JSON
+        FileAppend, % json.dump(output,,2), % PATH_RUNELITE_JSON
     }
 
     _SetJson() {

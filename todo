@@ -220,8 +220,6 @@ refactor > gui log > especially involving MAX_DROP_SIZE, 'logGuiDropSize' and Sa
 refactor > LoadSettings / CheckCriticalSettings / LoadDefaultSettings this is messy
     load settings > load default settings for missing values
 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ completed ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 refactoring > runelite class also use prices file to find item ids? prevents encoding decoding to runelite java naming format
 
 user has a main drop log where anything is logged > current loaded mob is 'black demon' > stats needs access to whip price
@@ -229,6 +227,14 @@ user has a main drop log where anything is logged > current loaded mob is 'black
     split runelite api into multiple classes?
         RuneLiteApiIds
         RuneLiteApiPrice
+        
+stats item price lookup is slow, potential fix:
+    adjust RUNELITE_API json format so items can be directly accessed rather than looped eg:
+        RUNELITE_API.obj[<itemName>].id
+
+combine collecting 'basic' stats into one loop? - though there doesnt seem to be a performance hit seperately looping through the object in multiple methods
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ completed ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 stats
     feature > gui stats
