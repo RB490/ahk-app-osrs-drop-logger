@@ -1,10 +1,6 @@
 {
-  "guiLogX": 990,
-  "guiLogY": 441,
-  "mobs": {
-    "Fire Giant": "",
-    "Goblin": "",
-    "Vorkath": ""
-  },
-  "selectedMob": "Goblin"
+  "guiLogX": 1004,
+  "guiLogY": 381,
+  "logGuiDropSize": 32,
+  "logGuiMaxRowDrops": 12
 }

@@ -1,11 +1,13 @@
 ; Script options
     #SingleInstance, Force
     #NoEnv ; Recommended for performance and compatibility with future AutoHotkey releases.
+    CoordMode, Mouse, Screen
     SetBatchLines, -1
     OnExit("ExitFunc")
     OnMessage(0x201, "OnWM_LBUTTONDOWN")
 
 ; Global vars
+    global  PROJECT_WEBSITE             := "https://github.com/RB490/ahk-app-osrs-drop-logger"
     global  DEBUG_MODE                  := true
     global  PATH_ITEM_IMAGES            := A_ScriptDir "\res\img\items"
     global  PATH_MOB_IMAGES             := A_ScriptDir "\res\img\mobs"
@@ -18,7 +20,7 @@
     global  WIKI_API                    := new ClassApiWiki
     global  DROP_LOG                    := new ClassDropLog
     global  DROP_TABLE                  := new ClassDropTable
-    global  LOG_GUI                     := new ClassGuiLog("Log Gui")
+    global  LOG_GUI                     := new ClassGuiLog("")
     global  MAIN_GUI                    := new ClassGuiMain("Main Gui")
     global  QUANTITY_GUI                := new ClassGuiQuantity("Quantity Gui")
     global  _BTN_CLEAR_DROPS            ; log gui
@@ -27,26 +29,29 @@
     global  _BTN_NEW_TRIP               ; log gui
     global  _BTN_UNDO                   ; log gui
     global  _BTN_REDO                   ; log gui
+    global  _BTN_LOG_MENU               ; log gui
     global  _BTN_KILL                   ; log gui
+    global  MIN_DROP_SIZE               := 10
+    global  MAX_DROP_SIZE               := 50
+    global  MIN_ROW_LENGTH              := 1
+    global  MAX_ROW_LENGTH              := 25
 
 ; Auto-execute
     FileCreateDir, % PATH_ITEM_IMAGES
     FileCreateDir, % PATH_MOB_IMAGES
-    SETTINGS_OBJ := json.load(FileRead(PATH_SETTINGS))
-        If !(IsObject(SETTINGS_OBJ))
-            SETTINGS_OBJ := {}
+    LoadSettings()
 
-    DROP_LOG.Load()
     ; MAIN_GUI.Setup()
-    ; DROP_TABLE.Get("fire giant")
-    ; FileDelete, % PATH_DROP_LOG
-    ; DROP_LOG.Load(PATH_DROP_LOG)
-    ; LOG_GUI.Setup()
+    DROP_TABLE.Get("fire giant")
+    FileDelete, % PATH_DROP_LOG
+    DROP_LOG.Load(PATH_DROP_LOG)
+    LOG_GUI.Setup()
 return
 
 ; Global hotkeys
-    ~^s::reload
-    f1::
+    ~^s::
+        If !(A_IsCompiled)
+            reload
     return
 
 ; Labels
@@ -68,4 +73,5 @@ return
     #Include Class Gui Log.ahk
     #Include Class Gui Main.ahk
     #Include Class Gui Quantity.ahk
+    #Include Func Gui About.ahk
     #Include Functions.ahk

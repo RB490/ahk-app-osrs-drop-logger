@@ -1,3 +1,26 @@
+LoadSettings() {
+    SETTINGS_OBJ := json.load(FileRead(PATH_SETTINGS))
+        If !(IsObject(SETTINGS_OBJ))
+            LoadDefaultSettings()
+
+    CheckCriticalSettings()
+}
+
+CheckCriticalSettings() {
+    If (SETTINGS_OBJ.logGuiDropSize < MIN_DROP_SIZE) or (SETTINGS_OBJ.logGuiDropSize > MAX_DROP_SIZE)
+        LoadDefaultSettings()
+    
+    If (SETTINGS_OBJ.logGuiMaxRowDrops < MIN_ROW_LENGTH) or (SETTINGS_OBJ.logGuiMaxRowDrops > MAX_ROW_LENGTH)
+        LoadDefaultSettings()
+}
+
+LoadDefaultSettings() {
+    SETTINGS_OBJ := {}
+
+    SETTINGS_OBJ.logGuiDropSize := 33 ; 33 is close to ingame inventory
+    SETTINGS_OBJ.logGuiMaxRowDrops := 8
+}
+
 ExitFunc(ExitReason, ExitCode) {
     LOG_GUI.SavePos()
     
