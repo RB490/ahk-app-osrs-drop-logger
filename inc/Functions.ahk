@@ -1,6 +1,8 @@
 ExitFunc(ExitReason, ExitCode) {
+    LOG_GUI.SavePos()
+    
     FileDelete, % PATH_SETTINGS
-    FileAppend, % json.dump(settings,,2), % PATH_SETTINGS
+    FileAppend, % json.dump(SETTINGS_OBJ,,2), % PATH_SETTINGS
 
     DROP_LOG.Save()
 }

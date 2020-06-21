@@ -183,39 +183,32 @@ drop log.get()
 gui log
     feature > show trip number, kill number and current trip duration in title bar
     feature > remember position
+    bug > set log gui mimimum height, becomes way too 'short' with small drop tables like 'chicken'
+    bug > log gui last item in a drop table clips over the row above it
 
-refactoring > rename mob gui to something more descriptive because it has multiple purposes:
-    selecting a mob
-    selecting a drop log
-    choosing a preset which selects the two above
+mob gui
+    feature > modify mob select to look like it did in 'rewrite 1', example is in /info/
+    feature > gui new preset
+        could write 'show under mouse' option to local gui class, and use it for presets + integer input
+    refactoring > rename mob gui to something more descriptive because it has multiple purposes:
+        selecting a mob
+        selecting a drop log
+        choosing a preset which selects the two above
 
 stats
     feature > gui stats
     feature > stats class
 
-feature > choosing drop log file that does not exist > ask to create file
+feature > drop log class > choosing drop log file that does not exist > ask to create file
 
-feature > modify mob select to look like it did in 'rewrite 1', example is in /info/
+feature > gui log small settings menu button with icon
+    guiLog - item size
+    guiLog - row width
+    gui about
+        github repo
+        some usefull information about the program, maybe how it functions, dependencies runelite/osrs wiki
 
-feature > gui new preset
-    could write 'show under mouse' option to local gui class, and use it for presets + integer input
-
-feature > gui settings, tabs:
-    main page
-        gui log - item size, row width
-    about page
-    or a single window with the information on it
-
-optimize > test the program using tick count function/class
-    large drop logs
-    which processes take up the most amount of load time, reduce those -- check speed different with/without SetBatchLines -1
-        pretty slow update onto log gui after selecting a custom quantity through quantity gui
-
-bug > set log gui mimimum height, becomes way too 'short' with small drop tables like 'chicken'
-
-bug > log gui last item in a drop table clips over the row above it
-
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ finishing touch ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ finishing touches ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 feature > mob images
         add ability to use proper mobs / items images by figuring out/ trying ahk resizing methods:
@@ -236,3 +229,8 @@ feature > mob images
                 use this in the drop table class to get images fast
 
 figure out miliseconds and 'FormatTime': https://www.autohotkey.com/boards/viewtopic.php?t=64641
+
+optimize > test the program using tick count function/class
+    large drop logs
+    which processes take up the most amount of load time, reduce those -- check speed different with/without SetBatchLines -1
+        pretty slow update onto log gui after selecting a custom quantity through quantity gui
