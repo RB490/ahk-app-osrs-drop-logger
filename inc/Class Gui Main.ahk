@@ -1,29 +1,29 @@
-class ClassGuiMob extends gui {
+class ClassGuiMain extends gui {
     Setup() {
         ; events
         this.Events["_BtnAdd"] := this.BtnAdd.Bind(this)
         this.Events["_BtnLog"] := this.BtnLog.Bind(this)
         this.Events["_HotkeyEnter"] := this.BtnAdd.Bind(this)
-        this.Events["_ListBoxHandler"] := this.ListBoxHandler.Bind(this)
+        this.Events["_MobListBoxHandler"] := this.MobListBoxHandler.Bind(this)
         this.Events["_SearchBoxHandler"] := this.SearchBoxHandler.Bind(this)
 
         ; properties
         this.marginSize := 10
         totalWidth := 200
-        this.Options("+LabelmobGui_")
+        this.Options("+LabelmainGui_")
 
         ; controls
         ; this.Add("text", "", "Search")
-        this.Add("edit", "w" totalWidth - 45 - this.marginSize " section gmobGui_SearchBoxHandler", "")
-        this.Add("button", "x+5 ys-1 w50 gmobGui_BtnHandler", "Add")
-        this.Add("listbox", "x" this.marginSize " w" totalWidth " r10 gmobGui_ListBoxHandler", "")
-        this.Add("button", "w" totalWidth " gmobGui_BtnHandler", "Log")
+        this.Add("edit", "w" totalWidth - 45 - this.marginSize " section gmainGui_SearchBoxHandler", "")
+        this.Add("button", "x+5 ys-1 w50 gmainGui_BtnHandler", "Add")
+        this.Add("listbox", "x" this.marginSize " w" totalWidth " r10 gmainGui_MobListBoxHandler", "")
+        this.Add("button", "w" totalWidth " gmainGui_BtnHandler", "Log")
 
         this.Add("picture", "w200 h200 border", "")
 
         ; hotkeys
         Hotkey, IfWinActive, % this.ahkid
-        Hotkey, Enter, mobGui_HotkeyEnter
+        Hotkey, Enter, mainGui_HotkeyEnter
         Hotkey, IfWinActive
 
         ; show
@@ -45,13 +45,13 @@ class ClassGuiMob extends gui {
                 output .= mob "|"
         output := RTrim(output, "|")
 
-        ; update listbox
+        ; update MobListBox
         GuiControl,, ListBox1 , |
         GuiControl,, ListBox1 , % output
         GuiControl, Choose, ListBox1, % SETTINGS_OBJ.selectedMob
     }
 
-    ListBoxHandler() {
+    MobListBoxHandler() {
         SETTINGS_OBJ.selectedMob := this.GuiControlGet("", "ListBox1")
         this.ControlFocus("edit1") ; prevent ctrl+s from changing current mob
 
@@ -129,8 +129,8 @@ class ClassGuiMob extends gui {
     }
 }
 
-mobGui_ContextMenu:
-    If !(SETTINGS_OBJ.selectedMob)
+mainGui_ContextMenu:
+    If !(SETTINGS_OBJ.selectedMob) or !(A_EventInfo) ; A_EventInfo = ListBox Target
         return
     
     mobMenuMob := SETTINGS_OBJ.selectedMob
@@ -144,45 +144,45 @@ return
 mobMenu_removeMob:
     SETTINGS_OBJ.mobs.Delete(SETTINGS_OBJ.selectedMob)
     SETTINGS_OBJ.selectedMob := ""
-    mobGui.Update()
+    mainGui.Update()
 return
 
-mobGui_ListBoxHandler:
+mainGui_MobListBoxHandler:
 	; call the class's method
-    for a, b in ClassGuiMob.Instances 
+    for a, b in ClassGuiMain.Instances 
 		if (a = WinExist("A")+0) ; if instance gui hwnd is identical to currently active window hwnd
-			b["Events"]["_ListBoxHandler"].Call()
+			b["Events"]["_MobListBoxHandler"].Call()
 return
 
-mobGui_SearchBoxHandler:
+mainGui_SearchBoxHandler:
 	; call the class's method
-    for a, b in ClassGuiMob.Instances 
+    for a, b in ClassGuiMain.Instances 
 		if (a = WinExist("A")+0) ; if instance gui hwnd is identical to currently active window hwnd
 			b["Events"]["_SearchBoxHandler"].Call()
 return
 
-mobGui_BtnHandler:
+mainGui_BtnHandler:
     ; get active button text without spaces
     ControlGetFocus, OutputControl, A
     ControlGetText, OutputControlText, % OutputControl, A
     OutputControlText := StrReplace(OutputControlText, A_Space)
 
     ; call the class's method
-    for a, b in ClassGuiMob.Instances 
+    for a, b in ClassGuiMain.Instances 
 		if (a = A_Gui+0)
 			b["Events"]["_Btn" OutputControlText].Call()
 return
 
-mobGui_HotkeyEnter:
+mainGui_HotkeyEnter:
 	; call the class's method
-    for a, b in ClassGuiMob.Instances 
+    for a, b in ClassGuiMain.Instances 
 		if (a = WinExist("A")+0) ; if instance gui hwnd is identical to currently active window hwnd
 			b["Events"]["_HotkeyEnter"].Call()
 return
 
-mobGui_Close:
+mainGui_Close:
     ; call the class's method
-    for a, b in ClassGuiMob.Instances 
+    for a, b in ClassGuiMain.Instances 
 		if (a = A_Gui+0)
 			b["Events"]["_BtnClose"].Call()
 return

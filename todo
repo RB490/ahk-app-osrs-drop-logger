@@ -178,22 +178,20 @@ drop log.get()
             bug > 'new trip' writes tripEnd and new tripStart in the same second so input is lost
                 encode + decode timestring with function, add and remove <identifier> A_TickCount
 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ completed ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 gui log
     feature > show trip number, kill number and current trip duration in title bar
+        ^ leave this in the stats gui
     feature > remember position
     bug > set log gui mimimum height, becomes way too 'short' with small drop tables like 'chicken'
     bug > log gui last item in a drop table clips over the row above it
 
-mob gui
-    feature > modify mob select to look like it did in 'rewrite 1', example is in /info/
-    feature > gui new preset
-        could write 'show under mouse' option to local gui class, and use it for presets + integer input
+mob aka 'main' gui
     refactoring > rename mob gui to something more descriptive because it has multiple purposes:
         selecting a mob
         selecting a drop log
         choosing a preset which selects the two above
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ completed ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 stats
     feature > gui stats
@@ -229,6 +227,12 @@ feature > mob images
                 use this in the drop table class to get images fast
 
 figure out miliseconds and 'FormatTime': https://www.autohotkey.com/boards/viewtopic.php?t=64641
+
+main gui
+    feature > modify mob select to look like it did in 'rewrite 1'?, example is in /info/
+        feature > gui new preset
+            preset name + drop log file + drop log mob
+            position: could write 'show under mouse' option to local gui class, and use it for presets + integer input
 
 optimize > test the program using tick count function/class
     large drop logs

@@ -1,4 +1,10 @@
 {
   "guiLogX": 990,
-  "guiLogY": 441
+  "guiLogY": 441,
+  "mobs": {
+    "Fire Giant": "",
+    "Goblin": "",
+    "Vorkath": ""
+  },
+  "selectedMob": "Goblin"
 }

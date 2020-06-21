@@ -19,7 +19,7 @@
     global  DROP_LOG                    := new ClassDropLog
     global  DROP_TABLE                  := new ClassDropTable
     global  LOG_GUI                     := new ClassGuiLog("Log Gui")
-    global  MOB_GUI                     := new ClassGuiMob("Mob Gui")
+    global  MAIN_GUI                    := new ClassGuiMain("Main Gui")
     global  QUANTITY_GUI                := new ClassGuiQuantity("Quantity Gui")
     global  _BTN_CLEAR_DROPS            ; log gui
     global  _BTN_TOGGLE_TRIP            ; log gui
@@ -36,11 +36,11 @@
         If !(IsObject(SETTINGS_OBJ))
             SETTINGS_OBJ := {}
 
-    DROP_TABLE.Get("fire giant")
-
-    FileDelete, % PATH_DROP_LOG
-    DROP_LOG.Load(PATH_DROP_LOG)
-    LOG_GUI.Setup()
+    MAIN_GUI.Setup()
+    ; DROP_TABLE.Get("fire giant")
+    ; FileDelete, % PATH_DROP_LOG
+    ; DROP_LOG.Load(PATH_DROP_LOG)
+    ; LOG_GUI.Setup()
 return
 
 ; Global hotkeys
@@ -65,6 +65,6 @@ return
     #Include Class Drop Log.ahk
     #Include Class Drop Table.ahk
     #Include Class Gui Log.ahk
-    #Include Class Gui Mob.ahk
+    #Include Class Gui Main.ahk
     #Include Class Gui Quantity.ahk
     #Include Functions.ahk
