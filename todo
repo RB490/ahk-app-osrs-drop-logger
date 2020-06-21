@@ -191,13 +191,9 @@ mob aka 'main' gui
         selecting a drop log
         choosing a preset which selects the two above
 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ completed ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-stats
-    feature > gui stats
-    feature > stats class
-
 feature > drop log class > choosing drop log file that does not exist > ask to create file
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ completed ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 feature > gui log small settings menu button with icon
     guiLog - item size
@@ -205,6 +201,10 @@ feature > gui log small settings menu button with icon
     gui about
         github repo
         some usefull information about the program, maybe how it functions, dependencies runelite/osrs wiki
+
+stats
+    feature > gui stats
+    feature > stats class
 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ finishing touches ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

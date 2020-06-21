@@ -65,29 +65,30 @@ class ClassDropLog {
     }
 
     ; (optional) input = {string} path to existing drop log file
-    ; purpose = create drop log object
+    ; purpose = load drop log into this.obj
     Load(logFile:="") {
-        If !(logFile)
-            this._SetFile()
+        If !(logFile) {
+            FileSelectFile, SelectedFile, 11, % manageGui.GetText("Edit1"), Select drop log, Json (*.json)
+            If !(SelectedFile) {
+                msgbox, 4160, , % A_ThisFunc ": Can't log without a log file"
+                reload
+            }
+            SplitPath, SelectedFile , OutFileName, OutDir, OutExtension, OutNameNoExt, OutDrive
+            PATH_DROP_LOG := OutDir "\" OutNameNoExt ".json"
+        }
 
         this.undoActions := {}
         this.redoActions := {}
 
         content := json.load(FileRead(PATH_DROP_LOG))
-        If (IsObject(content))
+        If (IsObject(content)) {
             this.obj := content
-        else
-            this.obj := {}
-    }
-
-    _SetFile() {
-        FileSelectFile, SelectedFile, 2, % manageGui.GetText("Edit1"), Select drop log, Json (*.json)
-        If !(SelectedFile) {
-            msgbox, 4160, , % A_ThisFunc ": Can't log without a log file"
-            reload
+            return true
         }
-        SplitPath, SelectedFile , OutFileName, OutDir, OutExtension, OutNameNoExt, OutDrive
-        PATH_DROP_LOG := OutDir "\" OutNameNoExt ".json"
+        else {
+            this.obj := {}
+            return false
+        }
     }
 
     Save() {

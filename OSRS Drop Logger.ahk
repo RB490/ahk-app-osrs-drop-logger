@@ -36,7 +36,8 @@
         If !(IsObject(SETTINGS_OBJ))
             SETTINGS_OBJ := {}
 
-    MAIN_GUI.Setup()
+    DROP_LOG.Load()
+    ; MAIN_GUI.Setup()
     ; DROP_TABLE.Get("fire giant")
     ; FileDelete, % PATH_DROP_LOG
     ; DROP_LOG.Load(PATH_DROP_LOG)

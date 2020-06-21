@@ -114,17 +114,11 @@ class ClassGuiMain extends gui {
     }
 
     BtnLog() {
-        this.Hide()
-
-        FileSelectFile, SelectedFile, 3, , Open a drop log, Text Documents (*.txt)
-        if (SelectedFile = "") {
-            this.Show()
+        result := DROP_LOG.Load()
+        If !(result)
             return
-        }
-        PATH_DROP_LOG := SelectedFile
-
+        this.Hide()
         DROP_TABLE.Get(SETTINGS_OBJ.selectedMob)
-        DROP_LOG.Load(PATH_DROP_LOG)
         LOG_GUI.Setup()
     }
 }
