@@ -10,17 +10,17 @@
     global  PATH_ITEM_IMAGES            := A_ScriptDir "\res\img\items"
     global  PATH_MOB_IMAGES             := A_ScriptDir "\res\img\mobs"
     global  PATH_ITEM_IDS               := A_ScriptDir "\res\itemIds.json"
-    global  PATH_SETTINGS               := A_ScriptDir "\SETTINGS_OBJ.json"
+    global  PATH_SETTINGS               := A_ScriptDir "\settings.json"
     global  PATH_DROP_LOG               := "D:\Downloads\debugLog.json"
     global  SETTINGS_OBJ                := {}
     global  SELECTED_DROPS              := {}
-    global  RUNELITE_API                := new class_api_runeLite
-    global  WIKI_API                    := new class_api_wiki
-    global  DROP_LOG                    := new class_drop_log
-    global  DROP_TABLE                  := new class_drop_table
-    global  LOG_GUI                     := new class_gui_log("Log Gui")
-    global  MOB_GUI                     := new class_gui_mob("Mob Gui")
-    global  QUANTITY_GUI                := new class_gui_quantity("Quantity Gui")
+    global  RUNELITE_API                := new ClassApiRunelite
+    global  WIKI_API                    := new ClassApiWiki
+    global  DROP_LOG                    := new ClassDropLog
+    global  DROP_TABLE                  := new ClassDropTable
+    global  LOG_GUI                     := new ClassGuiLog("Log Gui")
+    global  MOB_GUI                     := new ClassGuiMob("Mob Gui")
+    global  QUANTITY_GUI                := new ClassGuiQuantity("Quantity Gui")
     global  _BTN_CLEAR_DROPS            ; log gui
     global  _BTN_TOGGLE_TRIP            ; log gui
     global  _BTN_TOGGLE_DEATH           ; log gui
@@ -36,17 +36,9 @@
         If !(IsObject(SETTINGS_OBJ))
             SETTINGS_OBJ := {}
 
-    DROP_TABLE.Get("black demon")
-    ; DROP_LOG.Load("some input")
-    ; DROP_LOG.StartTrip()
-    ; LOG_GUI.Setup()
-    ; MOB_GUI.Setup()
-    
-    ; msgbox hi there
+    DROP_TABLE.Get("fire giant")
 
-    ; QUANTITY_GUI.Debug_Get()
-    ; return
-
+    FileDelete, % PATH_DROP_LOG
     DROP_LOG.Load(PATH_DROP_LOG)
     LOG_GUI.Setup()
 return

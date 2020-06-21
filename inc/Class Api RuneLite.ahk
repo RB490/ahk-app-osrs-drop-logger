@@ -1,5 +1,5 @@
 ; retrieve item ids from runelite source code
-class class_api_runeLite {
+class ClassApiRunelite {
     __New() {
         this.itemIdUrl := "https://raw.githubusercontent.com/runelite/runelite/master/runelite-api/src/main/java/net/runelite/api/ItemID.java"
         this.apiMainUrl := "https://static.runelite.net/api/http-service/"
@@ -50,10 +50,15 @@ class class_api_runeLite {
     _EncodeItem(input) {
         output := input
 
-
         ; remove members/f2p markings
         output := StrReplace(output, "(m)")
         output := StrReplace(output, "(f)")
+
+        ; remove '-' eg. Zul-andra teleport
+        output := StrReplace(output, "-")
+
+        ; remove '+' eg. Antidote++(4)
+        output := StrReplace(output, "+")
 
         ; remove brackets
         output := StrReplace(output, "(", "") ; eg. defence potion(3)
@@ -75,7 +80,6 @@ class class_api_runeLite {
         ; replace spaces with underscores
         output := StrReplace(output, A_Space, "_")
         StringUpper, output, output
-
         return output
     }
 

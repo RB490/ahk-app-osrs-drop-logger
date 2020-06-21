@@ -1,4 +1,4 @@
-class class_gui_quantity extends gui {
+class ClassGuiQuantity extends gui {
     /*
         input = {object} item object from 'DROP_TABLE.GetDrop()' this method uses 
             input.quantity  contains one or multiple wiki drop table quantities separated by '#'
@@ -164,14 +164,14 @@ quantityGui_BtnHandler:
         QUANTITY_GUI.BtnIntegerHandler(OutputControlText)
 
     ; call the class's method
-    for a, b in class_gui_quantity.Instances 
+    for a, b in ClassGuiQuantity.Instances 
 		if (a = A_Gui+0)
 			b["Events"]["_Btn" OutputControlText].Call()
 return
 
 quantityGui_HotkeyEnter:
     ; call the class's method
-    for a, b in class_gui_quantity.Instances 
+    for a, b in ClassGuiQuantity.Instances 
 		if (a = WinExist("A")+0) ; if instance gui hwnd is identical to currently active window hwnd
 			b["Events"]["_HotkeyEnter"].Call()
 return
@@ -179,7 +179,7 @@ return
 quantityGui_Close:
 quantityGui_HotkeyEscape:
     ; call the class's method
-    for a, b in class_gui_quantity.Instances 
+    for a, b in ClassGuiQuantity.Instances 
 		if (a = WinExist("A")+0) ; if instance gui hwnd is identical to currently active window hwnd
 			b["Events"]["_HotkeyEscape"].Call()
 return

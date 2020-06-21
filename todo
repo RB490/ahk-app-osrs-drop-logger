@@ -135,13 +135,13 @@ OnWM_LBUTTONDOWN > handle a variety of different item quantities
 bug gui log > select a drop > select the same drop right after > no response, why this delay?
     solution: something to do with how microsoft coded WM_LBUTTONDOWN(), if you click in different spots on the image its fine
 
-class_gui_quantity > disable LOG_GUI while its open
+ClassGuiQuantity > disable LOG_GUI while its open
 
 feature > loading and saving drop logs
 
 bug > 'black demon' drop log main tab choose addy bar, edit field is set to 0
 
-refactor > class_gui_quantity
+refactor > ClassGuiQuantity
 
 feature > achieve feature parity with older versions. check older versions  eg. add current trip information (in the program title or somewhere else)
 
@@ -161,16 +161,24 @@ gui log
 save snippet working example from: https://www.autohotkey.com/boards/viewtopic.php?t=30979
 
 refactor global variables into caps lock with underscores eg:
-    DROP_LOG.Get()           = CLASS_DROP_LOG.Get() or _DROP_LOG.Get()
-    PATH_MOB_IMAGES        = PATH_MOB_IMAGES
-    _BTN_TOGGLE_TRIP  = HWND_BTN_TOGGLE_TRIP
-    
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ completed ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+clear drops when starting/ stopping trip
+
+bug > prevent kills from being logged while dead
+
+disable everything on the gui except death toggle button, when dead
 
 drop log.get()
-    feature > add ---trip--- dividers between trips in drop log.get()
-    feature > add ---death--- divider between in drop log.get()
+    feature > add ---trip #<tripnumber>--- dividers between trips in drop log.get()
     feature > add space between drops in drop log.get()
+    feature > add ---death--- divider between in drop log.get()
+        log the time of each individual drop aswell and then create an object
+        with key:value where key is all the timestamps so they automatically
+        get organized on the correct time
+            bug > 'new trip' writes tripEnd and new tripStart in the same second so input is lost
+                encode + decode timestring with function, add and remove <identifier> A_TickCount
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ completed ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 gui log
     feature > show trip number, kill number and current trip duration in title bar
@@ -194,14 +202,20 @@ feature > gui new preset
 
 feature > gui settings, tabs:
     main page
-        gui log item size and row width
+        gui log - item size, row width
     about page
     or a single window with the information on it
 
 optimize > test the program using tick count function/class
     large drop logs
-    which processes take up the most amount of load time, reduce those
+    which processes take up the most amount of load time, reduce those -- check speed different with/without SetBatchLines -1
         pretty slow update onto log gui after selecting a custom quantity through quantity gui
+
+bug > set log gui mimimum height, becomes way too 'short' with small drop tables like 'chicken'
+
+bug > log gui last item in a drop table clips over the row above it
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ finishing touch ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 feature > mob images
         add ability to use proper mobs / items images by figuring out/ trying ahk resizing methods:
@@ -220,3 +234,5 @@ feature > mob images
         bulk file download
             goal: function that calls separate script file to download files (images) quickly,
                 use this in the drop table class to get images fast
+
+figure out miliseconds and 'FormatTime': https://www.autohotkey.com/boards/viewtopic.php?t=64641

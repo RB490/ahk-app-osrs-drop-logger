@@ -1,4 +1,4 @@
-Class class_drop_table {
+Class ClassDropTable {
     
     /*
         param <input>       = {integer} number of drop going through all tables
@@ -60,7 +60,7 @@ Class class_drop_table {
 
     ; purpose = merge tables below x into a main table
     _TablesMergeBelowX() {
-        tablesMergeBelowX := 32
+        tablesMergeBelowX := 27 ; 27 = rdt
 
         output := {}
         output.push({title: "Main", drops: {}})

@@ -1,17 +1,67 @@
-; output example in info\example class_drop_log.json
-class class_drop_log {   
-    ; output = {string} containing current trip drops
-    Get() {
-        obj := this.obj[this.obj.length()].drops
-        loop % obj.length() {
-            kill := A_Index
-            loop % obj[A_Index].length()
-                drops .= obj[kill][A_Index].quantity " x " obj[kill][A_Index].name ", "
-            
-            drops := RTrim(drops, ", ")
-            drops .= "`r `n"
+; output example in info\example ClassDropLog.json
+class ClassDropLog {   
+    ; output = {string} entire drop log formatted
+    GetFormattedLog() {
+
+        ; build key:value object where key is event timestamp and value the event
+        output := {}
+        loop % this.obj.length() {
+            trip := this.obj[A_Index]
+            output[trip.tripStart] := "Trip Start" ; add trip start
+            output[trip.tripEnd] := "Trip End" ; add trip end
+
+            ; add kills
+            loop % trip.kills.length() {
+                killEnd := trip.kills[A_Index].killEnd
+                killDrops := trip.kills[A_Index].drops
+
+                drops := ""
+                loop % killDrops.length() {
+                    drop := killDrops[A_Index]
+                    
+                    drops .= drop.quantity " x " drop.name ", "
+                }
+                drops := RTrim(drops, ", ")
+                output[killEnd] := drops
+            }
+
+            ; add deaths
+            loop % trip.deaths.length() {
+                death := trip.deaths[A_Index]
+
+                output[death.deathStart] := "Death Start" ; add death start
+                output[death.deathEnd] := "Death End" ; add death end
+            }
         }
-        return drops
+        output.Delete("") ; empty key can be created when there is no timestamp available for death/trip start/end
+
+        ; build formatted string output
+        for key, value in output {
+            ; ignore
+            If (InStr(value, "Death End"))
+                Continue
+            
+            ; prettify
+            If (InStr(value, "Death Start"))
+                value := "------- Death -------"
+            If (InStr(value, "trip"))
+                value := "----------------------" value "----------------------"
+            
+            If (InStr(value, "trip"))
+                output .= "`n"
+
+            output .= "`n" value
+            
+            If (InStr(value, "trip"))
+                output .= "`n"
+        }
+        output := LTrim(output, "`n")
+        ; output := RTrim(output, "`n")
+        return output
+    }
+
+    ; output = {string} <current trip> drops formatted
+    GetFormattedTrip() {
     }
 
     ; (optional) input = {string} path to existing drop log file
@@ -69,7 +119,7 @@ class class_drop_log {
     }
 
     ; input = {object} retrieved by DROP_LOG.GetDrop() containing drop information
-    Add(input) {
+    AddKill(input) {
         If !(input.length()) {
             input.name := "Nothing"
             input.quantity := "N/A"
@@ -78,8 +128,12 @@ class class_drop_log {
         this.redoActions := {}
         this.undoActions.push(ObjFullyClone(this.obj))
         
-        obj := this.obj[this.obj.length()]
-        obj.drops.push(input)
+        kill := {}
+        kill.killEnd := ConvertTimeStamp("encode", A_Now)
+        kill.drops := input
+
+        trip := this.obj[this.obj.length()]
+        kills := trip.kills.push(kill)
         return true
     }
 
@@ -93,9 +147,9 @@ class class_drop_log {
         this.undoActions.push(ObjFullyClone(this.obj))
         
         obj := {}
-        obj.drops := {}
+        obj.kills := {}
         obj.deaths := {}
-        obj.tripStart := A_Now
+        obj.tripStart := ConvertTimeStamp("encode", A_Now)
         obj.tripEnd := ""
         this.obj.push(obj)
     }
@@ -105,7 +159,20 @@ class class_drop_log {
         this.undoActions.push(ObjFullyClone(this.obj))
         
         obj := this.obj[this.obj.length()]
-        obj.tripEnd := A_Now
+        obj.tripEnd := ConvertTimeStamp("encode", A_Now)
+    }
+
+    ToggleTrip() {
+        If (this.TripActive())
+            this.EndTrip()
+        else
+            this.StartTrip()
+    }
+
+    NewTrip() {
+        If (this.TripActive())
+            this.EndTrip()
+        this.StartTrip()
     }
 
     TripActive() {
@@ -120,7 +187,7 @@ class class_drop_log {
         this.undoActions.push(ObjFullyClone(this.obj))
         
         obj := this.obj[this.obj.length()]
-        obj.deaths.push({"deathStart": A_Now})
+        obj.deaths.push({"deathStart": ConvertTimeStamp("encode", A_Now)})
     }
 
     EndDeath() {
@@ -129,7 +196,14 @@ class class_drop_log {
         
         obj := this.obj[this.obj.length()].deaths
         obj := obj[obj.length()]
-        obj.deathEnd := A_Now
+        obj.deathEnd := ConvertTimeStamp("encode", A_Now)
+    }
+
+    ToggleDeath() {
+        If (this.DeathActive())
+            this.EndDeath()
+        else
+            this.StartDeath()
     }
 
     DeathActive() {

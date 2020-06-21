@@ -5,6 +5,22 @@ ExitFunc(ExitReason, ExitCode) {
     DROP_LOG.Save()
 }
 
+; input = {string} 'encode' or 'decode'
+; purpose = DROP_LOG.GetFormattedLog() uses timestamps to put events in the right order,
+;   add A_MSec to prevent multiple actions in the same second overwriting eachother
+ConvertTimeStamp(encodeOrDecode, timeStamp) {
+    sleep 1 ; wait 1 milisecond so actions in DROP_LOG.GetFormattedLog() don't execute on the same milisecond
+    
+    If (encodeOrDecode = "encode") {
+        output := timeStamp A_MSec
+    }
+
+    If (encodeOrDecode = "decode")
+        output := SubStr(timeStamp, 1, StrLen(timeStamp) - 3)
+
+    return output
+}
+
 OnWM_LBUTTONDOWN(wParam, lParam, msg, hWnd) {
     MouseGetPos, OutputVarX, OutputVarY, OutputVarWin, OutputVarControl
     GuiControlGet, OutputAssociatedVar, Name, % OutputVarControl
@@ -16,6 +32,11 @@ OnWM_LBUTTONDOWN(wParam, lParam, msg, hWnd) {
 
     If !(DROP_LOG.TripActive()) {
         tooltip No trip started!
+        SetTimer, disableTooltip, -250
+        return
+    }
+     If (DROP_LOG.DeathActive()) {
+        tooltip You're dead!
         SetTimer, disableTooltip, -250
         return
     }

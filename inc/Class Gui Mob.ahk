@@ -1,4 +1,4 @@
-class class_gui_mob extends gui {
+class ClassGuiMob extends gui {
     Setup() {
         ; events
         this.Events["_BtnAdd"] := this.BtnAdd.Bind(this)
@@ -149,14 +149,14 @@ return
 
 mobGui_ListBoxHandler:
 	; call the class's method
-    for a, b in class_gui_mob.Instances 
+    for a, b in ClassGuiMob.Instances 
 		if (a = WinExist("A")+0) ; if instance gui hwnd is identical to currently active window hwnd
 			b["Events"]["_ListBoxHandler"].Call()
 return
 
 mobGui_SearchBoxHandler:
 	; call the class's method
-    for a, b in class_gui_mob.Instances 
+    for a, b in ClassGuiMob.Instances 
 		if (a = WinExist("A")+0) ; if instance gui hwnd is identical to currently active window hwnd
 			b["Events"]["_SearchBoxHandler"].Call()
 return
@@ -168,21 +168,21 @@ mobGui_BtnHandler:
     OutputControlText := StrReplace(OutputControlText, A_Space)
 
     ; call the class's method
-    for a, b in class_gui_mob.Instances 
+    for a, b in ClassGuiMob.Instances 
 		if (a = A_Gui+0)
 			b["Events"]["_Btn" OutputControlText].Call()
 return
 
 mobGui_HotkeyEnter:
 	; call the class's method
-    for a, b in class_gui_mob.Instances 
+    for a, b in ClassGuiMob.Instances 
 		if (a = WinExist("A")+0) ; if instance gui hwnd is identical to currently active window hwnd
 			b["Events"]["_HotkeyEnter"].Call()
 return
 
 mobGui_Close:
     ; call the class's method
-    for a, b in class_gui_mob.Instances 
+    for a, b in ClassGuiMob.Instances 
 		if (a = A_Gui+0)
 			b["Events"]["_BtnClose"].Call()
 return

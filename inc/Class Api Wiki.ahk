@@ -1,4 +1,4 @@
-class class_api_wiki {
+class ClassApiWiki {
     __New() {
         this.url := "https://oldschool.runescape.wiki"
     }
@@ -100,7 +100,7 @@ class class_api_wiki {
 
     /*
         param <input>      = {string} wiki page containing drop tables eg. 'Vorkath'
-        returns            =  success {object} drop table, example @ "\info\example class_api_wiki.GetDropTables('Black_demon').json"
+        returns            =  success {object} drop table, example @ "\info\example ClassApiWiki.GetDropTables('Black_demon').json"
                               failure {integer} false
     */
     GetDropTables(input) {
