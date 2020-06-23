@@ -43,20 +43,23 @@
     FileCreateDir, % PATH_MOB_IMAGES
     LoadSettings()
 
-    STATS_GUI.Setup()
-    ; return
+
+    /* stats
     ; DROP_LOG.Load("D:\Programming and projects\ahk-app-osrs-drop-logger\info\ClassDropLog.json")
-    DROP_LOG.Load("D:\Programming and projects\ahk-app-osrs-drop-logger\info\ClassDropLog 5k.json")
-    ; DROP_LOG.Load("D:\Programming and projects\ahk-app-osrs-drop-logger\info\ClassDropLog 10k.json")
+    ; DROP_LOG.Load("D:\Programming and projects\ahk-app-osrs-drop-logger\info\ClassDropLog 5k.json")
+    DROP_LOG.Load("D:\Programming and projects\ahk-app-osrs-drop-logger\info\ClassDropLog 10k.json")
     ; DROP_LOG.Load("D:\Programming and projects\ahk-app-osrs-drop-logger\info\ClassDropLog 100k.json")
-    DROP_STATS.Calculate()
-    return
+    DROP_STATS.UpdateBasicStats()
+    DROP_STATS.UpdateAdvancedStats()
+    */
+
+
     debugLog := "D:\Downloads\debugLog.json"
     ; MAIN_GUI.Setup()
-    ; DROP_TABLE.Get("fire giant")
+    DROP_TABLE.Get("fire giant")
     ; FileDelete, % debugLog
-    ; DROP_LOG.Load(debugLog)
-    ; LOG_GUI.Setup()
+    DROP_LOG.Load(debugLog)
+    LOG_GUI.Setup()
 return
 
 ; Global hotkeys

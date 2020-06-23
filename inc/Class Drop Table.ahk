@@ -151,6 +151,10 @@ Class ClassDropTable {
                 If (drop.name = "Nothing")
                     Continue
                 id := RUNELITE_API.GetItemId(drop.name)
+                If !(id) {
+                    msgbox, 4160, , % A_ThisFunc ": No id found for: " drop.name
+                    Continue
+                }
                 path := PATH_ITEM_IMAGES "\" id ".png"
                 If FileExist(path)
                     Continue

@@ -4,50 +4,58 @@ Class ClassDropStats {
         ; msgbox % A_ThisFunc
     }
 
-    Calculate() {
-        stats := {}
-        this.obj := ObjFullyClone(DROP_LOG.obj)
+    UpdateBasicStats() {
+        hwnd := this.hwnd
 
-        ; timer()
+        this.obj := ObjFullyClone(DROP_LOG.obj)
+        stats := {}
 
         ; total
-        totalTrips := this._getTotalTrips()                         , stats.totalTrips := totalTrips
-        totalKills := this._getTotalKills()                         , stats.totalKills := totalKills
-        totalDrops  := this._getTotalDrops()                        , stats.totalDrops := totalDrops
-        totalDeaths := this._getTotalDeaths()                       , stats.totalDeaths := totalDeaths
-        totalTime  := this._getTotalTime()                          , stats.totalTime := totalTime
-        totalDeadTime  := this._getTotalDeadTime()                  , stats.totalDeadTime := totalDeadTime
-        totalDropsValue := this._getTotalDropsValue()               , stats.totalDropsValue := totalDropsValue
+        stats.totalTrips := totalTrips := this._getTotalTrips()
+        stats.totalKills := totalKills := this._getTotalKills() , this.totalKills := totalKills
+        stats.totalDrops := totalDrops  := this._getTotalDrops()
+        stats.totalDeaths := totalDeaths := this._getTotalDeaths()
+        stats.totalTime := totalTime  := this._getTotalTime()
+        stats.totalDeadTime := totalDeadTime  := this._getTotalDeadTime()
+        stats.totalDropsValue := totalDropsValue := this._getTotalDropsValue()
 
         ; average profit
-        avgProfitPerTrip := totalDropsValue / totalTrips            , stats.avgProfitPerTrip := avgProfitPerTrip
-        avgProfitPerKill := totalDropsValue / totalKills            , stats.avgProfitPerKill := avgProfitPerKill
-        avgProfitPerDrop := totalDropsValue / totalDrops            , stats.avgProfitPerDrop := avgProfitPerDrop
-        avgProfitPerHour := totalDropsValue / (totalTime / 3600)    , stats.avgProfitPerHour := avgProfitPerHour
+        stats.avgProfitPerTrip := avgProfitPerTrip := totalDropsValue / totalTrips
+        stats.avgProfitPerKill := avgProfitPerKill := totalDropsValue / totalKills
+        stats.avgProfitPerDrop := avgProfitPerDrop := totalDropsValue / totalDrops
+        stats.avgProfitPerHour := avgProfitPerHour := totalDropsValue / (totalTime / 3600)
 
         ; average trip
-        avgKillsPerTrip := totalKills / totalTrips                  , stats.avgKillsPerTrip := avgKillsPerTrip
-        avgDropsPerTrip := totalDrops / totalTrips                  , stats.avgDropsPerTrip := avgDropsPerTrip
+        stats.avgKillsPerTrip := avgKillsPerTrip := totalKills / totalTrips
+        stats.avgDropsPerTrip := avgDropsPerTrip := totalDrops / totalTrips
         
-        ; average time
-        avgTripsPerHour := totalTrips / (totalTime / 3600)          , stats.avgTripsPerHour := avgTripsPerHour
-        avgKillsPerHour := totalKills / (totalTime / 3600)          , stats.avgKillsPerHour := avgKillsPerHour
-        avgDropsPerHour := totalDrops / (totalTime / 3600)          , stats.avgDropsPerHour := avgDropsPerHour
+        ; average hourly
+        stats.avgTripsPerHour := avgTripsPerHour := totalTrips / (totalTime / 3600)
+        stats.avgKillsPerHour := avgKillsPerHour := totalKills / (totalTime / 3600)
+        stats.avgDropsPerHour := avgDropsPerHour := totalDrops / (totalTime / 3600)
 
-        avgTimePerTrip := totalTime / totalTrips                    , stats.avgTimePerTrip := avgTimePerTrip
-        avgTimePerKill := totalTime / totalKills                    , stats.avgTimePerKill := avgTimePerKill
-        avgTimePerDrop := totalTime / totalDrops                    , stats.avgTimePerDrop := avgTimePerDrop
+        ; average time
+        stats.avgTimePerTrip := avgTimePerTrip := totalTime / totalTrips
+        stats.avgTimePerKill := avgTimePerKill := totalTime / totalKills
+        stats.avgTimePerDrop := avgTimePerDrop := totalTime / totalDrops
 
         ; average deaths
-        avgTripsPerDeath := totalTrips / totalDeaths                , stats.avgTripsPerDeath := avgTripsPerDeath
-        avgKillsPerDeath := totalKills / totalDeaths                , stats.avgKillsPerDeath := avgKillsPerDeath
-        avgDropsPerDeath := totalDrops / totalDeaths                , stats.avgDropsPerDeath := avgDropsPerDeath
-        avgProfitPerDeath := totalDropsValue / totalDeaths          , stats.avgProfitPerDeath := avgProfitPerDeath
+        stats.avgTripsPerDeath := avgTripsPerDeath := totalTrips / totalDeaths
+        stats.avgKillsPerDeath := avgKillsPerDeath := totalKills / totalDeaths
+        stats.avgDropsPerDeath := avgDropsPerDeath := totalDrops / totalDeaths
+        stats.avgProfitPerDeath := avgProfitPerDeath := totalDropsValue / totalDeaths
 
-        ; timer()
+        STATS_GUI.UpdateBasic(stats)
+    }
 
-        ; msgbox % json.dump(stats,,2)
-        STATS_GUI.Update(stats)
+    UpdateAdvancedStats() {
+        this.uniqueDrops := this._getUniqueDrops()
+        this._setUniqueDropsTotalValue()
+        this._setUniqueDropsDropRate()
+        this._setUniqueDropsDryStreak()
+        this._setUniqueDropsDryStreakRecords()
+
+        STATS_GUI.UpdateAdvanced(stats)
     }
 
     _getTotalTrips() {
@@ -138,5 +146,131 @@ Class ClassDropStats {
             }
         }
         return output
+    }
+
+    _getUniqueDrops() {
+        inputObj := ObjFullyClone(this.obj)
+        output := {}
+
+        loop % inputObj.length() {
+            kills := inputObj[A_Index].kills
+            loop % kills.length() {
+                drops := kills[A_Index].drops
+
+                loop % drops.length() {
+                    drop := drops.pop() ; take & remove drop from source obj
+                    
+                    occurences := 0
+                    occurences += this._removeUniqueDrops(inputObj, drop.name, drop.quantity)
+                    occurences += 1 ; 'seed'/starting item
+
+                    output.push({name: drop.name, quantity: drop.quantity, occurences: occurences})
+                }
+            }
+        }
+        return output
+    }
+
+    _removeUniqueDrops(obj, dropName, dropQuantity) {
+        loop % obj.length() {
+            kills := obj[A_Index].kills
+
+            loop % kills.length() {
+                drops := kills[A_Index].drops
+
+                loop % drops.length() {
+                    drop := drops.Pop()
+
+                    If (drop.name = dropName) and (drop.quantity = dropQuantity) {
+                        output++
+                        Continue
+                    }
+
+                    drops.InsertAt(1, drop) ; insertat to prevent same item being popped again
+                }
+            }
+        }
+        return output
+    }
+
+    _setUniqueDropsTotalValue() {
+        loop % this.uniqueDrops.length() {
+            drop := this.uniqueDrops[A_Index]
+            totalItems := drop.quantity * drop.occurences
+            price := RUNELITE_API.GetItemPrice(drop.name)
+            drop.totalValue := totalItems * price
+            If !(drop.totalValue)
+                drop.totalValue := "-"
+        }
+    }
+
+    _setUniqueDropsDropRate() {
+        loop % this.uniqueDrops.length() {
+            drop := this.uniqueDrops[A_Index]
+            drop.dropRate := this.totalKills / drop.occurences
+        }
+    }
+    
+    _setUniqueDropsDryStreak() {
+        loop % this.uniqueDrops.length() {
+            uniqueDropIndex := A_Index
+            uniqueDrop := this.uniqueDrops[A_Index]
+
+            loop % this.obj.length() {
+                kills := this.obj[A_Index].kills
+
+                loop % kills.length() {
+                    drops := kills[A_Index].drops
+                    dropIndex++
+
+                    loop % drops.length() {
+                        drop := drops[A_Index]
+
+                        If (drop.name = uniqueDrop.name) and (drop.quantity = uniqueDrop.quantity) {
+                            output := dropIndex
+                            dropIndex := 0
+                        }
+                    }
+                }
+            }
+            this.uniqueDrops[uniqueDropIndex].dryStreak := output
+        }
+    }
+
+    _setUniqueDropsDryStreakRecords() {
+        loop % this.uniqueDrops.length() {
+            uniqueDropIndex := A_Index
+            uniqueDrop := this.uniqueDrops[uniqueDropIndex]
+
+            output := {}
+            loop % this.obj.length() {
+                kills := this.obj[A_Index].kills
+
+                loop % kills.length() {
+                    drops := kills[A_Index].drops
+
+                    loop % drops.length() {
+                        drop := drops[A_Index]
+                        dropIndex++
+
+                        If (drop.name = uniqueDrop.name) and (drop.quantity = uniqueDrop.quantity) {
+                            
+                            If !(match1Found)
+                                match1Found := dropIndex
+                            else
+                                match2Found := dropIndex
+
+                            If (match2Found) {
+                                output[match2Found - match1Found] := ""
+                                match1Found := ""
+                                match2Found := ""
+                            }
+                        }
+                    }
+                }
+            }
+            this.uniqueDrops[uniqueDropIndex].dryStreakRecordLow := output.MinIndex()
+            this.uniqueDrops[uniqueDropIndex].dryStreakRecordHigh := output.MaxIndex()
+        }
     }
 }

@@ -242,7 +242,8 @@ stats
             which method to use for loading stats class data into stats gui listview
     feature > stats class
 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ completed ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+feature > integrate gui stats into gui log > use vertical lines hamburger icon vaguely representing osrs stats tab icon. or the actual icon in black & white 
+    possibly also use this icon on the actual stats gui
 
 feature > stats > 'unique' drop information aka same quantity + name:
     'drop quantity' x 'drop name' | total times dropped | total value | drop rate | kills since last drop | shorest dry streak | longest dry streak
@@ -251,14 +252,17 @@ feature > stop logging + save drop log > on log gui close (return to main gui) a
     bug > stats > automatically end trip when stopping logging either because of gui close or script close
         this is to prevent a large amount of time between trip start & end time and thereby messing up stats
 
-feature > integrate gui stats into gui log > use vertical lines hamburger icon vaguely representing osrs stats tab icon. or the actual icon in black & white 
-    possibly also use this icon on the actual stats gui
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ completed ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+bug > runelite api url /item/prices/ does not include items without prices
 
 refactoring > Add  short description to the top of every class
 
 feature > _TablesMergeBelowX add to critical settings, log menu
 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ finishing touches ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+feature > remember stats gui position + size
 
 figure out miliseconds and 'FormatTime': https://www.autohotkey.com/boards/viewtopic.php?t=64641
 
@@ -270,6 +274,8 @@ main gui
 
 optimize > test the program using tick count function/class
     large drop logs
+        it should be possible to get really close to instant updates even at 100k lines by reducing loops, a lot
+            possibly make a separate stats class so theres 'room' for plenty of methods
     which processes take up the most amount of load time, reduce those -- check speed different with/without SetBatchLines -1
         pretty slow update onto log gui after selecting a custom quantity through quantity gui
 

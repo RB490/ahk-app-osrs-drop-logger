@@ -1,3 +1,17 @@
+ExitFunc(ExitReason, ExitCode) {
+    LOG_GUI.SavePos()
+    
+    FileDelete, % PATH_SETTINGS
+    FileAppend, % json.dump(SETTINGS_OBJ,,2), % PATH_SETTINGS
+
+    ; prevent stats being messed up by trip ongoing while program isnt running
+    If (DROP_LOG.TripActive())
+        DROP_LOG.EndTrip()
+    If (DROP_LOG.DeathActive())
+        DROP_LOG.EndDeath()
+    DROP_LOG.Save()
+}
+
 Timer() {
     static startTime, timerActive
  
@@ -30,15 +44,6 @@ LoadSettings() {
 LoadDefaultSettings() {
     SETTINGS_OBJ.logGuiDropSize := 33 ; 33 is close to ingame inventory
     SETTINGS_OBJ.logGuiMaxRowDrops := 8
-}
-
-ExitFunc(ExitReason, ExitCode) {
-    LOG_GUI.SavePos()
-    
-    FileDelete, % PATH_SETTINGS
-    FileAppend, % json.dump(SETTINGS_OBJ,,2), % PATH_SETTINGS
-
-    DROP_LOG.Save()
 }
 
 ; input = {string} 'encode' or 'decode'
