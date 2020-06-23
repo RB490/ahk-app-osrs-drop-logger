@@ -261,9 +261,20 @@ refactoring > Add  short description to the top of every class
 
 bug > gui log does not close
 
+feature > bulk file download
+    goal: function that calls separate script file to download files (images) quickly,
+        use this in the drop table class to get images fast
+            ^^ not doing this because runelite api is a limiting factor / even if its not thats abuse
+
+figure out miliseconds and 'FormatTime': https://www.autohotkey.com/boards/viewtopic.php?t=64641
+
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ completed ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-drop table retrieving
+bug > log menu > 'delocalize' menu images
+
+bug > main gui > remove 'x' > does not get removed, or does get removed but the gui isnt updated. also clear selected mob
+
+bugs > drop table retrieving
     bug > main gui > add 'Clue_scroll_(elite)' no errors even though this page does not have a single drop table
     bug > main gui > add "Chest (Barrows)' which contains drop tables on the wiki, but script cant retrieve
     bug > main gui > add 'Abyssal Sire' wiki class throws exception
@@ -272,27 +283,31 @@ drop table retrieving
 feature > _TablesMergeBelowX add to critical settings, log menu
 
 feature > stackable item icons > manually create these images and set them with code
+    note
+        sliiiight issue: items are named differently in the drop table and other pages eg. '/w/Ancient_Wyvern' mentions 'Seaweed spore' whereas '/w/Seeds' has Giant seaweed
+        could be a reason to manually make a list with item names and fetch (high) res images from the wiki
     seeds
-    ammo - arrows/darts/bolts, etc
+        https://oldschool.runescape.wiki/w/Seeds
+    ammo - arrows/darts/bolts, etc - darts(tips) do not have a bigger icon
+        https://oldschool.runescape.wiki/w/Bolts
+        https://oldschool.runescape.wiki/w/Arrows
     fletching - arrowtips/Dragonstone bolt tips, etc
+        https://oldschool.runescape.wiki/w/Fletching
+            https://oldschool.runescape.wiki/w/Arrowtips
+            https://oldschool.runescape.wiki/w/Unfinished_bolts
     coins
-                the wiki does have the right (5 seed) images as icons and high def images
-                if fixing this, do it for all seeds. all the herb seeds are identical which helps
-                manually download the seed images into a separate folder and use code to select them
-                (possibly) do the same with coins. multiple different stacks get set for different values
-                be sure add some white space aswell
-
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ finishing touches ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        https://oldschool.runescape.wiki/w/Coins
+    Numulite
+        https://oldschool.runescape.wiki/w/Numulite
 
 feature > remember stats gui position + size
 
-figure out miliseconds and 'FormatTime': https://www.autohotkey.com/boards/viewtopic.php?t=64641
+feature > main gui > modify mob select to look like it did in 'rewrite 1'?, example is in /info/
+    + feature > gui new preset
+        preset name + drop log file (use scaling from WIA library by 'just me') + drop log mob
+        position: could write 'show under mouse' option to local gui class, and use it for presets + integer input
 
-main gui
-    feature > modify mob select to look like it did in 'rewrite 1'?, example is in /info/
-        feature > gui new preset
-            preset name + drop log file + drop log mob
-            position: could write 'show under mouse' option to local gui class, and use it for presets + integer input
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ finishing touches ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 optimize > test the program using tick count function/class
     large drop logs
@@ -326,7 +341,3 @@ feature > mob images
             center image on canvas
             add border around canvas
             for multi quantity drops, add marking to top left of the image eg: '*'
-    
-feature > bulk file download
-    goal: function that calls separate script file to download files (images) quickly,
-        use this in the drop table class to get images fast

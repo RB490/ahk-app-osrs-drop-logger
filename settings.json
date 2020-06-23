@@ -5,9 +5,12 @@
   "logGuiMaxRowDrops": 8,
   "mobs": {
     "Ankou": "",
-    "Clue_scroll_(elite)": "",
-    "Dragon Impling Jar": "",
+    "Goblin": "",
+    "Ice Giant": "",
+    "Man": "",
+    "Moss Giant": "",
+    "Spider": "",
     "Vorkath": ""
   },
-  "selectedMob": "Clue_scroll_(elite)"
+  "selectedMob": ""
 }
