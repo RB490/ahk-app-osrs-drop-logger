@@ -234,11 +234,29 @@ stats item price lookup is slow, potential fix:
 
 combine collecting 'basic' stats into one loop? - though there doesnt seem to be a performance hit seperately looping through the object in multiple methods
 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ completed ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 stats
     feature > gui stats
+        gui stats listview
+            use formattime for time vars
+            add comma dividers for profit vars
+            which method to use for loading stats class data into stats gui listview
     feature > stats class
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ completed ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+feature > stats > 'unique' drop information aka same quantity + name:
+    'drop quantity' x 'drop name' | total times dropped | total value | drop rate | kills since last drop | shorest dry streak | longest dry streak
+
+feature > stop logging + save drop log > on log gui close (return to main gui) and on script close. also end trip and death if not done already:
+    bug > stats > automatically end trip when stopping logging either because of gui close or script close
+        this is to prevent a large amount of time between trip start & end time and thereby messing up stats
+
+feature > integrate gui stats into gui log > use vertical lines hamburger icon vaguely representing osrs stats tab icon. or the actual icon in black & white 
+    possibly also use this icon on the actual stats gui
+
+refactoring > Add  short description to the top of every class
+
+feature > _TablesMergeBelowX add to critical settings, log menu
 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ finishing touches ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

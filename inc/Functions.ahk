@@ -125,3 +125,24 @@ SetButtonIcon(hButton, File, Index, Size := 16) {
     hIcon := LoadPicture(File, "h" . Size . " Icon" . Index, _)
     SendMessage 0xF7, 1, %hIcon%,, ahk_id %hButton% ; BM_SETIMAGE
 }
+
+AddCommas(n)
+
+{
+
+	StringSplit, d, n, .
+
+	Loop, % StrLen(d1)
+
+		x := SubStr(d1, 1-A_Index, 1), c := x . (A_Index>1 && !Mod(A_Index-1,3) ? "," : "") . c
+
+	return c . (d0=2 ? "." d2 : "")
+
+}
+
+FormatSeconds(s) {
+    t := A_YYYY A_MM A_DD 00 00 00
+    t += s, seconds
+    FormatTime, output, % t, HH:mm:ss
+    return output
+}

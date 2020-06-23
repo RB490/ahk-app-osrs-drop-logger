@@ -5,19 +5,49 @@ Class ClassDropStats {
     }
 
     Calculate() {
+        stats := {}
         this.obj := ObjFullyClone(DROP_LOG.obj)
 
-        timer()
-        totalTrips := this._getTotalTrips()
-        totalKills := this._getTotalKills()
-        totalDrops  := this._getTotalDrops()
-        totalDeaths := this._getTotalDeaths()
-        totalTime  := this._getTotalTime()
-        totalDeadTime  := this._getTotalDeadTime()
-        totalDropsValue := this._getTotalDropsValue() ; requires processing
-        timer()
+        ; timer()
 
-        msgbox % totalDropsValue
+        ; total
+        totalTrips := this._getTotalTrips()                         , stats.totalTrips := totalTrips
+        totalKills := this._getTotalKills()                         , stats.totalKills := totalKills
+        totalDrops  := this._getTotalDrops()                        , stats.totalDrops := totalDrops
+        totalDeaths := this._getTotalDeaths()                       , stats.totalDeaths := totalDeaths
+        totalTime  := this._getTotalTime()                          , stats.totalTime := totalTime
+        totalDeadTime  := this._getTotalDeadTime()                  , stats.totalDeadTime := totalDeadTime
+        totalDropsValue := this._getTotalDropsValue()               , stats.totalDropsValue := totalDropsValue
+
+        ; average profit
+        avgProfitPerTrip := totalDropsValue / totalTrips            , stats.avgProfitPerTrip := avgProfitPerTrip
+        avgProfitPerKill := totalDropsValue / totalKills            , stats.avgProfitPerKill := avgProfitPerKill
+        avgProfitPerDrop := totalDropsValue / totalDrops            , stats.avgProfitPerDrop := avgProfitPerDrop
+        avgProfitPerHour := totalDropsValue / (totalTime / 3600)    , stats.avgProfitPerHour := avgProfitPerHour
+
+        ; average trip
+        avgKillsPerTrip := totalKills / totalTrips                  , stats.avgKillsPerTrip := avgKillsPerTrip
+        avgDropsPerTrip := totalDrops / totalTrips                  , stats.avgDropsPerTrip := avgDropsPerTrip
+        
+        ; average time
+        avgTripsPerHour := totalTrips / (totalTime / 3600)          , stats.avgTripsPerHour := avgTripsPerHour
+        avgKillsPerHour := totalKills / (totalTime / 3600)          , stats.avgKillsPerHour := avgKillsPerHour
+        avgDropsPerHour := totalDrops / (totalTime / 3600)          , stats.avgDropsPerHour := avgDropsPerHour
+
+        avgTimePerTrip := totalTime / totalTrips                    , stats.avgTimePerTrip := avgTimePerTrip
+        avgTimePerKill := totalTime / totalKills                    , stats.avgTimePerKill := avgTimePerKill
+        avgTimePerDrop := totalTime / totalDrops                    , stats.avgTimePerDrop := avgTimePerDrop
+
+        ; average deaths
+        avgTripsPerDeath := totalTrips / totalDeaths                , stats.avgTripsPerDeath := avgTripsPerDeath
+        avgKillsPerDeath := totalKills / totalDeaths                , stats.avgKillsPerDeath := avgKillsPerDeath
+        avgDropsPerDeath := totalDrops / totalDeaths                , stats.avgDropsPerDeath := avgDropsPerDeath
+        avgProfitPerDeath := totalDropsValue / totalDeaths          , stats.avgProfitPerDeath := avgProfitPerDeath
+
+        ; timer()
+
+        ; msgbox % json.dump(stats,,2)
+        STATS_GUI.Update(stats)
     }
 
     _getTotalTrips() {

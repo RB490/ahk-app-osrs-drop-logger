@@ -24,6 +24,7 @@
     global  LOG_GUI                     := new ClassGuiLog("")
     global  MAIN_GUI                    := new ClassGuiMain("Main Gui")
     global  QUANTITY_GUI                := new ClassGuiQuantity("Quantity Gui")
+    global  STATS_GUI                   := new ClassGuiStats("Stats Gui")
     global  _BTN_CLEAR_DROPS            ; log gui
     global  _BTN_TOGGLE_TRIP            ; log gui
     global  _BTN_TOGGLE_DEATH           ; log gui
@@ -42,6 +43,8 @@
     FileCreateDir, % PATH_MOB_IMAGES
     LoadSettings()
 
+    STATS_GUI.Setup()
+    ; return
     ; DROP_LOG.Load("D:\Programming and projects\ahk-app-osrs-drop-logger\info\ClassDropLog.json")
     DROP_LOG.Load("D:\Programming and projects\ahk-app-osrs-drop-logger\info\ClassDropLog 5k.json")
     ; DROP_LOG.Load("D:\Programming and projects\ahk-app-osrs-drop-logger\info\ClassDropLog 10k.json")
@@ -88,5 +91,6 @@ return
     #Include Class Gui Log.ahk
     #Include Class Gui Main.ahk
     #Include Class Gui Quantity.ahk
+    #Include Class Gui Stats.ahk
     #Include Func Gui About.ahk
     #Include Functions.ahk
