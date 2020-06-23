@@ -252,9 +252,12 @@ feature > stop logging + save drop log > on log gui close (return to main gui) a
     bug > stats > automatically end trip when stopping logging either because of gui close or script close
         this is to prevent a large amount of time between trip start & end time and thereby messing up stats
 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ completed ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 bug > runelite api url /item/prices/ does not include items without prices
+    ^ when downloading api file, also download the item id definition file and add those to the obj,
+        recover item name parsing code
+        use runelite item naming scheme everywhere for clarity
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ completed ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 refactoring > Add  short description to the top of every class
 
@@ -276,6 +279,7 @@ optimize > test the program using tick count function/class
     large drop logs
         it should be possible to get really close to instant updates even at 100k lines by reducing loops, a lot
             possibly make a separate stats class so theres 'room' for plenty of methods
+    incorrect or no data for the external apis
     which processes take up the most amount of load time, reduce those -- check speed different with/without SetBatchLines -1
         pretty slow update onto log gui after selecting a custom quantity through quantity gui
 

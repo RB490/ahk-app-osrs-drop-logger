@@ -43,7 +43,6 @@
     FileCreateDir, % PATH_MOB_IMAGES
     LoadSettings()
 
-
     /* stats
     ; DROP_LOG.Load("D:\Programming and projects\ahk-app-osrs-drop-logger\info\ClassDropLog.json")
     ; DROP_LOG.Load("D:\Programming and projects\ahk-app-osrs-drop-logger\info\ClassDropLog 5k.json")
