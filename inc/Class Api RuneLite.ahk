@@ -1,3 +1,4 @@
+; purpose = retrieves anything required from runelite
 Class ClassApiRunelite {
     __New() {
         this.apiHubUrl := "https://static.runelite.net/api/http-service/"

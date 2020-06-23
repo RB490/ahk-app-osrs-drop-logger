@@ -1,4 +1,5 @@
-; output example in info\example ClassDropLog.json
+; purpose = anything to do with getting and setting drop log information
+    ; example drop log in info\example ClassDropLog.json
 class ClassDropLog {   
     ; output = {string} entire drop log formatted
     GetFormattedLog() {

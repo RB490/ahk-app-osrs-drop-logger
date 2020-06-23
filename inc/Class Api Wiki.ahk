@@ -1,3 +1,4 @@
+; purpose = retrieves anything required from the osrs wiki
 class ClassApiWiki {
     __New() {
         this.url := "https://oldschool.runescape.wiki"

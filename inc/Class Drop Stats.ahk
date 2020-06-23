@@ -1,9 +1,5 @@
-; calculates stats based on drop log loaded in 'ClassDropLog'
+; calculates stats based on drop log loaded in 'DROP_LOG'
 Class ClassDropStats {
-    __New() {
-        ; msgbox % A_ThisFunc
-    }
-
     UpdateBasicStats() {
         hwnd := this.hwnd
 

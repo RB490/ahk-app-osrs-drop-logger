@@ -1,3 +1,4 @@
+; get drop table for mob and modify it to be usable. also retrieve drop images
 Class ClassDropTable {
     
     /*
