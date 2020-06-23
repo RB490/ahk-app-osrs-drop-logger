@@ -1,6 +1,13 @@
 {
-  "guiLogX": 696,
-  "guiLogY": 408,
+  "guiLogX": 125,
+  "guiLogY": 546,
   "logGuiDropSize": 33,
-  "logGuiMaxRowDrops": 8
+  "logGuiMaxRowDrops": 8,
+  "mobs": {
+    "Ankou": "",
+    "Clue_scroll_(elite)": "",
+    "Dragon Impling Jar": "",
+    "Vorkath": ""
+  },
+  "selectedMob": "Clue_scroll_(elite)"
 }

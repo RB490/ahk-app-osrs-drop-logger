@@ -71,8 +71,8 @@ class ClassDropLog {
         If !(file) {
             FileSelectFile, SelectedFile, 11, % manageGui.GetText("Edit1"), Select drop log, Json (*.json)
             If !(SelectedFile) {
-                msgbox, 4160, , % A_ThisFunc ": Can't log without a log file"
-                reload
+                ; msgbox, 4160, , % A_ThisFunc ": Can't log without a log file"
+                return false
             }
             SplitPath, SelectedFile , OutFileName, OutDir, OutExtension, OutNameNoExt, OutDrive
             file := OutDir "\" OutNameNoExt ".json"
@@ -89,6 +89,7 @@ class ClassDropLog {
         }
         else {
             this.obj := {}
+            msgbox, 4160, , % A_ThisFunc ": Specified file is not a valid drop log (json) type"
             return false
         }
     }

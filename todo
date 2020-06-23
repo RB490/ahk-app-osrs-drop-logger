@@ -259,9 +259,28 @@ bug > runelite api url /item/prices/ does not include items without prices
 
 refactoring > Add  short description to the top of every class
 
+bug > gui log does not close
+
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ completed ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+drop table retrieving
+    bug > main gui > add 'Clue_scroll_(elite)' no errors even though this page does not have a single drop table
+    bug > main gui > add "Chest (Barrows)' which contains drop tables on the wiki, but script cant retrieve
+    bug > main gui > add 'Abyssal Sire' wiki class throws exception
+    bug > ankou > tooth half of key and tooth half of key (m) are not two separate drops - merge these
+
 feature > _TablesMergeBelowX add to critical settings, log menu
+
+feature > stackable item icons > manually create these images and set them with code
+    seeds
+    ammo - arrows/darts/bolts, etc
+    fletching - arrowtips/Dragonstone bolt tips, etc
+    coins
+                the wiki does have the right (5 seed) images as icons and high def images
+                if fixing this, do it for all seeds. all the herb seeds are identical which helps
+                manually download the seed images into a separate folder and use code to select them
+                (possibly) do the same with coins. multiple different stacks get set for different values
+                be sure add some white space aswell
 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ finishing touches ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

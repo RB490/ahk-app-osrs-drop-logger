@@ -53,12 +53,12 @@
     */
 
 
-    debugLog := "D:\Downloads\debugLog.json"
-    ; MAIN_GUI.Setup()
-    DROP_TABLE.Get("fire giant")
+    ; debugLog := "D:\Downloads\debugLog.json"
+    MAIN_GUI.Setup()
+    ; DROP_TABLE.Get("fire giant")
     ; FileDelete, % debugLog
-    DROP_LOG.Load(debugLog)
-    LOG_GUI.Setup()
+    ; DROP_LOG.Load(debugLog)
+    ; LOG_GUI.Setup()
 return
 
 ; Global hotkeys
