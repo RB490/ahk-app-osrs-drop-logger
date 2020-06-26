@@ -12,11 +12,12 @@
   "logGuiMaxRowDrops": 7,
   "mobs": {
     "Ancient Wyvern": "",
+    "Fire Giant": "",
     "Goblin": "",
     "Ice Giant": "",
-    "Moss Giant": "",
     "Vorkath": ""
   },
-  "selectedMob": "Moss Giant",
+  "selectedLogFile": "D:\\Downloads\\testdir\\debugLog.json",
+  "selectedMob": "Ancient Wyvern",
   "tablesMergeBelowX": 21
 }

@@ -298,3 +298,24 @@ feature > main gui > modify mob select to look like it did in 'rewrite 1'?, exam
         preset name + drop log file (use scaling from WIA library by 'just me') + drop log mob
         position: could write 'show under mouse' option to local gui class, and use it for presets + integer input
         ^^^^ not doing presets because you can just create a 'drop log' folder and name each file after a mob or whatever
+
+bug > gui main > log mob > gui log opens > gui main / >>>somehow<<< mainGui_BtnHandler is called with empty OutputControlText
+    doesnt happen with both disabled:
+        ; DROP_TABLE.Get(DB_SETTINGS.selectedMob)
+        ; LOG_GUI.Setup()
+    doesnt seem happen with only
+        ; DROP_TABLE.Get(DB_SETTINGS.selectedMob)
+    happens >sometimes< with
+        ; LOG_GUI.Setup()
+    lines:
+        ---- D:\Programming and projects\ahk-app-osrs-drop-logger\inc\Class Gui Log.ahk
+        125: }
+        069: if (DB_SETTINGS.AutoShowStats)  
+        071: }
+        ---- D:\Programming and projects\ahk-app-osrs-drop-logger\inc\Class Gui Main.ahk
+        154: }
+        197: if (a = A_Gui+0)  
+        198: b["Events"]["_Btn" OutputControlText].Call()  
+        132: MsgBox,A_ThisFunc (2.17)
+    ^^^^^^^^^^^
+    fixed by removing generic class button handler and replaced with hard coded eg. MAIN_GUI.BtnLog() labels

@@ -60,6 +60,7 @@
     ; DROP_TABLE.Get(DB_SETTINGS.selectedMob)
     ; FileDelete, % debugLog
     ; DROP_LOG.Load(debugLog)
+    ; msgbox % DB_SETTINGS.selectedMob
     ; LOG_GUI.Setup()
 return
 

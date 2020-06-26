@@ -65,17 +65,12 @@ class ClassDropLog {
     GetFormattedTrip() {
     }
 
-    ; (optional) input = {string} path to existing drop log file
+    ; input = {string} path to existing drop log file
     ; purpose = load drop log into this.obj
-    Load(file:="") {
+    Load(file) {
         If !(file) {
-            FileSelectFile, SelectedFile, 11, % manageGui.GetText("Edit1"), Select drop log, Json (*.json)
-            If !(SelectedFile) {
-                ; msgbox, 4160, , % A_ThisFunc ": Can't log without a log file"
-                return false
-            }
-            SplitPath, SelectedFile , OutFileName, OutDir, OutExtension, OutNameNoExt, OutDrive
-            file := OutDir "\" OutNameNoExt ".json"
+            msgbox, 4160, , % A_ThisFunc ": Can't log without a log file"
+            exitapp
         }
 
         this.file := file

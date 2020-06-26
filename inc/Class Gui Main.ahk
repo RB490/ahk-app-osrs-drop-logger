@@ -15,9 +15,9 @@ class ClassGuiMain extends gui {
         ; controls
         ; this.Add("text", "", "Search")
         this.Add("edit", "w" totalWidth - 45 - this.marginSize " section gmainGui_SearchBoxHandler", "")
-        this.Add("button", "x+5 ys-1 w50 gmainGui_BtnHandler", "Add")
+        this.Add("button", "x+5 ys-1 w50 gmainGui_BtnAdd", "Add")
         this.Add("listbox", "x" this.marginSize " w" totalWidth " r10 gmainGui_MobListBoxHandler", "")
-        _MAIN_GUI_BTN_LOG := this.AddGlobal("button", "w" totalWidth " gmainGui_BtnHandler r3", "Log")
+        _MAIN_GUI_BTN_LOG := this.AddGlobal("button", "w" totalWidth " gmainGui_BtnLog r3", "Log")
 
         ; this.Add("picture", "w200 h200 border", "")
 
@@ -29,8 +29,6 @@ class ClassGuiMain extends gui {
         ; show
         this.Show()
         this.Update()
-        this._LoadMobImage()
-        WinWaitClose, % this.ahkid
     }
 
     Update() {
@@ -90,7 +88,7 @@ class ClassGuiMain extends gui {
     }
 
     SearchBoxHandler() {
-        this.update()
+        this.Update()
     }
 
     SearchBoxReset() {
@@ -131,9 +129,23 @@ class ClassGuiMain extends gui {
     }
 
     BtnLog() {
-        result := DROP_LOG.Load()
+        this.Disable()
+        selectedLogFile := DB_SETTINGS.selectedLogFile
+        SplitPath, selectedLogFile, OutFileName, selectedLogFileDir, OutExtension, OutNameNoExt, OutDrive
+        FileSelectFile, SelectedFile, 11, % manageGui.GetText("Edit1"), Select drop log, Json (*.json), %selectedLogFileDir%
+        If !(SelectedFile) {
+            ; msgbox, 4160, , % A_ThisFunc ": Can't log without a log file"
+            this.Enable()
+            return false
+        }
+        SplitPath, SelectedFile , OutFileName, OutDir, OutExtension, OutNameNoExt, OutDrive
+        file := OutDir "\" OutNameNoExt ".json"
+
+        result := DROP_LOG.Load(SelectedFile)
         If !(result)
             return
+        DB_SETTINGS.selectedLogFile := SelectedFile
+        this.Enable()
         this.Hide()
         DROP_TABLE.Get(DB_SETTINGS.selectedMob)
         LOG_GUI.Setup()
@@ -172,16 +184,12 @@ mainGui_SearchBoxHandler:
 			b["Events"]["_SearchBoxHandler"].Call()
 return
 
-mainGui_BtnHandler:
-    ; get active button text without spaces
-    ControlGetFocus, OutputControl, A
-    ControlGetText, OutputControlText, % OutputControl, A
-    OutputControlText := StrReplace(OutputControlText, A_Space)
+mainGui_BtnAdd:
+    MAIN_GUI.BtnAdd()
+return
 
-    ; call the class's method
-    for a, b in ClassGuiMain.Instances 
-		if (a = A_Gui+0)
-			b["Events"]["_Btn" OutputControlText].Call()
+mainGui_BtnLog:
+    MAIN_GUI.BtnLog()
 return
 
 mainGui_HotkeyEnter:
