@@ -1,5 +1,7 @@
 feature > remember gui stats listview(s) scroll position
 
+feature > gui stats unique listview > add item icon
+
 bug > gui stats & log like to randomly and regularly forget their x and y coordinates
 
 testing
@@ -15,7 +17,7 @@ refactor > settings
         ^ why? it seems like a good idea but im wrecked right now at 07:15 after waking up at around 01:00 for no reason
             ^ check how 'AutoGUI' handles this
 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ (temporarily) archived ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+------------------------------------------------------------------------- images -------------------------------------------------------------------------
 
 feature > 'advanced' images
     gdip idea draft

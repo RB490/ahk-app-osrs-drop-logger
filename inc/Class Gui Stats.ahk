@@ -15,9 +15,9 @@ Class ClassGuiStats extends gui {
         ; this.add("text", "", "Total")
         this.add("listview", "x" this.margin " w165 r7 -hdr", "Stat|Value")
         ; this.add("text", "", "Average")
-        this.add("listview", "w165 h230 -hdr", "Stat|Value")
+        this.add("listview", "w165 h230 -hdr AltSubmit gguiStats_averageListView", "Stat|Value")
 
-        this.add("listview", "x+" margin " y" margin " w550 h358 r31 gguiStats_advancedListView", "Drop|#|Rate|Value|Dry|<|>|HiddenValueColumnForSorting")
+        this.add("listview", "x+" margin " y" margin " w550 h358 r31 AltSubmit gguiStats_advancedListView", "Drop|#|Rate|Value|Dry|<|>|HiddenValueColumnForSorting")
 
         this.ShowGui()
         this.CheckPos()
@@ -72,6 +72,8 @@ Class ClassGuiStats extends gui {
         LV_Add(, "Drops / Death", Round(stats.avgDropsPerDeath))
         LV_Add(, "Profit / Death", AddCommas(Round(stats.avgProfitPerDeath)))
         LV_ModifyCol(, "AutoHdr")
+        LV_Modify(this.averageListViewFocusedRow, "Vis")
+        ; msgbox % this.averageListViewFocusedRow
     }
 
     RedrawAdvanced() {
@@ -88,29 +90,45 @@ Class ClassGuiStats extends gui {
             ; totalValue := StrReplace(totalValue, ",", ".") ; for listview column sorting
             LV_Add(, d.quantity " x " d.name, d.occurences, dropRate, commaValue, d.dryStreak, d.dryStreakRecordLow, d.dryStreakRecordhigh, d.totalValue)
         }
-        LV_ModifyCol(, "AutoHdr")
-        LV_ModifyCol(3, 40) ; rate <- manually set to this size because header word 'rate' gets cut off for no reason
-        LV_ModifyCol(5, 30) ; dry streak <- manually set to this size because header word 'dry' gets cut off for no reason
+        loop 10
+            LV_ModifyCol(A_Index, "AutoHdr")
         LV_ModifyCol(8, 0) ; HiddenValueColumnForSorting
+        LV_Modify(this.advancedListViewFocusedRow, "Vis")
         GuiControl % this.hwnd ":+Redraw", SysListView323
     }
 
     AdvancedListViewHandler() {
-        static s
-        If !(A_EventInfo  = 4) ; total value
-            return
-        s := !s
-
         Gui % this.hwnd ":ListView", SysListView323
-        GuiControl % this.hwnd ":-Redraw", SysListView323
 
-        If (s)
+        ; selected empty space
+        If (this.advancedListViewFocusedRow = 0)
+            this.advancedListViewFocusedRow := ""
+
+        ; selected left click or double click
+        If (A_GuiEvent = "Normal") or (A_GuiEvent = "DoubleClick")
+            this.advancedListViewFocusedRow := LV_GetNext(, "Focused")
+
+        ; selected column 4 (total value column) - sort hidden value column
+        static t
+        If !(A_EventInfo  = 4)
+            return
+        t := !t
+        this.advancedListViewFocusedRow := ""
+
+        If (t)
             LV_ModifyCol(8, "SortDesc") ; HiddenValueColumnForSorting
         else
             LV_ModifyCol(8, "Sort") ; HiddenValueColumnForSorting
+    }
 
+    AverageListViewHandler() {
+        Gui % this.hwnd ":ListView", SysListView322
 
-        GuiControl % this.hwnd ":+Redraw", SysListView323
+        If (this.averageListViewFocusedRow = 0) ; selected empty space
+            this.averageListViewFocusedRow := ""
+
+        If (A_GuiEvent = "Normal") or (A_GuiEvent = "DoubleClick")
+            this.averageListViewFocusedRow := LV_GetNext(, "Focused")
     }
 
     Resize() {
@@ -167,9 +185,7 @@ Class ClassGuiStats extends gui {
         Gui % this.hwnd ":ListView", SysListView323
         LV_ModifyCol(2, "Integer") ; occurences
         LV_ModifyCol(3, "Integer") ; dropRate
-        LV_ModifyCol(3, 40) ; rate <- manually set to this size because header word 'rate' gets cut off for no reason
         LV_ModifyCol(4, "Integer NoSort") ; totalValue
-        LV_ModifyCol(5, 30) ; dry streak <- manually set to this size because header word 'dry' gets cut off for no reason
         LV_ModifyCol(6, "Integer") ; dryStreakRecordLow
         LV_ModifyCol(7, "Integer") ; dryStreakRecordhigh
         LV_ModifyCol(8, "0 Integer") ; HiddenValueColumnForSorting
@@ -186,6 +202,10 @@ Class ClassGuiStats extends gui {
 
 guiStats_advancedListView:
     STATS_GUI.AdvancedListViewHandler()
+return
+
+guiStats_averageListView:
+    STATS_GUI.AverageListViewHandler()
 return
 
 guiStats_close:
