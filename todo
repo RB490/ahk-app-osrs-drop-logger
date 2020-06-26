@@ -1,4 +1,5 @@
 bug > gui log > select drop > clear drop > add kill > kill gets added
+    disable kill button without drops selected
 
 bug > don't add 'main' drop table when no drop tables are combined
 

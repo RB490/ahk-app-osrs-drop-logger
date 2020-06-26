@@ -124,10 +124,8 @@ class ClassDropLog {
 
     ; input = {object} retrieved by DROP_LOG.GetDrop() containing drop information
     AddKill(input) {
-        If !(input.length()) {
-            input.name := "Nothing"
-            input.quantity := "N/A"
-        }
+        If !(input.length())
+            return
 
         this.redoActions := {}
         this.undoActions.push(ObjFullyClone(this.obj))

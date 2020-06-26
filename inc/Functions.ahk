@@ -94,11 +94,7 @@ OnWM_LBUTTONDOWN(wParam, lParam, msg, hWnd) {
 
     SELECTED_DROPS.push(obj)
 
-    loop % SELECTED_DROPS.length()
-        drops .= SELECTED_DROPS[A_Index].quantity " x " SELECTED_DROPS[A_Index].name ", "
-    drops := RTrim(drops, ", ")
-
-    LOG_GUI.SetText("edit1", drops)
+    LOG_GUI.Update()
 }
 
 ObjFullyClone(obj)
