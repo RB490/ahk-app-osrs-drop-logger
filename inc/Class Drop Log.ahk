@@ -77,21 +77,30 @@ class ClassDropLog {
         this.undoActions := {}
         this.redoActions := {}
 
-        content := json.load(FileRead(this.file))
-        If (IsObject(content)) {
-            this.obj := content
+        
+        ; empty file
+        fileContent := FileRead(this.file)
+        If !(fileContent) {
+            this.obj := {}
             return true
         }
-        else {
+
+        result := json.load(fileContent)
+        
+        ; invalid file
+        If !IsObject(result) {
             this.obj := {}
-            msgbox, 4160, , % A_ThisFunc ": Specified file is not a valid drop log (json) type"
+            msgbox, 4160, , % A_ThisFunc ": '" this.file "' does not contain a valid json or is damaged"
             return false
         }
+        
+        this.obj := result
+        return true
     }
 
     Save() {
-        If !(this.obj.length())
-            return
+        ; If !(this.obj.length())
+            ; return
         FileDelete, % this.file
         FileAppend, % json.dump(this.obj,,2), % this.file
     }

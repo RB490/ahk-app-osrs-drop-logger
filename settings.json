@@ -4,8 +4,8 @@
   "guiLogW": 513,
   "guiLogX": 1389,
   "guiLogY": 303,
-  "guiStatsH": 135,
-  "guiStatsW": 175,
+  "guiStatsH": 0,
+  "guiStatsW": 0,
   "guiStatsX": 0,
   "guiStatsY": 0,
   "logGuiDropSize": 35,
@@ -17,7 +17,7 @@
     "Ice Giant": "",
     "Vorkath": ""
   },
-  "selectedLogFile": "D:\\Downloads\\testdir\\debugLog.json",
+  "selectedLogFile": "D:\\Downloads\\newLogFile.json",
   "selectedMob": "Ancient Wyvern",
   "tablesMergeBelowX": 21
 }

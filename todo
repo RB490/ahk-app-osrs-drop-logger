@@ -1,5 +1,4 @@
-feature > sort drop table items by name in alphabetical order << alphabetical is not the solution as this messes up properly ordered items
-    eg. 'ankou' multiple clue scrolls are not next to each other
+bug > drop_log.load() does not detect damaged json files
 
 optimize > test the program using tick count function/class
     large drop logs
@@ -12,15 +11,21 @@ optimize > test the program using tick count function/class
 refactoring
     watch onenote refactor videos for inspiration
     eliminate global vars
-    refactor > settings
-        every setting key should be added, possibly with empty value, right from the start
-        dont reference setting object in code, instead pull variable from settings and use that
-            ^ why? it seems like a good idea but im wrecked right now at 07:15 after waking up at around 01:00 for no reason
-                ^ check how 'AutoGUI' handles this
+
+refactor > settings
+    every setting key should be added, possibly with empty value, right from the start
+    dont reference setting object in code, instead pull variable from settings and use that
+        ^ why? it seems like a good idea but im wrecked right now at 07:15 after waking up at around 01:00 for no reason
+            ^ check how 'AutoGUI' handles this
 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ (temporarily) archived ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 feature > 'advanced' images
+    gdip idea draft
+        get high res large wiki image > scale to set size > add in center of set size canvas > profit
+            this should work for mobs & drop images
+            if this works retrieve all images to project same with runelite imgs now
+
     feature > mob images
         process mob and item images to be perfectly scaled, centered and bordered
             irfanview?

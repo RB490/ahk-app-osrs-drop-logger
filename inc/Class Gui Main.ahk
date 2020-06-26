@@ -141,10 +141,10 @@ class ClassGuiMain extends gui {
         SplitPath, SelectedFile , OutFileName, OutDir, OutExtension, OutNameNoExt, OutDrive
         file := OutDir "\" OutNameNoExt ".json"
 
-        result := DROP_LOG.Load(SelectedFile)
+        result := DROP_LOG.Load(file)
         If !(result)
             return
-        DB_SETTINGS.selectedLogFile := SelectedFile
+        DB_SETTINGS.selectedLogFile := file
         this.Enable()
         this.Hide()
         DROP_TABLE.Get(DB_SETTINGS.selectedMob)

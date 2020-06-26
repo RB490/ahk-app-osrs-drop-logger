@@ -54,8 +54,12 @@
     DROP_STATS.UpdateAdvancedStats()
     */
 
+    MAIN_GUI.Setup()
+    ; return
+
     ; STATS_GUI.Setup()
-    ; debugLog := "D:\Downloads\debugLog.json"
+    ; debugLog := "D:\Downloads\debugLog 123.json"
+
     ; MAIN_GUI.Setup()
     ; DROP_TABLE.Get(DB_SETTINGS.selectedMob)
     ; FileDelete, % debugLog
@@ -63,7 +67,7 @@
     ; msgbox % DB_SETTINGS.selectedLogFile
     ; msgbox % DB_SETTINGS.selectedMob
     ; LOG_GUI.Setup()
-    Gosub MiscMenu_Show
+    ; Gosub MiscMenu_Show
 return
 
 ; Global hotkeys
