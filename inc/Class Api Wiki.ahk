@@ -207,10 +207,9 @@ class ClassApiWiki {
         mwHeadlines := doc.getElementsByClassName("mw-headline")
         If !(mwHeadlines.length) {
             clipboard := html "`n`n-------------------------------inputHtml----------------------------------------" inputHtml
-            msgbox, 4160, , % A_ThisFunc ": Could not find mw-headline classes in html (html in clipboard)`n`nClosing.."
+            msgbox, 4160, , % A_ThisFunc ": getElementsByClassName() could not find mw-headline classes in html. (html in clipboard)`n`nClosing.."
             exitapp
         }
-
         return mwHeadlines[0].innerText
     }
 }

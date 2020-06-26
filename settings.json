@@ -1,23 +1,5 @@
 {
-  "AutoShowStats": 0,
-  "guiLogH": 241,
-  "guiLogW": 513,
-  "guiLogX": 986,
-  "guiLogY": 304,
-  "guiStatsH": 0,
-  "guiStatsW": 0,
-  "guiStatsX": 0,
-  "guiStatsY": 0,
-  "logGuiDropSize": 35,
-  "logGuiMaxRowDrops": 7,
-  "mobs": {
-    "Ancient Wyvern": "",
-    "Fire Giant": "",
-    "Goblin": "",
-    "Ice Giant": "",
-    "Vorkath": ""
-  },
-  "selectedLogFile": "D:\\Downloads\\newLogFile.json",
-  "selectedMob": "ancient wyvern",
-  "tablesMergeBelowX": 21
+  "logGuiDropSize": 33,
+  "logGuiMaxRowDrops": 8,
+  "tablesMergeBelowX": 27
 }

@@ -76,7 +76,6 @@ class ClassDropLog {
         this.file := file
         this.undoActions := {}
         this.redoActions := {}
-
         
         ; empty file
         fileContent := FileRead(this.file)

@@ -113,7 +113,6 @@ class ClassGuiMain extends gui {
         ; check if input is a mob with drop tables
         isValidMob := DROP_TABLE.Get(input)
         If !(isValidMob) {
-            msgbox, 4160, , % A_ThisFunc ": Could not find drop table for '" input "'!"
             this.SearchBoxReset()
             return
         }
@@ -147,7 +146,11 @@ class ClassGuiMain extends gui {
         DB_SETTINGS.selectedLogFile := file
         this.Enable()
         this.Hide()
-        DROP_TABLE.Get(DB_SETTINGS.selectedMob)
+        result := DROP_TABLE.Get(DB_SETTINGS.selectedMob)
+        If (result = false) {
+            msgbox, 4160, , % A_ThisFunc ": Check: " PROJECT_WEBSITE ; failed to retrieve drop table for verified, saved mob
+            return
+        }
         LOG_GUI.Setup()
     }
 }

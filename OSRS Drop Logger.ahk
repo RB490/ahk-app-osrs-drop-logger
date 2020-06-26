@@ -56,7 +56,6 @@ return
         If !(DEBUG_MODE)
             return
         clipboard := json.dump(DROP_LOG.obj,,2)
-        msgbox copied
     return
 
 ; Labels

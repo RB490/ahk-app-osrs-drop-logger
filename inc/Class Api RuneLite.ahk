@@ -40,8 +40,12 @@ Class ClassApiRunelite {
                 return
         }
         
-        input := DownloadToString(this.apiUrl "/item/prices")
+        input := DownloadToString(this.apiUrl "/item/prices") ; this.apiUrl "/item/prices"
         obj := json.load(input)
+        If !IsObject(obj) or obj.error {
+            msgbox, 4160, , % A_ThisFunc ": Failed to reach RuneLite API`n`nCheck: " PROJECT_WEBSITE
+            return
+        }
 
         ; adjust format
         output := {}

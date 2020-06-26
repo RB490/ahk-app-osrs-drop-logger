@@ -316,7 +316,6 @@ bug > gui main > log mob > gui log opens > gui main / >>>somehow<<< mainGui_BtnH
         154: }
         197: if (a = A_Gui+0)  
         198: b["Events"]["_Btn" OutputControlText].Call()  
-        132: MsgBox,A_ThisFunc (2.17)
     ^^^^^^^^^^^
     fixed by removing generic class button handler and replaced with hard coded eg. MAIN_GUI.BtnLog() labels
 

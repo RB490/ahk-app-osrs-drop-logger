@@ -73,7 +73,6 @@ Class ClassGuiStats extends gui {
         LV_Add(, "Profit / Death", AddCommas(Round(stats.avgProfitPerDeath)))
         LV_ModifyCol(, "AutoHdr")
         LV_Modify(this.averageListViewFocusedRow, "Vis")
-        ; msgbox % this.averageListViewFocusedRow
     }
 
     RedrawAdvanced() {

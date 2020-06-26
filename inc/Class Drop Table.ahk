@@ -27,8 +27,11 @@ Class ClassDropTable {
             SplashTextOn, 300, 75, % A_ScriptName, Retrieving drop table for %input%...
 
         this.obj := WIKI_API.GetDroptables(input)
-        If !(this.obj.length())
+        If !(this.obj.length()) {
+            msgbox, 4160, , % A_ThisFunc ": Could not find drop table for '" input "'!"
+            SplashTextOff
             return false
+        }
 
         this._TablesMergeDuplicates()
         this._TablesMergeBelowX()

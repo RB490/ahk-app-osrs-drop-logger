@@ -25,14 +25,16 @@ Timer() {
     else {
         timerActive := false
         elapsedTime := A_TickCount - startTime
-        MsgBox,  %elapsedTime% milliseconds have elapsed.
+        msgbox, 4160, , % A_ThisFunc ": " elapsedTime " milliseconds have elapsed."
     }
 }
 
 LoadSettings() {
     DB_SETTINGS := json.load(FileRead(PATH_SETTINGS))
-        If !(IsObject(DB_SETTINGS))
-            DB_SETTINGS := {}
+    If !(IsObject(DB_SETTINGS)) {
+        msgbox, 4160, , % A_ThisFunc ": Resetting settings"
+        DB_SETTINGS := {}
+    }
 
     ; critical settings
     If (DB_SETTINGS.logGuiDropSize < MIN_DROP_SIZE) or (DB_SETTINGS.logGuiDropSize > MAX_DROP_SIZE)
