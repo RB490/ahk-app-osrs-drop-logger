@@ -100438,5 +100438,178 @@
     ],
     "tripEnd": "20200621183348019",
     "tripStart": "20200621183334582"
+  },
+  {
+    "deaths": {},
+    "kills": {},
+    "tripEnd": "20200626212431629",
+    "tripStart": "20200626212428929"
+  },
+  {
+    "deaths": {},
+    "kills": [
+      {
+        "drops": [
+          {
+            "name": "Mahogany logs",
+            "quantity": "25"
+          }
+        ],
+        "killEnd": "20200626212500082"
+      },
+      {
+        "drops": [
+          {
+            "name": "Super combat potion(2)",
+            "quantity": "1"
+          }
+        ],
+        "killEnd": "20200626212502066"
+      },
+      {
+        "drops": [
+          {
+            "name": "Mahogany logs",
+            "quantity": "25"
+          }
+        ],
+        "killEnd": "20200626212505393"
+      },
+      {
+        "drops": [
+          {
+            "name": "Super combat potion(2)",
+            "quantity": "1"
+          }
+        ],
+        "killEnd": "20200626212507081"
+      },
+      {
+        "drops": [
+          {
+            "name": "Grimy ranarr weed",
+            "quantity": "1"
+          }
+        ],
+        "killEnd": "20200626212508706"
+      },
+      {
+        "drops": [
+          {
+            "name": "Rune arrow",
+            "quantity": "50"
+          }
+        ],
+        "killEnd": "20200626212510545"
+      },
+      {
+        "drops": [
+          {
+            "name": "Grimy torstol",
+            "quantity": "1"
+          }
+        ],
+        "killEnd": "20200626212512598"
+      },
+      {
+        "drops": [
+          {
+            "name": "Grimy ranarr weed",
+            "quantity": "1"
+          },
+          {
+            "name": "Grimy dwarf weed",
+            "quantity": "3"
+          },
+          {
+            "name": "Grimy lantadyme",
+            "quantity": "3"
+          }
+        ],
+        "killEnd": "20200626212514409"
+      },
+      {
+        "drops": [
+          {
+            "name": "Blood rune",
+            "quantity": "33"
+          }
+        ],
+        "killEnd": "20200626212517538"
+      },
+      {
+        "drops": [
+          {
+            "name": "Grimy ranarr weed",
+            "quantity": "1"
+          }
+        ],
+        "killEnd": "20200626212521003"
+      },
+      {
+        "drops": [
+          {
+            "name": "Grimy torstol",
+            "quantity": "1"
+          }
+        ],
+        "killEnd": "20200626212524206"
+      },
+      {
+        "drops": [
+          {
+            "name": "Grimy ranarr weed",
+            "quantity": "1"
+          },
+          {
+            "name": "Grimy torstol",
+            "quantity": "1"
+          },
+          {
+            "name": "Grimy dwarf weed",
+            "quantity": "3"
+          }
+        ],
+        "killEnd": "20200626212526018"
+      },
+      {
+        "drops": [
+          {
+            "name": "Mahogany logs",
+            "quantity": "30"
+          }
+        ],
+        "killEnd": "20200626212528460"
+      },
+      {
+        "drops": [
+          {
+            "name": "Mahogany logs",
+            "quantity": "30"
+          }
+        ],
+        "killEnd": "20200626212533129"
+      },
+      {
+        "drops": [
+          {
+            "name": "Grimy ranarr weed",
+            "quantity": "1"
+          }
+        ],
+        "killEnd": "20200626212536850"
+      },
+      {
+        "drops": [
+          {
+            "name": "Mystic air staff",
+            "quantity": "1"
+          }
+        ],
+        "killEnd": "20200626212540800"
+      }
+    ],
+    "tripEnd": "",
+    "tripStart": "20200626212454020"
   }
 ]

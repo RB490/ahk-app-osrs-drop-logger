@@ -45,27 +45,30 @@
     FileCreateDir, % PATH_MOB_IMAGES
     LoadSettings()
 
-    /* stats
+    ; /* stats
+    ; STATS_GUI.Setup()
     ; DROP_LOG.Load("D:\Programming and projects\ahk-app-osrs-drop-logger\info\ClassDropLog.json")
     ; DROP_LOG.Load("D:\Programming and projects\ahk-app-osrs-drop-logger\info\ClassDropLog 5k.json")
-    DROP_LOG.Load("D:\Programming and projects\ahk-app-osrs-drop-logger\info\ClassDropLog 10k.json")
-    ; DROP_LOG.Load("D:\Programming and projects\ahk-app-osrs-drop-logger\info\ClassDropLog 100k.json")
-    DROP_STATS.UpdateBasicStats()
-    DROP_STATS.UpdateAdvancedStats()
-    */
+    ; DROP_LOG.Load("D:\Programming and projects\ahk-app-osrs-drop-logger\info\ClassDropLog 10k.json")
+    DROP_LOG.Load("D:\Programming and projects\ahk-app-osrs-drop-logger\info\ClassDropLog 100k.json")
+    ; Timer()
+    ; DROP_STATS.UpdateBasicStats()
+    ; DROP_STATS.UpdateAdvancedStats()
+    ; Timer()
+    ; */
 
     ; MAIN_GUI.Setup()
     ; return
 
     ; STATS_GUI.Setup()
-    debugLog := "D:\Downloads\debugLog.json"
+    ; debugLog := "D:\Downloads\debugLog.json"
 
     ; MAIN_GUI.Setup()
     ; DB_SETTINGS.selectedMob := "fire giant"
     DB_SETTINGS.selectedMob := "ancient wyvern"
     DROP_TABLE.Get(DB_SETTINGS.selectedMob)
     ; FileDelete, % debugLog
-    DROP_LOG.Load(debugLog)
+    ; DROP_LOG.Load(debugLog)
     ; msgbox % DB_SETTINGS.selectedLogFile
     ; msgbox % DB_SETTINGS.selectedMob
     LOG_GUI.Setup()

@@ -89,7 +89,8 @@ Class ClassGuiStats extends gui {
             LV_Add(, d.quantity " x " d.name, d.occurences, dropRate, commaValue, d.dryStreak, d.dryStreakRecordLow, d.dryStreakRecordhigh, d.totalValue)
         }
         LV_ModifyCol(, "AutoHdr")
-        LV_ModifyCol(5, 30) ; dry streak <- manually set to this size because 'dry' gets cut off for no reason
+        LV_ModifyCol(3, 40) ; rate <- manually set to this size because header word 'rate' gets cut off for no reason
+        LV_ModifyCol(5, 30) ; dry streak <- manually set to this size because header word 'dry' gets cut off for no reason
         LV_ModifyCol(8, 0) ; HiddenValueColumnForSorting
         GuiControl % this.hwnd ":+Redraw", SysListView323
     }
@@ -166,8 +167,9 @@ Class ClassGuiStats extends gui {
         Gui % this.hwnd ":ListView", SysListView323
         LV_ModifyCol(2, "Integer") ; occurences
         LV_ModifyCol(3, "Integer") ; dropRate
+        LV_ModifyCol(3, 40) ; rate <- manually set to this size because header word 'rate' gets cut off for no reason
         LV_ModifyCol(4, "Integer NoSort") ; totalValue
-        LV_ModifyCol(5, 30) ; dry streak
+        LV_ModifyCol(5, 30) ; dry streak <- manually set to this size because header word 'dry' gets cut off for no reason
         LV_ModifyCol(6, "Integer") ; dryStreakRecordLow
         LV_ModifyCol(7, "Integer") ; dryStreakRecordhigh
         LV_ModifyCol(8, "0 Integer") ; HiddenValueColumnForSorting

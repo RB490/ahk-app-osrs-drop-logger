@@ -48,11 +48,17 @@ class ClassGuiQuantity extends gui {
                 ints.push(arr[A_Index])
         }
 
-        this.obj.lowestQuantity := recordLow
-        this.obj.highestQuantity := recordHigh
+        If InStr(input, "#") {
+            this.obj.lowestQuantity := recordLow
+            this.obj.highestQuantity := recordHigh
+        }
+        else { ; '-'
+            this.obj.lowestQuantity := ints[1]
+            this.obj.highestQuantity := ints[2]
+        }
         middle := (recordHigh - recordLow) / 2 + recordLow
         middle := Round(middle)
-         If (middle = 0)
+        If (middle = 0)
             middle := ints[1]
         this.obj.medianQuantity := middle
         this.obj.integersObj := ints

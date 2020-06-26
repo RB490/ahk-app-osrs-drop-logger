@@ -325,3 +325,14 @@ feature > remember last used drop log > use this to set open drop log file selec
 feature > gui log > display mob + log somewhere, probably in log menu (possibly add mob icon)
 
 bug > drop_log.load() does not detect damaged json files
+
+bug > ancient wyvern > add 'rune arrow' / 'blood rune' and instead of putting up the custom quant gui it selects quantities with '-' in them whole 
+
+bug > quantity gui buttons are not showing for 'ancient wyvernn' but they are for 'fire giant'
+
+optimizing > test the program using tick count function/class
+    large drop logs
+        it should be possible to get really close to instant updates even at 100k lines by reducing loops, a lot
+            possibly make a separate stats class so theres 'room' for plenty of methods
+    which processes take up the most amount of load time, reduce those -- check speed different with/without SetBatchLines -1
+        pretty slow update onto log gui after selecting a custom quantity through quantity gui

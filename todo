@@ -1,14 +1,9 @@
-bug > ancient wyvern > add 'rune arrow' / 'blood rune' and instead of putting up the custom quant gui it selects quantities with '-' in them whole 
+feature > remember gui stats listview(s) scroll position
 
-bug > quantity gui buttons are not showing for 'ancient wyvernn' but they are for 'fire giant'
+bug > gui stats & log like to randomly and regularly forget their x and y coordinates
 
-optimizing > test the program using tick count function/class
-    large drop logs
-        it should be possible to get really close to instant updates even at 100k lines by reducing loops, a lot
-            possibly make a separate stats class so theres 'room' for plenty of methods
+testing
     incorrect or no data for the external apis
-    which processes take up the most amount of load time, reduce those -- check speed different with/without SetBatchLines -1
-        pretty slow update onto log gui after selecting a custom quantity through quantity gui
 
 refactoring
     watch onenote refactor videos for inspiration
