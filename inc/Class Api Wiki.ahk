@@ -154,8 +154,11 @@ class ClassApiWiki {
                 
                 If (A_Index = 1)
                     item.iconHtml := cell.innerHtml
-                If (A_Index = 2)
+                If (A_Index = 2) {
                     item.name := cell.innerText
+                    item.name := StrReplace(item.name, "(m)") ; members indicator in eg. 'ankou'
+                    item.name := StrReplace(item.name, "(f)") ; f2p indicator
+                }
                 If (A_Index = 3)
                     item.quantity := this._DecodeQuantity(cell.innerText)
                 If (A_Index = 4)
@@ -171,27 +174,41 @@ class ClassApiWiki {
     }
 
     /*
-        param <html>            = {string} html of wiki page containing drop tables
+        param <inputHtml>            = {string} html of wiki page containing drop tables
         param <whichTable>      = {integer} number of table to retrieve following com format aka the start at 0
         returns                 = {string} table title 
     */
-    _GetTableTitle(html, whichTable) {
+    _GetTableTitle(inputHtml, whichTable) {
         table := this.tables[whichTable]
         
         ; retrieve drop table's first item image wiki 'url key' eg. '/images/f/fe/Larran%27s_key_1.png?c6772'
         img := table.rows[1].cells[0].innerHtml
         img := SubStr(img, InStr(img, "src=") + 5)
         img := SubStr(img, 1, InStr(img, """") - 1) ; src=" end quote
-        
+
         ; get html with drop tables title in it
-        html := SubStr(html, 1, InStr(html, img)) ; cut off everything beyond '<item name>.png'
-        html := SubStr(html, InStr(html, "mw-headline", false, 0) - 27) ; get latest mw-header searching from the end of the string -- 17 is exact
+        loop, parse, inputHtml, `n ; cut off everything after '<item name>.png'
+        {
+            html .= A_LoopField "`n"
+            If (InStr(A_LoopField, img)) and (InStr(A_LoopField, "inventory-image")) ; check both because 'abyssal sire' uses Coins_10000.png multiple times
+                break
+        }
+        html := SubStr(html, InStr(html, "mw-headline", false, 0) - 27) ; get last mw-header searching from the end of the string -- 17 is exact
 
         ; use com to retrieve mw-headeline text
         doc := ComObjCreate("HTMLfile")     ; open ie com object document
         vHtml = <meta http-equiv="X-UA-Compatible" content="IE=edge">
         doc.write(vHtml)                    ; enable getElementsByClassName https://autohotkey.com/boards/viewtopic.php?f=5&t=31907
         doc.write(html)                     ; add webpage source
-        return doc.getElementsByClassName("mw-headline")[0].innerText
+
+
+        mwHeadlines := doc.getElementsByClassName("mw-headline")
+        If !(mwHeadlines.length) {
+            clipboard := html "`n`n-------------------------------inputHtml----------------------------------------" inputHtml
+            msgbox, 4160, , % A_ThisFunc ": Could not find mw-headline classes in html (html in clipboard)`n`nClosing.."
+            exitapp
+        }
+
+        return mwHeadlines[0].innerText
     }
 }

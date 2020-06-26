@@ -3,7 +3,7 @@
   "guiLogH": 241,
   "guiLogW": 513,
   "guiLogX": 1389,
-  "guiLogY": 411,
+  "guiLogY": 303,
   "guiStatsH": 0,
   "guiStatsW": 0,
   "guiStatsX": 0,
@@ -18,6 +18,6 @@
     "Moss Giant": "",
     "Vorkath": ""
   },
-  "selectedMob": "Fire Giant",
-  "tablesMergeBelowX": 1
+  "selectedMob": "Ankou",
+  "tablesMergeBelowX": 21
 }

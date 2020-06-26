@@ -37,6 +37,7 @@
     global  MAX_DROP_SIZE               := 80
     global  MIN_ROW_LENGTH              := 1
     global  MAX_ROW_LENGTH              := 25
+    global  MIN_TABLE_SIZE              := 1
 
 ; Auto-execute
     FileCreateDir, % PATH_ITEM_IMAGES
@@ -52,12 +53,17 @@
     DROP_STATS.UpdateAdvancedStats()
     */
 
+    DROP_TABLE.Get("Ankou")
+    ; DROP_TABLE.Get("Goblin")
+    ; DROP_TABLE.Get("Fire giant")
+    ; msgbox hi
+
     ; STATS_GUI.Setup()
-    debugLog := "D:\Downloads\debugLog.json"
+    ; debugLog := "D:\Downloads\debugLog.json"
     ; MAIN_GUI.Setup()
-    DROP_TABLE.Get(DB_SETTINGS.selectedMob)
+    ; DROP_TABLE.Get(DB_SETTINGS.selectedMob)
     ; FileDelete, % debugLog
-    DROP_LOG.Load(debugLog)
+    ; DROP_LOG.Load(debugLog)
     LOG_GUI.Setup()
 return
 

@@ -39,7 +39,7 @@ LoadSettings() {
     If (DB_SETTINGS.logGuiMaxRowDrops < MIN_ROW_LENGTH) or (DB_SETTINGS.logGuiMaxRowDrops > MAX_ROW_LENGTH)
         DB_SETTINGS.logGuiMaxRowDrops := 8
 
-    If !(DB_SETTINGS.tablesMergeBelowX)
+    If (DB_SETTINGS.tablesMergeBelowX < MIN_TABLE_SIZE)
         DB_SETTINGS.tablesMergeBelowX := 27 ; 27 = rdt
 }
 

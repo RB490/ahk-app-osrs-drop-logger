@@ -25,9 +25,9 @@ Class ClassDropTable {
     Get(input) {
         If !(DEBUG_MODE)
             SplashTextOn, 300, 75, % A_ScriptName, Retrieving drop table for %input%...
-        
+
         this.obj := WIKI_API.GetDroptables(input)
-        If !(IsObject(this.obj))
+        If !(this.obj.length())
             return false
 
         this._TablesMergeDuplicates()
