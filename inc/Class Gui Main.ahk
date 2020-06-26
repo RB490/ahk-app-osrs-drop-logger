@@ -17,9 +17,9 @@ class ClassGuiMain extends gui {
         this.Add("edit", "w" totalWidth - 45 - this.marginSize " section gmainGui_SearchBoxHandler", "")
         this.Add("button", "x+5 ys-1 w50 gmainGui_BtnHandler", "Add")
         this.Add("listbox", "x" this.marginSize " w" totalWidth " r10 gmainGui_MobListBoxHandler", "")
-        this.Add("button", "w" totalWidth " gmainGui_BtnHandler", "Log")
+        _MAIN_GUI_BTN_LOG := this.AddGlobal("button", "w" totalWidth " gmainGui_BtnHandler r3", "Log")
 
-        this.Add("picture", "w200 h200 border", "")
+        ; this.Add("picture", "w200 h200 border", "")
 
         ; hotkeys
         Hotkey, IfWinActive, % this.ahkid
@@ -36,6 +36,8 @@ class ClassGuiMain extends gui {
     Update() {
         this.SetDefault() ; for guicontrol
         
+        ; ----------------------search--------------------
+
         ; check user input
         input := this.GetText("Edit1")
 
@@ -49,18 +51,31 @@ class ClassGuiMain extends gui {
         GuiControl,, ListBox1 , |
         GuiControl,, ListBox1 , % output
         GuiControl, Choose, ListBox1, % DB_SETTINGS.selectedMob
+
+        ; ------------------------------------------------
+
+        ; buttons
+        If (DB_SETTINGS.selectedMob)
+            this.Control("Enable", _MAIN_GUI_BTN_LOG)
+        else
+            this.Control("Disable", _MAIN_GUI_BTN_LOG)
+
+        this._LoadMobImage()
     }
 
     MobListBoxHandler() {
         DB_SETTINGS.selectedMob := this.GuiControlGet("", "ListBox1")
         this.ControlFocus("edit1") ; prevent ctrl+s from changing current mob
 
-        this._LoadMobImage()
+        this.Update()
     }
 
     _LoadMobImage() {
-        If !(DB_SETTINGS.selectedMob)
+        If !(DB_SETTINGS.selectedMob) {
+            this.SetText(_MAIN_GUI_BTN_LOG, "Log")
+            SetButtonIcon(_MAIN_GUI_BTN_LOG, A_ScriptDir "\res\img\Nothing.png", 1, 44) ; r2 = 30, r3 = 44
             return  
+        }
         
         path := PATH_MOB_IMAGES "\" DB_SETTINGS.selectedMob ".png"
         If !(FileExist(path)) {
@@ -69,7 +84,9 @@ class ClassGuiMain extends gui {
         }
 
         this.SetDefault() ; for guicontrol
-        GuiControl,,Static1, % path
+        ; GuiControl,,Static1, % path
+        this.SetText(_MAIN_GUI_BTN_LOG, "       Log")
+        SetButtonIcon(_MAIN_GUI_BTN_LOG, path, 1, 44) ; r2 = 30, r3 = 44
     }
 
     SearchBoxHandler() {

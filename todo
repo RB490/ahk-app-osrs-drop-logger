@@ -1,29 +1,9 @@
-feature > stackable item icons > manually create these images and set them with code
-    note
-        sliiiight issues:
-            items are named differently in the drop table and other pages eg. '/w/Ancient_Wyvern' mentions 'Seaweed spore' whereas '/w/Seeds' has Giant seaweed
-                could be a reason to manually make a list with item names and fetch (high) res images from the wiki
-            very not future proof way, instead try automatically downloading them
-    seeds
-        https://oldschool.runescape.wiki/w/Seeds
-    ammo - arrows/darts/bolts, etc - darts(tips) do not have a bigger icon
-        https://oldschool.runescape.wiki/w/Bolts
-        https://oldschool.runescape.wiki/w/Arrows
-    fletching - arrowtips/Dragonstone bolt tips, etc
-        https://oldschool.runescape.wiki/w/Fletching
-            https://oldschool.runescape.wiki/w/Arrowtips
-            https://oldschool.runescape.wiki/w/Unfinished_bolts
-    coins
-        https://oldschool.runescape.wiki/w/Coins
-    Numulite
-        https://oldschool.runescape.wiki/w/Numulite
-
-feature > main gui > modify mob select to look like it did in 'rewrite 1'?, example is in /info/
-    + feature > gui new preset
-        preset name + drop log file (use scaling from WIA library by 'just me') + drop log mob
-        position: could write 'show under mouse' option to local gui class, and use it for presets + integer input
+feature > gui log > display mob + log somewhere, probably in log menu (possibly add mob icon)
 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ finishing touches ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+feature > sort drop table items by name in alphabetical order << alphabetical is not the solution as this messes up properly ordered items
+    eg. 'ankou' multiple clue scrolls are not next to each other
 
 optimize > test the program using tick count function/class
     large drop logs
@@ -44,16 +24,36 @@ refactoring
 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ (temporarily) archived ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-feature > mob images
-    process mob and item images to be perfectly scaled, centered and bordered
-        irfanview?
-        ResConImg() : https://www.autohotkey.com/boards/viewtopic.php?t=2505
-            also supports adding border to image, which is exactly what i need for item images < see last comment:
-                https://autohotkey.com/board/topic/51035-add-border-on-images/
-        WIA library by 'just me' -- WIA_StampImage() should also allow to add an identifier icon to 'custom quantity' images
-            https://www.autohotkey.com/boards/viewtopic.php?f=6&t=7254
-        gdip
-            download image from runelite api
-            center image on canvas
-            add border around canvas
-            for multi quantity drops, add marking to top left of the image eg: '*'
+feature > 'advanced' images
+    feature > mob images
+        process mob and item images to be perfectly scaled, centered and bordered
+            irfanview?
+            ResConImg() : https://www.autohotkey.com/boards/viewtopic.php?t=2505
+                also supports adding border to image, which is exactly what i need for item images < see last comment:
+                    https://autohotkey.com/board/topic/51035-add-border-on-images/
+            WIA library by 'just me' -- WIA_StampImage() should also allow to add an identifier icon to 'custom quantity' images
+                https://www.autohotkey.com/boards/viewtopic.php?f=6&t=7254
+            gdip
+                download image from runelite api
+                center image on canvas
+                add border around canvas
+                for multi quantity drops, add marking to top left of the image eg: '*'
+    feature > stackable item icons > manually create these images and set them with code
+        note
+            sliiiight issues:
+                items are named differently in the drop table and other pages eg. '/w/Ancient_Wyvern' mentions 'Seaweed spore' whereas '/w/Seeds' has Giant seaweed
+                    could be a reason to manually make a list with item names and fetch (high) res images from the wiki
+                very not future proof way, instead try automatically downloading them
+        seeds
+            https://oldschool.runescape.wiki/w/Seeds
+        ammo - arrows/darts/bolts, etc - darts(tips) do not have a bigger icon
+            https://oldschool.runescape.wiki/w/Bolts
+            https://oldschool.runescape.wiki/w/Arrows
+        fletching - arrowtips/Dragonstone bolt tips, etc
+            https://oldschool.runescape.wiki/w/Fletching
+                https://oldschool.runescape.wiki/w/Arrowtips
+                https://oldschool.runescape.wiki/w/Unfinished_bolts
+        coins
+            https://oldschool.runescape.wiki/w/Coins
+        Numulite
+            https://oldschool.runescape.wiki/w/Numulite

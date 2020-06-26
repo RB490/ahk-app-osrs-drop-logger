@@ -12,12 +12,11 @@
   "logGuiMaxRowDrops": 7,
   "mobs": {
     "Ancient Wyvern": "",
-    "Ankou": "",
     "Goblin": "",
     "Ice Giant": "",
     "Moss Giant": "",
     "Vorkath": ""
   },
-  "selectedMob": "Ankou",
+  "selectedMob": "Moss Giant",
   "tablesMergeBelowX": 21
 }

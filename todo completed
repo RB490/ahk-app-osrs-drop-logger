@@ -290,3 +290,11 @@ bugs > drop table retrieving
     bug > main gui > add "Chest (Barrows)' which contains drop tables on the wiki, but script cant retrieve
     bug > main gui > add 'Abyssal Sire' wiki class throws exception
     bug > ankou > tooth half of key and tooth half of key (m) are not two separate drops - merge these
+
+bug > nothing selected in main gui > log > allows you to continue
+
+feature > main gui > modify mob select to look like it did in 'rewrite 1'?, example is in /info/
+    + feature > gui new preset
+        preset name + drop log file (use scaling from WIA library by 'just me') + drop log mob
+        position: could write 'show under mouse' option to local gui class, and use it for presets + integer input
+        ^^^^ not doing presets because you can just create a 'drop log' folder and name each file after a mob or whatever

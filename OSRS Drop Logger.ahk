@@ -33,6 +33,7 @@
     global  _BTN_REDO                   ; log gui
     global  _BTN_LOG_MENU               ; log gui
     global  _BTN_KILL                   ; log gui
+    global  _MAIN_GUI_BTN_LOG           ; main gui
     global  MIN_DROP_SIZE               := 10
     global  MAX_DROP_SIZE               := 80
     global  MIN_ROW_LENGTH              := 1
@@ -53,18 +54,13 @@
     DROP_STATS.UpdateAdvancedStats()
     */
 
-    DROP_TABLE.Get("Ankou")
-    ; DROP_TABLE.Get("Goblin")
-    ; DROP_TABLE.Get("Fire giant")
-    ; msgbox hi
-
     ; STATS_GUI.Setup()
     ; debugLog := "D:\Downloads\debugLog.json"
-    ; MAIN_GUI.Setup()
+    MAIN_GUI.Setup()
     ; DROP_TABLE.Get(DB_SETTINGS.selectedMob)
     ; FileDelete, % debugLog
     ; DROP_LOG.Load(debugLog)
-    LOG_GUI.Setup()
+    ; LOG_GUI.Setup()
 return
 
 ; Global hotkeys
