@@ -52,11 +52,10 @@
     DROP_STATS.UpdateAdvancedStats()
     */
 
-
     ; STATS_GUI.Setup()
     debugLog := "D:\Downloads\debugLog.json"
     ; MAIN_GUI.Setup()
-    DROP_TABLE.Get("fire giant")
+    DROP_TABLE.Get(DB_SETTINGS.selectedMob)
     ; FileDelete, % debugLog
     DROP_LOG.Load(debugLog)
     LOG_GUI.Setup()

@@ -62,7 +62,6 @@ Class ClassDropTable {
     ; purpose = merge tables below x into a main table
     _TablesMergeBelowX() {
         output := {}
-        output.push({title: "Main", drops: {}})
         
         tables := this.obj
         loop % tables.length() {
@@ -74,8 +73,12 @@ Class ClassDropTable {
                 Continue
             }
 
-            loop % drops.length()
+            loop % drops.length() {
+                If !(this._FindTable(output, "main"))
+                    output.push({title: "Main", drops: {}})
+                
                 output[1].drops.push(drops[A_Index])
+            }
         }
         this.obj := output
     }

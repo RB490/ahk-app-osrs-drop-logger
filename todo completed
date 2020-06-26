@@ -277,3 +277,10 @@ bug > main gui > remove 'x' > does not get removed, or does get removed but the 
 feature > remember stats gui position + size
 
 feature > _TablesMergeBelowX add to critical settings, log menu
+
+bug > gui log > select drop > clear drop > add kill > kill gets added
+    disable kill button without drops selected
+
+bug > don't add 'main' drop table when no drop tables are combined
+
+bug > fire giant > merge tables below 5 > there is a table 'coins' with 1 drop in it, coins

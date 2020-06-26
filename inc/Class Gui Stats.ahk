@@ -129,6 +129,8 @@ Class ClassGuiStats extends gui {
     }
 
     SavePos() {
+        If !(WinExist(this.ahkid))
+            return
         WinGetPos(this.hwnd, guiStatsX, guiStatsY, guiStatsW, guiStatsH, true) 
         DB_SETTINGS.guiStatsX := guiStatsX
         DB_SETTINGS.guiStatsY := guiStatsY
