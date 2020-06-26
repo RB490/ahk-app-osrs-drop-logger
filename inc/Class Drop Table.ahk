@@ -61,17 +61,15 @@ Class ClassDropTable {
 
     ; purpose = merge tables below x into a main table
     _TablesMergeBelowX() {
-        tablesMergeBelowX := 27 ; 27 = rdt
-
         output := {}
         output.push({title: "Main", drops: {}})
-
+        
         tables := this.obj
         loop % tables.length() {
             table := tables[A_Index]
             drops := table.drops
 
-            If (drops.length() >= tablesMergeBelowX) {
+            If (drops.length() >= DB_SETTINGS.tablesMergeBelowX) {
                 output.push(table)
                 Continue
             }

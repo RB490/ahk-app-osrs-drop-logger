@@ -18,6 +18,7 @@ Class ClassGuiStats extends gui {
         this.add("listview", "w165 h230 -hdr", "Stat|Value")
 
         this.add("listview", "x+" margin " y" margin " w550 h358 r31 gguiStats_advancedListView", "Drop|#|Rate|Value|Dry|<|>|HiddenValueColumnForSorting")
+        this.SetDefault()
         LV_ModifyCol(2, "Integer") ; occurences
         LV_ModifyCol(3, "Integer") ; dropRate
         LV_ModifyCol(4, "Integer NoSort") ; totalValue
@@ -129,39 +130,45 @@ Class ClassGuiStats extends gui {
 
     SavePos() {
         WinGetPos(this.hwnd, guiStatsX, guiStatsY, guiStatsW, guiStatsH, true) 
-        SETTINGS_OBJ.guiStatsX := guiStatsX
-        SETTINGS_OBJ.guiStatsY := guiStatsY
-        SETTINGS_OBJ.guiStatsW := guiStatsW
-        SETTINGS_OBJ.guiStatsH := guiStatsH
+        DB_SETTINGS.guiStatsX := guiStatsX
+        DB_SETTINGS.guiStatsY := guiStatsY
+        DB_SETTINGS.guiStatsW := guiStatsW
+        DB_SETTINGS.guiStatsH := guiStatsH
     }
 
     CheckPos() {
         WinGetPos, guiStatsX, guiStatsY, guiStatsW, guiStatsH, % this.ahkid
 
         If (guiStatsX < 0) ; offscreen-left
-            SETTINGS_OBJ.guiStatsX := 0
+            DB_SETTINGS.guiStatsX := 0
         If (guiStatsY < 0) ; offscreen-top
-            SETTINGS_OBJ.guiStatsY := 0
+            DB_SETTINGS.guiStatsY := 0
         If (guiStatsX + guiStatsW > A_ScreenWidth) ; offscreen-right
-            SETTINGS_OBJ.guiStatsX := A_ScreenWidth - guiStatsW
+            DB_SETTINGS.guiStatsX := A_ScreenWidth - guiStatsW
         If (guiStatsY + guiStatsH > A_ScreenHeight) ; offscreen-bottom
-            SETTINGS_OBJ.guiStatsY := A_ScreenHeight - guiStatsH
+            DB_SETTINGS.guiStatsY := A_ScreenHeight - guiStatsH
 
         If (guiStatsW < 175) ; listview1 width
-            SETTINGS_OBJ.guiStatsW := 175
+            DB_SETTINGS.guiStatsW := 175
         If (guiStatsH < 135) ; listview1 height
-            SETTINGS_OBJ.guiStatsH := 135
+            DB_SETTINGS.guiStatsH := 135
 
         this.ShowGui()
     }
 
     ShowGui() {
-        If !(SETTINGS_OBJ.guiStatsX = "") and !(SETTINGS_OBJ.guiStatsY = "") and !(SETTINGS_OBJ.guiStatsW = "") and !(SETTINGS_OBJ.guiStatsH = "") {
-            this.Show("x" SETTINGS_OBJ.guiStatsX A_Space "y" SETTINGS_OBJ.guiStatsY A_Space "w" SETTINGS_OBJ.guiStatsW A_Space "h" SETTINGS_OBJ.guiStatsH)
+        If !(DB_SETTINGS.guiStatsX = "") and !(DB_SETTINGS.guiStatsY = "") and !(DB_SETTINGS.guiStatsW = "") and !(DB_SETTINGS.guiStatsH = "") {
+            this.Show("x" DB_SETTINGS.guiStatsX A_Space "y" DB_SETTINGS.guiStatsY A_Space "w" DB_SETTINGS.guiStatsW A_Space "h" DB_SETTINGS.guiStatsH)
         }
         else {
             this.Show()
         }
+    }
+
+    Close() {
+        DB_SETTINGS.AutoShowStats := false
+        STATS_GUI.SavePos()
+        STATS_GUI.Hide()
     }
 }
 
@@ -170,8 +177,7 @@ guiStats_advancedListView:
 return
 
 guiStats_close:
-    STATS_GUI.SavePos()
-    STATS_GUI.Hide()
+    STATS_GUI.Close()
 return
 
 guiStats_size:

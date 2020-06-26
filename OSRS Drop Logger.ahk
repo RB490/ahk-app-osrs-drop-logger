@@ -14,7 +14,7 @@
     global  PATH_GUI_ICONS              := A_ScriptDir "\res\img\icons"
     global  PATH_RUNELITE_JSON          := A_ScriptDir "\res\runelite.json"
     global  PATH_SETTINGS               := A_ScriptDir "\settings.json"
-    global  SETTINGS_OBJ                := {}
+    global  DB_SETTINGS                 := {}
     global  SELECTED_DROPS              := {}
     global  RUNELITE_API                := new ClassApiRunelite
     global  WIKI_API                    := new ClassApiWiki
@@ -34,7 +34,7 @@
     global  _BTN_LOG_MENU               ; log gui
     global  _BTN_KILL                   ; log gui
     global  MIN_DROP_SIZE               := 10
-    global  MAX_DROP_SIZE               := 50
+    global  MAX_DROP_SIZE               := 80
     global  MIN_ROW_LENGTH              := 1
     global  MAX_ROW_LENGTH              := 25
 
@@ -53,13 +53,13 @@
     */
 
 
-    STATS_GUI.Setup()
-    ; debugLog := "D:\Downloads\debugLog.json"
+    ; STATS_GUI.Setup()
+    debugLog := "D:\Downloads\debugLog.json"
     ; MAIN_GUI.Setup()
-    ; DROP_TABLE.Get("fire giant")
+    DROP_TABLE.Get("fire giant")
     ; FileDelete, % debugLog
-    ; DROP_LOG.Load(debugLog)
-    ; LOG_GUI.Setup()
+    DROP_LOG.Load(debugLog)
+    LOG_GUI.Setup()
 return
 
 ; Global hotkeys

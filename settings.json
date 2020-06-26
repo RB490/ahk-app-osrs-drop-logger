@@ -1,14 +1,15 @@
 {
+  "AutoShowStats": 0,
   "guiLogH": 241,
   "guiLogW": 513,
-  "guiLogX": 0,
-  "guiLogY": 0,
-  "guiStatsH": 339,
-  "guiStatsW": 628,
-  "guiStatsX": 785,
-  "guiStatsY": 402,
-  "logGuiDropSize": 33,
-  "logGuiMaxRowDrops": 8,
+  "guiLogX": 1386,
+  "guiLogY": 457,
+  "guiStatsH": 0,
+  "guiStatsW": 0,
+  "guiStatsX": 0,
+  "guiStatsY": 0,
+  "logGuiDropSize": 35,
+  "logGuiMaxRowDrops": 7,
   "mobs": {
     "Ancient Wyvern": "",
     "Ankou": "",
@@ -17,5 +18,6 @@
     "Moss Giant": "",
     "Vorkath": ""
   },
-  "selectedMob": ""
+  "selectedMob": "Ancient Wyvern",
+  "tablesMergeBelowX": 5
 }

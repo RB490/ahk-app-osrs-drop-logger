@@ -44,7 +44,7 @@ class ClassDropLog {
             
             ; prettify
             If (InStr(value, "Death Start"))
-                value := "------- Death -------"
+                value := "*Death*"
             If (InStr(value, "trip"))
                 value := "----------------------" value "----------------------"
             

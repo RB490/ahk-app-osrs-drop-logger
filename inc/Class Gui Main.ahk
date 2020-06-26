@@ -40,7 +40,7 @@ class ClassGuiMain extends gui {
         input := this.GetText("Edit1")
 
         ; build display var
-        for mob, v in SETTINGS_OBJ.mobs
+        for mob, v in DB_SETTINGS.mobs
             If (InStr(mob, input))
                 output .= mob "|"
         output := RTrim(output, "|")
@@ -48,23 +48,23 @@ class ClassGuiMain extends gui {
         ; update MobListBox
         GuiControl,, ListBox1 , |
         GuiControl,, ListBox1 , % output
-        GuiControl, Choose, ListBox1, % SETTINGS_OBJ.selectedMob
+        GuiControl, Choose, ListBox1, % DB_SETTINGS.selectedMob
     }
 
     MobListBoxHandler() {
-        SETTINGS_OBJ.selectedMob := this.GuiControlGet("", "ListBox1")
+        DB_SETTINGS.selectedMob := this.GuiControlGet("", "ListBox1")
         this.ControlFocus("edit1") ; prevent ctrl+s from changing current mob
 
         this._LoadMobImage()
     }
 
     _LoadMobImage() {
-        If !(SETTINGS_OBJ.selectedMob)
+        If !(DB_SETTINGS.selectedMob)
             return  
         
-        path := PATH_MOB_IMAGES "\" SETTINGS_OBJ.selectedMob ".png"
+        path := PATH_MOB_IMAGES "\" DB_SETTINGS.selectedMob ".png"
         If !(FileExist(path)) {
-            url := WIKI_API.GetMobUrl(SETTINGS_OBJ.selectedMob)
+            url := WIKI_API.GetMobUrl(DB_SETTINGS.selectedMob)
             DownloadToFile(url, path)
         }
 
@@ -89,8 +89,8 @@ class ClassGuiMain extends gui {
         StringUpper, input, input, T
 
         ; check if mob already exists
-        If (SETTINGS_OBJ.mobs.HasKey(input)) {
-            SETTINGS_OBJ.selectedMob := input
+        If (DB_SETTINGS.mobs.HasKey(input)) {
+            DB_SETTINGS.selectedMob := input
             this.SearchBoxReset()
             return
         }
@@ -104,12 +104,12 @@ class ClassGuiMain extends gui {
         }
 
         ; save mob
-        If !(IsObject(SETTINGS_OBJ.mobs))
-            SETTINGS_OBJ.mobs := {}
-        SETTINGS_OBJ.mobs[input] := ""
+        If !(IsObject(DB_SETTINGS.mobs))
+            DB_SETTINGS.mobs := {}
+        DB_SETTINGS.mobs[input] := ""
 
         ; apply new mob
-        SETTINGS_OBJ.selectedMob := input
+        DB_SETTINGS.selectedMob := input
         this.SearchBoxReset()
     }
 
@@ -118,16 +118,16 @@ class ClassGuiMain extends gui {
         If !(result)
             return
         this.Hide()
-        DROP_TABLE.Get(SETTINGS_OBJ.selectedMob)
+        DROP_TABLE.Get(DB_SETTINGS.selectedMob)
         LOG_GUI.Setup()
     }
 }
 
 mainGui_ContextMenu:
-    If !(SETTINGS_OBJ.selectedMob) or !(A_EventInfo) ; A_EventInfo = ListBox Target
+    If !(DB_SETTINGS.selectedMob) or !(A_EventInfo) ; A_EventInfo = ListBox Target
         return
     
-    mobMenuMob := SETTINGS_OBJ.selectedMob
+    mobMenuMob := DB_SETTINGS.selectedMob
 
     menu, mobMenu, add
     menu, mobMenu, DeleteAll
@@ -136,8 +136,8 @@ mainGui_ContextMenu:
 return
 
 mobMenu_removeMob:
-    SETTINGS_OBJ.mobs.Delete(SETTINGS_OBJ.selectedMob)
-    SETTINGS_OBJ.selectedMob := ""
+    DB_SETTINGS.mobs.Delete(DB_SETTINGS.selectedMob)
+    DB_SETTINGS.selectedMob := ""
     MAIN_GUI.Update()
 return
 

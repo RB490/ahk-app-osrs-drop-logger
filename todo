@@ -1,10 +1,14 @@
+bug > gui log > select drop > clear drop > add kill > kill gets added
+
+bug > don't add 'main' drop table when no drop tables are combined
+
+bug > fire giant > merge tables below 5 > there is a table 'coins' with 1 drop in it, coins
+
 bugs > drop table retrieving
     bug > main gui > add 'Clue_scroll_(elite)' no errors even though this page does not have a single drop table
     bug > main gui > add "Chest (Barrows)' which contains drop tables on the wiki, but script cant retrieve
     bug > main gui > add 'Abyssal Sire' wiki class throws exception
     bug > ankou > tooth half of key and tooth half of key (m) are not two separate drops - merge these
-
-feature > _TablesMergeBelowX add to critical settings, log menu
 
 feature > stackable item icons > manually create these images and set them with code
     note

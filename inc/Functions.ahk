@@ -3,7 +3,7 @@ ExitFunc(ExitReason, ExitCode) {
     LOG_GUI.SavePos()
     
     FileDelete, % PATH_SETTINGS
-    FileAppend, % json.dump(SETTINGS_OBJ,,2), % PATH_SETTINGS
+    FileAppend, % json.dump(DB_SETTINGS,,2), % PATH_SETTINGS
 
     ; prevent stats being messed up by trip ongoing while program isnt running
     If (DROP_LOG.TripActive())
@@ -28,23 +28,19 @@ Timer() {
 }
 
 LoadSettings() {
-    SETTINGS_OBJ := json.load(FileRead(PATH_SETTINGS))
-        If !(IsObject(SETTINGS_OBJ)) {
-            SETTINGS_OBJ := {}
-            LoadDefaultSettings()
-        }
+    DB_SETTINGS := json.load(FileRead(PATH_SETTINGS))
+        If !(IsObject(DB_SETTINGS))
+            DB_SETTINGS := {}
 
     ; critical settings
-    If (SETTINGS_OBJ.logGuiDropSize < MIN_DROP_SIZE) or (SETTINGS_OBJ.logGuiDropSize > MAX_DROP_SIZE)
-        LoadDefaultSettings()
+    If (DB_SETTINGS.logGuiDropSize < MIN_DROP_SIZE) or (DB_SETTINGS.logGuiDropSize > MAX_DROP_SIZE)
+        DB_SETTINGS.logGuiDropSize := 33 ; 33 is close to ingame inventory
     
-    If (SETTINGS_OBJ.logGuiMaxRowDrops < MIN_ROW_LENGTH) or (SETTINGS_OBJ.logGuiMaxRowDrops > MAX_ROW_LENGTH)
-        LoadDefaultSettings()
-}
+    If (DB_SETTINGS.logGuiMaxRowDrops < MIN_ROW_LENGTH) or (DB_SETTINGS.logGuiMaxRowDrops > MAX_ROW_LENGTH)
+        DB_SETTINGS.logGuiMaxRowDrops := 8
 
-LoadDefaultSettings() {
-    SETTINGS_OBJ.logGuiDropSize := 33 ; 33 is close to ingame inventory
-    SETTINGS_OBJ.logGuiMaxRowDrops := 8
+    If !(DB_SETTINGS.tablesMergeBelowX)
+        DB_SETTINGS.tablesMergeBelowX := 27 ; 27 = rdt
 }
 
 ; input = {string} 'encode' or 'decode'
