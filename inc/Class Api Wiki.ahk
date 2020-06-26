@@ -42,14 +42,18 @@ class ClassApiWiki {
         return output
     }
 
+    ; input = {string} wiki page name eg: a mob or item
+    ; output = valid wiki link to specified target
+    GetPageUrl(input) {
+        return this.url "/w/" this._EncodeText(input)
+    }
+
     /*
         param <input>      = {string} wiki page containing item eg. 'Skeletal wyvern'
         returns            = {string} url to high res image example: https://oldschool.runescape.wiki/images/6/6f/Skeletal_Wyvern.png
     */
-    GetMobUrl(input) {
-        input := this._EncodeText(input)
-
-        html := DownloadToString(this.url "/w/" input)
+    GetMobImageUrl(input) {
+        html := DownloadToString(this.GetPageUrl(input))
 
         needle = src="/images/thumb
         loop, parse, html, `n
@@ -70,11 +74,10 @@ class ClassApiWiki {
         returns            = {string} url to high res image example: https://oldschool.runescape.wiki/images/thumb/4/45/Ashes_detail.png/100px-Ashes_detail.png
     */
     GetImageUrl(input) {
-        input := this._EncodeText(input)
-        html := DownloadToString(this.url "/w/" input)
+        html := DownloadToString(this.GetPageUrl(input))
 
         needleThumb = src="/images/thumb
-        needleDetail := input "_detail"
+        needleDetail := this._EncodeText(input) "_detail"
 
         ; find line containing relative url to our image
         loop, parse, html, `n
@@ -105,8 +108,7 @@ class ClassApiWiki {
                               failure {integer} false
     */
     GetDropTables(input) {
-        input := this._EncodeText(input)
-        html := DownloadToString(this.url "/w/" input)
+        html := DownloadToString(this.GetPageUrl(input))
         doc := ComObjCreate("HTMLfile")
         vHtml = <meta http-equiv="X-UA-Compatible" content="IE=edge">
         doc.write(vHtml) ; enable getElementsByClassName https://autohotkey.com/boards/viewtopic.php?f=5&t=31907

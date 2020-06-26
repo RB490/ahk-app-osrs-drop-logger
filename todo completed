@@ -319,3 +319,7 @@ bug > gui main > log mob > gui log opens > gui main / >>>somehow<<< mainGui_BtnH
         132: MsgBox,A_ThisFunc (2.17)
     ^^^^^^^^^^^
     fixed by removing generic class button handler and replaced with hard coded eg. MAIN_GUI.BtnLog() labels
+
+feature > remember last used drop log > use this to set open drop log file select dialog starting directory
+
+feature > gui log > display mob + log somewhere, probably in log menu (possibly add mob icon)

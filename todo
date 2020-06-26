@@ -1,9 +1,3 @@
-feature > remember last used drop log > use this to set open drop log file select dialog starting directory
-
-feature > gui log > display mob + log somewhere, probably in log menu (possibly add mob icon)
-
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ finishing touches ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 feature > sort drop table items by name in alphabetical order << alphabetical is not the solution as this messes up properly ordered items
     eg. 'ankou' multiple clue scrolls are not next to each other
 

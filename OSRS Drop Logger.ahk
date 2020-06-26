@@ -56,12 +56,14 @@
 
     ; STATS_GUI.Setup()
     ; debugLog := "D:\Downloads\debugLog.json"
-    MAIN_GUI.Setup()
+    ; MAIN_GUI.Setup()
     ; DROP_TABLE.Get(DB_SETTINGS.selectedMob)
     ; FileDelete, % debugLog
     ; DROP_LOG.Load(debugLog)
+    ; msgbox % DB_SETTINGS.selectedLogFile
     ; msgbox % DB_SETTINGS.selectedMob
     ; LOG_GUI.Setup()
+    Gosub MiscMenu_Show
 return
 
 ; Global hotkeys
