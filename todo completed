@@ -273,3 +273,5 @@ feature > Separate todo sections into multiple files
 bug > log menu > 'delocalize' menu images
 
 bug > main gui > remove 'x' > does not get removed, or does get removed but the gui isnt updated. also clear selected mob
+
+feature > remember stats gui position + size

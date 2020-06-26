@@ -26,8 +26,6 @@ feature > stackable item icons > manually create these images and set them with 
     Numulite
         https://oldschool.runescape.wiki/w/Numulite
 
-feature > remember stats gui position + size
-
 feature > main gui > modify mob select to look like it did in 'rewrite 1'?, example is in /info/
     + feature > gui new preset
         preset name + drop log file (use scaling from WIA library by 'just me') + drop log mob

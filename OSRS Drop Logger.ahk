@@ -53,8 +53,9 @@
     */
 
 
+    STATS_GUI.Setup()
     ; debugLog := "D:\Downloads\debugLog.json"
-    MAIN_GUI.Setup()
+    ; MAIN_GUI.Setup()
     ; DROP_TABLE.Get("fire giant")
     ; FileDelete, % debugLog
     ; DROP_LOG.Load(debugLog)

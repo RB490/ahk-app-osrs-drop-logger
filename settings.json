@@ -1,6 +1,12 @@
 {
-  "guiLogX": 95,
-  "guiLogY": 553,
+  "guiLogH": 241,
+  "guiLogW": 513,
+  "guiLogX": 0,
+  "guiLogY": 0,
+  "guiStatsH": 339,
+  "guiStatsW": 628,
+  "guiStatsX": 785,
+  "guiStatsY": 402,
   "logGuiDropSize": 33,
   "logGuiMaxRowDrops": 8,
   "mobs": {

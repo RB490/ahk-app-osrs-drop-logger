@@ -2,16 +2,18 @@ Class ClassGuiStats extends gui {
     Setup() {
         DetectHiddenWindows, On
         If (WinExist, this.ahkid) {
-            this.Show()
+            this.ShowGui()
+            this.CheckPos()
             return
         }
         
-        this.options("+LabelguiStats_")
-        margin := 5
+        this.options("+LabelguiStats_ +Resize")
+        this.margin := 5
+        margin := this.margin
         this.margin(margin, margin)
         
         ; this.add("text", "", "Total")
-        this.add("listview", "w165 r7 -hdr", "Stat|Value")
+        this.add("listview", "x" this.margin " w165 r7 -hdr", "Stat|Value")
         ; this.add("text", "", "Average")
         this.add("listview", "w165 h230 -hdr", "Stat|Value")
 
@@ -24,7 +26,8 @@ Class ClassGuiStats extends gui {
         LV_ModifyCol(7, "Integer") ; dryStreakRecordhigh
         LV_ModifyCol(8, "0 Integer") ; HiddenValueColumnForSorting
 
-        this.show()
+        this.ShowGui()
+        this.CheckPos()
     }
 
     ; stats = {object} from stats class
@@ -111,6 +114,55 @@ Class ClassGuiStats extends gui {
 
         GuiControl % this.hwnd ":+Redraw", SysListView323
     }
+
+    Resize() {
+        ; A_GuiWidth A_GuiHeight
+        STATS_GUI.SetDefault() ; for guicontrol
+
+        ControlGetPos , list1X, list1Y, list1W, list1H, SysListView321
+
+        GuiControl, Move, SysListView322, % "h" A_GuiHeight - list1H - (this.margin * 4) + 2
+
+        GuiControl, Move, SysListView323, % "h" A_GuiHeight - (this.margin * 2)
+        GuiControl, Move, SysListView323, % "w" A_GuiWidth - list1W - (this.margin * 3)
+    }
+
+    SavePos() {
+        WinGetPos(this.hwnd, guiStatsX, guiStatsY, guiStatsW, guiStatsH, true) 
+        SETTINGS_OBJ.guiStatsX := guiStatsX
+        SETTINGS_OBJ.guiStatsY := guiStatsY
+        SETTINGS_OBJ.guiStatsW := guiStatsW
+        SETTINGS_OBJ.guiStatsH := guiStatsH
+    }
+
+    CheckPos() {
+        WinGetPos, guiStatsX, guiStatsY, guiStatsW, guiStatsH, % this.ahkid
+
+        If (guiStatsX < 0) ; offscreen-left
+            SETTINGS_OBJ.guiStatsX := 0
+        If (guiStatsY < 0) ; offscreen-top
+            SETTINGS_OBJ.guiStatsY := 0
+        If (guiStatsX + guiStatsW > A_ScreenWidth) ; offscreen-right
+            SETTINGS_OBJ.guiStatsX := A_ScreenWidth - guiStatsW
+        If (guiStatsY + guiStatsH > A_ScreenHeight) ; offscreen-bottom
+            SETTINGS_OBJ.guiStatsY := A_ScreenHeight - guiStatsH
+
+        If (guiStatsW < 175) ; listview1 width
+            SETTINGS_OBJ.guiStatsW := 175
+        If (guiStatsH < 135) ; listview1 height
+            SETTINGS_OBJ.guiStatsH := 135
+
+        this.ShowGui()
+    }
+
+    ShowGui() {
+        If !(SETTINGS_OBJ.guiStatsX = "") and !(SETTINGS_OBJ.guiStatsY = "") and !(SETTINGS_OBJ.guiStatsW = "") and !(SETTINGS_OBJ.guiStatsH = "") {
+            this.Show("x" SETTINGS_OBJ.guiStatsX A_Space "y" SETTINGS_OBJ.guiStatsY A_Space "w" SETTINGS_OBJ.guiStatsW A_Space "h" SETTINGS_OBJ.guiStatsH)
+        }
+        else {
+            this.Show()
+        }
+    }
 }
 
 guiStats_advancedListView:
@@ -118,5 +170,10 @@ guiStats_advancedListView:
 return
 
 guiStats_close:
+    STATS_GUI.SavePos()
     STATS_GUI.Hide()
+return
+
+guiStats_size:
+    STATS_GUI.Resize()
 return
