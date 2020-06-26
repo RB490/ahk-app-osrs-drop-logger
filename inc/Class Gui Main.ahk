@@ -3,6 +3,7 @@ class ClassGuiMain extends gui {
         ; events
         this.Events["_BtnAdd"] := this.BtnAdd.Bind(this)
         this.Events["_BtnLog"] := this.BtnLog.Bind(this)
+        this.Events["_BtnClose"] := this.Close.Bind(this)
         this.Events["_HotkeyEnter"] := this.BtnAdd.Bind(this)
         this.Events["_MobListBoxHandler"] := this.MobListBoxHandler.Bind(this)
         this.Events["_SearchBoxHandler"] := this.SearchBoxHandler.Bind(this)
@@ -148,6 +149,10 @@ class ClassGuiMain extends gui {
             return
         }
         LOG_GUI.Setup()
+    }
+
+    Close() {
+        exitapp
     }
 }
 

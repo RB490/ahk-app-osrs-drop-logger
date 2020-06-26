@@ -71,10 +71,10 @@ return
         DROP_STATS.UpdateAdvancedStats()
     return
     debugAutoexec:
-        ; MAIN_GUI.Setup()
+        MAIN_GUI.Setup()
 
-        DROP_LOG.Load("D:\Downloads\debugLog.json")
-        LOG_GUI.Setup()
+        ; DROP_LOG.Load("D:\Downloads\debugLog.json")
+        ; LOG_GUI.Setup()
     return
 
 ; Includes
