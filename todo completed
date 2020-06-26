@@ -336,3 +336,7 @@ optimizing > test the program using tick count function/class
             possibly make a separate stats class so theres 'room' for plenty of methods
     which processes take up the most amount of load time, reduce those -- check speed different with/without SetBatchLines -1
         pretty slow update onto log gui after selecting a custom quantity through quantity gui
+
+feature > remember gui stats listview(s) scroll position
+
+feature > gui stats unique listview > add item icon

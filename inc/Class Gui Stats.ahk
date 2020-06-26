@@ -78,22 +78,34 @@ Class ClassGuiStats extends gui {
 
     RedrawAdvanced() {
         this.SetDefault()
-        
         Gui % this.hwnd ":ListView", SysListView323
         GuiControl % this.hwnd ":-Redraw", SysListView323
         LV_Delete()
+
+        ; create image list
+        ImageListID := IL_Create(DROP_STATS.uniqueDrops.length())
+        LV_SetImageList(ImageListID)
+        loop % DROP_STATS.uniqueDrops.length() {
+            name := DROP_STATS.uniqueDrops[A_Index].name
+            id := RUNELITE_API.GetItemId(name)
+            IL_Add(ImageListID, PATH_ITEM_IMAGES "\" id ".png", , 1) ; ResizeNonIcon even though it doesnt seem to make a difference
+        }
+
+        ; load items
         loop % DROP_STATS.uniqueDrops.length() {
             d := DROP_STATS.uniqueDrops[A_Index]
 
             dropRate := Round(d.dropRate, 2)
             commaValue := AddCommas(d.totalValue)
-            ; totalValue := StrReplace(totalValue, ",", ".") ; for listview column sorting
-            LV_Add(, d.quantity " x " d.name, d.occurences, dropRate, commaValue, d.dryStreak, d.dryStreakRecordLow, d.dryStreakRecordhigh, d.totalValue)
+            LV_Add("Icon" . A_Index, d.quantity " x " d.name, d.occurences, dropRate, commaValue, d.dryStreak, d.dryStreakRecordLow, d.dryStreakRecordhigh, d.totalValue)
         }
+
+        ; size/scroll
         loop 10
             LV_ModifyCol(A_Index, "AutoHdr")
         LV_ModifyCol(8, 0) ; HiddenValueColumnForSorting
         LV_Modify(this.advancedListViewFocusedRow, "Vis")
+
         GuiControl % this.hwnd ":+Redraw", SysListView323
     }
 

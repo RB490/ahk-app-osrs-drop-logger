@@ -1,7 +1,3 @@
-feature > remember gui stats listview(s) scroll position
-
-feature > gui stats unique listview > add item icon
-
 bug > gui stats & log like to randomly and regularly forget their x and y coordinates
 
 testing
