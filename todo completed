@@ -1,0 +1,273 @@
+wiki class
+    mob > retrieve drop tables in their categories, merging duplicate categories such as in black demons
+
+drop table 'dtable' class
+    download all images in a drop table
+
+gui class 'logger'
+    drops tab control: create a new tab for each drop table category
+    edit drop log control: on the right of side the tabs, offset to tab position
+    edit selected drops control: on the bottom the tabs, offset to tab position
+https://code.visualstudio.com/docs/editor/github
+
+revert/undo wiki class changes > upload to private github repo > commit each new change to github repo
+
+merge duplicate drop tables eg. for 'black demon' in wiki get
+
+retrieve item object from gui log on mouse click
+    different drop tables can contain the same item with different quantities,
+    assign variable to item image to be retrieved with MouseGetPos containing,
+    item name and occurence, then search drop log object with found occurence to get the exact item
+    this does require log gui to use the same object as the drop log class
+
+the drop table class method that sends information to the logger gui:
+    - combine categories below X drops so there are no useless tabs with a small amount of drops
+    - if the total amount of drops is lower then X combine them. ignoring the rare drop table
+
+use wiki class to retrieve links to high res images for DROP_TABLEs.GetImages()
+
+handle gui log tab3 not scaling properly, happened recently can compare older working versions to debug
+
+drop table class refactoring
+    use this.obj in every class without passing or returning it OR pass it and return it
+    possibly rename methods to be cleaner
+    check function descriptions
+
+wiki class refactoring
+
+drop log class
+    write it so it can support trips, deaths obviously drops and also UNDO/REDO
+    UNDO/REDO
+        before making any change, save an entire copy of the object, and use this to undo/redo as normal
+
+        obj.clone() copies the key-value pairs into a new object, but since i use objects it copies the references to the object,
+        this is called a 'shallow' copy' need a deep copy function or write files to disk and json load etc,
+        though that seems really ineficient especially with large files
+
+integrate drop log gui and drop log class
+    start trip > add some drops > undo some drops > add more drops > redo > BUG
+        something with a link between 'this.changes' and 'this.undonechanges'
+        could look at how clips manager does this?
+    how to handle all the different 'cases' eg. user tries to start new death   
+        without a trip currently active
+    apply checks when ending trip
+        death should be ended
+
+add example of small drop log containing every aspect, trip, kill with a single or multiple drops deaths etc.
+
+log gui separate drop images
+    source overview
+        grand exchange > good icons with white space > does not contain all icons
+            ge api > heavily throttled
+            ge html > heavily throttled
+            osrsbox png > off center
+            osrsbox api > useless base64 encode string
+        wiki > does not have white space
+        runelite > contains all icons including whitespace but off-center, might be able to fix with code
+            
+    info
+        example ge api call for whip = http://services.runescape.com/m=itemdb_oldschool/api/catalogue/detail.json?item=4151
+        up-to-date item ids: https://github.com/runelite/runelite/blob/master/runelite-api/src/main/java/net/runelite/api/ItemID.java
+        example runelite api call for coins = HTTPS://api.runelite.net/runelite-1.6.19/cache/item/998/image
+
+    issues
+        ge does not have links to untradable items like 'clue scroll (hard)', 'larran's key'. but osrsbox api does have these icons? how?
+            it gets them from the runelite api: https://static.runelite.net/api/http-service/
+
+    solution
+        fetch all large & small icon images from the ge and include them in the repo, then add missing images with the same function whenever needed
+        fetch everything
+            ge small
+            ge large
+            wiki small icon
+            wiki high res
+        just use runelite's images - include all of them and download missing ones
+
+cleanup / refactor the complete mess that is this code right now after ^
+
+wiki class > modify user input for wiki class inside the wiki class using a method
+
+gui class for selecting a mob and file
+    feature
+        option to add mobs to a list control that is filled with a few defaults
+        option to search list control
+        display image of currently selected mob
+        store logged mob between sessions
+    functionality
+        open drop log file with drop log class
+        show log gui
+
+separate runelite class 'item id' stuff and 'api' stuff? same for wiki with getimgurl and the table things
+
+completely rewrite drop table class, check total lines before and after
+
+update example files
+
+drop log > combine item quantities
+    some items appear multiple times per table with different quantities eg. 'coins' in 'black demon' or 'goblin'
+        combine them. but quantities need to be preserved
+    varierty of different quantity formats eg.
+        1
+        N/A
+        3,000
+        250–499
+        20,000–81,000
+        ^ <quantity> + ' (noted)'
+
+weird wiki dash '-' thing is converted to gibberish in autohotkey making it difficult to use functins like SubStr()
+
+OnWM_LBUTTONDOWN > handle a variety of different item quantities
+    examples
+        1
+        N/A
+        3,000
+        250–499
+        20,000–81,000
+        ^ <quantity> + ' (noted)'
+        ...and some items will have a combination of these
+    show multiple guis or a single gui with input styles for each quantity:
+        1 = 1 button
+        range between X eg. 15 show 15 buttons
+        range above X eg. 15 show edit control, possibly pre-loaded with lowest or middle range value
+        range above X eg. 15 show slider control, with lowest and highest range values
+        possible solution = show edit control always and add buttons after that
+
+bug gui log > select a drop > select the same drop right after > no response, why this delay?
+    solution: something to do with how microsoft coded WM_LBUTTONDOWN(), if you click in different spots on the image its fine
+
+ClassGuiQuantity > disable LOG_GUI while its open
+
+feature > loading and saving drop logs
+
+bug > 'black demon' drop log main tab choose addy bar, edit field is set to 0
+
+refactor > ClassGuiQuantity
+
+feature > achieve feature parity with older versions. check older versions  eg. add current trip information (in the program title or somewhere else)
+
+gui log
+    feature > status bar with current mob & drop log file? though its already in the mob gui
+    feature > create a nice layout once all the necessary components are functional
+                - combine buttons eg. start death can change into end death and ending a trip
+                while death is active should automatically end the death
+                - size & position buttons based on how often theyre used
+                    +kill
+                    new trip
+                    start/end trip
+                    start/end death
+                    undo
+                    redo
+                    
+save snippet working example from: https://www.autohotkey.com/boards/viewtopic.php?t=30979
+
+refactor global variables into caps lock with underscores eg:
+
+clear drops when starting/ stopping trip
+
+bug > prevent kills from being logged while dead
+
+disable everything on the gui except death toggle button, when dead
+
+drop log.get()
+    feature > add ---trip #<tripnumber>--- dividers between trips in drop log.get()
+    feature > add space between drops in drop log.get()
+    feature > add ---death--- divider between in drop log.get()
+        log the time of each individual drop aswell and then create an object
+        with key:value where key is all the timestamps so they automatically
+        get organized on the correct time
+            bug > 'new trip' writes tripEnd and new tripStart in the same second so input is lost
+                encode + decode timestring with function, add and remove <identifier> A_TickCount
+
+gui log
+    feature > show trip number, kill number and current trip duration in title bar
+        ^ leave this in the stats gui
+    feature > remember position
+    bug > set log gui mimimum height, becomes way too 'short' with small drop tables like 'chicken'
+    bug > log gui last item in a drop table clips over the row above it
+
+mob aka 'main' gui
+    refactoring > rename mob gui to something more descriptive because it has multiple purposes:
+        selecting a mob
+        selecting a drop log
+        choosing a preset which selects the two above
+
+feature > drop log class > choosing drop log file that does not exist > ask to create file
+
+feature > gui log small settings menu button with icon
+    guiLog - item size
+    guiLog - row width
+    gui about
+        github repo
+        some usefull information about the program, maybe how it functions, dependencies runelite/osrs wiki
+
+bug > manually change settings file to have invalid value for 'logGuiDropSize' or 'logGuiMaxRowDrops' > program error
+    check imporant keys on program startup and restore them if needed
+    LoadSettings()
+        try to load settings file
+            failure > set default settings
+        check critical keys, key + value
+            failure > set default settings
+
+gui log > add proper icons
+
+since the runelite item icons are transparent it might be possible to reize/move them with code inside an image control
+    or try that GuiButtonIcon() which definetly allows for resizing
+    https://www.autohotkey.com/docs/commands/LoadPicture.htm
+    GuiControl allows to set image inside picture control, resized
+
+refactor > gui log > especially involving MAX_DROP_SIZE, 'logGuiDropSize' and SavePos() CheckPos()
+
+refactor > LoadSettings / CheckCriticalSettings / LoadDefaultSettings this is messy
+    load settings > load default settings for missing values
+
+refactoring > runelite class also use prices file to find item ids? prevents encoding decoding to runelite java naming format
+
+user has a main drop log where anything is logged > current loaded mob is 'black demon' > stats needs access to whip price
+    add price support to RuneLiteApi https://api.runelite.net/runelite-1.6.20/item/prices
+    split runelite api into multiple classes?
+        RuneLiteApiIds
+        RuneLiteApiPrice
+        
+stats item price lookup is slow, potential fix:
+    adjust RUNELITE_API json format so items can be directly accessed rather than looped eg:
+        RUNELITE_API.obj[<itemName>].id
+
+combine collecting 'basic' stats into one loop? - though there doesnt seem to be a performance hit seperately looping through the object in multiple methods
+
+stats
+    feature > gui stats
+        gui stats listview
+            use formattime for time vars
+            add comma dividers for profit vars
+            which method to use for loading stats class data into stats gui listview
+    feature > stats class
+
+feature > integrate gui stats into gui log > use vertical lines hamburger icon vaguely representing osrs stats tab icon. or the actual icon in black & white 
+    possibly also use this icon on the actual stats gui
+
+feature > stats > 'unique' drop information aka same quantity + name:
+    'drop quantity' x 'drop name' | total times dropped | total value | drop rate | kills since last drop | shorest dry streak | longest dry streak
+
+feature > stop logging + save drop log > on log gui close (return to main gui) and on script close. also end trip and death if not done already:
+    bug > stats > automatically end trip when stopping logging either because of gui close or script close
+        this is to prevent a large amount of time between trip start & end time and thereby messing up stats
+
+bug > runelite api url /item/prices/ does not include items without prices
+    ^ when downloading api file, also download the item id definition file and add those to the obj,
+        recover item name parsing code
+        use runelite item naming scheme everywhere for clarity
+
+refactoring > Add  short description to the top of every class
+
+bug > gui log does not close
+
+feature > bulk file download
+    goal: function that calls separate script file to download files (images) quickly,
+        use this in the drop table class to get images fast
+            ^^ not doing this because runelite api is a limiting factor / even if its not thats abuse
+
+figure out miliseconds and 'FormatTime': https://www.autohotkey.com/boards/viewtopic.php?t=64641
+
+feature > Separate todo sections into multiple files
+
+bug > log menu > 'delocalize' menu images

@@ -1,9 +1,10 @@
 {
-  "guiLogX": 125,
-  "guiLogY": 546,
+  "guiLogX": 95,
+  "guiLogY": 553,
   "logGuiDropSize": 33,
   "logGuiMaxRowDrops": 8,
   "mobs": {
+    "Ancient Wyvern": "",
     "Ankou": "",
     "Goblin": "",
     "Ice Giant": "",
@@ -12,5 +13,5 @@
     "Spider": "",
     "Vorkath": ""
   },
-  "selectedMob": ""
+  "selectedMob": "Ancient Wyvern"
 }
