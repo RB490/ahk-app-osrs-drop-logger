@@ -44,6 +44,8 @@
     FileCreateDir, % PATH_ITEM_IMAGES
     FileCreateDir, % PATH_MOB_IMAGES
     LoadSettings()
+    If (DEBUG_MODE)
+        Goto debugAutoexec 
     MAIN_GUI.Setup()
 return
 
@@ -67,6 +69,12 @@ return
     updateStats:
         DROP_STATS.UpdateBasicStats()
         DROP_STATS.UpdateAdvancedStats()
+    return
+    debugAutoexec:
+        ; MAIN_GUI.Setup()
+
+        DROP_LOG.Load("D:\Downloads\debugLog.json")
+        LOG_GUI.Setup()
     return
 
 ; Includes

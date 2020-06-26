@@ -13,13 +13,10 @@ class ClassGuiMain extends gui {
         this.Options("+LabelmainGui_")
 
         ; controls
-        ; this.Add("text", "", "Search")
         this.Add("edit", "w" totalWidth - 45 - this.marginSize " section gmainGui_SearchBoxHandler", "")
         this.Add("button", "x+5 ys-1 w50 gmainGui_BtnAdd", "Add")
         this.Add("listbox", "x" this.marginSize " w" totalWidth " r10 gmainGui_MobListBoxHandler", "")
         _MAIN_GUI_BTN_LOG := this.AddGlobal("button", "w" totalWidth " gmainGui_BtnLog r3", "Log")
-
-        ; this.Add("picture", "w200 h200 border", "")
 
         ; hotkeys
         Hotkey, IfWinActive, % this.ahkid
@@ -70,8 +67,8 @@ class ClassGuiMain extends gui {
 
     _LoadMobImage() {
         If !(DB_SETTINGS.selectedMob) {
-            this.SetText(_MAIN_GUI_BTN_LOG, "Log")
-            SetButtonIcon(_MAIN_GUI_BTN_LOG, A_ScriptDir "\res\img\Nothing.png", 1, 44) ; r2 = 30, r3 = 44
+            this.SetText(_MAIN_GUI_BTN_LOG, "Log                     ")
+            GuiButtonIcon(_MAIN_GUI_BTN_LOG, A_ScriptDir "\res\img\Nothing.png", 1, "s44 a0 l50 r0")
             return  
         }
         
@@ -82,7 +79,6 @@ class ClassGuiMain extends gui {
         }
 
         this.SetDefault() ; for guicontrol
-        ; GuiControl,,Static1, % path
         this.SetText(_MAIN_GUI_BTN_LOG, "       Log")
         SetButtonIcon(_MAIN_GUI_BTN_LOG, path, 1, 44) ; r2 = 30, r3 = 44
     }

@@ -339,3 +339,13 @@ optimizing > test the program using tick count function/class
 feature > remember gui stats listview(s) scroll position
 
 feature > gui stats unique listview > add item icon
+
+bug > gui stats & log like to randomly forget their x and y coordinates
+    ^ actually, all settings. stored mobs and such
+
+testing
+    incorrect or no data for the external apis: runelite, osrs wiki
+
+check AutoGui gui button icon lib
+
+separate reusable functions into lib

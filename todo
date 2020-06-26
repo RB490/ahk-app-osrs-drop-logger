@@ -1,9 +1,3 @@
-bug > gui stats & log like to randomly forget their x and y coordinates
-    ^ actually, all settings. stored mobs and such
-
-testing
-    incorrect or no data for the external apis: runelite, osrs wiki
-
 refactoring
     watch onenote refactor videos for inspiration
     eliminate global vars
