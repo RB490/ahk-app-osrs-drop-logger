@@ -323,3 +323,5 @@ bug > gui main > log mob > gui log opens > gui main / >>>somehow<<< mainGui_BtnH
 feature > remember last used drop log > use this to set open drop log file select dialog starting directory
 
 feature > gui log > display mob + log somewhere, probably in log menu (possibly add mob icon)
+
+bug > drop_log.load() does not detect damaged json files

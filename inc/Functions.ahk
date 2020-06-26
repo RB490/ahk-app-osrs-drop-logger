@@ -6,10 +6,12 @@ ExitFunc(ExitReason, ExitCode) {
     FileAppend, % json.dump(DB_SETTINGS,,2), % PATH_SETTINGS
 
     ; prevent stats being messed up by trip ongoing while program isnt running
+    If (A_IsCompiled) {
     If (DROP_LOG.TripActive())
         DROP_LOG.EndTrip()
     If (DROP_LOG.DeathActive())
         DROP_LOG.EndDeath()
+    }
     DROP_LOG.Save()
 }
 
@@ -87,7 +89,7 @@ OnWM_LBUTTONDOWN(wParam, lParam, msg, hWnd) {
     Obj.Delete("price")
     Obj.Delete("rarity")
 
-    If InStr(obj.quantity, "#")
+    If InStr(obj.quantity, "#") or InStr(obj.quantity, "-")
         obj.quantity := QUANTITY_GUI.Get(obj)
     If !(obj.quantity)
         return

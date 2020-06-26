@@ -41,7 +41,7 @@ Class ClassDropStats {
         stats.avgDropsPerDeath := avgDropsPerDeath := totalDrops / totalDeaths
         stats.avgProfitPerDeath := avgProfitPerDeath := totalDropsValue / totalDeaths
 
-        STATS_GUI.UpdateBasic(stats)
+        STATS_GUI.RedrawBasic(stats)
     }
 
     UpdateAdvancedStats() {
@@ -51,7 +51,7 @@ Class ClassDropStats {
         this._setUniqueDropsDryStreak()
         this._setUniqueDropsDryStreakRecords()
 
-        STATS_GUI.UpdateAdvanced(stats)
+        STATS_GUI.RedrawAdvanced()
     }
 
     _getTotalTrips() {

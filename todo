@@ -1,6 +1,8 @@
-bug > drop_log.load() does not detect damaged json files
+bug > ancient wyvern > add 'rune arrow' / 'blood rune' and instead of putting up the custom quant gui it selects quantities with '-' in them whole 
 
-optimize > test the program using tick count function/class
+bug > quantity gui buttons are not showing for 'ancient wyvernn' but they are for 'fire giant'
+
+optimizing > test the program using tick count function/class
     large drop logs
         it should be possible to get really close to instant updates even at 100k lines by reducing loops, a lot
             possibly make a separate stats class so theres 'room' for plenty of methods

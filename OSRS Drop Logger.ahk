@@ -54,20 +54,25 @@
     DROP_STATS.UpdateAdvancedStats()
     */
 
-    MAIN_GUI.Setup()
+    ; MAIN_GUI.Setup()
     ; return
 
     ; STATS_GUI.Setup()
-    ; debugLog := "D:\Downloads\debugLog 123.json"
+    debugLog := "D:\Downloads\debugLog.json"
 
     ; MAIN_GUI.Setup()
-    ; DROP_TABLE.Get(DB_SETTINGS.selectedMob)
+    ; DB_SETTINGS.selectedMob := "fire giant"
+    DB_SETTINGS.selectedMob := "ancient wyvern"
+    DROP_TABLE.Get(DB_SETTINGS.selectedMob)
     ; FileDelete, % debugLog
-    ; DROP_LOG.Load(debugLog)
+    DROP_LOG.Load(debugLog)
     ; msgbox % DB_SETTINGS.selectedLogFile
     ; msgbox % DB_SETTINGS.selectedMob
-    ; LOG_GUI.Setup()
+    LOG_GUI.Setup()
     ; Gosub MiscMenu_Show
+
+    ; clipboard := json.dump(DROP_TABLE.obj,,2)
+    ; msgbox
 return
 
 ; Global hotkeys
@@ -87,6 +92,10 @@ return
         tooltip
     return
     menuHandler:
+    return
+    updateStats:
+        DROP_STATS.UpdateBasicStats()
+        DROP_STATS.UpdateAdvancedStats()
     return
 
 ; Includes

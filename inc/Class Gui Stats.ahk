@@ -18,21 +18,15 @@ Class ClassGuiStats extends gui {
         this.add("listview", "w165 h230 -hdr", "Stat|Value")
 
         this.add("listview", "x+" margin " y" margin " w550 h358 r31 gguiStats_advancedListView", "Drop|#|Rate|Value|Dry|<|>|HiddenValueColumnForSorting")
-        this.SetDefault()
-        LV_ModifyCol(2, "Integer") ; occurences
-        LV_ModifyCol(3, "Integer") ; dropRate
-        LV_ModifyCol(4, "Integer NoSort") ; totalValue
-        LV_ModifyCol(5, 30) ; dry streak
-        LV_ModifyCol(6, "Integer") ; dryStreakRecordLow
-        LV_ModifyCol(7, "Integer") ; dryStreakRecordhigh
-        LV_ModifyCol(8, "0 Integer") ; HiddenValueColumnForSorting
 
         this.ShowGui()
         this.CheckPos()
     }
 
     ; stats = {object} from stats class
-    UpdateBasic(stats) {
+    RedrawBasic(stats) {
+        this.SetDefault()
+        
         Gui % this.hwnd ":ListView", SysListView321
         LV_Delete()
         ; LV_Add(, "----------Total----------", "")
@@ -80,7 +74,9 @@ Class ClassGuiStats extends gui {
         LV_ModifyCol(, "AutoHdr")
     }
 
-    UpdateAdvanced() {
+    RedrawAdvanced() {
+        this.SetDefault()
+        
         Gui % this.hwnd ":ListView", SysListView323
         GuiControl % this.hwnd ":-Redraw", SysListView323
         LV_Delete()
@@ -90,11 +86,11 @@ Class ClassGuiStats extends gui {
             dropRate := Round(d.dropRate, 2)
             commaValue := AddCommas(d.totalValue)
             ; totalValue := StrReplace(totalValue, ",", ".") ; for listview column sorting
-            LV_Add(, d.name " x " d.quantity, d.occurences, dropRate, commaValue, d.dryStreak, d.dryStreakRecordLow, d.dryStreakRecordhigh, d.totalValue)
+            LV_Add(, d.quantity " x " d.name, d.occurences, dropRate, commaValue, d.dryStreak, d.dryStreakRecordLow, d.dryStreakRecordhigh, d.totalValue)
         }
         LV_ModifyCol(, "AutoHdr")
-        LV_ModifyCol(5, 30) ; dry streak
-        ; LV_ModifyCol(8, 0) ; HiddenValueColumnForSorting
+        LV_ModifyCol(5, 30) ; dry streak <- manually set to this size because 'dry' gets cut off for no reason
+        LV_ModifyCol(8, 0) ; HiddenValueColumnForSorting
         GuiControl % this.hwnd ":+Redraw", SysListView323
     }
 
@@ -122,10 +118,10 @@ Class ClassGuiStats extends gui {
 
         ControlGetPos , list1X, list1Y, list1W, list1H, SysListView321
 
-        GuiControl, Move, SysListView322, % "h" A_GuiHeight - list1H - (this.margin * 4) + 2
+        GuiControl, MoveDraw, SysListView322, % "h" A_GuiHeight - list1H - (this.margin * 4) + 2
 
-        GuiControl, Move, SysListView323, % "h" A_GuiHeight - (this.margin * 2)
-        GuiControl, Move, SysListView323, % "w" A_GuiWidth - list1W - (this.margin * 3)
+        GuiControl, MoveDraw, SysListView323, % "h" A_GuiHeight - (this.margin * 2)
+        GuiControl, MoveDraw, SysListView323, % "w" A_GuiWidth - list1W - (this.margin * 3)
     }
 
     SavePos() {
@@ -150,10 +146,10 @@ Class ClassGuiStats extends gui {
         If (guiStatsY + guiStatsH > A_ScreenHeight) ; offscreen-bottom
             DB_SETTINGS.guiStatsY := A_ScreenHeight - guiStatsH
 
-        If (guiStatsW < 175) ; listview1 width
-            DB_SETTINGS.guiStatsW := 175
-        If (guiStatsH < 135) ; listview1 height
-            DB_SETTINGS.guiStatsH := 135
+        If (guiStatsW < 175) ; listview1 width = 175
+            DB_SETTINGS.guiStatsW := 250
+        If (guiStatsH < 135) ; listview1 height = 135
+            DB_SETTINGS.guiStatsH := 250
 
         this.ShowGui()
     }
@@ -165,6 +161,18 @@ Class ClassGuiStats extends gui {
         else {
             this.Show()
         }
+
+        this.SetDefault()
+        Gui % this.hwnd ":ListView", SysListView323
+        LV_ModifyCol(2, "Integer") ; occurences
+        LV_ModifyCol(3, "Integer") ; dropRate
+        LV_ModifyCol(4, "Integer NoSort") ; totalValue
+        LV_ModifyCol(5, 30) ; dry streak
+        LV_ModifyCol(6, "Integer") ; dryStreakRecordLow
+        LV_ModifyCol(7, "Integer") ; dryStreakRecordhigh
+        LV_ModifyCol(8, "0 Integer") ; HiddenValueColumnForSorting
+
+        SetTimer, updateStats, -1
     }
 
     Close() {

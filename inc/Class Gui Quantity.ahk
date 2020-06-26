@@ -1,7 +1,7 @@
 class ClassGuiQuantity extends gui {
     /*
         input = {object} item object from 'DROP_TABLE.GetDrop()' this method uses 
-            input.quantity  contains one or multiple wiki drop table quantities separated by '#'
+            input.quantity contains one wiki drop table quantity separated by -, or multiple quantities separated by '#'
             example: 132#30#44#220#460#250-499#250#500-749#500-999
         
         purpose =  sets this.obj eg:
@@ -21,10 +21,14 @@ class ClassGuiQuantity extends gui {
     Get(input) {
         this.obj := {}
         this.obj.dropName := input.name
-        arr := StrSplit(input.quantity, "#")
-        ints := {}
+
+        If InStr(input, "#") ; multiple quantities
+            arr := StrSplit(input.quantity, "#")
+        else
+            arr := StrSplit(input.quantity, "-") ; single quantity
         
         ; get lowest & highest range
+        ints := {}
         loop % arr.length() {
             LoopField := arr[A_Index]
 
