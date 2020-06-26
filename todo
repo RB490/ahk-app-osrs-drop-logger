@@ -1,5 +1,3 @@
-bug > main gui > remove 'x' > does not get removed, or does get removed but the gui isnt updated. also clear selected mob
-
 bugs > drop table retrieving
     bug > main gui > add 'Clue_scroll_(elite)' no errors even though this page does not have a single drop table
     bug > main gui > add "Chest (Barrows)' which contains drop tables on the wiki, but script cant retrieve

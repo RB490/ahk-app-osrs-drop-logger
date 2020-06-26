@@ -138,7 +138,7 @@ return
 mobMenu_removeMob:
     SETTINGS_OBJ.mobs.Delete(SETTINGS_OBJ.selectedMob)
     SETTINGS_OBJ.selectedMob := ""
-    mainGui.Update()
+    MAIN_GUI.Update()
 return
 
 mainGui_MobListBoxHandler:
