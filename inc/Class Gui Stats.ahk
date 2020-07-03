@@ -7,20 +7,20 @@ Class ClassGuiStats extends gui {
             return
         }
         
-        this.options("+LabelguiStats_ +Resize")
+        this.options("+Resize")
         this.margin := 5
         margin := this.margin
         this.margin(margin, margin)
         
-        this.add("listview", "x" this.margin " w165 r7 -hdr", "Stat|Value") ; total
-
-        ControlGetPos , list1X, list1Y, list1W, list1H, SysListView321, % this.ahkid
+        this.LvTotal := new this.ListView(this, "x" this.margin " y" this.margin " w165 r7 -hdr", "Stat|Value")
+        
+        ControlGetPos , list1X, list1Y, list1W, list1H, , % "ahk_id " this.LvTotal.hwnd
         list2H := DB_SETTINGS.guiStatsH - list1H - (this.margin * 4) + 2
-        this.add("listview", "w165 h" list2H " -hdr AltSubmit gguiStats_averageListView", "Stat|Value") ; average
+        this.LvAvg := new this.ListView(this, "w165 h" list2H " -hdr AltSubmit", "Stat|Value", this.AverageListViewHandler.Bind(this))
 
         list3W := DB_SETTINGS.guiStatsW - list1W - (this.margin * 3)
-        list3H := DB_SETTINGS.guiStatsH - (this.margin * 2)
-        this.add("listview", "x+" margin " y" margin " w" list3W " h" list3H " r31 AltSubmit gguiStats_advancedListView", "Drop|#|Rate|Value|Dry|<|>|HiddenValueColumnForSorting")
+        list3H := DB_SETTINGS.guiStatsH - (this.margin * 2) - 2
+        this.LvUnique := new this.ListView(this, "x+" margin " y" margin " w" list3W " h" list3H " r31", "Drop|#|Rate|Value|Dry|<|>|HiddenValueColumnForSorting", this.AdvancedListViewHandler.Bind(this))
 
         this.ShowGui()
         this.CheckPos()
@@ -28,65 +28,61 @@ Class ClassGuiStats extends gui {
 
     ; stats = {object} from stats class
     RedrawBasic(stats) {
-        this.SetDefault()
-        
-        Gui % this.hwnd ":ListView", SysListView321
-        LV_Delete()
         ; LV_Add(, "----------Total----------", "")
-        LV_Add(, "Trips", stats.totalTrips)
-        LV_Add(, "Kills", stats.totalKills)
-        LV_Add(, "Drops", stats.totalDrops)
-        LV_Add(, "Deaths", stats.totalDeaths)
-        LV_Add(, "Time", FormatSeconds(stats.totalTime))
-        LV_Add(, "Dead", FormatSeconds(stats.totalDeadTime))
-        LV_Add(, "Profit", AddCommas(stats.totalDropsValue))
-        LV_ModifyCol(, "AutoHdr")
+        this.LvTotal.Delete()
+        this.LvTotal.Add(, "Trips", stats.totalTrips)
+        this.LvTotal.Add(, "Kills", stats.totalKills)
+        this.LvTotal.Add(, "Drops", stats.totalDrops)
+        this.LvTotal.Add(, "Deaths", stats.totalDeaths)
+        this.LvTotal.Add(, "Time", FormatSeconds(stats.totalTime))
+        this.LvTotal.Add(, "Dead", FormatSeconds(stats.totalDeadTime))
+        this.LvTotal.Add(, "Profit", AddCommas(stats.totalDropsValue))
+        this.LvTotal.ModifyCol(1, "AutoHdr")
+        this.LvTotal.ModifyCol(2, "AutoHdr")
 
-        Gui % this.hwnd ":ListView", SysListView322
-        LV_Delete()
         ; LV_Add(, "----------Average----------", "")
+        this.LvAvg.Delete()
         ; average profit
-        LV_Add(, "Profit / Trip", AddCommas(Round(stats.avgProfitPerTrip)))
-        LV_Add(, "Profit / Kill", AddCommas(Round(stats.avgProfitPerKill)))
-        LV_Add(, "Profit / Drop", AddCommas(Round(stats.avgProfitPerDrop)))
-        LV_Add(, "Profit / Hour", AddCommas(Round(stats.avgProfitPerHour)))
+        this.LvAvg.Add(, "Profit / Trip", AddCommas(Round(stats.avgProfitPerTrip)))
+        this.LvAvg.Add(, "Profit / Kill", AddCommas(Round(stats.avgProfitPerKill)))
+        this.LvAvg.Add(, "Profit / Drop", AddCommas(Round(stats.avgProfitPerDrop)))
+        this.LvAvg.Add(, "Profit / Hour", AddCommas(Round(stats.avgProfitPerHour)))
 
         ; average trip
-        LV_Add(, "", "")
-        LV_Add(, "Kills / Trip", Round(stats.avgKillsPerTrip, 2))
-        LV_Add(, "Drops / Trip", Round(stats.avgDropsPerTrip, 2))
+        this.LvAvg.Add(, "", "")
+        this.LvAvg.Add(, "Kills / Trip", Round(stats.avgKillsPerTrip, 2))
+        this.LvAvg.Add(, "Drops / Trip", Round(stats.avgDropsPerTrip, 2))
 
         ; average hourly
-        LV_Add(, "", "")
-        LV_Add(, "Trips / Hour", Round(stats.avgTripsPerHour, 2))
-        LV_Add(, "Kills / Hour", Round(stats.avgKillsPerHour, 2))
-        LV_Add(, "Drops / Hour", Round(stats.avgDropsPerHour))
+        this.LvAvg.Add(, "", "")
+        this.LvAvg.Add(, "Trips / Hour", Round(stats.avgTripsPerHour, 2))
+        this.LvAvg.Add(, "Kills / Hour", Round(stats.avgKillsPerHour, 2))
+        this.LvAvg.Add(, "Drops / Hour", Round(stats.avgDropsPerHour))
 
         ; average time
-        LV_Add(, "", "")
-        LV_Add(, "Time / Trip", FormatSeconds(stats.avgTimePerTrip))
-        LV_Add(, "Time / Kill", FormatSeconds(stats.avgTimePerKill))
-        LV_Add(, "Time / Drop", FormatSeconds(stats.avgTimePerDrop))
+        this.LvAvg.Add(, "", "")
+        this.LvAvg.Add(, "Time / Trip", FormatSeconds(stats.avgTimePerTrip))
+        this.LvAvg.Add(, "Time / Kill", FormatSeconds(stats.avgTimePerKill))
+        this.LvAvg.Add(, "Time / Drop", FormatSeconds(stats.avgTimePerDrop))
 
         ; average deaths
-        LV_Add(, "", "")
-        LV_Add(, "Trips / Death", Round(stats.avgTripsPerDeath, 2))
-        LV_Add(, "Kills / Death", Round(stats.avgKillsPerDeath, 2))
-        LV_Add(, "Drops / Death", Round(stats.avgDropsPerDeath))
-        LV_Add(, "Profit / Death", AddCommas(Round(stats.avgProfitPerDeath)))
-        LV_ModifyCol(, "AutoHdr")
-        LV_Modify(this.averageListViewFocusedRow, "Vis")
+        this.LvAvg.Add(, "", "")
+        this.LvAvg.Add(, "Trips / Death", Round(stats.avgTripsPerDeath, 2))
+        this.LvAvg.Add(, "Kills / Death", Round(stats.avgKillsPerDeath, 2))
+        this.LvAvg.Add(, "Drops / Death", Round(stats.avgDropsPerDeath))
+        this.LvAvg.Add(, "Profit / Death", AddCommas(Round(stats.avgProfitPerDeath)))
+        this.LvAvg.ModifyCol(1, "AutoHdr")
+        this.LvAvg.ModifyCol(2, "AutoHdr")
+        this.LvAvg.Modify(this.averageListViewFocusedRow, "Vis")
     }
 
     RedrawAdvanced() {
-        this.SetDefault()
-        Gui % this.hwnd ":ListView", SysListView323
-        GuiControl % this.hwnd ":-Redraw", SysListView323
-        LV_Delete()
+        this.LvUnique.Redraw()
+        this.LvUnique.Delete()
 
         ; create image list
         ImageListID := IL_Create(DROP_STATS.uniqueDrops.length())
-        LV_SetImageList(ImageListID)
+        this.LvUnique.SetImageList(ImageListID)
         loop % DROP_STATS.uniqueDrops.length() {
             name := DROP_STATS.uniqueDrops[A_Index].name
             id := RUNELITE_API.GetItemId(name)
@@ -99,28 +95,26 @@ Class ClassGuiStats extends gui {
 
             dropRate := Round(d.dropRate, 2)
             commaValue := AddCommas(d.totalValue)
-            LV_Add("Icon" . A_Index, d.quantity " x " d.name, d.occurences, dropRate, commaValue, d.dryStreak, d.dryStreakRecordLow, d.dryStreakRecordhigh, d.totalValue)
+            this.LvUnique.Add("Icon" . A_Index, d.quantity " x " d.name, d.occurences, dropRate, commaValue, d.dryStreak, d.dryStreakRecordLow, d.dryStreakRecordhigh, d.totalValue)
         }
 
         ; size/scroll
-        loop 10
-            LV_ModifyCol(A_Index, "AutoHdr")
-        LV_ModifyCol(8, 0) ; HiddenValueColumnForSorting
-        LV_Modify(this.advancedListViewFocusedRow, "Vis")
+        loop 7
+            this.LvUnique.ModifyCol(A_Index, "AutoHdr")
+        this.LvUnique.Modify(this.advancedListViewFocusedRow, "Vis")
 
-        GuiControl % this.hwnd ":+Redraw", SysListView323
+        this.LvUnique.Redraw()
     }
 
     AdvancedListViewHandler() {
-        Gui % this.hwnd ":ListView", SysListView323
-
         ; selected empty space
         If (this.advancedListViewFocusedRow = 0)
             this.advancedListViewFocusedRow := ""
 
-        ; selected left click or double click
-        If (A_GuiEvent = "Normal") or (A_GuiEvent = "DoubleClick")
-            this.advancedListViewFocusedRow := LV_GetNext(, "Focused")
+        If (A_GuiEvent = "DoubleClick")
+            return        
+        If (A_GuiEvent = "Normal")
+            this.advancedListViewFocusedRow := this.LvUnique.GetNext(, "Focused")
 
         ; selected column 4 (total value column) - sort hidden value column
         static t
@@ -130,19 +124,18 @@ Class ClassGuiStats extends gui {
         this.advancedListViewFocusedRow := ""
 
         If (t)
-            LV_ModifyCol(8, "SortDesc") ; HiddenValueColumnForSorting
+            this.LvUnique.ModifyCol(8, "SortDesc") ; HiddenValueColumnForSorting
         else
-            LV_ModifyCol(8, "Sort") ; HiddenValueColumnForSorting
+            this.LvUnique.ModifyCol(8, "Sort") ; HiddenValueColumnForSorting
+
     }
 
     AverageListViewHandler() {
-        Gui % this.hwnd ":ListView", SysListView322
-
         If (this.averageListViewFocusedRow = 0) ; selected empty space
             this.averageListViewFocusedRow := ""
 
         If (A_GuiEvent = "Normal") or (A_GuiEvent = "DoubleClick")
-            this.averageListViewFocusedRow := LV_GetNext(, "Focused")
+            this.averageListViewFocusedRow := this.LvAvg.GetNext(, "Focused")
     }
 
     Resize() {
@@ -188,14 +181,13 @@ Class ClassGuiStats extends gui {
             this.Show()
         }
 
-        this.SetDefault()
-        Gui % this.hwnd ":ListView", SysListView323
-        LV_ModifyCol(2, "Integer") ; occurences
-        LV_ModifyCol(3, "Integer") ; dropRate
-        LV_ModifyCol(4, "Integer NoSort") ; totalValue
-        LV_ModifyCol(6, "Integer") ; dryStreakRecordLow
-        LV_ModifyCol(7, "Integer") ; dryStreakRecordhigh
-        LV_ModifyCol(8, "0 Integer") ; HiddenValueColumnForSorting
+        this.LvUnique.ModifyCol(2, "Integer") ; occurences
+        this.LvUnique.ModifyCol(3, "Integer") ; dropRate
+        this.LvUnique.ModifyCol(4, "Integer NoSort") ; totalValue
+        this.LvUnique.ModifyCol(5, "Integer") ; dryStreakRecordLow
+        this.LvUnique.ModifyCol(6, "Integer") ; dryStreakRecordLow
+        this.LvUnique.ModifyCol(7, "Integer") ; dryStreakRecordhigh
+        this.LvUnique.ModifyCol(8, "0 Integer") ; HiddenValueColumnForSorting
 
         SetTimer, updateStats, -1
     }
@@ -206,19 +198,3 @@ Class ClassGuiStats extends gui {
         STATS_GUI.Hide()
     }
 }
-
-guiStats_advancedListView:
-    STATS_GUI.AdvancedListViewHandler()
-return
-
-guiStats_averageListView:
-    STATS_GUI.AverageListViewHandler()
-return
-
-guiStats_close:
-    STATS_GUI.Close()
-return
-
-guiStats_size:
-    STATS_GUI.Resize()
-return

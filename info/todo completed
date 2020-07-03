@@ -463,3 +463,13 @@ bug > right now it takes way to long for drop_table.get to check if images exist
 
 bug > DownloadMissingItemImages() sometimes hangs on 'hellpupy' 'Could not find 'inventory-image' class' for no reason, but after restarting the script its fine
     ^ doesnt seem to always do this
+
+bug > vorkath > bluedragonhide > quantity gui glitches out. gets input '2#25-30'
+
+refactor > use good Libaries
+    AutoXYWH()
+        Use for resizable guis aka stats
+        Make gui log resizable using this libary? would get rid of a bunch of settings
+            If this not feasible, maybe allow resizing of the log gui
+    Updated Gui Class?
+        Or no maybe gui class at all

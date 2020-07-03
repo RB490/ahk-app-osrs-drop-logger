@@ -22,7 +22,7 @@ class ClassGuiQuantity extends gui {
         this.obj := {}
         this.obj.dropName := input.name
 
-        If InStr(input, "#") ; multiple quantities
+        If InStr(input.quantity, "#") ; multiple quantities
             arr := StrSplit(input.quantity, "#")
         else
             arr := StrSplit(input.quantity, "-") ; single quantity
@@ -42,13 +42,13 @@ class ClassGuiQuantity extends gui {
                 If (high > recordHigh)
                     recordHigh := high
 
-                arr.Delete(A_Index)
+                ints.push(low)
+                ints.push(high)
             }
             else
                 ints.push(arr[A_Index])
         }
-
-        If InStr(input, "#") {
+        If InStr(input.quantity, "#") {
             this.obj.lowestQuantity := recordLow
             this.obj.highestQuantity := recordHigh
         }
@@ -88,17 +88,13 @@ class ClassGuiQuantity extends gui {
         guiName := this.obj.dropName A_Space
         If (this.obj.lowestQuantity)
             guiName := guiName this.obj.lowestQuantity " - " this.obj.highestQuantity
-        this.__New(guiName)
 
-        ; events
-        this.Events["_HotkeyEnter"] := this.BtnSubmit.Bind(this)
-        this.Events["_HotkeyEscape"] := this.Close.Bind(this)
-        this.Events["_BtnEnter"] := this.BtnSubmit.Bind(this)
+        this.__New(guiName)
 
         ; properties
         this.Owner(LOG_GUI.hwnd)
         this.Margin(0, 0)
-        this.Options("+toolwindow  +labelquantityGui_")
+        this.Options("+toolwindow")
         totalButtons := this.obj.integersObj.length()
         maxRowLength := 5
         controlSize := 50
@@ -107,16 +103,16 @@ class ClassGuiQuantity extends gui {
         this.Font("s29")
         this.Add("edit", "w" controlSize * (maxRowLength - 2) " h" controlSize " center number", this.obj.medianQuantity)
         this.Font("s15")
-        this.Add("button", "x+0 w" controlSize * 2 " h" controlSize " gquantityGui_BtnHandler", "Enter")
+        this.Add("button", "x+0 w" controlSize * 2 " h" controlSize, "Enter")
 
         loop % totalButtons {
             If (rowLength = maxRowLength)
                 rowLength := 0
 
             If (A_Index = 1) or !(rowLength)
-                this.Add("button", "x0 w" controlSize " h" controlSize " gquantityGui_BtnHandler", this.obj.integersObj[A_Index])
+                this.Add("button", "x0 w" controlSize " h" controlSize " ", this.obj.integersObj[A_Index], this.BtnIntegerHandler.Bind(this))
             else
-                this.Add("button", "x+0 w" controlSize " h" controlSize " gquantityGui_BtnHandler", this.obj.integersObj[A_Index])
+                this.Add("button", "x+0 w" controlSize " h" controlSize "", this.obj.integersObj[A_Index], this.BtnIntegerHandler.Bind(this))
 
             rowLength++
         }
@@ -126,8 +122,7 @@ class ClassGuiQuantity extends gui {
 
         ; hotkeys
         Hotkey, IfWinActive, % this.ahkid
-        Hotkey, Enter, quantityGui_HotkeyEnter
-        Hotkey, Escape, quantityGui_HotkeyEscape
+        Hotkey, Enter, ClassGuiQuantityHotkeyEnter
         Hotkey, IfWinActive
 
         ; show
@@ -148,8 +143,8 @@ class ClassGuiQuantity extends gui {
     }
 
     ; input = {integer}
-    BtnIntegerHandler(input) {
-        this.output := input
+    BtnIntegerHandler() {
+        this.output := this.GuiControlGet("FocusV")
         this.Destroy()
     }
 
@@ -163,33 +158,6 @@ class ClassGuiQuantity extends gui {
     }
 }
 
-quantityGui_BtnHandler:
-    ; get active button text without spaces
-    ControlGetFocus, OutputControl, A
-    ControlGetText, OutputControlText, % OutputControl, A
-    OutputControlText := StrReplace(OutputControlText, A_Space)
-
-    ; call specific method if a integer button is pressed
-    If OutputControlText is Integer
-        QUANTITY_GUI.BtnIntegerHandler(OutputControlText)
-
-    ; call the class's method
-    for a, b in ClassGuiQuantity.Instances 
-		if (a = A_Gui+0)
-			b["Events"]["_Btn" OutputControlText].Call()
-return
-
-quantityGui_HotkeyEnter:
-    ; call the class's method
-    for a, b in ClassGuiQuantity.Instances 
-		if (a = WinExist("A")+0) ; if instance gui hwnd is identical to currently active window hwnd
-			b["Events"]["_HotkeyEnter"].Call()
-return
-
-quantityGui_Close:
-quantityGui_HotkeyEscape:
-    ; call the class's method
-    for a, b in ClassGuiQuantity.Instances 
-		if (a = WinExist("A")+0) ; if instance gui hwnd is identical to currently active window hwnd
-			b["Events"]["_HotkeyEscape"].Call()
-return
+ClassGuiQuantityHotkeyEnter() {
+    QUANTITY_GUI.BtnSubmit()
+}

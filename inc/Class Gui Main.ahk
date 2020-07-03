@@ -16,8 +16,9 @@ class ClassGuiMain extends gui {
         ; controls
         this.Add("edit", "w" totalWidth - 45 - this.marginSize " section gmainGui_SearchBoxHandler", "")
         this.Add("button", "x+5 ys-1 w50 gmainGui_BtnAdd", "Add")
-        this.Add("listbox", "x" this.marginSize " w" totalWidth " r10 gmainGui_MobListBoxHandler", "")
-        _MAIN_GUI_BTN_LOG := this.AddGlobal("button", "w" totalWidth " gmainGui_BtnLog r3", "Log")
+        
+        this.Add("listbox", "x" this.marginSize " w" totalWidth " r10 gmainGui_MobListBoxHandler", output)
+        this._btnLog := this.AddGlobal("button", "w" totalWidth " gmainGui_BtnLog r3", "Log")
 
         ; hotkeys
         Hotkey, IfWinActive, % this.ahkid
@@ -32,29 +33,27 @@ class ClassGuiMain extends gui {
     Update() {
         this.SetDefault() ; for guicontrol
         
-        ; ----------------------search--------------------
-
         ; check user input
-        input := this.GetText("Edit1")
+        searchString := this.GetText("Edit1")
 
         ; build display var
-        for mob, v in DB_SETTINGS.selectedMobs
-            If (InStr(mob, input))
+        for mob in DB_SETTINGS.selectedMobs
+            If (InStr(mob, searchString))
                 output .= mob "|"
         output := RTrim(output, "|")
 
         ; update MobListBox
-        GuiControl,, ListBox1 , |
-        GuiControl,, ListBox1 , % output
-        GuiControl, Choose, ListBox1, % DB_SETTINGS.selectedMob
+        this.Control(,"ListBox1", "|") ; clear content
+        this.Control(,"ListBox1", output) ; load content
+        this.Control("Choose","ListBox1", DB_SETTINGS.selectedMob)
 
         ; ------------------------------------------------
 
         ; buttons
         If (DB_SETTINGS.selectedMob)
-            this.Control("Enable", _MAIN_GUI_BTN_LOG)
+            this.Control("Enable", this._btnLog)
         else
-            this.Control("Disable", _MAIN_GUI_BTN_LOG)
+            this.Control("Disable", this._btnLog)
 
         this._LoadMobImage()
     }
@@ -68,8 +67,8 @@ class ClassGuiMain extends gui {
 
     _LoadMobImage() {
         If !(DB_SETTINGS.selectedMob) {
-            this.SetText(_MAIN_GUI_BTN_LOG, "Log                     ")
-            GuiButtonIcon(_MAIN_GUI_BTN_LOG, A_ScriptDir "\res\img\Nothing.png", 1, "s44 a0 l50 r0")
+            this.SetText(this._btnLog, "Log                     ")
+            GuiButtonIcon(this._btnLog, A_ScriptDir "\res\img\Nothing.png", 1, "s44 a0 l50 r0")
             return  
         }
         
@@ -80,8 +79,8 @@ class ClassGuiMain extends gui {
         }
 
         this.SetDefault() ; for guicontrol
-        this.SetText(_MAIN_GUI_BTN_LOG, "       Log")
-        SetButtonIcon(_MAIN_GUI_BTN_LOG, path, 1, 44) ; r2 = 30, r3 = 44
+        this.SetText(this._btnLog, "       Log")
+        SetButtonIcon(this._btnLog, path, 1, 44) ; r2 = 30, r3 = 44
     }
 
     SearchBoxHandler() {

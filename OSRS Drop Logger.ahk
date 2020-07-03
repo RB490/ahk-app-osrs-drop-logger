@@ -29,15 +29,6 @@
     global  QUANTITY_GUI                := new ClassGuiQuantity("Quantity Gui")
     global  SETTINGS_GUI                := new ClassGuiSettings("Settings Gui")
     global  STATS_GUI                   := new ClassGuiStats("Stats Gui")
-    global  _BTN_CLEAR_DROPS            ; log gui
-    global  _BTN_TOGGLE_TRIP            ; log gui
-    global  _BTN_TOGGLE_DEATH           ; log gui
-    global  _BTN_NEW_TRIP               ; log gui
-    global  _BTN_UNDO                   ; log gui
-    global  _BTN_REDO                   ; log gui
-    global  _BTN_LOG_MENU               ; log gui
-    global  _BTN_KILL                   ; log gui
-    global  _MAIN_GUI_BTN_LOG           ; main gui
     global  MIN_DROP_SIZE               := 10
     global  MAX_DROP_SIZE               := 80
     global  MIN_ROW_LENGTH              := 1
@@ -77,14 +68,17 @@ return
         DROP_STATS.UpdateAdvancedStats()
     return
     debugAutoexec:
-        STATS_GUI.Setup()
-        return
+        ; MAIN_GUI.Setup()
+        ; return
         ; SETTINGS_GUI.Setup()
-        DB_SETTINGS.selectedMob := "Ice giant"
+        ; DB_SETTINGS.selectedMob := "Ice giant"
         DROP_TABLE.Get(DB_SETTINGS.selectedMob)
-        DB_SETTINGS.selectedLogFile := "D:\Downloads\debugLog.json"
+        DB_SETTINGS.selectedLogFile := "D:\Programming and projects\ahk-app-osrs-drop-logger\info\ClassDropLog.json"
         DROP_LOG.Load(DB_SETTINGS.selectedLogFile)
         LOG_GUI.Setup()
+        ; STATS_GUI.Setup()
+        ; DROP_STATS.UpdateBasicStats()
+        ; DROP_STATS.UpdateAdvancedStats()
     return
 
 ; Includes

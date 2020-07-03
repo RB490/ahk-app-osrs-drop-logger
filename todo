@@ -6,13 +6,7 @@ refactor > go through every file
 
 refactor > eliminate global vars
 
-refactor > use good Libaries
-    AutoXYWH()
-        Use for resizable guis aka stats
-        Make gui log resizable using this libary? would get rid of a bunch of settings
-            If this not feasible, maybe allow resizing of the log gui
-    Updated Gui Class?
-        Or no maybe gui class at all
+
 
 -------------------------- Notes --------------------------
 refactor > 'inspiration'

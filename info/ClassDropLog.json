@@ -135,5 +135,65 @@
     "kills": {},
     "tripEnd": "20200626222104444",
     "tripStart": "20200626222102862"
+  },
+  {
+    "deaths": {},
+    "kills": [
+      {
+        "drops": [
+          {
+            "name": "Looting bag",
+            "quantity": "1"
+          }
+        ],
+        "killEnd": "20200703235840798"
+      }
+    ],
+    "tripEnd": "20200704000212114",
+    "tripStart": "20200703235836923"
+  },
+  {
+    "deaths": {},
+    "kills": {},
+    "tripEnd": "20200704000614800",
+    "tripStart": "20200704000213813"
+  },
+  {
+    "deaths": {},
+    "kills": {},
+    "tripEnd": "20200704000618157",
+    "tripStart": "20200704000616110"
+  },
+  {
+    "deaths": {},
+    "kills": {},
+    "tripEnd": "20200704000626003",
+    "tripStart": "20200704000618172"
+  },
+  {
+    "deaths": {},
+    "kills": [
+      {
+        "drops": [
+          {
+            "name": "Uncut diamond",
+            "quantity": "1"
+          },
+          {
+            "name": "Nature talisman",
+            "quantity": "1"
+          }
+        ],
+        "killEnd": "20200704000649440"
+      }
+    ],
+    "tripEnd": "20200704002201598",
+    "tripStart": "20200704000627579"
+  },
+  {
+    "deaths": {},
+    "kills": {},
+    "tripEnd": "",
+    "tripStart": "20200704002202161"
   }
 ]

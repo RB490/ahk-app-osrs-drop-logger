@@ -1,163 +1,324 @@
-; source: https://github.com/Run1e/Columbus
-Class Gui {
+﻿Class GUI {
 	static Instances := []
-	static params := {Size:["A_GuiWidth", "A_GuiHeight"], DropFiles:["A_GuiEvent"]}
 	
-	__New(title := "AutoHotkey Window", options := "") {
-		Gui, New, % "+hwndhwnd " options, % title
+	__New(Title := "AutoHotkey Window", Options := "") {
+		Gui, New, % "+hwndhwnd " Options, % Title
 		this.hwnd := hwnd
 		this.ahkid := "ahk_id" hwnd
 		this.IsVisible := false
-		this.Events := []
+		this.DropFilesToggle(false) ; disable drag-drop by default
 		Gui.Instances[hwnd] := this
+		this.Controls := []
+		return this
 	}
 	
-	__Delete() {
-		this.Destroy()
+	Add(ControlType, Options := "", Params := "", Function := "") {
+		Gui % this.hwnd ":Add", % ControlType, % Options " hwndControlHWND", % Params
+		if Function {
+			GuiControl, +g, % ControlHWND, % Function ; ty geekdude for this amazing godsent knowledge, may the darkness of labels be eternally abolished
+			this.Controls.Push(ControlHWND)
+		}
+		return ControlHWND
 	}
 	
-	SetDefault() {
-		Gui % this.hwnd ":Default"
-	}
-	
-	Owner(hwnd) {
-		Gui % this.hwnd ":+Owner" hwnd
-	}
-
-	Disable() {
-		Gui % this.hwnd ": +Disabled"
-	}
-	
-	Enable() {
-		Gui % this.hwnd ": -Disabled"
-	}
-	
-	Destroy() {
-		Gui % this.hwnd ":Destroy"
-	}
-
-	Options(options, ext := "") {
-		Gui % this.hwnd ":" options, % ext
-	}
-	
-	Show(options := "") {
-		this.IsVisible := true
-		Gui % this.hwnd ":Show", % options
-	}
-	
-	Hide() {
-		this.IsVisible := false
-		Gui % this.hwnd ":Hide"
-	}
-	
-	Toggle() {
-		this[this.IsVisible ? "Hide" : "Show"]()
-	}
-	
-	Pos(x := "", y := "", w := "", h := "") {
-		this.IsVisible := true
-		Gui % this.hwnd ":Show", % (x ? "x" x : "") 
-							. (y ? " y" y : "") 
-							. (w ? " w" w : "") 
-							. (h ? " h" h : "")
-	}
-	
-	Control(cmd := "", control := "", param := "") {
-		GuiControl % this.hwnd ":" (cmd ? cmd : ""), % (control ? control : ""), % (param ? param : "")
-		; set carret to end of edit
-		If InStr(control, "Edit")
-			ControlSend, % control, ^{end}, % this.ahkid
-	}
-	
-	ControlGet(cmd, value := "", control := "") {
-		ControlGet, out, % cmd, % (value ? value : ""), % (control ? control : ""), % this.ahkid
-		return out
-	}
-	
-	GuiControlGet(cmd := "", control := "", param := "") {
-		GuiControlGet, out, % (cmd ? cmd : ""), % (control ? control : ""), % (param ? param : "")
-		return out
-	}
-	
-	Add(control, options := "", param := "") {
-		if InStr(options, "hwnd")
-			return m("HWNDS are returned!")
-		Gui % this.hwnd ":Add", % control, % options " hwndcontrolhwnd", % param
-		return controlhwnd
-	}
-
-	AddGlobal(control, options := "", param := "") {
+	AddGlobal(ControlType, Options := "", Params := "", Function := "") {
 		global
-		if InStr(options, "hwnd")
-			return m("HWNDS are returned!")
-		Gui % this.hwnd ":Add", % control, % options " hwndcontrolhwnd", % param
-		return controlhwnd
+		Gui % this.hwnd ":Add", % ControlType, % Options " hwndControlHWND", % Params
+		if Function {
+			GuiControl, +g, % ControlHWND, % Function ; ty geekdude for this amazing godsent knowledge, may the darkness of labels be eternally abolished
+			this.Controls.Push(ControlHWND)
+		}
+		return ControlHWND
+	}
+
+	Control(Command := "", Control := "", ControlParams := "") {
+		GuiControl % this.hwnd ":" Command, % Control, % ControlParams
 	}
 	
-	Font(font := "", type := "") {
-		Gui % this.hwnd ":Font", % font, % type
+	Show(Options := "", Title := "") {
+		this.IsVisible := !InStr(Options, "Hide")
+		Gui % this.hwnd ":Show", % Options, % Title
+	}
+	
+	Hide(Options := "") {
+		this.IsVisible := false
+		Gui % this.hwnd ":Hide", % Options
+	}
+	
+	Default() {
+		if (A_DefaultGui != this.hwnd)
+			Gui % this.hwnd ":Default"
+	}
+	
+	DefaultListView(hwnd) {
+		if (A_DefaultListView != hwnd)
+			Gui % this.hwnd ":ListView", % hwnd
+	}
+	
+	Activate() {
+		WinActivate % this.ahkid
 	}
 	
 	Tab(num) {
 		Gui % this.hwnd ":Tab", % num
 	}
 	
-	Color(BG, FG) {
-		Gui % this.hwnd ":Color", % BG, % FG
+	Disable() {
+		Gui % this.hwnd ":+Disabled"
 	}
 	
-	Margin(x, y) {
-		Gui % this.hwnd ":Margin", % x, % y
+	Enable() {
+		Gui % this.hwnd ":-Disabled"
 	}
 	
-	GetText(control := "Edit1") {
-		ControlGetText, text, % control, % this.ahkid
-		return text
+	ControlGet(Command, Value := "", Control := "") {
+		ControlGet, out, % Command, % (StrLen(Value) ? Value : ""), % (StrLen(Control) ? Control : ""), % this.ahkid
+		return out
 	}
 	
-	SetText(control := "Edit1", text := "") {
-		this.Control(, control, text)
+	GuiControlGet(Command := "", Control := "", Param := "") {
+		GuiControlGet, out, % (StrLen(Command) ? Command : ""), % (StrLen(Control) ? Control : ""), % (StrLen(Param) ? Param : "")
+		return out
 	}
 	
-	SelectText(control := "Edit1") {
-		ControlFocus, % control, % this.ahkid
-
-		ControlGet, _control, Hwnd, , % control, % this.ahkid
-
-		ControlFocus,, ahk_id %_control%
-        SendMessage, 177, 0, -1,, ahk_id %_control%
+	Pos(x := "", y := "", w := "", h := "") {
+		this.Show(  (StrLen(x) ? "x" x : "") . " "
+				. (StrLen(y) ? "y" y : "") . " "
+				. (StrLen(w) ? "w" w : "") . " "
+				. (StrLen(h) ? "h" h : "") . " "
+				. (this.IsVisible ? "" : "Hide"))
 	}
-
-	ControlFocus(control := "Edit1") {
-		ControlFocus, % control, % this.ahkid
+	
+	SetIcon(Icon) {
+		hIcon := DllCall("LoadImage", UInt,0, Str, Icon, UInt, 1, UInt, 0, UInt, 0, UInt, 0x10)
+		SendMessage, 0x80, 0, hIcon ,, % this.ahkid  ; One affects Title bar and
+		SendMessage, 0x80, 1, hIcon ,, % this.ahkid  ; the other the ALT+TAB menu
 	}
-
-	SetEvents(x) {
-		for a, b in x
-			this.Events[a] := b
+	
+	Destroy() {
+		for Index, Control in this.Controls
+			GuiControl, -g, % Control
+		Gui % this.hwnd ":Destroy"
+		this.IsVisible := false
+		Gui.Instances[this.hwnd] := ""
+	}
+	
+	Color(BackgroundColor := "", ControlColor := "") {
+		Gui % this.hwnd ":Color", % BackgroundColor, % ControlColor
+	}
+	
+	Options(Options) {
+		Gui % this.hwnd ":" Options
+	}
+	
+	Margin(HorizontalMargin, VerticalMargin) {
+		Gui % this.hwnd ":Margin", % HorizontalMargin, % VerticalMargin
+	}
+	
+	Font(Options := "", Font := "") {
+		Gui % this.hwnd ":Font", % Options, % Font
+	}
+	
+	Submit(Hide := false, Options := "") {
+		Gui % this.hwnd ":Submit", % (this.IsVisible := !Hide ? "" : "NoHide") " " Options
+	}
+	
+	GetText(Control) {
+		ControlGetText, ControlText, % Control, % this.ahkid
+		return ControlText
+	}
+	
+	SetText(Control, Text := "") {
+		this.Control(, Control, Text)
+		If InStr(control, "Edit")
+			ControlSend, % control, ^{end}, % this.ahkid
+	}
+	
+	DropFilesToggle(Toggle) {
+		this.Options((Toggle ? "+" : "-") . "E0x10")
+	}
+	
+	Animate(Type, Duration := 80) {
+		static Anims := {ROLL_LEFT_TO_RIGHT:	0x20001
+					, ROLL_RIGHT_TO_LEFT:	0x20002
+					, ROLL_TOP_TO_BOTTOM:	0x20004
+					, ROLL_BOTTOM_TO_TOP:	0x20008
+					, ROLL_DIAG_TL_TO_BR:	0x20005
+					, ROLL_DIAG_TR_TO_BL:	0x20006
+					, ROLL_DIAG_BL_TO_TR:	0x20009
+					, ROLL_DIAG_BR_TO_TL:	0x2000a
+					, SLIDE_LEFT_TO_RIGHT:	0x40001
+					, SLIDE_RIGHT_TO_LEFT:	0x40002
+					, SLIDE_TOP_TO_BOTTOM:	0x40004
+					, SLIDE_BOTTOM_TO_TOP:	0x40008
+					, SLIDE_DIAG_TL_TO_BR:	0x40005
+					, SLIDE_DIAG_TR_TO_BL:	0x40006
+					, SLIDE_DIAG_BL_TO_TR:	0x40009
+					, SLIDE_DIAG_BR_TO_TL:	0x40010
+					, ZOOM_IN:			0x16
+					, ZOOM_OUT:			0x10010
+					, FADE_IN:			0xa0000
+					, FADE_OUT:			0x90000}
+		
+		return DllCall("AnimateWindow", "UInt", this.hwnd, "Int", Duration, "UInt", Anims.HasKey(Type)?Anims[Type]:Type)
+	}
+	
+	WinSet(Command, Param := "") {
+		WinSet, % Command, % Param, % this.ahkid
+	}
+	
+	Escape() {
+		this.Close()
+	}
+	
+	Class ListView {
+		__New(Parent, Options, Headers, Function := "") {
+			this.Parent := Parent
+			this.Function := Function
+			this.hwnd := Parent.Add("ListView", Options, Headers, Function)
+			return this
+		}
+		
+		Add(Options := "", Fields*) {
+			this.SetDefault()
+			return LV_Add(Options, Fields*)
+		}
+		
+		Insert(Row, Options := "", Col*) {
+			this.SetDefault()
+			return LV_Insert(Row, Options, Col*)
+		}
+		
+		Delete(Row := "") {
+			this.SetDefault()
+			if StrLen(Row)
+				return LV_Delete(Row)
+			else
+				return LV_Delete()
+		}
+		
+		GetCount(Option := "") {
+			this.SetDefault()
+			return LV_GetCount(Option)
+		}
+		
+		GetNext(Start := "", Option := "") {
+			this.SetDefault()
+			return LV_GetNext(Start, Option)
+		}
+		
+		GetText(Row, Column := 1) {
+			this.SetDefault()
+			LV_GetText(Text, Row, Column)
+			return Text
+		}
+		
+		Modify(Row, Options := "", NewCol*) {
+			this.SetDefault()
+			return LV_Modify(Row, Options, NewCol*)
+		}
+		
+		ModifyCol(Column := "", Options := "", Title := "") {
+			this.SetDefault()
+			If (Title)
+				return LV_ModifyCol(Column, Options, Title)
+			return LV_ModifyCol(Column, Options)
+		}
+		
+		Redraw(Toggle) {
+			this.SetDefault()
+			return this.Parent.Control((Toggle?"+":"-") "Redraw", this.hwnd)
+		}
+		
+		SetImageList(ID, LargeIcons := false) {
+			this.SetDefault()
+			return LV_SetImageList(ID, !LargeIcons)
+		}
+		
+		SetDefault() {
+			this.Parent.Default()
+			this.Parent.DefaultListView(this.hwnd)
+		}
+	}
+	
+	Class ImageList {
+		static Instances := []
+		
+		__New(InitialCount := 5, GrowCount := 2, LargeIcons := false) {
+			this.ID := IL_Create(InitialCount, GrowCount, LargeIcons)
+			Gui.ListView.ImageList.Instances[this.ID] := this
+			return this
+		}
+		
+		Destroy() {
+			Gui.ListView.ImageList.Instances.Remove(this.ID)
+			return IL_Destroy(this.ID)
+		}
+		
+		Add(File) {
+			return IL_Add(this.ID, File)
+		}
+	}
+	
+	Class StatusBar {
+		__New(Parent, Options, Text, Function := "") {
+			this.Parent := Parent
+			this.hwnd := Parent.Add("StatusBar", Options, Text, Function)
+			return this
+		}
+		
+		SetText(NewText, PartNumber := 1, Style := "") {
+			this.SetDefault()
+			return SB_SetText(NewText, PartNumber, Style)
+		}
+		
+		SetParts(Width*) {
+			this.SetDefault()
+			return SB_SetParts(Width*)
+		}
+		
+		SetIcon(File, IconNumber := "", PartNumber := "") {
+			this.SetDefault()
+			return SB_SetIcon(File, IconNumber, PartNumber)
+		}
+		
+		SetProgress(Value := 0, Seg := 1, Ops := "") {
+			this.SetDefault()
+			try Func("SB_SetProgress").Call(Value, Seg, Ops)
+		}
+		
+		SetDefault() {
+			this.Parent.Default()
+		}
 	}
 }
 
-GuiSize:
-GuiClose:
-GuiEscape:
-GuiDropFiles:
-params := []
-for a, b in Gui.Params[SubStr(A_ThisLabel, 4)]
-	params.Insert(%b%)
-for a, b in Gui.Instances 
-	if (a = A_Gui+0) {
-		if IsLabel(b["Events"][SubStr(A_ThisLabel, 4)])
-			SetTimer, % b["Events"][SubStr(A_ThisLabel, 4)], -1
-		else if A_ThisLabel.contains("escape", "close")
-			Gui % a ":Destroy"
-		else
-			b["Events"][SubStr(A_ThisLabel, 4)].Call(params*)
-	}
-return
+GuiClose(GuiHwnd) {
+	return Gui.Instances[GuiHwnd].Close.Call(Gui.Instances[GuiHwnd])
+}
 
-m(x*){
-	for a,b in x
-		list.=b "`n"
-	MsgBox,0, % A_ScriptName, % list
+GuiEscape(GuiHwnd) {
+	return Gui.Instances[GuiHwnd].Escape.Call(Gui.Instances[GuiHwnd])
+}
+
+GuiSize(GuiHwnd, EventInfo, Width, Height) {
+	return Gui.Instances[GuiHwnd].Size.Call(  Gui.Instances[GuiHwnd]
+									, EventInfo
+									, Width
+									, Height)
+}
+
+GuiDropFiles(GuiHwnd, FileArray, CtrlHwnd, X, Y) {
+	return Gui.Instances[GuiHwnd].DropFiles.Call(  Gui.Instances[GuiHwnd]
+										, FileArray
+										, CtrlHwnd
+										, X, Y)
+}
+
+GuiContextMenu(GuiHwnd, CtrlHwnd, EventInfo, IsRightClick, X, Y) {
+	return Gui.Instances[GuiHwnd].ContextMenu.Call(Gui.Instances[GuiHwnd]
+										, CtrlHwnd
+										, EventInfo
+										, IsRightClick
+										, X, Y)
 }
