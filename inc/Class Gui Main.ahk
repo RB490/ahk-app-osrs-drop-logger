@@ -38,7 +38,7 @@ class ClassGuiMain extends gui {
         input := this.GetText("Edit1")
 
         ; build display var
-        for mob, v in DB_SETTINGS.mobs
+        for mob, v in DB_SETTINGS.selectedMobs
             If (InStr(mob, input))
                 output .= mob "|"
         output := RTrim(output, "|")
@@ -101,7 +101,7 @@ class ClassGuiMain extends gui {
         StringUpper, input, input, T
 
         ; check if mob already exists
-        If (DB_SETTINGS.mobs.HasKey(input)) {
+        If (DB_SETTINGS.selectedMobs.HasKey(input)) {
             DB_SETTINGS.selectedMob := input
             this.SearchBoxReset()
             return
@@ -115,9 +115,9 @@ class ClassGuiMain extends gui {
         }
 
         ; save mob
-        If !(IsObject(DB_SETTINGS.mobs))
-            DB_SETTINGS.mobs := {}
-        DB_SETTINGS.mobs[input] := ""
+        If !(IsObject(DB_SETTINGS.selectedMobs))
+            DB_SETTINGS.selectedMobs := {}
+        DB_SETTINGS.selectedMobs[input] := ""
 
         ; apply new mob
         DB_SETTINGS.selectedMob := input
@@ -169,7 +169,7 @@ mainGui_ContextMenu:
 return
 
 mobMenu_removeMob:
-    DB_SETTINGS.mobs.Delete(DB_SETTINGS.selectedMob)
+    DB_SETTINGS.selectedMobs.Delete(DB_SETTINGS.selectedMob)
     DB_SETTINGS.selectedMob := ""
     MAIN_GUI.Update()
 return

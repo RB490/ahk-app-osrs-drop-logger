@@ -1,9 +1,15 @@
+bug > right now it takes way to long for drop_table.get to check if images exist on disk
+
+bug > DownloadMissingItemImages() sometimes hangs on 'hellpupy' 'Could not find 'inventory-image' class' for no reason, but after restarting the script its fine
+    ^ doesnt seem to always do this
+
+feature > reduce startup time aka the time to reach auto execute
+    create new classes/load global vars after gui main starts up or some shit
+
 feature > add setting for item icon type
 
 refactor > more descriptive class methods
     eg. DROP_TABLE.LoadMob instead of .Get() or something
-
-refactor > create default settings object and use that to check if key exists and set default value if needed
 
 refactor > eliminate global vars
 
@@ -14,7 +20,6 @@ refactor > use good Libaries
             If this not feasible, maybe allow resizing of the log gui
     Updated Gui Class?
         Or no maybe gui class at all
-
 
 -------------------------- Notes --------------------------
 refactor > 'inspiration'

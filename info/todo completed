@@ -310,7 +310,7 @@ bug > gui main > log mob > gui log opens > gui main / >>>somehow<<< mainGui_BtnH
     lines:
         ---- D:\Programming and projects\ahk-app-osrs-drop-logger\inc\Class Gui Log.ahk
         125: }
-        069: if (DB_SETTINGS.AutoShowStats)  
+        069: if (DB_SETTINGS.logGuiAutoShowStats)  
         071: }
         ---- D:\Programming and projects\ahk-app-osrs-drop-logger\inc\Class Gui Main.ahk
         154: }
@@ -449,3 +449,5 @@ every setting key should be added, possibly with empty value, right from the sta
 dont reference setting object in code, instead pull variable from settings and use that
     ^ why? it seems like a good idea but im wrecked right now at 07:15 after waking up at around 01:00 for no reason
         ^ check how 'AutoGUI' handles this
+        
+refactor > create default settings object and use that to check if key exists and set default value if needed

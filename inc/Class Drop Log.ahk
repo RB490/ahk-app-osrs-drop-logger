@@ -98,8 +98,12 @@ class ClassDropLog {
     }
 
     Save() {
-        ; If !(this.obj.length())
-            ; return
+        If (A_IsCompiled) { ; prevent stats being messed up by trip ongoing while program isnt running
+            If (DROP_LOG.TripActive())
+                DROP_LOG.EndTrip()
+            If (DROP_LOG.DeathActive())
+                DROP_LOG.EndDeath()
+        }
         FileDelete, % this.file
         FileAppend, % json.dump(this.obj,,2), % this.file
     }

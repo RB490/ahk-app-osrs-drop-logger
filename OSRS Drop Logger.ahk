@@ -81,22 +81,11 @@ return
         DROP_STATS.UpdateAdvancedStats()
     return
     debugAutoexec:
-        ; problem: right now it takes way to long for drop_table.get to check if images exist on disk
-        ; problem: DownloadMissingItemImages() sometimes hangs on 'hellpupy' 'Could not find 'inventory-image' class' for no reason, but after restarting the script its fine
-        ; detail problem: (sara) pots are only being downloaded as 1 dose: 6685
-            ; ^ also check other pots
-        
-        ; obj := WIKI_API.GetImages("Superantipoison (4)")
-        ; obj := WIKI_API.GetImages("Games necklace(2)")
-        ; obj := WIKI_API.GetImages("Hellpuppy")
-        ; msgbox % obj.icon
-        ; DownloadMissingItemImages()
-        ; return
-
+        MAIN_GUI.Setup()
         ; DB_SETTINGS.selectedMob := "Vorkath"
-        DROP_TABLE.Get(DB_SETTINGS.selectedMob)
+        ; DROP_TABLE.Get(DB_SETTINGS.selectedMob)
         ; DROP_LOG.Load("D:\Downloads\debugLog.json")
-        LOG_GUI.Setup()
+        ; LOG_GUI.Setup()
     return
 
 ; Includes

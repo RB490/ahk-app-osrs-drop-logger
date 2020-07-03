@@ -205,7 +205,7 @@ Class ClassGuiStats extends gui {
     }
 
     Close() {
-        DB_SETTINGS.AutoShowStats := false
+        DB_SETTINGS.logGuiAutoShowStats := false
         STATS_GUI.SavePos()
         STATS_GUI.Hide()
     }

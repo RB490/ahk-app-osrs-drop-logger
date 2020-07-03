@@ -71,7 +71,7 @@ Class ClassDropTable {
             table := tables[A_Index]
             drops := table.drops
 
-            If (drops.length() >= DB_SETTINGS.tablesMergeBelowX) {
+            If (drops.length() >= DB_SETTINGS.logGuiTablesMergeBelowX) {
                 output.push(table)
                 Continue
             }

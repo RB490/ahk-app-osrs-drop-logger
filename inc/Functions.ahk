@@ -1,36 +1,54 @@
 ExitFunc(ExitReason, ExitCode) {
+    SaveSettings()
+    DROP_LOG.Save()
+}
+
+SaveSettings() {
     STATS_GUI.SavePos()
     LOG_GUI.SavePos()
-    
+
     FileDelete, % PATH_SETTINGS
     FileAppend, % json.dump(DB_SETTINGS,,2), % PATH_SETTINGS
-
-    ; prevent stats being messed up by trip ongoing while program isnt running
-    If (A_IsCompiled) {
-    If (DROP_LOG.TripActive())
-        DROP_LOG.EndTrip()
-    If (DROP_LOG.DeathActive())
-        DROP_LOG.EndDeath()
-    }
-    DROP_LOG.Save()
 }
 
 LoadSettings() {
     DB_SETTINGS := json.load(FileRead(PATH_SETTINGS))
-    If !(IsObject(DB_SETTINGS)) {
+    If (!IsObject(DB_SETTINGS)) {
         msgbox, 4160, , % A_ThisFunc ": Resetting settings"
         DB_SETTINGS := {}
     }
+    ValidateSettings()
+}
 
-    ; critical settings
+ValidateSettings() {
+    defaultSettings := {}
+    defaultSettings.guiLogX := ""
+    defaultSettings.guiLogY := ""
+    defaultSettings.guiStatsX := ""
+    defaultSettings.guiStatsY := ""
+    defaultSettings.guiStatsW := ""
+    defaultSettings.guiStatsH := ""
+    defaultSettings.logGuiAutoShowStats := false
+    defaultSettings.logGuiDropSize := 33
+    defaultSettings.logGuiMaxRowDrops := 8
+    defaultSettings.logGuiTablesMergeBelowX := 27
+    defaultSettings.selectedLogFile := ""
+    defaultSettings.selectedMob := "Vorkath"
+    defaultSettings.selectedMobs := {"Vorkath": "", "Ice giant": ""}
+
+    for defaultSetting in defaultSettings {
+        If (!DB_SETTINGS.HasKey(defaultSetting))
+            DB_SETTINGS[defaultSetting] := defaultSettings[defaultSetting]
+    }
+
     If (DB_SETTINGS.logGuiDropSize < MIN_DROP_SIZE) or (DB_SETTINGS.logGuiDropSize > MAX_DROP_SIZE)
         DB_SETTINGS.logGuiDropSize := 33 ; 33 is close to ingame inventory
     
     If (DB_SETTINGS.logGuiMaxRowDrops < MIN_ROW_LENGTH) or (DB_SETTINGS.logGuiMaxRowDrops > MAX_ROW_LENGTH)
         DB_SETTINGS.logGuiMaxRowDrops := 8
 
-    If (DB_SETTINGS.tablesMergeBelowX < MIN_TABLE_SIZE)
-        DB_SETTINGS.tablesMergeBelowX := 27 ; 27 = rdt
+    If (DB_SETTINGS.logGuiTablesMergeBelowX < MIN_TABLE_SIZE)
+        DB_SETTINGS.logGuiTablesMergeBelowX := 27 ; 27 = rdt
 }
 
 IsInteger(input) {
