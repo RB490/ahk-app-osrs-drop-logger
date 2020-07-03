@@ -44,6 +44,7 @@
     global  MIN_TABLE_SIZE              := 1
 
 ; Auto-execute
+    msgbox hi
     ; FileRemoveDir, % DIR_ITEM_ICONS, 1
     ; FileRemoveDir, % DIR_ITEM_DETAIL, 1
     ; FileRemoveDir, % DIR_ITEM_RUNELITE, 1
