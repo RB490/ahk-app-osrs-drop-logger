@@ -7,6 +7,9 @@ Class ClassApiRunelite {
     }
 
     Load() {
+        If IsObject(this.obj)
+            return
+        
         this.apiHubUrl := "https://static.runelite.net/api/http-service/"
         this.apiUrl := this._GetApiUrl()
         this.idUrl := "https://raw.githubusercontent.com/runelite/runelite/master/runelite-api/src/main/java/net/runelite/api/ItemID.java"

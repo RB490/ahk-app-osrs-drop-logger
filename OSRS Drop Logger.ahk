@@ -78,11 +78,13 @@ return
         DROP_STATS.UpdateAdvancedStats()
     return
     debugAutoexec:
-        ; Gosub MiscMenu_Show
+        Gosub MiscMenu_Show
+        return
         ; SETTINGS_GUI.Setup()
-        ; DB_SETTINGS.selectedMob := "Vorkath"
-        ; DROP_TABLE.Get(DB_SETTINGS.selectedMob)
-        ; DROP_LOG.Load("D:\Downloads\debugLog.json")
+        DB_SETTINGS.selectedMob := "Ice giant"
+        DROP_TABLE.Get(DB_SETTINGS.selectedMob)
+        DB_SETTINGS.selectedLogFile := "D:\Downloads\debugLog.json"
+        DROP_LOG.Load(DB_SETTINGS.selectedLogFile)
         LOG_GUI.Setup()
     return
 

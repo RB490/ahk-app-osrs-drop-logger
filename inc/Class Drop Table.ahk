@@ -38,7 +38,7 @@ Class ClassDropTable {
         this._TablesRenaming()
         this._DropsDeleteDuplicates()
         this._DropsMergeQuantities()
-        ; this._DropsGetImages()
+        this._DropsGetImages()
 
         SplashTextOff
         return true

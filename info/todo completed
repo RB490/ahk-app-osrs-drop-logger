@@ -454,3 +454,9 @@ refactor > create default settings object and use that to check if key exists an
 
 feature > reduce startup time aka the time to reach auto execute
     create new classes/load global vars after gui main starts up or some shit
+
+feature > add setting for item icon type
+
+feature > settings gui
+
+bug > right now it takes way to long for drop_table.get to check if images exist on disk

@@ -38,6 +38,7 @@ class ClassGuiSettings extends gui {
         DB_SETTINGS.logGuiMaxRowDrops := this.GetText("edit2") ; Row length
         DB_SETTINGS.logGuiTablesMergeBelowX := this.GetText("edit3") ; Merge tables below
         DB_SETTINGS.logGuiItemImageType := this.GetText("ComboBox1") ; Image type
+        ValidateSettings()
         this.Close()
     }
 

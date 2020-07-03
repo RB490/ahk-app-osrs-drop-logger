@@ -208,13 +208,16 @@ DownloadMissingItemImages() {
 
 DownloadItemImages(item) {
     id := RUNELITE_API.GetItemId(item)
-    wikiImageUrl := WIKI_API.GetImages(item, 50)
+
+    wikiSmallPath := DIR_ITEM_ICONS "\" id ".png"
+    wikiDetailPath := DIR_ITEM_DETAIL "\" id ".png"
+    If !IsPicture(wikiSmallPath) or !IsPicture(wikiDetailPath)
+        wikiImageUrl := WIKI_API.GetImages(item, 50)
 
     ; wiki small
     path := DIR_ITEM_ICONS "\" id ".png"
-    If (!IsPicture(path))
+    If (!IsPicture(path)) {
         FileDelete % path
-    If (!FileExist(path)) {
         url := wikiImageUrl.icon
         DownloadImageOrQuit(url, path)
         imgAddBorder(path, 5)
@@ -222,9 +225,8 @@ DownloadItemImages(item) {
     
     ; wiki detail
     path := DIR_ITEM_DETAIL "\" id ".png"
-    If (!IsPicture(path))
+    If (!IsPicture(path)) {
         FileDelete % path
-    If (!FileExist(path)) {
         url := wikiImageUrl.detail
         DownloadImageOrQuit(url, path)
         imgResize(path, 50)
@@ -233,9 +235,8 @@ DownloadItemImages(item) {
 
     ; runelite
     path := DIR_ITEM_RUNELITE "\" id ".png"
-    If (!IsPicture(path))
+    If (!IsPicture(path)) {
         FileDelete % path
-    If (!FileExist(path)) {
         url := RUNELITE_API.GetItemImgUrl(item)
         DownloadImageOrQuit(url, path)
     }

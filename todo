@@ -1,5 +1,3 @@
-bug > right now it takes way to long for drop_table.get to check if images exist on disk
-
 bug > DownloadMissingItemImages() sometimes hangs on 'hellpupy' 'Could not find 'inventory-image' class' for no reason, but after restarting the script its fine
     ^ doesnt seem to always do this
 

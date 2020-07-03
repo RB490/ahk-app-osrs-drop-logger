@@ -1,6 +1,6 @@
 {
-  "guiLogX": 850,
-  "guiLogY": 470,
+  "guiLogX": 781,
+  "guiLogY": 414,
   "guiStatsH": 371,
   "guiStatsW": 735,
   "guiStatsX": 584,
@@ -10,8 +10,8 @@
   "logGuiItemImageType": "Wiki Detailed",
   "logGuiMaxRowDrops": "10",
   "logGuiTablesMergeBelowX": "20",
-  "selectedLogFile": "",
-  "selectedMob": "Vorkath",
+  "selectedLogFile": "D:\\Downloads\\debugLog.json",
+  "selectedMob": "Ice giant",
   "selectedMobs": {
     "Ice giant": "",
     "Vorkath": ""
