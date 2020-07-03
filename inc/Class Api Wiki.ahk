@@ -169,9 +169,6 @@ class ClassApiWiki {
             exitapp
         }
         html := images[0].innerHtml
-
-        clipboard := html
-
         return this.url this._GetImageFromInnerHtml(html)
     }
 
@@ -205,25 +202,10 @@ class ClassApiWiki {
         }
         return imgSizeObj[imgSizeObj.MinIndex()] ; return smallest size image
 
-        /*
-        ; most item images
-        loop % images.length {
-            html := images[A_Index-1].innerHtml
-
-            inputWithoutBrackets := SubStr(input, 1, InStr(input, "(") - 2) ; eg 'Black Mask (10)'
-            altNeedle = alt="%inputWithoutBrackets%
-
-            If InStr(html, inputWithoutBrackets) and InStr(html, altNeedle) and !InStr(html, "px-") and !InStr(html, "chathead") { ; chathead eg. 'dragon med helm'
-                return html ; get last occurence eg: 'Ranarr_seed_5'
-            }
-        }
-        */
-
         loop % images.length {
             imagesString .= images[A_Index-1].innerHtml "`n"
             clipboard := imagesString
         }
-
         msgbox, 4160, , % A_ThisFunc ": Could not find icon for '" input "'`n`nHtml in clipboard `n`nClosing.."
         exitapp
     }
@@ -264,7 +246,6 @@ class ClassApiWiki {
             imagesString .= images[A_Index-1].innerHtml "`n"
             clipboard := imagesString
         }
-
         msgbox, 4160, , % A_ThisFunc ": Could not find icon for '" input "'`n`nHtml in clipboard `n`nClosing.."
         exitapp
     }

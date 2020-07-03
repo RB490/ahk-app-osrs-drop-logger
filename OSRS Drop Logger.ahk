@@ -10,11 +10,11 @@
 ; Global vars
     global  PROJECT_WEBSITE             := "https://github.com/RB490/ahk-app-osrs-drop-logger"
     global  DEBUG_MODE                  := true
-    global  DIR_ITEM_ICONS              := A_ScriptDir "\res\img\item\icon"
+    global  DIR_ITEM_ICON               := A_ScriptDir "\res\img\item\icon"
     global  DIR_ITEM_DETAIL             := A_ScriptDir "\res\img\item\detail"
     global  DIR_ITEM_RUNELITE           := A_ScriptDir "\res\img\item\runelite"
     global  DIR_MOB_IMAGES              := A_ScriptDir "\res\img\mobs"
-    global  DIR_GUI_ICONS               := A_ScriptDir "\res\img\icons"
+    global  DIR_GUI_ICONS               := A_ScriptDir "\res\img\ico"
     global  PATH_RUNELITE_JSON          := A_ScriptDir "\res\runelite.json"
     global  PATH_SETTINGS               := A_ScriptDir "\settings.json"
     global  DB_SETTINGS                 := {}
@@ -46,7 +46,7 @@
     global  ITEM_IMAGE_TYPES            := "Wiki Small|Wiki Detailed|RuneLite"
 
 ; Auto-execute
-    FileCreateDir, % DIR_ITEM_ICONS
+    FileCreateDir, % DIR_ITEM_ICON
     FileCreateDir, % DIR_ITEM_DETAIL
     FileCreateDir, % DIR_ITEM_RUNELITE
     FileCreateDir, % DIR_MOB_IMAGES
@@ -64,7 +64,6 @@ return
     ~f1::
         If !(DEBUG_MODE)
             return
-        clipboard := json.dump(DROP_LOG.obj,,2)
     return
 
 ; Labels
@@ -78,8 +77,6 @@ return
         DROP_STATS.UpdateAdvancedStats()
     return
     debugAutoexec:
-        Gosub MiscMenu_Show
-        return
         ; SETTINGS_GUI.Setup()
         DB_SETTINGS.selectedMob := "Ice giant"
         DROP_TABLE.Get(DB_SETTINGS.selectedMob)

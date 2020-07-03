@@ -7,7 +7,7 @@
   "guiStatsY": 335,
   "logGuiAutoShowStats": "0",
   "logGuiDropSize": "35",
-  "logGuiItemImageType": "Wiki Detailed",
+  "logGuiItemImageType": "Wiki Small",
   "logGuiMaxRowDrops": "10",
   "logGuiTablesMergeBelowX": "20",
   "selectedLogFile": "D:\\Downloads\\debugLog.json",

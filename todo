@@ -1,8 +1,8 @@
-bug > DownloadMissingItemImages() sometimes hangs on 'hellpupy' 'Could not find 'inventory-image' class' for no reason, but after restarting the script its fine
-    ^ doesnt seem to always do this
-
-refactor > more descriptive class methods
-    eg. DROP_TABLE.LoadMob instead of .Get() or something
+refactor > go through every file
+    more descriptive class methods, variables, function names
+        eg. DROP_TABLE.LoadMob instead of .Get() or something
+    better code structure
+    remove duplicate code
 
 refactor > eliminate global vars
 

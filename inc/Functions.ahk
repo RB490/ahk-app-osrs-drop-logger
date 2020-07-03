@@ -171,8 +171,8 @@ ImgResize(img, scale) {
 
 DownloadMissingItemImages() {
     allMonstersApiUrl := "https://www.osrsbox.com/osrsbox-db/monsters-complete.json"
-    allItemsApiUrl := "https://www.osrsbox.com/osrsbox-db/items-complete.json"
-    file := A_ScriptDir "\res\items-complete.json"
+    allItemsApiUrl := "https://www.osrsbox.com/osrsbox-db/monsters-complete.json"
+    file := A_ScriptDir "\res\monsters-complete.json"
 
     ; retrieve json
     SplashTextOn, 350, 100, % A_ScriptName " - " A_ThisFunc "()", Loading database
@@ -208,14 +208,11 @@ DownloadMissingItemImages() {
 
 DownloadItemImages(item) {
     id := RUNELITE_API.GetItemId(item)
-
-    wikiSmallPath := DIR_ITEM_ICONS "\" id ".png"
-    wikiDetailPath := DIR_ITEM_DETAIL "\" id ".png"
-    If !IsPicture(wikiSmallPath) or !IsPicture(wikiDetailPath)
+    If !IsPicture(DIR_ITEM_ICON "\" id ".png") or !IsPicture(DIR_ITEM_DETAIL "\" id ".png")
         wikiImageUrl := WIKI_API.GetImages(item, 50)
 
     ; wiki small
-    path := DIR_ITEM_ICONS "\" id ".png"
+    path := DIR_ITEM_ICON "\" id ".png"
     If (!IsPicture(path)) {
         FileDelete % path
         url := wikiImageUrl.icon
@@ -250,7 +247,7 @@ DownloadImageOrQuit(url, path) {
     If (!IsPicture) or (picW < 5) or (picH < 5) {
         msgbox, 4160, ,
         ( LTrim
-            %A_ThisFunc%: ERROR!!!!
+            %A_ThisFunc%: Could not retrieve image
 
             URL
             '%url%'
@@ -264,9 +261,9 @@ DownloadImageOrQuit(url, path) {
             HEIGHT
             '%picH%'
 
-            Closing..
+            Reloading..
         )
-        exitapp
+        reload
         return
     }
 }
