@@ -11,7 +11,7 @@
     global  PROJECT_WEBSITE             := "https://github.com/RB490/ahk-app-osrs-drop-logger"
     global  DEBUG_MODE                  := true
     global  DIR_ITEM_ICONS              := A_ScriptDir "\res\img\item\icon"
-    global  DIR_ITEM_DETAIL           := A_ScriptDir "\res\img\item\detail"
+    global  DIR_ITEM_DETAIL             := A_ScriptDir "\res\img\item\detail"
     global  DIR_ITEM_RUNELITE           := A_ScriptDir "\res\img\item\runelite"
     global  DIR_MOB_IMAGES              := A_ScriptDir "\res\img\mobs"
     global  DIR_GUI_ICONS               := A_ScriptDir "\res\img\icons"
@@ -24,7 +24,7 @@
     global  DROP_LOG                    := new ClassDropLog
     global  DROP_STATS                  := new ClassDropStats
     global  DROP_TABLE                  := new ClassDropTable
-    global  LOG_GUI                     := new ClassGuiLog("")
+    global  LOG_GUI                     := new ClassGuiLog("Log Gui")
     global  MAIN_GUI                    := new ClassGuiMain("Main Gui")
     global  QUANTITY_GUI                := new ClassGuiQuantity("Quantity Gui")
     global  STATS_GUI                   := new ClassGuiStats("Stats Gui")
@@ -81,7 +81,7 @@ return
         DROP_STATS.UpdateAdvancedStats()
     return
     debugAutoexec:
-        MAIN_GUI.Setup()
+        LOG_GUI.Setup()
         ; DB_SETTINGS.selectedMob := "Vorkath"
         ; DROP_TABLE.Get(DB_SETTINGS.selectedMob)
         ; DROP_LOG.Load("D:\Downloads\debugLog.json")
