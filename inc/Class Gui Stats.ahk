@@ -87,7 +87,7 @@ Class ClassGuiStats extends gui {
         loop % DROP_STATS.uniqueDrops.length() {
             name := DROP_STATS.uniqueDrops[A_Index].name
             id := RUNELITE_API.GetItemId(name)
-            IL_Add(ImageListID, PATH_ITEM_IMAGES "\" id ".png", , 1) ; ResizeNonIcon even though it doesnt seem to make a difference
+            IL_Add(ImageListID, DIR_ITEM_RUNELITE "\" id ".png", , 1) ; ResizeNonIcon even though it doesnt seem to make a difference
         }
 
         ; load items

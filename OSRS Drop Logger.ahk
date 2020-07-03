@@ -5,13 +5,16 @@
     SetBatchLines, -1
     OnExit("ExitFunc")
     OnMessage(0x201, "OnWM_LBUTTONDOWN")
+    #MaxMem, 400 ; downloadMissingItemImages()
 
 ; Global vars
     global  PROJECT_WEBSITE             := "https://github.com/RB490/ahk-app-osrs-drop-logger"
     global  DEBUG_MODE                  := true
-    global  PATH_ITEM_IMAGES            := A_ScriptDir "\res\img\items"
-    global  PATH_MOB_IMAGES             := A_ScriptDir "\res\img\mobs"
-    global  PATH_GUI_ICONS              := A_ScriptDir "\res\img\icons"
+    global  DIR_ITEM_ICONS              := A_ScriptDir "\res\img\item\icon"
+    global  DIR_ITEM_DETAIL           := A_ScriptDir "\res\img\item\detail"
+    global  DIR_ITEM_RUNELITE           := A_ScriptDir "\res\img\item\runelite"
+    global  DIR_MOB_IMAGES              := A_ScriptDir "\res\img\mobs"
+    global  DIR_GUI_ICONS               := A_ScriptDir "\res\img\icons"
     global  PATH_RUNELITE_JSON          := A_ScriptDir "\res\runelite.json"
     global  PATH_SETTINGS               := A_ScriptDir "\settings.json"
     global  DB_SETTINGS                 := {}
@@ -41,8 +44,15 @@
     global  MIN_TABLE_SIZE              := 1
 
 ; Auto-execute
-    FileCreateDir, % PATH_ITEM_IMAGES
-    FileCreateDir, % PATH_MOB_IMAGES
+    ; FileRemoveDir, % DIR_ITEM_ICONS, 1
+    ; FileRemoveDir, % DIR_ITEM_DETAIL, 1
+    ; FileRemoveDir, % DIR_ITEM_RUNELITE, 1
+    
+    FileCreateDir, % DIR_ITEM_ICONS
+    FileCreateDir, % DIR_ITEM_DETAIL
+    FileCreateDir, % DIR_ITEM_RUNELITE
+
+    FileCreateDir, % DIR_MOB_IMAGES
     LoadSettings()
     If (DEBUG_MODE)
         Goto debugAutoexec 
@@ -71,16 +81,29 @@ return
         DROP_STATS.UpdateAdvancedStats()
     return
     debugAutoexec:
-        MAIN_GUI.Setup()
+        ; problem: right now it takes way to long for drop_table.get to check if images exist on disk
+        ; problem: DownloadMissingItemImages() sometimes hangs on 'hellpupy' 'Could not find 'inventory-image' class' for no reason, but after restarting the script its fine
+        ; detail problem: (sara) pots are only being downloaded as 1 dose: 6685
+            ; ^ also check other pots
+        
+        ; obj := WIKI_API.GetImages("Superantipoison (4)")
+        ; obj := WIKI_API.GetImages("Games necklace(2)")
+        ; obj := WIKI_API.GetImages("Hellpuppy")
+        ; msgbox % obj.icon
+        ; DownloadMissingItemImages()
+        ; return
 
+        ; DB_SETTINGS.selectedMob := "Vorkath"
+        DROP_TABLE.Get(DB_SETTINGS.selectedMob)
         ; DROP_LOG.Load("D:\Downloads\debugLog.json")
-        ; LOG_GUI.Setup()
+        LOG_GUI.Setup()
     return
 
 ; Includes
     #Include, <JSON>
     #Include, <class gui>
     #Include, <CommandFunctions>
+    #Include, <Gdip_all>
     #Include, %A_ScriptDir%\inc
     #Include Class Api RuneLite.ahk
     #Include Class Api Wiki.ahk

@@ -10,7 +10,57 @@ Class ClassApiRunelite {
     }
 
     GetItemId(itemString) {
-        return this.obj[this._getRuneliteFormat(itemString)].id
+        switch itemString
+        {   ; runelite api json corrections - tested with monsters-complete.json from osrsbox
+            case "Bandana eyepatch (white)": return 8924 
+            case "Bandana eyepatch (red)": return 8925
+            case "Bandana eyepatch (blue)": return 8926
+            case "Bandana eyepatch (brown)": return 8927
+            case "Blamish blue shell (pointed)": return 3361
+            case "Blamish blue shell (round)": return 3362
+            case "Blamish red shell (round)": return 3357
+            case "Blamish red shell (pointed)": return 3358
+            case "Blamish myre shell (pointed)": return 3355
+            case "Blamish myre shell (round)": return 3356
+            case "Blamish ochre shell (round)": return 3359
+            case "Blamish ochre shell (pointed)": return 3360
+            case "Bronze key (H.A.M.)": return 8867
+            case "Iron key (H.A.M.)": return 8869
+            case "Silver key (H.A.M.)": return 8868
+            case "Steel key (H.A.M.)": return 8866
+            case "Bones (Ape Atoll)": return 526
+            case "Monkey bones (bearded gorilla)": return 3183
+            case "Monkey bones (gorilla)": return 3183
+            case "Monkey bones (large zombie)": return 3183
+            case "Monkey bones (medium ninja)": return 3183
+            case "Monkey bones (small ninja)": return 3183
+            case "Monkey bones (small zombie)": return 3183
+            case "Crawling hand (item)": return 7975
+            case "Crest part (Johnathon)": return 780
+            case "Grym leaf (corrupted)": return 23835
+            case "Key (The Lost Tribe)": return 275
+            case "Map part (Lozar)": return 1537
+            case "Paladin's badge (Sir Carl)": return 1489
+            case "Paladin's badge (Sir Harry)": return 1490
+            case "Paladin's badge (Sir Jerro)": return 1488
+            case "Prison key (Troll Stronghold)": return 3135
+            case "Raw beef (undead)": return 4287
+            case "Raw chicken (undead)": return 4289
+            case "Rock (elemental)": return 1480
+            case "Swamp toad (item)": return 2150
+            case "Teleport crystal (The Gauntlet)": return 23904
+            case "Tribal mask (blue)": return 6339
+            case "Tribal mask (green)": return 6335
+            case "Tribal mask (orange)": return 6337
+            case "Weapon frame (corrupted)": return 23834
+        }
+        id := this.obj[this._getRuneliteFormat(itemString)].id
+        If (!id) {
+            msgbox, 4160, , % A_ThisFunc ": Could not retrieve item id for '" itemString "'`n`nClosing.."
+            exitapp
+            ; FileAppend, % itemString "`n", D:\Downloads\errors_GetItemId.txt
+        }
+        return id
     }
 
     GetItemPrice(itemString) {
@@ -93,17 +143,22 @@ Class ClassApiRunelite {
         ; remove '+' eg. Antidote++(4)
         output := StrReplace(output, "+")
 
+        ; remove space infront of last character if integer for eg. super strength (3)
+        If InStr(output, "(") and InStr(output, ")") {
+            lastChar := SubStr(output, StrLen(output))
+            If lastChar is Integer
+                output := StrReplace(output, A_Space lastChar, lastChar)
+        }
+
         ; remove brackets
         output := StrReplace(output, "(", "") ; eg. defence potion(3)
         output := StrReplace(output, ")", "")
 
-        ; remove this character '
+        ; remove this character ' eg. Vet'ion jr.
         output := StrReplace(output, "'")
 
-        ; remove space infront of last character if integer for eg. super strength (3)
-        lastChar := SubStr(output, StrLen(output))
-        If lastChar is Integer
-            output := StrReplace(output, A_Space lastChar, lastChar)
+        ; remove this character ' eg. Vet'ion jr.
+        output := StrReplace(output, ".")
 
         ; add '_' if first character is integer
         firstChar := SubStr(output, 1, 1)

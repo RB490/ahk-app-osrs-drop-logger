@@ -1,50 +1,30 @@
-refactoring
-    watch onenote refactor videos for inspiration
-    eliminate global vars
+feature > add setting for item icon type
 
-refactor > settings
-    every setting key should be added, possibly with empty value, right from the start
-    dont reference setting object in code, instead pull variable from settings and use that
-        ^ why? it seems like a good idea but im wrecked right now at 07:15 after waking up at around 01:00 for no reason
-            ^ check how 'AutoGUI' handles this
+refactor > more descriptive class methods
+    eg. DROP_TABLE.LoadMob instead of .Get() or something
 
-------------------------------------------------------------------------- images -------------------------------------------------------------------------
+refactor > create default settings object and use that to check if key exists and set default value if needed
 
-feature > 'advanced' images
-    gdip idea draft
-        get high res large wiki image > scale to set size > add in center of set size canvas > profit
-            this should work for mobs & drop images
-            if this works retrieve all images to project same with runelite imgs now
+refactor > eliminate global vars
 
-    feature > mob images
-        process mob and item images to be perfectly scaled, centered and bordered
-            irfanview?
-            ResConImg() : https://www.autohotkey.com/boards/viewtopic.php?t=2505
-                also supports adding border to image, which is exactly what i need for item images < see last comment:
-                    https://autohotkey.com/board/topic/51035-add-border-on-images/
-            WIA library by 'just me' -- WIA_StampImage() should also allow to add an identifier icon to 'custom quantity' images
-                https://www.autohotkey.com/boards/viewtopic.php?f=6&t=7254
-            gdip
-                download image from runelite api
-                center image on canvas
-                add border around canvas
-                for multi quantity drops, add marking to top left of the image eg: '*'
-    feature > stackable item icons > manually create these images and set them with code
-        note
-            sliiiight issues:
-                items are named differently in the drop table and other pages eg. '/w/Ancient_Wyvern' mentions 'Seaweed spore' whereas '/w/Seeds' has Giant seaweed
-                    could be a reason to manually make a list with item names and fetch (high) res images from the wiki
-                very not future proof way, instead try automatically downloading them
-        seeds
-            https://oldschool.runescape.wiki/w/Seeds
-        ammo - arrows/darts/bolts, etc - darts(tips) do not have a bigger icon
-            https://oldschool.runescape.wiki/w/Bolts
-            https://oldschool.runescape.wiki/w/Arrows
-        fletching - arrowtips/Dragonstone bolt tips, etc
-            https://oldschool.runescape.wiki/w/Fletching
-                https://oldschool.runescape.wiki/w/Arrowtips
-                https://oldschool.runescape.wiki/w/Unfinished_bolts
-        coins
-            https://oldschool.runescape.wiki/w/Coins
-        Numulite
-            https://oldschool.runescape.wiki/w/Numulite
+refactor > use good Libaries
+    AutoXYWH()
+        Use for resizable guis aka stats
+        Make gui log resizable using this libary? would get rid of a bunch of settings
+            If this not feasible, maybe allow resizing of the log gui
+    Updated Gui Class?
+        Or no maybe gui class at all
+
+
+-------------------------- Notes --------------------------
+refactor > 'inspiration'
+    watch onenote refactor videos
+    check 'algumist' AutoGUI code
+    check 'other-good-autohotkey-coders-code'
+
+todo > create 'best autohotkey practices' rules file
+    - naming schemes for functions, variables, global variables etc.
+    - if statements formatting
+    - include used libaries inside the scripts folder
+    - do settings with ini? < add reason why if so
+    - etc.

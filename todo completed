@@ -349,3 +349,103 @@ testing
 check AutoGui gui button icon lib
 
 separate reusable functions into lib
+
+------------------------------------------------------------------------- images -------------------------------------------------------------------------
+feature > 'advanced' images
+    gdip idea draft
+        get high res large wiki image > scale to set size > add in center of set size canvas > profit
+            this should work for mobs & drop images
+            if this works retrieve all images to project same with runelite imgs now
+        Notes
+            scale images as small as possible while still large enough to display at a reasonable size,
+                because ahk scaling is terrible
+
+
+feature > 'advanced' images
+    gdip idea draft
+        get high res large wiki image > scale to set size > add in center of set size canvas > profit
+            this should work for mobs & drop images
+            if this works retrieve all images to project same with runelite imgs now
+
+    feature > mob images
+        process mob and item images to be perfectly scaled, centered and bordered
+            irfanview?
+            ResConImg() : https://www.autohotkey.com/boards/viewtopic.php?t=2505
+                also supports adding border to image, which is exactly what i need for item images < see last comment:
+                    https://autohotkey.com/board/topic/51035-add-border-on-images/
+            WIA library by 'just me' -- WIA_StampImage() should also allow to add an identifier icon to 'custom quantity' images
+                https://www.autohotkey.com/boards/viewtopic.php?f=6&t=7254
+            gdip
+                download image from runelite api
+                center image on canvas
+                add border around canvas
+                for multi quantity drops, add marking to top left of the image eg: '*'
+    feature > stackable item icons > manually create these images and set them with code
+        note
+            sliiiight issues:
+                items are named differently in the drop table and other pages eg. '/w/Ancient_Wyvern' mentions 'Seaweed spore' whereas '/w/Seeds' has Giant seaweed
+                    could be a reason to manually make a list with item names and fetch (high) res images from the wiki
+                very not future proof way, instead try automatically downloading them
+        seeds
+            https://oldschool.runescape.wiki/w/Seeds
+        ammo - arrows/darts/bolts, etc - darts(tips) do not have a bigger icon
+            https://oldschool.runescape.wiki/w/Bolts
+            https://oldschool.runescape.wiki/w/Arrows
+        fletching - arrowtips/Dragonstone bolt tips, etc
+            https://oldschool.runescape.wiki/w/Fletching
+                https://oldschool.runescape.wiki/w/Arrowtips
+                https://oldschool.runescape.wiki/w/Unfinished_bolts
+        coins
+            https://oldschool.runescape.wiki/w/Coins
+        Numulite
+            https://oldschool.runescape.wiki/w/Numulite
+
+important changes
+    Instead of runlite, Use osrsbox api for item ids, refresh once a week after it updates
+        ^ also has incorrect entries. 'Bandana eyepatch (blue)' not listed at all,
+            just has 4 identical eyepatches with different id's
+    Detect detail image using width and height above X
+        ^ 
+    Detect icon image using width and height below X
+    If not robust enough Use images from drop table innerHtml to retrieve icons. Can possibly use this for high detail searching too
+
+Separate classes for wiki images retrieving and drop tables. Extend main wiki class
+
+make DB_ITEMS class that receives information from api's
+    runelite for prices
+    osrsbox for item id's
+
+ahk threads possibilities
+    Lexicos https://www.autohotkey.com/boards/viewtopic.php?f=6&t=6194
+    Ahk dll/ v2 https://hotkeyit.github.io/v2/docs/commands/AhkThread.htm
+    Ahkexecute lib in autogui
+    If maintaining an item database, multi thread shouldnt be necessary
+
+debugging > retrieve json with all mobs > get all drop tables > get all images
+    already found out that 
+
+
+images
+    retrieve all different images:
+        runelite image <- don't scale or border these
+        wiki high detail
+        wiki icon
+    write function to retrieve all drops from all mobs that uses osrsbox api /monsters endpoint as it as the droptables too
+        first create a list of all images that need to be downloaded, without duplicates
+    ^^^completed
+    add error handling - there are item icons that download without an error message
+    display progress - custom gui that can be destroyed to exit script
+        current + remaining / total
+        ^ display this in drop_table.get() and downloadallitems()
+    add settings to switch between image formats
+    try to use workers/threads
+
+    ------------------------------------------------------------------------^ images ^-----------------------------------------------------------------------
+
+todo > create a backup + github push of the program before starting this process
+
+settings > check how 'AutoGUI' handles this
+every setting key should be added, possibly with empty value, right from the start
+dont reference setting object in code, instead pull variable from settings and use that
+    ^ why? it seems like a good idea but im wrecked right now at 07:15 after waking up at around 01:00 for no reason
+        ^ check how 'AutoGUI' handles this

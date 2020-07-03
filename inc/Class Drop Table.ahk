@@ -38,7 +38,7 @@ Class ClassDropTable {
         this._TablesRenaming()
         this._DropsDeleteDuplicates()
         this._DropsMergeQuantities()
-        this._DropsGetImages()
+        ; this._DropsGetImages()
 
         SplashTextOff
         return true
@@ -155,16 +155,7 @@ Class ClassDropTable {
                 drop := table.drops[A_Index]
                 If (drop.name = "Nothing")
                     Continue
-                id := RUNELITE_API.GetItemId(drop.name)
-                If !(id) {
-                    msgbox, 4160, , % A_ThisFunc ": No id found for: " drop.name
-                    Continue
-                }
-                path := PATH_ITEM_IMAGES "\" id ".png"
-                If FileExist(path)
-                    Continue
-                url := RUNELITE_API.GetItemImgUrl(drop.name)
-                DownloadToFile(url, path)
+                DownloadItemImages(drop.name)
             }
         }
     }

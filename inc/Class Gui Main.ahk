@@ -73,9 +73,9 @@ class ClassGuiMain extends gui {
             return  
         }
         
-        path := PATH_MOB_IMAGES "\" DB_SETTINGS.selectedMob ".png"
+        path := DIR_MOB_IMAGES "\" DB_SETTINGS.selectedMob ".png"
         If !(FileExist(path)) {
-            url := WIKI_API.GetMobImageUrl(DB_SETTINGS.selectedMob)
+            url := WIKI_API.GetMobImageDetailUrl(DB_SETTINGS.selectedMob)
             DownloadToFile(url, path)
         }
 
