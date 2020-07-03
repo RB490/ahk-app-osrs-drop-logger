@@ -451,3 +451,6 @@ dont reference setting object in code, instead pull variable from settings and u
         ^ check how 'AutoGUI' handles this
         
 refactor > create default settings object and use that to check if key exists and set default value if needed
+
+feature > reduce startup time aka the time to reach auto execute
+    create new classes/load global vars after gui main starts up or some shit

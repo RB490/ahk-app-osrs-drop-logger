@@ -32,6 +32,7 @@ ValidateSettings() {
     defaultSettings.logGuiDropSize := 33
     defaultSettings.logGuiMaxRowDrops := 8
     defaultSettings.logGuiTablesMergeBelowX := 27
+    defaultSettings.logGuiItemImageType := "detail"
     defaultSettings.selectedLogFile := ""
     defaultSettings.selectedMob := "Vorkath"
     defaultSettings.selectedMobs := {"Vorkath": "", "Ice giant": ""}

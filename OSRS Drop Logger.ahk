@@ -27,6 +27,7 @@
     global  LOG_GUI                     := new ClassGuiLog("Log Gui")
     global  MAIN_GUI                    := new ClassGuiMain("Main Gui")
     global  QUANTITY_GUI                := new ClassGuiQuantity("Quantity Gui")
+    global  SETTINGS_GUI                := new ClassGuiSettings("Settings Gui")
     global  STATS_GUI                   := new ClassGuiStats("Stats Gui")
     global  _BTN_CLEAR_DROPS            ; log gui
     global  _BTN_TOGGLE_TRIP            ; log gui
@@ -42,17 +43,12 @@
     global  MIN_ROW_LENGTH              := 1
     global  MAX_ROW_LENGTH              := 25
     global  MIN_TABLE_SIZE              := 1
+    global  ITEM_IMAGE_TYPES            := "Wiki Small|Wiki Detailed|RuneLite"
 
 ; Auto-execute
-    msgbox hi
-    ; FileRemoveDir, % DIR_ITEM_ICONS, 1
-    ; FileRemoveDir, % DIR_ITEM_DETAIL, 1
-    ; FileRemoveDir, % DIR_ITEM_RUNELITE, 1
-    
     FileCreateDir, % DIR_ITEM_ICONS
     FileCreateDir, % DIR_ITEM_DETAIL
     FileCreateDir, % DIR_ITEM_RUNELITE
-
     FileCreateDir, % DIR_MOB_IMAGES
     LoadSettings()
     If (DEBUG_MODE)
@@ -82,11 +78,12 @@ return
         DROP_STATS.UpdateAdvancedStats()
     return
     debugAutoexec:
-        LOG_GUI.Setup()
+        ; Gosub MiscMenu_Show
+        ; SETTINGS_GUI.Setup()
         ; DB_SETTINGS.selectedMob := "Vorkath"
         ; DROP_TABLE.Get(DB_SETTINGS.selectedMob)
         ; DROP_LOG.Load("D:\Downloads\debugLog.json")
-        ; LOG_GUI.Setup()
+        LOG_GUI.Setup()
     return
 
 ; Includes
@@ -103,6 +100,7 @@ return
     #Include Class Gui Log.ahk
     #Include Class Gui Main.ahk
     #Include Class Gui Quantity.ahk
+    #Include Class Gui Settings.ahk
     #Include Class Gui Stats.ahk
     #Include Func Gui About.ahk
     #Include Functions.ahk
