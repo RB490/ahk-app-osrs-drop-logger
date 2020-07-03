@@ -77,6 +77,8 @@ return
         DROP_STATS.UpdateAdvancedStats()
     return
     debugAutoexec:
+        STATS_GUI.Setup()
+        return
         ; SETTINGS_GUI.Setup()
         DB_SETTINGS.selectedMob := "Ice giant"
         DROP_TABLE.Get(DB_SETTINGS.selectedMob)

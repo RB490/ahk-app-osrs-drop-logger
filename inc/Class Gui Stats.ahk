@@ -12,12 +12,15 @@ Class ClassGuiStats extends gui {
         margin := this.margin
         this.margin(margin, margin)
         
-        ; this.add("text", "", "Total")
-        this.add("listview", "x" this.margin " w165 r7 -hdr", "Stat|Value")
-        ; this.add("text", "", "Average")
-        this.add("listview", "w165 h230 -hdr AltSubmit gguiStats_averageListView", "Stat|Value")
+        this.add("listview", "x" this.margin " w165 r7 -hdr", "Stat|Value") ; total
 
-        this.add("listview", "x+" margin " y" margin " w550 h358 r31 AltSubmit gguiStats_advancedListView", "Drop|#|Rate|Value|Dry|<|>|HiddenValueColumnForSorting")
+        ControlGetPos , list1X, list1Y, list1W, list1H, SysListView321, % this.ahkid
+        list2H := DB_SETTINGS.guiStatsH - list1H - (this.margin * 4) + 2
+        this.add("listview", "w165 h" list2H " -hdr AltSubmit gguiStats_averageListView", "Stat|Value") ; average
+
+        list3W := DB_SETTINGS.guiStatsW - list1W - (this.margin * 3)
+        list3H := DB_SETTINGS.guiStatsH - (this.margin * 2)
+        this.add("listview", "x+" margin " y" margin " w" list3W " h" list3H " r31 AltSubmit gguiStats_advancedListView", "Drop|#|Rate|Value|Dry|<|>|HiddenValueColumnForSorting")
 
         this.ShowGui()
         this.CheckPos()
@@ -143,15 +146,8 @@ Class ClassGuiStats extends gui {
     }
 
     Resize() {
-        ; A_GuiWidth A_GuiHeight
-        STATS_GUI.SetDefault() ; for guicontrol
-
-        ControlGetPos , list1X, list1Y, list1W, list1H, SysListView321
-
-        GuiControl, MoveDraw, SysListView322, % "h" A_GuiHeight - list1H - (this.margin * 4) + 2
-
-        GuiControl, MoveDraw, SysListView323, % "h" A_GuiHeight - (this.margin * 2)
-        GuiControl, MoveDraw, SysListView323, % "w" A_GuiWidth - list1W - (this.margin * 3)
+        AutoXYWH("wh", "SysListView323")
+        AutoXYWH("h", "SysListView322", "SysListView323")
     }
 
     SavePos() {
