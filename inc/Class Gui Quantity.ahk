@@ -1,124 +1,101 @@
 class ClassGuiQuantity extends gui {
     /*
-        input = {object} item object from 'DROP_TABLE.GetDrop()' this method uses 
-            input.quantity contains one wiki drop table quantity separated by -, or multiple quantities separated by '#'
-            example: 132#30#44#220#460#250-499#250#500-749#500-999
-        
-        purpose =  sets this.obj eg:
-            {
-                "high": 999,
-                "integersObj": [
-                    "132",
-                    "30",
-                    "44",
-                    "220",
-                    "460",
-                    "250"
-                ],
-                "low": 250
-            }
+        param   'obj'           = {object}
+                'obj'.name      = item name eg. 'Abyssal Whip'
+                'obj'.quantity  = a single quantity divided by '-' eg. '500-900'
+                                  or multiple quantities separated by '#' eg. '250#500-749#500-999'
+        returns {object}
+                {object}.name       = {string} input 'obj'.name
+                {object}.high       = {integer} highest integer
+                {object}.low        = {integer} lowest integer
+                {object}.median     = {integer} median between lowest and highest integer
+                {object}.integers   = {object} all integers
     */
-    Get(input) {
-        this.obj := {}
-        this.obj.dropName := input.name
+    Load(obj) {
+        LOG_GUI.Disable()
+        output := {}
+        integers := {}
 
-        If InStr(input.quantity, "#") ; multiple quantities
-            arr := StrSplit(input.quantity, "#")
+        ; get integer array
+        if InStr(obj.quantity, "#")
+            arr := StrSplit(obj.quantity, "#")
         else
-            arr := StrSplit(input.quantity, "-") ; single quantity
-        
-        ; get lowest & highest range
-        ints := {}
+            arr := StrSplit(obj.quantity, "-")
+
+        ; retrieve individual integers from array
         loop % arr.length() {
-            LoopField := arr[A_Index]
-
-            If InStr(LoopField, "-") {
-                low := SubStr(LoopField, 1, InStr(LoopField, "-") - 1)
-                high := SubStr(LoopField, InStr(LoopField, "-") + 1)
-
-                If (low < recordLow) or !(recordLow)
-                    recordLow := low
-
-                If (high > recordHigh)
-                    recordHigh := high
-
-                ints.push(low)
-                ints.push(high)
+            int := arr[A_Index]
+            
+            If InStr(int, "-") {
+                ints := StrSplit(int, "-")
+                integers[ints[1]] := ""
+                integers[ints[2]] := ""
             }
             else
-                ints.push(arr[A_Index])
+                integers[int] := ""
         }
-        If InStr(input.quantity, "#") {
-            this.obj.lowestQuantity := recordLow
-            this.obj.highestQuantity := recordHigh
-        }
-        else { ; '-'
-            this.obj.lowestQuantity := ints[1]
-            this.obj.highestQuantity := ints[2]
-        }
-        middle := (recordHigh - recordLow) / 2 + recordLow
-        middle := Round(middle)
-        If (middle = 0)
-            middle := ints[1]
-        this.obj.medianQuantity := middle
-        this.obj.integersObj := ints
 
-        this.Setup()
-        return this.output
+        this.name := output.name := obj.name
+        output.integers := integers
+        output.low := integers.MinIndex()
+        output.high := integers.MaxIndex()
+        output.median := (output.high - output.low) / 2 + output.low
+        output.median := Round(output.median)
+        this.Setup(output)
     }
 
-    Debug_Get() {
-        integersObj := [123, 30, 44, 220, 460, 250, 9001]
+    Set() {
         obj := {}
-        obj.highestQuantity := 999
-        obj.medianQuantity := 375
-        obj.lowestQuantity := 250
-        obj.integersObj := integersObj
-        this.obj := obj
-        this.Setup()
-        return this.output
+        obj.name := this.name
+        obj.quantity := this.output
+        SELECTED_DROPS.push(obj)
+        LOG_GUI.Update()
     }
 
-    Setup() {
-        LOG_GUI.Disable()
+    ; param 'obj' = {object} retrieved by this.Get()
+    Setup(obj) {
+        DetectHiddenWindows, On
 
-        ; recreate window if it already exists
+        ; destroy gui
         if (WinExist(this.ahkid))
             this.Destroy()
-        guiName := this.obj.dropName A_Space
-        If (this.obj.lowestQuantity)
-            guiName := guiName this.obj.lowestQuantity " - " this.obj.highestQuantity
 
-        this.__New(guiName)
+        ; set title
+        title := obj.name " : " obj.low " - " obj.high
+        this.__New(title)
 
-        ; properties
+        ; set icon
+        icoPath := GetItemImageDirFromSetting() "\" RUNELITE_API.GetItemId(obj.name) ".png"
+        ico := new LoadPictureType(icoPath,, 1, "#000000") ; last parameter color will be transparent, you might need to change this.
+        this.SetIcon(ico.GetHandle())
+
+        ; set properties
         this.Owner(LOG_GUI.hwnd)
+        this.FadeInAnimation(false)
         this.Margin(0, 0)
-        this.Options("+toolwindow")
-        totalButtons := this.obj.integersObj.length()
+        this.Options("-MinimizeBox")
+
+        ; add controls
+        buttons := obj.integers.count()
         maxRowLength := 5
-        controlSize := 50
+        btnSize := 50
 
-        ; controls
         this.Font("s29")
-        this.Add("edit", "w" controlSize * (maxRowLength - 2) " h" controlSize " center number", this.obj.medianQuantity)
+        this.Add("edit", "w" btnSize * (maxRowLength - 2) " h" btnSize " center number", obj.median)
         this.Font("s15")
-        this.Add("button", "x+0 w" controlSize * 2 " h" controlSize, "Enter")
+        this.Add("button", "x+0 w" btnSize * 2 " h" btnSize, "Enter", this.BtnSubmit.Bind(this))
 
-        loop % totalButtons {
+        for integer in obj.integers {
             If (rowLength = maxRowLength)
                 rowLength := 0
 
             If (A_Index = 1) or !(rowLength)
-                this.Add("button", "x0 w" controlSize " h" controlSize " ", this.obj.integersObj[A_Index], this.BtnIntegerHandler.Bind(this))
+                this.Add("button", "x0 w" btnSize " h" btnSize " ", integer, this.BtnInteger.Bind(this))
             else
-                this.Add("button", "x+0 w" controlSize " h" controlSize "", this.obj.integersObj[A_Index], this.BtnIntegerHandler.Bind(this))
+                this.Add("button", "x+0 w" btnSize " h" btnSize "", integer, this.BtnInteger.Bind(this))
 
             rowLength++
         }
-
-        ; reset variables
-        this.output := ""
 
         ; hotkeys
         Hotkey, IfWinActive, % this.ahkid
@@ -126,35 +103,62 @@ class ClassGuiQuantity extends gui {
         Hotkey, IfWinActive
 
         ; show
-        DetectHiddenWindows, On
         this.Show("hide")
         WinGetPos, guiX, guiY, guiW, guiH, % this.ahkid
         CoordMode, Mouse, Screen
         MouseGetPos, mouseX, mouseY
-        xPos := mouseX - (guiW / 2)
-        yPos := mouseY - (guiH / 2)
         this.Show("x" mouseX - (guiW / 2) " y" mouseY - (guiH / 2))
-        DetectHiddenWindows, Off
-        WinWaitClose, % this.ahkid
 
-        ; on closing
-        LOG_GUI.Enable()
-        WinActivate, % LOG_GUI.ahkid
+
+        ; close
+        DetectHiddenWindows, Off
     }
 
-    ; input = {integer}
-    BtnIntegerHandler() {
+    BtnInteger() {
         this.output := this.GuiControlGet("FocusV")
-        this.Destroy()
+        this.Set()
+        this.Close()
     }
 
     BtnSubmit() {
         this.output := this.GetText("edit1")
+        this.Set()
         this.Close()
     }
 
     Close() {
         this.Destroy()
+        LOG_GUI.Enable()
+        LOG_GUI.Activate()
+    }
+
+    /*
+        Example:
+            debug := new QUANTITY_GUI.Debug(QUANTITY_GUI)
+            debug.Get()
+    */
+    Class Debug {
+        __New(parent) {
+            this.parent := parent
+        }
+
+        Load() {
+            obj := {}
+            ; obj.quantity := "500-999"
+            obj.quantity := "132#30#44#220#460#250-499#250#500-749#500-999"
+            obj.name := "Abyssal Whip"
+            this.parent.Load(obj)
+        }
+
+        Setup() {
+            integers := [123, 30, 44, 220, 460, 250, 9001]
+            obj := {}
+            obj.high := 999
+            obj.median := 375
+            obj.low := 250
+            obj.integers := integers
+            this.parent.Setup(obj)
+        }
     }
 }
 

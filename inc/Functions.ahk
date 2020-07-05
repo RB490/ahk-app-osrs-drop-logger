@@ -32,7 +32,7 @@ ValidateSettings() {
     defaultSettings.logGuiDropSize := 33
     defaultSettings.logGuiMaxRowDrops := 8
     defaultSettings.logGuiTablesMergeBelowX := 27
-    defaultSettings.logGuiItemImageType := "detail"
+    defaultSettings.logGuiItemImageType := "Wiki Detailed"
     defaultSettings.selectedLogFile := ""
     defaultSettings.selectedMob := "Vorkath"
     defaultSettings.selectedMobs := {"Vorkath": "", "Ice giant": ""}
@@ -50,6 +50,16 @@ ValidateSettings() {
 
     If (DB_SETTINGS.logGuiTablesMergeBelowX < MIN_TABLE_SIZE)
         DB_SETTINGS.logGuiTablesMergeBelowX := 27 ; 27 = rdt
+}
+
+GetItemImageDirFromSetting() {
+    switch DB_SETTINGS.logGuiItemImageType
+    {
+        case "Wiki Small": output := DIR_ITEM_ICON
+        case "Wiki Detailed": output := DIR_ITEM_DETAIL
+        case "RuneLite": output := DIR_ITEM_RUNELITE
+    }
+    return output
 }
 
 IsInteger(input) {
@@ -78,17 +88,16 @@ OnWM_LBUTTONDOWN(wParam, lParam, msg, hWnd) {
     MouseGetPos, OutputVarX, OutputVarY, OutputVarWin, OutputVarControl
     GuiControlGet, OutputAssociatedVar, Name, % OutputVarControl
 
-    If !(OutputAssociatedVar) {
+    If !OutputAssociatedVar {
         tooltip
         return
     }
-
-    If !(DROP_LOG.TripActive()) {
+    If !DROP_LOG.TripActive() {
         tooltip No trip started!
         SetTimer, disableTooltip, -250
         return
     }
-     If (DROP_LOG.DeathActive()) {
+     If DROP_LOG.DeathActive() {
         tooltip You're dead!
         SetTimer, disableTooltip, -250
         return
@@ -101,11 +110,11 @@ OnWM_LBUTTONDOWN(wParam, lParam, msg, hWnd) {
     Obj.Delete("price")
     Obj.Delete("rarity")
 
-    If InStr(obj.quantity, "#") or InStr(obj.quantity, "-")
-        obj.quantity := QUANTITY_GUI.Get(obj)
-    If !(obj.quantity)
+    If !IsInteger(obj.quantity) { ; contains separator '#' or '-'
+        LOG_GUI.Disable()
+        QUANTITY_GUI.Load(obj)
         return
-
+    }
     SELECTED_DROPS.push(obj)
 
     LOG_GUI.Update()

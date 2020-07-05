@@ -31,8 +31,6 @@ class ClassGuiMain extends gui {
     }
 
     Update() {
-        this.SetDefault() ; for guicontrol
-        
         ; check user input
         searchString := this.GetText("Edit1")
 
@@ -78,7 +76,6 @@ class ClassGuiMain extends gui {
             DownloadToFile(url, path)
         }
 
-        this.SetDefault() ; for guicontrol
         this.SetText(this._btnLog, "       Log")
         SetButtonIcon(this._btnLog, path, 1, 44) ; r2 = 30, r3 = 44
     }

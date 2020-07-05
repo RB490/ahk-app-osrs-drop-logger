@@ -1,12 +1,10 @@
+refactor > eliminate global vars
+
 refactor > go through every file
     more descriptive class methods, variables, function names
         eg. DROP_TABLE.LoadMob instead of .Get() or something
     better code structure
     remove duplicate code
-
-refactor > eliminate global vars
-
-
 
 -------------------------- Notes --------------------------
 refactor > 'inspiration'

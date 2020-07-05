@@ -49,6 +49,10 @@
 		if (A_DefaultGui != this.hwnd)
 			Gui % this.hwnd ":Default"
 	}
+
+	Owner(hwnd) {
+		Gui % this.hwnd ":+Owner" hwnd
+	}
 	
 	DefaultListView(hwnd) {
 		if (A_DefaultListView != hwnd)
@@ -90,7 +94,10 @@
 	}
 	
 	SetIcon(Icon) {
-		hIcon := DllCall("LoadImage", UInt,0, Str, Icon, UInt, 1, UInt, 0, UInt, 0, UInt, 0x10)
+		if Icon is Integer
+			hIcon := Icon
+		else
+			hIcon := DllCall("LoadImage", UInt,0, Str, Icon, UInt, 1, UInt, 0, UInt, 0, UInt, 0x10)
 		SendMessage, 0x80, 0, hIcon ,, % this.ahkid  ; One affects Title bar and
 		SendMessage, 0x80, 1, hIcon ,, % this.ahkid  ; the other the ALT+TAB menu
 	}
@@ -161,6 +168,16 @@
 					, FADE_OUT:			0x90000}
 		
 		return DllCall("AnimateWindow", "UInt", this.hwnd, "Int", Duration, "UInt", Anims.HasKey(Type)?Anims[Type]:Type)
+	}
+
+	FadeInAnimation(OnOff) { ; https://www.autohotkey.com/boards/viewtopic.php?f=74&t=27743
+		OnOff := !OnOff
+		dwAttribute:=3
+		cbAttribute:=4
+		VarSetCapacity(pvAttribute,4,0)
+		NumPut(onOff,pvAttribute,0,"Int")
+		hr:=DllCall("Dwmapi.dll\DwmSetWindowAttribute", "Uint", this.hwnd, "Uint", dwAttribute, "Uint", &pvAttribute, "Uint", cbAttribute)
+		return hr
 	}
 	
 	WinSet(Command, Param := "") {
