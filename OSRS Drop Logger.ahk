@@ -8,8 +8,8 @@
     #MaxMem, 400 ; downloadMissingItemImages()
 
 ; Global vars
-    Global PROJECT_WEBSITE   := "https://github.com/RB490/ahk-app-osrs-drop-logger"
-    , DEBUG_MODE             := true
+    Global DEBUG_MODE        := true
+    , PROJECT_WEBSITE        := "https://github.com/RB490/ahk-app-osrs-drop-logger"
     , DIR_ITEM_ICON          := A_ScriptDir "\res\img\item\icon"
     , DIR_ITEM_DETAIL        := A_ScriptDir "\res\img\item\detail"
     , DIR_ITEM_RUNELITE      := A_ScriptDir "\res\img\item\runelite"
@@ -43,18 +43,18 @@
     FileCreateDir, % DIR_ITEM_RUNELITE
     FileCreateDir, % DIR_MOB_IMAGES
     LoadSettings()
-    If (DEBUG_MODE)
+    If DEBUG_MODE
         Goto debugAutoexec 
     MAIN_GUI.Setup()
 return
 
 ; Global hotkeys
     ~^s::
-        If !(A_IsCompiled)
+        If DEBUG_MODE and !A_IsCompiled
             reload
     return
     ~f1::
-        If !(DEBUG_MODE)
+        If !DEBUG_MODE
             return
     return
 
@@ -73,8 +73,8 @@ return
         ; debug.Load()
 
         ; STATS_GUI.Setup()
-
-        ABOUT_GUI.Setup()
+        ; DROP_TABLE.Get("goblin")
+        MAIN_GUI.Setup()
 
         return
         ; SETTINGS_GUI.Setup()

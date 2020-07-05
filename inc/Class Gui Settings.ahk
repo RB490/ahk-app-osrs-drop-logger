@@ -10,7 +10,7 @@ class ClassGuiSettings extends gui {
         this.Options("-MinimizeBox")
 
         this.Add("checkbox", "x" margin, "Auto show stats")
-        If (DB_SETTINGS.logGuiAutoShowStats)
+        If DB_SETTINGS.logGuiAutoShowStats
             this.Control(, "Button1", true)
 
         this.Add("groupbox", "h210", "Gui")

@@ -11,8 +11,9 @@
   "logGuiMaxRowDrops": "8",
   "logGuiTablesMergeBelowX": "27",
   "selectedLogFile": "D:\\Programming and projects\\ahk-app-osrs-drop-logger\\info\\ClassDropLog.json",
-  "selectedMob": "Vorkath",
+  "selectedMob": "Goblin",
   "selectedMobs": {
+    "Goblin": "",
     "Ice giant": "",
     "Vorkath": ""
   }

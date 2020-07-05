@@ -97,7 +97,7 @@ Class ClassDropStats {
         loop % obj.length() {
             trip := obj[A_Index]
 
-            If !(trip.tripEnd)
+            If !trip.tripEnd
                 trip.tripEnd := A_Now
             
             duration := trip.tripEnd
@@ -115,7 +115,7 @@ Class ClassDropStats {
             loop % trip.deaths.length() {
                 death := trip.deaths[A_Index]
 
-                If !(death.deathEnd)
+                If !death.deathEnd
                     death.deathEnd := A_Now
 
                 duration := death.deathEnd
@@ -195,7 +195,7 @@ Class ClassDropStats {
             totalItems := drop.quantity * drop.occurences
             price := RUNELITE_API.GetItemPrice(drop.name)
             drop.totalValue := totalItems * price
-            If !(drop.totalValue)
+            If !drop.totalValue
                 drop.totalValue := "-"
         }
     }
@@ -251,12 +251,12 @@ Class ClassDropStats {
 
                         If (drop.name = uniqueDrop.name) and (drop.quantity = uniqueDrop.quantity) {
                             
-                            If !(match1Found)
+                            If !match1Found
                                 match1Found := dropIndex
                             else
                                 match2Found := dropIndex
 
-                            If (match2Found) {
+                            If match2Found {
                                 output[match2Found - match1Found] := ""
                                 match1Found := ""
                                 match2Found := ""

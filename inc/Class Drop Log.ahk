@@ -39,21 +39,21 @@ class ClassDropLog {
         ; build formatted string output
         for key, value in output {
             ; ignore
-            If (InStr(value, "Death End"))
+            If InStr(value, "Death End")
                 Continue
             
             ; prettify
-            If (InStr(value, "Death Start"))
+            If InStr(value, "Death Start")
                 value := "*Death*"
-            If (InStr(value, "trip"))
+            If InStr(value, "trip")
                 value := "----------------------" value "----------------------"
             
-            If (InStr(value, "trip"))
+            If InStr(value, "trip")
                 output .= "`n"
 
             output .= "`n" value
             
-            If (InStr(value, "trip"))
+            If InStr(value, "trip")
                 output .= "`n"
         }
         output := LTrim(output, "`n")
@@ -68,7 +68,7 @@ class ClassDropLog {
     ; input = {string} path to existing drop log file
     ; purpose = load drop log into this.obj
     Load(file) {
-        If !(file) {
+        If !file {
             msgbox, 4160, , % A_ThisFunc ": Can't log without a log file"
             exitapp
         }
@@ -79,7 +79,7 @@ class ClassDropLog {
         
         ; empty file
         fileContent := FileRead(this.file)
-        If !(fileContent) {
+        If !fileContent {
             this.obj := {}
             return true
         }
@@ -98,10 +98,10 @@ class ClassDropLog {
     }
 
     Save() {
-        If (A_IsCompiled) { ; prevent stats being messed up by trip ongoing while program isnt running
-            If (DROP_LOG.TripActive())
+        If A_IsCompiled { ; prevent stats being messed up by trip ongoing while program isnt running
+            If DROP_LOG.TripActive()
                 DROP_LOG.EndTrip()
-            If (DROP_LOG.DeathActive())
+            If DROP_LOG.DeathActive()
                 DROP_LOG.EndDeath()
         }
         FileDelete, % this.file
@@ -109,7 +109,7 @@ class ClassDropLog {
     }
 
     Undo() {
-        If !(this.undoActions.length()) {
+        If !this.undoActions.length() {
             msgbox, 4160, , % A_ThisFunc ": Nothing to undo!"
             return
         }
@@ -119,7 +119,7 @@ class ClassDropLog {
     }
 
     Redo() {
-        If !(this.redoActions.length()) {
+        If !this.redoActions.length() {
             msgbox, 4160, , % A_ThisFunc ": Nothing to redo!"
             return
         }
@@ -131,7 +131,7 @@ class ClassDropLog {
 
     ; input = {object} retrieved by DROP_LOG.GetDrop() containing drop information
     AddKill(input) {
-        If !(input.length())
+        If !input.length()
             return
 
         this.redoActions := {}
@@ -147,7 +147,7 @@ class ClassDropLog {
     }
 
     StartTrip() {
-        If (this.TripActive()) {
+        If this.TripActive() {
             msgbox % A_ThisFunc ": Trip already started!"
             return false
         }
@@ -172,21 +172,21 @@ class ClassDropLog {
     }
 
     ToggleTrip() {
-        If (this.TripActive())
+        If this.TripActive()
             this.EndTrip()
         else
             this.StartTrip()
     }
 
     NewTrip() {
-        If (this.TripActive())
+        If this.TripActive()
             this.EndTrip()
         this.StartTrip()
     }
 
     TripActive() {
         obj := this.obj[this.obj.length()]
-        If (obj.tripEnd) or !(IsObject(obj))
+        If obj.tripEnd or !IsObject(obj)
             return false
         return true
     }
@@ -209,7 +209,7 @@ class ClassDropLog {
     }
 
     ToggleDeath() {
-        If (this.DeathActive())
+        If this.DeathActive()
             this.EndDeath()
         else
             this.StartDeath()
@@ -219,7 +219,7 @@ class ClassDropLog {
         obj := this.obj[this.obj.length()].deaths
         obj := obj[obj.length()]
         
-        If (obj.deathStart) and !(obj.deathEnd)
+        If obj.deathStart and !obj.deathEnd
             return true
     }
 }

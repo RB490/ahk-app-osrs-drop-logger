@@ -1,28 +1,22 @@
 class ClassGuiMain extends gui {
     Setup() {
         ; events
-        this.Events["_BtnAdd"] := this.BtnAdd.Bind(this)
-        this.Events["_BtnLog"] := this.BtnLog.Bind(this)
-        this.Events["_BtnClose"] := this.Close.Bind(this)
         this.Events["_HotkeyEnter"] := this.BtnAdd.Bind(this)
-        this.Events["_MobListBoxHandler"] := this.MobListBoxHandler.Bind(this)
-        this.Events["_SearchBoxHandler"] := this.SearchBoxHandler.Bind(this)
 
         ; properties
         this.marginSize := 10
         totalWidth := 200
-        this.Options("+LabelmainGui_")
 
         ; controls
-        this.Add("edit", "w" totalWidth - 45 - this.marginSize " section gmainGui_SearchBoxHandler", "")
-        this.Add("button", "x+5 ys-1 w50 gmainGui_BtnAdd", "Add")
+        this.Add("edit", "w" totalWidth - 45 - this.marginSize " section", "", this.SearchBoxHandler.Bind(this))
+        this.Add("button", "x+5 ys-1 w50", "Add", this.BtnAdd.Bind(this))
         
-        this.Add("listbox", "x" this.marginSize " w" totalWidth " r10 gmainGui_MobListBoxHandler", output)
-        this._btnLog := this.AddGlobal("button", "w" totalWidth " gmainGui_BtnLog r3", "Log")
+        this.Add("listbox", "x" this.marginSize " w" totalWidth " r10", , this.MobListBoxHandler.Bind(this))
+        this._btnLog := this.Add("button", "w" totalWidth " r3", "Log", this.BtnLog.Bind(this))
 
         ; hotkeys
         Hotkey, IfWinActive, % this.ahkid
-        Hotkey, Enter, mainGui_HotkeyEnter
+        Hotkey, Enter, ClassGuiMain_HotkeyEnter
         Hotkey, IfWinActive
 
         ; show
@@ -36,7 +30,7 @@ class ClassGuiMain extends gui {
 
         ; build display var
         for mob in DB_SETTINGS.selectedMobs
-            If (InStr(mob, searchString))
+            If InStr(mob, searchString)
                 output .= mob "|"
         output := RTrim(output, "|")
 
@@ -48,7 +42,7 @@ class ClassGuiMain extends gui {
         ; ------------------------------------------------
 
         ; buttons
-        If (DB_SETTINGS.selectedMob)
+        If DB_SETTINGS.selectedMob
             this.Control("Enable", this._btnLog)
         else
             this.Control("Disable", this._btnLog)
@@ -64,14 +58,14 @@ class ClassGuiMain extends gui {
     }
 
     _LoadMobImage() {
-        If !(DB_SETTINGS.selectedMob) {
+        If !DB_SETTINGS.selectedMob {
             this.SetText(this._btnLog, "Log                     ")
             GuiButtonIcon(this._btnLog, A_ScriptDir "\res\img\Nothing.png", 1, "s44 a0 l50 r0")
             return  
         }
         
         path := DIR_MOB_IMAGES "\" DB_SETTINGS.selectedMob ".png"
-        If !(FileExist(path)) {
+        If !FileExist(path) {
             url := WIKI_API.GetMobImageDetailUrl(DB_SETTINGS.selectedMob)
             DownloadToFile(url, path)
         }
@@ -92,12 +86,12 @@ class ClassGuiMain extends gui {
     BtnAdd() {
         ; receive input
         input := this.GetText("edit1")
-        If !(input)
+        If !input
             return
         StringUpper, input, input, T
 
         ; check if mob already exists
-        If (DB_SETTINGS.selectedMobs.HasKey(input)) {
+        If DB_SETTINGS.selectedMobs.HasKey(input) {
             DB_SETTINGS.selectedMob := input
             this.SearchBoxReset()
             return
@@ -105,13 +99,13 @@ class ClassGuiMain extends gui {
 
         ; check if input is a mob with drop tables
         isValidMob := DROP_TABLE.Get(input)
-        If !(isValidMob) {
+        If !isValidMob {
             this.SearchBoxReset()
             return
         }
 
         ; save mob
-        If !(IsObject(DB_SETTINGS.selectedMobs))
+        If !IsObject(DB_SETTINGS.selectedMobs)
             DB_SETTINGS.selectedMobs := {}
         DB_SETTINGS.selectedMobs[input] := ""
 
@@ -125,7 +119,7 @@ class ClassGuiMain extends gui {
         selectedLogFile := DB_SETTINGS.selectedLogFile
         SplitPath, selectedLogFile, OutFileName, selectedLogFileDir, OutExtension, OutNameNoExt, OutDrive
         FileSelectFile, SelectedFile, 11, % manageGui.GetText("Edit1"), Select drop log, Json (*.json), %selectedLogFileDir%
-        If !(SelectedFile) {
+        If !SelectedFile {
             ; msgbox, 4160, , % A_ThisFunc ": Can't log without a log file"
             this.Enable()
             return false
@@ -134,7 +128,7 @@ class ClassGuiMain extends gui {
         file := OutDir "\" OutNameNoExt ".json"
 
         result := DROP_LOG.Load(file)
-        If !(result)
+        If !result
             return
         DB_SETTINGS.selectedLogFile := file
         this.Enable()
@@ -147,61 +141,36 @@ class ClassGuiMain extends gui {
         LOG_GUI.Setup()
     }
 
+    ContextMenu() {
+        MainMenu_Show()
+    }
+
     Close() {
         exitapp
     }
 }
 
-mainGui_ContextMenu:
-    If !(DB_SETTINGS.selectedMob) or !(A_EventInfo) ; A_EventInfo = ListBox Target
+MainMenu_Show() {
+    If !DB_SETTINGS.selectedMob or !A_EventInfo ; A_EventInfo = ListBox Target
         return
-    
+
     mobMenuMob := DB_SETTINGS.selectedMob
 
     menu, mobMenu, add
     menu, mobMenu, DeleteAll
-    menu, mobMenu, add, Remove %mobMenuMob%, mobMenu_removeMob
+    menu, mobMenu, add, Remove %mobMenuMob%, MainMenu_RemoveMob
     menu, mobMenu, show
-return
+}
 
-mobMenu_removeMob:
+MainMenu_RemoveMob() {
     DB_SETTINGS.selectedMobs.Delete(DB_SETTINGS.selectedMob)
     DB_SETTINGS.selectedMob := ""
     MAIN_GUI.Update()
-return
+}
 
-mainGui_MobListBoxHandler:
-	; call the class's method
-    for a, b in ClassGuiMain.Instances 
-		if (a = WinExist("A")+0) ; if instance gui hwnd is identical to currently active window hwnd
-			b["Events"]["_MobListBoxHandler"].Call()
-return
-
-mainGui_SearchBoxHandler:
-	; call the class's method
-    for a, b in ClassGuiMain.Instances 
-		if (a = WinExist("A")+0) ; if instance gui hwnd is identical to currently active window hwnd
-			b["Events"]["_SearchBoxHandler"].Call()
-return
-
-mainGui_BtnAdd:
-    MAIN_GUI.BtnAdd()
-return
-
-mainGui_BtnLog:
-    MAIN_GUI.BtnLog()
-return
-
-mainGui_HotkeyEnter:
-	; call the class's method
+ClassGuiMain_HotkeyEnter() {
+    ; call the class's method
     for a, b in ClassGuiMain.Instances 
 		if (a = WinExist("A")+0) ; if instance gui hwnd is identical to currently active window hwnd
 			b["Events"]["_HotkeyEnter"].Call()
-return
-
-mainGui_Close:
-    ; call the class's method
-    for a, b in ClassGuiMain.Instances 
-		if (a = A_Gui+0)
-			b["Events"]["_BtnClose"].Call()
-return
+}

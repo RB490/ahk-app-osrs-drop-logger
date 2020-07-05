@@ -57,7 +57,7 @@ class ClassGuiQuantity extends gui {
         DetectHiddenWindows, On
 
         ; destroy gui
-        if (WinExist(this.ahkid))
+        if WinExist(this.ahkid)
             this.Destroy()
 
         ; set title
@@ -89,7 +89,7 @@ class ClassGuiQuantity extends gui {
             If (rowLength = maxRowLength)
                 rowLength := 0
 
-            If (A_Index = 1) or !(rowLength)
+            If (A_Index = 1) or !rowLength
                 this.Add("button", "x0 w" btnSize " h" btnSize " ", integer, this.BtnInteger.Bind(this))
             else
                 this.Add("button", "x+0 w" btnSize " h" btnSize "", integer, this.BtnInteger.Bind(this))

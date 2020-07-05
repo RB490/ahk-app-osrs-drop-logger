@@ -13,7 +13,7 @@ SaveSettings() {
 
 LoadSettings() {
     DB_SETTINGS := json.load(FileRead(PATH_SETTINGS))
-    If (!IsObject(DB_SETTINGS)) {
+    If !IsObject(DB_SETTINGS) {
         msgbox, 4160, , % A_ThisFunc ": Resetting settings"
         DB_SETTINGS := {}
     }
@@ -38,7 +38,7 @@ ValidateSettings() {
     defaultSettings.selectedMobs := {"Vorkath": "", "Ice giant": ""}
 
     for defaultSetting in defaultSettings {
-        If (!DB_SETTINGS.HasKey(defaultSetting))
+        If !DB_SETTINGS.HasKey(defaultSetting)
             DB_SETTINGS[defaultSetting] := defaultSettings[defaultSetting]
     }
 
@@ -185,7 +185,7 @@ DownloadMissingItemImages() {
 
     ; retrieve json
     SplashTextOn, 350, 100, % A_ScriptName " - " A_ThisFunc "()", Loading database
-    If (!FileExist(file)) {
+    If !FileExist(file) {
         content := DownloadToString(allMonstersApiUrl)
         content := json.load(content)
         FileAppend, % json.dump(content,,2), % file
@@ -222,7 +222,7 @@ DownloadItemImages(item) {
 
     ; wiki small
     path := DIR_ITEM_ICON "\" id ".png"
-    If (!IsPicture(path)) {
+    If !IsPicture(path) {
         FileDelete % path
         url := wikiImageUrl.icon
         DownloadImageOrQuit(url, path)
@@ -231,7 +231,7 @@ DownloadItemImages(item) {
     
     ; wiki detail
     path := DIR_ITEM_DETAIL "\" id ".png"
-    If (!IsPicture(path)) {
+    If !IsPicture(path) {
         FileDelete % path
         url := wikiImageUrl.detail
         DownloadImageOrQuit(url, path)
@@ -241,7 +241,7 @@ DownloadItemImages(item) {
 
     ; runelite
     path := DIR_ITEM_RUNELITE "\" id ".png"
-    If (!IsPicture(path)) {
+    If !IsPicture(path) {
         FileDelete % path
         url := RUNELITE_API.GetItemImgUrl(item)
         DownloadImageOrQuit(url, path)
@@ -253,7 +253,7 @@ DownloadImageOrQuit(url, path) {
 
     IsPicture := IsPicture(path, picW, picH)
 
-    If (!IsPicture) or (picW < 5) or (picH < 5) {
+    If !IsPicture or (picW < 5) or (picH < 5) {
         msgbox, 4160, ,
         ( LTrim
             %A_ThisFunc%: Could not retrieve image

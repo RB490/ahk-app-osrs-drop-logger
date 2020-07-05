@@ -74,7 +74,7 @@ class ClassApiWiki {
         needle = src="/images/thumb
         loop, parse, html, `n
         {
-            If (InStr(A_LoopField, needle)) {
+            If InStr(A_LoopField, needle) {
                 html := A_LoopField
                 break
             }
@@ -97,7 +97,7 @@ class ClassApiWiki {
         doc.write(html)
 
         images := doc.getElementsByClassName("image")
-        If (!images.length)
+        If !images.length
             return false
 
         ; get relative url
@@ -151,11 +151,11 @@ class ClassApiWiki {
 
     _GetDetailFromHtmlObj(doc, potionDose := "") {
         result := doc.getElementsByClassName("floatleft")
-        If (!result.length) {
+        If !result.length {
             msgbox, 4160, , % A_ThisFunc ": Could not find 'floatleft' class`n`nClosing.."
             exitapp
         }
-        If (potionDose) and (images.length >= potionDose) ; don't apply for eg 'games necklace(2)'
+        If potionDose and (images.length >= potionDose) ; don't apply for eg 'games necklace(2)'
             html := result[potionDose-1].innerHtml
         else
             html := result[0].innerHtml
@@ -164,7 +164,7 @@ class ClassApiWiki {
 
     _GetIconFromHtmlComObj(doc) {
         images := doc.getElementsByClassName("inventory-image")
-        If (!images.length) {
+        If !images.length {
             msgbox, 4160, , % A_ThisFunc ": Could not find 'inventory-image' class`n`nClosing.."
             exitapp
         }
@@ -184,7 +184,7 @@ class ClassApiWiki {
         html := SubStr(html, 1, InStr(html, "?") - 1)
 
         ; adjust size
-        If (size and InStr(html, "px-")) {
+        If size and InStr(html, "px-") {
             arr := StrSplit(html, "px-")
             arr[1] := SubStr(arr[1], 1, InStr(arr[1], "/", , 0))    ; example arr[1] = /images/thumb/2/23/Superior_dragon_bones_detail.png/140
             html := arr[1] size "px-" arr[2]                      ; example arr[2] = Superior_dragon_bones_detail.png 
@@ -279,7 +279,7 @@ class ClassApiWiki {
         doc.write(html)
 
         this.tables := doc.getElementsByTagName("table")
-        If !(this.tables.length)
+        If !this.tables.length
             return false
 
         output := {}
@@ -317,7 +317,7 @@ class ClassApiWiki {
             item := {}
             loop % row.cells.length {
                 cell := row.cells[A_Index-1]
-                
+
                 If (A_Index = 1) {
                     ico := SubStr(cell.innerHtml, InStr(cell.innerHtml, "src=") + 5)
                     ico := SubStr(ico, 1, InStr(ico, "?") - 1)
@@ -359,7 +359,7 @@ class ClassApiWiki {
         loop, parse, inputHtml, `n ; cut off everything after '<item name>.png'
         {
             html .= A_LoopField "`n"
-            If (InStr(A_LoopField, img)) and (InStr(A_LoopField, "inventory-image")) ; check both because 'abyssal sire' uses Coins_10000.png multiple times
+            If InStr(A_LoopField, img) and InStr(A_LoopField, "inventory-image") ; check both because 'abyssal sire' uses Coins_10000.png multiple times
                 break
         }
         html := SubStr(html, InStr(html, "mw-headline", false, 0) - 27) ; get last mw-header searching from the end of the string -- 17 is exact
@@ -372,7 +372,7 @@ class ClassApiWiki {
 
 
         mwHeadlines := doc.getElementsByClassName("mw-headline")
-        If !(mwHeadlines.length) {
+        If !mwHeadlines.length {
             clipboard := html "`n`n-------------------------------inputHtml----------------------------------------" inputHtml
             msgbox, 4160, , % A_ThisFunc ": getElementsByClassName() could not find mw-headline classes in html. (html in clipboard)`n`nClosing.."
             exitapp

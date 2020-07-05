@@ -1,7 +1,7 @@
 Class ClassGuiStats extends gui {
     Setup() {
         DetectHiddenWindows, On
-        If (WinExist, this.ahkid) {
+        If WinExist(this.ahkid) {
             this.ShowGui()
             this.CheckPos()
             return
@@ -128,7 +128,7 @@ Class ClassGuiStats extends gui {
         t := !t
         this.advancedListViewFocusedRow := ""
 
-        If (t)
+        If t
             this.LvUnique.ModifyCol(8, "SortDesc") ; HiddenValueColumnForSorting
         else
             this.LvUnique.ModifyCol(8, "Sort") ; HiddenValueColumnForSorting
@@ -150,7 +150,7 @@ Class ClassGuiStats extends gui {
 
     SavePos() {
         WinGetPos(this.hwnd, guiStatsX, guiStatsY, guiStatsW, guiStatsH, true) 
-        If (!guiStatsW) and (!guiStatsH)
+        If !guiStatsW and !guiStatsH
             return
         DB_SETTINGS.guiStatsX := guiStatsX
         DB_SETTINGS.guiStatsY := guiStatsY

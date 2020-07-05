@@ -73,7 +73,7 @@ Class ClassApiRunelite {
             case "Weapon frame (corrupted)": return 23834
         }
         id := this.obj[this._getRuneliteFormat(itemString)].id
-        If (!id) {
+        If !id {
             msgbox, 4160, , % A_ThisFunc ": Could not retrieve item id for '" itemString "'`n`nClosing.."
             exitapp
             ; FileAppend, % itemString "`n", D:\Downloads\errors_GetItemId.txt
@@ -94,7 +94,7 @@ Class ClassApiRunelite {
         html := DownloadToString(this.apiHubUrl)
 
         loop, parse, html, `n
-            If (InStr(A_LoopField, "api.runelite.net"))
+            If InStr(A_LoopField, "api.runelite.net")
                 return A_LoopField
     }
 
@@ -143,7 +143,7 @@ Class ClassApiRunelite {
 
     _GetJson() {
         ; only refresh data a few times per day
-        If (FileExist(PATH_RUNELITE_JSON)) {
+        If FileExist(PATH_RUNELITE_JSON) {
             FileGetTime, OutputVar , % PATH_RUNELITE_JSON, C
             hoursOld := A_Now
             EnvSub, hoursOld, OutputVar, Hours
@@ -153,7 +153,7 @@ Class ClassApiRunelite {
         
         input := DownloadToString(this.apiUrl "/item/prices") ; this.apiUrl "/item/prices"
         obj := json.load(input)
-        If (!IsObject(obj) or obj.error) {
+        If !IsObject(obj) or obj.error {
             msgbox, 4160, , % A_ThisFunc ": Failed to reach RuneLite API`n`nCheck: " PROJECT_WEBSITE
             return
         }
@@ -167,7 +167,7 @@ Class ClassApiRunelite {
 
         ; add untradeable items
         input := DownloadToString(this.idUrl)
-        If (!input) {
+        If !input {
             msgbox, 4160, , % A_ThisFunc ": Failed to reach RuneLite API item id's`n`nCheck: " PROJECT_WEBSITE
             return
         }
@@ -180,7 +180,7 @@ Class ClassApiRunelite {
                 id := SubStr(A_LoopField, InStr(A_LoopField, "=") + 2)
                 id := SubStr(id, 1, InStr(id, ";") - 1)
 
-                If !(output.HasKey(name))
+                If !output.HasKey(name)
                     output[name] := {id: id}
             }
         }

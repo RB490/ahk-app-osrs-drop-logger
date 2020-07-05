@@ -23,11 +23,11 @@ Class ClassDropTable {
 
     ; input = {string} wiki page containing drop tables
     Get(input) {
-        If !(DEBUG_MODE)
+        If !DEBUG_MODE
             SplashTextOn, 300, 75, % A_ScriptName, Retrieving drop table for %input%...
 
         this.obj := WIKI_API.GetDroptables(input)
-        If !(this.obj.length()) {
+        If !this.obj.length() {
             msgbox, 4160, , % A_ThisFunc ": Could not find drop table for '" input "'!"
             SplashTextOff
             return false
@@ -53,7 +53,7 @@ Class ClassDropTable {
             drops := table.drops
 
             found := this._FindTable(output, table.title)
-            If (found) ; add drops from duplicate table to the one already in output
+            If found ; add drops from duplicate table to the one already in output
                 loop % drops.length() 
                     output[found].drops.push(drops[A_Index])
             else
@@ -77,7 +77,7 @@ Class ClassDropTable {
             }
 
             loop % drops.length() {
-                If !(this._FindTable(output, "main"))
+                If !this._FindTable(output, "main")
                     output.push({title: "Main", drops: {}})
                 
                 output[1].drops.push(drops[A_Index])
@@ -104,7 +104,7 @@ Class ClassDropTable {
                     newTitle := "Fletch"
             }
 
-            If (newTitle)
+            If newTitle
                 tables[table].title := newTitle
         }
     }
@@ -118,7 +118,7 @@ Class ClassDropTable {
             loop % table.drops.length() {
                 drop := table.drops[A_Index]
                 isDuplicate := this._FindDrop(output, drop, "matchQuantity")
-                If (isDuplicate)
+                If isDuplicate
                     Continue
                 output.push(drop)
             }
@@ -136,7 +136,7 @@ Class ClassDropTable {
                 drop := table.drops[A_Index]
 
                 isDuplicate := this._FindDrop(output, drop)
-                If (isDuplicate) {
+                If isDuplicate {
                     output[isDuplicate].quantity .= "#" drop.quantity
                     Continue
                 }
@@ -183,7 +183,7 @@ Class ClassDropTable {
         loop % table.length() {
             haystack := table[A_Index]
             
-            If (matchQuantity) {
+            If matchQuantity {
                 If (haystack.name = drop.name) and (haystack.quantity = drop.quantity)
                     return A_Index
                 else
