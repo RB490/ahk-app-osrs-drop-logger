@@ -1,12 +1,10 @@
 Class ClassGuiStats extends gui {
     Setup() {
-        DetectHiddenWindows, On
-        If WinExist(this.ahkid) {
-            this.ShowGui()
-            this.CheckPos()
+        If this.IsVisible {
+            this.Activate()
             return
         }
-
+        
         ; set icon
         icoPath := DIR_GUI_ICONS "\osrs_icons\Leagues_Tutor_icon.png"
         ico := new LoadPictureType(icoPath,, 1, "#000000") ; last parameter color will be transparent, you might need to change this.

@@ -30,6 +30,7 @@ Class ClassApiRunelite {
     GetItemId(itemString) {
         switch itemString
         {   ; runelite api json corrections - tested with monsters-complete.json from osrsbox
+            case "Nothing": return
             case "Bandana eyepatch (white)": return 8924 
             case "Bandana eyepatch (red)": return 8925
             case "Bandana eyepatch (blue)": return 8926
