@@ -98,6 +98,7 @@
 			hIcon := Icon
 		else
 			hIcon := DllCall("LoadImage", UInt,0, Str, Icon, UInt, 1, UInt, 0, UInt, 0, UInt, 0x10)
+		DetectHiddenWindows, On
 		SendMessage, 0x80, 0, hIcon ,, % this.ahkid  ; One affects Title bar and
 		SendMessage, 0x80, 1, hIcon ,, % this.ahkid  ; the other the ALT+TAB menu
 	}

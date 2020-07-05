@@ -1,6 +1,6 @@
 GuiAbout() {
-    hwnd := LOG_GUI.hwnd
-    gui about: -MinimizeBox +Owner%hwnd%
+    _owner := LOG_GUI.hwnd
+    gui about: -MinimizeBox +Owner%_owner% +hwndhwnd
 
     gui about: font, s13
     gui about: add, text, , Github

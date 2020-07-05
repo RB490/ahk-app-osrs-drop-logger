@@ -6,6 +6,11 @@ Class ClassGuiStats extends gui {
             this.CheckPos()
             return
         }
+
+        ; set icon
+        icoPath := DIR_GUI_ICONS "\osrs_icons\Leagues_Tutor_icon.png"
+        ico := new LoadPictureType(icoPath,, 1, "#000000") ; last parameter color will be transparent, you might need to change this.
+        this.SetIcon(ico.GetHandle())
         
         this.options("+Resize")
         this.margin := 5
@@ -138,7 +143,7 @@ Class ClassGuiStats extends gui {
             this.averageListViewFocusedRow := this.LvAvg.GetNext(, "Focused")
     }
 
-    Resize() {
+    Size() {
         AutoXYWH("wh", "SysListView323")
         AutoXYWH("h", "SysListView322", "SysListView323")
     }

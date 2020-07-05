@@ -1,8 +1,13 @@
 class ClassGuiSettings extends gui {
     Setup() {
         margin := 10
-        
-        this.Options("-MinimizeBox +LabelsettingsGui_")
+
+        ; set icon
+        icoPath := DIR_GUI_ICONS "\osrs_icons\Bounty_Hunter_-_task_config_icon.png"
+        ico := new LoadPictureType(icoPath,, 1, "#000000") ; last parameter color will be transparent, you might need to change this.
+        this.SetIcon(ico.GetHandle())
+
+        this.Options("-MinimizeBox")
 
         this.Add("checkbox", "x" margin, "Auto show stats")
         If (DB_SETTINGS.logGuiAutoShowStats)
@@ -25,8 +30,8 @@ class ClassGuiSettings extends gui {
             this.Add("dropdownlist",, ITEM_IMAGE_TYPES)
             this.Control("Choose", "ComboBox1", DB_SETTINGS.logGuiItemImageType)
 
-        this.Add("button", "x" margin " w140 gsettingsGui_btnSave", "Save")
-        
+        this.Add("button", "x" margin " w140", "Save", this.Save.Bind(this))
+
         this.Show()
         DetectHiddenWindows, Off
         WinWaitClose, % this.ahkid
@@ -46,11 +51,3 @@ class ClassGuiSettings extends gui {
         this.hide()
     }
 }
-
-settingsGui_btnSave:
-    SETTINGS_GUI.Save()
-return
-
-settingsGui_close:
-    SETTINGS_GUI.Close()
-return

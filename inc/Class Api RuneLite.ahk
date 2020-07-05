@@ -6,8 +6,15 @@ Class ClassApiRunelite {
             this.Load()
     }
 
+    apiHubUrl[] {
+        get {
+            this.Load()
+            return this.apiHubUrl
+        }
+    }
+
     Load() {
-        If IsObject(this.obj)
+        If this.isLoaded
             return
         
         this.apiHubUrl := "https://static.runelite.net/api/http-service/"
@@ -16,6 +23,8 @@ Class ClassApiRunelite {
 
         this._GetJson()
         this._SetJson()
+
+        this.isLoaded := true
     }
 
     GetItemId(itemString) {

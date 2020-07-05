@@ -29,6 +29,7 @@
     , QUANTITY_GUI           := new ClassGuiQuantity("Quantity Gui")
     , SETTINGS_GUI           := new ClassGuiSettings("Settings Gui")
     , STATS_GUI              := new ClassGuiStats("Stats Gui")
+    , ABOUT_GUI              := new ClassGuiAbout("About Gui")
     , MIN_DROP_SIZE          := 10
     , MAX_DROP_SIZE          := 80
     , MIN_ROW_LENGTH         := 1
@@ -71,7 +72,11 @@ return
         ; debug := new QUANTITY_GUI.Debug(QUANTITY_GUI)
         ; debug.Load()
 
-        ; return
+        ; STATS_GUI.Setup()
+
+        ABOUT_GUI.Setup()
+
+        return
         ; SETTINGS_GUI.Setup()
         ; DB_SETTINGS.selectedMob := "Ice giant"
         DROP_TABLE.Get(DB_SETTINGS.selectedMob)
@@ -100,5 +105,6 @@ return
     #Include Class Gui Quantity.ahk
     #Include Class Gui Settings.ahk
     #Include Class Gui Stats.ahk
+    #Include Class Gui About.ahk
     #Include Func Gui About.ahk
     #Include Functions.ahk
