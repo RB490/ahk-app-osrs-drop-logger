@@ -243,9 +243,12 @@ DownloadMobImage(mob) {
     path := DIR_MOB_IMAGES "\" mob ".png"
     If IsPicWithDimension(path)
         return
+    If FileExist(path)
+        FileDelete % path
     url := WIKI_API.img.GetMobImage(mob)
 
     DownloadImageElseReload(url, path)
+    imgResize(path, 100)
 }
 
 DownloadMissingItemImages() {

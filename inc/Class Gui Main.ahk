@@ -64,11 +64,7 @@ class ClassGuiMain extends gui {
             return  
         }
         
-        path := DIR_MOB_IMAGES "\" DB_SETTINGS.selectedMob ".png"
-        If !FileExist(path) {
-            url := WIKI_API.img.GetMobImage(DB_SETTINGS.selectedMob)
-            DownloadToFile(url, path)
-        }
+        DownloadMobImage(DB_SETTINGS.selectedMob)
 
         this.SetText(this._btnLog, "       Log")
         SetButtonIcon(this._btnLog, path, 1, 44) ; r2 = 30, r3 = 44

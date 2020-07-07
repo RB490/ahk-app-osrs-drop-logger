@@ -11,8 +11,6 @@ feature > idea > use item id's everywhere
 
 Create download all mob drop tables function similar to DownloadMissingItemImages() to debug
 
-'bug' > item wiki icons normal pots only download 1 dose, item ids from 113 to 191
-
 refactor > eliminate global vars
 
 refactor > go through every file

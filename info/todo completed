@@ -473,3 +473,7 @@ refactor > use good Libaries
             If this not feasible, maybe allow resizing of the log gui
     Updated Gui Class?
         Or no maybe gui class at all
+
+'bug' > item wiki icons normal pots only download 1 dose, item ids from 113 to 191
+
+reduce mob image size on disk > 4300 item images are 10mb 600 or so mobs are 25mb

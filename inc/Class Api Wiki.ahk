@@ -224,20 +224,24 @@ class ClassApiWiki {
             }
         }
 
-        GetMobImage() {
-            elements := this.parent._GetDocElementsBy(this.doc, "class", "infobox-image")
-            
-            ; retrieve image containing 'this.pageName' incase infobox has multiple images eg. 'Arianwyn'
+        GetMobImage() { ; not scaling in output url as not every mob has a scalable 'thumb' image
+            elements := this.parent._GetDocElementsBy(this.doc, "class", "infobox-full-width-content") ; infobox-image
+
+            If (elements.length = 1)
+                return this.parent.url "/" this._getImageFromInnerHtml(elements[0].innerHtml)
+
+            ; if infobox has multiple images eg. 'Arianwyn' or 'Glough'
             loop % elements.length {
-                customHtml .= elements[A_Index-1].innerHtml "`n"
                 images := elements[A_Index-1].GetElementsByClassName("image")
                 If images.length {
-                    imageInnerHtml := images[0].innerHtml
-                    If InStr(imageInnerHtml, this.pageName)
-                        return this.parent.url "/" this._getImageFromInnerHtml(imageInnerHtml)
+                    innerHtml := images[0].innerHtml
+                    If InStr(innerHtml, "srcset=") ; only the first image in mob infoboxes seems to have this property
+                        return this.parent.url "/" this._getImageFromInnerHtml(innerHtml)
                 }
             }
-            return this.parent.url "/" this._getImageFromInnerHtml(elements[0].innerHtml)
+            
+            msgbox, 4160, , % A_ThisFunc ": Could not find image for '" this.pageName "' `n`nClosing.."
+            exitapp
         }
 
         GetItemImages() {
