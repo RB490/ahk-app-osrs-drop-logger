@@ -26,7 +26,7 @@ Class ClassDropTable {
         If !DEBUG_MODE
             SplashTextOn, 300, 75, % A_ScriptName, Retrieving drop table for %input%...
 
-        this.obj := WIKI_API.GetDroptables(input)
+        this.obj := WIKI_API.table.GetDroptable("Vorkath")
         If !this.obj.length() {
             msgbox, 4160, , % A_ThisFunc ": Could not find drop table for '" input "'!"
             SplashTextOff
