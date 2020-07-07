@@ -1,3 +1,16 @@
+feature > progress class gui? to prevent showing and closing a bunch of splashtext windows
+    could have identical input to splashbox for ease of use
+
+feature > convert osrsbox api downloadallimages() into a test class or something like that
+    maybe just osrsbox api or download class
+
+feature > idea > use item id's everywhere
+    add them in wiki class
+    use them in stats class
+    use them when calling runelite class etc
+
+Create download all mob drop tables function similar to DownloadMissingItemImages() to debug
+
 'bug' > item wiki icons normal pots only download 1 dose, item ids from 113 to 191
 
 refactor > eliminate global vars

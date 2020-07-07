@@ -178,10 +178,12 @@ ImgResize(img, scale) {
     Gdip_Shutdown(pToken)  ; Close Gdip
 }
 
-DownloadMissingItemImages() {
+LoadOSRSBoxApi() {
+    If IsObject(DB_OSRSBOX.obj)
+        return
     allMonstersApiUrl := "https://www.osrsbox.com/osrsbox-db/monsters-complete.json"
-    allItemsApiUrl := "https://www.osrsbox.com/osrsbox-db/monsters-complete.json"
-    file := A_ScriptDir "\res\monsters-complete.json"
+    allItemsApiUrl := "https://www.osrsbox.com/osrsbox-db/items-complete.json"
+    file := PATH_OSRSBOX_JSON
 
     ; retrieve json
     SplashTextOn, 350, 100, % A_ScriptName " - " A_ThisFunc "()", Loading database
@@ -190,24 +192,68 @@ DownloadMissingItemImages() {
         content := json.load(content)
         FileAppend, % json.dump(content,,2), % file
     }
-    obj := json.load(FileRead(file))
+    DB_OSRSBOX.obj := obj := json.load(FileRead(file))
 
-    ; loop images
-    downloadList := {}
+    ; get info
+    mobList := {}
+    dropList := {}
     loop % obj.length() {
         mob := obj[A_Index]
+        If mob.name and !InStr(mob.wiki_name, "(") ; 'Archer (Ardougne)' gets turned into 'Archer'
+            mobList[mob.name] := ""
         drops := mob.drops
         loop % drops.length() {
             drop := drops[A_Index]
 
-            downloadList[drop.name] := ""
+            dropList[drop.name] := ""
         }
     }
+    DB_OSRSBOX.mobList := mobList
+    DB_OSRSBOX.dropList := dropList
     SplashTextOff
+}
+
+DownloadAllMobDroptables() {
+    LoadOSRSBoxApi()
+
+    SplashTextOn, 350, 100, % A_ScriptName A_Space "-" A_ThisFunc "()", Retrieving drop tables
+    totalMobs := DB_OSRSBOX.mobList.count()
+    for mob in DB_OSRSBOX.mobList
+    {
+        ControlSetText, Static1, % A_Index " / " totalMobs " - " mob, % A_ScriptName A_Space "-" A_ThisFunc "()"
+        WIKI_API.table.GetDroptable(mob)
+    }
+    SplashTextOff
+}
+
+DownloadMissingMobImages() {
+    LoadOSRSBoxApi()
+
+    SplashTextOn, 350, 100, % A_ScriptName A_Space "-" A_ThisFunc "()", Retrieving drop tables
+    totalMobs := DB_OSRSBOX.mobList.count()
+    for mob in DB_OSRSBOX.mobList
+    {
+        ControlSetText, Static1, % A_Index " / " totalMobs " - " mob, % A_ScriptName A_Space "-" A_ThisFunc "()"
+        DownloadMobImage(mob)
+    }
+    SplashTextOff
+}
+
+DownloadMobImage(mob) {
+    path := DIR_MOB_IMAGES "\" mob ".png"
+    If IsPicWithDimension(path)
+        return
+    url := WIKI_API.img.GetMobImage(mob)
+
+    DownloadImageElseReload(url, path)
+}
+
+DownloadMissingItemImages() {
+    LoadOSRSBoxApi()
 
     SplashTextOn, 350, 100, % A_ScriptName A_Space "-" A_ThisFunc "()", Retrieving images
-    totalItems := downloadList.count()
-    for item in downloadList
+    totalItems := DB_OSRSBOX.dropList.count()
+    for item in DB_OSRSBOX.dropList
     {
         ControlSetText, Static1, % A_Index " / " totalItems " - " item, % A_ScriptName A_Space "-" A_ThisFunc "()"
         DownloadItemImages(item)
@@ -225,7 +271,7 @@ DownloadItemImages(item) {
     If !IsPicWithDimension(path) {
         FileDelete % path
         url := wikiImageUrl.icon
-        DownloadImageOrQuit(url, path)
+        DownloadImageElseReload(url, path)
         imgAddBorder(path, 5)
     }
     
@@ -234,7 +280,7 @@ DownloadItemImages(item) {
     If !IsPicWithDimension(path) {
         FileDelete % path
         url := wikiImageUrl.detail
-        DownloadImageOrQuit(url, path)
+        DownloadImageElseReload(url, path)
         imgResize(path, 50)
         imgAddBorder(path, 10)
     }
@@ -244,18 +290,18 @@ DownloadItemImages(item) {
     If !IsPicWithDimension(path) {
         FileDelete % path
         url := RUNELITE_API.GetItemImgUrl(item)
-        DownloadImageOrQuit(url, path)
+        DownloadImageElseReload(url, path)
     }
 }
 
-IsPicWithDimension(pic, pix := 10) {
+IsPicWithDimension(pic, pix := 3) { ; adamant dart is 9x17
     IsPic := IsPicture(pic, picW, picH)
     If !IsPic or (picW < pix) or (picH < pix)
         return false
     return true
 }
 
-DownloadImageOrQuit(url, path) {
+DownloadImageElseReload(url, path) {
     DownloadToFile(url, path)
 
     If !IsPicWithDimension(path) {

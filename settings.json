@@ -1,6 +1,6 @@
 {
-  "guiLogX": "",
-  "guiLogY": "",
+  "guiLogX": 764,
+  "guiLogY": 414,
   "guiStatsH": "",
   "guiStatsW": "",
   "guiStatsX": "",
@@ -10,9 +10,10 @@
   "logGuiItemImageType": "Wiki Detailed",
   "logGuiMaxRowDrops": 8,
   "logGuiTablesMergeBelowX": 27,
-  "selectedLogFile": "",
-  "selectedMob": "Vorkath",
+  "selectedLogFile": "D:\\Downloads\\debugLog.json",
+  "selectedMob": "Animated Mithril Armour",
   "selectedMobs": {
+    "Animated Mithril Armour": "",
     "Ice giant": "",
     "Vorkath": ""
   }

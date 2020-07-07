@@ -6,13 +6,17 @@ class ClassApiWiki {
         this.table := new this.ClassDropTables(this)
     }
 
-    GetPageUrl(pageName) {
-        return this.url "/w/" this._GetPageNameInWikiFormat(pageName)
+    GetPageUrl(pageName, titleCasePageNameFormat := false) {
+        return this.url "/w/" this._GetPageNameInWikiFormat(pageName, titleCasePageNameFormat)
     }
 
     GetPageHtml(pageName) {
-        html := DownloadToString(this.GetPageUrl(pageName))
-        If InStr(html, "Nothing interesting happens") and InStr(html, "Weird_gloop_detail.png") {
+        html := DownloadToString(this.GetPageUrl(pageName)) ; 'A_doubt'
+
+        If this._IsErrorPage(html) ; retry with title case format: 'A_Doubt'
+            html := DownloadToString(this.GetPageUrl(pageName, "titleCasePageNameFormat"))
+
+        If this._IsErrorPage(html) {
             msgbox, 4160, , % A_ThisFunc ": Invalid wiki page for '" pageName "'!`n`nClosing.."
             exitapp
         }
@@ -27,7 +31,17 @@ class ClassApiWiki {
         return doc
     }
 
-    _GetPageNameInWikiFormat(pageName) { ; eg. 'Rune Axe' becomes 'Rune_axe'
+    _IsErrorPage(html) {
+        If InStr(html, "Nothing interesting happens") and InStr(html, "Weird_gloop_detail.png")
+            return true
+    }
+
+    _GetPageNameInWikiFormat(pageName, titleCasePageNameFormat := false) { ; eg. 'Rune Axe' becomes 'Rune_axe'
+        If (titleCasePageNameFormat) {
+            StringUpper, output, output, T
+            output := StrReplace(pageName, A_Space, "_")
+            return output
+        }
         StringLower, output, pageName
         output := StrReplace(pageName, A_Space, "_")
 
@@ -64,7 +78,11 @@ class ClassApiWiki {
             this.pageName := pageName
             this.html := this.parent.GetPageHtml(pageName)
             this.doc := this.parent.GetPageDoc(this.html)
+            If !this._PageContainsTableTitles() ; otherwise invalid, eg: https://oldschool.runescape.wiki/w/Animated_steel_armour_(Tarn%27s_Lair)
+                return false
             this.tables := this._GetDropTables(this.html)
+            If !this.tables
+                return false
             output := {}
             loop % this.tables.length {
                 tableHtmlIndex := A_Index-1
@@ -142,9 +160,7 @@ class ClassApiWiki {
                 If (firstRowLength = 6)
                     return tables
             }
-
-            msgbox, 4160, , % A_ThisFunc ": Could not find any drop tables tables for '" this.pageName "' `n`nClosing.."
-            exitapp
+            return false
         }
 
         /*
@@ -178,6 +194,12 @@ class ClassApiWiki {
 
             return output
         }
+
+        _PageContainsTableTitles() {
+            elements := this.doc.getElementsByClassName("mw-headline")
+            If elements.length
+                return true
+        }
     }
 
     Class ClassImages {
@@ -191,16 +213,30 @@ class ClassApiWiki {
                 this.url := this.parent.GetPageUrl(pageName)
                 this.html := this.parent.GetPageHtml(pageName)
                 this.doc := this.parent.GetPageDoc(this.html)
-                this.potionDose := this._GetPotionDose(pageName)
-                If (this.potionDose)
-                    this.htmlPotionDose := this.potionDose - 1 ; html arrays start at 0
-                else
-                    this.htmlPotionDose := 0
+
+                If (caller = "GetItemImages") {
+                    this.potionDose := this._GetPotionDose(pageName)
+                    If (this.potionDose)
+                        this.htmlPotionDose := this.potionDose - 1 ; html arrays start at 0
+                    else
+                        this.htmlPotionDose := 0
+                }
             }
         }
 
         GetMobImage() {
-            elements := this.parent._GetDocElementsBy(doc, "class", "infobox-image")
+            elements := this.parent._GetDocElementsBy(this.doc, "class", "infobox-image")
+            
+            ; retrieve image containing 'this.pageName' incase infobox has multiple images eg. 'Arianwyn'
+            loop % elements.length {
+                customHtml .= elements[A_Index-1].innerHtml "`n"
+                images := elements[A_Index-1].GetElementsByClassName("image")
+                If images.length {
+                    imageInnerHtml := images[0].innerHtml
+                    If InStr(imageInnerHtml, this.pageName)
+                        return this.parent.url "/" this._getImageFromInnerHtml(imageInnerHtml)
+                }
+            }
             return this.parent.url "/" this._getImageFromInnerHtml(elements[0].innerHtml)
         }
 
@@ -213,10 +249,9 @@ class ClassApiWiki {
 
         _GetItemIcon() {
             ; get (last eg. 5 seeds) item html name from infobox
-            elements := this.parent._GetDocElementsBy(doc, "class", "inventory-image")
+            elements := this.parent._GetDocElementsBy(this.doc, "class", "inventory-image")
             infoImages := elements[0].getElementsByClassName("image")
             html := infoImages[infoImages.length-1].innerHtml
-
             If !this.potionDose
                 return this.parent.url "/" this._getImageFromInnerHtml(html)
 
@@ -225,7 +260,7 @@ class ClassApiWiki {
             htmlAlt := StrReplace(htmlAlt, "(1)", "(" this.potionDose ")")
             
             ; return correct image in image list 
-            images := this.parent._GetDocElementsBy(doc, "class", "image")
+            images := this.parent._GetDocElementsBy(this.doc, "class", "image")
             loop % images.length {
                 loopHtml := images[A_Index-1].innerHtml
                 loopAlt := this._getAltFromInnerHtml(loopHtml)
@@ -238,24 +273,20 @@ class ClassApiWiki {
         }
 
         _GetItemDetailed() {
-            elements := this.parent._GetDocElementsBy(doc, "class", "floatleft")
-            If (elements.length <= this.htmlPotionDose) {
-                msgbox, 4160, , % A_ThisFunc ": Could not find image for '" this.pageName "' with potion dose '" this.potionDose "' `n`nClosing.."
-                exitapp
-            }
+            elements := this.parent._GetDocElementsBy(this.doc, "class", "floatleft")
             return this.parent.url "/" this._getImageFromInnerHtml(elements[this.htmlPotionDose].innerHtml)
         }
 
         _GetPotionDose(pageName) {
             potionDose := 0
-            If InStr(pageName, "(1)")
-                potionDose := 1
-            else If InStr(pageName, "(2)")
-                potionDose := 2
-            else If InStr(pageName, "(3)")
-                potionDose := 3
-            else If InStr(pageName, "(4)")
-                potionDose := 4
+            elements := this.parent._GetDocElementsBy(this.doc, "class", "floatleft")
+            If (elements.length < 4) ; potions will have 4 images. 'Games necklace (2)' has 1
+                return potionDose
+
+            potionDose := InStr(pageName, "(1)") ? 1 : potionDose
+            potionDose := InStr(pageName, "(2)") ? 2 : potionDose
+            potionDose := InStr(pageName, "(3)") ? 3 : potionDose
+            potionDose := InStr(pageName, "(4)") ? 4 : potionDose
             return potionDose
         }
 
@@ -268,7 +299,8 @@ class ClassApiWiki {
 
         _getImageFromInnerHtml(innerHtml) {
             html := innerHtml
-            html := SubStr(html, InStr(html, "src=") + 6)
+            imgNeedleStart = src="/images
+            html := SubStr(html, InStr(html, imgNeedleStart) + 6)
             html := SubStr(html, 1, InStr(html, "?") - 1)
             return html
         }

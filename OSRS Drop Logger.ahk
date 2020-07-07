@@ -17,6 +17,8 @@
     , DIR_GUI_ICONS          := A_ScriptDir "\res\img\ico"
     , PATH_RUNELITE_JSON     := A_ScriptDir "\res\runelite.json"
     , PATH_SETTINGS          := A_ScriptDir "\settings.json"
+    , DB_OSRSBOX             := {}
+    , PATH_OSRSBOX_JSON      := A_ScriptDir "\res\monsters-complete.json"
     , DB_SETTINGS            := {}
     , SELECTED_DROPS         := {}
     , RUNELITE_API           := new ClassApiRunelite
@@ -69,7 +71,7 @@ return
         DROP_STATS.UpdateAdvancedStats()
     return
     debugAutoexec:
-        WIKI_API.table.GetDroptable("Vorkath")
+        MAIN_GUI.Setup()
     return
 
 ; Includes

@@ -21,14 +21,13 @@ Class ClassDropTable {
         msgbox, 4160, , % A_ThisFunc ": Could not find drop '" input "'!"
     }
 
-    ; input = {string} wiki page containing drop tables
-    Get(input) {
+    Get(pageName) {
         If !DEBUG_MODE
-            SplashTextOn, 300, 75, % A_ScriptName, Retrieving drop table for %input%...
+            SplashTextOn, 300, 75, % A_ScriptName, Retrieving drop table for %pageName%...
 
-        this.obj := WIKI_API.table.GetDroptable("Vorkath")
+        this.obj := WIKI_API.table.GetDroptable(pageName)
         If !this.obj.length() {
-            msgbox, 4160, , % A_ThisFunc ": Could not find drop table for '" input "'!"
+            msgbox, 4160, , % A_ThisFunc ": Could not find drop table for '" pageName "'!"
             SplashTextOff
             return false
         }
