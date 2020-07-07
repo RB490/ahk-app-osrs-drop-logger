@@ -15,13 +15,18 @@ FileCreateDir, % A_ScriptDir "\bin"
 FileDelete % A_ScriptDir "\res\monsters-complete.json"
 
 ; create file install list
-run % A_ScriptDir "\Create FileInstall.ahk"
+RunWait % A_ScriptDir "\Create FileInstall.ahk"
 
 ; compile script
 SplitPath, A_AhkPath, OutFileName, OutDir, OutExtension, OutNameNoExt, OutDrive
 compExe := OutDir "\Compiler\Ahk2Exe.exe"
-run %compExe% /in "OSRS Drop Logger.ahk" /out "%A_ScriptDir%\bin\OSRS Drop Logger.exe" /icon "app.ico"
+RunWait %compExe% /in "OSRS Drop Logger.ahk" /out "%A_ScriptDir%\bin\OSRS Drop Logger.exe" /icon "app.ico"
 
 ; cleanup file install list
 FileDelete % A_ScriptDir "\FileInstall.txt"
+
+; sucess message
+tooltip Done!
+sleep 250
+
 exitapp
