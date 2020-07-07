@@ -479,3 +479,5 @@ refactor > use good Libaries
 reduce mob image size on disk > 4300 item images are 10mb 600 or so mobs are 25mb
 
 compile > need script to create \res\ fileInstall *i include file
+
+Create download all mob drop tables function similar to DownloadMissingItemImages() to debug

@@ -11,8 +11,6 @@ feature > idea > use item id's everywhere
     use them in stats class
     use them when calling runelite class etc
 
-Create download all mob drop tables function similar to DownloadMissingItemImages() to debug
-
 refactor > eliminate global vars
 
 refactor > go through every file
