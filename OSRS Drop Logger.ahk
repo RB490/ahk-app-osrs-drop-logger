@@ -69,32 +69,9 @@ return
         DROP_STATS.UpdateAdvancedStats()
     return
     debugAutoexec:
-        ; debug := new QUANTITY_GUI.Debug(QUANTITY_GUI)
-        ; debug.Load()
-
-        ; STATS_GUI.Setup()
-        ; DROP_TABLE.Get("goblin")
-        ; LOG_GUI.Setup()
-        ; STATS_GUI.Setup()
-
-        return
-        ; SETTINGS_GUI.Setup()
-        ; DB_SETTINGS.selectedMob := "Ice giant"
-        DROP_TABLE.Get(DB_SETTINGS.selectedMob)
-        DB_SETTINGS.selectedLogFile := "D:\Programming and projects\ahk-app-osrs-drop-logger\info\ClassDropLog.json"
-        DROP_LOG.Load(DB_SETTINGS.selectedLogFile)
-        LOG_GUI.Setup()
-        ; STATS_GUI.Setup()
-        ; DROP_STATS.UpdateBasicStats()
-        ; DROP_STATS.UpdateAdvancedStats()
     return
 
 ; Includes
-    #Include, <JSON>
-    #Include, <class gui>
-    #Include, <CommandFunctions>
-    #Include, <Gdip_all>
-    #Include, <LoadPictureType>
     #Include, %A_ScriptDir%\inc
     #Include Class Api RuneLite.ahk
     #Include Class Api Wiki.ahk
@@ -109,3 +86,24 @@ return
     #Include Class Gui About.ahk
     #Include Func Gui About.ahk
     #Include Functions.ahk
+
+; libraries
+    #Include, %A_ScriptDir%\lib\
+    #Include, _QPC.ahk
+    #Include, AddCommas.ahk
+    #Include, AutoXYWH.ahk
+    #Include, Class Gui.ahk
+    #Include, CommandFunctions.ahk
+    #Include, DownloadToFile.ahk
+    #Include, DownloadToString.ahk
+    #Include, FormatSeconds.ahk
+    #Include, Gdip_All.ahk
+    #Include, GuiButtonIcon.ahk
+    #Include, IsPicture.ahk
+    #Include, JSON.ahk
+    #Include, LoadPictureType.ahk
+    #Include, MTimer.ahk
+    #Include, ObjFullyClone.ahk
+    #Include, ResConImg.ahk
+    #Include, SetButtonIcon.ahk
+    #Include, WinGetPos.ahk

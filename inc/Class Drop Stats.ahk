@@ -5,7 +5,7 @@ Class ClassDropStats {
 
         this.obj := ObjFullyClone(DROP_LOG.obj)
         stats := {}
-
+        
         ; total
         stats.totalTrips := totalTrips := this._getTotalTrips()
         stats.totalKills := totalKills := this._getTotalKills() , this.totalKills := totalKills

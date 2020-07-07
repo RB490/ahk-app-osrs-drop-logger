@@ -217,12 +217,12 @@ DownloadMissingItemImages() {
 
 DownloadItemImages(item) {
     id := RUNELITE_API.GetItemId(item)
-    If !IsPicture(DIR_ITEM_ICON "\" id ".png") or !IsPicture(DIR_ITEM_DETAIL "\" id ".png")
-        wikiImageUrl := WIKI_API.GetImages(item, 50)
+    If !IsPicWithDimension(DIR_ITEM_ICON "\" id ".png") or !IsPicWithDimension(DIR_ITEM_DETAIL "\" id ".png")
+        wikiImageUrl := WIKI_API.img.GetItemImages(item, 50)
 
     ; wiki small
     path := DIR_ITEM_ICON "\" id ".png"
-    If !IsPicture(path) {
+    If !IsPicWithDimension(path) {
         FileDelete % path
         url := wikiImageUrl.icon
         DownloadImageOrQuit(url, path)
@@ -231,7 +231,7 @@ DownloadItemImages(item) {
     
     ; wiki detail
     path := DIR_ITEM_DETAIL "\" id ".png"
-    If !IsPicture(path) {
+    If !IsPicWithDimension(path) {
         FileDelete % path
         url := wikiImageUrl.detail
         DownloadImageOrQuit(url, path)
@@ -241,19 +241,24 @@ DownloadItemImages(item) {
 
     ; runelite
     path := DIR_ITEM_RUNELITE "\" id ".png"
-    If !IsPicture(path) {
+    If !IsPicWithDimension(path) {
         FileDelete % path
         url := RUNELITE_API.GetItemImgUrl(item)
         DownloadImageOrQuit(url, path)
     }
 }
 
+IsPicWithDimension(pic, pix := 10) {
+    IsPic := IsPicture(pic, picW, picH)
+    If !IsPic or (picW < pix) or (picH < pix)
+        return false
+    return true
+}
+
 DownloadImageOrQuit(url, path) {
     DownloadToFile(url, path)
 
-    IsPicture := IsPicture(path, picW, picH)
-
-    If !IsPicture or (picW < 5) or (picH < 5) {
+    If !IsPicWithDimension(path) {
         msgbox, 4160, ,
         ( LTrim
             %A_ThisFunc%: Could not retrieve image
