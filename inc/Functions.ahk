@@ -14,7 +14,8 @@ SaveSettings() {
 LoadSettings() {
     DB_SETTINGS := json.load(FileRead(PATH_SETTINGS))
     If !IsObject(DB_SETTINGS) {
-        msgbox, 4160, , % A_ThisFunc ": Resetting settings"
+        If DEBUG_MODE
+            msgbox, 4160, , % A_ThisFunc ": Resetting settings"
         DB_SETTINGS := {}
     }
     ValidateSettings()
@@ -26,8 +27,8 @@ ValidateSettings() {
     defaultSettings.guiLogY := ""
     defaultSettings.guiStatsX := ""
     defaultSettings.guiStatsY := ""
-    defaultSettings.guiStatsW := ""
-    defaultSettings.guiStatsH := ""
+    defaultSettings.guiStatsW := 570
+    defaultSettings.guiStatsH := 400
     defaultSettings.logGuiAutoShowStats := false
     defaultSettings.logGuiDropSize := 33
     defaultSettings.logGuiMaxRowDrops := 8
@@ -50,6 +51,11 @@ ValidateSettings() {
 
     If (DB_SETTINGS.logGuiTablesMergeBelowX < MIN_TABLE_SIZE)
         DB_SETTINGS.logGuiTablesMergeBelowX := 27 ; 27 = rdt
+
+    If (guiStatsW < 140)
+        DB_SETTINGS.guiStatsW := 570
+    If (guiStatsH < 140)
+        DB_SETTINGS.guiStatsH := 400
 }
 
 GetItemImageDirFromSetting() {

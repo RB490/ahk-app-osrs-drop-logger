@@ -1,4 +1,7 @@
 ; Script options
+    If FileExist(A_ScriptDir "\FileInstall.txt")
+        FileDelete, % A_ScriptDir "\FileInstall.txt"
+    #Include *i %A_ScriptDir%\FileInstall.txt
     #SingleInstance, Force
     #NoEnv ; Recommended for performance and compatibility with future AutoHotkey releases.
     CoordMode, Mouse, Screen
@@ -8,7 +11,7 @@
     #MaxMem, 400 ; downloadMissingItemImages()
 
 ; Global vars
-    Global DEBUG_MODE        := true
+    Global DEBUG_MODE        := false
     , PROJECT_WEBSITE        := "https://github.com/RB490/ahk-app-osrs-drop-logger"
     , DIR_ITEM_ICON          := A_ScriptDir "\res\img\item\icon"
     , DIR_ITEM_DETAIL        := A_ScriptDir "\res\img\item\detail"

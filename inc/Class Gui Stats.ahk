@@ -168,10 +168,10 @@ Class ClassGuiStats extends gui {
         If (guiStatsY + guiStatsH > A_ScreenHeight) ; offscreen-bottom
             DB_SETTINGS.guiStatsY := A_ScreenHeight - guiStatsH
 
-        If (guiStatsW < 175) ; listview1 width = 175
-            DB_SETTINGS.guiStatsW := 250
-        If (guiStatsH < 135) ; listview1 height = 135
-            DB_SETTINGS.guiStatsH := 250
+        If (guiStatsW < 140) ; listview1 width = 175
+            DB_SETTINGS.guiStatsW := 175
+        If (guiStatsH < 140) ; listview1 height = 135
+            DB_SETTINGS.guiStatsH := 135
 
         this.ShowGui()
     }

@@ -1,3 +1,5 @@
+bug > gui log enter hotkey does not add kill drops
+
 feature > progress class gui? to prevent showing and closing a bunch of splashtext windows
     could have identical input to splashbox for ease of use
 
@@ -19,6 +21,8 @@ refactor > go through every file
     better code structure
         possibly nest / extend some classes
     remove duplicate code
+
+compile > need script to create \res\ fileInstall *i include file
 
 -------------------------- Notes --------------------------
 refactor > 'inspiration'
