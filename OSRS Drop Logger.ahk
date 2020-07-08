@@ -11,36 +11,37 @@
     #MaxMem, 400 ; downloadMissingItemImages()
 
 ; Global vars
-    Global DEBUG_MODE        := false
-    , PROJECT_WEBSITE        := "https://github.com/RB490/ahk-app-osrs-drop-logger"
-    , DIR_ITEM_ICON          := A_ScriptDir "\res\img\item\icon"
-    , DIR_ITEM_DETAIL        := A_ScriptDir "\res\img\item\detail"
-    , DIR_ITEM_RUNELITE      := A_ScriptDir "\res\img\item\runelite"
-    , DIR_MOB_IMAGES         := A_ScriptDir "\res\img\mobs"
-    , DIR_GUI_ICONS          := A_ScriptDir "\res\img\ico"
-    , PATH_RUNELITE_JSON     := A_ScriptDir "\res\runelite.json"
-    , PATH_SETTINGS          := A_ScriptDir "\settings.json"
-    , DB_OSRSBOX             := {}
-    , PATH_OSRSBOX_JSON      := A_ScriptDir "\res\monsters-complete.json"
-    , DB_SETTINGS            := {}
-    , SELECTED_DROPS         := {}
-    , RUNELITE_API           := new ClassApiRunelite
-    , WIKI_API               := new ClassApiWiki
-    , DROP_LOG               := new ClassDropLog
-    , DROP_STATS             := new ClassDropStats
-    , DROP_TABLE             := new ClassDropTable
-    , LOG_GUI                := new ClassGuiLog("Log Gui")
-    , MAIN_GUI               := new ClassGuiMain("Main Gui")
-    , QUANTITY_GUI           := new ClassGuiQuantity("Quantity Gui")
-    , SETTINGS_GUI           := new ClassGuiSettings("Settings Gui")
-    , STATS_GUI              := new ClassGuiStats("Stats Gui")
-    , ABOUT_GUI              := new ClassGuiAbout("About Gui")
-    , MIN_DROP_SIZE          := 10
-    , MAX_DROP_SIZE          := 80
-    , MIN_ROW_LENGTH         := 1
-    , MAX_ROW_LENGTH         := 25
-    , MIN_TABLE_SIZE         := 1
-    , ITEM_IMAGE_TYPES       := "Wiki Small|Wiki Detailed|RuneLite"
+    Global DEBUG_MODE       := true
+    , PROJECT_WEBSITE       := "https://github.com/RB490/ahk-app-osrs-drop-logger"
+    , DIR_ITEM_ICON         := A_ScriptDir "\res\img\item\icon"
+    , DIR_ITEM_DETAIL       := A_ScriptDir "\res\img\item\detail"
+    , DIR_ITEM_RUNELITE     := A_ScriptDir "\res\img\item\runelite"
+    , DIR_MOB_IMAGES        := A_ScriptDir "\res\img\mobs"
+    , DIR_GUI_ICONS         := A_ScriptDir "\res\img\ico"
+    , PATH_RUNELITE_JSON    := A_ScriptDir "\res\runelite.json"
+    , PATH_SETTINGS         := A_ScriptDir "\settings.json"
+    , DB_OSRSBOX            := {}
+    , PATH_OSRSBOX_JSON     := A_ScriptDir "\res\monsters-complete.json"
+    , DB_SETTINGS           := {}
+    , SELECTED_DROPS        := {}
+    , RUNELITE_API          := new ClassApiRunelite
+    , WIKI_API              := new ClassApiWiki
+    , DROP_LOG              := new ClassDropLog
+    , DROP_STATS            := new ClassDropStats
+    , DROP_TABLE            := new ClassDropTable
+    , LOG_GUI               := new ClassGuiLog("Log Gui")
+    , MAIN_GUI              := new ClassGuiMain("Main Gui")
+    , P                     := new ClassGuiProgress(A_ScriptName)
+    , QUANTITY_GUI          := new ClassGuiQuantity("Quantity Gui")
+    , SETTINGS_GUI          := new ClassGuiSettings("Settings Gui")
+    , STATS_GUI             := new ClassGuiStats("Stats Gui")
+    , ABOUT_GUI             := new ClassGuiAbout("About Gui")
+    , MIN_DROP_SIZE         := 10
+    , MAX_DROP_SIZE         := 80
+    , MIN_ROW_LENGTH        := 1
+    , MAX_ROW_LENGTH        := 25
+    , MIN_TABLE_SIZE        := 1
+    , ITEM_IMAGE_TYPES      := "Wiki Small|Wiki Detailed|RuneLite"
 
 ; Auto-execute
     FileCreateDir, % DIR_ITEM_ICON
@@ -75,6 +76,8 @@ return
     return
     debugAutoexec:
         DownloadMissingMobImages()
+        return
+        DownloadMissingMobImages()
     return
 
 ; Includes
@@ -86,6 +89,7 @@ return
     #Include Class Drop Table.ahk
     #Include Class Gui Log.ahk
     #Include Class Gui Main.ahk
+    #Include Class Gui Progress.ahk
     #Include Class Gui Quantity.ahk
     #Include Class Gui Settings.ahk
     #Include Class Gui Stats.ahk

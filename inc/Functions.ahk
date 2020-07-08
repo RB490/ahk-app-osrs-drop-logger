@@ -192,7 +192,14 @@ LoadOSRSBoxApi() {
     file := PATH_OSRSBOX_JSON
 
     ; retrieve json
+    ; PROGRESS_GUI.Setup(A_ThisFunc, "test")
+    P.Title(A_ThisFunc), P.P(A_ThisFunc, A_ThisFunc, A_ThisFunc, A_ThisFunc, A_ThisFunc)
+    ; TestFunc(1, 2, 34, 83)
+    ; PROGRESS_GUI.Test(A_ThisFunc)
+    pause
+    return
     SplashTextOn, 350, 100, % A_ScriptName " - " A_ThisFunc "()", Loading database
+
     If !FileExist(file) {
         content := DownloadToString(allMonstersApiUrl)
         content := json.load(content)
