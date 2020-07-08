@@ -1,3 +1,7 @@
+fix 'Fira Code' ligatures. Not showing right now.. -> 
+
+feature > use image list class where applicable. Only in gui stats i think
+
 bug > gui log enter hotkey does not add kill drops
 
 feature > progress class gui? to prevent showing and closing a bunch of splashtext windows

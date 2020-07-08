@@ -81,7 +81,7 @@ class ClassApiWiki {
             If !this._PageContainsTableTitles() ; otherwise invalid, eg: https://oldschool.runescape.wiki/w/Animated_steel_armour_(Tarn%27s_Lair)
                 return false
             this.tables := this._GetDropTables(this.html)
-            If !this.tables
+            If !this.tables.length
                 return false
             output := {}
             loop % this.tables.length {

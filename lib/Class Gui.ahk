@@ -1,4 +1,4 @@
-﻿Class GUI {
+﻿Class GUI { ; https://github.com/Run1e/Vibrancer/blob/master/lib/Class%20GUI.ahk
 	static Instances := []
 	
 	__New(Title := "AutoHotkey Window", Options := "") {
