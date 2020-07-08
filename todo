@@ -9,6 +9,7 @@ feature > progress class gui? to prevent showing and closing a bunch of splashte
 
 feature > convert osrsbox api downloadallimages() into a test class or something like that
     maybe just osrsbox api or download class
+    ^ this should be it easy to use one progress instance and dont have to reshow it
 
 feature > idea > use item id's everywhere
     add them in wiki class

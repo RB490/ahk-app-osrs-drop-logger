@@ -75,8 +75,8 @@ return
         DROP_STATS.UpdateAdvancedStats()
     return
     debugAutoexec:
-        DownloadMissingMobImages()
-        return
+        ; DownloadAllMobDroptables()
+        ; return
         DownloadMissingMobImages()
     return
 

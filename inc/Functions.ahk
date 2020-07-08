@@ -192,13 +192,7 @@ LoadOSRSBoxApi() {
     file := PATH_OSRSBOX_JSON
 
     ; retrieve json
-    ; PROGRESS_GUI.Setup(A_ThisFunc, "test")
-    P.Title(A_ThisFunc), P.P(A_ThisFunc, A_ThisFunc, A_ThisFunc, A_ThisFunc, A_ThisFunc)
-    ; TestFunc(1, 2, 34, 83)
-    ; PROGRESS_GUI.Test(A_ThisFunc)
-    pause
-    return
-    SplashTextOn, 350, 100, % A_ScriptName " - " A_ThisFunc "()", Loading database
+    P.Setup(A_ThisFunc, "Loading database file")
 
     If !FileExist(file) {
         content := DownloadToString(allMonstersApiUrl)
@@ -220,36 +214,37 @@ LoadOSRSBoxApi() {
 
             dropList[drop.name] := ""
         }
+        
     }
     DB_OSRSBOX.mobList := mobList
     DB_OSRSBOX.dropList := dropList
-    SplashTextOff
+    P.Destroy()
 }
 
 DownloadAllMobDroptables() {
     LoadOSRSBoxApi()
 
-    SplashTextOn, 350, 100, % A_ScriptName A_Space "-" A_ThisFunc "()", Retrieving drop tables
     totalMobs := DB_OSRSBOX.mobList.count()
+    P.Setup(A_ThisFunc, "Retrieving drop tables", totalMobs, A_Space)
     for mob in DB_OSRSBOX.mobList
     {
-        ControlSetText, Static1, % A_Index " / " totalMobs " - " mob, % A_ScriptName A_Space "-" A_ThisFunc "()"
+        P.B1(), P.T2(A_Index " / " totalMobs " - " mob)
         WIKI_API.table.GetDroptable(mob)
     }
-    SplashTextOff
+    P.Destroy()
 }
 
 DownloadMissingMobImages() {
     LoadOSRSBoxApi()
 
-    SplashTextOn, 350, 100, % A_ScriptName A_Space "-" A_ThisFunc "()", Retrieving drop tables
     totalMobs := DB_OSRSBOX.mobList.count()
+    P.Setup(A_ThisFunc, "Retrieving mob tables", totalMobs, A_Space)
     for mob in DB_OSRSBOX.mobList
     {
-        ControlSetText, Static1, % A_Index " / " totalMobs " - " mob, % A_ScriptName A_Space "-" A_ThisFunc "()"
+        P.B1(), P.T2(A_Index " / " totalMobs " - " mob)
         DownloadMobImage(mob)
     }
-    SplashTextOff
+    P.Destroy()
 }
 
 DownloadMobImage(mob) {
@@ -267,14 +262,14 @@ DownloadMobImage(mob) {
 DownloadMissingItemImages() {
     LoadOSRSBoxApi()
 
-    SplashTextOn, 350, 100, % A_ScriptName A_Space "-" A_ThisFunc "()", Retrieving images
     totalItems := DB_OSRSBOX.dropList.count()
+    P.Setup(A_ThisFunc, "Retrieving item images", totalItems, A_Space)
     for item in DB_OSRSBOX.dropList
     {
-        ControlSetText, Static1, % A_Index " / " totalItems " - " item, % A_ScriptName A_Space "-" A_ThisFunc "()"
+        P.B1(), P.T2(A_Index " / " totalItems " - " mob)
         DownloadItemImages(item)
     }
-    SplashTextOff
+    P.Destroy()
 }
 
 DownloadItemImages(item) {

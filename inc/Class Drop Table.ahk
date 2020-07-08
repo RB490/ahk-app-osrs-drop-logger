@@ -23,12 +23,12 @@ Class ClassDropTable {
 
     Get(pageName) {
         If !DEBUG_MODE
-            SplashTextOn, 300, 75, % A_ScriptName, Retrieving drop table for %pageName%...
+            P.Setup(A_ThisFunc, "Retrieving drop table for " pageName)
 
         this.obj := WIKI_API.table.GetDroptable(pageName)
         If !this.obj.length() {
             msgbox, 4160, , % A_ThisFunc ": Could not find drop table for '" pageName "'!"
-            SplashTextOff
+            P.Destroy()
             return false
         }
 
@@ -39,7 +39,7 @@ Class ClassDropTable {
         this._DropsMergeQuantities()
         this._DropsGetImages()
 
-        SplashTextOff
+        P.Destroy()
         return true
     }
 

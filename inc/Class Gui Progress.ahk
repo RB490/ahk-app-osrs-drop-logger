@@ -1,17 +1,18 @@
 Class ClassGuiProgress extends gui {
-    Setup(text1 := "", bar1 := "", text2 := "", bar2 := "", text3 := "") {
-        width := 300
+    Setup(title := "", text1 := "", bar1 := "", text2 := "", bar2 := "", text3 := "") {
+        width := 350
+        SplitPath, A_ScriptName, OutFileName, OutDir, OutExtension, OutNameNoExt, OutDrive
+        this.__New(OutNameNoExt ":" A_Space title "()")
         this.margin(5, 5)
-        this.Font("", "Arial")
-
+        this.Options("-MinimizeBox")
 
         If (text1) {
             this.Font("s15")
-            this._text1 := this.add("text", "w" width " center", text1)
+            this._text1 := this.add("text", "w" width " center", text1 "...")
         }
         
         If (bar1)
-            this._bar1 := this.add("progress", "w" width " h20 BackgroundWhite")
+            this._bar1 := this.add("progress", "w" width " h20 Range0-" bar1 " BackgroundWhite")
         
         If (text2) {
             this.Font("s12")
@@ -19,42 +20,49 @@ Class ClassGuiProgress extends gui {
         }
 
         If (bar2)
-            this._bar2 := this.add("progress", "w" width " h20 BackgroundWhite")
+            this._bar2 := this.add("progress", "w" width " h20 Range0-" bar2 " BackgroundWhite")
 
         If (text3) {
             this.Font("s12")
             this._text3 := this.add("text", "w" width " center", text3)
         }
-        
-        this.add("text", "w" width " center", "woiejgfpwoeijgoi")
 
-        ; this.show("x0 y0 w250 h250", A_ThisFunc)
-        ; this.show("x0 y0", A_ThisFunc)
-        ; this.show()
-        ; Gui % this.hwnd ":Show", x0 y0 w250 h250, title
-/* 
-        this.Control(, this._text1, "+25")
-        loop 10 {
-            this.Control(, this._progress, "+10")
-            sleep 250
-        }
-         */
+        this.Show()
     }
 
-    P(text1 := "", bar1 := "", text2 := "", bar2 := "", text3 := "") {
-        ; If !this.IsVisible
-            this.Setup(text1, bar1, text2, bar2, text3)
-    }
-
-    Title(title) {
+    T(title) {
         this.show(, title)
     }
 
-    Close() {
-        msgbox
+    T1(text1 = "") {
+        this.Control(, this._text1, text1)
     }
-}
 
-TestFunc(params*) {
-    msgbox % params.length()
+    B1(input := "") {
+        If IsInteger(input) {
+            this.Control("+Range0-" input, this._bar1)
+            return
+        }
+
+        this.Control(, this._bar1, "+1")
+    }
+
+    T2(text2 = "") {
+        this.Control(, this._text2, text2)
+    }
+
+    B2() {
+        this.Control(, this._bar2, "+1")
+    }
+
+    T3(text3 = "") {
+        this.Control(, this._text3, text3)
+    }
+
+    Close() {
+        msgbox, 36, , % A_ThisFunc ": Are you sure you want to quit?"
+        IfMsgBox, No
+            return true ; https://www.autohotkey.com/docs/commands/Gui.htm#GuiClose
+        exitapp
+    }
 }
