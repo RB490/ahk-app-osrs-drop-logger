@@ -83,13 +83,13 @@ Class ClassGuiStats extends gui {
         this.LvUnique.Redraw()
         this.LvUnique.Delete()
 
-        ; create image list
-        ImageListID := IL_Create(DROP_STATS.uniqueDrops.length())
-        this.LvUnique.SetImageList(ImageListID)
+        ; create image list class
+        LvIl := new this.ImageList(DROP_STATS.uniqueDrops.length())
+        this.LvUnique.SetImageList(LvIl.ID)
         loop % DROP_STATS.uniqueDrops.length() {
             name := DROP_STATS.uniqueDrops[A_Index].name
             id := RUNELITE_API.GetItemId(name)
-            IL_Add(ImageListID, DIR_ITEM_RUNELITE "\" id ".png", , 1) ; ResizeNonIcon even though it doesnt seem to make a difference
+            LvIl.Add(DIR_ITEM_RUNELITE "\" id ".png") 
         }
 
         ; load items

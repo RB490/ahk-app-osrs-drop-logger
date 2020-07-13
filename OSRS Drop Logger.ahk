@@ -11,7 +11,7 @@
     #MaxMem, 400 ; downloadMissingItemImages()
 
 ; Global vars
-    Global DEBUG_MODE       := false
+    Global DEBUG_MODE       := true
     , PROJECT_WEBSITE       := "https://github.com/RB490/ahk-app-osrs-drop-logger"
     , DIR_ITEM_ICON         := A_ScriptDir "\res\img\item\icon"
     , DIR_ITEM_DETAIL       := A_ScriptDir "\res\img\item\detail"
@@ -77,7 +77,10 @@ return
     debugAutoexec:
         DROP_TABLE.Get(DB_SETTINGS.selectedMob)
         DROP_LOG.Get(DB_SETTINGS.selectedLogFile)
-        LOG_GUI.Get()
+        ; LOG_GUI.Get()
+        ; return
+        STATS_GUI.Get()
+        ; Gosub updateStats
     return
 
 ; Includes

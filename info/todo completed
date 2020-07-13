@@ -554,3 +554,5 @@ improvement -> Rename GetPageDoc -> GetHtmlDoc
 bug -> closing gui log does not save log file
 bug -> closing gui log does not save log gui location
 bug -> gui log enter hotkey does not add kill drops
+
+improvement -> use image list class

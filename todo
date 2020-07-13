@@ -1,11 +1,9 @@
-improvement -> create list of all drop tables for 'class drop table' _TablesRenaming()
-    ^ use 'osrsbox' class for this
-
 improvement -> 'Class Api OSRSBox'
     - class should be very similar to runelite's
         - caching the monsters-complete.json file until the day after its updated on thursday
     - get all mobs with a drop table
     - get all drop table drops
+    - get all drop table names -> use to debug DROP_TABLE._TablesRenaming()
 
 improvement -> 'Class Retrieve' 'RETRIEVE_ALL' -> combine 'download all' functions
     RETRIEVE_ALL.DropTables(), RETRIEVE_ALL.MobImages(), RETRIEVE_ALL.DropTables() etc.
@@ -13,8 +11,6 @@ improvement -> 'Class Retrieve' 'RETRIEVE_ALL' -> combine 'download all' functio
 improvement -> use the fact that you can #Include files anywhere in the script 
     instead of having some weird code inside the 'FileInstall' file only have fileinstalls
     and write a Setup() function inside the main script
-
-improvement -> use image list class where applicable. Only in gui stats i think
 
 improvement -> Use msgbox lib/func
 
