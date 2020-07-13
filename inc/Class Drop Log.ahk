@@ -67,7 +67,7 @@ class ClassDropLog {
 
     ; input = {string} path to existing drop log file
     ; purpose = load drop log into this.obj
-    Load(file) {
+    Get(file) {
         If !file {
             msgbox, 4160, , % A_ThisFunc ": Can't log without a log file"
             exitapp

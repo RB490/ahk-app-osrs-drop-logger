@@ -23,7 +23,7 @@ Class ClassDropTable {
 
     Get(pageName) {
         If !DEBUG_MODE
-            P.Setup(A_ThisFunc, "Retrieving drop table for " pageName)
+            P.Get(A_ThisFunc, "Retrieving drop table for " pageName)
 
         this.obj := WIKI_API.table.GetDroptable(pageName)
         If !this.obj.length() {

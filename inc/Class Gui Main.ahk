@@ -1,5 +1,5 @@
 class ClassGuiMain extends gui {
-    Setup() {
+    Get() {
         ; events
         this.Events["_HotkeyEnter"] := this.BtnAdd.Bind(this)
 
@@ -123,7 +123,7 @@ class ClassGuiMain extends gui {
         SplitPath, SelectedFile , OutFileName, OutDir, OutExtension, OutNameNoExt, OutDrive
         file := OutDir "\" OutNameNoExt ".json"
 
-        result := DROP_LOG.Load(file)
+        result := DROP_LOG.Get(file)
         If !result
             return
         DB_SETTINGS.selectedLogFile := file
@@ -134,7 +134,7 @@ class ClassGuiMain extends gui {
             msgbox, 4160, , % A_ThisFunc ": Check: " PROJECT_WEBSITE ; failed to retrieve drop table for verified, saved mob
             return
         }
-        LOG_GUI.Setup()
+        LOG_GUI.Get()
     }
 
     ContextMenu() {

@@ -1,11 +1,11 @@
 ExitFunc(ExitReason, ExitCode) {
     SaveSettings()
-    DROP_LOG.Save()
 }
 
 SaveSettings() {
     STATS_GUI.SavePos()
     LOG_GUI.SavePos()
+    DROP_LOG.Save()
 
     FileDelete, % PATH_SETTINGS
     FileAppend, % json.dump(DB_SETTINGS,,2), % PATH_SETTINGS
@@ -118,7 +118,7 @@ OnWM_LBUTTONDOWN(wParam, lParam, msg, hWnd) {
 
     If !IsInteger(obj.quantity) { ; contains separator '#' or '-'
         LOG_GUI.Disable()
-        QUANTITY_GUI.Load(obj)
+        QUANTITY_GUI.Get(obj) ; directly modifies 'SELECTED_DROPS' because slow WinWaitClose 
         return
     }
     SELECTED_DROPS.push(obj)
@@ -177,8 +177,6 @@ ImgResize(img, scale) {
 
     if FileExist(img)
         ResConImg(img, scale, scale, OutNameNoExt,,, true)
-        ; ResConImg(img, scale, scale, OutFileName, "bmp",, true, 32)
-        ; ResConImg(OriginalFile, NewWidth:="", NewHeight:="", NewName:="", NewExt:="", NewDir:="", PreserveAspectRatio:=true, BitDepth:=24)
     else
         msgbox, 16, , % A_ThisFunc ": File Error, File not found."
     Gdip_Shutdown(pToken)  ; Close Gdip
@@ -192,7 +190,7 @@ LoadOSRSBoxApi() {
     file := PATH_OSRSBOX_JSON
 
     ; retrieve json
-    P.Setup(A_ThisFunc, "Loading database file")
+    P.Get(A_ThisFunc, "Loading database file")
 
     If !FileExist(file) {
         content := DownloadToString(allMonstersApiUrl)
@@ -225,7 +223,7 @@ DownloadAllMobDroptables() {
     LoadOSRSBoxApi()
 
     totalMobs := DB_OSRSBOX.mobList.count()
-    P.Setup(A_ThisFunc, "Retrieving drop tables", totalMobs, A_Space)
+    P.Get(A_ThisFunc, "Retrieving drop tables", totalMobs, A_Space)
     for mob in DB_OSRSBOX.mobList
     {
         P.B1(), P.T2(A_Index " / " totalMobs " - " mob)
@@ -238,7 +236,7 @@ DownloadMissingMobImages() {
     LoadOSRSBoxApi()
 
     totalMobs := DB_OSRSBOX.mobList.count()
-    P.Setup(A_ThisFunc, "Retrieving mob tables", totalMobs, A_Space)
+    P.Get(A_ThisFunc, "Retrieving mob tables", totalMobs, A_Space)
     for mob in DB_OSRSBOX.mobList
     {
         P.B1(), P.T2(A_Index " / " totalMobs " - " mob)
@@ -263,7 +261,7 @@ DownloadMissingItemImages() {
     LoadOSRSBoxApi()
 
     totalItems := DB_OSRSBOX.dropList.count()
-    P.Setup(A_ThisFunc, "Retrieving item images", totalItems, A_Space)
+    P.Get(A_ThisFunc, "Retrieving item images", totalItems, A_Space)
     for item in DB_OSRSBOX.dropList
     {
         P.B1(), P.T2(A_Index " / " totalItems " - " mob)

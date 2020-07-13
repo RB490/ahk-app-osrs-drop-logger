@@ -1,5 +1,5 @@
 class ClassGuiAbout extends gui {
-    Setup() {
+    Get() {
         ; set icon
         icoPath := DIR_GUI_ICONS "\osrs_icons\Quest_start_icon.png"
         ico := new LoadPictureType(icoPath,, 1, "#000000") ; last parameter color will be transparent, you might need to change this.

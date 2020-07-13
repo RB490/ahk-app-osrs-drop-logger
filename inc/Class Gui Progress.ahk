@@ -1,5 +1,5 @@
 Class ClassGuiProgress extends gui {
-    Setup(title := "", text1 := "", bar1 := "", text2 := "", bar2 := "", text3 := "") {
+    Get(title := "", text1 := "", bar1 := "", text2 := "", bar2 := "", text3 := "") {
         width := 350
         SplitPath, A_ScriptName, OutFileName, OutDir, OutExtension, OutNameNoExt, OutDrive
         this.__New(OutNameNoExt ":" A_Space title "()")

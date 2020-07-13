@@ -1,39 +1,29 @@
-fix 'Fira Code' ligatures. Not showing right now.. -> 
+improvement -> create list of all drop tables for 'class drop table' _TablesRenaming()
+    ^ use 'osrsbox' class for this
 
-feature > use image list class where applicable. Only in gui stats i think
+improvement -> 'Class Api OSRSBox'
+    - class should be very similar to runelite's
+        - caching the monsters-complete.json file until the day after its updated on thursday
+    - get all mobs with a drop table
+    - get all drop table drops
 
-bug > gui log enter hotkey does not add kill drops
+improvement -> 'Class Retrieve' 'RETRIEVE_ALL' -> combine 'download all' functions
+    RETRIEVE_ALL.DropTables(), RETRIEVE_ALL.MobImages(), RETRIEVE_ALL.DropTables() etc.
 
-feature > progress class gui? to prevent showing and closing a bunch of splashtext windows
-    could have identical input to splashbox for ease of use
+improvement -> use the fact that you can #Include files anywhere in the script 
+    instead of having some weird code inside the 'FileInstall' file only have fileinstalls
+    and write a Setup() function inside the main script
 
-feature > convert osrsbox api downloadallimages() into a test class or something like that
-    maybe just osrsbox api or download class
-    ^ this should be it easy to use one progress instance and dont have to reshow it
+improvement -> use image list class where applicable. Only in gui stats i think
 
-feature > idea > use item id's everywhere
-    add them in wiki class
-    use them in stats class
-    use them when calling runelite class etc
+improvement -> Use msgbox lib/func
 
-refactor > eliminate global vars
-
-refactor > go through every file
+improvement -> refactor every file
     more descriptive class methods, variables, function names
-        eg. DROP_TABLE.LoadMob instead of .Get() or something
     better code structure
         possibly nest / extend some classes
     remove duplicate code
 
--------------------------- Notes --------------------------
-refactor > 'inspiration'
-    watch onenote refactor videos
-    check 'algumist' AutoGUI code
-    check 'other-good-autohotkey-coders-code'
-
-todo > create 'best autohotkey practices' rules file
-    - naming schemes for functions, variables, global variables etc.
-    - if statements formatting
-    - include used libaries inside the scripts folder
-    - do settings with ini? < add reason why if so
-    - etc.
+learn -> How does osrsbox api assign the correct item id's for weird items like:
+    Bronze key (H.A.M.)
+    Iron key Bronze key (H.A.M.)

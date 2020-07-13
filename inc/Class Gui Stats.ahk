@@ -1,5 +1,5 @@
 Class ClassGuiStats extends gui {
-    Setup() {
+    Get() {
         If this.IsVisible {
             this.Activate()
             return

@@ -302,11 +302,11 @@ feature > main gui > modify mob select to look like it did in 'rewrite 1'?, exam
 bug > gui main > log mob > gui log opens > gui main / >>>somehow<<< mainGui_BtnHandler is called with empty OutputControlText
     doesnt happen with both disabled:
         ; DROP_TABLE.Get(DB_SETTINGS.selectedMob)
-        ; LOG_GUI.Setup()
+        ; LOG_GUI.Get()
     doesnt seem happen with only
         ; DROP_TABLE.Get(DB_SETTINGS.selectedMob)
     happens >sometimes< with
-        ; LOG_GUI.Setup()
+        ; LOG_GUI.Get()
     lines:
         ---- D:\Programming and projects\ahk-app-osrs-drop-logger\inc\Class Gui Log.ahk
         125: }
@@ -481,3 +481,76 @@ reduce mob image size on disk > 4300 item images are 10mb 600 or so mobs are 25m
 compile > need script to create \res\ fileInstall *i include file
 
 Create download all mob drop tables function similar to DownloadMissingItemImages() to debug
+
+fix 'Fira Code' ligatures. Not showing right now.. -> 
+
+feature > progress class gui? to prevent showing and closing a bunch of splashtext windows
+    could have identical input to splashbox for ease of use
+
+todo > create 'best autohotkey practices' rules file
+    - naming schemes for functions, variables, global variables etc.
+    - if statements formatting
+    - include used libaries inside the scripts folder
+    - do settings with ini? < add reason why if so
+    - etc.
+
+feature > idea > use item id's everywhere
+    add them in wiki class
+    use them in stats class
+    use them when calling runelite class etc
+
+feature -> convert osrsbox api downloadallimages() into a test class or something like that
+    maybe just osrsbox api or download class
+    ^ this should be it easy to use one progress instance and dont have to reshow it
+
+Consider using osrsbox api?
+    ^ wiki_name and wiki_url are valid in complete-monsters.json
+    use complete-monsters.json to create a 'rebuild all' method or whatever
+    also have a single add method that can be used to add missing mobs whenever occured
+
+Full bestiary database ideas
+    Part 1
+        Update weekly and manually. Display last updated
+        Mobs , all usefull info like their name/ category/ wiki url/name/drop table
+        Look at osrsbox for inspiration/help
+        Store wiki pages last updated and use this to update outdated info
+        Possible problem: large jsons take a while to load
+        Reason: eliminate any loading after program startup. Webpages/ images to download etc
+            Also makes the program more reliable as in the wiki and runelite api need to do
+            some hacky stuff to resolve 'incorrect' items
+    Part 2
+        Scripts folder - rebuild databases
+        Use osrsbox to rebuild bestiary, if available
+        Cacel if any scripts cant read source file
+        Scripts could include main ahk function file
+        Still have the option to manually add mobs if not in bestiary
+        Also add droptables and last updated timestamp
+        Include compiled scripts in compiled program. Callable from in program or outside
+        Dont even need osrsbox. Can use current detection to verify mobs
+            Can still write a method to import all/ missing mobs from box as a starting point
+        Also store mob drop table?
+
+OSRSBOX Api files of interest
+    Build files - these show how the db gets updated weekly
+        https://github.com/osrsbox/osrsbox-db/blob/master/scripts/update_db.sh
+        https://github.com/osrsbox/osrsbox-db/blob/master/scripts/update_data.sh
+	Categories used
+		..\osrsbox-db-master\data\wiki\page-titles-monsters.json"
+		^ basically every monster in Category:Monsters and its subcategories such as 'Bosses'
+    /data/wiki/page-titles-monsters.json
+
+    gets list of monsters by getting 'Monsters' category and its subcategories through wiki api
+    gets list of items by getting 'Items' and 'Pets' categories through wiki api
+
+refactor -> get more inspiration
+        watch onenote refactor videos
+        check 'algumist' AutoGUI code
+        check 'other-good-autohotkey-coders-code'
+
+refactor -> eliminate global vars
+
+improvement -> Rename GetPageDoc -> GetHtmlDoc
+
+bug -> closing gui log does not save log file
+bug -> closing gui log does not save log gui location
+bug -> gui log enter hotkey does not add kill drops

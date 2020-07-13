@@ -1,5 +1,5 @@
 class ClassGuiSettings extends gui {
-    Setup() {
+    Get() {
         margin := 10
 
         ; set icon

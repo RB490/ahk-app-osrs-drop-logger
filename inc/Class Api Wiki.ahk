@@ -6,15 +6,15 @@ class ClassApiWiki {
         this.table := new this.ClassDropTables(this)
     }
 
-    GetPageUrl(pageName, titleCasePageNameFormat := false) {
-        return this.url "/w/" this._GetPageNameInWikiFormat(pageName, titleCasePageNameFormat)
+    GetPageUrl(pageName, useTitleCase := false) {
+        return this.url "/w/" this._GetPageNameInWikiFormat(pageName, useTitleCase)
     }
 
     GetPageHtml(pageName) {
         html := DownloadToString(this.GetPageUrl(pageName)) ; 'A_doubt'
 
         If this._IsErrorPage(html) ; retry with title case format: 'A_Doubt'
-            html := DownloadToString(this.GetPageUrl(pageName, "titleCasePageNameFormat"))
+            html := DownloadToString(this.GetPageUrl(pageName, "useTitleCase"))
 
         If this._IsErrorPage(html) {
             msgbox, 4160, , % A_ThisFunc ": Invalid wiki page for '" pageName "'!`n`nClosing.."
@@ -36,8 +36,8 @@ class ClassApiWiki {
             return true
     }
 
-    _GetPageNameInWikiFormat(pageName, titleCasePageNameFormat := false) { ; eg. 'Rune Axe' becomes 'Rune_axe'
-        If (titleCasePageNameFormat) {
+    _GetPageNameInWikiFormat(pageName, useTitleCase := false) { ; eg. 'Rune Axe' becomes 'Rune_axe'
+        If (useTitleCase) {
             StringUpper, output, output, T
             output := StrReplace(pageName, A_Space, "_")
             return output

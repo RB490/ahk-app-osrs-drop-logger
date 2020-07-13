@@ -12,7 +12,6 @@ class ClassGuiQuantity extends gui {
                 {object}.integers   = {object} all integers
     */
     Load(obj) {
-        LOG_GUI.Disable()
         output := {}
         integers := {}
 
@@ -41,7 +40,7 @@ class ClassGuiQuantity extends gui {
         output.high := integers.MaxIndex()
         output.median := (output.high - output.low) / 2 + output.low
         output.median := Round(output.median)
-        this.Setup(output)
+        return output
     }
 
     Set() {
@@ -53,10 +52,12 @@ class ClassGuiQuantity extends gui {
     }
 
     ; param 'obj' = {object} retrieved by this.Get()
-    Setup(obj) {
-        DetectHiddenWindows, On
+    Get(obj) {
+        LOG_GUI.Disable()
+        obj := this.Load(obj)
 
         ; destroy gui
+        DetectHiddenWindows, On
         if WinExist(this.ahkid)
             this.Destroy()
 
@@ -150,14 +151,14 @@ class ClassGuiQuantity extends gui {
             this.parent.Load(obj)
         }
 
-        Setup() {
+        Get() {
             integers := [123, 30, 44, 220, 460, 250, 9001]
             obj := {}
             obj.high := 999
             obj.median := 375
             obj.low := 250
             obj.integers := integers
-            this.parent.Setup(obj)
+            this.parent.Get(obj)
         }
     }
 }
