@@ -15,7 +15,7 @@ LoadSettings() {
     DB_SETTINGS := json.load(FileRead(PATH_SETTINGS))
     If !IsObject(DB_SETTINGS) {
         If DEBUG_MODE
-            msgbox, 4160, , % A_ThisFunc ": Resetting settings"
+            Msg("Info", A_ThisFunc ": Resetting settings")
         DB_SETTINGS := {}
     }
     ValidateSettings()
@@ -66,6 +66,27 @@ GetItemImageDirFromSetting() {
         case "RuneLite": output := DIR_ITEM_RUNELITE
     }
     return output
+}
+
+Msg(type, title) {
+    switch type {
+        case "Info": id := 4160
+        case "InfoYesNo": id := 36
+        case "Error": { 
+            id := 16
+            title .= "`n`nCheck: " PROJECT_WEBSITE
+            title .= "`n`nClosing.."
+        }
+        default: {
+            msgbox, 4160, , % A_ThisFunc ": Unhandled type specified. `n`nClosing.."
+            exitapp
+        }
+    }
+    
+    msgbox, % id, , % title
+
+    If (type = "Error")
+        exitapp
 }
 
 IsInteger(input) {
@@ -129,10 +150,7 @@ OnWM_LBUTTONDOWN(wParam, lParam, msg, hWnd) {
 ; input (img) = {string} path to image
 ImgAddBorder(img, borderSize := 10) {
     If !pToken := Gdip_Startup()
-    {
-        msgbox, 16, , % A_ThisFunc ": Gdiplus failed to start`n`nClosing.."
-        ExitApp
-    }
+        Msg("Error", A_ThisFunc ": Gdiplus failed to start")
     pBitmapFile1 := Gdip_CreateBitmapFromFile(img)
     imgW := Gdip_GetImageWidth(pBitmapFile1), imgH := Gdip_GetImageHeight(pBitmapFile1)
     ; w:=width+60
@@ -169,7 +187,7 @@ ImgAddBorder(img, borderSize := 10) {
 
 ImgResize(img, scale) {
     If !pToken := Gdip_Startup() {  ; Start Gdip
-        msgbox, 16, , % A_ThisFunc ": Gdiplus failed to start`n`nClosing.."
+        Msg("Error", A_ThisFunc ": Gdiplus failed to start")
         ExitApp
     }
 
@@ -178,7 +196,7 @@ ImgResize(img, scale) {
     if FileExist(img)
         ResConImg(img, scale, scale, OutNameNoExt,,, true)
     else
-        msgbox, 16, , % A_ThisFunc ": File Error, File not found."
+        Msg("Error", A_ThisFunc ": File Error, File not found.")
     Gdip_Shutdown(pToken)  ; Close Gdip
 }
 

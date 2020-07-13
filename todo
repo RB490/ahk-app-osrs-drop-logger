@@ -12,8 +12,6 @@ improvement -> use the fact that you can #Include files anywhere in the script
     instead of having some weird code inside the 'FileInstall' file only have fileinstalls
     and write a Setup() function inside the main script
 
-improvement -> Use msgbox lib/func
-
 improvement -> refactor every file
     more descriptive class methods, variables, function names
     better code structure

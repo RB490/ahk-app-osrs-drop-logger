@@ -116,7 +116,7 @@ class ClassGuiMain extends gui {
         SplitPath, selectedLogFile, OutFileName, selectedLogFileDir, OutExtension, OutNameNoExt, OutDrive
         FileSelectFile, SelectedFile, 11, % manageGui.GetText("Edit1"), Select drop log, Json (*.json), %selectedLogFileDir%
         If !SelectedFile {
-            ; msgbox, 4160, , % A_ThisFunc ": Can't log without a log file"
+            Msg("Info", A_ThisFunc ": Can't log without a log file")
             this.Enable()
             return false
         }
@@ -130,10 +130,8 @@ class ClassGuiMain extends gui {
         this.Enable()
         this.Hide()
         result := DROP_TABLE.Get(DB_SETTINGS.selectedMob)
-        If (result = false) {
-            msgbox, 4160, , % A_ThisFunc ": Check: " PROJECT_WEBSITE ; failed to retrieve drop table for verified, saved mob
-            return
-        }
+        If (result = false)
+            Msg("Error", A_ThisFunc ": Failed to retrieve drop table for verified, saved mob")
         LOG_GUI.Get()
     }
 

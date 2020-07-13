@@ -18,7 +18,7 @@ Class ClassDropTable {
                     return ObjFullyClone(drop)
             }
         }
-        msgbox, 4160, , % A_ThisFunc ": Could not find drop '" input "'!"
+        Msg("Error", A_ThisFunc ": Could not find drop '" input "'!")
     }
 
     Get(pageName) {
@@ -27,7 +27,7 @@ Class ClassDropTable {
 
         this.obj := WIKI_API.table.GetDroptable(pageName)
         If !this.obj.length() {
-            msgbox, 4160, , % A_ThisFunc ": Could not find drop table for '" pageName "'!"
+            Msg("Info", A_ThisFunc ": Could not find drop table for '" pageName "'!")
             P.Destroy()
             return false
         }

@@ -77,10 +77,7 @@ return
     debugAutoexec:
         DROP_TABLE.Get(DB_SETTINGS.selectedMob)
         DROP_LOG.Get(DB_SETTINGS.selectedLogFile)
-        ; LOG_GUI.Get()
-        ; return
-        STATS_GUI.Get()
-        ; Gosub updateStats
+        LOG_GUI.Get()
     return
 
 ; Includes

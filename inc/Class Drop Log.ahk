@@ -68,10 +68,8 @@ class ClassDropLog {
     ; input = {string} path to existing drop log file
     ; purpose = load drop log into this.obj
     Get(file) {
-        If !file {
-            msgbox, 4160, , % A_ThisFunc ": Can't log without a log file"
-            exitapp
-        }
+        If !file
+            Msg("Error", A_ThisFunc ": Can't log without a log file")
 
         this.file := file
         this.undoActions := {}
@@ -89,7 +87,7 @@ class ClassDropLog {
         ; invalid file
         If !IsObject(result) {
             this.obj := {}
-            msgbox, 4160, , % A_ThisFunc ": '" this.file "' does not contain a valid json or is damaged"
+            Msg("Error", A_ThisFunc ": '" this.file "' does not contain a valid json or is damaged")
             return false
         }
         
@@ -110,7 +108,7 @@ class ClassDropLog {
 
     Undo() {
         If !this.undoActions.length() {
-            msgbox, 4160, , % A_ThisFunc ": Nothing to undo!"
+            Msg("Info", A_ThisFunc ": Nothing to undo!")
             return
         }
         this.redoActions.push(this.obj)
@@ -120,7 +118,7 @@ class ClassDropLog {
 
     Redo() {
         If !this.redoActions.length() {
-            msgbox, 4160, , % A_ThisFunc ": Nothing to redo!"
+            Msg("Info", A_ThisFunc ": Nothing to redo!")
             return
         }
         this.undoActions.push(ObjFullyClone(this.obj))
@@ -148,7 +146,7 @@ class ClassDropLog {
 
     StartTrip() {
         If this.TripActive() {
-            msgbox % A_ThisFunc ": Trip already started!"
+            Msg("Info", A_ThisFunc ": Trip already started!")
             return false
         }
         

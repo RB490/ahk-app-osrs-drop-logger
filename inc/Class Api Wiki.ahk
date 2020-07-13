@@ -16,10 +16,8 @@ class ClassApiWiki {
         If this._IsErrorPage(html) ; retry with title case format: 'A_Doubt'
             html := DownloadToString(this.GetPageUrl(pageName, "useTitleCase"))
 
-        If this._IsErrorPage(html) {
-            msgbox, 4160, , % A_ThisFunc ": Invalid wiki page for '" pageName "'!`n`nClosing.."
-            exitapp
-        }
+        If this._IsErrorPage(html)
+            Msg("Error", A_ThisFunc ": Invalid wiki page for '" pageName "'!")
         return html
     }
 
@@ -57,15 +55,10 @@ class ClassApiWiki {
             case "Tag": elements := doc.getElementsByTagName(searchTerm)
             case "Class": elements := doc.getElementsByClassName(searchTerm)
             case "Name": elements := doc.getElementsByName(searchTerm)
-            default: {
-                msgbox, 4160, , % A_ThisFunc ": Invalid method '" method "' `n`nClosing.."
-                exitapp
-            }
+            default: Msg("Error", ThisFunc ": Could not retrieve item id for '" itemString "'")
         }
-        If !elements.length {
-            msgbox, 4160, , % A_ThisFunc ": Could not find any '" searchTerm "' elements `n`nClosing.."
-            exitapp
-        }
+        If !elements.length
+            Msg("Error", A_ThisFunc ": Could not find any '" searchTerm "' elements")
         return elements
     }
 
@@ -240,7 +233,7 @@ class ClassApiWiki {
                 }
             }
             
-            msgbox, 4160, , % A_ThisFunc ": Could not find image for '" this.pageName "' `n`nClosing.."
+            Msg("Error", A_ThisFunc ": Could not find image for '" this.pageName "'")
             exitapp
         }
 
@@ -272,8 +265,7 @@ class ClassApiWiki {
                     return this.parent.url "/" this._getImageFromInnerHtml(loopHtml)
             }
 
-            msgbox, 4160, , % A_ThisFunc ": Could not find icon for '" this.pageName "' with potion dose '" this.potionDose "' `n`nClosing.."
-            exitapp
+            Msg("Error", A_ThisFunc ": Could not find icon for '" this.pageName "' with potion dose '" this.potionDose "'")
         }
 
         _GetItemDetailed() {

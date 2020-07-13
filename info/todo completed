@@ -556,3 +556,7 @@ bug -> closing gui log does not save log gui location
 bug -> gui log enter hotkey does not add kill drops
 
 improvement -> use image list class
+
+Add to error msg() : check PROJECT_WEBSITE
+
+improvement -> Use msgbox lib/func
