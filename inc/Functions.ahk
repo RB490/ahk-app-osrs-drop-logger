@@ -68,6 +68,13 @@ GetItemImageDirFromSetting() {
     return output
 }
 
+GetFileAgeHours(file) {
+    FileGetTime, OutputVar , % file, C
+    hoursOld := A_Now
+    EnvSub, hoursOld, OutputVar, Hours
+    return hoursOld
+}
+
 Msg(type, title) {
     switch type {
         case "Info": id := 4160

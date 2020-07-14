@@ -560,3 +560,12 @@ improvement -> use image list class
 Add to error msg() : check PROJECT_WEBSITE
 
 improvement -> Use msgbox lib/func
+
+consider -> global object containing all global vars. this would allow for shortening of some var names eg:
+    DB_SETTINGS -> G.SETTINGS
+
+improvement -> 'Class Api OSRSBox'
+    - class should be very similar to runelite's
+        - caching the monsters-complete.json file until the day after its updated on thursday
+    - get all mobs with a drop table
+    - get all drop table drops

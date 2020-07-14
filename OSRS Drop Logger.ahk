@@ -21,9 +21,10 @@
     , PATH_RUNELITE_JSON    := A_ScriptDir "\res\runelite.json"
     , PATH_SETTINGS         := A_ScriptDir "\settings.json"
     , DB_OSRSBOX            := {}
-    , PATH_OSRSBOX_JSON     := A_ScriptDir "\res\monsters-complete.json"
+    , PATH_OSRSBOX_JSON     := A_ScriptDir "\res\osrsbox.json"
     , DB_SETTINGS           := {}
     , SELECTED_DROPS        := {}
+    , OSRSBOX_API           := new ClassApiOSRSBox
     , RUNELITE_API          := new ClassApiRunelite
     , WIKI_API              := new ClassApiWiki
     , DROP_LOG              := new ClassDropLog
@@ -75,6 +76,8 @@ return
         DROP_STATS.UpdateAdvancedStats()
     return
     debugAutoexec:
+        msgbox % json.dump(OSRSBOX_API.drops,,2)
+        return
         DROP_TABLE.Get(DB_SETTINGS.selectedMob)
         DROP_LOG.Get(DB_SETTINGS.selectedLogFile)
         LOG_GUI.Get()
@@ -82,6 +85,7 @@ return
 
 ; Includes
     #Include, %A_ScriptDir%\inc
+    #Include Class Api OSRSBox.ahk
     #Include Class Api RuneLite.ahk
     #Include Class Api Wiki.ahk
     #Include Class Drop Log.ahk
