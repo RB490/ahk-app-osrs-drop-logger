@@ -83,25 +83,36 @@ GetFileAgeHours(file) {
     return hoursOld
 }
 
-Msg(type, func, title) {
+Msg(type, func, msg) {
     switch type {
         case "Info": id := 4160
         case "InfoYesNo": id := 36
         case "Error": { 
             id := 16
-            title .= "`n`nCheck: " PROJECT_WEBSITE
-            title .= "`n`nClosing.."
+            If DEBUG_MODE {
+                msg .= "`n`nReloading.."
+            } else {
+                msg .= "`n`nCheck: " PROJECT_WEBSITE
+                msg .= "`n`nClosing.."
+            }
         }
         default: {
-            msgbox, 4160, , % A_ThisFunc ": Unhandled type specified. `n`nClosing.."
-            exitapp
+            msgbox, 4160, , % A_ThisFunc ": Unhandled type specified. `n`nReloading.."
+            reload
         }
     }
-    
-    msgbox, % id, , % func ":" A_Space title
 
-    If (type = "Error")
-        exitapp
+    If DEBUG_MODE
+        msgbox, % id, % func, % msg
+    else
+        msgbox, % id, % APP_NAME, % msg
+
+    If (type = "Error") {
+        If DEBUG_MODE
+            reload
+        else
+            exitapp
+    }
 }
 
 IsInteger(input) {

@@ -80,7 +80,8 @@ return
         DROP_STATS.UpdateAdvancedStats()
     return
     debugAutoexec:
-        MAIN_GUI.Get()
+        Msg("Error", A_ThisLabel, "some textsome textsome text")
+        Msg("Info", A_ThisLabel, "some textsome textsome text")
         return
         DROP_TABLE.Get(DB_SETTINGS.selectedMob)
         DROP_LOG.Get(DB_SETTINGS.selectedLogFile)
