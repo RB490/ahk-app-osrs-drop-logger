@@ -67,6 +67,7 @@ class ClassGuiMain extends gui {
         DownloadMobImage(DB_SETTINGS.selectedMob)
 
         this.SetText(this._btnLog, "       Log")
+        path := DIR_MOB_IMAGES "\" DB_SETTINGS.selectedMob ".png"
         SetButtonIcon(this._btnLog, path, 1, 44) ; r2 = 30, r3 = 44
     }
 

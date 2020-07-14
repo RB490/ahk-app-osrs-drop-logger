@@ -1,9 +1,0 @@
-improvement -> refactor every file
-    more descriptive class methods, variables, function names
-    better code structure
-        possibly nest / extend some classes
-    remove duplicate code
-
-learn -> How does osrsbox api assign the correct item id's for weird items like:
-    Bronze key (H.A.M.)
-    Iron key Bronze key (H.A.M.)

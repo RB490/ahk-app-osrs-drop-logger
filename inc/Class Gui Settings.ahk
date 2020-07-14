@@ -35,6 +35,7 @@ class ClassGuiSettings extends gui {
         this.Show()
         DetectHiddenWindows, Off
         WinWaitClose, % this.ahkid
+        return this.savedSettings
     }
 
     Save() {
@@ -44,6 +45,7 @@ class ClassGuiSettings extends gui {
         DB_SETTINGS.logGuiTablesMergeBelowX := this.GetText("edit3") ; Merge tables below
         DB_SETTINGS.logGuiItemImageType := this.GetText("ComboBox1") ; Image type
         ValidateSettings()
+        this.savedSettings := true
         this.Close()
     }
 

@@ -10,7 +10,8 @@
     #MaxMem, 400 ; downloadMissingItemImages()
 
 ; Global vars
-    Global DEBUG_MODE       := false
+    Global DEBUG_MODE       := true
+    , APP_NAME              := RTrim(A_ScriptName, ".ahk")
     , PROJECT_WEBSITE       := "https://github.com/RB490/ahk-app-osrs-drop-logger"
     , DIR_ITEM_ICON         := A_ScriptDir "\res\img\item\icon"
     , DIR_ITEM_DETAIL       := A_ScriptDir "\res\img\item\detail"
@@ -30,13 +31,13 @@
     , DROP_LOG              := new ClassDropLog
     , DROP_STATS            := new ClassDropStats
     , DROP_TABLE            := new ClassDropTable
-    , ABOUT_GUI             := new ClassGuiAbout("About Gui")
-    , LOG_GUI               := new ClassGuiLog("Log Gui")
-    , MAIN_GUI              := new ClassGuiMain("Main Gui")
-    , P                     := new ClassGuiProgress(A_ScriptName)
-    , QUANTITY_GUI          := new ClassGuiQuantity("Quantity Gui")
-    , SETTINGS_GUI          := new ClassGuiSettings("Settings Gui")
-    , STATS_GUI             := new ClassGuiStats("Stats Gui")
+    , ABOUT_GUI             := new ClassGuiAbout("About")
+    , LOG_GUI               := new ClassGuiLog(APP_NAME)
+    , MAIN_GUI              := new ClassGuiMain(APP_NAME)
+    , P                     := new ClassGuiProgress(APP_NAME)
+    , QUANTITY_GUI          := new ClassGuiQuantity(APP_NAME)
+    , SETTINGS_GUI          := new ClassGuiSettings("Settings")
+    , STATS_GUI             := new ClassGuiStats("Stats")
     , RETRIEVE_ALL          := new ClassRetrieve
     , MIN_DROP_SIZE         := 10
     , MAX_DROP_SIZE         := 80
@@ -80,9 +81,6 @@ return
     return
     debugAutoexec:
         MAIN_GUI.Get()
-        ; Setup()
-        ; DB_SETTINGS.setupHasRan := false
-        ; msgbox % json.dump(DB_SETTINGS,,2)
         return
         DROP_TABLE.Get(DB_SETTINGS.selectedMob)
         DROP_LOG.Get(DB_SETTINGS.selectedLogFile)

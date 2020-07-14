@@ -580,3 +580,10 @@ improvement -> Setup(): use the fact that you can #Include files anywhere in the
     instead of having some weird code inside the 'FileInstall' file only have fileinstalls
     and write a Setup() function inside the main script
 
+improvement -> refactor every file
+    more descriptive class methods, variables, function names
+    better code structure
+        possibly nest / extend some classes
+    remove duplicate code
+
+properly name guis
