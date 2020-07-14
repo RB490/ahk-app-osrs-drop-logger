@@ -573,3 +573,5 @@ improvement -> 'Class Api OSRSBox'
 improvement -> 'Class Retrieve' 'RETRIEVE_ALL' -> combine 'download all' functions
     RETRIEVE_ALL.DropTables(), RETRIEVE_ALL.MobImages(), RETRIEVE_ALL.DropTables() etc.
     - get all drop table names -> use to debug DROP_TABLE._TablesRenaming()
+
+improvement -> Msg() add function parameter

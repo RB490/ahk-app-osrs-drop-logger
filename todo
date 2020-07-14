@@ -5,8 +5,6 @@ bug ->
         retrieve class
         get drop table
 
-improvement -> Msg() add function parameter
-
 improvement -> Setup(): use the fact that you can #Include files anywhere in the script 
     instead of having some weird code inside the 'FileInstall' file only have fileinstalls
     and write a Setup() function inside the main script

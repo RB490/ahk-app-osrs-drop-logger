@@ -15,7 +15,7 @@ LoadSettings() {
     DB_SETTINGS := json.load(FileRead(PATH_SETTINGS))
     If !IsObject(DB_SETTINGS) {
         If DEBUG_MODE
-            Msg("Info", A_ThisFunc ": Resetting settings")
+            Msg("Info", A_ThisFunc, "Resetting settings")
         DB_SETTINGS := {}
     }
     ValidateSettings()
@@ -75,7 +75,7 @@ GetFileAgeHours(file) {
     return hoursOld
 }
 
-Msg(type, title) {
+Msg(type, func, title) {
     switch type {
         case "Info": id := 4160
         case "InfoYesNo": id := 36
@@ -90,7 +90,7 @@ Msg(type, title) {
         }
     }
     
-    msgbox, % id, , % title
+    msgbox, % id, , % func ":" A_Space title
 
     If (type = "Error")
         exitapp
@@ -157,7 +157,7 @@ OnWM_LBUTTONDOWN(wParam, lParam, msg, hWnd) {
 ; input (img) = {string} path to image
 ImgAddBorder(img, borderSize := 10) {
     If !pToken := Gdip_Startup()
-        Msg("Error", A_ThisFunc ": Gdiplus failed to start")
+        Msg("Error", A_ThisFunc, "Gdiplus failed to start")
     pBitmapFile1 := Gdip_CreateBitmapFromFile(img)
     imgW := Gdip_GetImageWidth(pBitmapFile1), imgH := Gdip_GetImageHeight(pBitmapFile1)
     ; w:=width+60
@@ -193,17 +193,15 @@ ImgAddBorder(img, borderSize := 10) {
 }
 
 ImgResize(img, scale) {
-    If !pToken := Gdip_Startup() {  ; Start Gdip
-        Msg("Error", A_ThisFunc ": Gdiplus failed to start")
-        ExitApp
-    }
+    If !pToken := Gdip_Startup() ; Start Gdip
+        Msg("Error", A_ThisFunc, "Gdiplus failed to start")
 
     SplitPath, img, OutFileName, OutDir, OutExtension, OutNameNoExt, OutDrive
 
     if FileExist(img)
         ResConImg(img, scale, scale, OutNameNoExt,,, true)
     else
-        Msg("Error", A_ThisFunc ": File Error, File not found.")
+        Msg("Error", A_ThisFunc, "File Error, File not found.")
     Gdip_Shutdown(pToken)  ; Close Gdip
 }
 

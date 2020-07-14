@@ -77,7 +77,8 @@ return
         DROP_STATS.UpdateAdvancedStats()
     return
     debugAutoexec:
-        RETRIEVE_ALL.DropTables()
+        ; Msg("Info", A_ThisLabel, "content")
+        ; RETRIEVE_ALL.DropTables()
         ; RETRIEVE_ALL.MobImages()
         ; RETRIEVE_ALL.ItemImages()
         return

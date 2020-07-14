@@ -17,7 +17,7 @@ class ClassApiWiki {
             html := DownloadToString(this.GetPageUrl(pageName, "useTitleCase"))
 
         If this._IsErrorPage(html)
-            Msg("Error", A_ThisFunc ": Invalid wiki page for '" pageName "'!")
+            Msg("Error", A_ThisFunc, "Invalid wiki page for '" pageName "'!")
         return html
     }
 
@@ -55,10 +55,10 @@ class ClassApiWiki {
             case "Tag": elements := doc.getElementsByTagName(searchTerm)
             case "Class": elements := doc.getElementsByClassName(searchTerm)
             case "Name": elements := doc.getElementsByName(searchTerm)
-            default: Msg("Error", ThisFunc ": Could not retrieve item id for '" itemString "'")
+            default: Msg("Error", ThisFunc,  "Could not retrieve item id for '" itemString "'")
         }
         If !elements.length
-            Msg("Error", A_ThisFunc ": Could not find any '" searchTerm "' elements")
+            Msg("Error", A_ThisFunc, "Could not find any '" searchTerm "' elements")
         return elements
     }
 
@@ -233,8 +233,7 @@ class ClassApiWiki {
                 }
             }
             
-            Msg("Error", A_ThisFunc ": Could not find image for '" this.pageName "'")
-            exitapp
+            Msg("Error", A_ThisFunc, "Could not find image for '" this.pageName "'")
         }
 
         GetItemImages() {
@@ -265,7 +264,7 @@ class ClassApiWiki {
                     return this.parent.url "/" this._getImageFromInnerHtml(loopHtml)
             }
 
-            Msg("Error", A_ThisFunc ": Could not find icon for '" this.pageName "' with potion dose '" this.potionDose "'")
+            Msg("Error", A_ThisFunc, "Could not find icon for '" this.pageName "' with potion dose '" this.potionDose "'")
         }
 
         _GetItemDetailed() {

@@ -60,7 +60,7 @@ Class ClassGuiProgress extends gui {
     }
 
     Close() {
-        Msg("InfoYesNo", A_ThisFunc ": Are you sure you want to quit?")
+        Msg("InfoYesNo", A_ThisFunc, "Are you sure you want to quit?")
         IfMsgBox, No
             return true ; https://www.autohotkey.com/docs/commands/Gui.htm#GuiClose
         exitapp

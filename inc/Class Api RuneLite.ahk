@@ -75,7 +75,7 @@ Class ClassApiRunelite {
         }
         id := this.obj[this._getRuneliteFormat(itemString)].id
         If !id
-            Msg("Error", A_ThisFunc ": Could not retrieve item id for '" itemString "'")
+            Msg("Error", A_ThisFunc, "Could not retrieve item id for '" itemString "'")
         return id
     }
 
@@ -152,7 +152,7 @@ Class ClassApiRunelite {
         input := DownloadToString(this.apiUrl "/item/prices") ; this.apiUrl "/item/prices"
         obj := json.load(input)
         If !IsObject(obj) or obj.error
-            Msg("Error", A_ThisFunc ": Failed to reach RuneLite API`n`nCheck: " PROJECT_WEBSITE)
+            Msg("Error", A_ThisFunc, "Failed to reach RuneLite API`n`nCheck: " PROJECT_WEBSITE)
 
         ; adjust format
         output := {}
@@ -164,7 +164,7 @@ Class ClassApiRunelite {
         ; add untradeable items
         input := DownloadToString(this.idUrl)
         If !input
-            Msg("Error", A_ThisFunc ": Failed to reach RuneLite API item id's`n`nCheck: " PROJECT_WEBSITE)
+            Msg("Error", A_ThisFunc, "Failed to reach RuneLite API item id's`n`nCheck: " PROJECT_WEBSITE)
         loop, parse, input, `n
         {
             If InStr(A_LoopField, "public static final int") {

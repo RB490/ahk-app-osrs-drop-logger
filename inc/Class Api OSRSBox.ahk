@@ -74,7 +74,7 @@ Class ClassApiOSRSBox {
     _GetObjFromJsonUrl(url) {
         obj := json.load(DownloadToString(url))
         If !IsObject(obj)
-            Msg("Error", A_ThisFunc ": Could not retrieve required file")
+            Msg("Error", A_ThisFunc, "Could not retrieve required file")
         return obj
     }
 }
