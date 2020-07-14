@@ -93,14 +93,10 @@ Class ClassDropTable {
             newTitle := ""
 
             Switch tables[table].title {
-                case "Weapons and armour":
-                    newTitle := "Gear"
-                case "Rare Drop Table":
-                    newTitle := "RDT"
-                case "Rare and Gem drop table":
-                    newTitle := "RDT + Gems"
-                case "Fletching materials":
-                    newTitle := "Fletch"
+                case "Weapons and armour": newTitle := "Gear"
+                case "Rare Drop Table": newTitle := "RDT"
+                case "Rare and Gem drop table": newTitle := "RDT + Gems"
+                case "Fletching materials": newTitle := "Fletch"
             }
 
             If newTitle
@@ -154,7 +150,7 @@ Class ClassDropTable {
                 drop := table.drops[A_Index]
                 If (drop.name = "Nothing")
                     Continue
-                DownloadItemImages(drop.name)
+                DownloadDropImages(drop.name)
             }
         }
     }

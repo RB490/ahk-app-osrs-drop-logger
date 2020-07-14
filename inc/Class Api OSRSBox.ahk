@@ -31,14 +31,28 @@ Class ClassApiOSRSBox {
     _Retrieve() {
         P.Get(A_ThisFunc, "Retrieving database")
 
-        urlMobs := "https://www.osrsbox.com/osrsbox-db/monsters-complete.json"
+        urlMobsFull := "https://www.osrsbox.com/osrsbox-db/monsters-complete.json"
         urlMobTitles := "https://raw.githubusercontent.com/osrsbox/osrsbox-db/master/data/wiki/page-titles-monsters.json"
-        objMobs := this._GetObjFromJsonUrl(urlMobs)
+        objMobsFull := this._GetObjFromJsonUrl(urlMobsFull)
+        objMobTitles := this._GetObjFromJsonUrl(urlMobTitles)
+
+        ; retrieve proper mobs list by cleaning out junk entries
+        mobs := {}
+        For mob, lastUpdated in objMobTitles {
+            If InStr(mob, "category:")
+                Continue
+            Switch mob {
+                Case "Goblin Raider": Continue  ; removed mob without image
+                Case "Monster": Continue  ; removed mob without image
+                Case "Strongest monster": Continue  ; removed mob without image
+            }
+            mobs[mob] := lastUpdated
+        }
 
         ; retrieve items-that-are-in-drop-tables list
         drops := {}
-        loop % objMobs.length() {
-            mob := objMobs[A_Index]
+        loop % objMobsFull.length() {
+            mob := objMobsFull[A_Index]
             If !mob.drops.length()
                 Continue
             loop % mob.drops.length() {
@@ -48,7 +62,7 @@ Class ClassApiOSRSBox {
         }
 
         output := {}
-        output.mobs := this._GetObjFromJsonUrl(urlMobTitles)
+        output.mobs := mobs
         output.drops := drops
 
         FileDelete, % PATH_OSRSBOX_JSON

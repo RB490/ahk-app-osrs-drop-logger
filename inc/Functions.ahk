@@ -207,69 +207,6 @@ ImgResize(img, scale) {
     Gdip_Shutdown(pToken)  ; Close Gdip
 }
 
-LoadOSRSBoxApi() {
-    If IsObject(DB_OSRSBOX.obj)
-        return
-    allMonstersApiUrl := "https://www.osrsbox.com/osrsbox-db/monsters-complete.json"
-    allItemsApiUrl := "https://www.osrsbox.com/osrsbox-db/items-complete.json"
-    file := PATH_OSRSBOX_JSON
-
-    ; retrieve json
-    P.Get(A_ThisFunc, "Loading database file")
-
-    If !FileExist(file) {
-        content := DownloadToString(allMonstersApiUrl)
-        content := json.load(content)
-        FileAppend, % json.dump(content,,2), % file
-    }
-    DB_OSRSBOX.obj := obj := json.load(FileRead(file))
-
-    ; get info
-    mobList := {}
-    dropList := {}
-    loop % obj.length() {
-        mob := obj[A_Index]
-        If mob.name and !InStr(mob.wiki_name, "(") ; 'Archer (Ardougne)' gets turned into 'Archer'
-            mobList[mob.name] := ""
-        drops := mob.drops
-        loop % drops.length() {
-            drop := drops[A_Index]
-
-            dropList[drop.name] := ""
-        }
-        
-    }
-    DB_OSRSBOX.mobList := mobList
-    DB_OSRSBOX.dropList := dropList
-    P.Destroy()
-}
-
-DownloadAllMobDroptables() {
-    LoadOSRSBoxApi()
-
-    totalMobs := DB_OSRSBOX.mobList.count()
-    P.Get(A_ThisFunc, "Retrieving drop tables", totalMobs, A_Space)
-    for mob in DB_OSRSBOX.mobList
-    {
-        P.B1(), P.T2(A_Index " / " totalMobs " - " mob)
-        WIKI_API.table.GetDroptable(mob)
-    }
-    P.Destroy()
-}
-
-DownloadMissingMobImages() {
-    LoadOSRSBoxApi()
-
-    totalMobs := DB_OSRSBOX.mobList.count()
-    P.Get(A_ThisFunc, "Retrieving mob tables", totalMobs, A_Space)
-    for mob in DB_OSRSBOX.mobList
-    {
-        P.B1(), P.T2(A_Index " / " totalMobs " - " mob)
-        DownloadMobImage(mob)
-    }
-    P.Destroy()
-}
-
 DownloadMobImage(mob) {
     path := DIR_MOB_IMAGES "\" mob ".png"
     If IsPicWithDimension(path)
@@ -282,20 +219,7 @@ DownloadMobImage(mob) {
     imgResize(path, 100)
 }
 
-DownloadMissingItemImages() {
-    LoadOSRSBoxApi()
-
-    totalItems := DB_OSRSBOX.dropList.count()
-    P.Get(A_ThisFunc, "Retrieving item images", totalItems, A_Space)
-    for item in DB_OSRSBOX.dropList
-    {
-        P.B1(), P.T2(A_Index " / " totalItems " - " mob)
-        DownloadItemImages(item)
-    }
-    P.Destroy()
-}
-
-DownloadItemImages(item) {
+DownloadDropImages(item) {
     id := RUNELITE_API.GetItemId(item)
     If !IsPicWithDimension(DIR_ITEM_ICON "\" id ".png") or !IsPicWithDimension(DIR_ITEM_DETAIL "\" id ".png")
         wikiImageUrl := WIKI_API.img.GetItemImages(item, 50)

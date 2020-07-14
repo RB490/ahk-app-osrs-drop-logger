@@ -77,7 +77,7 @@
     "price": 172780025,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "_3RD_AGE_DRUIDIC_CLOAK": {
@@ -146,10 +146,10 @@
   "_3RD_AGE_MAGE_HAT": {
     "id": 10342,
     "name": "3rd age mage hat",
-    "price": 7340470,
+    "price": 7233966,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "_3RD_AGE_PICKAXE": {
@@ -200,10 +200,10 @@
   "_3RD_AGE_RANGE_LEGS": {
     "id": 10332,
     "name": "3rd age range legs",
-    "price": 14847119,
+    "price": 14905220,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "_3RD_AGE_RANGE_TOP": {
@@ -218,10 +218,10 @@
   "_3RD_AGE_ROBE": {
     "id": 10340,
     "name": "3rd age robe",
-    "price": 19690548,
+    "price": 19995620,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "_3RD_AGE_ROBE_20577": {
@@ -422,10 +422,10 @@
   "ABYSSAL_BLUDGEON": {
     "id": 13263,
     "name": "Abyssal bludgeon",
-    "price": 31617722,
+    "price": 31641037,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "ABYSSAL_BOOK": {
@@ -620,7 +620,7 @@
     "price": 179,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "ADAMANT_BOLTS_P": {
@@ -668,10 +668,10 @@
   "ADAMANT_CANE": {
     "id": 12377,
     "name": "Adamant cane",
-    "price": 1355,
+    "price": 1347,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "ADAMANT_CHAINBODY": {
@@ -758,7 +758,7 @@
     "price": 954,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "ADAMANT_DARTP_5633": {
@@ -1160,10 +1160,10 @@
   "ADAMANT_PICKAXE": {
     "id": 1271,
     "name": "Adamant pickaxe",
-    "price": 1840,
+    "price": 1880,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "ADAMANT_PLATEBODY": {
@@ -1211,10 +1211,10 @@
   "ADAMANT_PLATEBODY_H3": {
     "id": 23398,
     "name": "Adamant platebody (h3)",
-    "price": 9345,
+    "price": 9215,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "ADAMANT_PLATEBODY_H4": {
@@ -1280,10 +1280,10 @@
   "ADAMANT_PLATESKIRT": {
     "id": 1091,
     "name": "Adamant plateskirt",
-    "price": 3815,
+    "price": 3791,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "ADAMANT_PLATESKIRT_G": {
@@ -1298,10 +1298,10 @@
   "ADAMANT_PLATESKIRT_T": {
     "id": 3474,
     "name": "Adamant plateskirt (t)",
-    "price": 3219,
+    "price": 3243,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "ADAMANT_SCIMITAR": {
@@ -1346,10 +1346,10 @@
   "ADAMANT_SHIELD_H2": {
     "id": 7340,
     "name": "Adamant shield (h2)",
-    "price": 5696,
+    "price": 5190,
     "time": {
       "nanos": 0,
-      "seconds": 1594339200
+      "seconds": 1594598400
     }
   },
   "ADAMANT_SHIELD_H2_10669": {
@@ -1604,7 +1604,7 @@
     "price": 763,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "AGILITY_POTION1": {
@@ -1667,10 +1667,10 @@
   "AHRIMS_HOOD": {
     "id": 4708,
     "name": "Ahrim's hood",
-    "price": 63000,
+    "price": 62776,
     "time": {
       "nanos": 0,
-      "seconds": 1594339200
+      "seconds": 1594598400
     }
   },
   "AHRIMS_HOOD_0": {
@@ -1730,10 +1730,10 @@
   "AHRIMS_ROBETOP": {
     "id": 4712,
     "name": "Ahrim's robetop",
-    "price": 2693163,
+    "price": 2690107,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "AHRIMS_ROBETOP_0": {
@@ -1841,10 +1841,10 @@
   "AIR_TALISMAN": {
     "id": 1438,
     "name": "Air talisman",
-    "price": 73,
+    "price": 75,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "AIR_TIARA": {
@@ -1964,10 +1964,10 @@
   "AMETHYST_BROAD_BOLTS": {
     "id": 21316,
     "name": "Amethyst broad bolts",
-    "price": 270,
+    "price": 271,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "AMETHYST_FIRE_ARROW": {
@@ -2114,10 +2114,10 @@
   "AMULET_OF_GLORY": {
     "id": 1704,
     "name": "Amulet of glory",
-    "price": 11841,
+    "price": 11741,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "AMULET_OF_GLORY1": {
@@ -2204,19 +2204,19 @@
   "AMULET_OF_MAGIC": {
     "id": 1727,
     "name": "Amulet of magic",
-    "price": 620,
+    "price": 622,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "AMULET_OF_MAGIC_T": {
     "id": 10366,
     "name": "Amulet of magic (t)",
-    "price": 23935,
+    "price": 24000,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "AMULET_OF_MAGIC_T_10738": {
@@ -2252,10 +2252,10 @@
   "AMULET_OF_STRENGTH": {
     "id": 1725,
     "name": "Amulet of strength",
-    "price": 1278,
+    "price": 1270,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594684800
     }
   },
   "AMULET_OF_THE_DAMNED": {
@@ -2420,10 +2420,10 @@
   "ANCIENT_CHAPS": {
     "id": 12494,
     "name": "Ancient chaps",
-    "price": 188916,
+    "price": 187027,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "ANCIENT_CLOAK": {
@@ -2438,10 +2438,10 @@
   "ANCIENT_COIF": {
     "id": 12496,
     "name": "Ancient coif",
-    "price": 84536,
+    "price": 84668,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "ANCIENT_COIN": {
@@ -2477,10 +2477,10 @@
   "ANCIENT_DHIDE_BOOTS": {
     "id": 19921,
     "name": "Ancient d'hide boots",
-    "price": 775036,
+    "price": 751959,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594684800
     }
   },
   "ANCIENT_DHIDE_SHIELD": {
@@ -2561,10 +2561,10 @@
   "ANCIENT_MACE": {
     "id": 11061,
     "name": "Ancient mace",
-    "price": 1984,
+    "price": 1953,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "ANCIENT_MAGICKS_TABLET": {
@@ -2699,10 +2699,10 @@
   "ANCIENT_PAGE_4": {
     "id": 12624,
     "name": "Ancient page 4",
-    "price": 102878,
+    "price": 102783,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "ANCIENT_PLATEBODY": {
@@ -2762,10 +2762,10 @@
   "ANCIENT_RUNE_ARMOUR_SET_LG": {
     "id": 13060,
     "name": "Ancient rune armour set (lg)",
-    "price": 169937,
+    "price": 170130,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "ANCIENT_RUNE_ARMOUR_SET_SK": {
@@ -2807,10 +2807,10 @@
   "ANCIENT_STOLE": {
     "id": 12201,
     "name": "Ancient stole",
-    "price": 1868,
+    "price": 1879,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "ANCIENT_SYMBOL": {
@@ -2981,7 +2981,7 @@
     "price": 610,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594684800
     }
   },
   "ANTIDOTE2_5956": {
@@ -3122,7 +3122,7 @@
     "price": 111,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "ANTIPOISON3": {
@@ -3167,7 +3167,7 @@
     "price": 299,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "ANTIPOISON_SUPERMIX2": {
@@ -3371,10 +3371,10 @@
   "APPLE_PIE": {
     "id": 2323,
     "name": "Apple pie",
-    "price": 168,
+    "price": 171,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "APPLE_SAPLING": {
@@ -3443,10 +3443,10 @@
   "ARCANE_PRAYER_SCROLL": {
     "id": 21079,
     "name": "Arcane prayer scroll",
-    "price": 1878295,
+    "price": 1825429,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "ARCANE_SIGIL": {
@@ -3557,10 +3557,10 @@
   "ARCHERS_RING": {
     "id": 6733,
     "name": "Archers ring",
-    "price": 4780883,
+    "price": 4786275,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "ARCHERS_RING_I": {
@@ -3575,7 +3575,7 @@
     "price": 12,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "ARCLIGHT": {
@@ -3596,7 +3596,7 @@
     "price": 1714,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "ARDOUGNE_CLOAK": {
@@ -3656,7 +3656,7 @@
     "price": 3880,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "ARMADYL_BRACERS": {
@@ -3737,10 +3737,10 @@
   "ARMADYL_DHIDE_BODY": {
     "id": 12508,
     "name": "Armadyl d'hide body",
-    "price": 594985,
+    "price": 567643,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "ARMADYL_DHIDE_BOOTS": {
@@ -3782,10 +3782,10 @@
   "ARMADYL_GODSWORD": {
     "id": 11802,
     "name": "Armadyl godsword",
-    "price": 10574463,
+    "price": 10429747,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "ARMADYL_GODSWORD_20593": {
@@ -3818,10 +3818,10 @@
   "ARMADYL_HELMET": {
     "id": 11826,
     "name": "Armadyl helmet",
-    "price": 5379495,
+    "price": 5320308,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "ARMADYL_HILT": {
@@ -3836,10 +3836,10 @@
   "ARMADYL_KITESHIELD": {
     "id": 12478,
     "name": "Armadyl kiteshield",
-    "price": 33259,
+    "price": 32980,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "ARMADYL_MITRE": {
@@ -3872,10 +3872,10 @@
   "ARMADYL_PAGE_3": {
     "id": 12619,
     "name": "Armadyl page 3",
-    "price": 91594,
+    "price": 93051,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "ARMADYL_PAGE_4": {
@@ -3938,10 +3938,10 @@
   "ARMADYL_RUNE_ARMOUR_SET_LG": {
     "id": 13052,
     "name": "Armadyl rune armour set (lg)",
-    "price": 149497,
+    "price": 147916,
     "time": {
       "nanos": 0,
-      "seconds": 1594339200
+      "seconds": 1594598400
     }
   },
   "ARMADYL_RUNE_ARMOUR_SET_SK": {
@@ -4034,7 +4034,7 @@
     "price": 10568,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "ASGARNIAN_ALE_7744": {
@@ -4502,16 +4502,16 @@
     "price": 12142,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "BAGGED_DEAD_TREE": {
     "id": 8417,
     "name": "Bagged dead tree",
-    "price": 1577,
+    "price": 1548,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "BAGGED_FLOWER": {
@@ -4610,7 +4610,7 @@
     "price": 6175,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "BAGGED_WILLOW_TREE": {
@@ -4619,7 +4619,7 @@
     "price": 10998,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "BAGGED_YEW_TREE": {
@@ -4628,7 +4628,7 @@
     "price": 20763,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "BAGUETTE": {
@@ -4742,7 +4742,7 @@
     "price": 4,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "BANANAS1": {
@@ -4760,10 +4760,10 @@
   "BANANAS5": {
     "id": 5416,
     "name": "Bananas(5)",
-    "price": 522,
+    "price": 537,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "BANDAGES": {
@@ -4799,10 +4799,10 @@
   "BANDITS_BREW": {
     "id": 4627,
     "name": "Bandit's brew",
-    "price": 272,
+    "price": 277,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "BANDOS_BOOTS": {
@@ -4844,10 +4844,10 @@
   "BANDOS_CLOAK": {
     "id": 12273,
     "name": "Bandos cloak",
-    "price": 37291,
+    "price": 37187,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "BANDOS_COIF": {
@@ -4916,10 +4916,10 @@
   "BANDOS_GODSWORD": {
     "id": 11804,
     "name": "Bandos godsword",
-    "price": 12891395,
+    "price": 12852785,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "BANDOS_GODSWORD_20782": {
@@ -5033,19 +5033,19 @@
   "BANDOS_PLATESKIRT": {
     "id": 12484,
     "name": "Bandos plateskirt",
-    "price": 37820,
+    "price": 38648,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "BANDOS_ROBE_LEGS": {
     "id": 12267,
     "name": "Bandos robe legs",
-    "price": 94203,
+    "price": 92808,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "BANDOS_ROBE_TOP": {
@@ -5087,10 +5087,10 @@
   "BANDOS_TASSETS": {
     "id": 11834,
     "name": "Bandos tassets",
-    "price": 29870189,
+    "price": 29856168,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "BANDOS_TASSETS_23646": {
@@ -5210,10 +5210,10 @@
   "BARBTAIL_HARPOON": {
     "id": 10129,
     "name": "Barb-tail harpoon",
-    "price": 11,
+    "price": 12,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "BARCRAWL_CARD": {
@@ -5393,7 +5393,7 @@
     "price": 6588,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "BASTION_POTION4": {
@@ -5597,7 +5597,7 @@
     "price": 28,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "BEER_BARREL_8516": {
@@ -5726,10 +5726,10 @@
   "BERSERKER_RING": {
     "id": 6737,
     "name": "Berserker ring",
-    "price": 2441508,
+    "price": 2429447,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "BERSERKER_RING_23595": {
@@ -5816,7 +5816,7 @@
     "price": 840,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "BIRD_NEST": {
@@ -5927,10 +5927,10 @@
   "BLACK_BATTLEAXE": {
     "id": 1367,
     "name": "Black battleaxe",
-    "price": 508,
+    "price": 497,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "BLACK_BEAD": {
@@ -6023,16 +6023,16 @@
     "price": 2052,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "BLACK_CHINCHOMPA": {
     "id": 11959,
     "name": "Black chinchompa",
-    "price": 2983,
+    "price": 2964,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "BLACK_CLAWS": {
@@ -6128,10 +6128,10 @@
   "BLACK_DESERT_SHIRT": {
     "id": 6750,
     "name": "Black desert shirt",
-    "price": 1828,
+    "price": 1823,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "BLACK_DESTABILISER": {
@@ -6200,28 +6200,28 @@
   "BLACK_DHIDE_SHIELD": {
     "id": 22284,
     "name": "Black d'hide shield",
-    "price": 18924,
-    "time": {
-      "nanos": 0,
-      "seconds": 1594512000
-    }
-  },
-  "BLACK_DHIDE_VAMBRACES": {
-    "id": 2491,
-    "name": "Black d'hide vambraces",
-    "price": 2329,
+    "price": 19069,
     "time": {
       "nanos": 0,
       "seconds": 1594598400
     }
   },
+  "BLACK_DHIDE_VAMBRACES": {
+    "id": 2491,
+    "name": "Black d'hide vambraces",
+    "price": 2308,
+    "time": {
+      "nanos": 0,
+      "seconds": 1594684800
+    }
+  },
   "BLACK_DRAGON_LEATHER": {
     "id": 2509,
     "name": "Black dragon leather",
-    "price": 3107,
+    "price": 3086,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "BLACK_DRAGON_MASK": {
@@ -6236,19 +6236,19 @@
   "BLACK_DRAGONHIDE": {
     "id": 1747,
     "name": "Black dragonhide",
-    "price": 2892,
+    "price": 2889,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "BLACK_DRAGONHIDE_SET": {
     "id": 12871,
     "name": "Black dragonhide set",
-    "price": 15910,
+    "price": 15701,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "BLACK_ELEGANT_LEGS": {
@@ -6320,7 +6320,7 @@
     "price": 466993,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "BLACK_GOLDTRIMMED_SET_SK": {
@@ -6329,7 +6329,7 @@
     "price": 450463,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "BLACK_HALBERD": {
@@ -6455,7 +6455,7 @@
     "price": 24350,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "BLACK_KNIFE": {
@@ -6506,10 +6506,10 @@
   "BLACK_MACE": {
     "id": 1426,
     "name": "Black mace",
-    "price": 299,
+    "price": 314,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "BLACK_MASK": {
@@ -6671,7 +6671,7 @@
     "price": 2323,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "BLACK_PLATEBODY_H3": {
@@ -6716,10 +6716,10 @@
   "BLACK_PLATELEGS": {
     "id": 1077,
     "name": "Black platelegs",
-    "price": 1143,
+    "price": 1169,
     "time": {
       "nanos": 0,
-      "seconds": 1593993600
+      "seconds": 1594598400
     }
   },
   "BLACK_PLATELEGS_G": {
@@ -6746,7 +6746,7 @@
     "price": 1263,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "BLACK_PLATESKIRT_G": {
@@ -6773,10 +6773,10 @@
   "BLACK_ROBE": {
     "id": 581,
     "name": "Black robe",
-    "price": 1139,
+    "price": 1115,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "BLACK_SALAMANDER": {
@@ -6797,10 +6797,10 @@
   "BLACK_SCIMITAR": {
     "id": 1327,
     "name": "Black scimitar",
-    "price": 1355,
+    "price": 1388,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "BLACK_SET_LG": {
@@ -6902,10 +6902,10 @@
   "BLACK_SKIRT_T": {
     "id": 12447,
     "name": "Black skirt (t)",
-    "price": 17156,
+    "price": 18014,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "BLACK_SLAYER_HELMET": {
@@ -6962,10 +6962,10 @@
   "BLACK_SWORD": {
     "id": 1283,
     "name": "Black sword",
-    "price": 180,
+    "price": 189,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "BLACK_TOURMALINE_CORE": {
@@ -6983,7 +6983,7 @@
     "price": 190,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "BLACK_TRICORN_HAT": {
@@ -7115,7 +7115,7 @@
     "price": 1972,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594684800
     }
   },
   "BLAMISH_BLUE_SHELL_3361": {
@@ -7250,10 +7250,10 @@
   "BLIGHTED_ENTANGLE_SACK": {
     "id": 24613,
     "name": "Blighted entangle sack",
-    "price": 245,
+    "price": 246,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "BLIGHTED_KARAMBWAN": {
@@ -7295,19 +7295,19 @@
   "BLIGHTED_SUPER_RESTORE4": {
     "id": 24598,
     "name": "Blighted super restore(4)",
-    "price": 3878,
+    "price": 3772,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "BLIGHTED_TELEPORT_SPELL_SACK": {
     "id": 24615,
     "name": "Blighted teleport spell sack",
-    "price": 341,
+    "price": 332,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "BLIGHTED_VENGEANCE_SACK": {
@@ -7349,7 +7349,7 @@
     "price": 114,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "BLOOD_POTION": {
@@ -7394,7 +7394,7 @@
     "price": 656,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "BLOODNTAR_SNELM_3339": {
@@ -7472,10 +7472,10 @@
   "BLUE_CAPE": {
     "id": 1021,
     "name": "Blue cape",
-    "price": 233,
+    "price": 232,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "BLUE_COG": {
@@ -7589,19 +7589,19 @@
   "BLUE_DRAGON_MASK": {
     "id": 12520,
     "name": "Blue dragon mask",
-    "price": 5483,
+    "price": 5556,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "BLUE_DRAGON_SCALE": {
     "id": 243,
     "name": "Blue dragon scale",
-    "price": 742,
+    "price": 721,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "BLUE_DRAGONHIDE": {
@@ -7928,7 +7928,7 @@
     "price": 42,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "BLUNT_ARROW": {
@@ -7943,7 +7943,7 @@
     "price": 2171,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "BLURBERRY_SPECIAL_9520": {
@@ -8168,10 +8168,10 @@
   "BODY_RUNE": {
     "id": 559,
     "name": "Body rune",
-    "price": 5,
+    "price": 4,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "BODY_RUNE_11691": {
@@ -8213,7 +8213,7 @@
     "price": 6,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "BOLT_OF_CLOTH": {
@@ -8525,7 +8525,7 @@
     "price": 99,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "BONES_24655": {
@@ -8684,10 +8684,10 @@
   "BOOTS_OF_DARKNESS": {
     "id": 20140,
     "name": "Boots of darkness",
-    "price": 33712,
+    "price": 33151,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "BOOTS_OF_LIGHTNESS": {
@@ -8729,10 +8729,10 @@
   "BOTTLED_DRAGONBREATH": {
     "id": 23002,
     "name": "Bottled dragonbreath",
-    "price": 11054,
+    "price": 11455,
     "time": {
       "nanos": 0,
-      "seconds": 1594339200
+      "seconds": 1594598400
     }
   },
   "BOTTLED_DRAGONBREATH_UNPOWERED": {
@@ -8942,10 +8942,10 @@
   "BRACELET_OF_SLAUGHTER": {
     "id": 21183,
     "name": "Bracelet of slaughter",
-    "price": 4140,
+    "price": 4271,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "BRAIN_TONGS": {
@@ -9005,10 +9005,10 @@
   "BREAD": {
     "id": 2309,
     "name": "Bread",
-    "price": 78,
+    "price": 79,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "BREAD_DOUGH": {
@@ -9254,7 +9254,7 @@
     "price": 26,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "BRONZE_ARROWP_5616": {
@@ -9275,10 +9275,10 @@
   "BRONZE_AXE": {
     "id": 1351,
     "name": "Bronze axe",
-    "price": 10,
+    "price": 9,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "BRONZE_AXE_HEAD": {
@@ -9317,7 +9317,7 @@
     "price": 396,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "BRONZE_BOLTS_P_6061": {
@@ -9350,7 +9350,7 @@
     "price": 97,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "BRONZE_CHAINBODY": {
@@ -9392,10 +9392,10 @@
   "BRONZE_DAGGER": {
     "id": 1205,
     "name": "Bronze dagger",
-    "price": 28,
+    "price": 26,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "BRONZE_DAGGERP": {
@@ -9428,7 +9428,7 @@
     "price": 33,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "BRONZE_DARTP": {
@@ -9437,7 +9437,7 @@
     "price": 27,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "BRONZE_DARTP_5628": {
@@ -9641,10 +9641,10 @@
   "BRONZE_KITESHIELD_T": {
     "id": 12223,
     "name": "Bronze kiteshield (t)",
-    "price": 4725,
+    "price": 4894,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "BRONZE_KNIFE": {
@@ -9740,10 +9740,10 @@
   "BRONZE_PLATEBODY_G": {
     "id": 12205,
     "name": "Bronze platebody (g)",
-    "price": 100471,
+    "price": 100756,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "BRONZE_PLATEBODY_T": {
@@ -9821,10 +9821,10 @@
   "BRONZE_SET_LG": {
     "id": 12960,
     "name": "Bronze set (lg)",
-    "price": 439,
+    "price": 443,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "BRONZE_SET_SK": {
@@ -9839,10 +9839,10 @@
   "BRONZE_SPEAR": {
     "id": 1237,
     "name": "Bronze spear",
-    "price": 495,
+    "price": 512,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "BRONZE_SPEARKP": {
@@ -9938,7 +9938,7 @@
     "price": 3044,
     "time": {
       "nanos": 0,
-      "seconds": 1594252800
+      "seconds": 1594598400
     }
   },
   "BROODOO_SHIELD_1": {
@@ -10193,10 +10193,10 @@
   "BUCKET_HELM_G": {
     "id": 20059,
     "name": "Bucket helm (g)",
-    "price": 1172376,
+    "price": 1202398,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "BUCKET_OF_MILK": {
@@ -10262,7 +10262,7 @@
     "price": 744,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "BUCKET_OF_WESTER_SAND": {
@@ -10640,10 +10640,10 @@
   "CABBAGES10": {
     "id": 5478,
     "name": "Cabbages(10)",
-    "price": 765,
+    "price": 781,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "CABBAGES2": {
@@ -10766,10 +10766,10 @@
   "CAKE_TIN": {
     "id": 1887,
     "name": "Cake tin",
-    "price": 43,
+    "price": 48,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594684800
     }
   },
   "CALCITE": {
@@ -10787,10 +10787,10 @@
   "CALQUAT_FRUIT": {
     "id": 5980,
     "name": "Calquat fruit",
-    "price": 146,
+    "price": 150,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "CALQUAT_KEG": {
@@ -10820,10 +10820,10 @@
   "CALQUAT_TREE_SEED": {
     "id": 5290,
     "name": "Calquat tree seed",
-    "price": 133,
+    "price": 123,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594684800
     }
   },
   "CAMEL_MASK": {
@@ -10835,10 +10835,10 @@
   "CAMELOT_TELEPORT": {
     "id": 8010,
     "name": "Camelot teleport",
-    "price": 400,
+    "price": 392,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "CAMO_BOTTOMS": {
@@ -10958,10 +10958,10 @@
   "CANNONBALL": {
     "id": 2,
     "name": "Cannonball",
-    "price": 175,
+    "price": 177,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "CANOPIC_JAR": {
@@ -11036,7 +11036,7 @@
     "price": 27,
     "time": {
       "nanos": 0,
-      "seconds": 1594166400
+      "seconds": 1594598400
     }
   },
   "CARVED_OAK_BENCH_8566": {
@@ -11090,10 +11090,10 @@
   "CARVED_TEAK_TABLE": {
     "id": 8556,
     "name": "Carved teak table",
-    "price": 436,
+    "price": 418,
     "time": {
       "nanos": 0,
-      "seconds": 1594339200
+      "seconds": 1594598400
     }
   },
   "CARVED_TEAK_TABLE_8556": {
@@ -11105,10 +11105,10 @@
   "CASKET": {
     "id": 405,
     "name": "Casket",
-    "price": 592,
+    "price": 613,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "CASKET_7956": {
@@ -11966,7 +11966,7 @@
     "price": 1489,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "CERAMIC_REMAINS": {
@@ -12233,7 +12233,7 @@
     "price": 6,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "CHAOTIC_HANDEGG": {
@@ -12254,10 +12254,10 @@
   "CHARGE_DRAGONSTONE_JEWELLERY_SCROLL": {
     "id": 20238,
     "name": "Charge dragonstone jewellery scroll",
-    "price": 188,
+    "price": 190,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "CHARGED_ONYX": {
@@ -12422,10 +12422,10 @@
   "CHILLI_POTATO": {
     "id": 7054,
     "name": "Chilli potato",
-    "price": 269,
+    "price": 275,
     "time": {
       "nanos": 0,
-      "seconds": 1594339200
+      "seconds": 1594598400
     }
   },
   "CHINCHOMPA": {
@@ -12458,7 +12458,7 @@
     "price": 28,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "CHOC_SATURDAY_9518": {
@@ -12629,7 +12629,7 @@
     "price": 186,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "CHOPPED_UGTHANKI": {
@@ -15053,7 +15053,7 @@
     "price": 2327,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "COCONUT_SHELL": {
@@ -15092,10 +15092,10 @@
   "COIF": {
     "id": 1169,
     "name": "Coif",
-    "price": 17,
+    "price": 16,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "COIN_POUCH": {
@@ -15434,7 +15434,7 @@
     "price": 119,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "COMPOST_POTION2": {
@@ -15623,16 +15623,16 @@
     "price": 223,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "COOKING_APPLE": {
     "id": 1955,
     "name": "Cooking apple",
-    "price": 91,
+    "price": 92,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "COOKING_CAPE": {
@@ -15812,10 +15812,10 @@
   "COSMIC_TALISMAN": {
     "id": 1454,
     "name": "Cosmic talisman",
-    "price": 628,
+    "price": 598,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "COSMIC_TIARA": {
@@ -15953,10 +15953,10 @@
   "CREAM_BOOTS": {
     "id": 632,
     "name": "Cream boots",
-    "price": 471,
+    "price": 448,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "CREAM_HAT": {
@@ -15974,7 +15974,7 @@
     "price": 189,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "CREAM_ROBE_TOP": {
@@ -16052,7 +16052,7 @@
     "price": 207,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "CROSSBOW_STRING": {
@@ -16466,7 +16466,7 @@
     "price": 5204,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "CRYSTAL_OF_POWER_8628": {
@@ -16703,10 +16703,10 @@
   "CUP_OF_WATER": {
     "id": 4458,
     "name": "Cup of water",
-    "price": 45,
+    "price": 43,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "CUPRIC_ORE_POWDER": {
@@ -17024,10 +17024,10 @@
   "DARK_CRAB": {
     "id": 11936,
     "name": "Dark crab",
-    "price": 1101,
+    "price": 1129,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594684800
     }
   },
   "DARK_DAGGER": {
@@ -17516,10 +17516,10 @@
   "DEFENCE_POTION4": {
     "id": 2432,
     "name": "Defence potion(4)",
-    "price": 334,
+    "price": 344,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "DEFENDER_HORN": {
@@ -17669,7 +17669,7 @@
     "price": 722,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "DESERT_DISGUISE": {
@@ -17750,10 +17750,10 @@
   "DEVOUT_BOOTS": {
     "id": 22954,
     "name": "Devout boots",
-    "price": 1130402,
+    "price": 1156227,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "DEXTEROUS_PRAYER_SCROLL": {
@@ -17786,10 +17786,10 @@
   "DHAROKS_GREATAXE_0": {
     "id": 4890,
     "name": "Dharok's greataxe 0",
-    "price": 754100,
+    "price": 783493,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "DHAROKS_GREATAXE_100": {
@@ -17981,10 +17981,10 @@
   "DIAMOND_BOLTS_E": {
     "id": 9243,
     "name": "Diamond bolts (e)",
-    "price": 336,
+    "price": 350,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "DIAMOND_BOLTS_E_23649": {
@@ -18035,7 +18035,7 @@
     "price": 1937,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "DIANGOS_CLAWS": {
@@ -18176,7 +18176,7 @@
     "price": 11076,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "DIVINE_BATTLEMAGE_POTION4": {
@@ -18245,10 +18245,10 @@
   "DIVINE_RANGING_POTION3": {
     "id": 23736,
     "name": "Divine ranging potion(3)",
-    "price": 1518,
+    "price": 1519,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "DIVINE_RANGING_POTION4": {
@@ -18275,7 +18275,7 @@
     "price": 1449,
     "time": {
       "nanos": 0,
-      "seconds": 1594339200
+      "seconds": 1594598400
     }
   },
   "DIVINE_SUPER_ATTACK_POTION3": {
@@ -18317,19 +18317,19 @@
   "DIVINE_SUPER_COMBAT_POTION3": {
     "id": 23688,
     "name": "Divine super combat potion(3)",
-    "price": 11333,
+    "price": 11589,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "DIVINE_SUPER_COMBAT_POTION4": {
     "id": 23685,
     "name": "Divine super combat potion(4)",
-    "price": 15196,
+    "price": 15507,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "DIVINE_SUPER_DEFENCE_POTION1": {
@@ -18365,7 +18365,7 @@
     "price": 1341,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "DIVINE_SUPER_STRENGTH_POTION1": {
@@ -18383,7 +18383,7 @@
     "price": 1330,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "DIVINE_SUPER_STRENGTH_POTION3": {
@@ -18401,7 +18401,7 @@
     "price": 2396,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "DIVING_APPARATUS": {
@@ -18515,7 +18515,7 @@
     "price": 69191047,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "DRAGON_ARROW": {
@@ -18533,10 +18533,10 @@
   "DRAGON_ARROWP": {
     "id": 11229,
     "name": "Dragon arrow(p++)",
-    "price": 1642,
+    "price": 1681,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "DRAGON_ARROWP_11228": {
@@ -18659,10 +18659,10 @@
   "DRAGON_BOLTS_UNF": {
     "id": 21930,
     "name": "Dragon bolts (unf)",
-    "price": 1069,
+    "price": 1068,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594684800
     }
   },
   "DRAGON_BONES": {
@@ -18689,10 +18689,10 @@
   "DRAGON_BOOTS_ORNAMENT_KIT": {
     "id": 22231,
     "name": "Dragon boots ornament kit",
-    "price": 90634,
+    "price": 88535,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "DRAGON_BRACELET": {
@@ -18701,10 +18701,10 @@
   "DRAGON_CANE": {
     "id": 12373,
     "name": "Dragon cane",
-    "price": 20283,
+    "price": 21110,
     "time": {
       "nanos": 0,
-      "seconds": 1594339200
+      "seconds": 1594598400
     }
   },
   "DRAGON_CHAINBODY": {
@@ -18881,10 +18881,10 @@
   "DRAGON_HALBERD": {
     "id": 3204,
     "name": "Dragon halberd",
-    "price": 149291,
+    "price": 148897,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "DRAGON_HARPOON": {
@@ -18944,10 +18944,10 @@
   "DRAGON_IMPLING_JAR": {
     "id": 11256,
     "name": "Dragon impling jar",
-    "price": 291498,
+    "price": 286159,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "DRAGON_INN_TANKARD": {
@@ -18968,10 +18968,10 @@
   "DRAGON_JAVELIN_HEADS": {
     "id": 19582,
     "name": "Dragon javelin heads",
-    "price": 937,
+    "price": 958,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "DRAGON_JAVELINP": {
@@ -19073,10 +19073,10 @@
   "DRAGON_LIMBS": {
     "id": 21918,
     "name": "Dragon limbs",
-    "price": 2624715,
+    "price": 2601799,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "DRAGON_LONGSWORD": {
@@ -19133,7 +19133,7 @@
     "price": 19354072,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "DRAGON_NECKLACE": {
@@ -19187,7 +19187,7 @@
     "price": 11334785,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "DRAGON_PLATELEGS": {
@@ -19247,10 +19247,10 @@
   "DRAGON_SCIMITAR_ORNAMENT_KIT": {
     "id": 20002,
     "name": "Dragon scimitar ornament kit",
-    "price": 618763,
+    "price": 619449,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "DRAGON_SPEAR": {
@@ -19304,10 +19304,10 @@
   "DRAGON_SWORD": {
     "id": 21009,
     "name": "Dragon sword",
-    "price": 46382,
+    "price": 45883,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "DRAGON_SWORD_21206": {
@@ -19385,10 +19385,10 @@
   "DRAGONFRUIT_PIE": {
     "id": 22795,
     "name": "Dragonfruit pie",
-    "price": 478,
+    "price": 491,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "DRAGONFRUIT_SAPLING": {
@@ -19442,7 +19442,7 @@
     "price": 11711,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "DRAGONSTONE_ARMOUR_SET": {
@@ -19451,7 +19451,7 @@
     "price": 7999604,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "DRAGONSTONE_BOLT_TIPS": {
@@ -19550,7 +19550,7 @@
     "price": 1715592,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "DRAGONSTONE_RING": {
@@ -19670,10 +19670,10 @@
   "DRUIDS_ROBE_TOP": {
     "id": 540,
     "name": "Druid's robe top",
-    "price": 1109,
+    "price": 1057,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594684800
     }
   },
   "DRUNK_DRAGON": {
@@ -19772,10 +19772,10 @@
   "DWARF_CANNON_SET": {
     "id": 12863,
     "name": "Dwarf cannon set",
-    "price": 757820,
+    "price": 756970,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "DWARF_REMAINS": {
@@ -19784,10 +19784,10 @@
   "DWARF_WEED": {
     "id": 267,
     "name": "Dwarf weed",
-    "price": 405,
+    "price": 407,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "DWARF_WEED_POTION_UNF": {
@@ -19847,10 +19847,10 @@
   "DWARVEN_STOUT": {
     "id": 5747,
     "name": "Dwarven stout(m)",
-    "price": 26101,
+    "price": 24994,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "DWARVEN_STOUT1": {
@@ -20000,10 +20000,10 @@
   "EARTH_TALISMAN": {
     "id": 1440,
     "name": "Earth talisman",
-    "price": 317,
+    "price": 316,
     "time": {
       "nanos": 0,
-      "seconds": 1594339200
+      "seconds": 1594598400
     }
   },
   "EARTH_TIARA": {
@@ -20012,7 +20012,7 @@
     "price": 2,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "EARTH_WARRIOR_CHAMPION_SCROLL": {
@@ -20120,10 +20120,10 @@
   "EDIBLE_SEAWEED": {
     "id": 403,
     "name": "Edible seaweed",
-    "price": 31,
+    "price": 33,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594684800
     }
   },
   "EEK": {
@@ -20135,10 +20135,10 @@
   "EFARITAYS_AID": {
     "id": 21140,
     "name": "Efaritay's aid",
-    "price": 987,
+    "price": 995,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "EFH_SALT": {
@@ -20267,10 +20267,10 @@
   "ELDER_MAUL": {
     "id": 21003,
     "name": "Elder maul",
-    "price": 13524178,
+    "price": 13037599,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "ELDER_MAUL_21205": {
@@ -20303,10 +20303,10 @@
   "ELEMENTAL_HELMET": {
     "id": 9729,
     "name": "Elemental helmet",
-    "price": 457,
+    "price": 453,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "ELEMENTAL_METAL": {
@@ -20393,7 +20393,7 @@
     "price": 9788,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "ELVEN_DAWN": {
@@ -20426,10 +20426,10 @@
   "ELVEN_SIGNET": {
     "id": 23943,
     "name": "Elven signet",
-    "price": 913509,
+    "price": 959185,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "ELVEN_SKIRT": {
@@ -20465,19 +20465,19 @@
   "ELYSIAN_SIGIL": {
     "id": 12819,
     "name": "Elysian sigil",
-    "price": 886844543,
+    "price": 888852474,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "ELYSIAN_SPIRIT_SHIELD": {
     "id": 12817,
     "name": "Elysian spirit shield",
-    "price": 898282048,
+    "price": 904157022,
     "time": {
       "nanos": 0,
-      "seconds": 1594252800
+      "seconds": 1594598400
     }
   },
   "ELYSIAN_SPIRIT_SHIELD_19559": {
@@ -20630,7 +20630,7 @@
     "price": 5,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "EMPTY_CUP": {
@@ -20681,7 +20681,7 @@
     "price": 21,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "EMPTY_OYSTER": {
@@ -20702,7 +20702,7 @@
     "price": 2,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "EMPTY_SACK_10486": {
@@ -20906,7 +20906,7 @@
     "price": 261,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "ENERGY_MIX2": {
@@ -20924,7 +20924,7 @@
     "price": 110,
     "time": {
       "nanos": 0,
-      "seconds": 1594339200
+      "seconds": 1594598400
     }
   },
   "ENERGY_POTION2": {
@@ -20987,10 +20987,10 @@
   "ENSOULED_AVIANSIE_HEAD": {
     "id": 13505,
     "name": "Ensouled aviansie head",
-    "price": 8387,
+    "price": 8516,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "ENSOULED_AVIANSIE_HEAD_13505": {
@@ -21035,10 +21035,10 @@
   "ENSOULED_DAGANNOTH_HEAD": {
     "id": 13493,
     "name": "Ensouled dagannoth head",
-    "price": 3804,
+    "price": 3985,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "ENSOULED_DAGANNOTH_HEAD_13493": {
@@ -21047,10 +21047,10 @@
   "ENSOULED_DEMON_HEAD": {
     "id": 13502,
     "name": "Ensouled demon head",
-    "price": 6515,
+    "price": 6686,
     "time": {
       "nanos": 0,
-      "seconds": 1594252800
+      "seconds": 1594598400
     }
   },
   "ENSOULED_DEMON_HEAD_13502": {
@@ -21095,10 +21095,10 @@
   "ENSOULED_GIANT_HEAD": {
     "id": 13475,
     "name": "Ensouled giant head",
-    "price": 1825,
+    "price": 1990,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "ENSOULED_GIANT_HEAD_13475": {
@@ -21203,10 +21203,10 @@
   "ENSOULED_TROLL_HEAD": {
     "id": 13484,
     "name": "Ensouled troll head",
-    "price": 2807,
+    "price": 2666,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "ENSOULED_TROLL_HEAD_13484": {
@@ -21257,10 +21257,10 @@
   "ESSENCE_IMPLING_JAR": {
     "id": 11246,
     "name": "Essence impling jar",
-    "price": 2074,
+    "price": 1976,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "ETCHINGS": {
@@ -21320,7 +21320,7 @@
     "price": 815768,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "EVIL_CHICKEN_LEGS": {
@@ -21440,7 +21440,7 @@
     "price": 488,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "EXTENDED_ANTIFIRE3": {
@@ -21518,10 +21518,10 @@
   "EXTENDED_SUPER_ANTIFIRE4": {
     "id": 22209,
     "name": "Extended super antifire(4)",
-    "price": 12550,
+    "price": 12362,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "EXTENDED_SUPER_ANTIFIRE_MIX1": {
@@ -21569,10 +21569,10 @@
   "FACEMASK": {
     "id": 4164,
     "name": "Facemask",
-    "price": 407,
+    "price": 419,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "FAIRY_ENCHANTMENT": {
@@ -21617,10 +21617,10 @@
   "FALADOR_TELEPORT": {
     "id": 8009,
     "name": "Falador teleport",
-    "price": 552,
+    "price": 526,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "FALCONERS_GLOVE": {
@@ -21641,7 +21641,7 @@
     "price": 26230,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "FANCY_HEDGE_8445": {
@@ -21776,7 +21776,7 @@
     "price": 3,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594684800
     }
   },
   "FEATHER_PACK": {
@@ -21863,10 +21863,10 @@
   "FEZ": {
     "id": 6382,
     "name": "Fez",
-    "price": 710,
+    "price": 687,
     "time": {
       "nanos": 0,
-      "seconds": 1594339200
+      "seconds": 1594598400
     }
   },
   "FIBULA_PIECE": {
@@ -21875,7 +21875,7 @@
     "price": 16722,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "FIELD_ARROW": {
@@ -22046,10 +22046,10 @@
   "FIRE_TIARA": {
     "id": 5537,
     "name": "Fire tiara",
-    "price": 88,
+    "price": 87,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "FIREMAKING_CAPE": {
@@ -22112,16 +22112,16 @@
     "price": 43,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "FISH_PIE": {
     "id": 7188,
     "name": "Fish pie",
-    "price": 46,
+    "price": 44,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "FISH_SACK": {
@@ -22544,7 +22544,7 @@
     "price": 15,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "FREMENNIK_BROWN_SHIRT": {
@@ -22616,10 +22616,10 @@
   "FREMENNIK_KILT": {
     "id": 23246,
     "name": "Fremennik kilt",
-    "price": 3562392,
+    "price": 3449641,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "FREMENNIK_PINK_CLOAK": {
@@ -22700,7 +22700,7 @@
     "price": 677,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "FREMENNIK_YELLOW_CLOAK": {
@@ -22709,7 +22709,7 @@
     "price": 1077,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "FRESH_CHOCOLATE_MIX": {
@@ -22787,10 +22787,10 @@
   "FROGLEATHER_BOOTS": {
     "id": 10958,
     "name": "Frog-leather boots",
-    "price": 259,
+    "price": 262,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "FROGLEATHER_CHAPS": {
@@ -22865,7 +22865,7 @@
     "price": 1309,
     "time": {
       "nanos": 0,
-      "seconds": 1594339200
+      "seconds": 1594598400
     }
   },
   "FULL_BUCKET": {
@@ -22952,10 +22952,10 @@
   "GADDERHAMMER": {
     "id": 7668,
     "name": "Gadderhammer",
-    "price": 1410,
+    "price": 1406,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "GAME_BOOK": {
@@ -22985,10 +22985,10 @@
   "GAMES_NECKLACE8": {
     "id": 3853,
     "name": "Games necklace(8)",
-    "price": 745,
+    "price": 746,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "GAMES_ROOM": {
@@ -23234,7 +23234,7 @@
     "price": 68034,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "GIANT_FROG_LEGS": {
@@ -23384,10 +23384,10 @@
   "GILDED_CHAINBODY": {
     "id": 20149,
     "name": "Gilded chainbody",
-    "price": 638804,
+    "price": 639689,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "GILDED_CLOCK": {
@@ -23408,7 +23408,7 @@
     "price": 527489,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "GILDED_CROSS": {
@@ -23495,10 +23495,10 @@
   "GILDED_KITESHIELD": {
     "id": 3488,
     "name": "Gilded kiteshield",
-    "price": 1723597,
+    "price": 1669152,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "GILDED_MAGIC_WARDROBE": {
@@ -23546,7 +23546,7 @@
     "price": 2901802,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "GILDED_PLATESKIRT": {
@@ -23591,10 +23591,10 @@
   "GILDED_SQ_SHIELD": {
     "id": 20152,
     "name": "Gilded sq shield",
-    "price": 324388,
+    "price": 323183,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "GILDED_THRONE": {
@@ -23843,7 +23843,7 @@
     "price": 499133,
     "time": {
       "nanos": 0,
-      "seconds": 1594339200
+      "seconds": 1594598400
     }
   },
   "GODSWORD_SHARD_1": {
@@ -23918,7 +23918,7 @@
     "price": 155,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "GOLD_BRACELET_11069": {
@@ -24176,10 +24176,10 @@
   "GOUT_TUBER": {
     "id": 6311,
     "name": "Gout tuber",
-    "price": 584191,
+    "price": 608010,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "GOUTWEED": {
@@ -24668,10 +24668,10 @@
   "GRANITE_LEGS": {
     "id": 6809,
     "name": "Granite legs",
-    "price": 39076,
+    "price": 39171,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "GRANITE_LONGSWORD": {
@@ -24719,10 +24719,10 @@
   "GRANITE_SHIELD": {
     "id": 3122,
     "name": "Granite shield",
-    "price": 33425,
+    "price": 33552,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "GRAPE_SEED": {
@@ -24791,7 +24791,7 @@
     "price": 69,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "GREEN_BALLOON": {
@@ -24803,10 +24803,10 @@
   "GREEN_BOATER": {
     "id": 7323,
     "name": "Green boater",
-    "price": 4737,
+    "price": 4710,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "GREEN_BOATER_10762": {
@@ -24818,7 +24818,7 @@
     "price": 389,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "GREEN_CAPE": {
@@ -24881,10 +24881,10 @@
   "GREEN_DHIDE_CHAPS": {
     "id": 1099,
     "name": "Green d'hide chaps",
-    "price": 2108,
+    "price": 2106,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "GREEN_DHIDE_CHAPS_G": {
@@ -24944,10 +24944,10 @@
   "GREEN_DRAGONHIDE": {
     "id": 1753,
     "name": "Green dragonhide",
-    "price": 1392,
+    "price": 1405,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "GREEN_DRAGONHIDE_SET": {
@@ -24962,10 +24962,10 @@
   "GREEN_DYE": {
     "id": 1771,
     "name": "Green dye",
-    "price": 302,
+    "price": 303,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "GREEN_DYE_BELLOWS": {
@@ -24977,10 +24977,10 @@
   "GREEN_ELEGANT_BLOUSE": {
     "id": 10432,
     "name": "Green elegant blouse",
-    "price": 1768,
+    "price": 1853,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "GREEN_ELEGANT_LEGS": {
@@ -25010,7 +25010,7 @@
     "price": 1174,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "GREEN_FIRELIGHTER": {
@@ -25106,7 +25106,7 @@
     "price": 444,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "GREEN_ROBE_TOP": {
@@ -25298,10 +25298,10 @@
   "GRIMY_AVANTOE": {
     "id": 211,
     "name": "Grimy avantoe",
-    "price": 1822,
+    "price": 1831,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "GRIMY_BUCHU_LEAF": {
@@ -25310,10 +25310,10 @@
   "GRIMY_CADANTINE": {
     "id": 215,
     "name": "Grimy cadantine",
-    "price": 1312,
+    "price": 1418,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "GRIMY_DWARF_WEED": {
@@ -25358,10 +25358,10 @@
   "GRIMY_KWUARM": {
     "id": 213,
     "name": "Grimy kwuarm",
-    "price": 1231,
+    "price": 1200,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "GRIMY_LANTADYME": {
@@ -25532,7 +25532,7 @@
     "price": 25,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "GUAM_POTION_UNF": {
@@ -25547,10 +25547,10 @@
   "GUAM_SEED": {
     "id": 5291,
     "name": "Guam seed",
-    "price": 12,
+    "price": 11,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "GUAM_TAR": {
@@ -25652,7 +25652,7 @@
     "price": 602052,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "GUTHANS_HELM_100": {
@@ -25850,10 +25850,10 @@
   "GUTHIX_DHIDE_BODY": {
     "id": 10378,
     "name": "Guthix d'hide body",
-    "price": 304265,
+    "price": 299148,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "GUTHIX_DHIDE_BOOTS": {
@@ -25961,10 +25961,10 @@
   "GUTHIX_PAGE_3": {
     "id": 3837,
     "name": "Guthix page 3",
-    "price": 1575,
+    "price": 1603,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "GUTHIX_PAGE_4": {
@@ -25994,7 +25994,7 @@
     "price": 39216,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "GUTHIX_PLATESKIRT": {
@@ -26027,10 +26027,10 @@
   "GUTHIX_REST3": {
     "id": 4419,
     "name": "Guthix rest(3)",
-    "price": 1267,
+    "price": 1278,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "GUTHIX_REST4": {
@@ -26069,10 +26069,10 @@
   "GUTHIX_STOLE": {
     "id": 10472,
     "name": "Guthix stole",
-    "price": 2921,
+    "price": 2863,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "GUTHIX_SYMBOL": {
@@ -26099,7 +26099,7 @@
     "price": 157,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "HAIR_CLIP": {
@@ -26267,19 +26267,19 @@
   "HAM_BOOTS": {
     "id": 4310,
     "name": "Ham boots",
-    "price": 2750,
+    "price": 2781,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "HAM_CLOAK": {
     "id": 4304,
     "name": "Ham cloak",
-    "price": 1108,
+    "price": 1107,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "HAM_GLOVES": {
@@ -26342,10 +26342,10 @@
   "HAMMER": {
     "id": 2347,
     "name": "Hammer",
-    "price": 84,
+    "price": 85,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "HAMMERSTONE_HOPS": {
@@ -26363,7 +26363,7 @@
     "price": 2,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "HAND_FAN": {
@@ -26426,7 +26426,7 @@
     "price": 5,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "HARDLEATHER_GLOVES": {
@@ -26648,10 +26648,10 @@
   "HEAVY_BALLISTA": {
     "id": 19481,
     "name": "Heavy ballista",
-    "price": 585897,
+    "price": 594121,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "HEAVY_BALLISTA_23630": {
@@ -26795,7 +26795,7 @@
     "price": 29464,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "HIGHWAYMAN_MASK_10692": {
@@ -26897,10 +26897,10 @@
   "HOLY_SANDALS": {
     "id": 12598,
     "name": "Holy sandals",
-    "price": 991071,
+    "price": 993270,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "HOLY_SYMBOL": {
@@ -26936,10 +26936,10 @@
   "HONOURABLE_BLESSING": {
     "id": 20229,
     "name": "Honourable blessing",
-    "price": 5320,
+    "price": 5316,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "HOOD_OF_DARKNESS": {
@@ -27080,10 +27080,10 @@
   "HUNTER_POTION4": {
     "id": 9998,
     "name": "Hunter potion(4)",
-    "price": 4355,
+    "price": 4546,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "HUNTERS_CROSSBOW": {
@@ -27236,10 +27236,10 @@
   "ICY_BASALT": {
     "id": 22599,
     "name": "Icy basalt",
-    "price": 590,
+    "price": 616,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "ID_PAPERS": {
@@ -27542,10 +27542,10 @@
   "INITIATE_CUISSE": {
     "id": 5576,
     "name": "Initiate cuisse",
-    "price": 4710,
+    "price": 4635,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "INITIATE_HARNESS_M": {
@@ -27554,7 +27554,7 @@
     "price": 22850,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "INITIATE_HAUBERK": {
@@ -27608,10 +27608,10 @@
   "INQUISITORS_HAUBERK": {
     "id": 24420,
     "name": "Inquisitor's hauberk",
-    "price": 360448019,
+    "price": 366108664,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "INQUISITORS_MACE": {
@@ -27620,7 +27620,7 @@
     "price": 851845172,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "INQUISITORS_PLATESKIRT": {
@@ -27647,10 +27647,10 @@
   "INSULATED_BOOTS": {
     "id": 7159,
     "name": "Insulated boots",
-    "price": 431,
+    "price": 447,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "INTEL_REPORT": {
@@ -27677,10 +27677,10 @@
   "IORWERTH_CAMP_TELEPORT": {
     "id": 12410,
     "name": "Iorwerth camp teleport",
-    "price": 1168,
+    "price": 1133,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "IORWERTHS_MESSAGE": {
@@ -27701,10 +27701,10 @@
   "IRIT_POTION_UNF": {
     "id": 101,
     "name": "Irit potion (unf)",
-    "price": 837,
+    "price": 836,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "IRIT_SEED": {
@@ -27743,7 +27743,7 @@
     "price": 73,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "IRON_ARROWP_5617": {
@@ -27836,10 +27836,10 @@
   "IRON_BRUTAL": {
     "id": 4778,
     "name": "Iron brutal",
-    "price": 94,
+    "price": 96,
     "time": {
       "nanos": 0,
-      "seconds": 1594339200
+      "seconds": 1594598400
     }
   },
   "IRON_CHAINBODY": {
@@ -28049,7 +28049,7 @@
     "price": 1,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "IRON_JAVELIN_HEADS": {
@@ -28115,7 +28115,7 @@
     "price": 37,
     "time": {
       "nanos": 0,
-      "seconds": 1594252800
+      "seconds": 1594598400
     }
   },
   "IRON_KNIFEP": {
@@ -28238,10 +28238,10 @@
   "IRON_PLATELEGS": {
     "id": 1067,
     "name": "Iron platelegs",
-    "price": 81,
+    "price": 83,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "IRON_PLATELEGS_G": {
@@ -28250,7 +28250,7 @@
     "price": 32441,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "IRON_PLATELEGS_T": {
@@ -28277,7 +28277,7 @@
     "price": 4273,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "IRON_PLATESKIRT_T": {
@@ -28304,10 +28304,10 @@
   "IRON_SET_LG": {
     "id": 12972,
     "name": "Iron set (lg)",
-    "price": 513,
+    "price": 499,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "IRON_SET_SK": {
@@ -28355,10 +28355,10 @@
   "IRON_SPIT": {
     "id": 7225,
     "name": "Iron spit",
-    "price": 163,
+    "price": 172,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "IRON_SQ_SHIELD": {
@@ -28367,7 +28367,7 @@
     "price": 44,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "IRON_SWORD": {
@@ -28391,10 +28391,10 @@
   "IRON_TRIMMED_SET_LG": {
     "id": 12976,
     "name": "Iron trimmed set (lg)",
-    "price": 288666,
+    "price": 291601,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "IRON_TRIMMED_SET_SK": {
@@ -28628,10 +28628,10 @@
   "JANGERBERRIES": {
     "id": 247,
     "name": "Jangerberries",
-    "price": 281,
+    "price": 277,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "JANGERBERRY_SEED": {
@@ -28871,16 +28871,16 @@
     "price": 645,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "JUNGLE_CAMO_TOP": {
     "id": 10057,
     "name": "Jungle camo top",
-    "price": 654,
+    "price": 673,
     "time": {
       "nanos": 0,
-      "seconds": 1594339200
+      "seconds": 1594684800
     }
   },
   "JUNGLE_CAMO_TOP_10626": {
@@ -28889,10 +28889,10 @@
   "JUNGLE_DEMON_MASK": {
     "id": 20032,
     "name": "Jungle demon mask",
-    "price": 15154,
+    "price": 15834,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "JUNIPER_CHARCOAL": {
@@ -28937,10 +28937,10 @@
   "JUSTICIAR_LEGGUARDS": {
     "id": 22328,
     "name": "Justiciar legguards",
-    "price": 16281148,
+    "price": 16691439,
     "time": {
       "nanos": 0,
-      "seconds": 1594339200
+      "seconds": 1594598400
     }
   },
   "JUSTICIARS_HAND": {
@@ -29180,10 +29180,10 @@
   "KARILS_LEATHERTOP_0": {
     "id": 4944,
     "name": "Karil's leathertop 0",
-    "price": 1846224,
+    "price": 1805921,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "KARILS_LEATHERTOP_100": {
@@ -29231,7 +29231,7 @@
     "price": 192,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "KEBBIT": {
@@ -29282,10 +29282,10 @@
   "KEBBIT_CLAWS": {
     "id": 10113,
     "name": "Kebbit claws",
-    "price": 561,
+    "price": 585,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "KEBBIT_SPIKE": {
@@ -29570,10 +29570,10 @@
   "KNIFE": {
     "id": 946,
     "name": "Knife",
-    "price": 100,
+    "price": 101,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "KNIFE_5605": {
@@ -29744,7 +29744,7 @@
     "price": 1345,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "KYATT_HAT": {
@@ -29942,7 +29942,7 @@
     "price": 327,
     "time": {
       "nanos": 0,
-      "seconds": 1594339200
+      "seconds": 1594598400
     }
   },
   "LARUPIA_HAT": {
@@ -30023,10 +30023,10 @@
   "LAVA_RUNE": {
     "id": 4699,
     "name": "Lava rune",
-    "price": 4,
+    "price": 3,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "LAVA_SCALE": {
@@ -30173,7 +30173,7 @@
     "price": 195,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "LEATHER_BODY": {
@@ -30230,7 +30230,7 @@
     "price": 2,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "LEATHER_GLOVES": {
@@ -30434,7 +30434,7 @@
     "price": 77839,
     "time": {
       "nanos": 0,
-      "seconds": 1594339200
+      "seconds": 1594598400
     }
   },
   "LIGHT_BOX": {
@@ -30494,7 +30494,7 @@
     "price": 57661,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "LIGHT_TUXEDO_JACKET": {
@@ -30545,7 +30545,7 @@
     "price": 152,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "LIMESTONE": {
@@ -30635,7 +30635,7 @@
     "price": 16,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "LOACH": {
@@ -30773,7 +30773,7 @@
     "price": 20,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "LONGER_PULLEY_BEAM": {
@@ -30809,7 +30809,7 @@
     "price": 866,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "LOVAKENGJ_FAVOUR_CERTIFICATE": {
@@ -31127,7 +31127,7 @@
     "price": 314,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "MAGIC_ESSENCE_MIX2": {
@@ -31136,7 +31136,7 @@
     "price": 1255,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "MAGIC_ESSENCE_UNF": {
@@ -31250,28 +31250,28 @@
   "MAGIC_PYRE_LOGS": {
     "id": 3448,
     "name": "Magic pyre logs",
-    "price": 2837,
+    "price": 2861,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "MAGIC_ROOTS": {
     "id": 6051,
     "name": "Magic roots",
-    "price": 1220,
+    "price": 1226,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "MAGIC_SAPLING": {
     "id": 5374,
     "name": "Magic sapling",
-    "price": 115692,
+    "price": 117551,
     "time": {
       "nanos": 0,
-      "seconds": 1594252800
+      "seconds": 1594598400
     }
   },
   "MAGIC_SECATEURS": {
@@ -31322,19 +31322,19 @@
   "MAGIC_SHORTBOW_SCROLL": {
     "id": 12786,
     "name": "Magic shortbow scroll",
-    "price": 95655,
+    "price": 95849,
     "time": {
       "nanos": 0,
-      "seconds": 1594339200
+      "seconds": 1594598400
     }
   },
   "MAGIC_SHORTBOW_U": {
     "id": 72,
     "name": "Magic shortbow (u)",
-    "price": 822,
+    "price": 811,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "MAGIC_STAFF": {
@@ -31370,10 +31370,10 @@
   "MAGIC_STRING": {
     "id": 6038,
     "name": "Magic string",
-    "price": 213,
+    "price": 222,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "MAGIC_TREE": {
@@ -31631,7 +31631,7 @@
     "price": 175,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "MAHOGANY_TABLE": {
@@ -31640,7 +31640,7 @@
     "price": 7,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "MAHOGANY_TABLE_8558": {
@@ -31661,7 +31661,7 @@
     "price": 6503,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "MAHOGANY_TOY_BOX_9851": {
@@ -31718,7 +31718,7 @@
     "price": 262574,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "MALEDICTION_WARD": {
@@ -31763,7 +31763,7 @@
     "price": 1053,
     "time": {
       "nanos": 0,
-      "seconds": 1594339200
+      "seconds": 1594598400
     }
   },
   "MANUAL": {
@@ -32159,7 +32159,7 @@
     "price": 1,
     "time": {
       "nanos": 0,
-      "seconds": 1594339200
+      "seconds": 1594598400
     }
   },
   "MASK_OF_BALANCE": {
@@ -32171,7 +32171,7 @@
     "price": 32180,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "MASSIVE_STORAGE_UNIT": {
@@ -32219,7 +32219,7 @@
     "price": 52897,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "MATURE_WMB": {
@@ -32750,10 +32750,10 @@
   "MITH_GRAPPLE": {
     "id": 9419,
     "name": "Mith grapple",
-    "price": 1172,
+    "price": 1133,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "MITH_GRAPPLE_9419": {
@@ -32816,7 +32816,7 @@
     "price": 37,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "MITHRIL_AXE": {
@@ -32879,7 +32879,7 @@
     "price": 64,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "MITHRIL_BOOTS": {
@@ -32915,7 +32915,7 @@
     "price": 70,
     "time": {
       "nanos": 0,
-      "seconds": 1594339200
+      "seconds": 1594598400
     }
   },
   "MITHRIL_CROSSBOW_U": {
@@ -33011,10 +33011,10 @@
   "MITHRIL_FULL_HELM": {
     "id": 1159,
     "name": "Mithril full helm",
-    "price": 724,
+    "price": 754,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "MITHRIL_FULL_HELM_G": {
@@ -33119,7 +33119,7 @@
     "price": 20,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "MITHRIL_JAVELINP_5645": {
@@ -33161,7 +33161,7 @@
     "price": 122,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "MITHRIL_KNIFEP": {
@@ -33170,7 +33170,7 @@
     "price": 1255,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "MITHRIL_KNIFEP_5657": {
@@ -33335,10 +33335,10 @@
   "MITHRIL_SCIMITAR": {
     "id": 1329,
     "name": "Mithril scimitar",
-    "price": 389,
+    "price": 380,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "MITHRIL_SEEDS": {
@@ -33347,7 +33347,7 @@
     "price": 125,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "MITHRIL_SEEDS_24534": {
@@ -33374,10 +33374,10 @@
   "MITHRIL_SPEAR": {
     "id": 1243,
     "name": "Mithril spear",
-    "price": 292,
+    "price": 288,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "MITHRIL_SPEARKP": {
@@ -33401,10 +33401,10 @@
   "MITHRIL_SQ_SHIELD": {
     "id": 1181,
     "name": "Mithril sq shield",
-    "price": 745,
+    "price": 764,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "MITHRIL_SWORD": {
@@ -33806,7 +33806,7 @@
     "price": 131826,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "MOONLIGHT_MEAD_7750": {
@@ -33899,7 +33899,7 @@
     "price": 696,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "MORT_MYRE_STEM": {
@@ -34043,16 +34043,16 @@
     "price": 1133,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "MUD_RUNE": {
     "id": 4698,
     "name": "Mud rune",
-    "price": 291,
+    "price": 286,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "MUDDY_KEY": {
@@ -34079,7 +34079,7 @@
     "price": 434087,
     "time": {
       "nanos": 0,
-      "seconds": 1594339200
+      "seconds": 1594598400
     }
   },
   "MUMMYS_FEET": {
@@ -34145,7 +34145,7 @@
     "price": 193,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "MUSHROOM__ONION": {
@@ -34166,7 +34166,7 @@
     "price": 835,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "MUSHROOM_SPORE": {
@@ -34202,10 +34202,10 @@
   "MUSKETEER_HAT": {
     "id": 12351,
     "name": "Musketeer hat",
-    "price": 143046,
+    "price": 144445,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "MUSKETEER_PANTS": {
@@ -34412,10 +34412,10 @@
   "MYSTIC_GLOVES_DARK": {
     "id": 4105,
     "name": "Mystic gloves (dark)",
-    "price": 7125,
+    "price": 7159,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "MYSTIC_GLOVES_DUSK": {
@@ -34520,10 +34520,10 @@
   "MYSTIC_ROBE_BOTTOM": {
     "id": 4093,
     "name": "Mystic robe bottom",
-    "price": 47433,
+    "price": 47411,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "MYSTIC_ROBE_BOTTOM_20426": {
@@ -34550,10 +34550,10 @@
   "MYSTIC_ROBE_BOTTOM_LIGHT": {
     "id": 4113,
     "name": "Mystic robe bottom (light)",
-    "price": 47461,
+    "price": 47789,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "MYSTIC_ROBE_TOP": {
@@ -34571,10 +34571,10 @@
   "MYSTIC_ROBE_TOP_DARK": {
     "id": 4101,
     "name": "Mystic robe top (dark)",
-    "price": 71638,
+    "price": 72080,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "MYSTIC_ROBE_TOP_DUSK": {
@@ -34610,7 +34610,7 @@
     "price": 256058,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "MYSTIC_SET_DUSK": {
@@ -34634,19 +34634,19 @@
   "MYSTIC_SMOKE_STAFF": {
     "id": 12000,
     "name": "Mystic smoke staff",
-    "price": 1924813,
+    "price": 1877078,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "MYSTIC_STEAM_STAFF": {
     "id": 11789,
     "name": "Mystic steam staff",
-    "price": 137527,
+    "price": 139847,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "MYSTIC_STEAM_STAFF_12796": {
@@ -34712,7 +34712,7 @@
     "price": 1,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "NASTURTIUMS": {
@@ -34958,7 +34958,7 @@
     "price": 11298,
     "time": {
       "nanos": 0,
-      "seconds": 1594339200
+      "seconds": 1594598400
     }
   },
   "NICE_HEDGE_8439": {
@@ -34985,10 +34985,10 @@
   "NINJA_IMPLING_JAR": {
     "id": 11254,
     "name": "Ninja impling jar",
-    "price": 29033,
+    "price": 29972,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "NINJA_MONKEY_GREEGREE": {
@@ -35231,7 +35231,7 @@
     "price": 283,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "OAK_CLOCK_8590": {
@@ -35303,7 +35303,7 @@
     "price": 7,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "OAK_KITCHEN_TABLE_8530": {
@@ -35348,7 +35348,7 @@
     "price": 31,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "OAK_MAGIC_WARDROBE": {
@@ -35387,16 +35387,16 @@
     "price": 26,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "OAK_SAPLING": {
     "id": 5370,
     "name": "Oak sapling",
-    "price": 271,
+    "price": 259,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "OAK_SCRATCHING_POST": {
@@ -35414,7 +35414,7 @@
     "price": 76,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "OAK_SHAVING_STAND_8598": {
@@ -35540,10 +35540,10 @@
   "OBSIDIAN_CAPE": {
     "id": 6568,
     "name": "Obsidian cape",
-    "price": 631534,
+    "price": 621277,
     "time": {
       "nanos": 0,
-      "seconds": 1594339200
+      "seconds": 1594598400
     }
   },
   "OBSIDIAN_CAPE_10636": {
@@ -35585,10 +35585,10 @@
   "OBSIDIAN_PLATELEGS": {
     "id": 21304,
     "name": "Obsidian platelegs",
-    "price": 733355,
+    "price": 776106,
     "time": {
       "nanos": 0,
-      "seconds": 1594339200
+      "seconds": 1594598400
     }
   },
   "OCCULT_ALTAR": {
@@ -35714,10 +35714,10 @@
   "OGRE_ARROW": {
     "id": 2866,
     "name": "Ogre arrow",
-    "price": 173,
+    "price": 176,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "OGRE_ARROW_SHAFT": {
@@ -35969,7 +35969,7 @@
     "price": 27,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594684800
     }
   },
   "OLIVE_OIL3": {
@@ -36020,7 +36020,7 @@
     "price": 7,
     "time": {
       "nanos": 0,
-      "seconds": 1594166400
+      "seconds": 1594598400
     }
   },
   "ONION__TOMATO": {
@@ -36104,10 +36104,10 @@
   "ONYX_BOLT_TIPS": {
     "id": 9194,
     "name": "Onyx bolt tips",
-    "price": 8049,
+    "price": 8074,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "ONYX_BOLTS": {
@@ -36209,7 +36209,7 @@
     "price": 9,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "OPAL_BOLTS": {
@@ -36236,7 +36236,7 @@
     "price": 570,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "OPAL_DRAGON_BOLTS": {
@@ -36272,7 +36272,7 @@
     "price": 573,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "OPAL_RING": {
@@ -36332,10 +36332,10 @@
   "ORANGE_BOATER": {
     "id": 7321,
     "name": "Orange boater",
-    "price": 3192,
+    "price": 3156,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "ORANGE_BOATER_10760": {
@@ -36362,10 +36362,10 @@
   "ORANGE_DYE": {
     "id": 1769,
     "name": "Orange dye",
-    "price": 626,
+    "price": 622,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "ORANGE_FEATHER": {
@@ -36647,7 +36647,7 @@
     "price": 644,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "PACKAGE": {
@@ -36872,7 +36872,7 @@
     "price": 23767,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "PASTE": {
@@ -36959,7 +36959,7 @@
     "price": 9,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "PEARL_DRAGON_BOLTS": {
@@ -37196,10 +37196,10 @@
   "PHARAOHS_SCEPTRE": {
     "id": 9050,
     "name": "Pharaoh's sceptre",
-    "price": 4917115,
+    "price": 5206134,
     "time": {
       "nanos": 0,
-      "seconds": 1594339200
+      "seconds": 1594598400
     }
   },
   "PHARAOHS_SCEPTRE_1": {
@@ -37271,10 +37271,10 @@
   "PHOENIX_NECKLACE": {
     "id": 11090,
     "name": "Phoenix necklace",
-    "price": 2145,
+    "price": 2209,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "PHOENIX_QUILL_PEN": {
@@ -37289,10 +37289,10 @@
   "PHRIN_REMAINS": {
     "id": 3398,
     "name": "Phrin remains",
-    "price": 320,
+    "price": 307,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "PICKAXE_HANDLE": {
@@ -37349,10 +37349,10 @@
   "PIKE": {
     "id": 351,
     "name": "Pike",
-    "price": 19,
+    "price": 20,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "PILE_OF_SALT": {
@@ -37361,7 +37361,7 @@
     "price": 95,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "PINEAPPLE": {
@@ -37610,7 +37610,7 @@
     "price": 52088,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "PIRATE_HAT__PATCH": {
@@ -37706,7 +37706,7 @@
     "price": 1266,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "PITTA_BREAD": {
@@ -37727,7 +37727,7 @@
     "price": 250,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "PLAGUE_JACKET": {
@@ -37742,10 +37742,10 @@
   "PLAIN_PIZZA": {
     "id": 2289,
     "name": "Plain pizza",
-    "price": 571,
+    "price": 561,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "PLAIN_SATCHEL": {
@@ -37757,7 +37757,7 @@
     "price": 273,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "PLANT": {
@@ -37874,10 +37874,10 @@
   "POLAR_CAMO_TOP": {
     "id": 10065,
     "name": "Polar camo top",
-    "price": 3583,
+    "price": 3750,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "POLAR_CAMO_TOP_10628": {
@@ -37892,7 +37892,7 @@
     "price": 598,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "POLE": {
@@ -37955,10 +37955,10 @@
   "POT_LID": {
     "id": 4440,
     "name": "Pot lid",
-    "price": 188,
+    "price": 187,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "POT_OF_CORNFLOUR": {
@@ -37982,10 +37982,10 @@
   "POT_OF_FLOUR": {
     "id": 1933,
     "name": "Pot of flour",
-    "price": 162,
+    "price": 160,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "POT_OF_FLOUR_2516": {
@@ -38099,10 +38099,10 @@
   "POTATOES10": {
     "id": 5438,
     "name": "Potatoes(10)",
-    "price": 781,
+    "price": 778,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "POTATOES2": {
@@ -38324,7 +38324,7 @@
     "price": 33,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "PREMADE_CT_BATTA": {
@@ -38333,7 +38333,7 @@
     "price": 41,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "PREMADE_DR_DRAGON": {
@@ -38369,7 +38369,7 @@
     "price": 23,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "PREMADE_SGG": {
@@ -38378,7 +38378,7 @@
     "price": 23,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "PREMADE_SY_CRUNCH": {
@@ -38513,10 +38513,10 @@
   "PRIMORDIAL_BOOTS": {
     "id": 13239,
     "name": "Primordial boots",
-    "price": 32204906,
+    "price": 32174875,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "PRIMORDIAL_CRYSTAL": {
@@ -38645,7 +38645,7 @@
     "price": 5923,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "PROSPECTOR_BOOTS": {
@@ -38753,10 +38753,10 @@
   "PURPLE_DYE": {
     "id": 1773,
     "name": "Purple dye",
-    "price": 288,
+    "price": 290,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "PURPLE_ELEGANT_BLOUSE": {
@@ -38822,7 +38822,7 @@
     "price": 750,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "PURPLE_GOBLIN_MAIL": {
@@ -38834,7 +38834,7 @@
     "price": 1114,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "PURPLE_LOGS": {
@@ -39014,10 +39014,10 @@
   "PYROPHOSPHITE": {
     "id": 21545,
     "name": "Pyrophosphite",
-    "price": 56,
+    "price": 55,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "PYSK_FISH_0": {
@@ -39140,10 +39140,10 @@
   "RAKE": {
     "id": 5341,
     "name": "Rake",
-    "price": 102,
+    "price": 99,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "RAKE_HANDLE": {
@@ -39230,10 +39230,10 @@
   "RANGERS_TIGHTS": {
     "id": 23249,
     "name": "Rangers' tights",
-    "price": 418196,
+    "price": 430920,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "RANGERS_TUNIC": {
@@ -39293,10 +39293,10 @@
   "RANGING_POTION2": {
     "id": 171,
     "name": "Ranging potion(2)",
-    "price": 278,
+    "price": 290,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "RANGING_POTION2_23555": {
@@ -39317,10 +39317,10 @@
   "RANGING_POTION4": {
     "id": 2444,
     "name": "Ranging potion(4)",
-    "price": 580,
+    "price": 597,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "RANGING_POTION4_23551": {
@@ -39443,7 +39443,7 @@
     "price": 97,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "RAW_BEAST_MEAT": {
@@ -39491,10 +39491,10 @@
   "RAW_CHICKEN": {
     "id": 2138,
     "name": "Raw chicken",
-    "price": 64,
+    "price": 60,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "RAW_CHICKEN_4289": {
@@ -39503,10 +39503,10 @@
   "RAW_CHOMPY": {
     "id": 2876,
     "name": "Raw chompy",
-    "price": 1461,
+    "price": 1405,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "RAW_COD": {
@@ -39527,7 +39527,7 @@
     "price": 996,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "RAW_FISH_PIE": {
@@ -39677,10 +39677,10 @@
   "RAW_OOMLIE": {
     "id": 2337,
     "name": "Raw oomlie",
-    "price": 1608,
+    "price": 1684,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "RAW_PADDLEFISH": {
@@ -39722,7 +39722,7 @@
     "price": 162,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "RAW_RAINBOW_FISH": {
@@ -39761,7 +39761,7 @@
     "price": 58,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "RAW_SEA_TURTLE": {
@@ -39857,7 +39857,7 @@
     "price": 752,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "RAW_WILD_PIE": {
@@ -39896,10 +39896,10 @@
   "RED_BEAD": {
     "id": 1470,
     "name": "Red bead",
-    "price": 1054,
+    "price": 1049,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "RED_BERET": {
@@ -39926,19 +39926,19 @@
   "RED_BOOTS": {
     "id": 2904,
     "name": "Red boots",
-    "price": 1051,
+    "price": 1058,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "RED_CAPE": {
     "id": 1007,
     "name": "Red cape",
-    "price": 108,
+    "price": 105,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "RED_CAVALIER": {
@@ -40064,10 +40064,10 @@
   "RED_DRAGON_LEATHER": {
     "id": 2507,
     "name": "Red dragon leather",
-    "price": 2462,
+    "price": 2450,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "RED_DRAGON_MASK": {
@@ -40148,7 +40148,7 @@
     "price": 1250,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "RED_FEATHER": {
@@ -40157,7 +40157,7 @@
     "price": 9,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "RED_FIRELIGHTER": {
@@ -40202,7 +40202,7 @@
     "price": 5598,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "RED_HAT": {
@@ -40373,10 +40373,10 @@
   "RED_TOPAZ_MACHETE": {
     "id": 6317,
     "name": "Red topaz machete",
-    "price": 13920,
+    "price": 13358,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "RED_TRICORN_HAT": {
@@ -40442,10 +40442,10 @@
   "REDWOOD_LOGS": {
     "id": 19669,
     "name": "Redwood logs",
-    "price": 276,
+    "price": 277,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "REDWOOD_PYRE_LOGS": {
@@ -40460,10 +40460,10 @@
   "REDWOOD_SAPLING": {
     "id": 22859,
     "name": "Redwood sapling",
-    "price": 35793,
+    "price": 36051,
     "time": {
       "nanos": 0,
-      "seconds": 1594252800
+      "seconds": 1594598400
     }
   },
   "REDWOOD_SEEDLING": {
@@ -40649,7 +40649,7 @@
     "price": 71,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594684800
     }
   },
   "RESTORE_POTION3": {
@@ -40676,10 +40676,10 @@
   "REVENANT_CAVE_TELEPORT": {
     "id": 21802,
     "name": "Revenant cave teleport",
-    "price": 21268,
+    "price": 21112,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "REVENANT_ETHER": {
@@ -40865,10 +40865,10 @@
   "RING_MOULD": {
     "id": 1592,
     "name": "Ring mould",
-    "price": 126,
+    "price": 131,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "RING_OF_3RD_AGE": {
@@ -40973,7 +40973,7 @@
     "price": 394,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "RING_OF_RECOIL": {
@@ -41009,10 +41009,10 @@
   "RING_OF_STONE": {
     "id": 6583,
     "name": "Ring of stone",
-    "price": 885631,
+    "price": 910692,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "RING_OF_SUFFERING": {
@@ -41117,7 +41117,7 @@
     "price": 267,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "ROAST_BEAST_MEAT": {
@@ -41135,7 +41135,7 @@
     "price": 14,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "ROAST_FROG": {
@@ -41315,10 +41315,10 @@
   "ROCKSHELL_CHUNK": {
     "id": 6157,
     "name": "Rock-shell chunk",
-    "price": 12613,
+    "price": 12559,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "ROCKSHELL_GLOVES": {
@@ -41705,10 +41705,10 @@
   "RUBY_DRAGON_BOLTS_E": {
     "id": 21944,
     "name": "Ruby dragon bolts (e)",
-    "price": 1244,
+    "price": 1228,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "RUBY_HARVEST": {
@@ -41729,19 +41729,19 @@
   "RUBY_NECKLACE": {
     "id": 1660,
     "name": "Ruby necklace",
-    "price": 1094,
+    "price": 1096,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594684800
     }
   },
   "RUBY_RING": {
     "id": 1641,
     "name": "Ruby ring",
-    "price": 1057,
+    "price": 1067,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "RUBY_SICKLE_B": {
@@ -41873,10 +41873,10 @@
   "RUNE_BRUTAL": {
     "id": 4803,
     "name": "Rune brutal",
-    "price": 929,
+    "price": 933,
     "time": {
       "nanos": 0,
-      "seconds": 1594339200
+      "seconds": 1594598400
     }
   },
   "RUNE_CANE": {
@@ -41954,10 +41954,10 @@
   "RUNE_DART": {
     "id": 811,
     "name": "Rune dart",
-    "price": 1002,
+    "price": 1011,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "RUNE_DART_TIP": {
@@ -42029,7 +42029,7 @@
     "price": 10,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594684800
     }
   },
   "RUNE_FIRE_ARROW": {
@@ -42050,10 +42050,10 @@
   "RUNE_FULL_HELM_G": {
     "id": 2619,
     "name": "Rune full helm (g)",
-    "price": 61283,
+    "price": 61689,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "RUNE_FULL_HELM_T": {
@@ -42074,10 +42074,10 @@
   "RUNE_GOLDTRIMMED_SET_LG": {
     "id": 13032,
     "name": "Rune gold-trimmed set (lg)",
-    "price": 245685,
+    "price": 240227,
     "time": {
       "nanos": 0,
-      "seconds": 1594339200
+      "seconds": 1594598400
     }
   },
   "RUNE_GOLDTRIMMED_SET_SK": {
@@ -42116,7 +42116,7 @@
     "price": 19255,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "RUNE_HASTAP_11417": {
@@ -42236,10 +42236,10 @@
   "RUNE_JAVELIN": {
     "id": 830,
     "name": "Rune javelin",
-    "price": 179,
+    "price": 178,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "RUNE_JAVELIN_HEADS": {
@@ -42368,10 +42368,10 @@
   "RUNE_LONGSWORD": {
     "id": 1303,
     "name": "Rune longsword",
-    "price": 18603,
+    "price": 18618,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "RUNE_LONGSWORD_6897": {
@@ -42401,7 +42401,7 @@
     "price": 812,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "RUNE_PICK_HEAD": {
@@ -42467,7 +42467,7 @@
     "price": 39655,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "RUNE_PLATEBODY_H4": {
@@ -42503,10 +42503,10 @@
   "RUNE_PLATELEGS": {
     "id": 1079,
     "name": "Rune platelegs",
-    "price": 37758,
+    "price": 37781,
     "time": {
       "nanos": 0,
-      "seconds": 1594339200
+      "seconds": 1594598400
     }
   },
   "RUNE_PLATELEGS_20422": {
@@ -42602,10 +42602,10 @@
   "RUNE_SCIMITAR_ORNAMENT_KIT_GUTHIX": {
     "id": 23321,
     "name": "Rune scimitar ornament kit (guthix)",
-    "price": 59675,
+    "price": 60428,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "RUNE_SCIMITAR_ORNAMENT_KIT_SARADOMIN": {
@@ -42668,10 +42668,10 @@
   "RUNE_SHIELD_H4": {
     "id": 7354,
     "name": "Rune shield (h4)",
-    "price": 32965,
+    "price": 32947,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "RUNE_SHIELD_H4_10676": {
@@ -42746,10 +42746,10 @@
   "RUNE_TRIMMED_SET_LG": {
     "id": 13028,
     "name": "Rune trimmed set (lg)",
-    "price": 149654,
+    "price": 149075,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "RUNE_TRIMMED_SET_SK": {
@@ -42812,10 +42812,10 @@
   "RUNITE_BOLTS_P": {
     "id": 9305,
     "name": "Runite bolts (p++)",
-    "price": 1407,
+    "price": 1416,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "RUNITE_BOLTS_P_9298": {
@@ -42902,7 +42902,7 @@
     "price": 412,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "SACRED_OIL2": {
@@ -42968,7 +42968,7 @@
     "price": 2,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "SALVE_AMULET": {
@@ -43118,10 +43118,10 @@
   "SANDWICH_LADY_TOP": {
     "id": 23315,
     "name": "Sandwich lady top",
-    "price": 5207,
+    "price": 5323,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "SANDWORMS": {
@@ -43130,7 +43130,7 @@
     "price": 95,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "SANDWORMS_PACK": {
@@ -43145,10 +43145,10 @@
   "SANFEW_SERUM1": {
     "id": 10931,
     "name": "Sanfew serum(1)",
-    "price": 7078,
+    "price": 7105,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "SANFEW_SERUM1_23565": {
@@ -43250,10 +43250,10 @@
   "SAPPHIRE_AMULET": {
     "id": 1694,
     "name": "Sapphire amulet",
-    "price": 454,
+    "price": 462,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "SAPPHIRE_AMULET_U": {
@@ -43310,7 +43310,7 @@
     "price": 1147,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "SAPPHIRE_DRAGON_BOLTS_E": {
@@ -43367,10 +43367,10 @@
   "SARACHNIS_CUDGEL": {
     "id": 23528,
     "name": "Sarachnis cudgel",
-    "price": 383290,
+    "price": 367763,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "SARADOMIN_ARMOUR_SET_LG": {
@@ -43409,10 +43409,10 @@
   "SARADOMIN_BREW1": {
     "id": 6691,
     "name": "Saradomin brew(1)",
-    "price": 1445,
+    "price": 1475,
     "time": {
       "nanos": 0,
-      "seconds": 1594339200
+      "seconds": 1594598400
     }
   },
   "SARADOMIN_BREW1_23581": {
@@ -43520,7 +43520,7 @@
     "price": 193802,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "SARADOMIN_DRAGONHIDE_SET": {
@@ -43601,10 +43601,10 @@
   "SARADOMIN_MITRE": {
     "id": 10452,
     "name": "Saradomin mitre",
-    "price": 13146,
+    "price": 13363,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "SARADOMIN_MJOLNIR": {
@@ -43628,19 +43628,19 @@
   "SARADOMIN_PAGE_2": {
     "id": 3828,
     "name": "Saradomin page 2",
-    "price": 1954,
+    "price": 2001,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "SARADOMIN_PAGE_3": {
     "id": 3829,
     "name": "Saradomin page 3",
-    "price": 1729,
+    "price": 1823,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "SARADOMIN_PAGE_4": {
@@ -43742,10 +43742,10 @@
   "SARADOMINS_TEAR": {
     "id": 12804,
     "name": "Saradomin's tear",
-    "price": 2907854,
+    "price": 2922025,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594684800
     }
   },
   "SARAS_BLESSED_SWORD_FULL": {
@@ -43994,10 +43994,10 @@
   "SEASONED_SARDINE": {
     "id": 1552,
     "name": "Seasoned sardine",
-    "price": 583,
+    "price": 569,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "SEAWEED": {
@@ -44057,10 +44057,10 @@
   "SEED_DIBBER": {
     "id": 5343,
     "name": "Seed dibber",
-    "price": 141,
+    "price": 138,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "SEED_PACK": {
@@ -44102,10 +44102,10 @@
   "SENNTISTEN_TELEPORT": {
     "id": 12782,
     "name": "Senntisten teleport",
-    "price": 9384,
+    "price": 9305,
     "time": {
       "nanos": 0,
-      "seconds": 1594339200
+      "seconds": 1594598400
     }
   },
   "SERAFINA": {
@@ -44294,7 +44294,7 @@
     "price": 848,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "SHADOW_DIAMOND": {
@@ -44333,10 +44333,10 @@
   "SHANTAY_PASS": {
     "id": 1854,
     "name": "Shantay pass",
-    "price": 14,
+    "price": 13,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "SHARK": {
@@ -44375,7 +44375,7 @@
     "price": 581,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "SHAYZIEN_BOOTS_1": {
@@ -44609,10 +44609,10 @@
   "SHIELD_LEFT_HALF": {
     "id": 2366,
     "name": "Shield left half",
-    "price": 65092,
+    "price": 65450,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "SHIELD_RIGHT_HALF": {
@@ -44636,7 +44636,7 @@
     "price": 130,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "SHIPPING_ORDER": {
@@ -44759,10 +44759,10 @@
   "SHRIMPS": {
     "id": 315,
     "name": "Shrimps",
-    "price": 19,
+    "price": 17,
     "time": {
       "nanos": 0,
-      "seconds": 1594339200
+      "seconds": 1594598400
     }
   },
   "SHRINKING_RECIPE": {
@@ -45074,7 +45074,7 @@
     "price": 23566,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "SKELETAL_GLOVES": {
@@ -45092,7 +45092,7 @@
     "price": 46209,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "SKELETAL_HELM_10604": {
@@ -45101,10 +45101,10 @@
   "SKELETAL_TOP": {
     "id": 6139,
     "name": "Skeletal top",
-    "price": 26167,
+    "price": 26483,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "SKELETAL_VISAGE": {
@@ -45239,7 +45239,7 @@
     "price": 1017,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "SKIRT_5050": {
@@ -45599,10 +45599,10 @@
   "SMOKE_BATTLESTAFF": {
     "id": 11998,
     "name": "Smoke battlestaff",
-    "price": 1847323,
+    "price": 1810000,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "SMOKE_DEVIL": {
@@ -45737,7 +45737,7 @@
     "price": 272,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "SNAKESKIN_VAMBRACES": {
@@ -45755,10 +45755,10 @@
   "SNAPDRAGON": {
     "id": 3000,
     "name": "Snapdragon",
-    "price": 8079,
+    "price": 8140,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "SNAPDRAGON_POTION_UNF": {
@@ -45782,10 +45782,10 @@
   "SNAPE_GRASS": {
     "id": 231,
     "name": "Snape grass",
-    "price": 241,
+    "price": 240,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "SNAPE_GRASS_SEED": {
@@ -45980,10 +45980,10 @@
   "SPECTRAL_SPIRIT_SHIELD": {
     "id": 12821,
     "name": "Spectral spirit shield",
-    "price": 66437927,
+    "price": 66964277,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "SPELL_SCROLL": {
@@ -46013,7 +46013,7 @@
     "price": 740,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "SPICY_CRUNCHIES_9540": {
@@ -46055,7 +46055,7 @@
     "price": 241,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "SPICY_WORM": {
@@ -46106,7 +46106,7 @@
     "price": 1609,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "SPIKED_CAGE": {
@@ -46178,10 +46178,10 @@
   "SPINED_GLOVES": {
     "id": 6149,
     "name": "Spined gloves",
-    "price": 1758,
+    "price": 1829,
     "time": {
       "nanos": 0,
-      "seconds": 1594339200
+      "seconds": 1594598400
     }
   },
   "SPINED_HELM": {
@@ -46358,7 +46358,7 @@
     "price": 271,
     "time": {
       "nanos": 0,
-      "seconds": 1594339200
+      "seconds": 1594598400
     }
   },
   "SPOTTED_CAPE": {
@@ -46466,10 +46466,10 @@
   "STAFF_OF_EARTH": {
     "id": 1385,
     "name": "Staff of earth",
-    "price": 1219,
+    "price": 1208,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "STAFF_OF_FIRE": {
@@ -46700,10 +46700,10 @@
   "STEAM_BATTLESTAFF": {
     "id": 11787,
     "name": "Steam battlestaff",
-    "price": 113600,
+    "price": 109267,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "STEAM_BATTLESTAFF_12795": {
@@ -46769,7 +46769,7 @@
     "price": 33,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "STEEL_AXE": {
@@ -46817,7 +46817,7 @@
     "price": 590,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "STEEL_BOLTS_P_9295": {
@@ -46829,10 +46829,10 @@
   "STEEL_BOLTS_UNF": {
     "id": 9378,
     "name": "Steel bolts (unf)",
-    "price": 40,
+    "price": 39,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "STEEL_BOOTS": {
@@ -46970,10 +46970,10 @@
   "STEEL_DRAGON_MASK": {
     "id": 12367,
     "name": "Steel dragon mask",
-    "price": 5326,
+    "price": 5576,
     "time": {
       "nanos": 0,
-      "seconds": 1594339200
+      "seconds": 1594598400
     }
   },
   "STEEL_FIRE_ARROW": {
@@ -47009,7 +47009,7 @@
     "price": 8621,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594684800
     }
   },
   "STEEL_GAUNTLETS": {
@@ -47234,10 +47234,10 @@
   "STEEL_KITESHIELD_G": {
     "id": 20181,
     "name": "Steel kiteshield (g)",
-    "price": 16540,
+    "price": 16584,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "STEEL_KITESHIELD_T": {
@@ -47252,10 +47252,10 @@
   "STEEL_KNIFE": {
     "id": 865,
     "name": "Steel knife",
-    "price": 54,
+    "price": 53,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594684800
     }
   },
   "STEEL_KNIFEP": {
@@ -47333,10 +47333,10 @@
   "STEEL_PLATEBODY": {
     "id": 1119,
     "name": "Steel platebody",
-    "price": 875,
+    "price": 864,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "STEEL_PLATEBODY_G": {
@@ -47351,10 +47351,10 @@
   "STEEL_PLATEBODY_T": {
     "id": 20184,
     "name": "Steel platebody (t)",
-    "price": 8142,
+    "price": 8245,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "STEEL_PLATELEGS": {
@@ -47369,10 +47369,10 @@
   "STEEL_PLATELEGS_G": {
     "id": 20172,
     "name": "Steel platelegs (g)",
-    "price": 10449,
+    "price": 10756,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "STEEL_PLATELEGS_T": {
@@ -47435,10 +47435,10 @@
   "STEEL_SET_SK": {
     "id": 12986,
     "name": "Steel set (sk)",
-    "price": 2052,
+    "price": 2104,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594684800
     }
   },
   "STEEL_SPEAR": {
@@ -47489,10 +47489,10 @@
   "STEEL_SWORD": {
     "id": 1281,
     "name": "Steel sword",
-    "price": 90,
+    "price": 89,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "STEEL_THROWNAXE": {
@@ -47651,7 +47651,7 @@
     "price": 199,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "STONE_TABLET": {
@@ -47720,10 +47720,10 @@
   "STRANGE_OLD_LOCKPICK_FULL": {
     "id": 24740,
     "name": "Strange old lockpick (full)",
-    "price": 166750,
+    "price": 169573,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "STRANGE_POTION": {
@@ -47774,10 +47774,10 @@
   "STRENGTH_AMULET_T": {
     "id": 10364,
     "name": "Strength amulet (t)",
-    "price": 13256,
+    "price": 13348,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "STRENGTH_AMULET_T_10736": {
@@ -47843,10 +47843,10 @@
   "STRENGTH_POTION4": {
     "id": 113,
     "name": "Strength potion(4)",
-    "price": 203,
+    "price": 207,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "STRETCHED_HIDE": {
@@ -47855,7 +47855,7 @@
     "price": 4928,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "STRIP_OF_CLOTH": {
@@ -47894,7 +47894,7 @@
     "price": 79,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "STRUNG_RABBIT_FOOT": {
@@ -47960,10 +47960,10 @@
   "STUDDED_CHAPS_T": {
     "id": 7368,
     "name": "Studded chaps (t)",
-    "price": 8467,
+    "price": 8398,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "STUDY": {
@@ -48065,7 +48065,7 @@
     "price": 354,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "SUPER_ANTIFIRE_MIX2": {
@@ -48212,7 +48212,7 @@
     "price": 349,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "SUPER_DEFENCE1": {
@@ -48239,16 +48239,16 @@
     "price": 464,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "SUPER_DEFENCE4": {
     "id": 2442,
     "name": "Super defence(4)",
-    "price": 662,
+    "price": 686,
     "time": {
       "nanos": 0,
-      "seconds": 1594166400
+      "seconds": 1594598400
     }
   },
   "SUPER_ENERGY1": {
@@ -48314,7 +48314,7 @@
     "price": 1373,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "SUPER_KEBAB": {
@@ -48362,10 +48362,10 @@
   "SUPER_RESTORE1": {
     "id": 3030,
     "name": "Super restore(1)",
-    "price": 2395,
+    "price": 2353,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "SUPER_RESTORE1_23573": {
@@ -48440,7 +48440,7 @@
     "price": 548,
     "time": {
       "nanos": 0,
-      "seconds": 1594339200
+      "seconds": 1594598400
     }
   },
   "SUPER_STRENGTH1": {
@@ -48464,19 +48464,19 @@
   "SUPER_STRENGTH3": {
     "id": 157,
     "name": "Super strength(3)",
-    "price": 1099,
+    "price": 1108,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "SUPER_STRENGTH4": {
     "id": 2440,
     "name": "Super strength(4)",
-    "price": 1585,
+    "price": 1607,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "SUPERANTIPOISON1": {
@@ -48485,7 +48485,7 @@
     "price": 79,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "SUPERANTIPOISON2": {
@@ -48500,10 +48500,10 @@
   "SUPERANTIPOISON3": {
     "id": 181,
     "name": "Superantipoison(3)",
-    "price": 233,
+    "price": 230,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "SUPERANTIPOISON4": {
@@ -48545,10 +48545,10 @@
   "SUPERIOR_DRAGON_BONES": {
     "id": 22124,
     "name": "Superior dragon bones",
-    "price": 11256,
+    "price": 11244,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "SUPERIOR_GARDEN": {
@@ -48623,10 +48623,10 @@
   "SWAMP_TOAD": {
     "id": 2150,
     "name": "Swamp toad",
-    "price": 325,
+    "price": 330,
     "time": {
       "nanos": 0,
-      "seconds": 1594339200
+      "seconds": 1594598400
     }
   },
   "SWAMP_WALLBEAST": {
@@ -48737,7 +48737,7 @@
     "price": 49128,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "TALL_FANCY_HEDGE_8447": {
@@ -48830,10 +48830,10 @@
   "TARROMIN_POTION_UNF": {
     "id": 95,
     "name": "Tarromin potion (unf)",
-    "price": 211,
+    "price": 210,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "TARROMIN_SEED": {
@@ -48983,7 +48983,7 @@
     "price": 1127,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "TEAK_CAPE_RACK": {
@@ -49127,10 +49127,10 @@
   "TEAK_PLANK": {
     "id": 8780,
     "name": "Teak plank",
-    "price": 906,
+    "price": 908,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "TEAK_PORTAL": {
@@ -49151,10 +49151,10 @@
   "TEAK_SAPLING": {
     "id": 21477,
     "name": "Teak sapling",
-    "price": 189,
+    "price": 191,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "TEAK_SCRATCHING_POST": {
@@ -49196,7 +49196,7 @@
     "price": 15,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "TEAK_TABLE": {
@@ -49301,7 +49301,7 @@
     "price": 659,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "TEAM10_CAPE": {
@@ -49430,7 +49430,7 @@
     "price": 395,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "TEAM23_CAPE": {
@@ -49439,7 +49439,7 @@
     "price": 470,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "TEAM24_CAPE": {
@@ -49490,10 +49490,10 @@
   "TEAM29_CAPE": {
     "id": 4371,
     "name": "Team-29 cape",
-    "price": 354,
+    "price": 353,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "TEAM2_CAPE": {
@@ -49574,7 +49574,7 @@
     "price": 455,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "TEAM38_CAPE": {
@@ -49583,7 +49583,7 @@
     "price": 496,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "TEAM39_CAPE": {
@@ -49862,10 +49862,10 @@
   "TELEPORT_TO_HOUSE": {
     "id": 8013,
     "name": "Teleport to house",
-    "price": 557,
+    "price": 546,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "TELEPORT_TRAP": {
@@ -50057,7 +50057,7 @@
     "price": 8,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "THREE_BARRELS": {
@@ -50084,7 +50084,7 @@
     "price": 146,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "TIGER_TOY": {
@@ -50201,10 +50201,10 @@
   "TOADFLAX": {
     "id": 2998,
     "name": "Toadflax",
-    "price": 1944,
+    "price": 1973,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "TOADFLAX_POTION_UNF": {
@@ -50219,10 +50219,10 @@
   "TOADFLAX_SEED": {
     "id": 5296,
     "name": "Toadflax seed",
-    "price": 785,
+    "price": 770,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "TOADS_LEGS": {
@@ -50303,10 +50303,10 @@
   "TOMATO": {
     "id": 1982,
     "name": "Tomato",
-    "price": 72,
+    "price": 70,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594684800
     }
   },
   "TOMATO_SEED": {
@@ -50366,10 +50366,10 @@
   "TOME_OF_FIRE_EMPTY": {
     "id": 20716,
     "name": "Tome of fire (empty)",
-    "price": 732797,
+    "price": 732164,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594684800
     }
   },
   "TOME_OF_THE_MOON": {
@@ -50456,10 +50456,10 @@
   "TOPAZ_BOLT_TIPS": {
     "id": 9188,
     "name": "Topaz bolt tips",
-    "price": 292,
+    "price": 290,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "TOPAZ_BOLTS": {
@@ -50543,10 +50543,10 @@
   "TORAGS_ARMOUR_SET": {
     "id": 12879,
     "name": "Torag's armour set",
-    "price": 605833,
+    "price": 621188,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "TORAGS_HAMMERS": {
@@ -50726,10 +50726,10 @@
   "TORN_PRAYER_SCROLL": {
     "id": 21047,
     "name": "Torn prayer scroll",
-    "price": 46731,
+    "price": 46532,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "TORN_ROBE": {
@@ -50837,10 +50837,10 @@
   "TOY_DOLL": {
     "id": 7763,
     "name": "Toy doll",
-    "price": 1733,
+    "price": 1778,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "TOY_DOLL_WOUND": {
@@ -51164,10 +51164,10 @@
   "TROUVER_PARCHMENT": {
     "id": 24187,
     "name": "Trouver parchment",
-    "price": 611545,
+    "price": 588969,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "TROWEL": {
@@ -51182,7 +51182,7 @@
     "price": 49,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "TUNA_AND_CORN": {
@@ -51305,10 +51305,10 @@
   "TWISTED_BANNER": {
     "id": 24413,
     "name": "Twisted banner",
-    "price": 96471,
+    "price": 101120,
     "time": {
       "nanos": 0,
-      "seconds": 1594339200
+      "seconds": 1594598400
     }
   },
   "TWISTED_BLUEPRINTS": {
@@ -51431,7 +51431,7 @@
     "price": 1981226,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "TWISTED_HORNS": {
@@ -51464,10 +51464,10 @@
   "TWISTED_RELICHUNTER_T1_ARMOUR_SET": {
     "id": 24469,
     "name": "Twisted relichunter (t1) armour set",
-    "price": 1458084,
+    "price": 1522398,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "TWISTED_RELICHUNTER_T2_ARMOUR_SET": {
@@ -51476,7 +51476,7 @@
     "price": 2449299,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "TWISTED_RELICHUNTER_T3_ARMOUR_SET": {
@@ -51485,7 +51485,7 @@
     "price": 23672512,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "TWISTED_RUNE_TROPHY": {
@@ -51587,19 +51587,19 @@
   "TZHAARKETOM": {
     "id": 6528,
     "name": "Tzhaar-ket-om",
-    "price": 188400,
+    "price": 184766,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "TZHAARKETOM_ORNAMENT_KIT": {
     "id": 23232,
     "name": "Tzhaar-ket-om ornament kit",
-    "price": 9670,
+    "price": 9667,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "TZHAARKETOM_T": {
@@ -51644,10 +51644,10 @@
   "UGTHANKI_KEBAB": {
     "id": 1885,
     "name": "Ugthanki kebab",
-    "price": 844,
+    "price": 881,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "UGTHANKI_KEBAB_1885": {
@@ -51674,10 +51674,10 @@
   "ULTRACOMPOST": {
     "id": 21483,
     "name": "Ultracompost",
-    "price": 779,
+    "price": 788,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "UNBLESSED_SYMBOL": {
@@ -51734,7 +51734,7 @@
     "price": 594,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "UNCOOKED_BERRY_PIE": {
@@ -51767,7 +51767,7 @@
     "price": 2229,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "UNCOOKED_EGG": {
@@ -51782,10 +51782,10 @@
   "UNCOOKED_MEAT_PIE": {
     "id": 2319,
     "name": "Uncooked meat pie",
-    "price": 632,
+    "price": 622,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "UNCOOKED_MUSHROOM_PIE": {
@@ -51824,10 +51824,10 @@
   "UNCUT_EMERALD": {
     "id": 1621,
     "name": "Uncut emerald",
-    "price": 767,
+    "price": 760,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "UNCUT_JADE": {
@@ -51878,10 +51878,10 @@
   "UNCUT_SAPPHIRE": {
     "id": 1623,
     "name": "Uncut sapphire",
-    "price": 434,
+    "price": 433,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "UNCUT_ZENYTE": {
@@ -51992,10 +51992,10 @@
   "UNFINISHED_BROAD_BOLTS": {
     "id": 11876,
     "name": "Unfinished broad bolts",
-    "price": 57,
+    "price": 56,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "UNFINISHED_COCKTAIL": {
@@ -52106,7 +52106,7 @@
     "price": 177,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "UNFIRED_PLANT_POT": {
@@ -52133,7 +52133,7 @@
     "price": 121,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "UNHOLY_BLESSING": {
@@ -52151,10 +52151,10 @@
   "UNHOLY_BOOK_PAGE_SET": {
     "id": 13151,
     "name": "Unholy book page set",
-    "price": 449473,
+    "price": 460850,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "UNHOLY_MOULD": {
@@ -52166,7 +52166,7 @@
     "price": 207,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "UNHOLY_SYMBOL_4683": {
@@ -52181,10 +52181,10 @@
   "UNICORN_HORN": {
     "id": 237,
     "name": "Unicorn horn",
-    "price": 219,
+    "price": 227,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594684800
     }
   },
   "UNICORN_HORN_1487": {
@@ -52238,10 +52238,10 @@
   "UNLIT_BUG_LANTERN": {
     "id": 7051,
     "name": "Unlit bug lantern",
-    "price": 359,
+    "price": 342,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "UNLIT_TORCH": {
@@ -52313,7 +52313,7 @@
     "price": 110155,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "UNSTRUNG_LIGHT_BALLISTA": {
@@ -52460,7 +52460,7 @@
     "price": 1015,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "VEG_BALL_9549": {
@@ -52496,10 +52496,10 @@
   "VERACS_BRASSARD": {
     "id": 4757,
     "name": "Verac's brassard",
-    "price": 182639,
+    "price": 178160,
     "time": {
       "nanos": 0,
-      "seconds": 1594339200
+      "seconds": 1594598400
     }
   },
   "VERACS_BRASSARD_0": {
@@ -52526,19 +52526,19 @@
   "VERACS_FLAIL": {
     "id": 4755,
     "name": "Verac's flail",
-    "price": 105098,
+    "price": 106799,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "VERACS_FLAIL_0": {
     "id": 4986,
     "name": "Verac's flail 0",
-    "price": 94809,
+    "price": 95023,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "VERACS_FLAIL_100": {
@@ -52565,10 +52565,10 @@
   "VERACS_HELM_0": {
     "id": 4980,
     "name": "Verac's helm 0",
-    "price": 75717,
+    "price": 76520,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "VERACS_HELM_100": {
@@ -52703,10 +52703,10 @@
   "VIAL_OF_BLOOD": {
     "id": 22446,
     "name": "Vial of blood",
-    "price": 4727,
+    "price": 4632,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "VIAL_OF_BLOOD_22446": {
@@ -52856,7 +52856,7 @@
     "price": 194,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "VOICE_POTION": {
@@ -52985,7 +52985,7 @@
     "price": 67,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "VOLCANIC_HABITAT": {
@@ -53378,10 +53378,10 @@
   "WATERMELON_SEED": {
     "id": 5321,
     "name": "Watermelon seed",
-    "price": 45,
+    "price": 44,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "WATERMELON_SLICE": {
@@ -53504,7 +53504,7 @@
     "price": 1464,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "WESTER_BANANA": {
@@ -53546,10 +53546,10 @@
   "WHISKY": {
     "id": 2017,
     "name": "Whisky",
-    "price": 73,
+    "price": 77,
     "time": {
       "nanos": 0,
-      "seconds": 1594252800
+      "seconds": 1594598400
     }
   },
   "WHITE_2H_SWORD": {
@@ -53627,19 +53627,19 @@
   "WHITE_BOOTS": {
     "id": 6619,
     "name": "White boots",
-    "price": 1220,
+    "price": 1229,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "WHITE_CAVALIER": {
     "id": 12321,
     "name": "White cavalier",
-    "price": 4913,
+    "price": 4736,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "WHITE_CHAINBODY": {
@@ -53648,7 +53648,7 @@
     "price": 1101,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "WHITE_CLAWS": {
@@ -53669,7 +53669,7 @@
     "price": 162,
     "time": {
       "nanos": 0,
-      "seconds": 1594339200
+      "seconds": 1594598400
     }
   },
   "WHITE_DAGGERP": {
@@ -53678,7 +53678,7 @@
     "price": 294,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "WHITE_DAGGERP_6595": {
@@ -53690,10 +53690,10 @@
   "WHITE_DARK_BOW_PAINT": {
     "id": 12763,
     "name": "White dark bow paint",
-    "price": 550506,
+    "price": 554489,
     "time": {
       "nanos": 0,
-      "seconds": 1594339200
+      "seconds": 1594598400
     }
   },
   "WHITE_DESTABILISER": {
@@ -53732,7 +53732,7 @@
     "price": 201630,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "WHITE_FULL_HELM": {
@@ -53741,7 +53741,7 @@
     "price": 1384,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "WHITE_GLOVES": {
@@ -53765,10 +53765,10 @@
   "WHITE_HEADBAND": {
     "id": 12299,
     "name": "White headband",
-    "price": 1482,
+    "price": 1471,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "WHITE_KITESHIELD": {
@@ -53855,10 +53855,10 @@
   "WHITE_PLATEBODY": {
     "id": 6617,
     "name": "White platebody",
-    "price": 4859,
+    "price": 4860,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "WHITE_PLATEBODY_10618": {
@@ -53921,7 +53921,7 @@
     "price": 310,
     "time": {
       "nanos": 0,
-      "seconds": 1594339200
+      "seconds": 1594598400
     }
   },
   "WHITE_TREE_FRUIT": {
@@ -53963,7 +53963,7 @@
     "price": 8,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "WIG": {
@@ -54161,10 +54161,10 @@
   "WILLOW_SAPLING": {
     "id": 5371,
     "name": "Willow sapling",
-    "price": 2871,
+    "price": 2786,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "WILLOW_SEED": {
@@ -54254,10 +54254,10 @@
   "WINE_OF_ZAMORAK": {
     "id": 245,
     "name": "Wine of zamorak",
-    "price": 1571,
+    "price": 1578,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "WINE_OF_ZAMORAK_23489": {
@@ -54323,10 +54323,10 @@
   "WIZARD_HAT": {
     "id": 1017,
     "name": "Wizard hat",
-    "price": 228,
+    "price": 207,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "WIZARD_PATH_STARTER_KIT": {
@@ -54344,19 +54344,19 @@
   "WIZARDS_MIND_BOMB": {
     "id": 1907,
     "name": "Wizard's mind bomb",
-    "price": 98,
+    "price": 100,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "WOAD_LEAF": {
     "id": 1793,
     "name": "Woad leaf",
-    "price": 44,
+    "price": 45,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "WOAD_LEAF_5738": {
@@ -54380,10 +54380,10 @@
   "WOLF_BONES": {
     "id": 2859,
     "name": "Wolf bones",
-    "price": 379,
+    "price": 383,
     "time": {
       "nanos": 0,
-      "seconds": 1594598400
+      "seconds": 1594684800
     }
   },
   "WOLF_CLOAK": {
@@ -54416,7 +54416,7 @@
     "price": 82,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "WOOD_CAMO_LEGS": {
@@ -54431,10 +54431,10 @@
   "WOOD_CAMO_TOP": {
     "id": 10053,
     "name": "Wood camo top",
-    "price": 3687,
+    "price": 3696,
     "time": {
       "nanos": 0,
-      "seconds": 1594339200
+      "seconds": 1594598400
     }
   },
   "WOOD_CAMO_TOP_10625": {
@@ -54548,10 +54548,10 @@
   "WOODEN_SHIELD": {
     "id": 1171,
     "name": "Wooden shield",
-    "price": 107,
+    "price": 106,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "WOODEN_SHIELD_7676": {
@@ -54581,7 +54581,7 @@
     "price": 3,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "WOODEN_SWORD": {
@@ -54683,7 +54683,7 @@
     "price": 4192,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "WRATH_RUNE": {
@@ -54755,10 +54755,10 @@
   "XERICIAN_FABRIC": {
     "id": 13383,
     "name": "Xerician fabric",
-    "price": 1470,
+    "price": 1468,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "XERICIAN_HAT": {
@@ -54884,7 +54884,7 @@
     "price": 4,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "YELLOW_BALLOON": {
@@ -54938,10 +54938,10 @@
   "YELLOW_DYE": {
     "id": 1765,
     "name": "Yellow dye",
-    "price": 225,
+    "price": 222,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "YELLOW_DYE_BELLOWS": {
@@ -55100,10 +55100,10 @@
   "YEW_SAPLING": {
     "id": 5373,
     "name": "Yew sapling",
-    "price": 68060,
+    "price": 66934,
     "time": {
       "nanos": 0,
-      "seconds": 1594339200
+      "seconds": 1594598400
     }
   },
   "YEW_SEED": {
@@ -55127,7 +55127,7 @@
     "price": 108,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "YEW_SHORTBOW": {
@@ -55259,7 +55259,7 @@
     "price": 1385,
     "time": {
       "nanos": 0,
-      "seconds": 1594339200
+      "seconds": 1594598400
     }
   },
   "ZAMORAK_BREW3": {
@@ -55268,7 +55268,7 @@
     "price": 1222,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "ZAMORAK_BREW4": {
@@ -55370,10 +55370,10 @@
   "ZAMORAK_GODSWORD": {
     "id": 11808,
     "name": "Zamorak godsword",
-    "price": 5033867,
+    "price": 5056828,
     "time": {
       "nanos": 0,
-      "seconds": 1594425600
+      "seconds": 1594598400
     }
   },
   "ZAMORAK_GODSWORD_OR": {
@@ -55439,7 +55439,7 @@
     "price": 250,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "ZAMORAK_MIX2": {
@@ -55739,7 +55739,7 @@
     "price": 2670,
     "time": {
       "nanos": 0,
-      "seconds": 1594512000
+      "seconds": 1594598400
     }
   },
   "ZOMBIE_HEAD_10731": {

@@ -20,8 +20,8 @@
     , DIR_GUI_ICONS         := A_ScriptDir "\res\img\ico"
     , PATH_RUNELITE_JSON    := A_ScriptDir "\res\runelite.json"
     , PATH_SETTINGS         := A_ScriptDir "\settings.json"
-    , DB_OSRSBOX            := {}
     , PATH_OSRSBOX_JSON     := A_ScriptDir "\res\osrsbox.json"
+    , DB_OSRSBOX            := {}
     , DB_SETTINGS           := {}
     , SELECTED_DROPS        := {}
     , OSRSBOX_API           := new ClassApiOSRSBox
@@ -37,7 +37,7 @@
     , QUANTITY_GUI          := new ClassGuiQuantity("Quantity Gui")
     , SETTINGS_GUI          := new ClassGuiSettings("Settings Gui")
     , STATS_GUI             := new ClassGuiStats("Stats Gui")
-    , GET_ALL               := new ClassRetrieve
+    , RETRIEVE_ALL          := new ClassRetrieve
     , MIN_DROP_SIZE         := 10
     , MAX_DROP_SIZE         := 80
     , MIN_ROW_LENGTH        := 1
@@ -77,7 +77,9 @@ return
         DROP_STATS.UpdateAdvancedStats()
     return
     debugAutoexec:
-        msgbox % json.dump(OSRSBOX_API.drops,,2)
+        RETRIEVE_ALL.DropTables()
+        ; RETRIEVE_ALL.MobImages()
+        ; RETRIEVE_ALL.ItemImages()
         return
         DROP_TABLE.Get(DB_SETTINGS.selectedMob)
         DROP_LOG.Get(DB_SETTINGS.selectedLogFile)

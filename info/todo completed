@@ -569,3 +569,7 @@ improvement -> 'Class Api OSRSBox'
         - caching the monsters-complete.json file until the day after its updated on thursday
     - get all mobs with a drop table
     - get all drop table drops
+
+improvement -> 'Class Retrieve' 'RETRIEVE_ALL' -> combine 'download all' functions
+    RETRIEVE_ALL.DropTables(), RETRIEVE_ALL.MobImages(), RETRIEVE_ALL.DropTables() etc.
+    - get all drop table names -> use to debug DROP_TABLE._TablesRenaming()

@@ -1,6 +1,9 @@
-improvement -> 'Class Retrieve' 'RETRIEVE_ALL' -> combine 'download all' functions
-    RETRIEVE_ALL.DropTables(), RETRIEVE_ALL.MobImages(), RETRIEVE_ALL.DropTables() etc.
-    - get all drop table names -> use to debug DROP_TABLE._TablesRenaming()
+bug -> 
+    'Goblin Raider' monster with a drop table but without a picture that is removed from the game
+    'Spinolyp' monster with a drop table and with a picture but its hidden behind a button
+    test:
+        retrieve class
+        get drop table
 
 improvement -> Msg() add function parameter
 
