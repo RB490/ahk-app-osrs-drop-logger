@@ -10,7 +10,7 @@
     #MaxMem, 400 ; downloadMissingItemImages()
 
 ; Global vars
-    Global DEBUG_MODE       := true
+    Global DEBUG_MODE       := false
     , APP_NAME              := RTrim(A_ScriptName, ".ahk")
     , PROJECT_WEBSITE       := "https://github.com/RB490/ahk-app-osrs-drop-logger"
     , DIR_ITEM_ICON         := A_ScriptDir "\res\img\item\icon"
