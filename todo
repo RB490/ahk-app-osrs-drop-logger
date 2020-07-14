@@ -1,8 +1,8 @@
-improvement -> Msg() add function parameter
-
 improvement -> 'Class Retrieve' 'RETRIEVE_ALL' -> combine 'download all' functions
     RETRIEVE_ALL.DropTables(), RETRIEVE_ALL.MobImages(), RETRIEVE_ALL.DropTables() etc.
     - get all drop table names -> use to debug DROP_TABLE._TablesRenaming()
+
+improvement -> Msg() add function parameter
 
 improvement -> Setup(): use the fact that you can #Include files anywhere in the script 
     instead of having some weird code inside the 'FileInstall' file only have fileinstalls

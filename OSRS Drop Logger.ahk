@@ -30,13 +30,14 @@
     , DROP_LOG              := new ClassDropLog
     , DROP_STATS            := new ClassDropStats
     , DROP_TABLE            := new ClassDropTable
+    , ABOUT_GUI             := new ClassGuiAbout("About Gui")
     , LOG_GUI               := new ClassGuiLog("Log Gui")
     , MAIN_GUI              := new ClassGuiMain("Main Gui")
     , P                     := new ClassGuiProgress(A_ScriptName)
     , QUANTITY_GUI          := new ClassGuiQuantity("Quantity Gui")
     , SETTINGS_GUI          := new ClassGuiSettings("Settings Gui")
     , STATS_GUI             := new ClassGuiStats("Stats Gui")
-    , ABOUT_GUI             := new ClassGuiAbout("About Gui")
+    , GET_ALL               := new ClassRetrieve
     , MIN_DROP_SIZE         := 10
     , MAX_DROP_SIZE         := 80
     , MIN_ROW_LENGTH        := 1
@@ -91,14 +92,14 @@ return
     #Include Class Drop Log.ahk
     #Include Class Drop Stats.ahk
     #Include Class Drop Table.ahk
+    #Include Class Gui About.ahk
     #Include Class Gui Log.ahk
     #Include Class Gui Main.ahk
     #Include Class Gui Progress.ahk
     #Include Class Gui Quantity.ahk
     #Include Class Gui Settings.ahk
     #Include Class Gui Stats.ahk
-    #Include Class Gui About.ahk
-    #Include Func Gui About.ahk
+    #Include Class Retrieve.ahk
     #Include Functions.ahk
 
 ; libraries
