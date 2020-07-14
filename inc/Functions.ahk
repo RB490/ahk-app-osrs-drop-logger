@@ -21,6 +21,13 @@ LoadSettings() {
     ValidateSettings()
 }
 
+Setup() {
+    P.Get(A_ThisFunc, "Preparing first launch")
+    #Include *i %A_ScriptDir%\FileInstall.ahk
+    DB_SETTINGS.setupHasRan := true
+    P.Destroy()
+}
+
 ValidateSettings() {
     defaultSettings := {}
     defaultSettings.guiLogX := ""
@@ -37,6 +44,7 @@ ValidateSettings() {
     defaultSettings.selectedLogFile := ""
     defaultSettings.selectedMob := "Vorkath"
     defaultSettings.selectedMobs := {"Vorkath": "", "Ice giant": ""}
+    defaultSettings.setupHasRan := false
 
     for defaultSetting in defaultSettings {
         If !DB_SETTINGS.HasKey(defaultSetting)

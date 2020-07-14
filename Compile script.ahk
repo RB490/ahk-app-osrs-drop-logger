@@ -23,7 +23,7 @@ compExe := OutDir "\Compiler\Ahk2Exe.exe"
 RunWait %compExe% /in "OSRS Drop Logger.ahk" /out "%A_ScriptDir%\bin\OSRS Drop Logger.exe" /icon "app.ico"
 
 ; cleanup file install list
-FileDelete % A_ScriptDir "\FileInstall.txt"
+FileDelete % A_ScriptDir "\FileInstall.ahk"
 
 ; sucess message
 tooltip Done!

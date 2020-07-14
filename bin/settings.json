@@ -1,0 +1,20 @@
+{
+  "guiLogX": "",
+  "guiLogY": "",
+  "guiStatsH": 400,
+  "guiStatsW": 570,
+  "guiStatsX": "",
+  "guiStatsY": "",
+  "logGuiAutoShowStats": 0,
+  "logGuiDropSize": 33,
+  "logGuiItemImageType": "Wiki Detailed",
+  "logGuiMaxRowDrops": 8,
+  "logGuiTablesMergeBelowX": 27,
+  "selectedLogFile": "",
+  "selectedMob": "Vorkath",
+  "selectedMobs": {
+    "Ice giant": "",
+    "Vorkath": ""
+  },
+  "setupHasRan": 1
+}

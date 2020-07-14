@@ -43,8 +43,8 @@ Class ClassApiOSRSBox {
                 Continue
             Switch mob {
                 Case "Goblin Raider": Continue  ; removed mob without image
-                Case "Monster": Continue  ; removed mob without image
-                Case "Strongest monster": Continue  ; removed mob without image
+                Case "Monster": Continue  ; not a mob
+                Case "Strongest monster": Continue  ; not a mob
             }
             mobs[mob] := lastUpdated
         }

@@ -1,7 +1,6 @@
 ; Script options
-    If FileExist(A_ScriptDir "\FileInstall.txt")
-        FileDelete, % A_ScriptDir "\FileInstall.txt"
-    #Include *i %A_ScriptDir%\FileInstall.txt
+    Menu, Tray, MainWindow ; open debug window for compiled script
+    SetBatchLines, -1
     #SingleInstance, Force
     #NoEnv ; Recommended for performance and compatibility with future AutoHotkey releases.
     CoordMode, Mouse, Screen
@@ -11,7 +10,7 @@
     #MaxMem, 400 ; downloadMissingItemImages()
 
 ; Global vars
-    Global DEBUG_MODE       := true
+    Global DEBUG_MODE       := false
     , PROJECT_WEBSITE       := "https://github.com/RB490/ahk-app-osrs-drop-logger"
     , DIR_ITEM_ICON         := A_ScriptDir "\res\img\item\icon"
     , DIR_ITEM_DETAIL       := A_ScriptDir "\res\img\item\detail"
@@ -21,6 +20,7 @@
     , PATH_RUNELITE_JSON    := A_ScriptDir "\res\runelite.json"
     , PATH_SETTINGS         := A_ScriptDir "\settings.json"
     , PATH_OSRSBOX_JSON     := A_ScriptDir "\res\osrsbox.json"
+    , PATH_FILEINSTALL      := A_ScriptDir "\res\FileInstall.ahk"
     , DB_OSRSBOX            := {}
     , DB_SETTINGS           := {}
     , SELECTED_DROPS        := {}
@@ -51,6 +51,8 @@
     FileCreateDir, % DIR_ITEM_RUNELITE
     FileCreateDir, % DIR_MOB_IMAGES
     LoadSettings()
+    If A_IsCompiled and !DB_SETTINGS.setupHasRan
+        Setup()
     If DEBUG_MODE
         Goto debugAutoexec 
     MAIN_GUI.Get()
@@ -77,10 +79,10 @@ return
         DROP_STATS.UpdateAdvancedStats()
     return
     debugAutoexec:
-        ; Msg("Info", A_ThisLabel, "content")
-        ; RETRIEVE_ALL.DropTables()
-        ; RETRIEVE_ALL.MobImages()
-        ; RETRIEVE_ALL.ItemImages()
+        MAIN_GUI.Get()
+        ; Setup()
+        ; DB_SETTINGS.setupHasRan := false
+        ; msgbox % json.dump(DB_SETTINGS,,2)
         return
         DROP_TABLE.Get(DB_SETTINGS.selectedMob)
         DROP_LOG.Get(DB_SETTINGS.selectedLogFile)

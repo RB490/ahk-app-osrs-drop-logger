@@ -123,14 +123,14 @@ class ClassGuiMain extends gui {
         SplitPath, SelectedFile , OutFileName, OutDir, OutExtension, OutNameNoExt, OutDrive
         file := OutDir "\" OutNameNoExt ".json"
 
-        result := DROP_LOG.Get(file)
-        If !result
+        success := DROP_LOG.Get(file)
+        If !success
             return
         DB_SETTINGS.selectedLogFile := file
         this.Enable()
         this.Hide()
-        result := DROP_TABLE.Get(DB_SETTINGS.selectedMob)
-        If (result = false)
+        success := DROP_TABLE.Get(DB_SETTINGS.selectedMob)
+        If !success
             Msg("Error", A_ThisFunc, "Failed to retrieve drop table for verified, saved mob")
         LOG_GUI.Get()
     }

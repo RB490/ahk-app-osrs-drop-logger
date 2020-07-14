@@ -1,14 +1,3 @@
-bug -> 
-    'Goblin Raider' monster with a drop table but without a picture that is removed from the game
-    'Spinolyp' monster with a drop table and with a picture but its hidden behind a button
-    test:
-        retrieve class
-        get drop table
-
-improvement -> Setup(): use the fact that you can #Include files anywhere in the script 
-    instead of having some weird code inside the 'FileInstall' file only have fileinstalls
-    and write a Setup() function inside the main script
-
 improvement -> refactor every file
     more descriptive class methods, variables, function names
     better code structure

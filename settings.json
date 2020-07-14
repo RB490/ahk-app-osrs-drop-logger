@@ -11,9 +11,11 @@
   "logGuiMaxRowDrops": 8,
   "logGuiTablesMergeBelowX": 27,
   "selectedLogFile": "",
-  "selectedMob": "Vorkath",
+  "selectedMob": "Goblin",
   "selectedMobs": {
+    "Goblin": "",
     "Ice giant": "",
     "Vorkath": ""
-  }
+  },
+  "setupHasRan": 0
 }
