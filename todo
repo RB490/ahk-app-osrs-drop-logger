@@ -1,3 +1,5 @@
+improvement ->  Cache droplogs. Update after x a mount of hours. Maybe add a setting or use 24 hours or somethign
+
 learn -> How does osrsbox api assign the correct item id's for weird items like:
     Bronze key (H.A.M.)
     Iron key Bronze key (H.A.M.)

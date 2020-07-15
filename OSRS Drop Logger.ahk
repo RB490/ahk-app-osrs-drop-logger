@@ -107,7 +107,7 @@ return
     #Include Functions.ahk
 
 ; libraries
-    #Include, %A_ScriptDir%\lib\
+    #Include, %A_ScriptDir%\lib
     #Include, _QPC.ahk
     #Include, AddCommas.ahk
     #Include, AutoXYWH.ahk
@@ -121,6 +121,7 @@ return
     #Include, IsPicture.ahk
     #Include, JSON.ahk
     #Include, LoadPictureType.ahk
+    #Include, Msg.ahk
     #Include, MTimer.ahk
     #Include, ObjFullyClone.ahk
     #Include, ResConImg.ahk
