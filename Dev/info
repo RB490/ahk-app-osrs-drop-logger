@@ -1,0 +1,30 @@
+Tackling item categories
+    https://oldschool.runescape.wiki/w/Category:Items
+    Use the wiki api to create an item category database such as 'farming items', 'herblore items', 'food', 'equipment' which would include all the slot tables. 'untradables' is another good one
+    This would get updated every friday as thursday is update day
+
+Data sources
+    Prices
+        https://prices.runescape.wiki/api/v1/osrs/latest
+    
+    NPC ID's
+        Create NPC ID list with osrsbox monsters complete list
+        https://github.com/runelite/runelite/blob/master/runelite-api/src/main/java/net/runelite/api/NpcID.java
+
+    Item ID's
+        https://www.osrsbox.com/osrsbox-db/items-summary.json
+        https://raw.githubusercontent.com/runelite/runelite/master/runelite-api/src/main/java/net/runelite/api/ItemID.java
+
+    OSRS Box resources
+        https://www.osrsbox.com/projects/osrsbox-db/#the-monster-database
+        https://github.com/osrsbox/osrsbox-api
+        https://github.com/osrsbox/osrsbox-db
+        
+    Mob names
+        https://github.com/osrsbox/osrsbox-db/tree/master/data/monsters/monsters-wiki-page-titles.json
+    Mob full database
+        https://www.osrsbox.com/osrsbox-db/monsters-complete.json
+        https://github.com/osrsbox/osrsbox-db/blob/master/docs/monsters-complete.json
+        https://github.com/osrsbox/osrsbox-db/tree/master/data/monsters/monsters-drops.json
+    Mob specific
+        https://api.osrsbox.com/monsters/2
