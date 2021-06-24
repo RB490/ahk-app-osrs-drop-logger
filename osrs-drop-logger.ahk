@@ -11,7 +11,7 @@
     , APP_NAME                  := A_ScriptName
     ; , PATH_DATABASE_MOBLIST     := A_ScriptDir "\Assets\Database\MobList"
     , P                         := new ClassGuiProgress(APP_NAME)
-    , PATH_DATABASE_MOBS        := A_ScriptDir "\Assets\Mob database"
+    , PATH_DATABASE_MOBS        := A_ScriptDir "\Assets\Mob database.json"
     , MOB_DB                    := new ClassMobDatabase
 
 ; Auto-execute section
