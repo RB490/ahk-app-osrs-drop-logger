@@ -106,7 +106,9 @@
 	Destroy() {
 		for Index, Control in this.Controls
 			GuiControl, -g, % Control
-		Gui % this.hwnd ":Destroy"
+		DetectHiddenWindows, On
+		If WinExist(this.hwnd)
+			Gui % this.hwnd ":Destroy"
 		this.IsVisible := false
 		Gui.Instances[this.hwnd] := ""
 	}

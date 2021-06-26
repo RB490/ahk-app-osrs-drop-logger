@@ -1,0 +1,2854 @@
+{
+  "1": {
+    "last_updated": "2021-04-26",
+    "name": "Molanisk"
+  },
+  "2": {
+    "last_updated": "2020-12-25",
+    "name": "Aberrant spectre"
+  },
+  "8": {
+    "last_updated": "2021-06-18",
+    "name": "Nechryael"
+  },
+  "26": {
+    "last_updated": "2021-02-24",
+    "name": "Zombie"
+  },
+  "69": {
+    "last_updated": "2020-12-25",
+    "name": "Summoned Zombie"
+  },
+  "70": {
+    "last_updated": "2021-04-15",
+    "name": "Skeleton"
+  },
+  "84": {
+    "last_updated": "2020-12-25",
+    "name": "Skeleton Mage"
+  },
+  "85": {
+    "last_updated": "2021-05-30",
+    "name": "Ghost"
+  },
+  "100": {
+    "last_updated": "2020-12-25",
+    "name": "Rock Crab"
+  },
+  "104": {
+    "last_updated": "2021-06-18",
+    "name": "Hellhound"
+  },
+  "106": {
+    "last_updated": "2020-12-25",
+    "name": "Wolf"
+  },
+  "107": {
+    "last_updated": "2020-12-25",
+    "name": "White wolf"
+  },
+  "109": {
+    "last_updated": "2021-04-24",
+    "name": "Big Wolf"
+  },
+  "112": {
+    "last_updated": "2021-04-24",
+    "name": "Wild dog"
+  },
+  "114": {
+    "last_updated": "2020-12-25",
+    "name": "Guard dog"
+  },
+  "132": {
+    "last_updated": "2020-12-25",
+    "name": "Hobgoblin"
+  },
+  "136": {
+    "last_updated": "2020-12-25",
+    "name": "Ogre"
+  },
+  "137": {
+    "last_updated": "2020-12-25",
+    "name": "Baby red dragon"
+  },
+  "138": {
+    "last_updated": "2020-12-25",
+    "name": "Kalphite Soldier"
+  },
+  "139": {
+    "last_updated": "2020-12-25",
+    "name": "Steel dragon"
+  },
+  "140": {
+    "last_updated": "2020-12-25",
+    "name": "Dagannoth"
+  },
+  "232": {
+    "last_updated": "2020-12-25",
+    "name": "Jungle Wolf"
+  },
+  "239": {
+    "last_updated": "2021-01-11",
+    "name": "King Black Dragon"
+  },
+  "240": {
+    "last_updated": "2020-12-25",
+    "name": "Black demon"
+  },
+  "241": {
+    "last_updated": "2020-12-25",
+    "name": "Baby blue dragon"
+  },
+  "247": {
+    "last_updated": "2020-12-25",
+    "name": "Red dragon"
+  },
+  "252": {
+    "last_updated": "2020-12-25",
+    "name": "Black dragon"
+  },
+  "260": {
+    "last_updated": "2020-12-25",
+    "name": "Green dragon"
+  },
+  "265": {
+    "last_updated": "2020-12-25",
+    "name": "Blue dragon"
+  },
+  "270": {
+    "last_updated": "2020-12-25",
+    "name": "Bronze dragon"
+  },
+  "272": {
+    "last_updated": "2020-12-25",
+    "name": "Iron dragon"
+  },
+  "289": {
+    "last_updated": "2020-12-25",
+    "name": "Ghoul"
+  },
+  "290": {
+    "last_updated": "2020-12-25",
+    "name": "Dwarf"
+  },
+  "291": {
+    "last_updated": "2020-12-25",
+    "name": "Chaos dwarf"
+  },
+  "299": {
+    "last_updated": "2021-02-04",
+    "name": "Gunthor the brave"
+  },
+  "300": {
+    "last_updated": "2020-12-25",
+    "name": "Jailer"
+  },
+  "301": {
+    "last_updated": "2020-12-25",
+    "name": "Black Heather"
+  },
+  "302": {
+    "last_updated": "2020-12-25",
+    "name": "Donny the lad"
+  },
+  "303": {
+    "last_updated": "2020-12-25",
+    "name": "Speedy Keith"
+  },
+  "304": {
+    "last_updated": "2020-12-25",
+    "name": "Salarin the twisted"
+  },
+  "319": {
+    "last_updated": "2021-04-08",
+    "name": "Corporeal Beast"
+  },
+  "320": {
+    "last_updated": "2020-12-25",
+    "name": "Dark energy core"
+  },
+  "397": {
+    "last_updated": "2021-06-18",
+    "name": "Guard"
+  },
+  "406": {
+    "last_updated": "2020-12-25",
+    "name": "Cave crawler"
+  },
+  "410": {
+    "last_updated": "2020-12-25",
+    "name": "Kurask"
+  },
+  "412": {
+    "last_updated": "2020-12-25",
+    "name": "Gargoyle"
+  },
+  "414": {
+    "last_updated": "2020-12-25",
+    "name": "Banshee"
+  },
+  "415": {
+    "last_updated": "2021-06-18",
+    "name": "Abyssal demon"
+  },
+  "417": {
+    "last_updated": "2021-04-24",
+    "name": "Basilisk"
+  },
+  "419": {
+    "last_updated": "2021-04-24",
+    "name": "Cockatrice"
+  },
+  "421": {
+    "last_updated": "2020-12-25",
+    "name": "Rockslug"
+  },
+  "423": {
+    "last_updated": "2021-03-11",
+    "name": "Dust devil"
+  },
+  "426": {
+    "last_updated": "2021-04-24",
+    "name": "Turoth"
+  },
+  "433": {
+    "last_updated": "2021-06-18",
+    "name": "Pyrefiend"
+  },
+  "437": {
+    "last_updated": "2020-12-25",
+    "name": "Jelly"
+  },
+  "443": {
+    "last_updated": "2020-12-25",
+    "name": "Infernal Mage"
+  },
+  "448": {
+    "last_updated": "2021-04-24",
+    "name": "Crawling Hand"
+  },
+  "458": {
+    "last_updated": "2020-12-25",
+    "name": "Lizard"
+  },
+  "459": {
+    "last_updated": "2020-12-25",
+    "name": "Desert Lizard"
+  },
+  "462": {
+    "last_updated": "2020-12-25",
+    "name": "Small Lizard"
+  },
+  "464": {
+    "last_updated": "2020-12-25",
+    "name": "Harpie Bug Swarm"
+  },
+  "465": {
+    "last_updated": "2020-12-25",
+    "name": "Skeletal Wyvern"
+  },
+  "469": {
+    "last_updated": "2020-12-25",
+    "name": "Killerwatt"
+  },
+  "476": {
+    "last_updated": "2021-06-18",
+    "name": "Wall beast"
+  },
+  "480": {
+    "last_updated": "2020-12-25",
+    "name": "Cave slime"
+  },
+  "481": {
+    "last_updated": "2020-12-25",
+    "name": "Cave bug"
+  },
+  "484": {
+    "last_updated": "2021-06-18",
+    "name": "Bloodveld"
+  },
+  "492": {
+    "last_updated": "2020-12-25",
+    "name": "Cave kraken"
+  },
+  "494": {
+    "last_updated": "2020-12-25",
+    "name": "Kraken"
+  },
+  "498": {
+    "last_updated": "2020-12-25",
+    "name": "Smoke devil"
+  },
+  "499": {
+    "last_updated": "2021-04-08",
+    "name": "Thermonuclear smoke devil"
+  },
+  "508": {
+    "last_updated": "2020-12-25",
+    "name": "Soulless"
+  },
+  "509": {
+    "last_updated": "2020-12-25",
+    "name": "Death wing"
+  },
+  "511": {
+    "last_updated": "2021-02-24",
+    "name": "Invrigar the Necromancer"
+  },
+  "513": {
+    "last_updated": "2020-12-25",
+    "name": "Mugger"
+  },
+  "516": {
+    "last_updated": "2020-12-25",
+    "name": "Black Knight"
+  },
+  "518": {
+    "last_updated": "2021-06-18",
+    "name": "Highwayman"
+  },
+  "520": {
+    "last_updated": "2020-12-25",
+    "name": "Chaos druid"
+  },
+  "521": {
+    "last_updated": "2020-12-25",
+    "name": "Pirate"
+  },
+  "525": {
+    "last_updated": "2020-12-25",
+    "name": "Thug"
+  },
+  "526": {
+    "last_updated": "2020-12-25",
+    "name": "Rogue"
+  },
+  "527": {
+    "last_updated": "2020-12-25",
+    "name": "Monk of Zamorak"
+  },
+  "530": {
+    "last_updated": "2020-12-25",
+    "name": "Tribesman"
+  },
+  "531": {
+    "last_updated": "2020-12-25",
+    "name": "Dark warrior"
+  },
+  "532": {
+    "last_updated": "2020-12-25",
+    "name": "Chaos druid warrior"
+  },
+  "561": {
+    "last_updated": "2020-12-25",
+    "name": "Sorebones"
+  },
+  "563": {
+    "last_updated": "2020-12-25",
+    "name": "Zombie pirate"
+  },
+  "619": {
+    "last_updated": "2020-12-25",
+    "name": "Zombie swab"
+  },
+  "625": {
+    "last_updated": "2020-12-25",
+    "name": "Evil spirit"
+  },
+  "626": {
+    "last_updated": "2021-06-18",
+    "name": "Fever spider"
+  },
+  "639": {
+    "last_updated": "2020-12-25",
+    "name": "Tyras guard"
+  },
+  "643": {
+    "last_updated": "2020-12-25",
+    "name": "Arrg"
+  },
+  "645": {
+    "last_updated": "2020-12-25",
+    "name": "Ice wolf"
+  },
+  "648": {
+    "last_updated": "2020-12-25",
+    "name": "Ice Troll"
+  },
+  "655": {
+    "last_updated": "2021-05-30",
+    "name": "Goblin"
+  },
+  "682": {
+    "last_updated": "2020-12-25",
+    "name": "Damis"
+  },
+  "690": {
+    "last_updated": "2020-12-25",
+    "name": "Bandit"
+  },
+  "738": {
+    "last_updated": "2021-05-30",
+    "name": "Bandit champion"
+  },
+  "762": {
+    "last_updated": "2020-12-25",
+    "name": "Baby Roc"
+  },
+  "763": {
+    "last_updated": "2021-05-30",
+    "name": "Giant Roc"
+  },
+  "785": {
+    "last_updated": "2020-12-25",
+    "name": "Me"
+  },
+  "787": {
+    "last_updated": "2020-12-25",
+    "name": "Suqah"
+  },
+  "794": {
+    "last_updated": "2020-12-25",
+    "name": "Scarab mage"
+  },
+  "795": {
+    "last_updated": "2021-02-24",
+    "name": "Locust rider"
+  },
+  "797": {
+    "last_updated": "2020-12-25",
+    "name": "Giant scarab"
+  },
+  "820": {
+    "last_updated": "2020-12-25",
+    "name": "Wormbrain"
+  },
+  "852": {
+    "last_updated": "2020-12-25",
+    "name": "Icelord"
+  },
+  "866": {
+    "last_updated": "2020-12-25",
+    "name": "Zogre"
+  },
+  "872": {
+    "last_updated": "2020-12-25",
+    "name": "Skogre"
+  },
+  "882": {
+    "last_updated": "2020-12-25",
+    "name": "Slash Bash"
+  },
+  "926": {
+    "last_updated": "2020-12-25",
+    "name": "Stick"
+  },
+  "927": {
+    "last_updated": "2020-12-25",
+    "name": "Pee Hat"
+  },
+  "928": {
+    "last_updated": "2020-12-25",
+    "name": "Kraka"
+  },
+  "931": {
+    "last_updated": "2021-03-11",
+    "name": "Thrower Troll"
+  },
+  "936": {
+    "last_updated": "2020-12-25",
+    "name": "Mountain troll"
+  },
+  "946": {
+    "last_updated": "2020-12-25",
+    "name": "Ghast"
+  },
+  "955": {
+    "last_updated": "2020-12-25",
+    "name": "Kalphite Worker"
+  },
+  "959": {
+    "last_updated": "2020-12-25",
+    "name": "Kalphite Guardian"
+  },
+  "963": {
+    "last_updated": "2020-12-25",
+    "name": "Kalphite Queen"
+  },
+  "983": {
+    "last_updated": "2020-12-25",
+    "name": "Dagannoth mother"
+  },
+  "1024": {
+    "last_updated": "2021-05-30",
+    "name": "Zygomite"
+  },
+  "1025": {
+    "last_updated": "2021-06-18",
+    "name": "Necromancer"
+  },
+  "1027": {
+    "last_updated": "2020-12-25",
+    "name": "Guard Bandit"
+  },
+  "1037": {
+    "last_updated": "2020-12-25",
+    "name": "Snake"
+  },
+  "1039": {
+    "last_updated": "2020-12-25",
+    "name": "Albino bat"
+  },
+  "1041": {
+    "last_updated": "2020-12-25",
+    "name": "Giant mosquito"
+  },
+  "1042": {
+    "last_updated": "2020-12-25",
+    "name": "Jungle horror"
+  },
+  "1047": {
+    "last_updated": "2021-02-12",
+    "name": "Cave horror"
+  },
+  "1062": {
+    "last_updated": "2020-12-25",
+    "name": "Angry giant rat"
+  },
+  "1097": {
+    "last_updated": "2020-12-25",
+    "name": "Sea Snake Young"
+  },
+  "1098": {
+    "last_updated": "2020-12-25",
+    "name": "Sea Snake Hatchling"
+  },
+  "1101": {
+    "last_updated": "2020-12-25",
+    "name": "Giant Sea Snake"
+  },
+  "1118": {
+    "last_updated": "2021-04-24",
+    "name": "Man"
+  },
+  "1119": {
+    "last_updated": "2021-04-24",
+    "name": "Woman"
+  },
+  "1127": {
+    "last_updated": "2020-12-25",
+    "name": "Giant scarab (hard)"
+  },
+  "1128": {
+    "last_updated": "2020-12-25",
+    "name": "Dessous (hard)"
+  },
+  "1129": {
+    "last_updated": "2020-12-25",
+    "name": "Kamil (hard)"
+  },
+  "1134": {
+    "last_updated": "2020-12-25",
+    "name": "Damis (hard)"
+  },
+  "1144": {
+    "last_updated": "2021-02-04",
+    "name": "Paladin"
+  },
+  "1163": {
+    "last_updated": "2020-12-25",
+    "name": "Tree spirit"
+  },
+  "1173": {
+    "last_updated": "2021-03-25",
+    "name": "Chicken"
+  },
+  "1175": {
+    "last_updated": "2021-06-18",
+    "name": "Rooster"
+  },
+  "1204": {
+    "last_updated": "2020-12-25",
+    "name": "Alomone"
+  },
+  "1206": {
+    "last_updated": "2020-12-25",
+    "name": "Clivet"
+  },
+  "1207": {
+    "last_updated": "2020-12-25",
+    "name": "Hazeel Cultist"
+  },
+  "1208": {
+    "last_updated": "2020-12-25",
+    "name": "Khazard Guard"
+  },
+  "1261": {
+    "last_updated": "2021-01-14",
+    "name": "Ram"
+  },
+  "1267": {
+    "last_updated": "2020-12-25",
+    "name": "Vulture"
+  },
+  "1273": {
+    "last_updated": "2020-12-25",
+    "name": "Experiment"
+  },
+  "1277": {
+    "last_updated": "2020-12-25",
+    "name": "Loar Shade"
+  },
+  "1279": {
+    "last_updated": "2020-12-25",
+    "name": "Phrin Shadow"
+  },
+  "1280": {
+    "last_updated": "2020-12-25",
+    "name": "Phrin Shade"
+  },
+  "1281": {
+    "last_updated": "2020-12-25",
+    "name": "Riyl Shadow"
+  },
+  "1282": {
+    "last_updated": "2020-12-25",
+    "name": "Riyl Shade"
+  },
+  "1284": {
+    "last_updated": "2020-12-25",
+    "name": "Asyn Shade"
+  },
+  "1285": {
+    "last_updated": "2020-12-25",
+    "name": "Fiyr Shadow"
+  },
+  "1286": {
+    "last_updated": "2020-12-25",
+    "name": "Fiyr Shade"
+  },
+  "1293": {
+    "last_updated": "2020-12-25",
+    "name": "Afflicted"
+  },
+  "1338": {
+    "last_updated": "2021-02-24",
+    "name": "Seagull"
+  },
+  "1354": {
+    "last_updated": "2020-12-25",
+    "name": "Dwarf gang member"
+  },
+  "1362": {
+    "last_updated": "2020-12-25",
+    "name": "Slagilith"
+  },
+  "1365": {
+    "last_updated": "2020-12-25",
+    "name": "Fire elemental"
+  },
+  "1366": {
+    "last_updated": "2020-12-25",
+    "name": "Earth elemental"
+  },
+  "1369": {
+    "last_updated": "2020-12-25",
+    "name": "Air elemental"
+  },
+  "1370": {
+    "last_updated": "2020-12-25",
+    "name": "Water elemental"
+  },
+  "1377": {
+    "last_updated": "2020-12-25",
+    "name": "The Kendal"
+  },
+  "1379": {
+    "last_updated": "2020-12-25",
+    "name": "Camp dweller"
+  },
+  "1409": {
+    "last_updated": "2021-05-30",
+    "name": "Black Guard"
+  },
+  "1429": {
+    "last_updated": "2020-12-25",
+    "name": "Foreman"
+  },
+  "1448": {
+    "last_updated": "2020-12-25",
+    "name": "Thief"
+  },
+  "1475": {
+    "last_updated": "2020-12-25",
+    "name": "Chompy bird"
+  },
+  "1494": {
+    "last_updated": "2020-12-25",
+    "name": "Kebbit"
+  },
+  "1537": {
+    "last_updated": "2020-12-25",
+    "name": "Skeleton hero"
+  },
+  "1538": {
+    "last_updated": "2020-12-25",
+    "name": "Skeleton brute"
+  },
+  "1539": {
+    "last_updated": "2020-12-25",
+    "name": "Skeleton warlord"
+  },
+  "1540": {
+    "last_updated": "2020-12-25",
+    "name": "Skeleton heavy"
+  },
+  "1541": {
+    "last_updated": "2020-12-25",
+    "name": "Skeleton thug"
+  },
+  "1556": {
+    "last_updated": "2020-12-25",
+    "name": "Fire wizard"
+  },
+  "1557": {
+    "last_updated": "2020-12-25",
+    "name": "Water wizard"
+  },
+  "1558": {
+    "last_updated": "2020-12-25",
+    "name": "Earth wizard"
+  },
+  "1559": {
+    "last_updated": "2020-12-25",
+    "name": "Air wizard"
+  },
+  "1610": {
+    "last_updated": "2020-12-25",
+    "name": "Battle mage"
+  },
+  "1672": {
+    "last_updated": "2020-12-25",
+    "name": "Ahrim the Blighted"
+  },
+  "1673": {
+    "last_updated": "2020-12-25",
+    "name": "Dharok the Wretched"
+  },
+  "1674": {
+    "last_updated": "2020-12-25",
+    "name": "Guthan the Infested"
+  },
+  "1675": {
+    "last_updated": "2020-12-25",
+    "name": "Karil the Tainted"
+  },
+  "1676": {
+    "last_updated": "2020-12-25",
+    "name": "Torag the Corrupted"
+  },
+  "1677": {
+    "last_updated": "2020-12-25",
+    "name": "Verac the Defiled"
+  },
+  "1679": {
+    "last_updated": "2020-12-25",
+    "name": "Crypt rat"
+  },
+  "1680": {
+    "last_updated": "2020-12-25",
+    "name": "Giant crypt rat"
+  },
+  "1777": {
+    "last_updated": "2020-12-25",
+    "name": "Double agent"
+  },
+  "1792": {
+    "last_updated": "2020-12-25",
+    "name": "Goat"
+  },
+  "1794": {
+    "last_updated": "2020-12-25",
+    "name": "Billy Goat"
+  },
+  "1798": {
+    "last_updated": "2020-12-25",
+    "name": "White Knight"
+  },
+  "1834": {
+    "last_updated": "2021-03-11",
+    "name": "Gorak"
+  },
+  "1838": {
+    "last_updated": "2020-12-25",
+    "name": "Duck"
+  },
+  "1845": {
+    "last_updated": "2020-12-25",
+    "name": "Stag"
+  },
+  "1852": {
+    "last_updated": "2021-01-14",
+    "name": "Rabbit"
+  },
+  "1870": {
+    "last_updated": "2021-05-30",
+    "name": "Evil Chicken"
+  },
+  "1871": {
+    "last_updated": "2020-12-25",
+    "name": "Baby black dragon"
+  },
+  "1874": {
+    "last_updated": "2020-12-25",
+    "name": "Ice troll runt"
+  },
+  "1875": {
+    "last_updated": "2020-12-25",
+    "name": "Ice troll male"
+  },
+  "1876": {
+    "last_updated": "2020-12-25",
+    "name": "Ice troll female"
+  },
+  "1877": {
+    "last_updated": "2020-12-25",
+    "name": "Ice troll grunt"
+  },
+  "2005": {
+    "last_updated": "2020-12-25",
+    "name": "Lesser demon"
+  },
+  "2025": {
+    "last_updated": "2021-06-18",
+    "name": "Greater demon"
+  },
+  "2042": {
+    "last_updated": "2020-12-25",
+    "name": "Zulrah"
+  },
+  "2054": {
+    "last_updated": "2020-12-25",
+    "name": "Chaos Elemental"
+  },
+  "2062": {
+    "last_updated": "2020-12-25",
+    "name": "Oomlie bird"
+  },
+  "2064": {
+    "last_updated": "2020-12-25",
+    "name": "Terrorbird"
+  },
+  "2067": {
+    "last_updated": "2020-12-25",
+    "name": "Mounted terrorbird gnome"
+  },
+  "2075": {
+    "last_updated": "2021-06-18",
+    "name": "Fire giant"
+  },
+  "2085": {
+    "last_updated": "2020-12-25",
+    "name": "Ice giant"
+  },
+  "2090": {
+    "last_updated": "2021-02-04",
+    "name": "Moss giant"
+  },
+  "2094": {
+    "last_updated": "2020-12-25",
+    "name": "Jogre"
+  },
+  "2097": {
+    "last_updated": "2021-02-24",
+    "name": "Cyclops"
+  },
+  "2098": {
+    "last_updated": "2020-12-25",
+    "name": "Hill Giant"
+  },
+  "2120": {
+    "last_updated": "2020-12-25",
+    "name": "Market Guard"
+  },
+  "2145": {
+    "last_updated": "2020-12-25",
+    "name": "Undead Druid"
+  },
+  "2161": {
+    "last_updated": "2020-12-25",
+    "name": "TzHaar-Hur"
+  },
+  "2167": {
+    "last_updated": "2021-02-04",
+    "name": "TzHaar-Xil"
+  },
+  "2205": {
+    "last_updated": "2020-12-25",
+    "name": "Commander Zilyana"
+  },
+  "2206": {
+    "last_updated": "2020-12-25",
+    "name": "Starlight"
+  },
+  "2207": {
+    "last_updated": "2020-12-25",
+    "name": "Growler"
+  },
+  "2208": {
+    "last_updated": "2020-12-25",
+    "name": "Bree"
+  },
+  "2209": {
+    "last_updated": "2020-12-25",
+    "name": "Saradomin priest"
+  },
+  "2210": {
+    "last_updated": "2021-01-11",
+    "name": "Spiritual warrior"
+  },
+  "2211": {
+    "last_updated": "2021-01-11",
+    "name": "Spiritual ranger"
+  },
+  "2212": {
+    "last_updated": "2021-01-11",
+    "name": "Spiritual mage"
+  },
+  "2213": {
+    "last_updated": "2020-12-25",
+    "name": "Knight of Saradomin"
+  },
+  "2215": {
+    "last_updated": "2020-12-25",
+    "name": "General Graardor"
+  },
+  "2216": {
+    "last_updated": "2021-02-24",
+    "name": "Sergeant Strongstack"
+  },
+  "2217": {
+    "last_updated": "2021-02-24",
+    "name": "Sergeant Steelwill"
+  },
+  "2218": {
+    "last_updated": "2021-02-24",
+    "name": "Sergeant Grimspike"
+  },
+  "2237": {
+    "last_updated": "2020-12-25",
+    "name": "Ork"
+  },
+  "2261": {
+    "last_updated": "2020-12-25",
+    "name": "Giant Rock Crab"
+  },
+  "2264": {
+    "last_updated": "2020-12-25",
+    "name": "Dagannoth fledgeling"
+  },
+  "2265": {
+    "last_updated": "2020-12-25",
+    "name": "Dagannoth Supreme"
+  },
+  "2266": {
+    "last_updated": "2021-03-11",
+    "name": "Dagannoth Prime"
+  },
+  "2267": {
+    "last_updated": "2020-12-25",
+    "name": "Dagannoth Rex"
+  },
+  "2450": {
+    "last_updated": "2020-12-25",
+    "name": "Animated Bronze Armour"
+  },
+  "2451": {
+    "last_updated": "2020-12-25",
+    "name": "Animated Iron Armour"
+  },
+  "2452": {
+    "last_updated": "2020-12-25",
+    "name": "Animated Steel Armour"
+  },
+  "2453": {
+    "last_updated": "2020-12-25",
+    "name": "Animated Black Armour"
+  },
+  "2454": {
+    "last_updated": "2020-12-25",
+    "name": "Animated Mithril Armour"
+  },
+  "2455": {
+    "last_updated": "2020-12-25",
+    "name": "Animated Adamant Armour"
+  },
+  "2456": {
+    "last_updated": "2020-12-25",
+    "name": "Animated Rune Armour"
+  },
+  "2474": {
+    "last_updated": "2020-12-25",
+    "name": "Catablepon"
+  },
+  "2477": {
+    "last_updated": "2020-12-25",
+    "name": "Giant spider"
+  },
+  "2478": {
+    "last_updated": "2020-12-25",
+    "name": "Spider"
+  },
+  "2479": {
+    "last_updated": "2020-12-25",
+    "name": "Scorpion"
+  },
+  "2481": {
+    "last_updated": "2020-12-25",
+    "name": "Minotaur"
+  },
+  "2492": {
+    "last_updated": "2020-12-25",
+    "name": "Rat"
+  },
+  "2498": {
+    "last_updated": "2020-12-25",
+    "name": "Flesh Crawler"
+  },
+  "2510": {
+    "last_updated": "2020-12-25",
+    "name": "Giant rat"
+  },
+  "2514": {
+    "last_updated": "2020-12-25",
+    "name": "Ankou"
+  },
+  "2536": {
+    "last_updated": "2020-12-25",
+    "name": "H.A.M. Guard"
+  },
+  "2579": {
+    "last_updated": "2020-12-25",
+    "name": "Monk"
+  },
+  "2584": {
+    "last_updated": "2021-06-18",
+    "name": "Abyssal leech"
+  },
+  "2585": {
+    "last_updated": "2021-06-18",
+    "name": "Abyssal guardian"
+  },
+  "2586": {
+    "last_updated": "2021-06-18",
+    "name": "Abyssal walker"
+  },
+  "2592": {
+    "last_updated": "2020-12-25",
+    "name": "Mogre"
+  },
+  "2593": {
+    "last_updated": "2021-01-14",
+    "name": "Werewolf"
+  },
+  "2613": {
+    "last_updated": "2020-12-25",
+    "name": "Boris"
+  },
+  "2614": {
+    "last_updated": "2020-12-25",
+    "name": "Imre"
+  },
+  "2615": {
+    "last_updated": "2020-12-25",
+    "name": "Yuri"
+  },
+  "2616": {
+    "last_updated": "2020-12-25",
+    "name": "Joseph"
+  },
+  "2617": {
+    "last_updated": "2020-12-25",
+    "name": "Nikolai"
+  },
+  "2618": {
+    "last_updated": "2020-12-25",
+    "name": "Eduard"
+  },
+  "2619": {
+    "last_updated": "2020-12-25",
+    "name": "Lev"
+  },
+  "2620": {
+    "last_updated": "2020-12-25",
+    "name": "Georgy"
+  },
+  "2621": {
+    "last_updated": "2020-12-25",
+    "name": "Svetlana"
+  },
+  "2622": {
+    "last_updated": "2020-12-25",
+    "name": "Irina"
+  },
+  "2623": {
+    "last_updated": "2020-12-25",
+    "name": "Alexis"
+  },
+  "2624": {
+    "last_updated": "2020-12-25",
+    "name": "Milla"
+  },
+  "2625": {
+    "last_updated": "2020-12-25",
+    "name": "Galina"
+  },
+  "2626": {
+    "last_updated": "2020-12-25",
+    "name": "Sofiya"
+  },
+  "2627": {
+    "last_updated": "2020-12-25",
+    "name": "Ksenia"
+  },
+  "2628": {
+    "last_updated": "2020-12-25",
+    "name": "Yadviga"
+  },
+  "2629": {
+    "last_updated": "2020-12-25",
+    "name": "Nikita"
+  },
+  "2630": {
+    "last_updated": "2020-12-25",
+    "name": "Vera"
+  },
+  "2631": {
+    "last_updated": "2020-12-25",
+    "name": "Zoja"
+  },
+  "2632": {
+    "last_updated": "2020-12-25",
+    "name": "Liliya"
+  },
+  "2634": {
+    "last_updated": "2020-12-25",
+    "name": "Myre Blamish Snail"
+  },
+  "2646": {
+    "last_updated": "2020-12-25",
+    "name": "Ochre Blamish Snail"
+  },
+  "2648": {
+    "last_updated": "2020-12-25",
+    "name": "Bark Blamish Snail"
+  },
+  "2790": {
+    "last_updated": "2021-04-24",
+    "name": "Cow"
+  },
+  "2792": {
+    "last_updated": "2020-12-25",
+    "name": "Cow calf"
+  },
+  "2827": {
+    "last_updated": "2020-12-25",
+    "name": "Bat"
+  },
+  "2834": {
+    "last_updated": "2021-02-24",
+    "name": "Giant bat"
+  },
+  "2836": {
+    "last_updated": "2020-12-25",
+    "name": "Golem"
+  },
+  "2837": {
+    "last_updated": "2020-12-25",
+    "name": "Unicorn"
+  },
+  "2838": {
+    "last_updated": "2020-12-25",
+    "name": "Grizzly bear"
+  },
+  "2839": {
+    "last_updated": "2020-12-25",
+    "name": "Black bear"
+  },
+  "2840": {
+    "last_updated": "2020-12-25",
+    "name": "Earth warrior"
+  },
+  "2841": {
+    "last_updated": "2020-12-25",
+    "name": "Ice warrior"
+  },
+  "2843": {
+    "last_updated": "2020-12-25",
+    "name": "Otherworldly being"
+  },
+  "2844": {
+    "last_updated": "2020-12-25",
+    "name": "Magic axe"
+  },
+  "2849": {
+    "last_updated": "2020-12-25",
+    "name": "Black unicorn"
+  },
+  "2853": {
+    "last_updated": "2020-12-25",
+    "name": "Shadow warrior"
+  },
+  "2865": {
+    "last_updated": "2021-02-24",
+    "name": "Dungeon rat"
+  },
+  "2916": {
+    "last_updated": "2021-06-18",
+    "name": "Waterfiend"
+  },
+  "2918": {
+    "last_updated": "2020-12-25",
+    "name": "Brutal green dragon"
+  },
+  "2919": {
+    "last_updated": "2020-12-25",
+    "name": "Mithril dragon"
+  },
+  "2920": {
+    "last_updated": "2020-12-25",
+    "name": "Confused barbarian"
+  },
+  "2921": {
+    "last_updated": "2020-12-25",
+    "name": "Lost barbarian"
+  },
+  "2946": {
+    "last_updated": "2020-12-25",
+    "name": "Nail beast"
+  },
+  "2954": {
+    "last_updated": "2020-12-25",
+    "name": "Zamorak wizard"
+  },
+  "2955": {
+    "last_updated": "2020-12-25",
+    "name": "Saradomin wizard"
+  },
+  "2978": {
+    "last_updated": "2020-12-25",
+    "name": "Big Snake"
+  },
+  "2992": {
+    "last_updated": "2020-12-25",
+    "name": "Undead cow"
+  },
+  "2993": {
+    "last_updated": "2021-03-17",
+    "name": "Undead chicken"
+  },
+  "2994": {
+    "last_updated": "2020-12-25",
+    "name": "Giant lobster"
+  },
+  "2999": {
+    "last_updated": "2020-12-25",
+    "name": "Tortured soul"
+  },
+  "3016": {
+    "last_updated": "2020-12-25",
+    "name": "Shadow spider"
+  },
+  "3020": {
+    "last_updated": "2020-12-25",
+    "name": "Jungle spider"
+  },
+  "3021": {
+    "last_updated": "2020-12-25",
+    "name": "Deadly red spider"
+  },
+  "3022": {
+    "last_updated": "2020-12-25",
+    "name": "Ice spider"
+  },
+  "3023": {
+    "last_updated": "2020-12-25",
+    "name": "Poison spider"
+  },
+  "3025": {
+    "last_updated": "2020-12-25",
+    "name": "Poison Scorpion"
+  },
+  "3026": {
+    "last_updated": "2020-12-25",
+    "name": "Pit Scorpion"
+  },
+  "3027": {
+    "last_updated": "2020-12-25",
+    "name": "King Scorpion"
+  },
+  "3055": {
+    "last_updated": "2020-12-25",
+    "name": "Barbarian"
+  },
+  "3114": {
+    "last_updated": "2020-12-25",
+    "name": "Farmer"
+  },
+  "3127": {
+    "last_updated": "2020-12-25",
+    "name": "TzTok-Jad"
+  },
+  "3129": {
+    "last_updated": "2021-06-18",
+    "name": "K'ril Tsutsaroth"
+  },
+  "3130": {
+    "last_updated": "2021-06-18",
+    "name": "Tstanon Karlak"
+  },
+  "3131": {
+    "last_updated": "2021-06-18",
+    "name": "Zakl'n Gritch"
+  },
+  "3132": {
+    "last_updated": "2021-06-18",
+    "name": "Balfrug Kreeyath"
+  },
+  "3134": {
+    "last_updated": "2021-06-18",
+    "name": "Imp"
+  },
+  "3137": {
+    "last_updated": "2021-03-11",
+    "name": "Feral Vampyre"
+  },
+  "3140": {
+    "last_updated": "2021-06-18",
+    "name": "Icefiend"
+  },
+  "3162": {
+    "last_updated": "2020-12-25",
+    "name": "Kree'arra"
+  },
+  "3163": {
+    "last_updated": "2020-12-25",
+    "name": "Wingman Skree"
+  },
+  "3164": {
+    "last_updated": "2020-12-25",
+    "name": "Flockleader Geerin"
+  },
+  "3165": {
+    "last_updated": "2020-12-25",
+    "name": "Flight Kilisa"
+  },
+  "3169": {
+    "last_updated": "2020-12-25",
+    "name": "Aviansie"
+  },
+  "3184": {
+    "last_updated": "2020-12-25",
+    "name": "Dagannoth spawn"
+  },
+  "3257": {
+    "last_updated": "2020-12-25",
+    "name": "Wizard"
+  },
+  "3258": {
+    "last_updated": "2020-12-25",
+    "name": "Druid"
+  },
+  "3260": {
+    "last_updated": "2020-12-25",
+    "name": "Warrior woman"
+  },
+  "3263": {
+    "last_updated": "2020-12-25",
+    "name": "Drunken man"
+  },
+  "3275": {
+    "last_updated": "2020-12-25",
+    "name": "Gardener"
+  },
+  "3279": {
+    "last_updated": "2020-12-25",
+    "name": "Cuffs"
+  },
+  "3280": {
+    "last_updated": "2020-12-25",
+    "name": "Narf"
+  },
+  "3281": {
+    "last_updated": "2020-12-25",
+    "name": "Rusty"
+  },
+  "3282": {
+    "last_updated": "2020-12-25",
+    "name": "Jeff"
+  },
+  "3284": {
+    "last_updated": "2020-12-25",
+    "name": "Hengel"
+  },
+  "3285": {
+    "last_updated": "2020-12-25",
+    "name": "Anja"
+  },
+  "3292": {
+    "last_updated": "2021-03-11",
+    "name": "Al-Kharid warrior"
+  },
+  "3295": {
+    "last_updated": "2020-12-25",
+    "name": "Hero"
+  },
+  "3296": {
+    "last_updated": "2021-04-24",
+    "name": "Forester"
+  },
+  "3297": {
+    "last_updated": "2021-02-04",
+    "name": "Knight of Ardougne"
+  },
+  "3329": {
+    "last_updated": "2020-12-25",
+    "name": "Giant Champion"
+  },
+  "3424": {
+    "last_updated": "2020-12-25",
+    "name": "Grizzly bear cub"
+  },
+  "3426": {
+    "last_updated": "2020-12-25",
+    "name": "Dire Wolf"
+  },
+  "3428": {
+    "last_updated": "2021-01-11",
+    "name": "Iorwerth Archer"
+  },
+  "3429": {
+    "last_updated": "2021-02-24",
+    "name": "Iorwerth Warrior"
+  },
+  "3445": {
+    "last_updated": "2020-12-25",
+    "name": "Guardian of Armadyl"
+  },
+  "3449": {
+    "last_updated": "2020-12-25",
+    "name": "Shadow Hound"
+  },
+  "3456": {
+    "last_updated": "2020-12-25",
+    "name": "Fareed"
+  },
+  "3458": {
+    "last_updated": "2020-12-25",
+    "name": "Kamil"
+  },
+  "3459": {
+    "last_updated": "2020-12-25",
+    "name": "Dessous"
+  },
+  "3477": {
+    "last_updated": "2020-12-25",
+    "name": "A Doubt"
+  },
+  "3517": {
+    "last_updated": "2020-12-25",
+    "name": "Renegade Knight"
+  },
+  "3527": {
+    "last_updated": "2020-12-25",
+    "name": "Sir Mordred"
+  },
+  "3544": {
+    "last_updated": "2020-12-25",
+    "name": "Desert snake"
+  },
+  "3549": {
+    "last_updated": "2020-12-25",
+    "name": "Menaphite Thug"
+  },
+  "3551": {
+    "last_updated": "2021-05-30",
+    "name": "Tough Guy"
+  },
+  "3600": {
+    "last_updated": "2021-02-24",
+    "name": "Frogeel"
+  },
+  "3601": {
+    "last_updated": "2020-12-25",
+    "name": "Unicow"
+  },
+  "3602": {
+    "last_updated": "2020-12-25",
+    "name": "Spidine"
+  },
+  "3603": {
+    "last_updated": "2020-12-25",
+    "name": "Swordchick"
+  },
+  "3604": {
+    "last_updated": "2020-12-25",
+    "name": "Jubster"
+  },
+  "3605": {
+    "last_updated": "2020-12-25",
+    "name": "Newtroost"
+  },
+  "3612": {
+    "last_updated": "2020-12-25",
+    "name": "Possessed pickaxe"
+  },
+  "3615": {
+    "last_updated": "2020-12-25",
+    "name": "Skeletal miner"
+  },
+  "3616": {
+    "last_updated": "2020-12-25",
+    "name": "Treus Dayth"
+  },
+  "3675": {
+    "last_updated": "2020-12-25",
+    "name": "Einar"
+  },
+  "3677": {
+    "last_updated": "2020-12-25",
+    "name": "Thorhild"
+  },
+  "3681": {
+    "last_updated": "2020-12-25",
+    "name": "Rannveig"
+  },
+  "3683": {
+    "last_updated": "2020-12-25",
+    "name": "Valgerd"
+  },
+  "3685": {
+    "last_updated": "2020-12-25",
+    "name": "Broddi"
+  },
+  "3687": {
+    "last_updated": "2020-12-25",
+    "name": "Ragnvald"
+  },
+  "3692": {
+    "last_updated": "2020-12-25",
+    "name": "Vampyre Juvenile"
+  },
+  "3717": {
+    "last_updated": "2021-03-17",
+    "name": "Vyrewatch"
+  },
+  "3863": {
+    "last_updated": "2020-12-25",
+    "name": "Jake"
+  },
+  "3865": {
+    "last_updated": "2020-12-25",
+    "name": "Wilson"
+  },
+  "3869": {
+    "last_updated": "2020-12-25",
+    "name": "Palmer"
+  },
+  "3901": {
+    "last_updated": "2020-12-25",
+    "name": "Fox"
+  },
+  "3902": {
+    "last_updated": "2021-04-15",
+    "name": "Bunny"
+  },
+  "3908": {
+    "last_updated": "2020-12-25",
+    "name": "Bear Cub"
+  },
+  "3910": {
+    "last_updated": "2020-12-25",
+    "name": "Unicorn Foal"
+  },
+  "3911": {
+    "last_updated": "2020-12-25",
+    "name": "Black unicorn Foal"
+  },
+  "3938": {
+    "last_updated": "2020-12-25",
+    "name": "Freidir"
+  },
+  "3939": {
+    "last_updated": "2020-12-25",
+    "name": "Borrokar"
+  },
+  "3940": {
+    "last_updated": "2020-12-25",
+    "name": "Lanzig"
+  },
+  "3943": {
+    "last_updated": "2020-12-25",
+    "name": "Lensa"
+  },
+  "3944": {
+    "last_updated": "2020-12-25",
+    "name": "Jennella"
+  },
+  "3959": {
+    "last_updated": "2020-12-25",
+    "name": "Jungle savage"
+  },
+  "3969": {
+    "last_updated": "2020-12-25",
+    "name": "Zombie rat"
+  },
+  "4005": {
+    "last_updated": "2020-12-25",
+    "name": "Dark beast"
+  },
+  "4067": {
+    "last_updated": "2020-12-25",
+    "name": "Black Knight Titan"
+  },
+  "4095": {
+    "last_updated": "2020-12-25",
+    "name": "Eadburg"
+  },
+  "4107": {
+    "last_updated": "2020-12-25",
+    "name": "Breoca"
+  },
+  "4108": {
+    "last_updated": "2020-12-25",
+    "name": "Ocga"
+  },
+  "4109": {
+    "last_updated": "2020-12-25",
+    "name": "Penda"
+  },
+  "4110": {
+    "last_updated": "2020-12-25",
+    "name": "Hygd"
+  },
+  "4111": {
+    "last_updated": "2020-12-25",
+    "name": "Ceolburg"
+  },
+  "4115": {
+    "last_updated": "2020-12-25",
+    "name": "Fareed (hard)"
+  },
+  "4120": {
+    "last_updated": "2020-12-25",
+    "name": "Troll general"
+  },
+  "4123": {
+    "last_updated": "2020-12-25",
+    "name": "Troll spectator"
+  },
+  "4130": {
+    "last_updated": "2020-12-25",
+    "name": "Dad"
+  },
+  "4131": {
+    "last_updated": "2020-12-25",
+    "name": "Twig"
+  },
+  "4132": {
+    "last_updated": "2020-12-25",
+    "name": "Berry"
+  },
+  "4163": {
+    "last_updated": "2020-12-25",
+    "name": "King Roald"
+  },
+  "4167": {
+    "last_updated": "2020-12-25",
+    "name": "Outlaw"
+  },
+  "4184": {
+    "last_updated": "2020-12-25",
+    "name": "Crocodile"
+  },
+  "4185": {
+    "last_updated": "2020-12-25",
+    "name": "Jackal"
+  },
+  "4186": {
+    "last_updated": "2020-12-25",
+    "name": "Locust"
+  },
+  "4210": {
+    "last_updated": "2020-12-25",
+    "name": "Possessed Priest"
+  },
+  "4248": {
+    "last_updated": "2020-12-25",
+    "name": "Head Thief"
+  },
+  "4276": {
+    "last_updated": "2020-12-25",
+    "name": "Jail guard"
+  },
+  "4362": {
+    "last_updated": "2020-12-25",
+    "name": "Ogre chieftain"
+  },
+  "4367": {
+    "last_updated": "2020-12-25",
+    "name": "Gorad"
+  },
+  "4381": {
+    "last_updated": "2020-12-25",
+    "name": "Enclave guard"
+  },
+  "4405": {
+    "last_updated": "2020-12-25",
+    "name": "Tower guard"
+  },
+  "4406": {
+    "last_updated": "2020-12-25",
+    "name": "Colonel Radick"
+  },
+  "4491": {
+    "last_updated": "2021-02-24",
+    "name": "Skeleton fremennik"
+  },
+  "4500": {
+    "last_updated": "2020-12-25",
+    "name": "Ulfric"
+  },
+  "4501": {
+    "last_updated": "2020-12-25",
+    "name": "Brine rat"
+  },
+  "4534": {
+    "last_updated": "2020-12-25",
+    "name": "Blessed giant rat"
+  },
+  "4634": {
+    "last_updated": "2020-12-25",
+    "name": "Rowdy slave"
+  },
+  "4635": {
+    "last_updated": "2020-12-25",
+    "name": "Mercenary Captain"
+  },
+  "4643": {
+    "last_updated": "2020-12-25",
+    "name": "Shantay Guard"
+  },
+  "4649": {
+    "last_updated": "2020-12-25",
+    "name": "Desert Wolf"
+  },
+  "4652": {
+    "last_updated": "2020-12-25",
+    "name": "Ugthanki"
+  },
+  "4655": {
+    "last_updated": "2020-12-25",
+    "name": "Bedabin Nomad Fighter"
+  },
+  "4708": {
+    "last_updated": "2020-12-25",
+    "name": "The Shaikahan"
+  },
+  "4758": {
+    "last_updated": "2020-12-25",
+    "name": "Poltenip"
+  },
+  "4759": {
+    "last_updated": "2020-12-25",
+    "name": "Radat"
+  },
+  "4772": {
+    "last_updated": "2021-04-24",
+    "name": "Fortress Guard"
+  },
+  "4820": {
+    "last_updated": "2020-12-25",
+    "name": "Mudskipper"
+  },
+  "4863": {
+    "last_updated": "2020-12-25",
+    "name": "Jubbly bird"
+  },
+  "4878": {
+    "last_updated": "2020-12-25",
+    "name": "Culinaromancer"
+  },
+  "4882": {
+    "last_updated": "2020-12-25",
+    "name": "Karamel"
+  },
+  "4883": {
+    "last_updated": "2020-12-25",
+    "name": "Dessourt"
+  },
+  "4922": {
+    "last_updated": "2020-12-25",
+    "name": "Ice Queen"
+  },
+  "4926": {
+    "last_updated": "2020-12-25",
+    "name": "Pirate Guard"
+  },
+  "4927": {
+    "last_updated": "2020-12-25",
+    "name": "Entrana firebird"
+  },
+  "4969": {
+    "last_updated": "2020-12-25",
+    "name": "Khazard trooper"
+  },
+  "4972": {
+    "last_updated": "2020-12-25",
+    "name": "Khazard commander"
+  },
+  "4973": {
+    "last_updated": "2021-04-08",
+    "name": "Gnome troop"
+  },
+  "4987": {
+    "last_updated": "2021-06-18",
+    "name": "Chronozon"
+  },
+  "5054": {
+    "last_updated": "2021-01-14",
+    "name": "Skeleton Hellhound"
+  },
+  "5126": {
+    "last_updated": "2021-02-24",
+    "name": "Experiment No.2"
+  },
+  "5127": {
+    "last_updated": "2021-05-02",
+    "name": "Mouse"
+  },
+  "5129": {
+    "last_updated": "2021-04-08",
+    "name": "Glod"
+  },
+  "5194": {
+    "last_updated": "2020-12-25",
+    "name": "Baby green dragon"
+  },
+  "5211": {
+    "last_updated": "2020-12-25",
+    "name": "Weaponsmaster"
+  },
+  "5213": {
+    "last_updated": "2020-12-25",
+    "name": "Jonny the beard"
+  },
+  "5259": {
+    "last_updated": "2020-12-25",
+    "name": "Oipuis"
+  },
+  "5260": {
+    "last_updated": "2020-12-25",
+    "name": "Uyoro"
+  },
+  "5261": {
+    "last_updated": "2020-12-25",
+    "name": "Ouhai"
+  },
+  "5262": {
+    "last_updated": "2020-12-25",
+    "name": "Uodai"
+  },
+  "5263": {
+    "last_updated": "2020-12-25",
+    "name": "Padulah"
+  },
+  "5271": {
+    "last_updated": "2020-12-25",
+    "name": "Monkey Guard"
+  },
+  "5272": {
+    "last_updated": "2020-12-25",
+    "name": "Monkey Archer"
+  },
+  "5281": {
+    "last_updated": "2020-12-25",
+    "name": "Monkey Zombie"
+  },
+  "5293": {
+    "last_updated": "2021-04-15",
+    "name": "Elf Warrior"
+  },
+  "5295": {
+    "last_updated": "2021-04-15",
+    "name": "Elf Archer"
+  },
+  "5330": {
+    "last_updated": "2021-01-14",
+    "name": "Cave goblin miner"
+  },
+  "5334": {
+    "last_updated": "2021-02-04",
+    "name": "Cave goblin guard"
+  },
+  "5342": {
+    "last_updated": "2020-12-25",
+    "name": "Undead one"
+  },
+  "5353": {
+    "last_updated": "2020-12-25",
+    "name": "Nazastarool"
+  },
+  "5369": {
+    "last_updated": "2020-12-25",
+    "name": "Goblin guard"
+  },
+  "5372": {
+    "last_updated": "2020-12-25",
+    "name": "Grave scorpion"
+  },
+  "5420": {
+    "last_updated": "2020-12-25",
+    "name": "Watchman"
+  },
+  "5457": {
+    "last_updated": "2020-12-25",
+    "name": "Shipyard worker"
+  },
+  "5563": {
+    "last_updated": "2020-12-25",
+    "name": "Angry barbarian spirit"
+  },
+  "5564": {
+    "last_updated": "2020-12-25",
+    "name": "Enraged barbarian spirit"
+  },
+  "5565": {
+    "last_updated": "2020-12-25",
+    "name": "Berserk barbarian spirit"
+  },
+  "5566": {
+    "last_updated": "2020-12-25",
+    "name": "Ferocious barbarian spirit"
+  },
+  "5628": {
+    "last_updated": "2020-12-25",
+    "name": "Giant snail"
+  },
+  "5633": {
+    "last_updated": "2020-12-25",
+    "name": "Shade"
+  },
+  "5648": {
+    "last_updated": "2021-02-24",
+    "name": "Undead Lumberjack"
+  },
+  "5739": {
+    "last_updated": "2021-05-05",
+    "name": "Penance Fighter"
+  },
+  "5757": {
+    "last_updated": "2021-02-24",
+    "name": "Penance Ranger"
+  },
+  "5779": {
+    "last_updated": "2020-12-25",
+    "name": "Giant Mole"
+  },
+  "5816": {
+    "last_updated": "2020-12-25",
+    "name": "Yak"
+  },
+  "5848": {
+    "last_updated": "2020-12-25",
+    "name": "Tanglefoot"
+  },
+  "5853": {
+    "last_updated": "2020-12-25",
+    "name": "Baby tanglefoot"
+  },
+  "5862": {
+    "last_updated": "2021-06-18",
+    "name": "Cerberus"
+  },
+  "5886": {
+    "last_updated": "2021-06-18",
+    "name": "Abyssal Sire"
+  },
+  "5935": {
+    "last_updated": "2020-12-25",
+    "name": "Sand Crab"
+  },
+  "5938": {
+    "last_updated": "2020-12-25",
+    "name": "Wallasalki"
+  },
+  "5944": {
+    "last_updated": "2020-12-25",
+    "name": "Rock lobster"
+  },
+  "5947": {
+    "last_updated": "2020-12-25",
+    "name": "Spinolyp"
+  },
+  "5968": {
+    "last_updated": "2021-03-11",
+    "name": "Gnome"
+  },
+  "6050": {
+    "last_updated": "2021-05-30",
+    "name": "Black Guard Berserker"
+  },
+  "6075": {
+    "last_updated": "2020-12-25",
+    "name": "Tortoise"
+  },
+  "6077": {
+    "last_updated": "2020-12-25",
+    "name": "Gnome child"
+  },
+  "6081": {
+    "last_updated": "2020-12-25",
+    "name": "Gnome guard"
+  },
+  "6086": {
+    "last_updated": "2020-12-25",
+    "name": "Gnome woman"
+  },
+  "6097": {
+    "last_updated": "2021-04-08",
+    "name": "Gnome Archer"
+  },
+  "6098": {
+    "last_updated": "2021-04-08",
+    "name": "Gnome Driver"
+  },
+  "6102": {
+    "last_updated": "2020-12-25",
+    "name": "Bush snake"
+  },
+  "6118": {
+    "last_updated": "2020-12-25",
+    "name": "Elvarg (hard)"
+  },
+  "6143": {
+    "last_updated": "2021-02-24",
+    "name": "Urium Shadow"
+  },
+  "6272": {
+    "last_updated": "2020-12-25",
+    "name": "Large mosquito"
+  },
+  "6291": {
+    "last_updated": "2020-12-25",
+    "name": "Tanglefoot (hard)"
+  },
+  "6292": {
+    "last_updated": "2021-06-18",
+    "name": "Chronozon (hard)"
+  },
+  "6295": {
+    "last_updated": "2020-12-25",
+    "name": "Black demon (hard)"
+  },
+  "6297": {
+    "last_updated": "2020-12-25",
+    "name": "Glod (hard)"
+  },
+  "6298": {
+    "last_updated": "2020-12-25",
+    "name": "Treus Dayth (hard)"
+  },
+  "6299": {
+    "last_updated": "2020-12-25",
+    "name": "Black Knight Titan (hard)"
+  },
+  "6300": {
+    "last_updated": "2020-12-25",
+    "name": "Dagannoth mother (hard)"
+  },
+  "6306": {
+    "last_updated": "2021-05-30",
+    "name": "Evil Chicken (hard)"
+  },
+  "6307": {
+    "last_updated": "2020-12-25",
+    "name": "Culinaromancer (hard)"
+  },
+  "6310": {
+    "last_updated": "2020-12-25",
+    "name": "Karamel (hard)"
+  },
+  "6311": {
+    "last_updated": "2020-12-25",
+    "name": "Dessourt (hard)"
+  },
+  "6320": {
+    "last_updated": "2020-12-25",
+    "name": "Me (hard)"
+  },
+  "6322": {
+    "last_updated": "2020-12-25",
+    "name": "The Kendal (hard)"
+  },
+  "6323": {
+    "last_updated": "2021-05-30",
+    "name": "Giant Roc (hard)"
+  },
+  "6324": {
+    "last_updated": "2020-12-25",
+    "name": "Slagilith (hard)"
+  },
+  "6326": {
+    "last_updated": "2021-01-14",
+    "name": "Skeleton Hellhound (hard)"
+  },
+  "6329": {
+    "last_updated": "2020-12-25",
+    "name": "Khazard warlord (hard)"
+  },
+  "6330": {
+    "last_updated": "2020-12-25",
+    "name": "Dad (hard)"
+  },
+  "6331": {
+    "last_updated": "2020-12-25",
+    "name": "Arrg (hard)"
+  },
+  "6337": {
+    "last_updated": "2020-12-25",
+    "name": "Nazastarool (hard)"
+  },
+  "6340": {
+    "last_updated": "2021-02-24",
+    "name": "Cow (hard)"
+  },
+  "6349": {
+    "last_updated": "2020-12-25",
+    "name": "Elvarg"
+  },
+  "6390": {
+    "last_updated": "2020-12-25",
+    "name": "Khazard warlord"
+  },
+  "6409": {
+    "last_updated": "2020-12-25",
+    "name": "Broodoo victim"
+  },
+  "6470": {
+    "last_updated": "2020-12-25",
+    "name": "Animated spade"
+  },
+  "6503": {
+    "last_updated": "2020-12-25",
+    "name": "Callisto"
+  },
+  "6504": {
+    "last_updated": "2020-12-25",
+    "name": "Venenatis"
+  },
+  "6587": {
+    "last_updated": "2021-05-30",
+    "name": "Armadylean guard"
+  },
+  "6588": {
+    "last_updated": "2020-12-25",
+    "name": "Bandosian guard"
+  },
+  "6593": {
+    "last_updated": "2020-12-25",
+    "name": "Lava dragon"
+  },
+  "6594": {
+    "last_updated": "2020-12-25",
+    "name": "Ent"
+  },
+  "6604": {
+    "last_updated": "2020-12-25",
+    "name": "Mammoth"
+  },
+  "6607": {
+    "last_updated": "2020-12-25",
+    "name": "Elder Chaos druid"
+  },
+  "6611": {
+    "last_updated": "2020-12-25",
+    "name": "Vet'ion"
+  },
+  "6612": {
+    "last_updated": "2020-12-25",
+    "name": "Vet'ion Reborn"
+  },
+  "6614": {
+    "last_updated": "2020-12-25",
+    "name": "Greater Skeleton Hellhound"
+  },
+  "6615": {
+    "last_updated": "2020-12-25",
+    "name": "Scorpia"
+  },
+  "6617": {
+    "last_updated": "2020-12-25",
+    "name": "Scorpia's guardian"
+  },
+  "6618": {
+    "last_updated": "2020-12-25",
+    "name": "Crazy archaeologist"
+  },
+  "6619": {
+    "last_updated": "2020-12-25",
+    "name": "Chaos Fanatic"
+  },
+  "6716": {
+    "last_updated": "2020-12-25",
+    "name": "Chaotic death spawn"
+  },
+  "6732": {
+    "last_updated": "2021-02-24",
+    "name": "River troll"
+  },
+  "6762": {
+    "last_updated": "2021-06-18",
+    "name": "Pyrelord"
+  },
+  "6766": {
+    "last_updated": "2020-12-25",
+    "name": "Lizardman shaman"
+  },
+  "6803": {
+    "last_updated": "2020-12-25",
+    "name": "Maniacal monkey"
+  },
+  "6896": {
+    "last_updated": "2021-05-30",
+    "name": "Gangster"
+  },
+  "6900": {
+    "last_updated": "2021-05-30",
+    "name": "Gang boss"
+  },
+  "6914": {
+    "last_updated": "2020-12-25",
+    "name": "Lizardman"
+  },
+  "6918": {
+    "last_updated": "2021-06-18",
+    "name": "Lizardman brute"
+  },
+  "7095": {
+    "last_updated": "2020-12-25",
+    "name": "Tortured gorilla"
+  },
+  "7119": {
+    "last_updated": "2020-12-25",
+    "name": "Maniacal Monkey Archer"
+  },
+  "7144": {
+    "last_updated": "2021-06-18",
+    "name": "Demonic gorilla"
+  },
+  "7266": {
+    "last_updated": "2020-12-25",
+    "name": "King Sand Crab"
+  },
+  "7272": {
+    "last_updated": "2020-12-25",
+    "name": "Twisted Banshee"
+  },
+  "7273": {
+    "last_updated": "2020-12-25",
+    "name": "Brutal blue dragon"
+  },
+  "7274": {
+    "last_updated": "2020-12-25",
+    "name": "Brutal red dragon"
+  },
+  "7275": {
+    "last_updated": "2020-12-25",
+    "name": "Brutal black dragon"
+  },
+  "7276": {
+    "last_updated": "2021-06-18",
+    "name": "Mutated Bloodveld"
+  },
+  "7277": {
+    "last_updated": "2020-12-25",
+    "name": "Warped Jelly"
+  },
+  "7278": {
+    "last_updated": "2021-06-18",
+    "name": "Greater Nechryael"
+  },
+  "7279": {
+    "last_updated": "2020-12-25",
+    "name": "Deviant spectre"
+  },
+  "7286": {
+    "last_updated": "2021-06-18",
+    "name": "Skotizo"
+  },
+  "7307": {
+    "last_updated": "2020-12-25",
+    "name": "Ancient Wizard"
+  },
+  "7310": {
+    "last_updated": "2020-12-25",
+    "name": "Brassican Mage"
+  },
+  "7388": {
+    "last_updated": "2021-02-04",
+    "name": "Crushing hand"
+  },
+  "7389": {
+    "last_updated": "2021-02-04",
+    "name": "Chasm Crawler"
+  },
+  "7390": {
+    "last_updated": "2021-02-04",
+    "name": "Screaming banshee"
+  },
+  "7391": {
+    "last_updated": "2021-02-04",
+    "name": "Screaming twisted banshee"
+  },
+  "7392": {
+    "last_updated": "2021-02-04",
+    "name": "Giant rockslug"
+  },
+  "7393": {
+    "last_updated": "2021-02-04",
+    "name": "Cockathrice"
+  },
+  "7394": {
+    "last_updated": "2021-06-18",
+    "name": "Flaming pyrelord"
+  },
+  "7395": {
+    "last_updated": "2021-02-04",
+    "name": "Monstrous basilisk"
+  },
+  "7396": {
+    "last_updated": "2021-02-04",
+    "name": "Malevolent Mage"
+  },
+  "7397": {
+    "last_updated": "2021-06-18",
+    "name": "Insatiable Bloodveld"
+  },
+  "7398": {
+    "last_updated": "2021-06-18",
+    "name": "Insatiable mutated Bloodveld"
+  },
+  "7399": {
+    "last_updated": "2021-02-04",
+    "name": "Vitreous Jelly"
+  },
+  "7400": {
+    "last_updated": "2021-02-04",
+    "name": "Vitreous warped Jelly"
+  },
+  "7401": {
+    "last_updated": "2021-02-12",
+    "name": "Cave abomination"
+  },
+  "7402": {
+    "last_updated": "2021-02-04",
+    "name": "Abhorrent spectre"
+  },
+  "7403": {
+    "last_updated": "2021-02-04",
+    "name": "Repugnant spectre"
+  },
+  "7404": {
+    "last_updated": "2021-02-04",
+    "name": "Choke devil"
+  },
+  "7405": {
+    "last_updated": "2021-02-04",
+    "name": "King kurask"
+  },
+  "7406": {
+    "last_updated": "2021-02-04",
+    "name": "Nuclear smoke devil"
+  },
+  "7407": {
+    "last_updated": "2021-02-04",
+    "name": "Marble gargoyle"
+  },
+  "7409": {
+    "last_updated": "2021-02-04",
+    "name": "Night beast"
+  },
+  "7410": {
+    "last_updated": "2021-06-18",
+    "name": "Greater abyssal demon"
+  },
+  "7411": {
+    "last_updated": "2021-02-04",
+    "name": "Nechryarch"
+  },
+  "7416": {
+    "last_updated": "2020-12-25",
+    "name": "Obor"
+  },
+  "7418": {
+    "last_updated": "2020-12-25",
+    "name": "Zamorak warrior"
+  },
+  "7420": {
+    "last_updated": "2020-12-25",
+    "name": "Zamorak ranger"
+  },
+  "7422": {
+    "last_updated": "2020-12-25",
+    "name": "Zamorak mage"
+  },
+  "7424": {
+    "last_updated": "2020-12-25",
+    "name": "Cave lizard"
+  },
+  "7426": {
+    "last_updated": "2020-12-25",
+    "name": "Zamorak crafter"
+  },
+  "7526": {
+    "last_updated": "2020-12-25",
+    "name": "Vanguard"
+  },
+  "7530": {
+    "last_updated": "2020-12-25",
+    "name": "Vespula"
+  },
+  "7541": {
+    "last_updated": "2020-12-25",
+    "name": "Tekton"
+  },
+  "7543": {
+    "last_updated": "2020-12-25",
+    "name": "Tekton (enraged)"
+  },
+  "7548": {
+    "last_updated": "2020-12-25",
+    "name": "Scavenger beast"
+  },
+  "7559": {
+    "last_updated": "2020-12-25",
+    "name": "Deathly ranger"
+  },
+  "7560": {
+    "last_updated": "2020-12-25",
+    "name": "Deathly mage"
+  },
+  "7562": {
+    "last_updated": "2020-12-25",
+    "name": "Muttadile"
+  },
+  "7566": {
+    "last_updated": "2020-12-25",
+    "name": "Vasa Nistirio"
+  },
+  "7604": {
+    "last_updated": "2020-12-25",
+    "name": "Skeletal Mystic"
+  },
+  "7706": {
+    "last_updated": "2020-12-25",
+    "name": "TzKal-Zuk"
+  },
+  "7792": {
+    "last_updated": "2020-12-25",
+    "name": "Long-tailed Wyvern"
+  },
+  "7793": {
+    "last_updated": "2020-12-25",
+    "name": "Taloned Wyvern"
+  },
+  "7794": {
+    "last_updated": "2020-12-25",
+    "name": "Spitting Wyvern"
+  },
+  "7795": {
+    "last_updated": "2020-12-25",
+    "name": "Ancient Wyvern"
+  },
+  "7796": {
+    "last_updated": "2020-12-25",
+    "name": "Lobstrosity"
+  },
+  "7797": {
+    "last_updated": "2021-05-30",
+    "name": "Ancient Zygomite"
+  },
+  "7799": {
+    "last_updated": "2021-03-11",
+    "name": "Ammonite Crab"
+  },
+  "7802": {
+    "last_updated": "2021-01-11",
+    "name": "Hoop Snake"
+  },
+  "7804": {
+    "last_updated": "2021-05-30",
+    "name": "Tar Monster"
+  },
+  "7806": {
+    "last_updated": "2021-01-28",
+    "name": "Deranged archaeologist"
+  },
+  "7858": {
+    "last_updated": "2020-12-25",
+    "name": "Justiciar Zachariah"
+  },
+  "7859": {
+    "last_updated": "2020-12-25",
+    "name": "Derwen"
+  },
+  "7860": {
+    "last_updated": "2021-03-17",
+    "name": "Porazdir"
+  },
+  "7881": {
+    "last_updated": "2020-12-25",
+    "name": "Revenant imp"
+  },
+  "7931": {
+    "last_updated": "2020-12-25",
+    "name": "Revenant goblin"
+  },
+  "7932": {
+    "last_updated": "2020-12-25",
+    "name": "Revenant pyrefiend"
+  },
+  "7933": {
+    "last_updated": "2020-12-25",
+    "name": "Revenant hobgoblin"
+  },
+  "7934": {
+    "last_updated": "2020-12-25",
+    "name": "Revenant cyclops"
+  },
+  "7935": {
+    "last_updated": "2020-12-25",
+    "name": "Revenant hellhound"
+  },
+  "7936": {
+    "last_updated": "2020-12-25",
+    "name": "Revenant demon"
+  },
+  "7937": {
+    "last_updated": "2020-12-25",
+    "name": "Revenant ork"
+  },
+  "7938": {
+    "last_updated": "2020-12-25",
+    "name": "Revenant dark beast"
+  },
+  "7939": {
+    "last_updated": "2020-12-25",
+    "name": "Revenant knight"
+  },
+  "7940": {
+    "last_updated": "2020-12-25",
+    "name": "Revenant dragon"
+  },
+  "7989": {
+    "last_updated": "2020-12-25",
+    "name": "Ogress Warrior"
+  },
+  "7991": {
+    "last_updated": "2020-12-25",
+    "name": "Ogress Shaman"
+  },
+  "7996": {
+    "last_updated": "2020-12-25",
+    "name": "Corrupt Lizardman (hard)"
+  },
+  "7997": {
+    "last_updated": "2020-12-25",
+    "name": "Corrupt Lizardman"
+  },
+  "8027": {
+    "last_updated": "2020-12-25",
+    "name": "Rune dragon"
+  },
+  "8030": {
+    "last_updated": "2020-12-25",
+    "name": "Adamant dragon"
+  },
+  "8060": {
+    "last_updated": "2020-12-25",
+    "name": "Vorkath"
+  },
+  "8195": {
+    "last_updated": "2020-12-25",
+    "name": "Bryophyta"
+  },
+  "8297": {
+    "last_updated": "2020-12-25",
+    "name": "Swamp Crab"
+  },
+  "8340": {
+    "last_updated": "2021-06-18",
+    "name": "Xarpus"
+  },
+  "8355": {
+    "last_updated": "2021-06-18",
+    "name": "Nylocas Vasilias"
+  },
+  "8359": {
+    "last_updated": "2021-06-18",
+    "name": "Pestilent Bloat"
+  },
+  "8360": {
+    "last_updated": "2021-06-18",
+    "name": "The Maiden of Sugadinti"
+  },
+  "8370": {
+    "last_updated": "2021-06-18",
+    "name": "Verzik Vitur"
+  },
+  "8388": {
+    "last_updated": "2021-06-18",
+    "name": "Sotetseg"
+  },
+  "8583": {
+    "last_updated": "2020-12-25",
+    "name": "Hespori"
+  },
+  "8609": {
+    "last_updated": "2020-12-25",
+    "name": "Hydra"
+  },
+  "8610": {
+    "last_updated": "2020-12-25",
+    "name": "Wyrm"
+  },
+  "8612": {
+    "last_updated": "2020-12-25",
+    "name": "Drake"
+  },
+  "8614": {
+    "last_updated": "2020-12-25",
+    "name": "Sulphur Lizard"
+  },
+  "8615": {
+    "last_updated": "2021-03-11",
+    "name": "Alchemical Hydra"
+  },
+  "8633": {
+    "last_updated": "2020-12-25",
+    "name": "The Mimic"
+  },
+  "8702": {
+    "last_updated": "2020-12-25",
+    "name": "Frog"
+  },
+  "8703": {
+    "last_updated": "2020-12-25",
+    "name": "Temple Spider"
+  },
+  "8709": {
+    "last_updated": "2020-12-25",
+    "name": "Shaeded Beast"
+  },
+  "8713": {
+    "last_updated": "2021-03-11",
+    "name": "Sarachnis"
+  },
+  "8844": {
+    "last_updated": "2021-02-24",
+    "name": "Mourner"
+  },
+  "8987": {
+    "last_updated": "2020-12-25",
+    "name": "Sir Jerro"
+  },
+  "8988": {
+    "last_updated": "2021-02-24",
+    "name": "Sir Carl"
+  },
+  "8989": {
+    "last_updated": "2020-12-25",
+    "name": "Sir Harry"
+  },
+  "8994": {
+    "last_updated": "2021-06-18",
+    "name": "Othainian"
+  },
+  "8995": {
+    "last_updated": "2021-06-18",
+    "name": "Doomion"
+  },
+  "8996": {
+    "last_updated": "2021-06-18",
+    "name": "Holthion"
+  },
+  "8997": {
+    "last_updated": "2020-12-25",
+    "name": "Disciple of Iban"
+  },
+  "9026": {
+    "last_updated": "2020-12-25",
+    "name": "Crystalline Rat"
+  },
+  "9027": {
+    "last_updated": "2020-12-25",
+    "name": "Crystalline Spider"
+  },
+  "9028": {
+    "last_updated": "2021-02-04",
+    "name": "Crystalline Bat"
+  },
+  "9029": {
+    "last_updated": "2020-12-25",
+    "name": "Crystalline Unicorn"
+  },
+  "9030": {
+    "last_updated": "2020-12-25",
+    "name": "Crystalline Scorpion"
+  },
+  "9031": {
+    "last_updated": "2020-12-25",
+    "name": "Crystalline Wolf"
+  },
+  "9032": {
+    "last_updated": "2020-12-25",
+    "name": "Crystalline Bear"
+  },
+  "9033": {
+    "last_updated": "2020-12-25",
+    "name": "Crystalline Dragon"
+  },
+  "9034": {
+    "last_updated": "2020-12-25",
+    "name": "Crystalline Dark Beast"
+  },
+  "9040": {
+    "last_updated": "2020-12-25",
+    "name": "Corrupted Rat"
+  },
+  "9041": {
+    "last_updated": "2020-12-25",
+    "name": "Corrupted Spider"
+  },
+  "9042": {
+    "last_updated": "2021-05-30",
+    "name": "Corrupted Bat"
+  },
+  "9043": {
+    "last_updated": "2020-12-25",
+    "name": "Corrupted Unicorn"
+  },
+  "9044": {
+    "last_updated": "2020-12-25",
+    "name": "Corrupted Scorpion"
+  },
+  "9045": {
+    "last_updated": "2020-12-25",
+    "name": "Corrupted Wolf"
+  },
+  "9046": {
+    "last_updated": "2020-12-25",
+    "name": "Corrupted Bear"
+  },
+  "9047": {
+    "last_updated": "2020-12-25",
+    "name": "Corrupted Dragon"
+  },
+  "9048": {
+    "last_updated": "2020-12-25",
+    "name": "Corrupted Dark Beast"
+  },
+  "9049": {
+    "last_updated": "2021-06-18",
+    "name": "Zalcano"
+  },
+  "9258": {
+    "last_updated": "2021-02-04",
+    "name": "Basilisk Sentinel"
+  },
+  "9282": {
+    "last_updated": "2020-12-25",
+    "name": "Basilisk Youngling"
+  },
+  "9293": {
+    "last_updated": "2021-04-15",
+    "name": "Basilisk Knight"
+  },
+  "9425": {
+    "last_updated": "2021-06-18",
+    "name": "The Nightmare"
+  },
+  "9465": {
+    "last_updated": "2021-06-18",
+    "name": "Infernal pyrelord"
+  },
+  "9756": {
+    "last_updated": "2021-04-15",
+    "name": "Vyrewatch Sentinel"
+  },
+  "10397": {
+    "last_updated": "2021-06-18",
+    "name": "Spiked Turoth"
+  },
+  "10398": {
+    "last_updated": "2021-02-04",
+    "name": "Shadow Wyrm"
+  },
+  "10400": {
+    "last_updated": "2021-02-04",
+    "name": "Guardian Drake"
+  },
+  "10402": {
+    "last_updated": "2021-02-04",
+    "name": "Colossal Hydra"
+  },
+  "10435": {
+    "last_updated": "2021-04-08",
+    "name": "Sourhog"
+  },
+  "10493": {
+    "last_updated": "2020-12-25",
+    "name": "Headless Beast"
+  },
+  "10523": {
+    "last_updated": "2021-02-24",
+    "name": "Forgotten Soul"
+  },
+  "10589": {
+    "last_updated": "2021-02-04",
+    "name": "Urium Shade"
+  },
+  "10591": {
+    "last_updated": "2021-04-26",
+    "name": "Undead Zealot"
+  },
+  "10689": {
+    "last_updated": "2021-04-24",
+    "name": "Chaos Golem"
+  },
+  "10691": {
+    "last_updated": "2021-05-30",
+    "name": "Body Golem"
+  },
+  "10693": {
+    "last_updated": "2021-04-24",
+    "name": "Mind Golem"
+  },
+  "10695": {
+    "last_updated": "2021-04-24",
+    "name": "Flawed Golem"
+  },
+  "11066": {
+    "last_updated": "2021-06-18",
+    "name": "Boar"
+  },
+  "11068": {
+    "last_updated": "2021-06-18",
+    "name": "Lynx"
+  },
+  "11071": {
+    "last_updated": "2021-06-18",
+    "name": "Lynx Tamer"
+  }
+}

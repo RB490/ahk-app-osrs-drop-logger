@@ -9,14 +9,19 @@
 ; Global variables
     Global DEBUG_MODE           := true
     , APP_NAME                  := A_ScriptName
-    ; , PATH_DATABASE_MOBLIST     := A_ScriptDir "\Assets\Database\MobList"
     , P                         := new ClassGuiProgress(APP_NAME)
-    , PATH_DATABASE_MOBS        := A_ScriptDir "\Assets\Mob database.json"
+    , PATH_DATABASE_MOBS        := A_ScriptDir "\Assets\Database\Mobs database.json"
+    , DIR_DATABASE_MOBS         := A_ScriptDir "\Assets\Database\Mobs"
     , MOB_DB                    := new ClassMobDatabase
+    , GUI_START                 := new ClassGuiStart
 
 ; Auto-execute section
+    ; GUI_START.Get()
 
-    Msg("Info", "Auto-execute section", "End of Auto-execute section")
+    myObj := MOB_DB.GetList()
+    msgbox % json.dump(myObj,,2)
+
+    ; Msg("Info", "Auto-execute section", "End of Auto-execute section")
     return
 
 ; Global hotkeys
@@ -32,6 +37,7 @@
 ; Includes
     #Include, %A_ScriptDir%\Includes
     #Include, Class Gui Progress.ahk
+    #Include, Class Gui Start.ahk
     #Include, Class Mob Database.ahk
 
 ; Libraries
@@ -40,5 +46,7 @@
     #Include, Class Gui.ahk
     #Include, CommandFunctions.ahk
     #Include, DownloadToString.ahk
+    #Include, GuiButtonIcon.ahk
     #Include, JSON.ahk
     #Include, Msg.ahk
+    #Include, SetButtonIcon.ahk

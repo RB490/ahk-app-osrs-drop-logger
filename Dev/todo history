@@ -11,3 +11,32 @@ create database file with itemName:id using https://www.osrsbox.com/osrsbox-db/i
 ^ update these once a week on friday or whenever the script runs after that friday
 
 maybe use id:mobName and id:itemName instead?
+
+handle mob database failure to reach the url
+
+structure -> create database with mob names,id's and last change date from monsters-complete
+    use the osrsbox mobName:lastChangeDate file (eg. retrieved every friday) to compare the lastChangeDate in the database
+    if the lastChangeDate differes, or the entry doesn't yet exist 
+    update the database and download the new file into a separate folder
+    this way the database file stays at a small file size
+    ^ if the mob name is not yet in the database i guess you'd have to
+        - download an entirely new monsters-complete.json
+        - use the osrsbox.com search npc id website, write some kind of com wrapper thing to search the mob id
+            Take into account that sometimes there are multiple results 
+            even though only one is valid. Eg: Typhor 9295 and Typhor 9296 where you want 9296 as 9295 shows an error
+        - npc id's are also saved on the wiki page info box even though they're not displayed. under 'Monster ID</th><td colspan="18">9295,9296</td></tr><tr'
+    outputObj[mob_id].wiki_url := inputObj[mob_id].wiki_url
+    outputObj[mob_id].category := inputObj[mob_id].category
+    outputObj[mob_id].drops := inputObj[mob_id].drops
+    ^^^^^
+        NOTE: For some reason a lot of the timestamps in the monsters-wiki-page-titles.json are already not identical to monsters-complete
+        so.. another idea would be to just retrieve an entire new monsters-complete and create a fresh database with that once a day or whatever interval. But do it in the background
+            for example by running a separate script. this way you can just compare the timestamps from the individual npc files to the main database
+            or with a SetTimer, like i think the stats update thing uses. as long as it doesnt hang the script
+
+debug -> download the entire monsters-complete thing and see how large the file gets. possibly have to store drops separately or not at all
+    ^ 15 MB. Definetly handle this differently
+
+bug -> the mob database class opens two progress guis and closes two of them, if updating. the second time the progress gui gets closed there is an error message
+
+feature -> remove duplicate mobs from the database
