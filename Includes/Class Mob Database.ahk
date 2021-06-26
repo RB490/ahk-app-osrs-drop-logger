@@ -92,8 +92,15 @@ Class ClassMobDatabase {
         return output
     }
 
+    ; return object with mob names
     GetList() {
-        return this.obj
+        obj := this.obj
+        output := []
+
+        for mob in obj
+            output.push(obj[mob].name)
+
+        return output
     }
 
     Get(mobID) {

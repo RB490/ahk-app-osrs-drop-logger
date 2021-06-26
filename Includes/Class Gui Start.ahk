@@ -8,8 +8,7 @@ class ClassGuiStart extends gui {
         totalWidth := 200
 
         ; controls
-        this.Add("edit", "w" totalWidth - 45 - this.marginSize " section", "", this.SearchBoxHandler.Bind(this))
-        this.Add("button", "x+5 ys-1 w50", "Add", this.BtnAdd.Bind(this))
+        this.Add("edit", "w" totalWidth + 10 - this.marginSize " section", "", this.SearchBoxHandler.Bind(this))
         
         this.Add("listbox", "x" this.marginSize " w" totalWidth " r10", , this.MobListBoxHandler.Bind(this))
         this._btnLog := this.Add("button", "w" totalWidth " r3", "Log", this.BtnLog.Bind(this))
@@ -29,7 +28,7 @@ class ClassGuiStart extends gui {
         searchString := this.GetText("Edit1")
 
         ; build display var
-        for mob in DB_SETTINGS.selectedMobs
+        for count, mob in MOB_DB.GetList()
             If InStr(mob, searchString)
                 output .= mob "|"
         output := RTrim(output, "|")
@@ -37,37 +36,31 @@ class ClassGuiStart extends gui {
         ; update MobListBox
         this.Control(,"ListBox1", "|") ; clear content
         this.Control(,"ListBox1", output) ; load content
-        this.Control("Choose","ListBox1", DB_SETTINGS.selectedMob)
-
-        ; ------------------------------------------------
+        this.Control("Choose","ListBox1", SCRIPT_SETTINGS.previousMob)
 
         ; buttons
-        If DB_SETTINGS.selectedMob
-            this.Control("Enable", this._btnLog)
-        else
+        If !SCRIPT_SETTINGS.previousMob
             this.Control("Disable", this._btnLog)
 
         this._LoadMobImage()
     }
 
     MobListBoxHandler() {
-        DB_SETTINGS.selectedMob := this.GuiControlGet("", "ListBox1")
-        this.ControlFocus("edit1") ; prevent ctrl+s from changing current mob
-
-        this.Update()
+        SCRIPT_SETTINGS.previousMob := this.GuiControlGet("", "ListBox1")
+        this.Control("Enable", this._btnLog)
     }
 
     _LoadMobImage() {
-        If !DB_SETTINGS.selectedMob {
+        If !SCRIPT_SETTINGS.previousMob {
             this.SetText(this._btnLog, "Log                     ")
-            GuiButtonIcon(this._btnLog, A_ScriptDir "\res\img\Nothing.png", 1, "s44 a0 l50 r0")
+            GuiButtonIcon(this._btnLog, A_ScriptDir "\Assets\Images\Unavailable.png", 1, "s44 a0 l50 r0")
             return  
         }
         
-        ; DownloadMobImage(DB_SETTINGS.selectedMob) ; todo
+        ; DownloadMobImage(SCRIPT_SETTINGS.previousMob) ; todo
 
         this.SetText(this._btnLog, "       Log")
-        path := DIR_MOB_IMAGES "\" DB_SETTINGS.selectedMob ".png"
+        path := DIR_MOB_IMAGES "\" SCRIPT_SETTINGS.previousMob ".png"
         SetButtonIcon(this._btnLog, path, 1, 44) ; r2 = 30, r3 = 44
     }
 
@@ -78,37 +71,6 @@ class ClassGuiStart extends gui {
     SearchBoxReset() {
         this.SetText("edit1")
         this.Update()
-    }
-
-    BtnAdd() {
-        ; receive input
-        input := this.GetText("edit1")
-        If !input
-            return
-        StringUpper, input, input, T
-
-        ; check if mob already exists
-        If DB_SETTINGS.selectedMobs.HasKey(input) {
-            DB_SETTINGS.selectedMob := input
-            this.SearchBoxReset()
-            return
-        }
-
-        ; check if input is a mob with drop tables
-        isValidMob := DROP_TABLE.Get(input)
-        If !isValidMob {
-            this.SearchBoxReset()
-            return
-        }
-
-        ; save mob
-        If !IsObject(DB_SETTINGS.selectedMobs)
-            DB_SETTINGS.selectedMobs := {}
-        DB_SETTINGS.selectedMobs[input] := ""
-
-        ; apply new mob
-        DB_SETTINGS.selectedMob := input
-        this.SearchBoxReset()
     }
 
     BtnLog() {
@@ -130,7 +92,7 @@ class ClassGuiStart extends gui {
         DB_SETTINGS.selectedLogFile := file
         this.Enable()
         this.Hide()
-        success := DROP_TABLE.Get(DB_SETTINGS.selectedMob)
+        success := DROP_TABLE.Get(SCRIPT_SETTINGS.previousMob)
         If !success
             Msg("Error", A_ThisFunc, "Failed to retrieve drop table for verified, saved mob")
         LOG_GUI.Get()
@@ -146,10 +108,10 @@ class ClassGuiStart extends gui {
 }
 
 StartMenu_Show() {
-    If !DB_SETTINGS.selectedMob or !A_EventInfo ; A_EventInfo = ListBox Target
+    If !SCRIPT_SETTINGS.previousMob or !A_EventInfo ; A_EventInfo = ListBox Target
         return
 
-    mobMenuMob := DB_SETTINGS.selectedMob
+    mobMenuMob := SCRIPT_SETTINGS.previousMob
 
     menu, mobMenu, add
     menu, mobMenu, DeleteAll
@@ -158,8 +120,8 @@ StartMenu_Show() {
 }
 
 StartMenu_RemoveMob() {
-    DB_SETTINGS.selectedMobs.Delete(DB_SETTINGS.selectedMob)
-    DB_SETTINGS.selectedMob := ""
+    SCRIPT_SETTINGS.previousMobs.Delete(SCRIPT_SETTINGS.previousMob)
+    SCRIPT_SETTINGS.previousMob := ""
     Start_GUI.Update()
 }
 

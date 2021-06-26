@@ -5,21 +5,29 @@
     #NoEnv ; Recommended for performance and compatibility with future AutoHotkey releases.
     CoordMode, Mouse, Screen
     SetBatchLines, -1
+    OnExit("ExitFunc")
 
 ; Global variables
     Global DEBUG_MODE           := true
     , APP_NAME                  := A_ScriptName
+    , SCRIPT_SETTINGS           := new ClassSettings
     , P                         := new ClassGuiProgress(APP_NAME)
+    , PATH_SCRIPT_SETTINGS      := A_ScriptDir "\Assets\Settings.json"
     , PATH_DATABASE_MOBS        := A_ScriptDir "\Assets\Database\Mobs database.json"
     , DIR_DATABASE_MOBS         := A_ScriptDir "\Assets\Database\Mobs"
     , MOB_DB                    := new ClassMobDatabase
     , GUI_START                 := new ClassGuiStart
+    , WIKI_API                  := new ClassApiWiki
 
 ; Auto-execute section
-    ; GUI_START.Get()
+    GUI_START.Get()
 
-    myObj := MOB_DB.GetList()
-    msgbox % json.dump(myObj,,2)
+    ; myObj := MOB_DB.GetList()
+
+    ; for count, mob in myObj
+    ;     msgbox % mob
+
+    ; msgbox % json.dump(myObj,,2)
 
     ; Msg("Info", "Auto-execute section", "End of Auto-execute section")
     return
@@ -39,6 +47,9 @@
     #Include, Class Gui Progress.ahk
     #Include, Class Gui Start.ahk
     #Include, Class Mob Database.ahk
+    #Include, Class Settings.ahk
+    #Include, Class Api Wiki.ahk
+    #Include, Functions.ahk
 
 ; Libraries
     #Include, %A_ScriptDir%\Libraries

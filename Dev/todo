@@ -1,6 +1,8 @@
-todo -> start integrating rewrite 6 with the osrsbox stuff or honestly the other way around
-    copy paste the mob select / main menu elements and make it functional
-    ^ if you dont want gui main to be called gui main.. call it gui start or gui mob select
+todo -> start with the start gui
+    + do i want to display all npcs or individually add npc's
+        fun fact: now that we don't have duplicates just get the npc id by searching
+    - go through gui start's methods from top to bottom making them functional
+        - MobListBoxHandler: add settings to the script and save the gui start selected mob
 
 planning -> item categories -> if a drop table needs to be reduced
     - go through each category and make a list of how many hits the drop table has in each category. for example 5 herbs 3 farming stuff 10 equipment
