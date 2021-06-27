@@ -107,7 +107,7 @@
 		for Index, Control in this.Controls
 			GuiControl, -g, % Control
 		DetectHiddenWindows, On
-		If WinExist(this.hwnd)
+		If WinExist("ahk_id" A_Space this.hwnd)
 			Gui % this.hwnd ":Destroy"
 		this.IsVisible := false
 		Gui.Instances[this.hwnd] := ""

@@ -1,5 +1,9 @@
 todo -> LOG_GUI
 
+structure -> consider combining the different image functions into a class?
+
+structure -> save mob images as id's
+
 planning -> item categories -> if a drop table needs to be divided into categories
     - go through each category and make a list of how many hits the drop table has in each category. for example 5 herbs 3 farming stuff 10 equipment
     - use that list to determine which items should go into a separate category to prevent having categories of 1 or 2 items while the drop table might have 10 equipment
@@ -16,6 +20,7 @@ wiki api ->
 
 
 feature -> speed up item db load time? would be able to do this with an item name:id list of the items that are actually in drop tables
+    ^ or sear
     wiki api = instant
     item db = 0.200
     mob db = 0.04

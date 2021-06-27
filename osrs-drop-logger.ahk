@@ -18,6 +18,8 @@
     , DIR_DATABASE_MOBS         := A_ScriptDir "\Assets\Database\Mobs"
     , DIR_MOB_IMAGES            := A_ScriptDir "\Assets\Images\Mobs"
     , DIR_GUI_ICONS             := A_ScriptDir "\Assets\Images\Gui"
+    , DIR_ITEM_IMAGES_ICONS     := A_ScriptDir "\Assets\Images\Items\Icons"
+    , DIR_ITEM_IMAGES_DETAILED  := A_ScriptDir "\Assets\Images\Items\Detailed"
     
     ; Objects
     , SCRIPT_SETTINGS           := LoadSettings()
@@ -33,12 +35,17 @@
     , GUI_LOG                   := new ClassGuiLog
 
 ; Auto-execute section
+    ; download mob images
+    mobs := MOB_DB.GetList()
+    for id, mob in mobs
+        DROP_TABLE.Get(mob)
+    
     ; DROP_TABLE.Get("Vorkath")
     ; GUI_START.Get()
-    GUI_LOG.Get()
+    ; GUI_LOG.Get()
 
 
-    ; Msg("Info", "Auto-execute section", "End of Auto-execute section")
+    Msg("Info", "Auto-execute section", "End of Auto-execute section")
     return
 
 ; Global hotkeys

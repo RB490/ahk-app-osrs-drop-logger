@@ -147,5 +147,4 @@ Class ClassDatabaseMobs {
         P.Destroy()
         return obj
     }
-
 }
