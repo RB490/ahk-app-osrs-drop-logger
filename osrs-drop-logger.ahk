@@ -8,26 +8,25 @@
     OnExit("ExitFunc")
 
 ; Global variables
+    ; Variables
     Global DEBUG_MODE           := true
     , APP_NAME                  := A_ScriptName
-    , SCRIPT_SETTINGS           := new ClassSettings
-    , P                         := new ClassGuiProgress(APP_NAME)
     , PATH_SCRIPT_SETTINGS      := A_ScriptDir "\Assets\Settings.json"
     , PATH_DATABASE_MOBS        := A_ScriptDir "\Assets\Database\Mobs database.json"
     , DIR_DATABASE_MOBS         := A_ScriptDir "\Assets\Database\Mobs"
+    , DIR_MOB_IMAGES            := A_ScriptDir "\Assets\Images\Mobs"
+    
+    ; Objects
+    , SCRIPT_SETTINGS           := LoadSettings()
+
+    ; Class objects
+    , P                         := new ClassGuiProgress(APP_NAME)
     , MOB_DB                    := new ClassMobDatabase
     , GUI_START                 := new ClassGuiStart
     , WIKI_API                  := new ClassApiWiki
 
 ; Auto-execute section
-    GUI_START.Get()
-
-    ; myObj := MOB_DB.GetList()
-
-    ; for count, mob in myObj
-    ;     msgbox % mob
-
-    ; msgbox % json.dump(myObj,,2)
+    ; GUI_START.Get()
 
     ; Msg("Info", "Auto-execute section", "End of Auto-execute section")
     return
@@ -47,7 +46,6 @@
     #Include, Class Gui Progress.ahk
     #Include, Class Gui Start.ahk
     #Include, Class Mob Database.ahk
-    #Include, Class Settings.ahk
     #Include, Class Api Wiki.ahk
     #Include, Functions.ahk
 
@@ -57,7 +55,10 @@
     #Include, Class Gui.ahk
     #Include, CommandFunctions.ahk
     #Include, DownloadToString.ahk
+    #Include, Gdip_All.ahk
     #Include, GuiButtonIcon.ahk
+    #Include, IsPicture.ahk
     #Include, JSON.ahk
     #Include, Msg.ahk
+    #Include, ResConImg.ahk
     #Include, SetButtonIcon.ahk

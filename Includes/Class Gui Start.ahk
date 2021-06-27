@@ -23,31 +23,35 @@ class ClassGuiStart extends gui {
         this.Update()
     }
 
-    Update() {
-        ; check user input
-        searchString := this.GetText("Edit1")
+    Update(basicUpdate := false) {
+        If !basicUpdate {
+            ; check user input
+            searchString := this.GetText("Edit1")
 
-        ; build display var
-        for count, mob in MOB_DB.GetList()
-            If InStr(mob, searchString)
-                output .= mob "|"
-        output := RTrim(output, "|")
+            ; build display var
+            for id, mob in MOB_DB.GetList()
+                If InStr(mob, searchString)
+                    output .= mob "|"
+            output := RTrim(output, "|")
 
-        ; update MobListBox
-        this.Control(,"ListBox1", "|") ; clear content
-        this.Control(,"ListBox1", output) ; load content
-        this.Control("Choose","ListBox1", SCRIPT_SETTINGS.previousMob)
+            ; update MobListBox
+            this.Control(,"ListBox1", "|") ; clear content
+            this.Control(,"ListBox1", output) ; load content
+            this.Control("Choose","ListBox1", SCRIPT_SETTINGS.previousMob)
+        }
 
         ; buttons
         If !SCRIPT_SETTINGS.previousMob
             this.Control("Disable", this._btnLog)
+        else
+            this.Control("Enable", this._btnLog)
 
         this._LoadMobImage()
     }
 
     MobListBoxHandler() {
         SCRIPT_SETTINGS.previousMob := this.GuiControlGet("", "ListBox1")
-        this.Control("Enable", this._btnLog)
+        this.Update("basicUpdate")
     }
 
     _LoadMobImage() {
@@ -57,7 +61,7 @@ class ClassGuiStart extends gui {
             return  
         }
         
-        ; DownloadMobImage(SCRIPT_SETTINGS.previousMob) ; todo
+        DownloadMobImage(SCRIPT_SETTINGS.previousMob)
 
         this.SetText(this._btnLog, "       Log")
         path := DIR_MOB_IMAGES "\" SCRIPT_SETTINGS.previousMob ".png"
@@ -75,21 +79,21 @@ class ClassGuiStart extends gui {
 
     BtnLog() {
         this.Disable()
-        selectedLogFile := DB_SETTINGS.selectedLogFile
-        SplitPath, selectedLogFile, OutFileName, selectedLogFileDir, OutExtension, OutNameNoExt, OutDrive
-        FileSelectFile, SelectedFile, 11, % manageGui.GetText("Edit1"), Select drop log, Json (*.json), %selectedLogFileDir%
-        If !SelectedFile {
+        previousLogFile := DB_SETTINGS.previousLogFile
+        SplitPath, previousLogFile, OutFileName, previousLogFileDir, OutExtension, OutNameNoExt, OutDrive
+        FileSelectFile, previousFile, 11, % manageGui.GetText("Edit1"), Select drop log, Json (*.json), %previousLogFileDir%
+        If !previousFile {
             Msg("Info", A_ThisFunc, "Can't log without a log file")
             this.Enable()
             return false
         }
-        SplitPath, SelectedFile , OutFileName, OutDir, OutExtension, OutNameNoExt, OutDrive
+        SplitPath, previousFile , OutFileName, OutDir, OutExtension, OutNameNoExt, OutDrive
         file := OutDir "\" OutNameNoExt ".json"
 
         success := DROP_LOG.Get(file)
         If !success
             return
-        DB_SETTINGS.selectedLogFile := file
+        DB_SETTINGS.previousLogFile := file
         this.Enable()
         this.Hide()
         success := DROP_TABLE.Get(SCRIPT_SETTINGS.previousMob)
@@ -99,30 +103,11 @@ class ClassGuiStart extends gui {
     }
 
     ContextMenu() {
-        StartMenu_Show()
     }
 
     Close() {
         exitapp
     }
-}
-
-StartMenu_Show() {
-    If !SCRIPT_SETTINGS.previousMob or !A_EventInfo ; A_EventInfo = ListBox Target
-        return
-
-    mobMenuMob := SCRIPT_SETTINGS.previousMob
-
-    menu, mobMenu, add
-    menu, mobMenu, DeleteAll
-    menu, mobMenu, add, Remove %mobMenuMob%, StartMenu_RemoveMob
-    menu, mobMenu, show
-}
-
-StartMenu_RemoveMob() {
-    SCRIPT_SETTINGS.previousMobs.Delete(SCRIPT_SETTINGS.previousMob)
-    SCRIPT_SETTINGS.previousMob := ""
-    Start_GUI.Update()
 }
 
 ClassGuiStart_HotkeyEnter() {

@@ -13,6 +13,11 @@ Functions() {
 	Return, true
 }
 
+IsInteger(input) {
+    If input is integer
+        return true
+}
+
 IfBetween(ByRef var, LowerBound, UpperBound) {
 	If var between %LowerBound% and %UpperBound%
 		Return, true

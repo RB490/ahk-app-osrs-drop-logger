@@ -98,7 +98,7 @@ Class ClassMobDatabase {
         output := []
 
         for mob in obj
-            output.push(obj[mob].name)
+            output[mob] := obj[mob].name
 
         return output
     }
