@@ -40,3 +40,12 @@ debug -> download the entire monsters-complete thing and see how large the file 
 bug -> the mob database class opens two progress guis and closes two of them, if updating. the second time the progress gui gets closed there is an error message
 
 feature -> remove duplicate mobs from the database
+
+settings arent saving because the object inside of the settings class doesnt get modified by writing script_settings.key := value
+
+todo -> start with the start gui
+    + do i want to display all npcs or individually add npc's
+        fun fact: now that we don't have duplicates just get the npc id by searching
+    - go through gui start's methods from top to bottom making them functional
+        + MobListBoxHandler(): add settings to the script and save the gui start selected mob
+        + BtnLog()
