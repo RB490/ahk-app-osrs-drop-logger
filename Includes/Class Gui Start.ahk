@@ -79,7 +79,9 @@ class ClassGuiStart extends gui {
 
     BtnLog() {
         this.Disable()
-        previousLogFile := DB_SETTINGS.previousLogFile
+
+        ; prompt user to select a drop log filepath
+        previousLogFile := SCRIPT_SETTINGS.previousLogFile
         SplitPath, previousLogFile, OutFileName, previousLogFileDir, OutExtension, OutNameNoExt, OutDrive
         FileSelectFile, previousFile, 11, % manageGui.GetText("Edit1"), Select drop log, Json (*.json), %previousLogFileDir%
         If !previousFile {
@@ -89,16 +91,19 @@ class ClassGuiStart extends gui {
         }
         SplitPath, previousFile , OutFileName, OutDir, OutExtension, OutNameNoExt, OutDrive
         file := OutDir "\" OutNameNoExt ".json"
+        SCRIPT_SETTINGS.previousLogFile := file ; save file location
 
-        success := DROP_LOG.Get(file)
-        If !success
+        ; attempt to load the selected drop log file
+        If !DROP_LOG.Get(file)
             return
-        DB_SETTINGS.previousLogFile := file
+
+        ; verify we have a drop table for selected mob
         this.Enable()
         this.Hide()
-        success := DROP_TABLE.Get(SCRIPT_SETTINGS.previousMob)
-        If !success
+        If !DROP_TABLE.Get(SCRIPT_SETTINGS.previousMob)
             Msg("Error", A_ThisFunc, "Failed to retrieve drop table for verified, saved mob")
+
+        ; show the drop log gui
         LOG_GUI.Get()
     }
 

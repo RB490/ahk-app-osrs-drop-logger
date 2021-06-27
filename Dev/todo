@@ -1,13 +1,6 @@
-settings arent saving because the object inside of the settings class doesnt get modified by writing script_settings.key := value
+todo -> LOG_GUI
 
-todo -> start with the start gui
-    + do i want to display all npcs or individually add npc's
-        fun fact: now that we don't have duplicates just get the npc id by searching
-    - go through gui start's methods from top to bottom making them functional
-        + MobListBoxHandler(): add settings to the script and save the gui start selected mob
-        - BtnLog()
-
-planning -> item categories -> if a drop table needs to be reduced
+planning -> item categories -> if a drop table needs to be divided into categories
     - go through each category and make a list of how many hits the drop table has in each category. for example 5 herbs 3 farming stuff 10 equipment
     - use that list to determine which items should go into a separate category to prevent having categories of 1 or 2 items while the drop table might have 10 equipment
         ^ either go with the largest category or the lowest amount while still meeting the main drop table max limit
@@ -15,6 +8,7 @@ planning -> item categories -> if a drop table needs to be reduced
 feature idea -> Update ClassMobDatabase._Update() in the background so it doesn't take 20 seconds
 
 wiki api ->
+    todo -> rename ClassApiWiki to something like ClassWiki or ClassWikiScraper because it doesn't actually use the wiki api which is conflicting. it's my wiki 'api'
     feature -> add more documentation. class/method and their parameter(s) descriptions 
         eg. its not clear what the input parameter(s) are for GetMobImage
     bug ->  getmob image can't retrieve image for spinolyp

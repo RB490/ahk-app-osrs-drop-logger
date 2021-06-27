@@ -6,6 +6,7 @@
     CoordMode, Mouse, Screen
     SetBatchLines, -1
     OnExit("ExitFunc")
+    #MaxMem, 400 ; reading larger json files into objects overloads the default limit
 
 ; Global variables
     ; Variables
@@ -13,20 +14,27 @@
     , APP_NAME                  := A_ScriptName
     , PATH_SCRIPT_SETTINGS      := A_ScriptDir "\Assets\Settings.json"
     , PATH_DATABASE_MOBS        := A_ScriptDir "\Assets\Database\Mobs database.json"
+    , PATH_DATABASE_ITEMS       := A_ScriptDir "\Assets\Database\Items database.json"
     , DIR_DATABASE_MOBS         := A_ScriptDir "\Assets\Database\Mobs"
     , DIR_MOB_IMAGES            := A_ScriptDir "\Assets\Images\Mobs"
+    , DIR_GUI_ICONS             := A_ScriptDir "\Assets\Images\Gui"
     
     ; Objects
     , SCRIPT_SETTINGS           := LoadSettings()
 
     ; Class objects
     , P                         := new ClassGuiProgress(APP_NAME)
-    , MOB_DB                    := new ClassMobDatabase
-    , GUI_START                 := new ClassGuiStart
     , WIKI_API                  := new ClassApiWiki
+    , ITEM_DB                   := new ClassDatabaseItems
+    , MOB_DB                    := new ClassDatabaseMobs
+    , DROP_LOG                  := new ClassDropLog
+    , DROP_TABLE                := new ClassDropTable
+    , GUI_START                 := new ClassGuiStart
 
 ; Auto-execute section
+    ; DROP_TABLE.Get("Vorkath")
     ; GUI_START.Get()
+    msgbox % ITEM_DB.GetPrice(4151)
 
     ; Msg("Info", "Auto-execute section", "End of Auto-execute section")
     return
@@ -43,10 +51,13 @@
 
 ; Includes
     #Include, %A_ScriptDir%\Includes
+    #Include, Class Api Wiki.ahk
+    #Include, Class Database Items.ahk
+    #Include, Class Database Mobs.ahk
+    #Include, Class Drop Log.ahk
+    #Include, Class Drop Table.ahk
     #Include, Class Gui Progress.ahk
     #Include, Class Gui Start.ahk
-    #Include, Class Mob Database.ahk
-    #Include, Class Api Wiki.ahk
     #Include, Functions.ahk
 
 ; Libraries
@@ -60,5 +71,6 @@
     #Include, IsPicture.ahk
     #Include, JSON.ahk
     #Include, Msg.ahk
+    #Include, ObjFullyClone.ahk
     #Include, ResConImg.ahk
     #Include, SetButtonIcon.ahk
