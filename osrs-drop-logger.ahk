@@ -30,11 +30,13 @@
     , DROP_LOG                  := new ClassDropLog
     , DROP_TABLE                := new ClassDropTable
     , GUI_START                 := new ClassGuiStart
+    , GUI_LOG                   := new ClassGuiLog
 
 ; Auto-execute section
     ; DROP_TABLE.Get("Vorkath")
     ; GUI_START.Get()
-    msgbox % ITEM_DB.GetPrice(4151)
+    GUI_LOG.Get()
+
 
     ; Msg("Info", "Auto-execute section", "End of Auto-execute section")
     return
@@ -56,6 +58,7 @@
     #Include, Class Database Mobs.ahk
     #Include, Class Drop Log.ahk
     #Include, Class Drop Table.ahk
+    #Include, Class Gui Log.ahk
     #Include, Class Gui Progress.ahk
     #Include, Class Gui Start.ahk
     #Include, Functions.ahk
@@ -74,3 +77,4 @@
     #Include, ObjFullyClone.ahk
     #Include, ResConImg.ahk
     #Include, SetButtonIcon.ahk
+    #Include, WinGetPos.ahk

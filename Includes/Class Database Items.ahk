@@ -52,9 +52,11 @@ Class ClassDatabaseItems {
 
     ; create new item database file using the prices from the wiki & item names from osrsbox
     _Update() {
+        msgbox updating
+
         ; download file
-        ; obj := json.load(DownloadToString(this.wikiApiPricesUrl))
-        obj := json.load(FileRead(A_ScriptDir "\Dev\items-database-wikiPrices.json"))
+        obj := json.load(DownloadToString(this.wikiApiPricesUrl))
+        ; obj := json.load(FileRead(A_ScriptDir "\Dev\items-database-wikiPrices.json"))
         obj := obj.data
         
         ; check if valid

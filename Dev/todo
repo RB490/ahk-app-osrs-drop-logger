@@ -13,3 +13,9 @@ wiki api ->
         eg. its not clear what the input parameter(s) are for GetMobImage
     bug ->  getmob image can't retrieve image for spinolyp
         the wiki page infobox for this mob has 'suspicious water' preselected instead of the actual spinolyp which is probably messing the script up
+
+
+feature -> speed up item db load time? would be able to do this with an item name:id list of the items that are actually in drop tables
+    wiki api = instant
+    item db = 0.200
+    mob db = 0.04
