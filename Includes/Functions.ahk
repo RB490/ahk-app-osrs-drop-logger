@@ -22,8 +22,8 @@ LoadSettings() {
 
 ; -------------------- Images --------------------
 
-DownloadMobImage(mobName) {
-    path := DIR_MOB_IMAGES "\" mobName ".png"
+DownloadMobImage(mobName, mobId) {
+    path := DIR_MOB_IMAGES "\" mobId ".png"
     If IsValidImage(path)
         return
     If FileExist(path)

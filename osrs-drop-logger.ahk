@@ -36,16 +36,25 @@
 
 ; Auto-execute section
     ; download mob images
-    mobs := MOB_DB.GetList()
-    for id, mob in mobs
-        DROP_TABLE.Get(mob)
+
+
+    ; rename mob names to id's
+    ; mobs := MOB_DB.GetList()
+    ; for id, mob in mobs {
+    ;     sourcePath := DIR_MOB_IMAGES "\" mob ".png"
+    ;     targetPath := DIR_MOB_IMAGES "\" id ".png"
+
+    ;     FileMove, % sourcePath, % targetPath
+        ; msgbox % sourcePath "`n`n" targetPath
+    ; }
+        ; DROP_TABLE.Get(mob)
     
     ; DROP_TABLE.Get("Vorkath")
-    ; GUI_START.Get()
+    GUI_START.Get()
     ; GUI_LOG.Get()
 
 
-    Msg("Info", "Auto-execute section", "End of Auto-execute section")
+    ; Msg("Info", "Auto-execute section", "End of Auto-execute section")
     return
 
 ; Global hotkeys

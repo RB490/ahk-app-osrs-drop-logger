@@ -53,3 +53,5 @@ todo -> start with the start gui
 feature -> download mob images in drop table class
 
 todo -> write retrieve function automatically retrieve the drop table for every mob in the database and thereby also downloading the mob and drop images
+
+structure -> save mob images as id's

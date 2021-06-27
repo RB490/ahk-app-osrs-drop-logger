@@ -103,7 +103,7 @@ Class ClassDatabaseMobs {
         return output
     }
 
-    _GetId(mobName) {
+    GetId(mobName) {
         obj := this.obj
         for mob in obj
             If obj[mob].name = mobName
@@ -111,7 +111,7 @@ Class ClassDatabaseMobs {
     }
 
     GetDropTable(mobName) {
-        mobID := this._GetId(mobName)
+        mobID := this.GetId(mobName)
         file := DIR_DATABASE_MOBS "\" mobID ".json"
         
         ; check if we have this mobID stored on disk

@@ -61,10 +61,11 @@ class ClassGuiStart extends gui {
             return  
         }
         
-        DownloadMobImage(SCRIPT_SETTINGS.previousMob)
+        previousMobId := MOB_DB.GetId(SCRIPT_SETTINGS.previousMob)
+        DownloadMobImage(SCRIPT_SETTINGS.previousMob, previousMobId)
 
         this.SetText(this._btnLog, "       Log")
-        path := DIR_MOB_IMAGES "\" SCRIPT_SETTINGS.previousMob ".png"
+        path := DIR_MOB_IMAGES "\" previousMobId ".png"
         SetButtonIcon(this._btnLog, path, 1, 44) ; r2 = 30, r3 = 44
     }
 
