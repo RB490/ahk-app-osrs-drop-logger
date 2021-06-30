@@ -12,6 +12,14 @@
     ; Variables
     Global DEBUG_MODE           := true
     , APP_NAME                  := A_ScriptName
+    , GUI_LOG_MIN_DROP_SIZE     := 10
+    , GUI_LOG_MAX_DROP_SIZE     := 80
+    , GUI_LOG_MIN_ROW_LENGTH    := 1
+    , GUI_LOG_MAX_ROW_LENGTH    := 25
+    , GUI_LOG_MIN_TABLE_SIZE    := 1
+    , GUI_LOG_ITEM_IMAGE_TYPES  := "Wiki Small|Wiki Detailed|RuneLite"
+
+    ; Path variables
     , PATH_SCRIPT_SETTINGS      := A_ScriptDir "\Assets\Settings.json"
     , PATH_DATABASE_MOBS        := A_ScriptDir "\Assets\Database\Mobs database.json"
     , PATH_DATABASE_ITEMS       := A_ScriptDir "\Assets\Database\Items database.json"
@@ -23,6 +31,7 @@
     
     ; Objects
     , SCRIPT_SETTINGS           := LoadSettings()
+    , SELECTED_DROPS            := {}
 
     ; Class objects
     , P                         := new ClassGuiProgress(APP_NAME)
@@ -35,23 +44,8 @@
     , GUI_LOG                   := new ClassGuiLog
 
 ; Auto-execute section
-    ; download mob images
-
-
-    ; rename mob names to id's
-    ; mobs := MOB_DB.GetList()
-    ; for id, mob in mobs {
-    ;     sourcePath := DIR_MOB_IMAGES "\" mob ".png"
-    ;     targetPath := DIR_MOB_IMAGES "\" id ".png"
-
-    ;     FileMove, % sourcePath, % targetPath
-        ; msgbox % sourcePath "`n`n" targetPath
-    ; }
-        ; DROP_TABLE.Get(mob)
-    
-    ; DROP_TABLE.Get("Vorkath")
-    GUI_START.Get()
-    ; GUI_LOG.Get()
+    ; GUI_START.Get()
+    GUI_LOG.Get()
 
 
     ; Msg("Info", "Auto-execute section", "End of Auto-execute section")

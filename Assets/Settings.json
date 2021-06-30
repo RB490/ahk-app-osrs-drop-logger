@@ -1,4 +1,16 @@
 {
-  "previousLogFile": "D:\\Downloads\\log.json",
-  "previousMob": "Undead Zealot"
+  "guiLog_AutoShowStats": 0,
+  "guiLog_DropSize": 33,
+  "guiLog_ItemImageType": "Wiki Detailed",
+  "guiLog_MaxRowDrops": 8,
+  "guiLog_TablesMergeBelowX": 27,
+  "guiLog_X": "",
+  "guiLog_Y": "",
+  "guiStatsH": 400,
+  "guiStatsW": 570,
+  "guiStatsX": "",
+  "guiStatsY": "",
+  "previousLogFile": "",
+  "previousMob": "Rune dragon",
+  "setupHasRan": 0
 }

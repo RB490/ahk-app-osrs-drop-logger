@@ -17,8 +17,117 @@ LoadSettings() {
         obj := []
     }
 
+    ; set default setting values for empty keys & make sure some settings are within spec
+    obj := ValidateSettings(obj)
+
     return obj
 }
+
+ValidateSettings(settingsObj) {
+    obj := settingsObj
+
+    ; default setting values
+    defaultSettings := {}
+    defaultSettings.guiStatsX := ""
+    defaultSettings.guiStatsY := ""
+    defaultSettings.guiStatsW := 570
+    defaultSettings.guiStatsH := 400
+    defaultSettings.guiLog_X := ""
+    defaultSettings.guiLog_Y := ""
+    defaultSettings.guiLog_AutoShowStats := false
+    defaultSettings.guiLog_DropSize := 33
+    defaultSettings.guiLog_MaxRowDrops := 8
+    defaultSettings.guiLog_TablesMergeBelowX := 27
+    defaultSettings.guiLog_ItemImageType := "Wiki Detailed"
+    defaultSettings.previousLogFile := ""
+    defaultSettings.previousMob := "Vorkath"
+    defaultSettings.setupHasRan := false
+
+    ; verify all keys exist
+    for defaultSetting in defaultSettings {
+        If !obj.HasKey(defaultSetting)
+            obj[defaultSetting] := defaultSettings[defaultSetting]
+    }
+
+
+    ; gui log
+    If (obj.guiLog_DropSize < GUI_LOG_MIN_DROP_SIZE) or (obj.guiLog_DropSize > GUI_LOG_MAX_DROP_SIZE)
+        obj.guiLog_DropSize := 33 ; 33 is close to ingame inventory
+    
+    If (obj.guiLog_MaxRowDrops < GUI_LOG_MIN_ROW_LENGTH) or (obj.guiLog_MaxRowDrops > GUI_LOG_MAX_ROW_LENGTH)
+        obj.guiLog_MaxRowDrops := 8
+
+    If (obj.guiLog_TablesMergeBelowX < GUI_LOG_MIN_TABLE_SIZE)
+        obj.guiLog_TablesMergeBelowX := 27 ; 27 = rdt
+
+    ; gui stats
+    If (guiStatsW < 140)
+        obj.guiStatsW := 570
+    If (guiStatsH < 140)
+        obj.guiStatsH := 400
+
+    return obj
+}
+
+GetGuiLogImageType() {
+    switch SCRIPT_SETTINGS.guiLog_ItemImageType
+    {
+        case "Wiki Small": output := DIR_ITEM_IMAGES_ICONS
+        case "Wiki Detailed": output := DIR_ITEM_IMAGES_DETAILED
+    }
+    return output
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ; -------------------- Images --------------------
 
@@ -136,3 +245,5 @@ IsValidImage(img, pix := 3) { ; adamant dart is 9x17
         return false
     return true
 }
+
+; -------------------- Images --------------------
