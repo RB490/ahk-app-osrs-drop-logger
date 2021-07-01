@@ -57,3 +57,128 @@ todo -> write retrieve function automatically retrieve the drop table for every 
 structure -> save mob images as id's
 
 structure -> consider combining the different image functions into a class?
+
+planning -> item categories -> if a drop table needs to be divided into categories
+    - go through each category and make a list of how many hits the drop table has in each category. for example 5 herbs 3 farming stuff 10 equipment
+    - use that list to determine which items should go into a separate category to prevent having categories of 1 or 2 items while the drop table might have 10 equipment
+        ^ either go with the largest category or the lowest amount while still meeting the main drop table max limit
+    Interesting links:
+        https://www.osrsbox.com/blog/2018/12/12/scraping-the-osrs-wiki-part1/#extract-all-categories
+        https://oldschool.runescape.wiki/api.php?action=help&modules=query
+        https://www.mediawiki.org/wiki/API:Revisions
+        https://www.mediawiki.org/wiki/API:Categorymembers
+
+    Working api links
+        Query - categoryinfo
+            https://oldschool.runescape.wiki/api.php?action=query&prop=categoryinfo&titles=Category:Armour
+        Get all pages beloging to a category! :D : (add &format=json)
+            https://oldschool.runescape.wiki/api.php?action=query&list=categorymembers&cmlimit=500&format=json&cmtitle=Category:Runes
+			
+			https://oldschool.runescape.wiki/api.php?action=query&list=categorymembers&cmlimit=500&cmtitle=Category:Runes
+            https://oldschool.runescape.wiki/api.php?action=query&list=categorymembers&cmlimit=500&cmtitle=Category:Gems
+            https://oldschool.runescape.wiki/api.php?action=query&list=categorymembers&cmlimit=500&cmtitle=Category:Herbs
+            https://oldschool.runescape.wiki/api.php?action=query&list=categorymembers&cmlimit=500&cmtitle=Category:Logs
+            https://oldschool.runescape.wiki/api.php?action=query&list=categorymembers&cmlimit=500&cmtitle=Category:Ores
+            https://oldschool.runescape.wiki/api.php?action=query&list=categorymembers&cmlimit=500&cmtitle=Category:Potions
+            https://oldschool.runescape.wiki/api.php?action=query&list=categorymembers&cmlimit=500&cmtitle=Category:Fish
+
+            https://oldschool.runescape.wiki/api.php?action=query&list=categorymembers&cmlimit=500&cmtitle=Category:
+            https://oldschool.runescape.wiki/api.php?action=query&list=categorymembers&cmlimit=500&cmtitle=Category:
+            https://oldschool.runescape.wiki/api.php?action=query&list=categorymembers&cmlimit=500&cmtitle=Category:
+            https://oldschool.runescape.wiki/api.php?action=query&list=categorymembers&cmlimit=500&cmtitle=Category:
+
+	_setCategoryObj() {
+		this.categoriesObj := []
+		this.categoriesObj["items"] := []
+		this.categoriesObj["skills"] := []
+		this.categoriesObj["weapons"] := []
+		this.categoriesObj["armour"] := []
+		
+		this.categoriesObj["items"].push("Runes")
+		this.categoriesObj["items"].push("Gems")
+		this.categoriesObj["items"].push("Herbs")
+		this.categoriesObj["items"].push("Logs")
+		this.categoriesObj["items"].push("Ores")
+		this.categoriesObj["items"].push("Potions")
+		this.categoriesObj["items"].push("Fish")
+		
+		this.categoriesObj["skills"].push("Construction")
+		this.categoriesObj["skills"].push("Farming")
+		this.categoriesObj["skills"].push("Firemaking")
+		this.categoriesObj["skills"].push("Fishing")
+		this.categoriesObj["skills"].push("Hunter")
+		this.categoriesObj["skills"].push("Mining")
+		this.categoriesObj["skills"].push("Runecrafting")
+		this.categoriesObj["skills"].push("Smithing")
+		this.categoriesObj["skills"].push("Woodcutting")
+		this.categoriesObj["skills"].push("Crafting_items")
+		this.categoriesObj["skills"].push("Prayer_items")
+		this.categoriesObj["skills"].push("Herblore_items")
+		
+		this.categoriesObj["weapons"].push("Ammunition_slot_items")
+		this.categoriesObj["weapons"].push("Weapon_slot_items")
+		
+		this.categoriesObj["armour"].push("Head_slot_items")
+		this.categoriesObj["armour"].push("Neck_slot_items")
+		this.categoriesObj["armour"].push("Body_slot_items")
+		this.categoriesObj["armour"].push("Legwear_slot_items")
+		this.categoriesObj["armour"].push("Feet_slot_items")
+		this.categoriesObj["armour"].push("Cape_slot_items")
+		this.categoriesObj["armour"].push("Shield_slot_items")
+		this.categoriesObj["armour"].push("Hand_slot_items")
+		this.categoriesObj["armour"].push("Ring_slot_items")
+		
+		; this.listOfCategoryLists=
+		; ( Ltrim A_Tab join`,
+		; category_items
+		; category_skills
+		; category_weapons
+		; category_armour
+		; )
+		
+		; category_items=
+		; ( Ltrim A_Tab join`,
+		; Runes
+		; Gems
+		; Herbs
+		; Logs
+		; Ores
+		; Seeds
+		; Potions
+		; Fish
+		; )
+		
+		; category_skills=
+		; ( Ltrim A_Tab join`,
+		; Construction
+		; Farming
+		; Firemaking
+		; Fishing
+		; Hunter
+		; Mining
+		; Runecrafting
+		; Smithing
+		; Woodcutting
+		; Crafting_items
+		; Prayer_items
+		; Herblore_items
+		; )
+		
+		; category_weapons=
+		; ( Ltrim A_Tab join`,
+		; Ammunition_slot_items
+		; Weapon_slot_items
+		; )
+
+		; category_armour=
+		; ( Ltrim A_Tab join`,
+		; Head_slot_items
+		; Neck_slot_items
+		; Body_slot_items
+		; Legwear_slot_items
+		; Feet_slot_items
+		; Cape_slot_items
+		; Shield_slot_items
+		; Hand_slot_items
+		; Ring_slot_items
+		; )

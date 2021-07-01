@@ -52,7 +52,7 @@ Class ClassDatabaseItems {
 
     ; create new item database file using the prices from the wiki & item names from osrsbox
     _Update() {
-        msgbox updating
+        P.Get(A_ThisFunc, "Updating wiki prices") ; title-text1-bar1-bar1text
 
         ; download file
         obj := json.load(DownloadToString(this.wikiApiPricesUrl))

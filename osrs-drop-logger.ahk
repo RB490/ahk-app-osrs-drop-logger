@@ -23,6 +23,7 @@
     , PATH_SCRIPT_SETTINGS      := A_ScriptDir "\Assets\Settings.json"
     , PATH_DATABASE_MOBS        := A_ScriptDir "\Assets\Database\Mobs database.json"
     , PATH_DATABASE_ITEMS       := A_ScriptDir "\Assets\Database\Items database.json"
+    , PATH_DATABASE_CATEGORIES  := A_ScriptDir "\Assets\Database\Item category database.json"
     , DIR_DATABASE_MOBS         := A_ScriptDir "\Assets\Database\Mobs"
     , DIR_MOB_IMAGES            := A_ScriptDir "\Assets\Images\Mobs"
     , DIR_GUI_ICONS             := A_ScriptDir "\Assets\Images\Gui"
@@ -40,12 +41,15 @@
     , MOB_DB                    := new ClassDatabaseMobs
     , DROP_LOG                  := new ClassDropLog
     , DROP_TABLE                := new ClassDropTable
+    , DROP_CATEGORIES           := new ClassDropCategories
     , GUI_START                 := new ClassGuiStart
     , GUI_LOG                   := new ClassGuiLog
+    
 
 ; Auto-execute section
     ; GUI_START.Get()
-    GUI_LOG.Get()
+    ; GUI_LOG.Get()
+    msgbox hi there
 
 
     ; Msg("Info", "Auto-execute section", "End of Auto-execute section")
@@ -68,6 +72,7 @@
     #Include, Class Database Mobs.ahk
     #Include, Class Drop Log.ahk
     #Include, Class Drop Table.ahk
+    #Include, Class Drop Categories.ahk
     #Include, Class Gui Log.ahk
     #Include, Class Gui Progress.ahk
     #Include, Class Gui Start.ahk
