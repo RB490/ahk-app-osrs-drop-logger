@@ -65,14 +65,19 @@ Class ClassDropCategories {
 
         for index, drop in dropTable {
             name := drop.name
-            
             category := this._GetCategoryForDrop(drop.name)
+            
+            ; temporarily limit the amount of categories for debugging
+            If (output.count() >= 3)
+                category := "Main"
 
             If !IsObject(output[category])
                 output[category] := []
 
+
             output[category].push(drop)
         }
+
         return output
     }
 
@@ -100,24 +105,13 @@ Class ClassDropCategories {
 
         ; couldnt find category for this item, so:
         If !matchCategory
-            matchCategory := "Misc"
+            matchCategory := "Main"
 
         ; finish up
         return matchCategory
     }
 
     _Update() {
-        /*
-            Items
-                Runes
-                Gems
-            Misc
-                Herbs
-
-            loop through categories
-                loop through sub categories adding the items to the main categories
-        */
-
         categories := []
         categories.Farming := ["Herbs", "Seeds"]
         categories.Food := ["Fish", "Potions"]
@@ -142,6 +136,10 @@ Class ClassDropCategories {
 
         output := []
 
+        /*
+            loop through categories
+            loop through sub categories adding the items to the main categories
+        */
         for category in categories {
             output[category] := []
             for index, subCategory in categories[category] {

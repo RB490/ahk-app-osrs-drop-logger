@@ -1,6 +1,21 @@
 todo -> item categories -> LOG_GUI
 
-feature -> separate the rare drop table and the others like gem drop table from the main drop table
+todo -> different method for ignoring duplicate mobs. use the wiki_name to check if the mob was already added
+    this is because for example vorkath has two different versions with different drop tables
+        "wiki_name": "Vorkath (Dragon Slayer II)" quest version
+        "wiki_name": "Vorkath" post-quest version
+    ^ add this explanation to the code
+
+note/bug -> Abyssal Sire has a 2 rune bars drop in the RDT and a 5 rune bar normal drop. the osrsbox drop table only has
+    one rune bar entry with '5' as quantity..
+
+feature -> drop categories -> separate the rare drop table and the others like gem drop table from the main drop table
+    ^ seems atleast by checking vorkath the rare drop table isn't included. So always include the RDT into the gui,
+        either as a tab or an image that opens a separate gui
+feature -> drop categories -> take max drop table variable into account
+    if the drops list is above X, start adding items into categories until it is no longer above X
+        ^ first get all the item category sizes to determine which to start with. start with the largest category or the one that gets the nearest below X
+        this prevents item categories with very few items
 
 feature idea -> Update ClassMobDatabase._Update() in the background so it doesn't take 20 seconds
 

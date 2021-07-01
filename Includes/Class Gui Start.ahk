@@ -99,12 +99,12 @@ class ClassGuiStart extends gui {
             return
 
         ; verify we have a drop table for selected mob
-        this.Enable()
-        this.Hide()
         If !DROP_TABLE.Get(SCRIPT_SETTINGS.previousMob)
-            Msg("Error", A_ThisFunc, "Failed to retrieve drop table for verified, saved mob")
+            return
 
         ; show the drop log gui
+        this.Enable()
+        this.Hide()
         LOG_GUI.Get()
     }
 

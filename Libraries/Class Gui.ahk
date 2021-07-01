@@ -21,6 +21,16 @@
 		return ControlHWND
 	}
 	
+	AddStatic(ControlType, Options := "", Params := "", Function := "") {
+		static
+		Gui % this.hwnd ":Add", % ControlType, % Options " hwndControlHWND", % Params
+		if Function {
+			GuiControl, +g, % ControlHWND, % Function ; ty geekdude for this amazing godsent knowledge, may the darkness of labels be eternally abolished
+			this.Controls.Push(ControlHWND)
+		}
+		return ControlHWND
+	}
+
 	AddGlobal(ControlType, Options := "", Params := "", Function := "") {
 		global
 		Gui % this.hwnd ":Add", % ControlType, % Options " hwndControlHWND", % Params

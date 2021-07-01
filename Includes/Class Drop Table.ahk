@@ -1,13 +1,14 @@
 ﻿Class ClassDropTable {
     Get(mobName) {
-        ; inform about the waiting time
-        ; If !DEBUG_MODE
+        If !DEBUG_MODE
             P.Get(A_ThisFunc, "Retrieving drop table for " mobName)
         
         ; get drop table
         obj := MOB_DB.GetDropTable(mobName)
-        If !IsObject(obj)
+        If !IsObject(obj) {
+            Msg("Info", A_ThisFunc, "Could not retrieve drop table for" A_Space mobName)
             return false
+        }
 
         ; download drop images
         for count, drop in obj
@@ -15,9 +16,6 @@
         
         ; sort drop table into categories. todo: separate RDT, Gem drop table, talisman drop table. etc.
         obj := DROP_CATEGORIES.Get(obj)
-
-        msgbox this is a test
-        msgbox % json.dump(obj)
 
         ; finish up
         P.Destroy()

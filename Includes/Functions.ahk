@@ -69,7 +69,7 @@ ValidateSettings(settingsObj) {
     return obj
 }
 
-GetGuiLogImageType() {
+GetGuiLogDropsImageType() {
     switch SCRIPT_SETTINGS.guiLog_ItemImageType
     {
         case "Wiki Small": output := DIR_ITEM_IMAGES_ICONS
