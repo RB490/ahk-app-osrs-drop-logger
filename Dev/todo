@@ -1,4 +1,9 @@
-todo -> item categories -> LOG_GUI
+todo -> LOG_GUI
+    ++ Position methods -> SavePos, CheckPos, ShowGui
+    Context menu -> MiscMenu_Show
+    Stats -> 
+        Enable the SetTimer in .Update()
+        Enable auto open stats if setting is set at the end of Get()
 
 todo -> different method for ignoring duplicate mobs. use the wiki_name to check if the mob was already added
     this is because for example vorkath has two different versions with different drop tables
@@ -10,6 +15,9 @@ note/bug -> Abyssal Sire has a 2 rune bars drop in the RDT and a 5 rune bar norm
     one rune bar entry with '5' as quantity..
 
 feature -> ON_WM_LBUTTONDOWN -> quantity select gui
+
+structure -> integrate gui position code into the class. using the built in ini stuff to save position information in the same spot as the class files. or maybe in temporary folder or something
+    save pos, restore pos, check correct pos
 
 feature -> drop categories -> separate the rare drop table and the others like gem drop table from the main drop table
     ^ seems atleast by checking vorkath the rare drop table isn't included. So always include the RDT into the gui,
