@@ -16,18 +16,18 @@ class ClassGuiSettings extends gui {
         this.Add("groupbox", "h210", "Gui")
             this.Add("text", "xp+" margin " yp+" (margin * 2), "Item size")
             this.Add("edit", "limit2 number")
-            this.Add("updown", "range" MIN_DROP_SIZE "-" MAX_DROP_SIZE, SCRIPT_SETTINGS.guiLog_DropSize)
+            this.Add("updown", "range1-999", SCRIPT_SETTINGS.guiLog_DropSize)
 
             this.Add("text",, "Row length")
             this.Add("edit", "limit2 number")
-            this.Add("updown", "range" MIN_ROW_LENGTH "-" MAX_ROW_LENGTH, SCRIPT_SETTINGS.guiLog_MaxRowDrops)
+            this.Add("updown", "range1-999", SCRIPT_SETTINGS.guiLog_MaxRowDrops)
 
             this.Add("text", , "Merge tables below")
             this.Add("edit", "limit2 number")
-            this.Add("updown", "range" MIN_TABLE_SIZE "-99", SCRIPT_SETTINGS.guiLog_TablesMergeBelowX)
+            this.Add("updown", "range1-999", SCRIPT_SETTINGS.guiLog_TablesMergeBelowX)
 
             this.Add("text",, "Image type")
-            this.Add("dropdownlist",, ITEM_IMAGE_TYPES)
+            this.Add("dropdownlist",, GUI_LOG_ITEM_IMAGE_TYPES)
             this.Control("Choose", "ComboBox1", SCRIPT_SETTINGS.guiLog_ItemImageType)
 
         this.Add("button", "x" margin " w140", "Save", this.Save.Bind(this))

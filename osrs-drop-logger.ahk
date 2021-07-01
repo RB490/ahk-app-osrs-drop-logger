@@ -18,7 +18,7 @@
     , GUI_LOG_MIN_ROW_LENGTH    := 1
     , GUI_LOG_MAX_ROW_LENGTH    := 25
     , GUI_LOG_MIN_TABLE_SIZE    := 1
-    , GUI_LOG_ITEM_IMAGE_TYPES  := "Wiki Small|Wiki Detailed|RuneLite"
+    , GUI_LOG_ITEM_IMAGE_TYPES  := "Wiki Small|Wiki Detailed"
 
     ; Path variables
     , PATH_SCRIPT_SETTINGS      := A_ScriptDir "\Assets\Settings.json"

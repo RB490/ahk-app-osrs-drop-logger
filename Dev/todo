@@ -6,9 +6,6 @@ feature -> gui stats
 feature -> gui about
     ^ also plug in to gui_log
 
-feature -> gui settings
-    ^ also plug in to gui_log
-
 bug -> this.SetIcon(ico.GetHandle()) isn't working for the gui's
 
 todo -> different method for ignoring duplicate mobs. use the wiki_name to check if the mob was already added
@@ -19,6 +16,8 @@ todo -> different method for ignoring duplicate mobs. use the wiki_name to check
 
 note/bug -> Abyssal Sire has a 2 rune bars drop in the RDT and a 5 rune bar normal drop. the osrsbox drop table only has
     one rune bar entry with '5' as quantity..
+
+bug/todo -> whenever log gui is shown also refetch the drop table so changes are taken into accoutn. for example after changing settings
 
 bug -> gui_log -> menu open drop log file, windows doesnt open the .json for some reason
 

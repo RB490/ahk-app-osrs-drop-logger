@@ -182,3 +182,17 @@ planning -> item categories -> if a drop table needs to be divided into categori
 		; Hand_slot_items
 		; Ring_slot_items
 		; )
+
+ Saving gui log position
+ 
+Progress on the log gui
+ 
+LOG_GUI progress. drop tables are loaded
+
+Expanded the drop category class
+
+++ Position methods -> SavePos, CheckPos, ShowGui
+    Context menu -> MiscMenu_Show
+
+feature -> gui settings
+    ^ also plug in to gui_log
