@@ -6,6 +6,7 @@
     CoordMode, Mouse, Screen
     SetBatchLines, -1
     OnExit("ExitFunc")
+    OnMessage(0x201, "ON_WM_LBUTTONDOWN")
     #MaxMem, 400 ; reading larger json files into objects overloads the default limit
 
 ; Global variables
@@ -43,14 +44,14 @@
     , DROP_TABLE                := new ClassDropTable
     , DROP_CATEGORIES           := new ClassDropCategories
     , GUI_START                 := new ClassGuiStart
-    , GUI_LOG                   := new ClassGuiLog
+    , GUI_LOG                   := new ClassGuiLog()
     
 
 ; Auto-execute section
     ; GUI_START.Get()
-    
+    myDebugDropLogfile := A_ScriptDir "\myDebugDropLogfile.json"
+    DROP_LOG.Get(myDebugDropLogfile)
     GUI_LOG.Get()
-
 
 
     ; Msg("Info", "Auto-execute section", "End of Auto-execute section")
@@ -64,6 +65,13 @@
     ~f1::
         If !DEBUG_MODE
             return
+    return
+
+; Subroutines
+    disableTooltip:
+        tooltip
+    return
+    menuHandler:
     return
 
 ; Includes

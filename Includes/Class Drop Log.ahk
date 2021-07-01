@@ -1,6 +1,23 @@
-; purpose = anything to do with getting and setting drop log information
-    ; example drop log in info\example ClassDropLog.json
+/*
+    purpose = anything to do with getting and setting drop log information
+        ; example drop log in info\example ClassDropLog.json
+
+    usage = DROP_LOG.Get(filePathString)
+        afterwards use the various methods to modify the object
+        to finish up DROP_LOG.Save() to save to the selected file
+
+*/
+
 class ClassDropLog {   
+    ; usage = DROP_LOG.isLoaded
+    isLoaded[] {
+        get {
+            If IsObject(this.obj)
+                return true
+            return
+        }
+    }
+
     ; output = {string} entire drop log formatted
     GetFormattedLog() {
 
@@ -127,7 +144,7 @@ class ClassDropLog {
         this.obj := obj
     }
 
-    ; input = {object} retrieved by DROP_LOG.GetDrop() containing drop information
+    ; input = {object} retrieved by DROP_TABLE.GetDrop() containing drop information
     AddKill(input) {
         If !input.length()
             return

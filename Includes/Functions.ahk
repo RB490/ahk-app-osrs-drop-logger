@@ -1,3 +1,68 @@
+GetGuiLogDropsImageType() {
+    switch SCRIPT_SETTINGS.guiLog_ItemImageType
+    {
+        case "Wiki Small": output := DIR_ITEM_IMAGES_ICONS
+        case "Wiki Detailed": output := DIR_ITEM_IMAGES_DETAILED
+    }
+    return output
+}
+
+ON_WM_LBUTTONDOWN(wParam, lParam, msg, hWnd) {
+    ; receive information
+    MouseGetPos, , , m_Hwnd, mControl
+    GuiControlGet, mAssociatedVar, Name, % mControl
+    GuiControlGet, mControlContent, , % mControl
+
+    ; check if this is the log gui
+    If (m_Hwnd != GUI_LOG.hwnd)
+        return
+
+    ; show tooltips
+    If !DROP_LOG.isLoaded {
+        tooltip No drop log active!!!!!!!! :O how si possibel`n`n`n... DROP_LOG.Get() was not used
+        SetTimer, disableTooltip, -400
+        return
+    }
+    If !mAssociatedVar {
+        tooltip
+        return
+    }
+    If !DROP_LOG.TripActive() {
+        tooltip No trip started!
+        SetTimer, disableTooltip, -400
+        return
+    }
+    If DROP_LOG.DeathActive() {
+        tooltip You're dead! ☠
+        SetTimer, disableTooltip, -400
+        return
+    }
+
+    ; turn string into object
+    obj := json.load(hex2str(mAssociatedVar))
+
+    ; remove useless information from the drop object
+    ; Obj.Delete("id")
+    Obj.Delete("members")
+    ; Obj.Delete("name")
+    Obj.Delete("noted")
+    ; Obj.Delete("quantity")
+    Obj.Delete("rarity")
+    Obj.Delete("rolls")
+
+    If !IsInteger(obj.quantity) { ; contains separator: '#' or '-'
+        LOG_GUI.Disable()
+        QUANTITY_GUI.Get(obj) ; directly modifies 'SELECTED_DROPS' because slow WinWaitClose 
+        Msgbox Todo: Quantity select gui
+        return
+    }
+    SELECTED_DROPS.push(obj)
+
+    GUI_LOG.Update()
+}
+
+; ========= SETTINGS ======================================================================================================================
+
 ExitFunc() {
     SaveSettings()
 }
@@ -69,17 +134,42 @@ ValidateSettings(settingsObj) {
     return obj
 }
 
-GetGuiLogDropsImageType() {
-    switch SCRIPT_SETTINGS.guiLog_ItemImageType
-    {
-        case "Wiki Small": output := DIR_ITEM_IMAGES_ICONS
-        case "Wiki Detailed": output := DIR_ITEM_IMAGES_DETAILED
-    }
+; ========= HEX ======================================================================================================================
+
+; str2hex: source: https://www.autohotkey.com/boards/viewtopic.php?t=68782
+str2hex(string)
+{
+    VarSetCapacity(bin, StrPut(string, "UTF-8")) && len := StrPut(string, &bin, "UTF-8") - 1 
+    if !(DllCall("crypt32\CryptBinaryToString", "ptr", &bin, "uint", len, "uint", 0x4, "ptr", 0, "uint*", size))
+        throw Exception("CryptBinaryToString failed", -1)
+    VarSetCapacity(buf, size << 1, 0)
+    if !(DllCall("crypt32\CryptBinaryToString", "ptr", &bin, "uint", len, "uint", 0x4, "ptr", &buf, "uint*", size))
+        throw Exception("CryptBinaryToString failed", -1)
+
+    ; modify function output
+    output := StrGet(&buf)
+    output := StrReplace(output, "`n")
+    output := StrReplace(output, "`r")
+    output := StrReplace(output, A_Space)
     return output
 }
 
+; hex2str: source: https://www.autohotkey.com/boards/viewtopic.php?t=68782
+hex2str(string)
+{
+    If !string
+        return
 
+    if !(DllCall("crypt32\CryptStringToBinary", "ptr", &string, "uint", 0, "uint", 0x4, "ptr", 0, "uint*", size, "ptr", 0, "ptr", 0))
+        throw Exception("CryptStringToBinary failed", -1)
+    VarSetCapacity(buf, size, 0)
+    if !(DllCall("crypt32\CryptStringToBinary", "ptr", &string, "uint", 0, "uint", 0x4, "ptr", &buf, "uint*", size, "ptr", 0, "ptr", 0))
+        throw Exception("CryptStringToBinary failed", -1)
+    
+    return StrGet(&buf, size, "UTF-8")
+}
 
+; ====================================================================================================================================
 
 
 

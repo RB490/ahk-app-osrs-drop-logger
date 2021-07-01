@@ -9,6 +9,8 @@ todo -> different method for ignoring duplicate mobs. use the wiki_name to check
 note/bug -> Abyssal Sire has a 2 rune bars drop in the RDT and a 5 rune bar normal drop. the osrsbox drop table only has
     one rune bar entry with '5' as quantity..
 
+feature -> ON_WM_LBUTTONDOWN -> quantity select gui
+
 feature -> drop categories -> separate the rare drop table and the others like gem drop table from the main drop table
     ^ seems atleast by checking vorkath the rare drop table isn't included. So always include the RDT into the gui,
         either as a tab or an image that opens a separate gui
@@ -21,6 +23,8 @@ feature idea -> Update ClassMobDatabase._Update() in the background so it doesn'
 
 wiki api ->
     todo -> rename ClassApiWiki to something like ClassWiki or ClassWikiScraper because it doesn't actually use the wiki api which is conflicting. it's my wiki 'api'
+    feature -> (maybe a rewrite depending on how usefull this can be) Idea use the actual wiki api to improve my wiki api class
+    feature -> Add the droptable category class wiki api calls inside the wiki class
     feature -> add more documentation. class/method and their parameter(s) descriptions 
         eg. its not clear what the input parameter(s) are for GetMobImage
     bug ->  getmob image can't retrieve image for spinolyp
