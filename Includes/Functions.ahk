@@ -92,8 +92,12 @@ LoadSettings() {
     return obj
 }
 
-ValidateSettings(settingsObj) {
+ValidateSettings(settingsObj := "") {
     obj := settingsObj
+    
+    ; if no object was given, use the global variable
+    If !IsObject(settingsObj)
+        obj := SCRIPT_SETTINGS
 
     ; default setting values
     defaultSettings := {}
@@ -118,18 +122,8 @@ ValidateSettings(settingsObj) {
             obj[defaultSetting] := defaultSettings[defaultSetting]
     }
 
-
-    ; gui log
-    If (obj.guiLog_DropSize < GUI_LOG_MIN_DROP_SIZE) or (obj.guiLog_DropSize > GUI_LOG_MAX_DROP_SIZE)
-        obj.guiLog_DropSize := 33 ; 33 is close to ingame inventory
-    
-    If (obj.guiLog_MaxRowDrops < GUI_LOG_MIN_ROW_LENGTH) or (obj.guiLog_MaxRowDrops > GUI_LOG_MAX_ROW_LENGTH)
-        obj.guiLog_MaxRowDrops := 8
-
-    If (obj.guiLog_TablesMergeBelowX < GUI_LOG_MIN_TABLE_SIZE)
-        obj.guiLog_TablesMergeBelowX := 27 ; 27 = rdt
-
     ; gui stats
+    ; todo: relocate this check to gui_stats.checkpos()
     If (guiStatsW < 140)
         obj.guiStatsW := 570
     If (guiStatsH < 140)

@@ -12,7 +12,7 @@
 ; Global variables
     ; Variables
     Global DEBUG_MODE           := true
-    , APP_NAME                  := A_ScriptName
+    , APP_NAME                  := "Droplogger"
     , GUI_LOG_MIN_DROP_SIZE     := 10
     , GUI_LOG_MAX_DROP_SIZE     := 80
     , GUI_LOG_MIN_ROW_LENGTH    := 1
@@ -44,7 +44,8 @@
     , DROP_TABLE                := new ClassDropTable
     , DROP_CATEGORIES           := new ClassDropCategories
     , GUI_START                 := new ClassGuiStart
-    , GUI_LOG                   := new ClassGuiLog()
+    , GUI_LOG                   := new ClassGuiLog
+    , GUI_SETTINGS              := new ClassGuiSettings
     
 
 ; Auto-execute section
@@ -65,10 +66,16 @@
 
 ; Subroutines
     debugScript:
-        myDebugDropLogfile := A_ScriptDir "\myDebugDropLogfile.json"
+        GUI_SETTINGS.Get()
+        return
+
+        ; gui log
+        myDebugDropLogfile := A_ScriptDir "\Dev\myDebugDropLogfile.json"
+        SCRIPT_SETTINGS.previousLogFile := myDebugDropLogfile
         DROP_LOG.Get(myDebugDropLogfile)
         GUI_LOG.Get()
         
+        ; finish debugScript
         ; Msg("Info", "Auto-execute section", "End of Auto-execute section")
     return
     disableTooltip:
@@ -87,6 +94,7 @@
     #Include, Class Drop Categories.ahk
     #Include, Class Gui Log.ahk
     #Include, Class Gui Progress.ahk
+    #Include, Class Gui Settings.ahk
     #Include, Class Gui Start.ahk
     #Include, Functions.ahk
 
@@ -100,6 +108,7 @@
     #Include, GuiButtonIcon.ahk
     #Include, IsPicture.ahk
     #Include, JSON.ahk
+    #Include, LoadPictureType.ahk
     #Include, Msg.ahk
     #Include, ObjFullyClone.ahk
     #Include, ResConImg.ahk

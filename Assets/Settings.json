@@ -4,13 +4,13 @@
   "guiLog_ItemImageType": "Wiki Detailed",
   "guiLog_MaxRowDrops": 8,
   "guiLog_TablesMergeBelowX": 27,
-  "guiLog_X": -109,
-  "guiLog_Y": 323,
+  "guiLog_X": 749,
+  "guiLog_Y": 276,
   "guiStatsH": 400,
   "guiStatsW": 570,
   "guiStatsX": "",
   "guiStatsY": "",
-  "previousLogFile": "",
+  "previousLogFile": "D:\\Programming and projects\\ahk-app-osrs-drop-logger\\Dev\\myDebugDropLogfile.json",
   "previousMob": "Rune dragon",
   "setupHasRan": 0
 }

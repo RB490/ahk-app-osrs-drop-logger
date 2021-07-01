@@ -1,9 +1,15 @@
-todo -> LOG_GUI
-    ++ Position methods -> SavePos, CheckPos, ShowGui
-    Context menu -> MiscMenu_Show
-    Stats -> 
+feature -> gui stats
+    ^ also plug in to gui_log
         Enable the SetTimer in .Update()
         Enable auto open stats if setting is set at the end of Get()
+
+feature -> gui about
+    ^ also plug in to gui_log
+
+feature -> gui settings
+    ^ also plug in to gui_log
+
+bug -> this.SetIcon(ico.GetHandle()) isn't working for the gui's
 
 todo -> different method for ignoring duplicate mobs. use the wiki_name to check if the mob was already added
     this is because for example vorkath has two different versions with different drop tables
@@ -13,6 +19,8 @@ todo -> different method for ignoring duplicate mobs. use the wiki_name to check
 
 note/bug -> Abyssal Sire has a 2 rune bars drop in the RDT and a 5 rune bar normal drop. the osrsbox drop table only has
     one rune bar entry with '5' as quantity..
+
+bug -> gui_log -> menu open drop log file, windows doesnt open the .json for some reason
 
 feature -> ON_WM_LBUTTONDOWN -> quantity select gui
 
