@@ -29,6 +29,81 @@ Class ClassDropCategories {
         ; check if category list is available
         If !IsObject(obj)
             Msg("Error", A_ThisFunc, "Unable to continue without the required files")
+
+        this.obj := obj
+    }
+
+    /*
+        Input = object array with drops
+            Exammple:
+                {
+                "id": 1623,
+                "name": "Uncut emerald",
+                },
+                {
+                "id": 1623,
+                "name": "Uncut sapphire",
+                },
+
+        Output = object array containing category arrays with the drops in them
+            Example:
+            Gems {
+                {
+                "id": 1623,
+                "name": "Uncut emerald",
+                },
+            },
+            Misc {
+                {
+                "id": 1623,
+                "name": "Uncut sapphire",
+                },
+            }
+    */
+    Get(dropTable) {
+        output := []
+
+        for index, drop in dropTable {
+            name := drop.name
+            
+            category := this._GetCategoryForDrop(drop.name)
+
+            If !IsObject(output[category])
+                output[category] := []
+
+            output[category].push(drop)
+        }
+        return output
+    }
+
+    _GetCategoryForDrop(inputDrop) {
+        ; go through every category
+        for category in this.obj {
+            
+            
+            ; go through every drop in this category
+            for index, drop in this.obj[category] {
+
+
+                ; found category for inputdrop
+                If (drop = inputDrop) {
+                    
+                    ; matchCategory
+                    matchCategory := category
+
+                    ; stop searching
+                    break, 2
+
+                }
+            }
+        }
+
+        ; couldnt find category for this item, so:
+        If !matchCategory
+            matchCategory := "Misc"
+
+        ; finish up
+        return matchCategory
     }
 
     _Update() {
@@ -41,9 +116,6 @@ Class ClassDropCategories {
 
             loop through categories
                 loop through sub categories adding the items to the main categories
-
-            Some unused categories
-                Runes
         */
 
         categories := []
@@ -51,6 +123,7 @@ Class ClassDropCategories {
         categories.Food := ["Fish", "Potions"]
         categories.Gems := ["Gems"]
         categories.Skilling := ["Logs", "Ores"]
+        categories.Runes := ["Runes"]
         
         categories.Ammunition := ["Ammunition_slot_items"]
         
@@ -86,6 +159,12 @@ Class ClassDropCategories {
                     output[category].push(drop)
             }
         }
+
+        ; save output to desk
+        FileDelete, % PATH_DATABASE_CATEGORIES
+        FileAppend, % json.dump(output,,2), % PATH_DATABASE_CATEGORIES
+
+        return output
     }
 
     /*

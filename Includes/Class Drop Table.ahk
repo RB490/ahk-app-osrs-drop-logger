@@ -13,6 +13,12 @@
         for count, drop in obj
             DownloadDropImage(drop.name, drop.id)
         
+        ; sort drop table into categories. todo: separate RDT, Gem drop table, talisman drop table. etc.
+        obj := DROP_CATEGORIES.Get(obj)
+
+        msgbox this is a test
+        msgbox % json.dump(obj)
+
         ; finish up
         P.Destroy()
         return obj

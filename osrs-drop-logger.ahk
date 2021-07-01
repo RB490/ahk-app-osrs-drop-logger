@@ -49,6 +49,8 @@
 ; Auto-execute section
     ; GUI_START.Get()
     ; GUI_LOG.Get()
+    obj := DROP_TABLE.Get("Vorkath")
+    msgbox % json.dump(obj,,2)
     msgbox hi there
 
 
