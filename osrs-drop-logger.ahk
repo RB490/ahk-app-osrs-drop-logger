@@ -48,13 +48,9 @@
     
 
 ; Auto-execute section
-    ; GUI_START.Get()
-    myDebugDropLogfile := A_ScriptDir "\myDebugDropLogfile.json"
-    DROP_LOG.Get(myDebugDropLogfile)
-    GUI_LOG.Get()
-
-
-    ; Msg("Info", "Auto-execute section", "End of Auto-execute section")
+    If DEBUG_MODE
+        GoTo, debugScript
+    GUI_START.Get()
     return
 
 ; Global hotkeys
@@ -68,6 +64,13 @@
     return
 
 ; Subroutines
+    debugScript:
+        myDebugDropLogfile := A_ScriptDir "\myDebugDropLogfile.json"
+        DROP_LOG.Get(myDebugDropLogfile)
+        GUI_LOG.Get()
+        
+        ; Msg("Info", "Auto-execute section", "End of Auto-execute section")
+    return
     disableTooltip:
         tooltip
     return

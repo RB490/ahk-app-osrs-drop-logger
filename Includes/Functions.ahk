@@ -68,6 +68,10 @@ ExitFunc() {
 }
 
 SaveSettings() {
+    GUI_STATS.SavePos()
+    GUI_LOG.SavePos()
+    DROP_LOG.Save()
+
     FileDelete, % PATH_SCRIPT_SETTINGS
     FileAppend, % json.Dump(SCRIPT_SETTINGS,,2), % PATH_SCRIPT_SETTINGS
 }
