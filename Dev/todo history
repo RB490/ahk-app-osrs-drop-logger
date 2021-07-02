@@ -196,3 +196,6 @@ Expanded the drop category class
 
 feature -> gui settings
     ^ also plug in to gui_log
+
+feature -> gui about
+    ^ also plug in to gui_log

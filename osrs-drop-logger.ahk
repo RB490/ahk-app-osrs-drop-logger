@@ -13,6 +13,7 @@
     ; Variables
     Global DEBUG_MODE           := true
     , APP_NAME                  := "Droplogger"
+    , APP_URL                   := "https://github.com/RB490/ahk-app-osrs-drop-logger"
     , GUI_LOG_MIN_DROP_SIZE     := 10
     , GUI_LOG_MAX_DROP_SIZE     := 80
     , GUI_LOG_MIN_ROW_LENGTH    := 1
@@ -46,6 +47,8 @@
     , GUI_START                 := new ClassGuiStart
     , GUI_LOG                   := new ClassGuiLog
     , GUI_SETTINGS              := new ClassGuiSettings
+    , GUI_ABOUT                 := new ClassGuiAbout
+    , GUI_STATS                 := new ClassGuiStats
     
 
 ; Auto-execute section
@@ -66,7 +69,10 @@
 
 ; Subroutines
     debugScript:
-        GUI_SETTINGS.Get()
+        GUI_STATS.Get()
+        ; Gosub MiscMenu_Show
+        ; GUI_LOG.Get()
+        ; GUI_ABOUT.Get()
         return
 
         ; gui log
@@ -77,6 +83,10 @@
         
         ; finish debugScript
         ; Msg("Info", "Auto-execute section", "End of Auto-execute section")
+    return
+    updateStats:
+        DROP_STATS.UpdateBasicStats()
+        DROP_STATS.UpdateAdvancedStats()
     return
     disableTooltip:
         tooltip
@@ -92,18 +102,23 @@
     #Include, Class Drop Log.ahk
     #Include, Class Drop Table.ahk
     #Include, Class Drop Categories.ahk
+    #Include, Class Gui About.ahk
     #Include, Class Gui Log.ahk
     #Include, Class Gui Progress.ahk
     #Include, Class Gui Settings.ahk
     #Include, Class Gui Start.ahk
+    #Include, Class Gui Stats.ahk
     #Include, Functions.ahk
 
 ; Libraries
     #Include, %A_ScriptDir%\Libraries
     #Include, _QPC.ahk
+    #Include, AddCommas.ahk
+    #Include, AutoXYWH.ahk
     #Include, Class Gui.ahk
     #Include, CommandFunctions.ahk
     #Include, DownloadToString.ahk
+    #Include, FormatSeconds.ahk
     #Include, Gdip_All.ahk
     #Include, GuiButtonIcon.ahk
     #Include, IsPicture.ahk

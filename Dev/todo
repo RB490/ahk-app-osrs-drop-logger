@@ -3,9 +3,6 @@ feature -> gui stats
         Enable the SetTimer in .Update()
         Enable auto open stats if setting is set at the end of Get()
 
-feature -> gui about
-    ^ also plug in to gui_log
-
 bug -> this.SetIcon(ico.GetHandle()) isn't working for the gui's
 
 todo -> different method for ignoring duplicate mobs. use the wiki_name to check if the mob was already added
