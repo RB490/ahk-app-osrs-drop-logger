@@ -68,6 +68,8 @@ Class ClassDatabaseItems {
         ; save to disk for future use
         FileDelete, % PATH_DATABASE_ITEMS
         FileAppend, % json.Dump(obj,,2), % PATH_DATABASE_ITEMS
+
+        P.Destroy()
         return obj
     }
 }

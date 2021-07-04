@@ -199,3 +199,12 @@ feature -> gui settings
 
 feature -> gui about
     ^ also plug in to gui_log
+
+feature -> gui stats
+    ^ also plug in to gui_log
+        Enable the SetTimer in .Update()
+        Enable auto open stats if setting is set at the end of Get()
+
+    ^ gui stats class currently directly references objects inside the drop log stats class eg: DROP_STATS.uniqueDrops.length()) fix this
+
+bug -> this.SetIcon(ico.GetHandle()) isn't working for the gui's

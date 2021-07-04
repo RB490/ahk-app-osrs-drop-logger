@@ -83,12 +83,12 @@ Class ClassDatabaseMobs {
             ; msgbox % json.dump(output,,2)
             ; sleep 1000
         }
-        P.Destroy()
 
         ; save to disk
         FileDelete, % PATH_DATABASE_MOBS
         FileAppend, % json.dump(output,,2), % PATH_DATABASE_MOBS
 
+        P.Destroy()
         return output
     }
 
@@ -110,37 +110,62 @@ Class ClassDatabaseMobs {
                 return mob
     }
 
-    GetDropTable(mobName) {
-        mobID := this.GetId(mobName)
-        file := DIR_DATABASE_MOBS "\" mobID ".json"
-        
-        ; check if we have this mobID stored on disk
-        input := FileRead(file)
-        obj := json.load(input)
-        If !IsObject(obj) or (obj.last_updated != this.obj[mobID].last_updated)
-            obj := this._UpdateMob(mobID)
+    GetWikiUrl(mob) {
+        obj := this._GetMobObj(mob)
+        return obj.wiki_url
+    }
 
-        ; can't continue if we weren't able to retrieve the mob
-        If !IsObject(obj)
-            Msg("Error", A_ThisFunc, "Was not able to retrieve mob info. ID: " mobID)
-
+    GetDropTable(mob) {
+        obj := this._GetMobObj(mob)
         return obj.drops
     }
 
+    ; input [mob] either a mob name or mobID
+    _GetMobObj(mob) {
+        ; get mob id
+        If !IsInteger(mob)
+            mob := this.GetId(mob)
+        id := mob
+
+        ; build file path
+        file := DIR_DATABASE_MOBS "\" id ".json"
+        
+        ; check if we have this mob stored on disk
+        input := FileRead(file)
+        obj := json.load(input)
+        If !IsObject(obj) or (obj.last_updated != this.obj[id].last_updated)
+            obj := this._UpdateMob(id)
+
+        ; can't continue if we weren't able to retrieve the mob
+        If !IsObject(obj)
+            Msg("Error", A_ThisFunc, "Was not able to retrieve mob info. ID: " id)
+
+        return obj
+    }
+
     _UpdateMob(mobID) {
+        ; verify input
+        If !IsInteger(mobID)
+            Msg("Error", A_ThisFunc, "Invalid mob id input " "'"  mobID "'")
+
+        ; inform user
         P.Get(A_ThisFunc, "Updating mob '" mobID "'")
 
+        ; set required variables
         file := DIR_DATABASE_MOBS "\" mobID ".json"
         url := this.monsterSpecificBaseUrl "/" mobID
 
+        ; download api result
         input := DownloadToString(url)
         obj := json.load(input)
 
+        ; verify output
         If !IsObject(obj) {
             Msg("Info", A_ThisFunc, "Was not able to update mod with id: " mobID)
             return
         }
 
+        ; save to disk
         FileDelete, % file
         FileAppend, % json.dump(obj,,2), % file
 

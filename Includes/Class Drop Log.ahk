@@ -18,6 +18,15 @@ class ClassDropLog {
         }
     }
 
+    ; usage = CLASS_INSTANCE.GetObj
+    GetObj[] {
+        get {
+            If !IsObject(this.obj)
+                return false
+            return this.obj
+        }
+    }
+
     ; output = {string} entire drop log formatted
     GetFormattedLog() {
 

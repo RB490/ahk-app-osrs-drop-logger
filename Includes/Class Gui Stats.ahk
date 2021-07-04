@@ -16,7 +16,7 @@ Class ClassGuiStats extends gui {
         this.margin(margin, margin)
         
         this.LvTotal := new this.ListView(this, "x" this.margin " y" this.margin " w165 r7 -hdr", "Stat|Value")
-        
+
         ControlGetPos , list1X, list1Y, list1W, list1H, , % "ahk_id " this.LvTotal.hwnd
         list2H := SCRIPT_SETTINGS.guiStatsH - list1H - (this.margin * 4) + 2
         this.LvAvg := new this.ListView(this, "w165 h" list2H " -hdr AltSubmit", "Stat|Value", this.AverageListViewHandler.Bind(this))
@@ -82,19 +82,22 @@ Class ClassGuiStats extends gui {
     RedrawAdvanced() {
         this.LvUnique.Redraw()
         this.LvUnique.Delete()
+        
+        obj := DROP_LOG_STATS.GetUniqueDrops
 
         ; create image list class
-        LvIl := new this.ImageList(DROP_STATS.uniqueDrops.length())
+        LvIl := new this.ImageList(obj.length())
         this.LvUnique.SetImageList(LvIl.ID)
-        loop % DROP_STATS.uniqueDrops.length() {
-            name := DROP_STATS.uniqueDrops[A_Index].name
-            id := RUNELITE_API.GetItemId(name)
-            LvIl.Add(DIR_ITEM_RUNELITE "\" id ".png") 
+        loop % obj.length() {
+            drop := obj[A_Index]
+            name := drop.name
+            id := drop.id
+            LvIl.Add(DIR_ITEM_IMAGES_ICONS "\" id ".png") 
         }
 
         ; load items
-        loop % DROP_STATS.uniqueDrops.length() {
-            d := DROP_STATS.uniqueDrops[A_Index]
+        loop % obj.length() {
+            d := obj[A_Index]
 
             dropRate := Round(d.dropRate, 2)
             commaValue := AddCommas(d.totalValue)

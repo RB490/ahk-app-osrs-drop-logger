@@ -42,6 +42,7 @@
     , ITEM_DB                   := new ClassDatabaseItems
     , MOB_DB                    := new ClassDatabaseMobs
     , DROP_LOG                  := new ClassDropLog
+    , DROP_LOG_STATS            := new ClassDropLogStats
     , DROP_TABLE                := new ClassDropTable
     , DROP_CATEGORIES           := new ClassDropCategories
     , GUI_START                 := new ClassGuiStart
@@ -69,11 +70,11 @@
 
 ; Subroutines
     debugScript:
-        GUI_STATS.Get()
+        ; GUI_STATS.Get()
         ; Gosub MiscMenu_Show
         ; GUI_LOG.Get()
         ; GUI_ABOUT.Get()
-        return
+
 
         ; gui log
         myDebugDropLogfile := A_ScriptDir "\Dev\myDebugDropLogfile.json"
@@ -81,12 +82,17 @@
         DROP_LOG.Get(myDebugDropLogfile)
         GUI_LOG.Get()
         
+        ; msgbox % json.dump(DROP_LOG_STATS.uniqueDrops,,2)
+        ; msgbox % json.dump(DROP_LOG_STATS.GetUniqueDrops,,2)
+
+
+        
         ; finish debugScript
         ; Msg("Info", "Auto-execute section", "End of Auto-execute section")
     return
     updateStats:
-        DROP_STATS.UpdateBasicStats()
-        DROP_STATS.UpdateAdvancedStats()
+        DROP_LOG_STATS.UpdateBasicStats()
+        DROP_LOG_STATS.UpdateAdvancedStats()
     return
     disableTooltip:
         tooltip
@@ -100,6 +106,7 @@
     #Include, Class Database Items.ahk
     #Include, Class Database Mobs.ahk
     #Include, Class Drop Log.ahk
+    #Include, Class Drop Log Stats.ahk
     #Include, Class Drop Table.ahk
     #Include, Class Drop Categories.ahk
     #Include, Class Gui About.ahk
