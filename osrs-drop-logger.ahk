@@ -91,8 +91,10 @@
         ; Msg("Info", "Auto-execute section", "End of Auto-execute section")
     return
     updateStats:
-        DROP_LOG_STATS.UpdateBasicStats()
-        DROP_LOG_STATS.UpdateAdvancedStats()
+        DROP_LOG_STATS.Update()
+
+        ; DROP_LOG_STATS.UpdateBasicStats()
+        ; DROP_LOG_STATS.UpdateAdvancedStats()
     return
     disableTooltip:
         tooltip

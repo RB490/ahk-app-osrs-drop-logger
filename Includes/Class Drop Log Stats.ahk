@@ -8,8 +8,22 @@ Class ClassDropLogStats {
             return this.UniqueDrops
         }
     }
+    ; usage = CLASS_INSTANCE.GetTotalAndAvgStats
+    GetTotalAndAvgStats[] {
+        get {
+            If !IsObject(this.stats)
+                return true
+            return this.stats
+        }
+    }
 
-    UpdateBasicStats() {
+    Update() {
+        this._UpdateBasicStats()
+        this._UpdateAdvancedStats()
+        GUI_STATS.Update()
+    }
+
+    _UpdateBasicStats() {
         hwnd := this.hwnd
 
         this.obj := ObjFullyClone(DROP_LOG.GetObj)
@@ -50,17 +64,7 @@ Class ClassDropLogStats {
         stats.avgDropsPerDeath := avgDropsPerDeath := totalDrops / totalDeaths
         stats.avgProfitPerDeath := avgProfitPerDeath := totalDropsValue / totalDeaths
 
-        GUI_STATS.RedrawBasic(stats)
-    }
-
-    UpdateAdvancedStats() {
-        this.uniqueDrops := this._getUniqueDrops()
-        this._setUniqueDropsTotalValue()
-        this._setUniqueDropsDropRate()
-        this._setUniqueDropsDryStreak()
-        this._setUniqueDropsDryStreakRecords()
-
-        GUI_STATS.RedrawAdvanced()
+        this.stats := stats
     }
 
     _getTotalTrips() {
@@ -153,12 +157,23 @@ Class ClassDropLogStats {
         return output
     }
 
+
+    ; ---------------------------------------------------------------------------------------------------------------------------sy
+
+    _UpdateAdvancedStats() {
+        this.uniqueDrops := this._getUniqueDrops()
+        this._setUniqueDropsTotalValue()
+        this._setUniqueDropsDropRate()
+        this._setUniqueDropsDryStreak()
+        this._setUniqueDropsDryStreakRecords()
+    }
+
     _getUniqueDrops() {
-        inputObj := ObjFullyClone(this.obj)
+        obj := ObjFullyClone(this.obj)
         output := {}
 
-        loop % inputObj.length() {
-            kills := inputObj[A_Index].kills
+        loop % obj.length() {
+            kills := obj[A_Index].kills
             loop % kills.length() {
                 drops := kills[A_Index].drops
 
@@ -166,9 +181,10 @@ Class ClassDropLogStats {
                     drop := drops.pop() ; take & remove drop from source obj
                     
                     occurences := 0
-                    occurences += this._removeUniqueDrops(inputObj, drop.name, drop.quantity)
+                    occurences += this._countAndRemoveUniqueDropsFrom(obj, drop.name, drop.quantity)
                     occurences += 1 ; 'seed'/starting item
 
+                    ; save unique drop and its information to output
                     output.push({name: drop.name, id: drop.id, quantity: drop.quantity, occurences: occurences})
                 }
             }
@@ -177,7 +193,7 @@ Class ClassDropLogStats {
         return output
     }
 
-    _removeUniqueDrops(obj, dropName, dropQuantity) {
+    _countAndRemoveUniqueDropsFrom(obj, dropName, dropQuantity) {
         loop % obj.length() {
             kills := obj[A_Index].kills
 
@@ -192,7 +208,7 @@ Class ClassDropLogStats {
                         Continue
                     }
 
-                    drops.InsertAt(1, drop) ; insertat to prevent same item being popped again
+                    drops.InsertAt(1, drop) ; InsertAt the start of the drop log to prevent same item being popped again during this method
                 }
             }
         }

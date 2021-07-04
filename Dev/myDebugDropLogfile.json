@@ -485,6 +485,16 @@
           }
         ],
         "killEnd": "20210704121358258"
+      },
+      {
+        "drops": [
+          {
+            "id": 219,
+            "name": "Grimy torstol",
+            "quantity": "1"
+          }
+        ],
+        "killEnd": "20210704143453758"
       }
     ],
     "tripEnd": "",

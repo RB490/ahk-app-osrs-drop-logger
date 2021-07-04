@@ -29,8 +29,14 @@ Class ClassGuiStats extends gui {
         this.CheckPos()
     }
 
-    ; stats = {object} from stats class
-    RedrawBasic(stats) {
+    Update() {
+        this.UpdateBasic()
+        this.UpdateAdvanced()
+    }
+
+    UpdateBasic() {
+        stats := DROP_LOG_STATS.GetTotalAndAvgStats
+
         ; LV_Add(, "----------Total----------", "")
         this.LvTotal.Delete()
         this.LvTotal.Add(, "Trips", stats.totalTrips)
@@ -79,7 +85,7 @@ Class ClassGuiStats extends gui {
         this.LvAvg.Modify(this.averageListViewFocusedRow, "Vis")
     }
 
-    RedrawAdvanced() {
+    UpdateAdvanced() {
         this.LvUnique.Redraw()
         this.LvUnique.Delete()
         
