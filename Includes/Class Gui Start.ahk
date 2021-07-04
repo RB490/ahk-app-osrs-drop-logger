@@ -95,7 +95,7 @@ class ClassGuiStart extends gui {
         SCRIPT_SETTINGS.previousLogFile := file ; save file location
 
         ; attempt to load the selected drop log file
-        If !DROP_LOG.Get(file)
+        If !DROP_LOG.LoadFile(file)
             return
 
         ; verify we have a drop table for selected mob

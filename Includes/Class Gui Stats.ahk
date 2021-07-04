@@ -23,87 +23,79 @@ Class ClassGuiStats extends gui {
 
         list3W := SCRIPT_SETTINGS.guiStatsW - list1W - (this.margin * 3)
         list3H := SCRIPT_SETTINGS.guiStatsH - (this.margin * 2) - 2
-        this.LvUnique := new this.ListView(this, "x+" margin " y" margin " w" list3W " h" list3H " r31", "Drop|#|Rate|Value|Dry|<|>|HiddenValueColumnForSorting", this.AdvancedListViewHandler.Bind(this))
+        this.LvUnique := new this.ListView(this, "x+" margin " y" margin " w" list3W " h" list3H " r31", "Drop|#|Rate|Value|Dry|<|>|HiddenValueColumnForSorting", this.UniquesListViewHandler.Bind(this))
 
         this.ShowGui()
         this.CheckPos()
     }
 
-    Update() {
-        this.UpdateBasic()
-        this.UpdateAdvanced()
-    }
-
-    UpdateBasic() {
-        stats := DROP_LOG_STATS.GetTotalAndAvgStats
-
+    ; obj = drop log stats received by drop_log.stats.get()
+    Set(obj) {
         ; LV_Add(, "----------Total----------", "")
         this.LvTotal.Delete()
-        this.LvTotal.Add(, "Trips", stats.totalTrips)
-        this.LvTotal.Add(, "Kills", stats.totalKills)
-        this.LvTotal.Add(, "Drops", stats.totalDrops)
-        this.LvTotal.Add(, "Deaths", stats.totalDeaths)
-        this.LvTotal.Add(, "Time", FormatSeconds(stats.totalTime))
-        this.LvTotal.Add(, "Dead", FormatSeconds(stats.totalDeadTime))
-        this.LvTotal.Add(, "Profit", AddCommas(stats.totalDropsValue))
+        this.LvTotal.Add(, "Trips", obj.totalTrips)
+        this.LvTotal.Add(, "Kills", obj.totalKills)
+        this.LvTotal.Add(, "Drops", obj.totalDrops)
+        this.LvTotal.Add(, "Deaths", obj.totalDeaths)
+        this.LvTotal.Add(, "Time", FormatSeconds(obj.totalTime))
+        this.LvTotal.Add(, "Dead", FormatSeconds(obj.totalDeadTime))
+        this.LvTotal.Add(, "Profit", AddCommas(obj.totalValue))
         this.LvTotal.ModifyCol(1, "AutoHdr")
         this.LvTotal.ModifyCol(2, "AutoHdr")
 
         ; LV_Add(, "----------Average----------", "")
         this.LvAvg.Delete()
         ; average profit
-        this.LvAvg.Add(, "Profit / Trip", AddCommas(Round(stats.avgProfitPerTrip)))
-        this.LvAvg.Add(, "Profit / Kill", AddCommas(Round(stats.avgProfitPerKill)))
-        this.LvAvg.Add(, "Profit / Drop", AddCommas(Round(stats.avgProfitPerDrop)))
-        this.LvAvg.Add(, "Profit / Hour", AddCommas(Round(stats.avgProfitPerHour)))
+        this.LvAvg.Add(, "Profit / Trip", AddCommas(Round(obj.avgProfitPerTrip)))
+        this.LvAvg.Add(, "Profit / Kill", AddCommas(Round(obj.avgProfitPerKill)))
+        this.LvAvg.Add(, "Profit / Drop", AddCommas(Round(obj.avgProfitPerDrop)))
+        this.LvAvg.Add(, "Profit / Hour", AddCommas(Round(obj.avgProfitPerHour)))
 
         ; average trip
         this.LvAvg.Add(, "", "")
-        this.LvAvg.Add(, "Kills / Trip", Round(stats.avgKillsPerTrip, 2))
-        this.LvAvg.Add(, "Drops / Trip", Round(stats.avgDropsPerTrip, 2))
+        this.LvAvg.Add(, "Kills / Trip", Round(obj.avgKillsPerTrip, 2))
+        this.LvAvg.Add(, "Drops / Trip", Round(obj.avgDropsPerTrip, 2))
 
         ; average hourly
         this.LvAvg.Add(, "", "")
-        this.LvAvg.Add(, "Trips / Hour", Round(stats.avgTripsPerHour, 2))
-        this.LvAvg.Add(, "Kills / Hour", Round(stats.avgKillsPerHour, 2))
-        this.LvAvg.Add(, "Drops / Hour", Round(stats.avgDropsPerHour))
+        this.LvAvg.Add(, "Trips / Hour", Round(obj.avgTripsPerHour, 2))
+        this.LvAvg.Add(, "Kills / Hour", Round(obj.avgKillsPerHour, 2))
+        this.LvAvg.Add(, "Drops / Hour", Round(obj.avgDropsPerHour))
 
         ; average time
         this.LvAvg.Add(, "", "")
-        this.LvAvg.Add(, "Time / Trip", FormatSeconds(stats.avgTimePerTrip))
-        this.LvAvg.Add(, "Time / Kill", FormatSeconds(stats.avgTimePerKill))
-        this.LvAvg.Add(, "Time / Drop", FormatSeconds(stats.avgTimePerDrop))
+        this.LvAvg.Add(, "Time / Trip", FormatSeconds(obj.avgTimePerTrip))
+        this.LvAvg.Add(, "Time / Kill", FormatSeconds(obj.avgTimePerKill))
+        this.LvAvg.Add(, "Time / Drop", FormatSeconds(obj.avgTimePerDrop))
 
         ; average deaths
         this.LvAvg.Add(, "", "")
-        this.LvAvg.Add(, "Trips / Death", Round(stats.avgTripsPerDeath, 2))
-        this.LvAvg.Add(, "Kills / Death", Round(stats.avgKillsPerDeath, 2))
-        this.LvAvg.Add(, "Drops / Death", Round(stats.avgDropsPerDeath))
-        this.LvAvg.Add(, "Profit / Death", AddCommas(Round(stats.avgProfitPerDeath)))
+        this.LvAvg.Add(, "Trips / Death", Round(obj.avgTripsPerDeath, 2))
+        this.LvAvg.Add(, "Kills / Death", Round(obj.avgKillsPerDeath, 2))
+        this.LvAvg.Add(, "Drops / Death", Round(obj.avgDropsPerDeath))
+        this.LvAvg.Add(, "Profit / Death", AddCommas(Round(obj.avgProfitPerDeath)))
         this.LvAvg.ModifyCol(1, "AutoHdr")
         this.LvAvg.ModifyCol(2, "AutoHdr")
         this.LvAvg.Modify(this.averageListViewFocusedRow, "Vis")
-    }
 
-    UpdateAdvanced() {
+        ; LV_Add(, "----------Unique----------", "")
+
         this.LvUnique.Redraw()
         this.LvUnique.Delete()
-        
-        obj := DROP_LOG_STATS.GetUniqueDrops
 
         ; create image list class
-        LvIl := new this.ImageList(obj.length())
+        LvIl := new this.ImageList(obj.uniqueDrops.length())
         this.LvUnique.SetImageList(LvIl.ID)
-        loop % obj.length() {
-            drop := obj[A_Index]
+        loop % obj.uniqueDrops.length() {
+            drop := obj.uniqueDrops[A_Index]
             name := drop.name
             id := drop.id
             LvIl.Add(DIR_ITEM_IMAGES_ICONS "\" id ".png") 
         }
 
         ; load items
-        loop % obj.length() {
-            d := obj[A_Index]
+        loop % obj.uniqueDrops.length() {
+            d := obj.uniqueDrops[A_Index]
 
             dropRate := Round(d.dropRate, 2)
             commaValue := AddCommas(d.totalValue)
@@ -113,27 +105,27 @@ Class ClassGuiStats extends gui {
         ; size/scroll
         loop 7
             this.LvUnique.ModifyCol(A_Index, "AutoHdr")
-        this.LvUnique.Modify(this.advancedListViewFocusedRow, "Vis")
+        this.LvUnique.Modify(this.UniquesListViewFocusedRow, "Vis")
 
         this.LvUnique.Redraw()
     }
 
-    AdvancedListViewHandler() {
+    UniquesListViewHandler() {
         ; selected empty space
-        If (this.advancedListViewFocusedRow = 0)
-            this.advancedListViewFocusedRow := ""
+        If (this.UniquesListViewFocusedRow = 0)
+            this.UniquesListViewFocusedRow := ""
 
         If (A_GuiEvent = "DoubleClick")
             return        
         If (A_GuiEvent = "Normal")
-            this.advancedListViewFocusedRow := this.LvUnique.GetNext(, "Focused")
+            this.UniquesListViewFocusedRow := this.LvUnique.GetNext(, "Focused")
 
         ; selected column 4 (total value column) - sort hidden value column
         static t
         If !(A_EventInfo  = 4)
             return
         t := !t
-        this.advancedListViewFocusedRow := ""
+        this.UniquesListViewFocusedRow := ""
 
         If t
             this.LvUnique.ModifyCol(8, "SortDesc") ; HiddenValueColumnForSorting

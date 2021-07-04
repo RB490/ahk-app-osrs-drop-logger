@@ -77,24 +77,16 @@
 
 
         ; gui log
-        myDebugDropLogfile := A_ScriptDir "\Dev\myDebugDropLogfile.json"
-        SCRIPT_SETTINGS.previousLogFile := myDebugDropLogfile
-        DROP_LOG.Get(myDebugDropLogfile)
-        GUI_LOG.Get()
-        
-        ; msgbox % json.dump(DROP_LOG_STATS.uniqueDrops,,2)
-        ; msgbox % json.dump(DROP_LOG_STATS.GetUniqueDrops,,2)
+        ; myDebugDropLogfile := A_ScriptDir "\Dev\myDebugDropLogfile.json"
+        ; SCRIPT_SETTINGS.previousLogFile := myDebugDropLogfile
+        ; DROP_LOG.LoadFile(myDebugDropLogfile)
+        ; GUI_LOG.Get()
 
-
-        
         ; finish debugScript
-        ; Msg("Info", "Auto-execute section", "End of Auto-execute section")
+        Msg("Info", "Auto-execute section", "End of Auto-execute section")
     return
     updateStats:
-        DROP_LOG_STATS.Update()
-
-        ; DROP_LOG_STATS.UpdateBasicStats()
-        ; DROP_LOG_STATS.UpdateAdvancedStats()
+        GUI_STATS.Set(DROP_LOG.Stats.Get())
     return
     disableTooltip:
         tooltip

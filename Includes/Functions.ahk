@@ -19,7 +19,7 @@ ON_WM_LBUTTONDOWN(wParam, lParam, msg, hWnd) {
 
     ; show tooltips
     If !DROP_LOG.isLoaded {
-        tooltip No drop log active!!!!!!!! :O how si possibel`n`n`n... DROP_LOG.Get() was not used
+        tooltip No drop log active!!!!!!!! :O how si possibel`n`n`n... DROP_LOG.LoadFile() was not used
         SetTimer, disableTooltip, -400
         return
     }
