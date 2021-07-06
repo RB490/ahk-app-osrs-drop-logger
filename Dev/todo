@@ -1,10 +1,12 @@
-bug -> gui stats .Redraw() doesn't seem to actually stop redrawing so every update some listviews start glitching out a bit
-
 todo -> different method for ignoring duplicate mobs. use the wiki_name to check if the mob was already added
     this is because for example vorkath has two different versions with different drop tables
         "wiki_name": "Vorkath (Dragon Slayer II)" quest version
         "wiki_name": "Vorkath" post-quest version
     ^ add this explanation to the code
+
+bug -> Rune dragon -> added a kill with a lot of drops. this glitched out the unique stats, showing a bunch of drops with just 'x'
+    1 x Grimy torstol, 1 x Grimy snapdragon, 1 x Grimy ranarr weed, 1 x Grimy ranarr weed, 1 x Grimy avantoe, 1 x Grimy torstol, 1 x Draconic visage, 1 x Draconic visage, 1 x Draconic visage, 1 x Draconic visage, 1 x Draconic visage
+    Saved log file to myDebugDropLogfileWithRuneDragonBug.json in /dev/
 
 note/bug -> Abyssal Sire has a 2 rune bars drop in the RDT and a 5 rune bar normal drop. the osrsbox drop table only has
     one rune bar entry with '5' as quantity..

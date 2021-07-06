@@ -44,6 +44,7 @@ Class ClassGuiStats extends gui {
         this.LvTotal.ModifyCol(2, "AutoHdr")
 
         ; LV_Add(, "----------Average----------", "")
+        this.LvAvg.Redraw(false)
         this.LvAvg.Delete()
         ; average profit
         this.LvAvg.Add(, "Profit / Trip", AddCommas(Round(obj.avgProfitPerTrip)))
@@ -78,9 +79,10 @@ Class ClassGuiStats extends gui {
         this.LvAvg.ModifyCol(2, "AutoHdr")
         this.LvAvg.Modify(this.averageListViewFocusedRow, "Vis")
 
-        ; LV_Add(, "----------Unique----------", "")
+        this.LvAvg.Redraw(true)
 
-        this.LvUnique.Redraw()
+        ; LV_Add(, "----------Unique----------", "")
+        this.LvUnique.Redraw(false)
         this.LvUnique.Delete()
 
         ; create image list class
@@ -107,7 +109,7 @@ Class ClassGuiStats extends gui {
             this.LvUnique.ModifyCol(A_Index, "AutoHdr")
         this.LvUnique.Modify(this.UniquesListViewFocusedRow, "Vis")
 
-        this.LvUnique.Redraw()
+        this.LvUnique.Redraw(true)
     }
 
     UniquesListViewHandler() {

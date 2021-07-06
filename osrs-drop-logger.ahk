@@ -77,10 +77,10 @@
 
 
         ; gui log
-        ; myDebugDropLogfile := A_ScriptDir "\Dev\myDebugDropLogfile.json"
-        ; SCRIPT_SETTINGS.previousLogFile := myDebugDropLogfile
-        ; DROP_LOG.LoadFile(myDebugDropLogfile)
-        ; GUI_LOG.Get()
+        myDebugDropLogfile := A_ScriptDir "\Dev\myDebugDropLogfile.json"
+        SCRIPT_SETTINGS.previousLogFile := myDebugDropLogfile
+        DROP_LOG.LoadFile(myDebugDropLogfile)
+        GUI_LOG.Get()
         ; GUI_STATS.Get()
 
         ; finish debugScript
