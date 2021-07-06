@@ -81,9 +81,10 @@
         ; SCRIPT_SETTINGS.previousLogFile := myDebugDropLogfile
         ; DROP_LOG.LoadFile(myDebugDropLogfile)
         ; GUI_LOG.Get()
+        ; GUI_STATS.Get()
 
         ; finish debugScript
-        Msg("Info", "Auto-execute section", "End of Auto-execute section")
+        ; Msg("Info", "Auto-execute section", "End of Auto-execute section")
     return
     updateStats:
         GUI_STATS.Set(DROP_LOG.Stats.Get())

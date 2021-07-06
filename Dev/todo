@@ -1,13 +1,4 @@
-structure -> stats is it necessary to have two separate objects for 'advanced' and 'basic' stats? just use one object retrieved with a GetStats[] thing in the stats class
-structure -> considering merging drop log class and drop log stats
-    ^ having now made the drop log stats class a sub class of drop log, also restructure the drop log stats class
-    and then compare the two to see which one is neater. definetly worth noting is that using sub classes
-    ends up in a lot of indents which doesnt improve code readability. though this could partly
-    be resolved by saving them in a separate file and then using #Include. This, again, doesnt help readability
-
-
 bug -> gui stats .Redraw() doesn't seem to actually stop redrawing so every update some listviews start glitching out a bit
-
 
 todo -> different method for ignoring duplicate mobs. use the wiki_name to check if the mob was already added
     this is because for example vorkath has two different versions with different drop tables
