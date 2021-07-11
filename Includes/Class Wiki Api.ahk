@@ -33,6 +33,8 @@
             'titles' parameter: Maximum number of values is 50 (500 for clients allowed higher limits). Source: https://www.mediawiki.org/wiki/API:Query
 
     Info
+        Reason to use the 'legacy' wiki api class is because doing multiple api calls to get a single image name/url is really inefficient 
+
         Special characters
             Convert + to %2B
 

@@ -233,3 +233,19 @@ images
         cant download iowerth camp teleport
     small wiki icons
         get from osrsbox?
+
+note/bug/wontfix -> Abyssal Sire has a 2 rune bars drop in the RDT and a 5 rune bar normal drop. the osrsbox drop table only has
+    one rune bar entry with '5' as quantity..
+
+wiki api -> new wiki api replacing the old one
+    structure -> put all wiki api calls and handling of the api output in this class,
+        so the drop category class or atleast the 'update' method will have to go in here
+
+    old
+        todo -> rename ClassApiWiki to something like ClassWiki or ClassWikiScraper because it doesn't actually use the wiki api which is conflicting. it's my wiki 'api'
+        feature -> (maybe a rewrite depending on how usefull this can be) Idea use the actual wiki api to improve my wiki api class
+        feature -> Add the droptable category class wiki api calls inside the wiki class
+        feature -> add more documentation. class/method and their parameter(s) descriptions 
+            eg. its not clear what the input parameter(s) are for GetMobImage
+        bug ->  getmob image can't retrieve image for spinolyp
+            the wiki page infobox for this mob has 'suspicious water' preselected instead of the actual spinolyp which is probably messing the script up
