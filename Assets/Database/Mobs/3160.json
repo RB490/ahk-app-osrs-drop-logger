@@ -1,0 +1,300 @@
+{
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "0ccef59dc4774917fada9cf04336ce64ecbd0026",
+  "_id": "60cd28b0cfb7392d0090737f",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60cd28b0cfb7392d0090737f",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 0,
+  "attack_bonus": 0,
+  "attack_level": 1,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "ranged"
+  ],
+  "attributes": [],
+  "category": [
+    "spiritual creature"
+  ],
+  "combat_level": 118,
+  "defence_crush": 0,
+  "defence_level": 80,
+  "defence_magic": 0,
+  "defence_ranged": 0,
+  "defence_slash": 0,
+  "defence_stab": 0,
+  "drops": [
+    {
+      "id": 843,
+      "members": 0,
+      "name": "Oak shortbow",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0390625",
+      "rolls": 1
+    },
+    {
+      "id": 559,
+      "members": 0,
+      "name": "Body rune",
+      "noted": 0,
+      "quantity": "12",
+      "rarity": "0.03125",
+      "rolls": 1
+    },
+    {
+      "id": 892,
+      "members": 1,
+      "name": "Rune arrow",
+      "noted": 0,
+      "quantity": "5",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 890,
+      "members": 0,
+      "name": "Adamant arrow",
+      "noted": 0,
+      "quantity": "12",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 5626,
+      "members": 1,
+      "name": "Adamant arrow(p++)",
+      "noted": 0,
+      "quantity": "3",
+      "rarity": "0.0234375",
+      "rolls": 1
+    },
+    {
+      "id": 2538,
+      "members": 1,
+      "name": "Adamant fire arrow",
+      "noted": 0,
+      "quantity": "4",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 53,
+      "members": 1,
+      "name": "Headless arrow",
+      "noted": 0,
+      "quantity": "12",
+      "rarity": "0.078125",
+      "rolls": 1
+    },
+    {
+      "id": 40,
+      "members": 1,
+      "name": "Iron arrowtips",
+      "noted": 0,
+      "quantity": "5",
+      "rarity": "0.0859375",
+      "rolls": 1
+    },
+    {
+      "id": 43,
+      "members": 1,
+      "name": "Adamant arrowtips",
+      "noted": 0,
+      "quantity": "13",
+      "rarity": "0.0703125",
+      "rolls": 1
+    },
+    {
+      "id": 1777,
+      "members": 1,
+      "name": "Bow string",
+      "noted": 0,
+      "quantity": "7",
+      "rarity": "0.140625",
+      "rolls": 1
+    },
+    {
+      "id": 687,
+      "members": 1,
+      "name": "Broken arrow",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 9179,
+      "members": 1,
+      "name": "Steel crossbow",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0234375",
+      "rolls": 1
+    },
+    {
+      "id": 56,
+      "members": 1,
+      "name": "Oak longbow (u)",
+      "noted": 0,
+      "quantity": "12",
+      "rarity": "0.0703125",
+      "rolls": 1
+    },
+    {
+      "id": 11941,
+      "members": 1,
+      "name": "Looting bag",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.3333333333333333",
+      "rolls": 1
+    },
+    {
+      "id": 11942,
+      "members": 1,
+      "name": "Ecumenical key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.016666666666666666",
+      "rolls": 1
+    },
+    {
+      "id": 2722,
+      "members": 1,
+      "name": "Clue scroll (hard)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 23490,
+      "members": 1,
+      "name": "Larran's key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0136986301369863",
+      "rolls": 1
+    },
+    {
+      "id": 21257,
+      "members": 1,
+      "name": "Slayer's enchantment",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.004016064257028112",
+      "rolls": 1
+    },
+    {
+      "id": 851,
+      "members": 0,
+      "name": "Maple longbow",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.03125",
+      "rolls": 1
+    },
+    {
+      "id": 861,
+      "members": 1,
+      "name": "Magic shortbow",
+      "noted": 0,
+      "quantity": "1-2",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 5619,
+      "members": 1,
+      "name": "Mithril arrow(p+)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0859375",
+      "rolls": 1
+    },
+    {
+      "id": 886,
+      "members": 0,
+      "name": "Steel arrow",
+      "noted": 0,
+      "quantity": "12",
+      "rarity": "0.03125",
+      "rolls": 1
+    },
+    {
+      "id": 884,
+      "members": 0,
+      "name": "Iron arrow",
+      "noted": 0,
+      "quantity": "12",
+      "rarity": "0.1171875",
+      "rolls": 1
+    },
+    {
+      "id": 882,
+      "members": 0,
+      "name": "Bronze arrow",
+      "noted": 0,
+      "quantity": "16",
+      "rarity": "0.1015625",
+      "rolls": 1
+    },
+    {
+      "id": 5616,
+      "members": 1,
+      "name": "Bronze arrow(p+)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "Defender of Zamorak.",
+  "hitpoints": 120,
+  "id": "3160",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 0,
+  "last_updated": "2021-01-11",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 16,
+  "members": 1,
+  "name": "Spiritual ranger",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 140,
+  "release_date": "2013-10-17",
+  "size": 1,
+  "slayer_level": 63,
+  "slayer_masters": [
+    "krystilia",
+    "vannaka",
+    "chaeldar",
+    "nieve",
+    "duradel"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "106.0",
+  "strength_bonus": 0,
+  "strength_level": 1,
+  "venomous": 0,
+  "wiki_name": "Spiritual ranger (Zamorak)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Spiritual_ranger#Zamorak"
+}

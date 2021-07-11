@@ -1,0 +1,127 @@
+{
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "3c974ef18c2046ee93a7ca28adc33141d9f72fae",
+  "_id": "60cd28b0cfb7392d00907449",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60cd28b0cfb7392d00907449",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 0,
+  "attack_bonus": 0,
+  "attack_level": 10,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "slash"
+  ],
+  "attributes": [],
+  "category": [
+    "bear"
+  ],
+  "combat_level": 15,
+  "defence_crush": 0,
+  "defence_level": 10,
+  "defence_magic": 0,
+  "defence_ranged": 0,
+  "defence_slash": 0,
+  "defence_stab": 0,
+  "drops": [
+    {
+      "id": 526,
+      "members": 0,
+      "name": "Bones",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 948,
+      "members": 0,
+      "name": "Bear fur",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 2136,
+      "members": 0,
+      "name": "Raw bear meat",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 7815,
+      "members": 1,
+      "name": "Bear ribs",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 13462,
+      "members": 1,
+      "name": "Ensouled bear head",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.04",
+      "rolls": 1
+    },
+    {
+      "id": 23182,
+      "members": 0,
+      "name": "Clue scroll (beginner)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.011111111111111112",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "Cute. But deadly.",
+  "hitpoints": 20,
+  "id": "3909",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2020-12-25",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 2,
+  "members": 1,
+  "name": "Bear Cub",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2004-11-02",
+  "size": 1,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "turael",
+    "spria",
+    "mazchna"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "20.0",
+  "strength_bonus": 0,
+  "strength_level": 15,
+  "venomous": 0,
+  "wiki_name": "Bear Cub (2)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Bear_Cub#2"
+}

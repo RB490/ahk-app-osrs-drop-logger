@@ -1,0 +1,108 @@
+{
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "976cd0029b8628e9d2f17e2c44149d0924b9132f",
+  "_id": "60cd28b1cfb7392d009076fb",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60cd28b1cfb7392d009076fb",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 0,
+  "attack_bonus": -15,
+  "attack_level": 1,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "crush"
+  ],
+  "attributes": [],
+  "category": [
+    "cow"
+  ],
+  "combat_level": 2,
+  "defence_crush": -21,
+  "defence_level": 1,
+  "defence_magic": -21,
+  "defence_ranged": -21,
+  "defence_slash": -21,
+  "defence_stab": -21,
+  "drops": [
+    {
+      "id": 1739,
+      "members": 0,
+      "name": "Cowhide",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 2132,
+      "members": 0,
+      "name": "Raw beef",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 526,
+      "members": 0,
+      "name": "Bones",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 23182,
+      "members": 0,
+      "name": "Clue scroll (beginner)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "How did this get in here?",
+  "hitpoints": 8,
+  "id": "6401",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-02-24",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 1,
+  "members": 1,
+  "name": "Cow",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2013-09-05",
+  "size": 2,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "turael",
+    "spria"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "8.0",
+  "strength_bonus": -15,
+  "strength_level": 1,
+  "venomous": 0,
+  "wiki_name": "Cow (Nightmare Zone) (Normal)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Cow_(Nightmare_Zone)#Normal"
+}

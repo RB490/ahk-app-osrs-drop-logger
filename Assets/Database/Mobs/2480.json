@@ -1,0 +1,128 @@
+{
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "67e557d240f40a12997e225e84956de05c89e25b",
+  "_id": "60cd28b0cfb7392d00907278",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60cd28b0cfb7392d00907278",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 0,
+  "attack_level": 31,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "stab"
+  ],
+  "attributes": [],
+  "category": [
+    "scorpion"
+  ],
+  "combat_level": 37,
+  "defence_crush": 15,
+  "defence_level": 31,
+  "defence_magic": 30,
+  "defence_ranged": 35,
+  "defence_slash": 15,
+  "defence_stab": 35,
+  "drops": [
+    {
+      "id": 4569,
+      "members": 1,
+      "name": "Book page 1",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 11941,
+      "members": 1,
+      "name": "Looting bag",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.1",
+      "rolls": 1
+    },
+    {
+      "id": 13459,
+      "members": 1,
+      "name": "Ensouled scorpion head",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.04",
+      "rolls": 1
+    },
+    {
+      "id": 23182,
+      "members": 0,
+      "name": "Clue scroll (beginner)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.01",
+      "rolls": 1
+    },
+    {
+      "id": 23490,
+      "members": 1,
+      "name": "Larran's key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0007112375533428165",
+      "rolls": 1
+    },
+    {
+      "id": 21257,
+      "members": 1,
+      "name": "Slayer's enchantment",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.003257328990228013",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "An extremely vicious scorpion.",
+  "hitpoints": 37,
+  "id": "2480",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2020-12-25",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 4,
+  "members": 0,
+  "name": "Scorpion",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2006-07-04",
+  "size": 2,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "turael",
+    "spria",
+    "krystilia",
+    "mazchna"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "37.0",
+  "strength_bonus": 0,
+  "strength_level": 32,
+  "venomous": 0,
+  "wiki_name": "Scorpion (Level 37)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Scorpion#Level_37"
+}

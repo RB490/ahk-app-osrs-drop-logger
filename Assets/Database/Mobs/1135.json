@@ -1,0 +1,76 @@
+{
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "f35c824ea062887861d4301b68bc4bd1e51617e2",
+  "_id": "60cd28afcfb7392d009070f4",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60cd28afcfb7392d009070f4",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 0,
+  "attack_level": 320,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 3,
+  "attack_type": [
+    "crush"
+  ],
+  "attributes": [],
+  "category": [],
+  "combat_level": 272,
+  "defence_crush": 100,
+  "defence_level": 160,
+  "defence_magic": 80,
+  "defence_ranged": 120,
+  "defence_slash": 100,
+  "defence_stab": 100,
+  "drops": [
+    {
+      "id": 4673,
+      "members": 1,
+      "name": "Shadow diamond",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "The warrior of darkness.",
+  "hitpoints": 255,
+  "id": "1135",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2020-12-25",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 54,
+  "members": 1,
+  "name": "Damis (hard)",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2013-09-05",
+  "size": 1,
+  "slayer_level": "",
+  "slayer_masters": [],
+  "slayer_monster": 0,
+  "slayer_xp": "",
+  "strength_bonus": 100,
+  "strength_level": 200,
+  "venomous": 0,
+  "wiki_name": "Damis (Second form (hard))",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Damis#Second_form_(hard)"
+}

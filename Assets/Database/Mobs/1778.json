@@ -1,0 +1,85 @@
+{
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "78ef63e03b5af765490764f13586c29f8033e74d",
+  "_id": "60cd28afcfb7392d009071b5",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60cd28afcfb7392d009071b5",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 40,
+  "attack_level": 100,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "crush"
+  ],
+  "attributes": [],
+  "category": [],
+  "combat_level": 108,
+  "defence_crush": 20,
+  "defence_level": 80,
+  "defence_magic": 0,
+  "defence_ranged": 0,
+  "defence_slash": 20,
+  "defence_stab": 20,
+  "drops": [
+    {
+      "id": 526,
+      "members": 0,
+      "name": "Bones",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 11941,
+      "members": 1,
+      "name": "Looting bag",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.3333333333333333",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "He's playing both sides!",
+  "hitpoints": 120,
+  "id": "1778",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2020-12-25",
+  "magic_bonus": 0,
+  "magic_level": 80,
+  "max_hit": 14,
+  "members": 1,
+  "name": "Double agent",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2006-12-05",
+  "size": 1,
+  "slayer_level": "",
+  "slayer_masters": [],
+  "slayer_monster": 0,
+  "slayer_xp": "",
+  "strength_bonus": 40,
+  "strength_level": 80,
+  "venomous": 0,
+  "wiki_name": "Double agent (Level 108)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Double_agent#Level_108"
+}

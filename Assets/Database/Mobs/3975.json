@@ -1,0 +1,84 @@
+{
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "103c1f84d0c8ad8adb20645f547634f81abce758",
+  "_id": "60cd28b0cfb7392d00907463",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60cd28b0cfb7392d00907463",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 0,
+  "attack_level": 13,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "crush"
+  ],
+  "attributes": [
+    "undead"
+  ],
+  "category": [
+    "ghost"
+  ],
+  "combat_level": 19,
+  "defence_crush": 5,
+  "defence_level": 18,
+  "defence_magic": -5,
+  "defence_ranged": 5,
+  "defence_slash": 5,
+  "defence_stab": 5,
+  "drops": [
+    {
+      "id": 23182,
+      "members": 0,
+      "name": "Clue scroll (beginner)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.011111111111111112",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "Eeek! A ghost!",
+  "hitpoints": 25,
+  "id": "3975",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-05-30",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 2,
+  "members": 0,
+  "name": "Ghost",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2001-09-23",
+  "size": 1,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "turael",
+    "spria",
+    "mazchna"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "25.0",
+  "strength_bonus": 0,
+  "strength_level": 13,
+  "venomous": 0,
+  "wiki_name": "Ghost (Melzar's Maze) (1)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Ghost_(Melzar's_Maze)#1"
+}

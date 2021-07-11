@@ -1,0 +1,345 @@
+{
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "12b78fb151228bb874500a3b874bb99aaffa0455",
+  "_id": "60cd28b2cfb7392d00907904",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60cd28b2cfb7392d00907904",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 34,
+  "attack_level": 65,
+  "attack_magic": 0,
+  "attack_ranged": 34,
+  "attack_speed": 4,
+  "attack_type": [
+    "crush",
+    "ranged"
+  ],
+  "attributes": [],
+  "category": [
+    "lizardmen"
+  ],
+  "combat_level": 75,
+  "defence_crush": 10,
+  "defence_level": 65,
+  "defence_magic": 0,
+  "defence_ranged": 0,
+  "defence_slash": 30,
+  "defence_stab": -10,
+  "drops": [
+    {
+      "id": 526,
+      "members": 0,
+      "name": "Bones",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 22879,
+      "members": 1,
+      "name": "Snape grass seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.008547008547008548",
+      "rolls": 1
+    },
+    {
+      "id": 5295,
+      "members": 1,
+      "name": "Ranarr seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.008333333333333333",
+      "rolls": 1
+    },
+    {
+      "id": 5105,
+      "members": 1,
+      "name": "Whiteberry seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.007262164124909223",
+      "rolls": 1
+    },
+    {
+      "id": 5282,
+      "members": 1,
+      "name": "Mushroom spore",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.006195786864931847",
+      "rolls": 1
+    },
+    {
+      "id": 5296,
+      "members": 1,
+      "name": "Toadflax seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0057670126874279125",
+      "rolls": 1
+    },
+    {
+      "id": 5281,
+      "members": 1,
+      "name": "Belladonna seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0038446751249519417",
+      "rolls": 1
+    },
+    {
+      "id": 5297,
+      "members": 1,
+      "name": "Irit seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0038446751249519417",
+      "rolls": 1
+    },
+    {
+      "id": 5106,
+      "members": 1,
+      "name": "Poison ivy seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0027770063871146904",
+      "rolls": 1
+    },
+    {
+      "id": 5298,
+      "members": 1,
+      "name": "Avantoe seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.002563445270443476",
+      "rolls": 1
+    },
+    {
+      "id": 5280,
+      "members": 1,
+      "name": "Cactus seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.002563445270443476",
+      "rolls": 1
+    },
+    {
+      "id": 5100,
+      "members": 1,
+      "name": "Limpwurt seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.029239766081871343",
+      "rolls": 1
+    },
+    {
+      "id": 5299,
+      "members": 1,
+      "name": "Kwuarm seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0019227071716977505",
+      "rolls": 1
+    },
+    {
+      "id": 22873,
+      "members": 1,
+      "name": "Potato cactus seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0017091095539224065",
+      "rolls": 1
+    },
+    {
+      "id": 5300,
+      "members": 1,
+      "name": "Snapdragon seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0010681478316599017",
+      "rolls": 1
+    },
+    {
+      "id": 5301,
+      "members": 1,
+      "name": "Cadantine seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.000854481756814492",
+      "rolls": 1
+    },
+    {
+      "id": 5302,
+      "members": 1,
+      "name": "Lantadyme seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.000640861317610869",
+      "rolls": 1
+    },
+    {
+      "id": 5303,
+      "members": 1,
+      "name": "Dwarf weed seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0004272591326639607",
+      "rolls": 1
+    },
+    {
+      "id": 5304,
+      "members": 1,
+      "name": "Torstol seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00021362500267031254",
+      "rolls": 1
+    },
+    {
+      "id": 13391,
+      "members": 1,
+      "name": "Lizardman fang",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.208955223880597",
+      "rolls": 1
+    },
+    {
+      "id": 13383,
+      "members": 1,
+      "name": "Xerician fabric",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.11940298507462686",
+      "rolls": 1
+    },
+    {
+      "id": 13393,
+      "members": 1,
+      "name": "Xeric's talisman",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.004",
+      "rolls": 1
+    },
+    {
+      "id": 5323,
+      "members": 1,
+      "name": "Strawberry seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.028011204481792718",
+      "rolls": 1
+    },
+    {
+      "id": 23083,
+      "members": 1,
+      "name": "Brimstone key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.004081632653061225",
+      "rolls": 1
+    },
+    {
+      "id": 5292,
+      "members": 1,
+      "name": "Marrentill seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.026737967914438502",
+      "rolls": 1
+    },
+    {
+      "id": 5104,
+      "members": 1,
+      "name": "Jangerberry seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.019646365422396856",
+      "rolls": 1
+    },
+    {
+      "id": 5293,
+      "members": 1,
+      "name": "Tarromin seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.018148820326678767",
+      "rolls": 1
+    },
+    {
+      "id": 5311,
+      "members": 1,
+      "name": "Wildblood seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.01773049645390071",
+      "rolls": 1
+    },
+    {
+      "id": 5321,
+      "members": 1,
+      "name": "Watermelon seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.013458950201884253",
+      "rolls": 1
+    },
+    {
+      "id": 5294,
+      "members": 1,
+      "name": "Harralander seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.011961722488038277",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "A larger and far more brutal lizardman that wields a vicious dark blade.",
+  "hitpoints": 60,
+  "id": "8564",
+  "immune_poison": 1,
+  "immune_venom": 1,
+  "incomplete": 1,
+  "last_updated": "2021-06-18",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 11,
+  "members": 1,
+  "name": "Lizardman brute",
+  "poisonous": 1,
+  "ranged_bonus": 30,
+  "ranged_level": 1,
+  "release_date": "2019-01-10",
+  "size": 1,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "chaeldar",
+    "konar",
+    "nieve",
+    "duradel"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "60.0",
+  "strength_bonus": 30,
+  "strength_level": 65,
+  "venomous": 0,
+  "wiki_name": "Lizardman brute (Battlefront)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Lizardman_brute#Battlefront"
+}

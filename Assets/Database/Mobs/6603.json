@@ -1,0 +1,80 @@
+{
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "0ef03999299aba338142067fb72c950077ac6280",
+  "_id": "60cd28b2cfb7392d00907748",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60cd28b2cfb7392d00907748",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 0,
+  "attack_bonus": 0,
+  "attack_level": 140,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "melee"
+  ],
+  "attributes": [],
+  "category": [
+    "rogue"
+  ],
+  "combat_level": 135,
+  "defence_crush": 0,
+  "defence_level": 150,
+  "defence_magic": 0,
+  "defence_ranged": 0,
+  "defence_slash": 0,
+  "defence_stab": 0,
+  "drops": [
+    {
+      "id": 1219,
+      "members": 1,
+      "name": "Iron dagger(p)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "A very strong rogue.",
+  "hitpoints": 125,
+  "id": "6603",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2020-12-25",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 15,
+  "members": 1,
+  "name": "Rogue",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2014-03-13",
+  "size": 1,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "krystilia"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "125.0",
+  "strength_bonus": 0,
+  "strength_level": 140,
+  "venomous": 0,
+  "wiki_name": "Rogue (Level 135)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Rogue#Level_135"
+}

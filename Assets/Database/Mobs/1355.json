@@ -1,0 +1,81 @@
+{
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "69fdb8fd95d1b23c470f78a7b2edc6ce12eecc52",
+  "_id": "60cd28afcfb7392d0090712e",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60cd28afcfb7392d0090712e",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 0,
+  "attack_bonus": 0,
+  "attack_level": 80,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 5,
+  "attack_type": [
+    "crush"
+  ],
+  "attributes": [],
+  "category": [
+    "dwarf"
+  ],
+  "combat_level": 48,
+  "defence_crush": 0,
+  "defence_level": 25,
+  "defence_magic": 0,
+  "defence_ranged": 7,
+  "defence_slash": 7,
+  "defence_stab": 7,
+  "drops": [
+    {
+      "id": 526,
+      "members": 0,
+      "name": "Bones",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "A short stout menacing fellow.",
+  "hitpoints": 25,
+  "id": "1355",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2020-12-25",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 4,
+  "members": 1,
+  "name": "Dwarf gang member",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2005-02-28",
+  "size": 1,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "turael",
+    "spria"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "25.0",
+  "strength_bonus": 0,
+  "strength_level": 30,
+  "venomous": 0,
+  "wiki_name": "Dwarf gang member (Level 48)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Dwarf_gang_member#Level_48"
+}

@@ -215,3 +215,21 @@ structure -> considering merging drop log class and drop log stats
     and then compare the two to see which one is neater. definetly worth noting is that using sub classes
     ends up in a lot of indents which doesnt improve code readability. though this could partly
     be resolved by saving them in a separate file and then using #Include. This, again, doesnt help readability
+
+todo -> different method for ignoring duplicate mobs. use the wiki_name to check if the mob was already added
+    this is because for example vorkath has two different versions with different drop tables
+        "wiki_name": "Vorkath (Dragon Slayer II)" quest version
+        "wiki_name": "Vorkath" post-quest version
+    ^ add this explanation to the code
+
+images
+    runelite icons
+        are accesible under this link
+            https://raw.githubusercontent.com/runelite/static.runelite.net/gh-pages/cache/item/icon/0.png
+        fix their alignment
+            cut 4 pixels off to the right as they are 32x36
+            or try something along those lines
+    detailed wiki icons
+        cant download iowerth camp teleport
+    small wiki icons
+        get from osrsbox?

@@ -1,0 +1,139 @@
+{
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "d1f4c202e8b86d95a93d3fa0368820cd697f9a2c",
+  "_id": "60cd28b2cfb7392d00907811",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60cd28b2cfb7392d00907811",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 0,
+  "attack_level": 75,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "magic"
+  ],
+  "attributes": [],
+  "category": [],
+  "combat_level": 82,
+  "defence_crush": 0,
+  "defence_level": 80,
+  "defence_magic": 0,
+  "defence_ranged": 0,
+  "defence_slash": 0,
+  "defence_stab": 0,
+  "drops": [
+    {
+      "id": 526,
+      "members": 0,
+      "name": "Bones",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 554,
+      "members": 0,
+      "name": "Fire rune",
+      "noted": 0,
+      "quantity": "7",
+      "rarity": "0.04",
+      "rolls": 1
+    },
+    {
+      "id": 555,
+      "members": 0,
+      "name": "Water rune",
+      "noted": 0,
+      "quantity": "6",
+      "rarity": "0.04",
+      "rolls": 1
+    },
+    {
+      "id": 556,
+      "members": 0,
+      "name": "Air rune",
+      "noted": 0,
+      "quantity": "5",
+      "rarity": "0.04",
+      "rolls": 1
+    },
+    {
+      "id": 561,
+      "members": 0,
+      "name": "Nature rune",
+      "noted": 0,
+      "quantity": "2",
+      "rarity": "0.04",
+      "rolls": 1
+    },
+    {
+      "id": 563,
+      "members": 0,
+      "name": "Law rune",
+      "noted": 0,
+      "quantity": "2",
+      "rarity": "0.02",
+      "rolls": 1
+    },
+    {
+      "id": 565,
+      "members": 1,
+      "name": "Blood rune",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.02",
+      "rolls": 1
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "100",
+      "rarity": "0.8",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "A Mage of Zamorak.",
+  "hitpoints": 50,
+  "id": "7423",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2020-12-25",
+  "magic_bonus": 0,
+  "magic_level": 85,
+  "max_hit": 9,
+  "members": 1,
+  "name": "Zamorak mage",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2016-10-13",
+  "size": 1,
+  "slayer_level": "",
+  "slayer_masters": [],
+  "slayer_monster": 0,
+  "slayer_xp": "",
+  "strength_bonus": 0,
+  "strength_level": 80,
+  "venomous": 0,
+  "wiki_name": "Zamorak mage (Level 82)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Zamorak_mage#Level_82"
+}

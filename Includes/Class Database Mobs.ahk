@@ -67,13 +67,13 @@ Class ClassDatabaseMobs {
             If !mob.drops.count()
                 Continue
             ; skip mobs that we already added
-            If addedMobNames.HasKey(mob.name)
+            If addedMobNames.HasKey(mob.wiki_name)
                 Continue
 
             output[mob_id] := [] ; add this mob to our new output object
-            output[mob_id].name := mob.name
+            output[mob_id].name := mob.wiki_name ; using wiki name to include different versions of the same mob
             output[mob_id].last_updated := mob.last_updated
-            addedMobNames[mob.name] := ""
+            addedMobNames[mob.wiki_name] := ""
             ; output[mob_id].id := mob.id
             ; output[mob_id].wiki_name := mob.wiki_name
             
@@ -97,8 +97,8 @@ Class ClassDatabaseMobs {
         obj := this.obj
         output := []
 
-        for mob in obj
-            output[mob] := obj[mob].name
+        for mobId in obj
+            output[mobId] := obj[mobId].name
 
         return output
     }
@@ -108,6 +108,9 @@ Class ClassDatabaseMobs {
         for mob in obj
             If obj[mob].name = mobName
                 return mob
+        
+        ; didnt find id
+        Msg("Error", A_ThisFunc, "Unable to find mob id for: " mobName)
     }
 
     GetWikiUrl(mob) {
@@ -126,6 +129,7 @@ Class ClassDatabaseMobs {
         If !IsInteger(mob)
             mob := this.GetId(mob)
         id := mob
+
 
         ; build file path
         file := DIR_DATABASE_MOBS "\" id ".json"

@@ -1,0 +1,497 @@
+{
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "9e03379b8a77739b46e419f73df2168f1c0688dc",
+  "_id": "60cd28afcfb7392d009071e4",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60cd28afcfb7392d009071e4",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 0,
+  "attack_level": 1,
+  "attack_magic": 50,
+  "attack_ranged": 50,
+  "attack_speed": 3,
+  "attack_type": [
+    "ranged",
+    "magic"
+  ],
+  "attributes": [],
+  "category": [
+    "boss"
+  ],
+  "combat_level": 725,
+  "defence_crush": 0,
+  "defence_level": 300,
+  "defence_magic": 300,
+  "defence_ranged": 0,
+  "defence_slash": 0,
+  "defence_stab": 0,
+  "drops": [
+    {
+      "id": 12934,
+      "members": 1,
+      "name": "Zulrah's scales",
+      "noted": 0,
+      "quantity": "100-299",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 3204,
+      "members": 1,
+      "name": "Dragon halberd",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.008064516129032258",
+      "rolls": 2
+    },
+    {
+      "id": 560,
+      "members": 0,
+      "name": "Death rune",
+      "noted": 0,
+      "quantity": "300",
+      "rarity": "0.04838709677419355",
+      "rolls": 2
+    },
+    {
+      "id": 563,
+      "members": 0,
+      "name": "Law rune",
+      "noted": 0,
+      "quantity": "200",
+      "rarity": "0.04838709677419355",
+      "rolls": 2
+    },
+    {
+      "id": 562,
+      "members": 0,
+      "name": "Chaos rune",
+      "noted": 0,
+      "quantity": "500",
+      "rarity": "0.04838709677419355",
+      "rolls": 2
+    },
+    {
+      "id": 3000,
+      "members": 1,
+      "name": "Snapdragon",
+      "noted": 1,
+      "quantity": "10",
+      "rarity": "0.008064516129032258",
+      "rolls": 2
+    },
+    {
+      "id": 267,
+      "members": 1,
+      "name": "Dwarf weed",
+      "noted": 1,
+      "quantity": "30",
+      "rarity": "0.008064516129032258",
+      "rolls": 2
+    },
+    {
+      "id": 2998,
+      "members": 1,
+      "name": "Toadflax",
+      "noted": 1,
+      "quantity": "25",
+      "rarity": "0.008064516129032258",
+      "rolls": 2
+    },
+    {
+      "id": 269,
+      "members": 1,
+      "name": "Torstol",
+      "noted": 1,
+      "quantity": "10",
+      "rarity": "0.008064516129032258",
+      "rolls": 2
+    },
+    {
+      "id": 5289,
+      "members": 1,
+      "name": "Palm tree seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.024193548387096774",
+      "rolls": 2
+    },
+    {
+      "id": 5288,
+      "members": 1,
+      "name": "Papaya tree seed",
+      "noted": 0,
+      "quantity": "3",
+      "rarity": "0.024193548387096774",
+      "rolls": 2
+    },
+    {
+      "id": 12922,
+      "members": 1,
+      "name": "Tanzanite fang",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0009765625",
+      "rolls": 2
+    },
+    {
+      "id": 5290,
+      "members": 1,
+      "name": "Calquat tree seed",
+      "noted": 0,
+      "quantity": "2",
+      "rarity": "0.024193548387096774",
+      "rolls": 2
+    },
+    {
+      "id": 5316,
+      "members": 1,
+      "name": "Magic seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.016129032258064516",
+      "rolls": 2
+    },
+    {
+      "id": 5296,
+      "members": 1,
+      "name": "Toadflax seed",
+      "noted": 0,
+      "quantity": "2",
+      "rarity": "0.008064516129032258",
+      "rolls": 2
+    },
+    {
+      "id": 5300,
+      "members": 1,
+      "name": "Snapdragon seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.008064516129032258",
+      "rolls": 2
+    },
+    {
+      "id": 5303,
+      "members": 1,
+      "name": "Dwarf weed seed",
+      "noted": 0,
+      "quantity": "2",
+      "rarity": "0.008064516129032258",
+      "rolls": 2
+    },
+    {
+      "id": 5304,
+      "members": 1,
+      "name": "Torstol seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.008064516129032258",
+      "rolls": 2
+    },
+    {
+      "id": 5317,
+      "members": 1,
+      "name": "Spirit seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.004032258064516129",
+      "rolls": 2
+    },
+    {
+      "id": 6289,
+      "members": 1,
+      "name": "Snakeskin",
+      "noted": 1,
+      "quantity": "35",
+      "rarity": "0.04435483870967742",
+      "rolls": 2
+    },
+    {
+      "id": 451,
+      "members": 0,
+      "name": "Runite ore",
+      "noted": 1,
+      "quantity": "2",
+      "rarity": "0.04435483870967742",
+      "rolls": 2
+    },
+    {
+      "id": 7936,
+      "members": 0,
+      "name": "Pure essence",
+      "noted": 1,
+      "quantity": "1500",
+      "rarity": "0.04032258064516129",
+      "rolls": 2
+    },
+    {
+      "id": 12932,
+      "members": 1,
+      "name": "Magic fang",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0009765625",
+      "rolls": 2
+    },
+    {
+      "id": 1779,
+      "members": 1,
+      "name": "Flax",
+      "noted": 1,
+      "quantity": "1000",
+      "rarity": "0.04032258064516129",
+      "rolls": 2
+    },
+    {
+      "id": 1515,
+      "members": 0,
+      "name": "Yew logs",
+      "noted": 1,
+      "quantity": "35",
+      "rarity": "0.04032258064516129",
+      "rolls": 2
+    },
+    {
+      "id": 2361,
+      "members": 0,
+      "name": "Adamantite bar",
+      "noted": 1,
+      "quantity": "20",
+      "rarity": "0.03225806451612903",
+      "rolls": 2
+    },
+    {
+      "id": 453,
+      "members": 0,
+      "name": "Coal",
+      "noted": 1,
+      "quantity": "200",
+      "rarity": "0.03225806451612903",
+      "rolls": 2
+    },
+    {
+      "id": 536,
+      "members": 1,
+      "name": "Dragon bones",
+      "noted": 1,
+      "quantity": "12",
+      "rarity": "0.03225806451612903",
+      "rolls": 2
+    },
+    {
+      "id": 6332,
+      "members": 1,
+      "name": "Mahogany logs",
+      "noted": 1,
+      "quantity": "50",
+      "rarity": "0.03225806451612903",
+      "rolls": 2
+    },
+    {
+      "id": 12938,
+      "members": 1,
+      "name": "Zul-andra teleport",
+      "noted": 0,
+      "quantity": "4",
+      "rarity": "0.06048387096774194",
+      "rolls": 2
+    },
+    {
+      "id": 391,
+      "members": 1,
+      "name": "Manta ray",
+      "noted": 1,
+      "quantity": "35",
+      "rarity": "0.04838709677419355",
+      "rolls": 2
+    },
+    {
+      "id": 5952,
+      "members": 1,
+      "name": "Antidote++(4)",
+      "noted": 1,
+      "quantity": "10",
+      "rarity": "0.036290322580645164",
+      "rolls": 2
+    },
+    {
+      "id": 9193,
+      "members": 1,
+      "name": "Dragonstone bolt tips",
+      "noted": 0,
+      "quantity": "12",
+      "rarity": "0.03225806451612903",
+      "rolls": 2
+    },
+    {
+      "id": 12927,
+      "members": 1,
+      "name": "Serpentine visage",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0009765625",
+      "rolls": 2
+    },
+    {
+      "id": 1987,
+      "members": 0,
+      "name": "Grapes",
+      "noted": 1,
+      "quantity": "250",
+      "rarity": "0.024193548387096774",
+      "rolls": 2
+    },
+    {
+      "id": 5974,
+      "members": 1,
+      "name": "Coconut",
+      "noted": 1,
+      "quantity": "20",
+      "rarity": "0.024193548387096774",
+      "rolls": 2
+    },
+    {
+      "id": 1939,
+      "members": 1,
+      "name": "Swamp tar",
+      "noted": 0,
+      "quantity": "1000",
+      "rarity": "0.020161290322580645",
+      "rolls": 2
+    },
+    {
+      "id": 12934,
+      "members": 1,
+      "name": "Zulrah's scales",
+      "noted": 0,
+      "quantity": "500",
+      "rarity": "0.020161290322580645",
+      "rolls": 2
+    },
+    {
+      "id": 6571,
+      "members": 1,
+      "name": "Uncut onyx",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0009765625",
+      "rolls": 2
+    },
+    {
+      "id": 13200,
+      "members": 1,
+      "name": "Tanzanite mutagen",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "7.630093087135663e-05",
+      "rolls": 2
+    },
+    {
+      "id": 13201,
+      "members": 1,
+      "name": "Magma mutagen",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "7.630093087135663e-05",
+      "rolls": 2
+    },
+    {
+      "id": 23083,
+      "members": 1,
+      "name": "Brimstone key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.02",
+      "rolls": 1
+    },
+    {
+      "id": 12073,
+      "members": 1,
+      "name": "Clue scroll (elite)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.013333333333333334",
+      "rolls": 1
+    },
+    {
+      "id": 12936,
+      "members": 1,
+      "name": "Jar of swamp",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0003333333333333333",
+      "rolls": 1
+    },
+    {
+      "id": 12921,
+      "members": 1,
+      "name": "Pet snakeling",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00025",
+      "rolls": 1
+    },
+    {
+      "id": 1391,
+      "members": 1,
+      "name": "Battlestaff",
+      "noted": 1,
+      "quantity": "10",
+      "rarity": "0.04032258064516129",
+      "rolls": 2
+    },
+    {
+      "id": 1149,
+      "members": 1,
+      "name": "Dragon med helm",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.008064516129032258",
+      "rolls": 2
+    }
+  ],
+  "duplicate": 0,
+  "examine": "The turquoise hooded serpent of the poison waste.",
+  "hitpoints": 500,
+  "id": "2044",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2020-12-25",
+  "magic_bonus": 20,
+  "magic_level": 300,
+  "max_hit": 41,
+  "members": 1,
+  "name": "Zulrah",
+  "poisonous": 1,
+  "ranged_bonus": 20,
+  "ranged_level": 300,
+  "release_date": "2015-01-08",
+  "size": 5,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "konar",
+    "nieve",
+    "duradel"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "500.0",
+  "strength_bonus": 0,
+  "strength_level": 1,
+  "venomous": 1,
+  "wiki_name": "Zulrah (Tanzanite)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Zulrah#Tanzanite"
+}

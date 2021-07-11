@@ -217,23 +217,46 @@ hex2str(string)
 
 
 
-; -------------------- Images --------------------
+; ========= IMAGES ======================================================================================================================
 
-DownloadMobImage(mobName, mobId) {
+GetMobImagesForAllMobs() {
+    mobList := MOB_DB.GetList()
+    for mobId, mobName in mobList {
+        GetMobImage(mobName, mobId)
+        GetDropImagesForMob(mobId)
+    }
+}
+
+GetDropImagesForMob(mob) {
+    drops := MOB_DB.GetDropTable(mob)
+
+    for index, drop in drops {
+        GetDropImage(drop.name, drop.id)
+    }
+}
+
+GetMobImage(mobName, mobId) {
     path := DIR_MOB_IMAGES "\" mobId ".png"
     If IsValidImage(path)
         return
     If FileExist(path)
         FileDelete % path
-    url := WIKI_API.img.GetMobImage(mobName)
+
+    ; cleanup osrsbox additional mob info. eg goblin (level 13) to goblin
+    If InStr(mobName, "(")
+        mobName := SubStr(mobName, 1, InStr(mobName, "(") - 2)
+
+    url := WIKI_API_LEGACY.img.GetMobImage(mobName)
 
     DownloadImageOrReload(url, path)
     ResizeImage(path, 100)
 }
 
-DownloadDropImage(itemName, itemId) {
+GetDropImage(itemName, itemId) {
     If !IsValidImage(DIR_ITEM_IMAGES_ICONS "\" itemId ".png") or !IsValidImage(DIR_ITEM_IMAGES_DETAILED "\" itemId ".png")
-        wikiImageUrlObj := WIKI_API.img.GetItemImages(itemName, 50)
+        wikiImageUrlObj := WIKI_API_LEGACY.img.GetItemImages(itemName, 50)
+        ; wikiImageUrlObj := WIKI_API.GetItemUrls(itemName)
+        
 
     ; wiki small
     path := DIR_ITEM_IMAGES_ICONS "\" itemId ".png"
@@ -252,6 +275,16 @@ DownloadDropImage(itemName, itemId) {
         DownloadImageOrReload(url, path)
         ResizeImage(path, 50)
         AddBorderToImage(path, 10)
+    }
+
+    ; runelite
+    path := DIR_ITEM_IMAGES_RUNELITE "\" itemId ".png"
+    If !IsValidImage(path) {
+        FileDelete % path
+
+        FileCopy, D:\Downloads\static.runelite.net-gh-pages\cache\item\icon\%itemId%.png, % path
+        ; url := "https://raw.githubusercontent.com/runelite/static.runelite.net/gh-pages/cache/item/icon/" itemId ".png"
+        ; DownloadImageOrReload(url, path)
     }
 }
 

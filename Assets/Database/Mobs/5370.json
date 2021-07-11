@@ -1,0 +1,84 @@
+{
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "4e1a6acb538649eaea4f016434db2b809c7218dd",
+  "_id": "60cd28b1cfb7392d009075af",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60cd28b1cfb7392d009075af",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 0,
+  "attack_bonus": 0,
+  "attack_level": 23,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "crush"
+  ],
+  "attributes": [
+    "undead"
+  ],
+  "category": [
+    "ghost"
+  ],
+  "combat_level": 24,
+  "defence_crush": 0,
+  "defence_level": 20,
+  "defence_magic": 0,
+  "defence_ranged": 0,
+  "defence_slash": 0,
+  "defence_stab": 0,
+  "drops": [
+    {
+      "id": 23182,
+      "members": 0,
+      "name": "Clue scroll (beginner)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.011111111111111112",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "Spooky.",
+  "hitpoints": 20,
+  "id": "5370",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 0,
+  "last_updated": "2021-05-30",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 3,
+  "members": 1,
+  "name": "Ghost",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2003-03-17",
+  "size": 1,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "turael",
+    "spria",
+    "mazchna"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "20.0",
+  "strength_bonus": 0,
+  "strength_level": 23,
+  "venomous": 0,
+  "wiki_name": "Ghost (Grave of Scorpius)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Ghost_(Grave_of_Scorpius)"
+}

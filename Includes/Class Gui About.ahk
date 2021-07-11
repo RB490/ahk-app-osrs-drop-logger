@@ -21,7 +21,7 @@ class ClassGuiAbout extends gui {
 
         this.Add("text", , "This program relies on information from various external sources and can (will) break when they change")
 
-        url := WIKI_API.url "/api.php"
+        url := "https://oldschool.runescape.wiki/api.php"
         html = <a id="A">%url%</a>
         this.Add("link", , html, this.BtnLink.Bind(this))
 

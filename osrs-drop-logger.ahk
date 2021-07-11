@@ -19,7 +19,7 @@
     , GUI_LOG_MIN_ROW_LENGTH    := 1
     , GUI_LOG_MAX_ROW_LENGTH    := 25
     , GUI_LOG_MIN_TABLE_SIZE    := 1
-    , GUI_LOG_ITEM_IMAGE_TYPES  := "Wiki Small|Wiki Detailed"
+    , GUI_LOG_ITEM_IMAGE_TYPES  := "Wiki Small|Wiki Detailed|RuneLite"
 
     ; Path variables
     , PATH_SCRIPT_SETTINGS      := A_ScriptDir "\Assets\Settings.json"
@@ -31,6 +31,7 @@
     , DIR_GUI_ICONS             := A_ScriptDir "\Assets\Images\Gui"
     , DIR_ITEM_IMAGES_ICONS     := A_ScriptDir "\Assets\Images\Items\Icons"
     , DIR_ITEM_IMAGES_DETAILED  := A_ScriptDir "\Assets\Images\Items\Detailed"
+    , DIR_ITEM_IMAGES_RUNELITE  := A_ScriptDir "\Assets\Images\Items\RuneLite"
     
     ; Objects
     , SCRIPT_SETTINGS           := LoadSettings()
@@ -38,7 +39,8 @@
 
     ; Class objects
     , P                         := new ClassGuiProgress(APP_NAME)
-    , WIKI_API                  := new ClassApiWiki
+    , WIKI_API                  := new ClassWikiApi
+    , WIKI_API_LEGACY           := new ClassApiWiki
     , ITEM_DB                   := new ClassDatabaseItems
     , MOB_DB                    := new ClassDatabaseMobs
     , DROP_LOG                  := new ClassDropLog
@@ -70,21 +72,37 @@
 
 ; Subroutines
     debugScript:
-        ; GUI_STATS.Get()
-        ; Gosub MiscMenu_Show
+        ; _QPC("reset")
+        ; url := WIKI_API_LEGACY.img.GetMobImage(mobName)
+        
+        ; itemName := "Ashes"
+        ; wikiImageUrlObj := WIKI_API_LEGACY.img.GetItemImages(itemName, 50)
+
+        ; testString := "https://oldschool.runescape.wiki/api.php?action=query&format=json&prop=imageinfo&iiprop=url&titles=File:Ashes_detail.png|File:Ashes.png"
+        ; DownloadToString(testSTring)
+
+        ; WIKI_API.GetItemUrls("Ashes")
+        ; msgbox % _QPC()
+        ; msgbox % json.dump(wikiImageUrlObj,,2)
+        
+        
+        ; GetMobImage("Gnome", 000000)
+        ; GetMobImage("Spinolyp (spinolyp)", 5947)
+        ; msgbox
+        ; GetDropImage("Abyssal Whip", 4151)
+        ; return
+        GetMobImagesForAllMobs()
+
+
+        ; myDebugDropLogfile := A_ScriptDir "\Dev\myDebugDropLogfile.json"
+        ; SCRIPT_SETTINGS.previousLogFile := myDebugDropLogfile
+        ; DROP_LOG.LoadFile(myDebugDropLogfile)
+        
         ; GUI_LOG.Get()
-        ; GUI_ABOUT.Get()
-
-
-        ; gui log
-        myDebugDropLogfile := A_ScriptDir "\Dev\myDebugDropLogfile.json"
-        SCRIPT_SETTINGS.previousLogFile := myDebugDropLogfile
-        DROP_LOG.LoadFile(myDebugDropLogfile)
-        GUI_LOG.Get()
         ; GUI_STATS.Get()
+        ; GUI_START.Get()
 
-        ; finish debugScript
-        ; Msg("Info", "Auto-execute section", "End of Auto-execute section")
+        Msg("Info", "Auto-execute section", "End of Auto-execute section")
     return
     updateStats:
         GUI_STATS.Set(DROP_LOG.Stats.Get())
@@ -97,7 +115,8 @@
 
 ; Includes
     #Include, %A_ScriptDir%\Includes
-    #Include, Class Api Wiki.ahk
+    #Include, Class Wiki Api.ahk
+    #Include, Class Api Wiki - Legacy.ahk
     #Include, Class Database Items.ahk
     #Include, Class Database Mobs.ahk
     #Include, Class Drop Log.ahk

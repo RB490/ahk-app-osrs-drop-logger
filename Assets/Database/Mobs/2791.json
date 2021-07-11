@@ -1,0 +1,108 @@
+{
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "b1cbd83381f185e914e59e4cf8dfef051456c61c",
+  "_id": "60cd28b0cfb7392d009072e4",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60cd28b0cfb7392d009072e4",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 0,
+  "attack_bonus": -15,
+  "attack_level": 1,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "crush"
+  ],
+  "attributes": [],
+  "category": [
+    "cow"
+  ],
+  "combat_level": 2,
+  "defence_crush": -21,
+  "defence_level": 1,
+  "defence_magic": -21,
+  "defence_ranged": -21,
+  "defence_slash": -21,
+  "defence_stab": -21,
+  "drops": [
+    {
+      "id": 1739,
+      "members": 0,
+      "name": "Cowhide",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 2132,
+      "members": 0,
+      "name": "Raw beef",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 526,
+      "members": 0,
+      "name": "Bones",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 23182,
+      "members": 0,
+      "name": "Clue scroll (beginner)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "Beefy.",
+  "hitpoints": 8,
+  "id": "2791",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-04-24",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 1,
+  "members": 0,
+  "name": "Cow",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2004-03-29",
+  "size": 2,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "turael",
+    "spria"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "8.0",
+  "strength_bonus": -15,
+  "strength_level": 1,
+  "venomous": 0,
+  "wiki_name": "Cow (2)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Cow#2"
+}

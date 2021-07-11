@@ -1,0 +1,123 @@
+{
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "6c4f42b2703bdba73400055e081a7339fcf1af4b",
+  "_id": "60cd28b2cfb7392d00907826",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60cd28b2cfb7392d00907826",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 64,
+  "attack_level": 585,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 3,
+  "attack_type": [
+    "melee"
+  ],
+  "attributes": [
+    "xerician"
+  ],
+  "category": [],
+  "combat_level": 0,
+  "defence_crush": 105,
+  "defence_level": 246,
+  "defence_magic": 0,
+  "defence_ranged": 0,
+  "defence_slash": 165,
+  "defence_stab": 155,
+  "drops": [
+    {
+      "id": 20890,
+      "members": 1,
+      "name": "Tekton's journal",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 20910,
+      "members": 1,
+      "name": "Stinkhorn mushroom",
+      "noted": 0,
+      "quantity": "5",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 20996,
+      "members": 1,
+      "name": "Overload (+)(4)",
+      "noted": 0,
+      "quantity": "2",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 20972,
+      "members": 1,
+      "name": "Prayer enhance (+)(4)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 20960,
+      "members": 1,
+      "name": "Revitalisation (+)(4)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 6573,
+      "members": 1,
+      "name": "Onyx",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0022222222222222222",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "Xeric's former artisan.",
+  "hitpoints": 450,
+  "id": "7545",
+  "immune_poison": 1,
+  "immune_venom": 1,
+  "incomplete": 1,
+  "last_updated": "2020-12-25",
+  "magic_bonus": 0,
+  "magic_level": 246,
+  "max_hit": 78,
+  "members": 1,
+  "name": "Tekton",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2018-05-17",
+  "size": 4,
+  "slayer_level": "",
+  "slayer_masters": [],
+  "slayer_monster": 0,
+  "slayer_xp": "",
+  "strength_bonus": 20,
+  "strength_level": 585,
+  "venomous": 0,
+  "wiki_name": "Tekton (Normal (Challenge Mode))",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Tekton#Normal_(Challenge_Mode)"
+}

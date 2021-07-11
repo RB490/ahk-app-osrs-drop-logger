@@ -1,0 +1,80 @@
+{
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "fb3ba7664791d21c0d8f20b4880bb05c66720f68",
+  "_id": "60cd28b0cfb7392d0090740c",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60cd28b0cfb7392d0090740c",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 0,
+  "attack_level": 23,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "crush"
+  ],
+  "attributes": [
+    "undead"
+  ],
+  "category": [
+    "ghost"
+  ],
+  "combat_level": 29,
+  "defence_crush": 5,
+  "defence_level": 28,
+  "defence_magic": -5,
+  "defence_ranged": 5,
+  "defence_slash": 5,
+  "defence_stab": 5,
+  "drops": [
+    {
+      "id": 23182,
+      "members": 0,
+      "name": "Clue scroll (beginner)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.011111111111111112",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "Eeek! A ghost!",
+  "hitpoints": 27,
+  "id": "3625",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-05-30",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 3,
+  "members": 0,
+  "name": "Ghost",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2004-12-21",
+  "size": 1,
+  "slayer_level": "",
+  "slayer_masters": [],
+  "slayer_monster": 0,
+  "slayer_xp": "",
+  "strength_bonus": 0,
+  "strength_level": 23,
+  "venomous": 0,
+  "wiki_name": "Ghost (Level 29)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Ghost#Level_29"
+}

@@ -1,0 +1,109 @@
+{
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "b6e77e811869319bea056e2be24dbe2eed5a939a",
+  "_id": "60cd28b1cfb7392d0090757f",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60cd28b1cfb7392d0090757f",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 1,
+  "attack_level": 1,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 6,
+  "attack_type": [
+    "slash"
+  ],
+  "attributes": [],
+  "category": [
+    "spider"
+  ],
+  "combat_level": 1,
+  "defence_crush": 0,
+  "defence_level": 1,
+  "defence_magic": 1,
+  "defence_ranged": 0,
+  "defence_slash": 1,
+  "defence_stab": 0,
+  "drops": [
+    {
+      "id": 11941,
+      "members": 1,
+      "name": "Looting bag",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.06666666666666667",
+      "rolls": 1
+    },
+    {
+      "id": 23182,
+      "members": 0,
+      "name": "Clue scroll (beginner)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 23490,
+      "members": 1,
+      "name": "Larran's key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0005070993914807302",
+      "rolls": 1
+    },
+    {
+      "id": 21257,
+      "members": 1,
+      "name": "Slayer's enchantment",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.003134796238244514",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "It's an extremely small brown spider, probably very poisonous.",
+  "hitpoints": 2,
+  "id": "5238",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2020-12-25",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 1,
+  "members": 1,
+  "name": "Spider",
+  "poisonous": 1,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2004-12-06",
+  "size": 1,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "turael",
+    "spria",
+    "krystilia"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "2.0",
+  "strength_bonus": 1,
+  "strength_level": 1,
+  "venomous": 0,
+  "wiki_name": "Spider (Ape Atoll)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Spider_(Ape_Atoll)"
+}

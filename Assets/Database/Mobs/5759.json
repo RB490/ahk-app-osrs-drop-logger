@@ -1,0 +1,96 @@
+{
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "d7e6cd5271d8ed722a4789a14f1bcbd86c7377ab",
+  "_id": "60cd28b1cfb7392d0090762a",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60cd28b1cfb7392d0090762a",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 0,
+  "attack_level": 0,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "ranged"
+  ],
+  "attributes": [
+    "penance"
+  ],
+  "category": [],
+  "combat_level": 32,
+  "defence_crush": 0,
+  "defence_level": 33,
+  "defence_magic": 0,
+  "defence_ranged": 0,
+  "defence_slash": 0,
+  "defence_stab": 0,
+  "drops": [
+    {
+      "id": 10533,
+      "members": 1,
+      "name": "Blue egg",
+      "noted": 0,
+      "quantity": "2",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 10531,
+      "members": 1,
+      "name": "Green egg",
+      "noted": 0,
+      "quantity": "2",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 10532,
+      "members": 1,
+      "name": "Red egg",
+      "noted": 0,
+      "quantity": "2",
+      "rarity": "1.0",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "Shooty-shooty.",
+  "hitpoints": 29,
+  "id": "5759",
+  "immune_poison": 0,
+  "immune_venom": 1,
+  "incomplete": 1,
+  "last_updated": "2021-03-25",
+  "magic_bonus": 0,
+  "magic_level": 0,
+  "max_hit": 4,
+  "members": 1,
+  "name": "Penance Ranger",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 34,
+  "release_date": "2007-01-04",
+  "size": 1,
+  "slayer_level": "",
+  "slayer_masters": [],
+  "slayer_monster": 0,
+  "slayer_xp": "",
+  "strength_bonus": 0,
+  "strength_level": 0,
+  "venomous": 0,
+  "wiki_name": "Penance Ranger (Wave 3)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Penance_Ranger#Wave_3"
+}

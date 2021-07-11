@@ -1,0 +1,99 @@
+{
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "52c5da8076b742204a9c3a9ec0e4a7c13d2ea84c",
+  "_id": "60cd28b1cfb7392d0090758f",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60cd28b1cfb7392d0090758f",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 0,
+  "attack_bonus": 50,
+  "attack_level": 130,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "crush"
+  ],
+  "attributes": [],
+  "category": [
+    "monkey"
+  ],
+  "combat_level": 167,
+  "defence_crush": 0,
+  "defence_level": 200,
+  "defence_magic": 0,
+  "defence_ranged": 0,
+  "defence_slash": 0,
+  "defence_stab": 0,
+  "drops": [
+    {
+      "id": 3181,
+      "members": 1,
+      "name": "Monkey bones (gorilla)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 3182,
+      "members": 1,
+      "name": "Monkey bones (bearded gorilla)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 13450,
+      "members": 1,
+      "name": "Ensouled monkey head",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.02857142857142857",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "A huge brutish gorilla armoured with dangerous looking vambraces.",
+  "hitpoints": 130,
+  "id": "5276",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2020-12-25",
+  "magic_bonus": 0,
+  "magic_level": 130,
+  "max_hit": 14,
+  "members": 1,
+  "name": "Monkey Guard",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2004-12-06",
+  "size": 2,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "turael",
+    "spria"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "130.0",
+  "strength_bonus": 0,
+  "strength_level": 130,
+  "venomous": 0,
+  "wiki_name": "Monkey Guard (Bearded)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Monkey_Guard#Bearded"
+}

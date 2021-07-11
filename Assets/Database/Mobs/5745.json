@@ -1,0 +1,96 @@
+{
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "f4ec2eae5f7f5864c94d1aac6f3579317200f546",
+  "_id": "60cd28b1cfb7392d00907625",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60cd28b1cfb7392d00907625",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 0,
+  "attack_level": 56,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "slash"
+  ],
+  "attributes": [
+    "penance"
+  ],
+  "category": [],
+  "combat_level": 61,
+  "defence_crush": 0,
+  "defence_level": 52,
+  "defence_magic": 0,
+  "defence_ranged": 0,
+  "defence_slash": 0,
+  "defence_stab": 0,
+  "drops": [
+    {
+      "id": 10533,
+      "members": 1,
+      "name": "Blue egg",
+      "noted": 0,
+      "quantity": "2",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 10531,
+      "members": 1,
+      "name": "Green egg",
+      "noted": 0,
+      "quantity": "2",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 10532,
+      "members": 1,
+      "name": "Red egg",
+      "noted": 0,
+      "quantity": "2",
+      "rarity": "1.0",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "What on Gielinor is that?",
+  "hitpoints": 50,
+  "id": "5745",
+  "immune_poison": 0,
+  "immune_venom": 1,
+  "incomplete": 1,
+  "last_updated": "2021-05-05",
+  "magic_bonus": 0,
+  "magic_level": 0,
+  "max_hit": 6,
+  "members": 1,
+  "name": "Penance Fighter",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 0,
+  "release_date": "2007-01-04",
+  "size": 1,
+  "slayer_level": "",
+  "slayer_masters": [],
+  "slayer_monster": 0,
+  "slayer_xp": "",
+  "strength_bonus": 0,
+  "strength_level": 55,
+  "venomous": 0,
+  "wiki_name": "Penance Fighter (Wave 7/10)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Penance_Fighter#Wave_7/10"
+}

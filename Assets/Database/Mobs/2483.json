@@ -1,0 +1,351 @@
+{
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "5bd4122d4d1296c93fa8509336f7fc851a731b6a",
+  "_id": "60cd28b0cfb7392d0090727b",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60cd28b0cfb7392d0090727b",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 0,
+  "attack_bonus": 0,
+  "attack_level": 23,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "crush"
+  ],
+  "attributes": [],
+  "category": [
+    "minotaur"
+  ],
+  "combat_level": 27,
+  "defence_crush": -10,
+  "defence_level": 25,
+  "defence_magic": -21,
+  "defence_ranged": -10,
+  "defence_slash": -10,
+  "defence_stab": -10,
+  "drops": [
+    {
+      "id": 1623,
+      "members": 1,
+      "name": "Uncut sapphire",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0024752475247524753",
+      "rolls": 1
+    },
+    {
+      "id": 1621,
+      "members": 1,
+      "name": "Uncut emerald",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0012376237623762376",
+      "rolls": 1
+    },
+    {
+      "id": 1619,
+      "members": 1,
+      "name": "Uncut ruby",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0006188118811881188",
+      "rolls": 1
+    },
+    {
+      "id": 1452,
+      "members": 1,
+      "name": "Chaos talisman",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0002320363276074502",
+      "rolls": 1
+    },
+    {
+      "id": 1462,
+      "members": 1,
+      "name": "Nature talisman",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0002320363276074502",
+      "rolls": 1
+    },
+    {
+      "id": 1617,
+      "members": 1,
+      "name": "Uncut diamond",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0001547029702970297",
+      "rolls": 1
+    },
+    {
+      "id": 830,
+      "members": 1,
+      "name": "Rune javelin",
+      "noted": 0,
+      "quantity": "5",
+      "rarity": "7.735148514851485e-05",
+      "rolls": 1
+    },
+    {
+      "id": 987,
+      "members": 1,
+      "name": "Loop half of key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "7.735148514851485e-05",
+      "rolls": 1
+    },
+    {
+      "id": 985,
+      "members": 1,
+      "name": "Tooth half of key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "7.735148514851485e-05",
+      "rolls": 1
+    },
+    {
+      "id": 1247,
+      "members": 1,
+      "name": "Rune spear",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "4.834467821782178e-06",
+      "rolls": 1
+    },
+    {
+      "id": 2366,
+      "members": 1,
+      "name": "Shield left half",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "2.417233910891089e-06",
+      "rolls": 1
+    },
+    {
+      "id": 1249,
+      "members": 1,
+      "name": "Dragon spear",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.8127838094332047e-06",
+      "rolls": 1
+    },
+    {
+      "id": 526,
+      "members": 0,
+      "name": "Bones",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "5-84",
+      "rarity": "0.06930693069306931",
+      "rolls": 1
+    },
+    {
+      "id": 436,
+      "members": 0,
+      "name": "Copper ore",
+      "noted": 1,
+      "quantity": "1",
+      "rarity": "0.0594059405940594",
+      "rolls": 1
+    },
+    {
+      "id": 438,
+      "members": 0,
+      "name": "Tin ore",
+      "noted": 1,
+      "quantity": "1",
+      "rarity": "0.0594059405940594",
+      "rolls": 1
+    },
+    {
+      "id": 7936,
+      "members": 0,
+      "name": "Pure essence",
+      "noted": 1,
+      "quantity": "15",
+      "rarity": "0.04950495049504951",
+      "rolls": 1
+    },
+    {
+      "id": 1436,
+      "members": 0,
+      "name": "Rune essence",
+      "noted": 1,
+      "quantity": "5",
+      "rarity": "0.04950495049504951",
+      "rolls": 1
+    },
+    {
+      "id": 2142,
+      "members": 0,
+      "name": "Cooked meat",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0297029702970297",
+      "rolls": 1
+    },
+    {
+      "id": 9007,
+      "members": 0,
+      "name": "Right skull half",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0297029702970297",
+      "rolls": 1
+    },
+    {
+      "id": 884,
+      "members": 0,
+      "name": "Iron arrow",
+      "noted": 0,
+      "quantity": "5-14",
+      "rarity": "0.09900990099009901",
+      "rolls": 1
+    },
+    {
+      "id": 13456,
+      "members": 1,
+      "name": "Ensouled minotaur head",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.02",
+      "rolls": 1
+    },
+    {
+      "id": 23182,
+      "members": 0,
+      "name": "Clue scroll (beginner)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.016666666666666666",
+      "rolls": 1
+    },
+    {
+      "id": 1237,
+      "members": 1,
+      "name": "Bronze spear",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.09900990099009901",
+      "rolls": 1
+    },
+    {
+      "id": 2677,
+      "members": 1,
+      "name": "Clue scroll (easy)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.009900990099009901",
+      "rolls": 1
+    },
+    {
+      "id": 1155,
+      "members": 0,
+      "name": "Bronze full helm",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.09900990099009901",
+      "rolls": 1
+    },
+    {
+      "id": 882,
+      "members": 0,
+      "name": "Bronze arrow",
+      "noted": 0,
+      "quantity": "3",
+      "rarity": "0.0297029702970297",
+      "rolls": 1
+    },
+    {
+      "id": 1205,
+      "members": 0,
+      "name": "Bronze dagger",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.039603960396039604",
+      "rolls": 1
+    },
+    {
+      "id": 558,
+      "members": 0,
+      "name": "Mind rune",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.009900990099009901",
+      "rolls": 1
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "2",
+      "rarity": "0.10891089108910891",
+      "rolls": 1
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "7",
+      "rarity": "0.19801980198019803",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "He doesn't look very pleased to see you.",
+  "hitpoints": 22,
+  "id": "2483",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2020-12-25",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 3,
+  "members": 0,
+  "name": "Minotaur",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2006-07-04",
+  "size": 1,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "turael",
+    "spria"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "22.0",
+  "strength_bonus": 0,
+  "strength_level": 25,
+  "venomous": 0,
+  "wiki_name": "Minotaur (Level 27)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Minotaur#Level_27"
+}

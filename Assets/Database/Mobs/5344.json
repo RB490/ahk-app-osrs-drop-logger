@@ -1,0 +1,102 @@
+{
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "a05cfa8d9edad5beef2363f0b4bf81541570c186",
+  "_id": "60cd28b1cfb7392d009075a3",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60cd28b1cfb7392d009075a3",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 7,
+  "attack_level": 55,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "slash"
+  ],
+  "attributes": [
+    "undead"
+  ],
+  "category": [
+    "skeleton"
+  ],
+  "combat_level": 61,
+  "defence_crush": 4,
+  "defence_level": 55,
+  "defence_magic": 1,
+  "defence_ranged": 4,
+  "defence_slash": 5,
+  "defence_stab": 5,
+  "drops": [
+    {
+      "id": 526,
+      "members": 0,
+      "name": "Bones",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 6806,
+      "members": 1,
+      "name": "Skeleton champion scroll",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0002",
+      "rolls": 1
+    },
+    {
+      "id": 6807,
+      "members": 1,
+      "name": "Zombie champion scroll",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0002",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "A minion of Rashiliyia.",
+  "hitpoints": 47,
+  "id": "5344",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2020-12-25",
+  "magic_bonus": 0,
+  "magic_level": 0,
+  "max_hit": 7,
+  "members": 1,
+  "name": "Undead one",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 0,
+  "release_date": "2003-01-27",
+  "size": 1,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "turael",
+    "spria",
+    "mazchna"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "73.0",
+  "strength_bonus": 5,
+  "strength_level": 55,
+  "venomous": 0,
+  "wiki_name": "Undead one (Level 61)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Undead_one#Level_61"
+}

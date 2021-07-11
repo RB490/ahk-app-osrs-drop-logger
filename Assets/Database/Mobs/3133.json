@@ -1,0 +1,114 @@
+{
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "56a012bff1fff0698bc8abd8a21d8cce36bd1bef",
+  "_id": "60cd28b0cfb7392d00907375",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60cd28b0cfb7392d00907375",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 0,
+  "attack_level": 107,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "stab"
+  ],
+  "attributes": [
+    "demon"
+  ],
+  "category": [
+    "hellhound"
+  ],
+  "combat_level": 127,
+  "defence_crush": 0,
+  "defence_level": 106,
+  "defence_magic": 0,
+  "defence_ranged": 0,
+  "defence_slash": 0,
+  "defence_stab": 0,
+  "drops": [
+    {
+      "id": 13233,
+      "members": 1,
+      "name": "Smouldering stone",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "3.0517578125e-05",
+      "rolls": 1
+    },
+    {
+      "id": 11941,
+      "members": 1,
+      "name": "Looting bag",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.3333333333333333",
+      "rolls": 1
+    },
+    {
+      "id": 2722,
+      "members": 1,
+      "name": "Clue scroll (hard)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 23083,
+      "members": 1,
+      "name": "Brimstone key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.010526315789473684",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "From the maws of hell.",
+  "hitpoints": 116,
+  "id": "3133",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-06-18",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 13,
+  "members": 1,
+  "name": "Hellhound",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2013-10-17",
+  "size": 2,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "krystilia",
+    "vannaka",
+    "chaeldar",
+    "konar",
+    "nieve",
+    "duradel"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "116.0",
+  "strength_bonus": 0,
+  "strength_level": 116,
+  "venomous": 0,
+  "wiki_name": "Hellhound (Level 127)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Hellhound#Level_127"
+}

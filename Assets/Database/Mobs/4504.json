@@ -1,0 +1,109 @@
+{
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "ea8310c80d25d6e9584d9c2166ae10c428d43f51",
+  "_id": "60cd28b1cfb7392d009074f5",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60cd28b1cfb7392d009074f5",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 0,
+  "attack_level": 22,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "melee"
+  ],
+  "attributes": [],
+  "category": [
+    "bat"
+  ],
+  "combat_level": 27,
+  "defence_crush": 12,
+  "defence_level": 22,
+  "defence_magic": 10,
+  "defence_ranged": 8,
+  "defence_slash": 10,
+  "defence_stab": 10,
+  "drops": [
+    {
+      "id": 530,
+      "members": 1,
+      "name": "Bat bones",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 7827,
+      "members": 1,
+      "name": "Giant bat wing",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 11941,
+      "members": 1,
+      "name": "Looting bag",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.2",
+      "rolls": 1
+    },
+    {
+      "id": 530,
+      "members": 1,
+      "name": "Bat bones",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "An annoying flappy thing.",
+  "hitpoints": 32,
+  "id": "4504",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-02-24",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 3,
+  "members": 1,
+  "name": "Giant bat",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2002-02-27",
+  "size": 1,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "turael",
+    "spria",
+    "mazchna"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "32.0",
+  "strength_bonus": 0,
+  "strength_level": 22,
+  "venomous": 0,
+  "wiki_name": "Giant bat (Sven's cave)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Giant_bat#Sven's_cave"
+}

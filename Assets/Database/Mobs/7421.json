@@ -1,0 +1,139 @@
+{
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "cacc1f655c286f4213b3a678f4a22e41dae54d79",
+  "_id": "60cd28b2cfb7392d0090780f",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60cd28b2cfb7392d0090780f",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 0,
+  "attack_level": 75,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "ranged"
+  ],
+  "attributes": [],
+  "category": [],
+  "combat_level": 82,
+  "defence_crush": 0,
+  "defence_level": 80,
+  "defence_magic": 0,
+  "defence_ranged": 0,
+  "defence_slash": 0,
+  "defence_stab": 0,
+  "drops": [
+    {
+      "id": 526,
+      "members": 0,
+      "name": "Bones",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 849,
+      "members": 0,
+      "name": "Willow shortbow",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.04",
+      "rolls": 1
+    },
+    {
+      "id": 847,
+      "members": 0,
+      "name": "Willow longbow",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.02",
+      "rolls": 1
+    },
+    {
+      "id": 886,
+      "members": 0,
+      "name": "Steel arrow",
+      "noted": 0,
+      "quantity": "10",
+      "rarity": "0.04",
+      "rolls": 1
+    },
+    {
+      "id": 888,
+      "members": 0,
+      "name": "Mithril arrow",
+      "noted": 0,
+      "quantity": "10",
+      "rarity": "0.04",
+      "rolls": 1
+    },
+    {
+      "id": 888,
+      "members": 0,
+      "name": "Mithril arrow",
+      "noted": 0,
+      "quantity": "20",
+      "rarity": "0.02",
+      "rolls": 1
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "100",
+      "rarity": "0.8",
+      "rolls": 1
+    },
+    {
+      "id": 1777,
+      "members": 1,
+      "name": "Bow string",
+      "noted": 1,
+      "quantity": "10",
+      "rarity": "0.04",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "A ranger of Zamorak.",
+  "hitpoints": 50,
+  "id": "7421",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2020-12-25",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 9,
+  "members": 1,
+  "name": "Zamorak ranger",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 80,
+  "release_date": "2016-10-13",
+  "size": 1,
+  "slayer_level": "",
+  "slayer_masters": [],
+  "slayer_monster": 0,
+  "slayer_xp": "",
+  "strength_bonus": 0,
+  "strength_level": 80,
+  "venomous": 0,
+  "wiki_name": "Zamorak ranger (Level 82)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Zamorak_ranger#Level_82"
+}

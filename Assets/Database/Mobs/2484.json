@@ -1,0 +1,297 @@
+{
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "9f865db380d8931c44c2c2b446deb637b10334a9",
+  "_id": "60cd28b0cfb7392d0090727c",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60cd28b0cfb7392d0090727c",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 0,
+  "attack_bonus": 12,
+  "attack_level": 7,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 6,
+  "attack_type": [
+    "stab"
+  ],
+  "attributes": [],
+  "category": [
+    "goblin"
+  ],
+  "combat_level": 5,
+  "defence_crush": 0,
+  "defence_level": 4,
+  "defence_magic": 0,
+  "defence_ranged": 0,
+  "defence_slash": 0,
+  "defence_stab": 0,
+  "drops": [
+    {
+      "id": 526,
+      "members": 0,
+      "name": "Bones",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "15",
+      "rarity": "0.0234375",
+      "rolls": 1
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "20",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 2347,
+      "members": 0,
+      "name": "Hammer",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.1171875",
+      "rolls": 1
+    },
+    {
+      "id": 10999,
+      "members": 1,
+      "name": "Goblin book",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 288,
+      "members": 0,
+      "name": "Goblin mail",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0390625",
+      "rolls": 1
+    },
+    {
+      "id": 1949,
+      "members": 0,
+      "name": "Chef's hat",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0234375",
+      "rolls": 1
+    },
+    {
+      "id": 1917,
+      "members": 0,
+      "name": "Beer",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 1009,
+      "members": 0,
+      "name": "Brass necklace",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 1438,
+      "members": 0,
+      "name": "Air talisman",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 1173,
+      "members": 0,
+      "name": "Bronze sq shield",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0234375",
+      "rolls": 1
+    },
+    {
+      "id": 7812,
+      "members": 1,
+      "name": "Goblin skull",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.25",
+      "rolls": 1
+    },
+    {
+      "id": 13447,
+      "members": 1,
+      "name": "Ensouled goblin head",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.02857142857142857",
+      "rolls": 1
+    },
+    {
+      "id": 11942,
+      "members": 1,
+      "name": "Ecumenical key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.016666666666666666",
+      "rolls": 1
+    },
+    {
+      "id": 23182,
+      "members": 0,
+      "name": "Clue scroll (beginner)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 2677,
+      "members": 1,
+      "name": "Clue scroll (easy)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 6801,
+      "members": 1,
+      "name": "Goblin champion scroll",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0002",
+      "rolls": 1
+    },
+    {
+      "id": 1237,
+      "members": 1,
+      "name": "Bronze spear",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.03125",
+      "rolls": 1
+    },
+    {
+      "id": 559,
+      "members": 0,
+      "name": "Body rune",
+      "noted": 0,
+      "quantity": "7",
+      "rarity": "0.0390625",
+      "rolls": 1
+    },
+    {
+      "id": 555,
+      "members": 0,
+      "name": "Water rune",
+      "noted": 0,
+      "quantity": "6",
+      "rarity": "0.046875",
+      "rolls": 1
+    },
+    {
+      "id": 557,
+      "members": 0,
+      "name": "Earth rune",
+      "noted": 0,
+      "quantity": "4",
+      "rarity": "0.0234375",
+      "rolls": 1
+    },
+    {
+      "id": 877,
+      "members": 0,
+      "name": "Bronze bolts",
+      "noted": 0,
+      "quantity": "8",
+      "rarity": "0.0234375",
+      "rolls": 1
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "5",
+      "rarity": "0.21875",
+      "rolls": 1
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "9",
+      "rarity": "0.0234375",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "An ugly green creature.",
+  "hitpoints": 5,
+  "id": "2484",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-05-30",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 1,
+  "members": 0,
+  "name": "Goblin",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2006-07-04",
+  "size": 1,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "turael",
+    "spria"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "5.0",
+  "strength_bonus": 12,
+  "strength_level": 2,
+  "venomous": 0,
+  "wiki_name": "Goblin (Vault of War) (Level 5)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Goblin_(Vault_of_War)#Level_5"
+}

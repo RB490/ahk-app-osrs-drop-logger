@@ -1,0 +1,83 @@
+{
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "cd7e8118fcf5d0c4e3c736869da3653c2b237637",
+  "_id": "60cd28b1cfb7392d009075c4",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60cd28b1cfb7392d009075c4",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 0,
+  "attack_level": 87,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "crush"
+  ],
+  "attributes": [
+    "undead"
+  ],
+  "category": [
+    "shade"
+  ],
+  "combat_level": 80,
+  "defence_crush": 0,
+  "defence_level": 60,
+  "defence_magic": 0,
+  "defence_ranged": 0,
+  "defence_slash": 0,
+  "defence_stab": 0,
+  "drops": [
+    {
+      "id": 3400,
+      "members": 1,
+      "name": "Riyl remains",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "The shadowy remains of a long departed soul.",
+  "hitpoints": 76,
+  "id": "5631",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2020-12-25",
+  "magic_bonus": 0,
+  "magic_level": 50,
+  "max_hit": 7,
+  "members": 1,
+  "name": "Riyl shadow",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 50,
+  "release_date": "2006-03-28",
+  "size": 1,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "mazchna",
+    "vannaka"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "76.0",
+  "strength_bonus": 0,
+  "strength_level": 56,
+  "venomous": 0,
+  "wiki_name": "Riyl shadow (Temple Trekking)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Riyl_shadow_(Temple_Trekking)"
+}

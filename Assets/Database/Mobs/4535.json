@@ -1,0 +1,81 @@
+{
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "642643738a211e526cc4930b0319bd50efc70a37",
+  "_id": "60cd28b1cfb7392d009074fd",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60cd28b1cfb7392d009074fd",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 0,
+  "attack_bonus": 0,
+  "attack_level": 5,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "stab"
+  ],
+  "attributes": [],
+  "category": [
+    "rat"
+  ],
+  "combat_level": 9,
+  "defence_crush": -24,
+  "defence_level": 1,
+  "defence_magic": -24,
+  "defence_ranged": -24,
+  "defence_slash": -24,
+  "defence_stab": -24,
+  "drops": [
+    {
+      "id": 526,
+      "members": 0,
+      "name": "Bones",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "Some oversized vermin, blessed by Zamorak.",
+  "hitpoints": 30,
+  "id": "4535",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2020-12-25",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 1,
+  "members": 1,
+  "name": "Blessed giant rat",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2003-03-03",
+  "size": 2,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "turael",
+    "spria"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "30.0",
+  "strength_bonus": -24,
+  "strength_level": 1,
+  "venomous": 0,
+  "wiki_name": "Blessed giant rat (2)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Blessed_giant_rat#2"
+}

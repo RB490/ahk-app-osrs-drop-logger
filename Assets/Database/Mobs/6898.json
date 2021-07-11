@@ -1,0 +1,346 @@
+{
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "762d873973daea83354d09aa1af0afb77fbcd76f",
+  "_id": "60cd28b2cfb7392d0090777b",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60cd28b2cfb7392d0090777b",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 0,
+  "attack_bonus": 35,
+  "attack_level": 50,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 5,
+  "attack_type": [
+    "melee"
+  ],
+  "attributes": [],
+  "category": [],
+  "combat_level": 50,
+  "defence_crush": 10,
+  "defence_level": 40,
+  "defence_magic": 0,
+  "defence_ranged": 0,
+  "defence_slash": 0,
+  "defence_stab": 0,
+  "drops": [
+    {
+      "id": 1623,
+      "members": 1,
+      "name": "Uncut sapphire",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 1621,
+      "members": 1,
+      "name": "Uncut emerald",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 1619,
+      "members": 1,
+      "name": "Uncut ruby",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00390625",
+      "rolls": 1
+    },
+    {
+      "id": 1452,
+      "members": 1,
+      "name": "Chaos talisman",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0014647293180220294",
+      "rolls": 1
+    },
+    {
+      "id": 1462,
+      "members": 1,
+      "name": "Nature talisman",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0014647293180220294",
+      "rolls": 1
+    },
+    {
+      "id": 1617,
+      "members": 1,
+      "name": "Uncut diamond",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0009765625",
+      "rolls": 1
+    },
+    {
+      "id": 830,
+      "members": 1,
+      "name": "Rune javelin",
+      "noted": 0,
+      "quantity": "5",
+      "rarity": "0.00048828125",
+      "rolls": 1
+    },
+    {
+      "id": 987,
+      "members": 1,
+      "name": "Loop half of key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00048828125",
+      "rolls": 1
+    },
+    {
+      "id": 985,
+      "members": 1,
+      "name": "Tooth half of key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00048828125",
+      "rolls": 1
+    },
+    {
+      "id": 1247,
+      "members": 1,
+      "name": "Rune spear",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "3.0517578125e-05",
+      "rolls": 1
+    },
+    {
+      "id": 2366,
+      "members": 1,
+      "name": "Shield left half",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.52587890625e-05",
+      "rolls": 1
+    },
+    {
+      "id": 1249,
+      "members": 1,
+      "name": "Dragon spear",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.1443197797047105e-05",
+      "rolls": 1
+    },
+    {
+      "id": 526,
+      "members": 0,
+      "name": "Bones",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 213,
+      "members": 1,
+      "name": "Grimy kwuarm",
+      "noted": 1,
+      "quantity": "1",
+      "rarity": "0.030517578125",
+      "rolls": 1
+    },
+    {
+      "id": 2485,
+      "members": 1,
+      "name": "Grimy lantadyme",
+      "noted": 1,
+      "quantity": "1",
+      "rarity": "0.018310546875",
+      "rolls": 1
+    },
+    {
+      "id": 2357,
+      "members": 0,
+      "name": "Gold bar",
+      "noted": 1,
+      "quantity": "8-16",
+      "rarity": "0.05859375",
+      "rolls": 1
+    },
+    {
+      "id": 8782,
+      "members": 1,
+      "name": "Mahogany plank",
+      "noted": 1,
+      "quantity": "4-8",
+      "rarity": "0.078125",
+      "rolls": 1
+    },
+    {
+      "id": 8778,
+      "members": 1,
+      "name": "Oak plank",
+      "noted": 1,
+      "quantity": "10-20",
+      "rarity": "0.15625",
+      "rolls": 1
+    },
+    {
+      "id": 8780,
+      "members": 1,
+      "name": "Teak plank",
+      "noted": 1,
+      "quantity": "5-10",
+      "rarity": "0.1171875",
+      "rolls": 1
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "600-800",
+      "rarity": "0.1171875",
+      "rolls": 1
+    },
+    {
+      "id": 6032,
+      "members": 1,
+      "name": "Compost",
+      "noted": 1,
+      "quantity": "45-80",
+      "rarity": "0.09765625",
+      "rolls": 1
+    },
+    {
+      "id": 1333,
+      "members": 0,
+      "name": "Rune scimitar",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0125",
+      "rolls": 1
+    },
+    {
+      "id": 13395,
+      "members": 1,
+      "name": "Intelligence",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.2",
+      "rolls": 1
+    },
+    {
+      "id": 1107,
+      "members": 0,
+      "name": "Black chainbody",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.03125",
+      "rolls": 1
+    },
+    {
+      "id": 2722,
+      "members": 1,
+      "name": "Clue scroll (hard)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.015384615384615385",
+      "rolls": 1
+    },
+    {
+      "id": 1151,
+      "members": 0,
+      "name": "Black med helm",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.03125",
+      "rolls": 1
+    },
+    {
+      "id": 1089,
+      "members": 0,
+      "name": "Black plateskirt",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.03125",
+      "rolls": 1
+    },
+    {
+      "id": 1327,
+      "members": 0,
+      "name": "Black scimitar",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.04296875",
+      "rolls": 1
+    },
+    {
+      "id": 564,
+      "members": 0,
+      "name": "Cosmic rune",
+      "noted": 0,
+      "quantity": "30-60",
+      "rarity": "0.078125",
+      "rolls": 1
+    },
+    {
+      "id": 215,
+      "members": 1,
+      "name": "Grimy cadantine",
+      "noted": 1,
+      "quantity": "1",
+      "rarity": "0.0244140625",
+      "rolls": 1
+    },
+    {
+      "id": 217,
+      "members": 1,
+      "name": "Grimy dwarf weed",
+      "noted": 1,
+      "quantity": "1",
+      "rarity": "0.0244140625",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "He's up to no good.",
+  "hitpoints": 50,
+  "id": "6898",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-05-30",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 6,
+  "members": 1,
+  "name": "Gangster",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2016-01-07",
+  "size": 1,
+  "slayer_level": "",
+  "slayer_masters": [],
+  "slayer_monster": 0,
+  "slayer_xp": "",
+  "strength_bonus": 15,
+  "strength_level": 40,
+  "venomous": 0,
+  "wiki_name": "Gangster (Level 50)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Gangster#Level_50"
+}

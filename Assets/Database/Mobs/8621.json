@@ -1,0 +1,650 @@
+{
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "83e05846fccdf8c1787fed7da49f1b284b4d0882",
+  "_id": "60cd28b2cfb7392d00907914",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60cd28b2cfb7392d00907914",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 0,
+  "attack_level": 100,
+  "attack_magic": 45,
+  "attack_ranged": 45,
+  "attack_speed": 4,
+  "attack_type": [
+    "ranged",
+    "magic"
+  ],
+  "attributes": [
+    "dragon"
+  ],
+  "category": [
+    "hydras"
+  ],
+  "combat_level": 426,
+  "defence_crush": 150,
+  "defence_level": 100,
+  "defence_magic": 150,
+  "defence_ranged": 45,
+  "defence_slash": 150,
+  "defence_stab": 75,
+  "drops": [
+    {
+      "id": 22786,
+      "members": 1,
+      "name": "Hydra bones",
+      "noted": 0,
+      "quantity": "2",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 1401,
+      "members": 1,
+      "name": "Mystic fire staff",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.07920792079207921",
+      "rolls": 2
+    },
+    {
+      "id": 1403,
+      "members": 1,
+      "name": "Mystic water staff",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.07920792079207921",
+      "rolls": 2
+    },
+    {
+      "id": 1391,
+      "members": 1,
+      "name": "Battlestaff",
+      "noted": 1,
+      "quantity": "8-12",
+      "rarity": "0.04950495049504951",
+      "rolls": 2
+    },
+    {
+      "id": 2503,
+      "members": 1,
+      "name": "Black d'hide body",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.04950495049504951",
+      "rolls": 2
+    },
+    {
+      "id": 1305,
+      "members": 1,
+      "name": "Dragon longsword",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0297029702970297",
+      "rolls": 2
+    },
+    {
+      "id": 1149,
+      "members": 1,
+      "name": "Dragon med helm",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0297029702970297",
+      "rolls": 2
+    },
+    {
+      "id": 1127,
+      "members": 0,
+      "name": "Rune platebody",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0297029702970297",
+      "rolls": 2
+    },
+    {
+      "id": 1377,
+      "members": 1,
+      "name": "Dragon battleaxe",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.019801980198019802",
+      "rolls": 2
+    },
+    {
+      "id": 1079,
+      "members": 0,
+      "name": "Rune platelegs",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.01485148514851485",
+      "rolls": 2
+    },
+    {
+      "id": 1093,
+      "members": 0,
+      "name": "Rune plateskirt",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.01485148514851485",
+      "rolls": 2
+    },
+    {
+      "id": 22973,
+      "members": 1,
+      "name": "Hydra's eye",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0055248618784530384",
+      "rolls": 1
+    },
+    {
+      "id": 4111,
+      "members": 1,
+      "name": "Mystic robe top (light)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.009900990099009901",
+      "rolls": 2
+    },
+    {
+      "id": 4113,
+      "members": 1,
+      "name": "Mystic robe bottom (light)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.009900990099009901",
+      "rolls": 2
+    },
+    {
+      "id": 562,
+      "members": 0,
+      "name": "Chaos rune",
+      "noted": 0,
+      "quantity": "150-300",
+      "rarity": "0.0594059405940594",
+      "rolls": 2
+    },
+    {
+      "id": 560,
+      "members": 0,
+      "name": "Death rune",
+      "noted": 0,
+      "quantity": "150-300",
+      "rarity": "0.0594059405940594",
+      "rolls": 2
+    },
+    {
+      "id": 565,
+      "members": 1,
+      "name": "Blood rune",
+      "noted": 0,
+      "quantity": "150-300",
+      "rarity": "0.0594059405940594",
+      "rolls": 2
+    },
+    {
+      "id": 9075,
+      "members": 1,
+      "name": "Astral rune",
+      "noted": 0,
+      "quantity": "150-300",
+      "rarity": "0.0594059405940594",
+      "rolls": 2
+    },
+    {
+      "id": 9244,
+      "members": 1,
+      "name": "Dragonstone bolts (e)",
+      "noted": 0,
+      "quantity": "100-120",
+      "rarity": "0.019801980198019802",
+      "rolls": 2
+    },
+    {
+      "id": 9245,
+      "members": 1,
+      "name": "Onyx bolts (e)",
+      "noted": 0,
+      "quantity": "35-50",
+      "rarity": "0.009900990099009901",
+      "rolls": 2
+    },
+    {
+      "id": 211,
+      "members": 1,
+      "name": "Grimy avantoe",
+      "noted": 1,
+      "quantity": "10-15",
+      "rarity": "0.015479876160990712",
+      "rolls": 2
+    },
+    {
+      "id": 213,
+      "members": 1,
+      "name": "Grimy kwuarm",
+      "noted": 1,
+      "quantity": "25-30",
+      "rarity": "0.015479876160990712",
+      "rolls": 2
+    },
+    {
+      "id": 22971,
+      "members": 1,
+      "name": "Hydra's fang",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0055248618784530384",
+      "rolls": 1
+    },
+    {
+      "id": 207,
+      "members": 1,
+      "name": "Grimy ranarr weed",
+      "noted": 1,
+      "quantity": "10-15",
+      "rarity": "0.012376237623762377",
+      "rolls": 2
+    },
+    {
+      "id": 3051,
+      "members": 1,
+      "name": "Grimy snapdragon",
+      "noted": 1,
+      "quantity": "10-15",
+      "rarity": "0.012376237623762377",
+      "rolls": 2
+    },
+    {
+      "id": 215,
+      "members": 1,
+      "name": "Grimy cadantine",
+      "noted": 1,
+      "quantity": "25-30",
+      "rarity": "0.012376237623762377",
+      "rolls": 2
+    },
+    {
+      "id": 217,
+      "members": 1,
+      "name": "Grimy dwarf weed",
+      "noted": 1,
+      "quantity": "25-30",
+      "rarity": "0.012376237623762377",
+      "rolls": 2
+    },
+    {
+      "id": 2485,
+      "members": 1,
+      "name": "Grimy lantadyme",
+      "noted": 1,
+      "quantity": "25-30",
+      "rarity": "0.009285051067780872",
+      "rolls": 2
+    },
+    {
+      "id": 219,
+      "members": 1,
+      "name": "Grimy torstol",
+      "noted": 1,
+      "quantity": "10-15",
+      "rarity": "0.009285051067780872",
+      "rolls": 2
+    },
+    {
+      "id": 5295,
+      "members": 1,
+      "name": "Ranarr seed",
+      "noted": 0,
+      "quantity": "2-3",
+      "rarity": "0.002376425855513308",
+      "rolls": 2
+    },
+    {
+      "id": 5300,
+      "members": 1,
+      "name": "Snapdragon seed",
+      "noted": 0,
+      "quantity": "2-3",
+      "rarity": "0.0022177866489243737",
+      "rolls": 2
+    },
+    {
+      "id": 5304,
+      "members": 1,
+      "name": "Torstol seed",
+      "noted": 0,
+      "quantity": "2-3",
+      "rarity": "0.0017424638438752395",
+      "rolls": 2
+    },
+    {
+      "id": 5321,
+      "members": 1,
+      "name": "Watermelon seed",
+      "noted": 0,
+      "quantity": "30-45",
+      "rarity": "0.0015842839036755386",
+      "rolls": 2
+    },
+    {
+      "id": 22969,
+      "members": 1,
+      "name": "Hydra's heart",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0055248618784530384",
+      "rolls": 1
+    },
+    {
+      "id": 5313,
+      "members": 1,
+      "name": "Willow seed",
+      "noted": 0,
+      "quantity": "2-3",
+      "rarity": "0.0015842839036755386",
+      "rolls": 2
+    },
+    {
+      "id": 21488,
+      "members": 1,
+      "name": "Mahogany seed",
+      "noted": 0,
+      "quantity": "2-3",
+      "rarity": "0.00142571998859424",
+      "rolls": 2
+    },
+    {
+      "id": 5314,
+      "members": 1,
+      "name": "Maple seed",
+      "noted": 0,
+      "quantity": "2-3",
+      "rarity": "0.00142571998859424",
+      "rolls": 2
+    },
+    {
+      "id": 21486,
+      "members": 1,
+      "name": "Teak seed",
+      "noted": 0,
+      "quantity": "2-3",
+      "rarity": "0.00142571998859424",
+      "rolls": 2
+    },
+    {
+      "id": 5315,
+      "members": 1,
+      "name": "Yew seed",
+      "noted": 0,
+      "quantity": "2-3",
+      "rarity": "0.00142571998859424",
+      "rolls": 2
+    },
+    {
+      "id": 5288,
+      "members": 1,
+      "name": "Papaya tree seed",
+      "noted": 0,
+      "quantity": "2-3",
+      "rarity": "0.0011088933244621868",
+      "rolls": 2
+    },
+    {
+      "id": 5316,
+      "members": 1,
+      "name": "Magic seed",
+      "noted": 0,
+      "quantity": "2-3",
+      "rarity": "0.0009504799923961601",
+      "rolls": 2
+    },
+    {
+      "id": 5289,
+      "members": 1,
+      "name": "Palm tree seed",
+      "noted": 0,
+      "quantity": "2-3",
+      "rarity": "0.0007920792079207921",
+      "rolls": 2
+    },
+    {
+      "id": 5317,
+      "members": 1,
+      "name": "Spirit seed",
+      "noted": 0,
+      "quantity": "2-3",
+      "rarity": "0.0006336734047272036",
+      "rolls": 2
+    },
+    {
+      "id": 22877,
+      "members": 1,
+      "name": "Dragonfruit tree seed",
+      "noted": 0,
+      "quantity": "2-3",
+      "rarity": "0.00047523999619808005",
+      "rolls": 2
+    },
+    {
+      "id": 22988,
+      "members": 1,
+      "name": "Hydra tail",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.001949317738791423",
+      "rolls": 1
+    },
+    {
+      "id": 22869,
+      "members": 1,
+      "name": "Celastrus seed",
+      "noted": 0,
+      "quantity": "2-3",
+      "rarity": "0.0003168367023636018",
+      "rolls": 2
+    },
+    {
+      "id": 22871,
+      "members": 1,
+      "name": "Redwood tree seed",
+      "noted": 0,
+      "quantity": "2-3",
+      "rarity": "0.0003168367023636018",
+      "rolls": 2
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "5550-25550",
+      "rarity": "0.0049504950495049506",
+      "rolls": 2
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "40000-60000",
+      "rarity": "0.09405940594059406",
+      "rolls": 2
+    },
+    {
+      "id": 385,
+      "members": 1,
+      "name": "Shark",
+      "noted": 0,
+      "quantity": "2-4",
+      "rarity": "0.06930693069306931",
+      "rolls": 2
+    },
+    {
+      "id": 169,
+      "members": 1,
+      "name": "Ranging potion(3)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.06930693069306931",
+      "rolls": 2
+    },
+    {
+      "id": 3026,
+      "members": 1,
+      "name": "Super restore(3)",
+      "noted": 0,
+      "quantity": "2",
+      "rarity": "0.06930693069306931",
+      "rolls": 2
+    },
+    {
+      "id": 536,
+      "members": 1,
+      "name": "Dragon bones",
+      "noted": 1,
+      "quantity": "30",
+      "rarity": "0.0594059405940594",
+      "rolls": 2
+    },
+    {
+      "id": 989,
+      "members": 1,
+      "name": "Crystal key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.009900990099009901",
+      "rolls": 2
+    },
+    {
+      "id": 22983,
+      "members": 1,
+      "name": "Hydra leather",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0019455252918287938",
+      "rolls": 1
+    },
+    {
+      "id": 22966,
+      "members": 1,
+      "name": "Hydra's claw",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.000999000999000999",
+      "rolls": 1
+    },
+    {
+      "id": 20849,
+      "members": 1,
+      "name": "Dragon thrownaxe",
+      "noted": 0,
+      "quantity": "500-1000",
+      "rarity": "0.0005",
+      "rolls": 1
+    },
+    {
+      "id": 23083,
+      "members": 1,
+      "name": "Brimstone key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.025",
+      "rolls": 1
+    },
+    {
+      "id": 23077,
+      "members": 1,
+      "name": "Alchemical hydra heads",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00390625",
+      "rolls": 1
+    },
+    {
+      "id": 2722,
+      "members": 1,
+      "name": "Clue scroll (hard)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.01",
+      "rolls": 1
+    },
+    {
+      "id": 12073,
+      "members": 1,
+      "name": "Clue scroll (elite)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00390625",
+      "rolls": 1
+    },
+    {
+      "id": 23064,
+      "members": 1,
+      "name": "Jar of chemicals",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0005",
+      "rolls": 1
+    },
+    {
+      "id": 22804,
+      "members": 1,
+      "name": "Dragon knife",
+      "noted": 0,
+      "quantity": "500-1000",
+      "rarity": "0.0004997501249375312",
+      "rolls": 1
+    },
+    {
+      "id": 22746,
+      "members": 1,
+      "name": "Ikkle hydra",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0003333333333333333",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "A ferocious Alchemical Hydra!",
+  "hitpoints": 1100,
+  "id": "8621",
+  "immune_poison": 1,
+  "immune_venom": 1,
+  "incomplete": 0,
+  "last_updated": "2021-03-11",
+  "magic_bonus": 20,
+  "magic_level": 260,
+  "max_hit": 55,
+  "members": 1,
+  "name": "Alchemical Hydra",
+  "poisonous": 1,
+  "ranged_bonus": 20,
+  "ranged_level": 260,
+  "release_date": "2019-01-10",
+  "size": 6,
+  "slayer_level": 95,
+  "slayer_masters": [
+    "konar"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "1320.0",
+  "strength_bonus": 0,
+  "strength_level": 100,
+  "venomous": 0,
+  "wiki_name": "Alchemical Hydra (Two heads)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Alchemical_Hydra#Two_heads"
+}

@@ -1,0 +1,94 @@
+{
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "3b0129df89e127224b36bcc7022cb3aa604750b7",
+  "_id": "60cd28b1cfb7392d00907700",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60cd28b1cfb7392d00907700",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 0,
+  "attack_level": 0,
+  "attack_magic": 25,
+  "attack_ranged": 0,
+  "attack_speed": 6,
+  "attack_type": [
+    "magic"
+  ],
+  "attributes": [],
+  "category": [],
+  "combat_level": 60,
+  "defence_crush": 20,
+  "defence_level": 26,
+  "defence_magic": 0,
+  "defence_ranged": 0,
+  "defence_slash": 20,
+  "defence_stab": 20,
+  "drops": [
+    {
+      "id": 6335,
+      "members": 1,
+      "name": "Tribal mask (green)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 6337,
+      "members": 1,
+      "name": "Tribal mask (orange)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 6339,
+      "members": 1,
+      "name": "Tribal mask (blue)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "An undead victim of some ancient murderous ritual; his skin is pale and drawn.",
+  "hitpoints": 100,
+  "id": "6413",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2020-12-25",
+  "magic_bonus": 0,
+  "magic_level": 60,
+  "max_hit": 7,
+  "members": 1,
+  "name": "Broodoo victim",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2005-08-09",
+  "size": 1,
+  "slayer_level": "",
+  "slayer_masters": [],
+  "slayer_monster": 0,
+  "slayer_xp": "",
+  "strength_bonus": 0,
+  "strength_level": 0,
+  "venomous": 0,
+  "wiki_name": "Broodoo victim (White)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Broodoo_victim#White"
+}

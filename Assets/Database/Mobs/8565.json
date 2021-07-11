@@ -1,0 +1,480 @@
+{
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "f94687159f205bd7005a71b0c3bf6e7f44707bc3",
+  "_id": "60cd28b2cfb7392d00907905",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60cd28b2cfb7392d00907905",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 45,
+  "attack_level": 120,
+  "attack_magic": 0,
+  "attack_ranged": 45,
+  "attack_speed": 4,
+  "attack_type": [
+    "crush",
+    "ranged"
+  ],
+  "attributes": [],
+  "category": [
+    "lizardmen"
+  ],
+  "combat_level": 150,
+  "defence_crush": 30,
+  "defence_level": 140,
+  "defence_magic": 50,
+  "defence_ranged": 0,
+  "defence_slash": 40,
+  "defence_stab": -10,
+  "drops": [
+    {
+      "id": 532,
+      "members": 0,
+      "name": "Big bones",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 562,
+      "members": 0,
+      "name": "Chaos rune",
+      "noted": 0,
+      "quantity": "40-60",
+      "rarity": "0.05",
+      "rolls": 1
+    },
+    {
+      "id": 560,
+      "members": 0,
+      "name": "Death rune",
+      "noted": 0,
+      "quantity": "20-30",
+      "rarity": "0.05",
+      "rolls": 1
+    },
+    {
+      "id": 554,
+      "members": 0,
+      "name": "Fire rune",
+      "noted": 0,
+      "quantity": "60-80",
+      "rarity": "0.05",
+      "rolls": 1
+    },
+    {
+      "id": 13383,
+      "members": 1,
+      "name": "Xerician fabric",
+      "noted": 0,
+      "quantity": "2",
+      "rarity": "0.08",
+      "rolls": 1
+    },
+    {
+      "id": 453,
+      "members": 0,
+      "name": "Coal",
+      "noted": 1,
+      "quantity": "20-25",
+      "rarity": "0.04",
+      "rolls": 1
+    },
+    {
+      "id": 440,
+      "members": 0,
+      "name": "Iron ore",
+      "noted": 1,
+      "quantity": "30-35",
+      "rarity": "0.04",
+      "rolls": 1
+    },
+    {
+      "id": 451,
+      "members": 0,
+      "name": "Runite ore",
+      "noted": 1,
+      "quantity": "3-5",
+      "rarity": "0.016",
+      "rolls": 1
+    },
+    {
+      "id": 213,
+      "members": 1,
+      "name": "Grimy kwuarm",
+      "noted": 1,
+      "quantity": "2-3",
+      "rarity": "0.0281214848143982",
+      "rolls": 1
+    },
+    {
+      "id": 215,
+      "members": 1,
+      "name": "Grimy cadantine",
+      "noted": 1,
+      "quantity": "2-3",
+      "rarity": "0.022502250225022502",
+      "rolls": 1
+    },
+    {
+      "id": 217,
+      "members": 1,
+      "name": "Grimy dwarf weed",
+      "noted": 1,
+      "quantity": "2-3",
+      "rarity": "0.022502250225022502",
+      "rolls": 1
+    },
+    {
+      "id": 13576,
+      "members": 1,
+      "name": "Dragon warhammer",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0002",
+      "rolls": 1
+    },
+    {
+      "id": 2485,
+      "members": 1,
+      "name": "Grimy lantadyme",
+      "noted": 1,
+      "quantity": "2-3",
+      "rarity": "0.016874789065136685",
+      "rolls": 1
+    },
+    {
+      "id": 5295,
+      "members": 1,
+      "name": "Ranarr seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0023998080153587713",
+      "rolls": 1
+    },
+    {
+      "id": 5300,
+      "members": 1,
+      "name": "Snapdragon seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.002240143369175627",
+      "rolls": 1
+    },
+    {
+      "id": 5304,
+      "members": 1,
+      "name": "Torstol seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0017599436818021823",
+      "rolls": 1
+    },
+    {
+      "id": 5321,
+      "members": 1,
+      "name": "Watermelon seed",
+      "noted": 0,
+      "quantity": "15",
+      "rarity": "0.0016",
+      "rolls": 1
+    },
+    {
+      "id": 5313,
+      "members": 1,
+      "name": "Willow seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0016",
+      "rolls": 1
+    },
+    {
+      "id": 21488,
+      "members": 1,
+      "name": "Mahogany seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0014400921658986176",
+      "rolls": 1
+    },
+    {
+      "id": 5314,
+      "members": 1,
+      "name": "Maple seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0014400921658986176",
+      "rolls": 1
+    },
+    {
+      "id": 21486,
+      "members": 1,
+      "name": "Teak seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0014400921658986176",
+      "rolls": 1
+    },
+    {
+      "id": 5315,
+      "members": 1,
+      "name": "Yew seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0014400921658986176",
+      "rolls": 1
+    },
+    {
+      "id": 1147,
+      "members": 0,
+      "name": "Rune med helm",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.036",
+      "rolls": 1
+    },
+    {
+      "id": 5288,
+      "members": 1,
+      "name": "Papaya tree seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0011199462425803561",
+      "rolls": 1
+    },
+    {
+      "id": 5316,
+      "members": 1,
+      "name": "Magic seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0009599692809830085",
+      "rolls": 1
+    },
+    {
+      "id": 5289,
+      "members": 1,
+      "name": "Palm tree seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0008",
+      "rolls": 1
+    },
+    {
+      "id": 5317,
+      "members": 1,
+      "name": "Spirit seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00064",
+      "rolls": 1
+    },
+    {
+      "id": 22877,
+      "members": 1,
+      "name": "Dragonfruit tree seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00048000768012288196",
+      "rolls": 1
+    },
+    {
+      "id": 22869,
+      "members": 1,
+      "name": "Celastrus seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00032",
+      "rolls": 1
+    },
+    {
+      "id": 22871,
+      "members": 1,
+      "name": "Redwood tree seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00032",
+      "rolls": 1
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "100-6000",
+      "rarity": "0.14",
+      "rolls": 1
+    },
+    {
+      "id": 13391,
+      "members": 1,
+      "name": "Lizardman fang",
+      "noted": 0,
+      "quantity": "10-14",
+      "rarity": "0.076",
+      "rolls": 1
+    },
+    {
+      "id": 7054,
+      "members": 1,
+      "name": "Chilli potato",
+      "noted": 0,
+      "quantity": "2",
+      "rarity": "0.06",
+      "rolls": 1
+    },
+    {
+      "id": 1399,
+      "members": 1,
+      "name": "Earth battlestaff",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.034",
+      "rolls": 1
+    },
+    {
+      "id": 13393,
+      "members": 1,
+      "name": "Xeric's talisman",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.004",
+      "rolls": 1
+    },
+    {
+      "id": 1407,
+      "members": 1,
+      "name": "Mystic earth staff",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.034",
+      "rolls": 1
+    },
+    {
+      "id": 1347,
+      "members": 0,
+      "name": "Rune warhammer",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.032",
+      "rolls": 1
+    },
+    {
+      "id": 23083,
+      "members": 1,
+      "name": "Brimstone key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.011111111111111112",
+      "rolls": 1
+    },
+    {
+      "id": 2722,
+      "members": 1,
+      "name": "Clue scroll (hard)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.005",
+      "rolls": 1
+    },
+    {
+      "id": 10976,
+      "members": 1,
+      "name": "Long bone",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0025",
+      "rolls": 1
+    },
+    {
+      "id": 1113,
+      "members": 0,
+      "name": "Rune chainbody",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.024",
+      "rolls": 1
+    },
+    {
+      "id": 12073,
+      "members": 1,
+      "name": "Clue scroll (elite)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0008333333333333334",
+      "rolls": 1
+    },
+    {
+      "id": 10977,
+      "members": 1,
+      "name": "Curved bone",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00019950124688279303",
+      "rolls": 1
+    },
+    {
+      "id": 2489,
+      "members": 1,
+      "name": "Red d'hide vambraces",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.02",
+      "rolls": 1
+    },
+    {
+      "id": 556,
+      "members": 0,
+      "name": "Air rune",
+      "noted": 0,
+      "quantity": "60-80",
+      "rarity": "0.05",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "A Lizardman shaman wearing a pernicious olmic headdress.",
+  "hitpoints": 150,
+  "id": "8565",
+  "immune_poison": 1,
+  "immune_venom": 1,
+  "incomplete": 1,
+  "last_updated": "2020-12-25",
+  "magic_bonus": 0,
+  "magic_level": 130,
+  "max_hit": 31,
+  "members": 1,
+  "name": "Lizardman shaman",
+  "poisonous": 1,
+  "ranged_bonus": 38,
+  "ranged_level": 120,
+  "release_date": "2019-01-10",
+  "size": 2,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "chaeldar",
+    "konar",
+    "nieve",
+    "duradel"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "157.5",
+  "strength_bonus": 38,
+  "strength_level": 120,
+  "venomous": 0,
+  "wiki_name": "Lizardman shaman (Lizardman Temple)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Lizardman_shaman#Lizardman_Temple"
+}

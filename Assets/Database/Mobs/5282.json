@@ -1,0 +1,103 @@
+{
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "021dcc1104c7118e028276fd589755a8c8c55ec3",
+  "_id": "60cd28b1cfb7392d00907591",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60cd28b1cfb7392d00907591",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 35,
+  "attack_level": 150,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "crush"
+  ],
+  "attributes": [
+    "undead"
+  ],
+  "category": [
+    "monkey",
+    "zombie"
+  ],
+  "combat_level": 129,
+  "defence_crush": 0,
+  "defence_level": 90,
+  "defence_magic": 0,
+  "defence_ranged": 0,
+  "defence_slash": 0,
+  "defence_stab": 0,
+  "drops": [
+    {
+      "id": 3185,
+      "members": 1,
+      "name": "Monkey bones (small zombie)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 3186,
+      "members": 1,
+      "name": "Monkey bones (large zombie)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 7854,
+      "members": 1,
+      "name": "Monkey paw",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "A large and lumbering undead monkey stands here, blocking the way.",
+  "hitpoints": 90,
+  "id": "5282",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2020-12-25",
+  "magic_bonus": 0,
+  "magic_level": 90,
+  "max_hit": 12,
+  "members": 1,
+  "name": "Monkey Zombie",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2004-12-06",
+  "size": 1,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "turael",
+    "spria",
+    "mazchna"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "90.0",
+  "strength_bonus": 0,
+  "strength_level": 110,
+  "venomous": 0,
+  "wiki_name": "Monkey Zombie (Level 129)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Monkey_Zombie#Level_129"
+}

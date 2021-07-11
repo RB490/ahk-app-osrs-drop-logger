@@ -1,0 +1,84 @@
+{
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "fb4f2423d786230ac497d6504c2a4acfca9ce22f",
+  "_id": "60cd28b0cfb7392d009072a2",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60cd28b0cfb7392d009072a2",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 0,
+  "attack_level": 63,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "crush"
+  ],
+  "attributes": [
+    "undead"
+  ],
+  "category": [
+    "ghost"
+  ],
+  "combat_level": 77,
+  "defence_crush": 5,
+  "defence_level": 68,
+  "defence_magic": 55,
+  "defence_ranged": 55,
+  "defence_slash": 55,
+  "defence_stab": 55,
+  "drops": [
+    {
+      "id": 23182,
+      "members": 0,
+      "name": "Clue scroll (beginner)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.011111111111111112",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "Eeek! A ghost!",
+  "hitpoints": 80,
+  "id": "2527",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-05-30",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 7,
+  "members": 0,
+  "name": "Ghost",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2006-07-04",
+  "size": 1,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "turael",
+    "spria",
+    "mazchna"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "80.0",
+  "strength_bonus": 0,
+  "strength_level": 63,
+  "venomous": 0,
+  "wiki_name": "Ghost (Level 77)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Ghost#Level_77"
+}

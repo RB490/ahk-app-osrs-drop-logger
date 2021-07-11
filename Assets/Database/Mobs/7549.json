@@ -1,0 +1,186 @@
+{
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "9bd9b3b378f27f7ab6f9b335fc47e83ca963d63d",
+  "_id": "60cd28b2cfb7392d00907828",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60cd28b2cfb7392d00907828",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 0,
+  "attack_level": 180,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "crush"
+  ],
+  "attributes": [
+    "xerician"
+  ],
+  "category": [],
+  "combat_level": 0,
+  "defence_crush": 0,
+  "defence_level": 67,
+  "defence_magic": 0,
+  "defence_ranged": 0,
+  "defence_slash": 0,
+  "defence_stab": 0,
+  "drops": [
+    {
+      "id": 526,
+      "members": 0,
+      "name": "Bones",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 20911,
+      "members": 1,
+      "name": "Endarkened juice",
+      "noted": 0,
+      "quantity": "6-16",
+      "rarity": "0.1111111111111111",
+      "rolls": 3
+    },
+    {
+      "id": 20910,
+      "members": 1,
+      "name": "Stinkhorn mushroom",
+      "noted": 0,
+      "quantity": "6-16",
+      "rarity": "0.1111111111111111",
+      "rolls": 3
+    },
+    {
+      "id": 20912,
+      "members": 1,
+      "name": "Cicely",
+      "noted": 0,
+      "quantity": "6-16",
+      "rarity": "0.1111111111111111",
+      "rolls": 3
+    },
+    {
+      "id": 21036,
+      "members": 1,
+      "name": "Mallignum root plank",
+      "noted": 0,
+      "quantity": "2",
+      "rarity": "0.1111111111111111",
+      "rolls": 3
+    },
+    {
+      "id": 307,
+      "members": 0,
+      "name": "Fishing rod",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.05555555555555555",
+      "rolls": 3
+    },
+    {
+      "id": 1267,
+      "members": 0,
+      "name": "Iron pickaxe",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.05555555555555555",
+      "rolls": 3
+    },
+    {
+      "id": 1349,
+      "members": 0,
+      "name": "Iron axe",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.05555555555555555",
+      "rolls": 3
+    },
+    {
+      "id": 10010,
+      "members": 1,
+      "name": "Butterfly net",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.05555555555555555",
+      "rolls": 3
+    },
+    {
+      "id": 2347,
+      "members": 0,
+      "name": "Hammer",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.05555555555555555",
+      "rolls": 3
+    },
+    {
+      "id": 590,
+      "members": 0,
+      "name": "Tinderbox",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.05555555555555555",
+      "rolls": 3
+    },
+    {
+      "id": 1523,
+      "members": 1,
+      "name": "Lockpick",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.1111111111111111",
+      "rolls": 3
+    },
+    {
+      "id": 20853,
+      "members": 1,
+      "name": "Cave worms",
+      "noted": 0,
+      "quantity": "30-50",
+      "rarity": "0.1111111111111111",
+      "rolls": 3
+    }
+  ],
+  "duplicate": 0,
+  "examine": "A feral denizen of the caves.",
+  "hitpoints": 45,
+  "id": "7549",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2020-12-25",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": "",
+  "members": 1,
+  "name": "Scavenger beast",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2018-05-17",
+  "size": 2,
+  "slayer_level": "",
+  "slayer_masters": [],
+  "slayer_monster": 0,
+  "slayer_xp": "",
+  "strength_bonus": 0,
+  "strength_level": 180,
+  "venomous": 0,
+  "wiki_name": "Scavenger beast (Challenge Mode)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Scavenger_beast#Challenge_Mode"
+}

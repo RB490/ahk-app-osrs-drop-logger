@@ -1,0 +1,408 @@
+{
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "e15de2c0f154920639c06d1a9ce32bfce8be711c",
+  "_id": "60cd28b0cfb7392d00907256",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60cd28b0cfb7392d00907256",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 0,
+  "attack_bonus": 29,
+  "attack_level": 116,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 5,
+  "attack_type": [
+    "melee"
+  ],
+  "attributes": [],
+  "category": [
+    "spiritual creature"
+  ],
+  "combat_level": 134,
+  "defence_crush": 13,
+  "defence_level": 100,
+  "defence_magic": 5,
+  "defence_ranged": 13,
+  "defence_slash": 14,
+  "defence_stab": 12,
+  "drops": [
+    {
+      "id": 1623,
+      "members": 1,
+      "name": "Uncut sapphire",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.007874015748031496",
+      "rolls": 1
+    },
+    {
+      "id": 1621,
+      "members": 1,
+      "name": "Uncut emerald",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.003937007874015748",
+      "rolls": 1
+    },
+    {
+      "id": 1619,
+      "members": 1,
+      "name": "Uncut ruby",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.001968503937007874",
+      "rolls": 1
+    },
+    {
+      "id": 1452,
+      "members": 1,
+      "name": "Chaos talisman",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0007381313098693691",
+      "rolls": 1
+    },
+    {
+      "id": 1462,
+      "members": 1,
+      "name": "Nature talisman",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0007381313098693691",
+      "rolls": 1
+    },
+    {
+      "id": 1617,
+      "members": 1,
+      "name": "Uncut diamond",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0004921259842519685",
+      "rolls": 1
+    },
+    {
+      "id": 830,
+      "members": 1,
+      "name": "Rune javelin",
+      "noted": 0,
+      "quantity": "5",
+      "rarity": "0.00024606299212598425",
+      "rolls": 1
+    },
+    {
+      "id": 987,
+      "members": 1,
+      "name": "Loop half of key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00024606299212598425",
+      "rolls": 1
+    },
+    {
+      "id": 985,
+      "members": 1,
+      "name": "Tooth half of key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00024606299212598425",
+      "rolls": 1
+    },
+    {
+      "id": 1247,
+      "members": 1,
+      "name": "Rune spear",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.5378937007874016e-05",
+      "rolls": 1
+    },
+    {
+      "id": 2366,
+      "members": 1,
+      "name": "Shield left half",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "7.689468503937008e-06",
+      "rolls": 1
+    },
+    {
+      "id": 1249,
+      "members": 1,
+      "name": "Dragon spear",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "5.7666508583544465e-06",
+      "rolls": 1
+    },
+    {
+      "id": 1279,
+      "members": 0,
+      "name": "Iron sword",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.023622047244094488",
+      "rolls": 1
+    },
+    {
+      "id": 1355,
+      "members": 0,
+      "name": "Mithril axe",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.06299212598425197",
+      "rolls": 1
+    },
+    {
+      "id": 1317,
+      "members": 0,
+      "name": "Adamant 2h sword",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.007874015748031496",
+      "rolls": 1
+    },
+    {
+      "id": 1303,
+      "members": 0,
+      "name": "Rune longsword",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.007874015748031496",
+      "rolls": 1
+    },
+    {
+      "id": 3202,
+      "members": 1,
+      "name": "Rune halberd",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.007874015748031496",
+      "rolls": 1
+    },
+    {
+      "id": 1059,
+      "members": 0,
+      "name": "Leather gloves",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.07086614173228346",
+      "rolls": 1
+    },
+    {
+      "id": 1071,
+      "members": 0,
+      "name": "Mithril platelegs",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.08661417322834646",
+      "rolls": 1
+    },
+    {
+      "id": 1105,
+      "members": 0,
+      "name": "Steel chainbody",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.14173228346456693",
+      "rolls": 1
+    },
+    {
+      "id": 1161,
+      "members": 0,
+      "name": "Adamant full helm",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.06299212598425197",
+      "rolls": 1
+    },
+    {
+      "id": 1195,
+      "members": 0,
+      "name": "Black kiteshield",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.023622047244094488",
+      "rolls": 1
+    },
+    {
+      "id": 1081,
+      "members": 0,
+      "name": "Iron plateskirt",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.031496062992125984",
+      "rolls": 1
+    },
+    {
+      "id": 1323,
+      "members": 0,
+      "name": "Iron scimitar",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.06299212598425197",
+      "rolls": 1
+    },
+    {
+      "id": 1201,
+      "members": 0,
+      "name": "Rune kiteshield",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.007874015748031496",
+      "rolls": 1
+    },
+    {
+      "id": 1295,
+      "members": 0,
+      "name": "Steel longsword",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.11811023622047244",
+      "rolls": 1
+    },
+    {
+      "id": 11941,
+      "members": 1,
+      "name": "Looting bag",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.3333333333333333",
+      "rolls": 1
+    },
+    {
+      "id": 11942,
+      "members": 1,
+      "name": "Ecumenical key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.016666666666666666",
+      "rolls": 1
+    },
+    {
+      "id": 2722,
+      "members": 1,
+      "name": "Clue scroll (hard)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 23490,
+      "members": 1,
+      "name": "Larran's key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0136986301369863",
+      "rolls": 1
+    },
+    {
+      "id": 21257,
+      "members": 1,
+      "name": "Slayer's enchantment",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.004132231404958678",
+      "rolls": 1
+    },
+    {
+      "id": 1281,
+      "members": 0,
+      "name": "Steel sword",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.05511811023622047",
+      "rolls": 1
+    },
+    {
+      "id": 1341,
+      "members": 0,
+      "name": "Black warhammer",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.03937007874015748",
+      "rolls": 1
+    },
+    {
+      "id": 1428,
+      "members": 0,
+      "name": "Mithril mace",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.05511811023622047",
+      "rolls": 1
+    },
+    {
+      "id": 1217,
+      "members": 0,
+      "name": "Black dagger",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.015748031496062992",
+      "rolls": 1
+    },
+    {
+      "id": 1257,
+      "members": 1,
+      "name": "Mithril spear(p)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.07086614173228346",
+      "rolls": 1
+    },
+    {
+      "id": 1371,
+      "members": 0,
+      "name": "Adamant battleaxe",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.015748031496062992",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "A true servant of Bandos.",
+  "hitpoints": 131,
+  "id": "2243",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 0,
+  "last_updated": "2021-01-11",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 16,
+  "members": 1,
+  "name": "Spiritual warrior",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2013-10-17",
+  "size": 1,
+  "slayer_level": 68,
+  "slayer_masters": [
+    "krystilia",
+    "vannaka",
+    "chaeldar",
+    "nieve",
+    "duradel"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "131.0",
+  "strength_bonus": 13,
+  "strength_level": 120,
+  "venomous": 0,
+  "wiki_name": "Spiritual warrior (Bandos)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Spiritual_warrior#Bandos"
+}

@@ -1,0 +1,104 @@
+{
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "e6f4c270afe07ec0fd1c449a9a76ee74e4039e97",
+  "_id": "60cd28aecfb7392d00906f4f",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60cd28aecfb7392d00906f4f",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 0,
+  "attack_level": 40,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "slash"
+  ],
+  "attributes": [
+    "dragon"
+  ],
+  "category": [
+    "blue dragon"
+  ],
+  "combat_level": 48,
+  "defence_crush": 50,
+  "defence_level": 40,
+  "defence_magic": 40,
+  "defence_ranged": 30,
+  "defence_slash": 50,
+  "defence_stab": 30,
+  "drops": [
+    {
+      "id": 534,
+      "members": 1,
+      "name": "Babydragon bones",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 7839,
+      "members": 1,
+      "name": "Baby dragon bone",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.25",
+      "rolls": 1
+    },
+    {
+      "id": 23083,
+      "members": 1,
+      "name": "Brimstone key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0015625",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "Young but still dangerous.",
+  "hitpoints": 50,
+  "id": "243",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2020-12-25",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 5,
+  "members": 1,
+  "name": "Baby blue dragon",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2002-02-27",
+  "size": 2,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "vannaka",
+    "chaeldar",
+    "konar",
+    "nieve",
+    "duradel"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "50.0",
+  "strength_bonus": 0,
+  "strength_level": 40,
+  "venomous": 0,
+  "wiki_name": "Baby blue dragon (3)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Baby_blue_dragon#3"
+}

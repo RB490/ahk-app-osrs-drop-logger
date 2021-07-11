@@ -1,0 +1,524 @@
+{
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "4503e2e690f0affc2d9bc8b0b8d70cc12e0df0bb",
+  "_id": "60cd28afcfb7392d009070b3",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60cd28afcfb7392d009070b3",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 0,
+  "attack_level": 300,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "stab",
+    "ranged",
+    "magic"
+  ],
+  "attributes": [
+    "kalphite"
+  ],
+  "category": [
+    "kalphite",
+    "boss"
+  ],
+  "combat_level": 333,
+  "defence_crush": 100,
+  "defence_level": 300,
+  "defence_magic": 10,
+  "defence_ranged": 10,
+  "defence_slash": 100,
+  "defence_stab": 100,
+  "drops": [
+    {
+      "id": 7946,
+      "members": 1,
+      "name": "Monkfish",
+      "noted": 0,
+      "quantity": "3",
+      "rarity": "0.1111111111111111",
+      "rolls": 1
+    },
+    {
+      "id": 1391,
+      "members": 1,
+      "name": "Battlestaff",
+      "noted": 1,
+      "quantity": "10",
+      "rarity": "0.0390625",
+      "rolls": 1
+    },
+    {
+      "id": 1113,
+      "members": 0,
+      "name": "Rune chainbody",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.03515625",
+      "rolls": 1
+    },
+    {
+      "id": 2501,
+      "members": 1,
+      "name": "Red d'hide body",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.03125",
+      "rolls": 1
+    },
+    {
+      "id": 5667,
+      "members": 1,
+      "name": "Rune knife(p++)",
+      "noted": 0,
+      "quantity": "25",
+      "rarity": "0.03125",
+      "rolls": 1
+    },
+    {
+      "id": 3053,
+      "members": 1,
+      "name": "Lava battlestaff",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 3140,
+      "members": 1,
+      "name": "Dragon chainbody",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 7158,
+      "members": 1,
+      "name": "Dragon 2h sword",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00390625",
+      "rolls": 1
+    },
+    {
+      "id": 560,
+      "members": 0,
+      "name": "Death rune",
+      "noted": 0,
+      "quantity": "150",
+      "rarity": "0.046875",
+      "rolls": 1
+    },
+    {
+      "id": 565,
+      "members": 1,
+      "name": "Blood rune",
+      "noted": 0,
+      "quantity": "100",
+      "rarity": "0.046875",
+      "rolls": 1
+    },
+    {
+      "id": 888,
+      "members": 0,
+      "name": "Mithril arrow",
+      "noted": 0,
+      "quantity": "500",
+      "rarity": "0.0390625",
+      "rolls": 1
+    },
+    {
+      "id": 385,
+      "members": 1,
+      "name": "Shark",
+      "noted": 0,
+      "quantity": "2",
+      "rarity": "0.1111111111111111",
+      "rolls": 1
+    },
+    {
+      "id": 892,
+      "members": 1,
+      "name": "Rune arrow",
+      "noted": 0,
+      "quantity": "250",
+      "rarity": "0.0234375",
+      "rolls": 1
+    },
+    {
+      "id": 3049,
+      "members": 1,
+      "name": "Grimy toadflax",
+      "noted": 1,
+      "quantity": "25",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 207,
+      "members": 1,
+      "name": "Grimy ranarr weed",
+      "noted": 1,
+      "quantity": "25",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 3051,
+      "members": 1,
+      "name": "Grimy snapdragon",
+      "noted": 1,
+      "quantity": "25",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 219,
+      "members": 1,
+      "name": "Grimy torstol",
+      "noted": 1,
+      "quantity": "25",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 5304,
+      "members": 1,
+      "name": "Torstol seed",
+      "noted": 0,
+      "quantity": "2",
+      "rarity": "0.03125",
+      "rolls": 1
+    },
+    {
+      "id": 5321,
+      "members": 1,
+      "name": "Watermelon seed",
+      "noted": 0,
+      "quantity": "25",
+      "rarity": "0.0234375",
+      "rolls": 1
+    },
+    {
+      "id": 5288,
+      "members": 1,
+      "name": "Papaya tree seed",
+      "noted": 0,
+      "quantity": "2",
+      "rarity": "0.0234375",
+      "rolls": 1
+    },
+    {
+      "id": 5289,
+      "members": 1,
+      "name": "Palm tree seed",
+      "noted": 0,
+      "quantity": "2",
+      "rarity": "0.0234375",
+      "rolls": 1
+    },
+    {
+      "id": 5316,
+      "members": 1,
+      "name": "Magic seed",
+      "noted": 0,
+      "quantity": "2",
+      "rarity": "0.0234375",
+      "rolls": 1
+    },
+    {
+      "id": 11936,
+      "members": 1,
+      "name": "Dark crab",
+      "noted": 0,
+      "quantity": "2",
+      "rarity": "0.1111111111111111",
+      "rolls": 1
+    },
+    {
+      "id": 2363,
+      "members": 0,
+      "name": "Runite bar",
+      "noted": 1,
+      "quantity": "3",
+      "rarity": "0.0390625",
+      "rolls": 1
+    },
+    {
+      "id": 1783,
+      "members": 1,
+      "name": "Bucket of sand",
+      "noted": 1,
+      "quantity": "100",
+      "rarity": "0.03125",
+      "rolls": 1
+    },
+    {
+      "id": 444,
+      "members": 0,
+      "name": "Gold ore",
+      "noted": 1,
+      "quantity": "250",
+      "rarity": "0.03125",
+      "rolls": 1
+    },
+    {
+      "id": 1513,
+      "members": 1,
+      "name": "Magic logs",
+      "noted": 1,
+      "quantity": "60",
+      "rarity": "0.03125",
+      "rolls": 1
+    },
+    {
+      "id": 1621,
+      "members": 0,
+      "name": "Uncut emerald",
+      "noted": 1,
+      "quantity": "25",
+      "rarity": "0.0234375",
+      "rolls": 1
+    },
+    {
+      "id": 1619,
+      "members": 0,
+      "name": "Uncut ruby",
+      "noted": 1,
+      "quantity": "25",
+      "rarity": "0.0234375",
+      "rolls": 1
+    },
+    {
+      "id": 1617,
+      "members": 0,
+      "name": "Uncut diamond",
+      "noted": 1,
+      "quantity": "25",
+      "rarity": "0.0234375",
+      "rolls": 1
+    },
+    {
+      "id": 245,
+      "members": 0,
+      "name": "Wine of zamorak",
+      "noted": 1,
+      "quantity": "60",
+      "rarity": "0.078125",
+      "rolls": 1
+    },
+    {
+      "id": 3138,
+      "members": 1,
+      "name": "Potato cactus",
+      "noted": 1,
+      "quantity": "100",
+      "rarity": "0.0625",
+      "rolls": 1
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "15000-20000",
+      "rarity": "0.0390625",
+      "rolls": 1
+    },
+    {
+      "id": 6685,
+      "members": 1,
+      "name": "Saradomin brew(4)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.1111111111111111",
+      "rolls": 1
+    },
+    {
+      "id": 1987,
+      "members": 0,
+      "name": "Grapes",
+      "noted": 1,
+      "quantity": "100",
+      "rarity": "0.0390625",
+      "rolls": 1
+    },
+    {
+      "id": 5940,
+      "members": 1,
+      "name": "Weapon poison(++)",
+      "noted": 1,
+      "quantity": "5",
+      "rarity": "0.0390625",
+      "rolls": 1
+    },
+    {
+      "id": 6016,
+      "members": 1,
+      "name": "Cactus spine",
+      "noted": 1,
+      "quantity": "10",
+      "rarity": "0.0234375",
+      "rolls": 1
+    },
+    {
+      "id": 2434,
+      "members": 1,
+      "name": "Prayer potion(4)",
+      "noted": 0,
+      "quantity": "2",
+      "rarity": "0.1111111111111111",
+      "rolls": 1
+    },
+    {
+      "id": 3024,
+      "members": 1,
+      "name": "Super restore(4)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.1111111111111111",
+      "rolls": 1
+    },
+    {
+      "id": 22671,
+      "members": 1,
+      "name": "Kq head (tattered)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 12699,
+      "members": 1,
+      "name": "Super combat potion(2)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.1111111111111111",
+      "rolls": 1
+    },
+    {
+      "id": 13489,
+      "members": 1,
+      "name": "Ensouled kalphite head",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.05",
+      "rolls": 1
+    },
+    {
+      "id": 23083,
+      "members": 1,
+      "name": "Brimstone key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.018867924528301886",
+      "rolls": 1
+    },
+    {
+      "id": 12073,
+      "members": 1,
+      "name": "Clue scroll (elite)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.01",
+      "rolls": 1
+    },
+    {
+      "id": 7981,
+      "members": 1,
+      "name": "Kq head",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 12885,
+      "members": 1,
+      "name": "Jar of sand",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0005",
+      "rolls": 1
+    },
+    {
+      "id": 12647,
+      "members": 1,
+      "name": "Kalphite princess",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0003333333333333333",
+      "rolls": 1
+    },
+    {
+      "id": 169,
+      "members": 1,
+      "name": "Ranging potion(3)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.1111111111111111",
+      "rolls": 1
+    },
+    {
+      "id": 183,
+      "members": 1,
+      "name": "Superantipoison(2)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.1111111111111111",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "I don't think insect repellent will work...",
+  "hitpoints": 255,
+  "id": "965",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2020-12-25",
+  "magic_bonus": 0,
+  "magic_level": 150,
+  "max_hit": 31,
+  "members": 1,
+  "name": "Kalphite Queen",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2004-09-07",
+  "size": 5,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "turael",
+    "spria",
+    "mazchna",
+    "vannaka",
+    "chaeldar",
+    "konar",
+    "nieve",
+    "duradel"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "535.5",
+  "strength_bonus": 0,
+  "strength_level": 300,
+  "venomous": 0,
+  "wiki_name": "Kalphite Queen (Airborne)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Kalphite_Queen#Airborne"
+}

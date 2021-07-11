@@ -1,0 +1,280 @@
+{
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "e1847e8e15d4abafb5c2c2cb7eb6cc11615fdc65",
+  "_id": "60cd28b1cfb7392d0090752f",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60cd28b1cfb7392d0090752f",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 0,
+  "attack_level": 40,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "stab"
+  ],
+  "attributes": [],
+  "category": [
+    "scorpion"
+  ],
+  "combat_level": 45,
+  "defence_crush": 15,
+  "defence_level": 40,
+  "defence_magic": 99,
+  "defence_ranged": 70,
+  "defence_slash": 30,
+  "defence_stab": 30,
+  "drops": [
+    {
+      "id": 1265,
+      "members": 0,
+      "name": "Bronze pickaxe",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.046875",
+      "rolls": 1
+    },
+    {
+      "id": 436,
+      "members": 0,
+      "name": "Copper ore",
+      "noted": 0,
+      "quantity": "3",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 407,
+      "members": 1,
+      "name": "Oyster",
+      "noted": 0,
+      "quantity": "2",
+      "rarity": "0.09375",
+      "rolls": 1
+    },
+    {
+      "id": 407,
+      "members": 1,
+      "name": "Oyster",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0703125",
+      "rolls": 1
+    },
+    {
+      "id": 409,
+      "members": 1,
+      "name": "Empty oyster",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0234375",
+      "rolls": 1
+    },
+    {
+      "id": 409,
+      "members": 1,
+      "name": "Empty oyster",
+      "noted": 0,
+      "quantity": "3",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 411,
+      "members": 1,
+      "name": "Oyster pearl",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "4",
+      "rarity": "0.2265625",
+      "rolls": 1
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "8",
+      "rarity": "0.046875",
+      "rolls": 1
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "36",
+      "rarity": "0.0625",
+      "rolls": 1
+    },
+    {
+      "id": 313,
+      "members": 0,
+      "name": "Fishing bait",
+      "noted": 0,
+      "quantity": "10",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 1267,
+      "members": 0,
+      "name": "Iron pickaxe",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0390625",
+      "rolls": 1
+    },
+    {
+      "id": 45,
+      "members": 1,
+      "name": "Opal bolt tips",
+      "noted": 0,
+      "quantity": "5",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 9683,
+      "members": 1,
+      "name": "Dead sea slug",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 1969,
+      "members": 0,
+      "name": "Spinach roll",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 405,
+      "members": 1,
+      "name": "Casket",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 401,
+      "members": 1,
+      "name": "Seaweed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.03125",
+      "rolls": 1
+    },
+    {
+      "id": 401,
+      "members": 1,
+      "name": "Seaweed",
+      "noted": 0,
+      "quantity": "2",
+      "rarity": "0.03125",
+      "rolls": 1
+    },
+    {
+      "id": 401,
+      "members": 1,
+      "name": "Seaweed",
+      "noted": 0,
+      "quantity": "5",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 403,
+      "members": 1,
+      "name": "Edible seaweed",
+      "noted": 0,
+      "quantity": "2",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 438,
+      "members": 0,
+      "name": "Tin ore",
+      "noted": 0,
+      "quantity": "3",
+      "rarity": "0.03125",
+      "rolls": 1
+    },
+    {
+      "id": 440,
+      "members": 0,
+      "name": "Iron ore",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 453,
+      "members": 0,
+      "name": "Coal",
+      "noted": 0,
+      "quantity": "2",
+      "rarity": "0.015625",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "An extremely vicious lobster.",
+  "hitpoints": 50,
+  "id": "4800",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2020-12-25",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 4,
+  "members": 1,
+  "name": "Giant Lobster",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2006-09-20",
+  "size": 2,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "turael",
+    "spria",
+    "mazchna"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "50.0",
+  "strength_bonus": 0,
+  "strength_level": 30,
+  "venomous": 0,
+  "wiki_name": "Giant lobster",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Giant_lobster"
+}

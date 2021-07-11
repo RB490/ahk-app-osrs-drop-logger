@@ -1,0 +1,94 @@
+{
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "4d62bef0bd412df8e22b059981f349eaec47224d",
+  "_id": "60cd28b2cfb7392d0090795f",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60cd28b2cfb7392d0090795f",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 0,
+  "attack_bonus": 80,
+  "attack_level": 600,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 3,
+  "attack_type": [
+    "melee"
+  ],
+  "attributes": [],
+  "category": [],
+  "combat_level": 2,
+  "defence_crush": 150,
+  "defence_level": 450,
+  "defence_magic": 150,
+  "defence_ranged": 200,
+  "defence_slash": 150,
+  "defence_stab": 150,
+  "drops": [
+    {
+      "id": 526,
+      "members": 0,
+      "name": "Bones",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 3226,
+      "members": 1,
+      "name": "Raw rabbit",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 7896,
+      "members": 1,
+      "name": "Rabbit bone",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.25",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "A cute bunny rabbit.",
+  "hitpoints": 2000,
+  "id": "9118",
+  "immune_poison": 1,
+  "immune_venom": 1,
+  "incomplete": 1,
+  "last_updated": "2020-12-25",
+  "magic_bonus": 0,
+  "magic_level": 300,
+  "max_hit": 40,
+  "members": 1,
+  "name": "Rabbit",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2019-07-25",
+  "size": 1,
+  "slayer_level": "",
+  "slayer_masters": [],
+  "slayer_monster": 0,
+  "slayer_xp": "",
+  "strength_bonus": 60,
+  "strength_level": 200,
+  "venomous": 0,
+  "wiki_name": "Rabbit (Prifddinas)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Rabbit_(Prifddinas)"
+}

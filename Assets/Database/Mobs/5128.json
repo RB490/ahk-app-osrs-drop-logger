@@ -1,0 +1,94 @@
+{
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "258e35e1390441b7685c8191e28499c1b9a632b1",
+  "_id": "60cd28b1cfb7392d00907558",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60cd28b1cfb7392d00907558",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 0,
+  "attack_level": 95,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "crush"
+  ],
+  "attributes": [],
+  "category": [],
+  "combat_level": 95,
+  "defence_crush": 65,
+  "defence_level": 86,
+  "defence_magic": 50,
+  "defence_ranged": 60,
+  "defence_slash": 55,
+  "defence_stab": 30,
+  "drops": [
+    {
+      "id": 526,
+      "members": 0,
+      "name": "Bones",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 1985,
+      "members": 0,
+      "name": "Cheese",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.125",
+      "rolls": 1
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "3-237",
+      "rarity": "0.125",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "A huge mouse. It looks hungry...",
+  "hitpoints": 70,
+  "id": "5128",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-05-02",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 9,
+  "members": 1,
+  "name": "Mouse",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2007-06-04",
+  "size": 4,
+  "slayer_level": "",
+  "slayer_masters": [],
+  "slayer_monster": 0,
+  "slayer_xp": "",
+  "strength_bonus": 0,
+  "strength_level": 80,
+  "venomous": 0,
+  "wiki_name": "Mouse (Dark)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Mouse#Dark"
+}

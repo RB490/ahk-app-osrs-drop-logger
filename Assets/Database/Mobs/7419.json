@@ -1,0 +1,139 @@
+{
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "9bb9fad4955d59dc7be91c3a68e1675750c6fb01",
+  "_id": "60cd28b2cfb7392d0090780d",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60cd28b2cfb7392d0090780d",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 0,
+  "attack_level": 90,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "crush"
+  ],
+  "attributes": [],
+  "category": [],
+  "combat_level": 85,
+  "defence_crush": 0,
+  "defence_level": 90,
+  "defence_magic": 0,
+  "defence_ranged": 0,
+  "defence_slash": 0,
+  "defence_stab": 0,
+  "drops": [
+    {
+      "id": 526,
+      "members": 0,
+      "name": "Bones",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 1213,
+      "members": 0,
+      "name": "Rune dagger",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.04",
+      "rolls": 1
+    },
+    {
+      "id": 1301,
+      "members": 0,
+      "name": "Adamant longsword",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.02",
+      "rolls": 1
+    },
+    {
+      "id": 1325,
+      "members": 0,
+      "name": "Steel scimitar",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.04",
+      "rolls": 1
+    },
+    {
+      "id": 1207,
+      "members": 0,
+      "name": "Steel dagger",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.04",
+      "rolls": 1
+    },
+    {
+      "id": 1333,
+      "members": 0,
+      "name": "Rune scimitar",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.02",
+      "rolls": 1
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "100",
+      "rarity": "0.8",
+      "rolls": 1
+    },
+    {
+      "id": 379,
+      "members": 0,
+      "name": "Lobster",
+      "noted": 0,
+      "quantity": "3",
+      "rarity": "0.04",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "A warrior of Zamorak.",
+  "hitpoints": 50,
+  "id": "7419",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2020-12-25",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 8,
+  "members": 1,
+  "name": "Zamorak warrior",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2016-10-13",
+  "size": 1,
+  "slayer_level": "",
+  "slayer_masters": [],
+  "slayer_monster": 0,
+  "slayer_xp": "",
+  "strength_bonus": 0,
+  "strength_level": 70,
+  "venomous": 0,
+  "wiki_name": "Zamorak warrior (Level 85)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Zamorak_warrior#Level_85"
+}

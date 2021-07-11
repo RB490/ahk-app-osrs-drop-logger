@@ -1,0 +1,94 @@
+{
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "2bfdb52d6db92f6cc870b0d7cba7fdef6309db18",
+  "_id": "60cd28b0cfb7392d009072e1",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60cd28b0cfb7392d009072e1",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 10,
+  "attack_level": 0,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 6,
+  "attack_type": [
+    "ranged"
+  ],
+  "attributes": [],
+  "category": [],
+  "combat_level": 15,
+  "defence_crush": 30,
+  "defence_level": 25,
+  "defence_magic": 5,
+  "defence_ranged": 50,
+  "defence_slash": 5,
+  "defence_stab": 5,
+  "drops": [
+    {
+      "id": 3349,
+      "members": 1,
+      "name": "Blamish ochre shell (round)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 3359,
+      "members": 1,
+      "name": "Blamish ochre shell (pointed)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 3363,
+      "members": 1,
+      "name": "Thin snail",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "A muddy coloured blamish snail, these types are said to spit acid.",
+  "hitpoints": 20,
+  "id": "2651",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2020-12-25",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 2,
+  "members": 1,
+  "name": "Ochre Blamish Snail",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 8,
+  "release_date": "2004-10-14",
+  "size": 1,
+  "slayer_level": "",
+  "slayer_masters": [],
+  "slayer_monster": 0,
+  "slayer_xp": "",
+  "strength_bonus": 10,
+  "strength_level": 0,
+  "venomous": 0,
+  "wiki_name": "Ochre Blamish Snail (Pointed)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Ochre_Blamish_Snail#Pointed"
+}

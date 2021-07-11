@@ -1,0 +1,85 @@
+{
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "7f0c356115da153b5b99475ce4af44432ec4c6b1",
+  "_id": "60cd28b0cfb7392d009073e6",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60cd28b0cfb7392d009073e6",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 0,
+  "attack_bonus": 14,
+  "attack_level": 37,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 5,
+  "attack_type": [
+    "melee"
+  ],
+  "attributes": [],
+  "category": [],
+  "combat_level": 43,
+  "defence_crush": 50,
+  "defence_level": 37,
+  "defence_magic": -12,
+  "defence_ranged": 51,
+  "defence_slash": 55,
+  "defence_stab": 43,
+  "drops": [
+    {
+      "id": 526,
+      "members": 0,
+      "name": "Bones",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 87,
+      "members": 1,
+      "name": "Armadyl pendant",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.125",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "A guard who has devoted their life to Armadyl.",
+  "hitpoints": 40,
+  "id": "3446",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2020-12-25",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 6,
+  "members": 1,
+  "name": "Guardian of Armadyl",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2002-06-17",
+  "size": 1,
+  "slayer_level": "",
+  "slayer_masters": [],
+  "slayer_monster": 0,
+  "slayer_xp": "",
+  "strength_bonus": 16,
+  "strength_level": 37,
+  "venomous": 0,
+  "wiki_name": "Guardian of Armadyl (Female)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Guardian_of_Armadyl#Female"
+}
