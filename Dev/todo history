@@ -187,7 +187,7 @@ planning -> item categories -> if a drop table needs to be divided into categori
  
 Progress on the log gui
  
-LOG_GUI progress. drop tables are loaded
+GUI_LOG progress. drop tables are loaded
 
 Expanded the drop category class
 

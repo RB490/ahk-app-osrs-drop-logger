@@ -1,74 +1,78 @@
 {
   "1": {
-    "last_updated": "2021-04-26",
+    "last_updated": "2021-07-12",
     "name": "Molanisk"
   },
   "2": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Aberrant spectre"
   },
   "8": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Nechryael"
   },
+  "10": {
+    "last_updated": "2021-07-12",
+    "name": "Death spawn"
+  },
   "26": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Zombie (Level 13)"
   },
   "42": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Zombie (Level 18)"
   },
   "49": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Zombie (Level 24)"
   },
   "64": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Zombie (Entrana Dungeon) (1)"
   },
   "65": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Zombie (Entrana Dungeon) (2)"
   },
   "66": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Zombie (Entrana Dungeon) (3)"
   },
   "67": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Zombie (Entrana Dungeon) (4)"
   },
   "68": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Zombie (Entrana Dungeon) (5)"
   },
   "69": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Summoned Zombie"
   },
   "70": {
-    "last_updated": "2021-04-15",
+    "last_updated": "2021-07-12",
     "name": "Skeleton (Level 22)"
   },
   "74": {
-    "last_updated": "2021-04-15",
+    "last_updated": "2021-07-12",
     "name": "Skeleton (Level 21)"
   },
   "77": {
-    "last_updated": "2021-04-15",
+    "last_updated": "2021-07-12",
     "name": "Skeleton (Level 25)"
   },
   "82": {
-    "last_updated": "2021-04-15",
+    "last_updated": "2021-07-12",
     "name": "Skeleton (Level 45)"
   },
   "84": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Skeleton Mage (Level 16)"
   },
   "85": {
-    "last_updated": "2021-05-30",
+    "last_updated": "2021-07-12",
     "name": "Ghost (Level 19)"
   },
   "100": {
@@ -76,43 +80,43 @@
     "name": "Rock Crab (Active)"
   },
   "104": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Hellhound (Level 122)"
   },
   "106": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Wolf (Level 64)"
   },
   "107": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "White wolf (Level 25)"
   },
   "108": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "White wolf (Level 38)"
   },
   "109": {
-    "last_updated": "2021-04-24",
+    "last_updated": "2021-07-12",
     "name": "Big Wolf (White Wolf Mountain)"
   },
   "110": {
-    "last_updated": "2021-02-04",
+    "last_updated": "2021-07-12",
     "name": "Wolf (Level 25)"
   },
   "112": {
-    "last_updated": "2021-04-24",
+    "last_updated": "2021-07-12",
     "name": "Wild dog (Normal)"
   },
   "113": {
-    "last_updated": "2021-04-24",
+    "last_updated": "2021-07-12",
     "name": "Wild dog (Unused)"
   },
   "114": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Guard dog"
   },
   "115": {
-    "last_updated": "2021-04-24",
+    "last_updated": "2021-07-12",
     "name": "Big Wolf (Feldip Hills)"
   },
   "130": {
@@ -128,11 +132,11 @@
     "name": "Hobgoblin guard"
   },
   "135": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Hellhound (Construction)"
   },
   "136": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Ogre (Level 53)"
   },
   "137": {
@@ -144,7 +148,7 @@
     "name": "Kalphite soldier (Construction)"
   },
   "139": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Steel dragon (Construction)"
   },
   "140": {
@@ -152,123 +156,123 @@
     "name": "Dagannoth (Construction)"
   },
   "231": {
-    "last_updated": "2021-04-24",
+    "last_updated": "2021-07-12",
     "name": "Wolf (Level 11)"
   },
   "232": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Jungle Wolf"
   },
   "239": {
-    "last_updated": "2021-01-11",
+    "last_updated": "2021-07-12",
     "name": "King Black Dragon"
   },
   "240": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Black demon (Level 172)"
   },
   "241": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Baby blue dragon (1)"
   },
   "242": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Baby blue dragon (2)"
   },
   "243": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Baby blue dragon (3)"
   },
   "244": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Baby red dragon (1)"
   },
   "245": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Baby red dragon (2)"
   },
   "246": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Baby red dragon (3)"
   },
   "247": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Red dragon (1)"
   },
   "248": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Red dragon (2)"
   },
   "249": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Red dragon (3)"
   },
   "250": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Red dragon (4)"
   },
   "251": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Red dragon (5)"
   },
   "252": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Black dragon (Level 227)"
   },
   "260": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Green dragon (Level 79)"
   },
   "265": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Blue dragon (2)"
   },
   "266": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Blue dragon (3)"
   },
   "267": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Blue dragon (4)"
   },
   "268": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Blue dragon (5)"
   },
   "269": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Blue dragon (1)"
   },
   "270": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Bronze dragon (Standard)"
   },
   "272": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Iron dragon (Normal)"
   },
   "274": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Steel dragon (Normal)"
   },
   "289": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Ghoul"
   },
   "290": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Dwarf (Level 10)"
   },
   "291": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Chaos dwarf"
   },
   "292": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Dwarf (Level 20)"
   },
   "294": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Dwarf (Level 11)"
   },
   "299": {
@@ -280,19 +284,19 @@
     "name": "Jailer"
   },
   "301": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Black Heather"
   },
   "302": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Donny the lad"
   },
   "303": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Speedy Keith"
   },
   "304": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Salarin the twisted"
   },
   "319": {
@@ -304,15 +308,15 @@
     "name": "Dark energy core"
   },
   "397": {
-    "last_updated": "2021-06-18",
-    "name": "Town Guard (Hosidius) (Bow)"
+    "last_updated": "2021-07-12",
+    "name": "Guard (Hosidius) (Bow)"
   },
   "399": {
-    "last_updated": "2021-06-18",
-    "name": "Town Guard (Hosidius) (Staff)"
+    "last_updated": "2021-07-12",
+    "name": "Guard (Hosidius) (Staff)"
   },
   "406": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Cave crawler"
   },
   "410": {
@@ -320,23 +324,23 @@
     "name": "Kurask"
   },
   "412": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Gargoyle"
   },
   "414": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Banshee"
   },
   "415": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Abyssal demon (Standard)"
   },
   "417": {
-    "last_updated": "2021-04-24",
+    "last_updated": "2021-07-12",
     "name": "Basilisk (Normal)"
   },
   "418": {
-    "last_updated": "2021-04-24",
+    "last_updated": "2021-07-12",
     "name": "Basilisk (Unused)"
   },
   "419": {
@@ -348,11 +352,11 @@
     "name": "Cockatrice (Unused)"
   },
   "421": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Rockslug"
   },
   "423": {
-    "last_updated": "2021-03-11",
+    "last_updated": "2021-07-12",
     "name": "Dust devil (Level 93)"
   },
   "426": {
@@ -380,115 +384,115 @@
     "name": "Turoth (Level 88 (unused))"
   },
   "433": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Pyrefiend (Regular)"
   },
   "437": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Jelly"
   },
   "443": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Infernal Mage"
   },
   "448": {
-    "last_updated": "2021-04-24",
+    "last_updated": "2021-07-12",
     "name": "Crawling Hand (Level 8 (1))"
   },
   "449": {
-    "last_updated": "2021-04-24",
+    "last_updated": "2021-07-12",
     "name": "Crawling Hand (Level 8 (2))"
   },
   "450": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Crawling Hand (Level 7)"
   },
   "451": {
-    "last_updated": "2021-04-24",
+    "last_updated": "2021-07-12",
     "name": "Crawling Hand (Level 8 (3))"
   },
   "452": {
-    "last_updated": "2021-04-24",
+    "last_updated": "2021-07-12",
     "name": "Crawling Hand (Level 8 (4))"
   },
   "453": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Crawling Hand (Level 12 (1))"
   },
   "454": {
-    "last_updated": "2021-04-24",
+    "last_updated": "2021-07-12",
     "name": "Crawling Hand (Level 12 (2))"
   },
   "455": {
-    "last_updated": "2021-04-24",
+    "last_updated": "2021-07-12",
     "name": "Crawling Hand (Level 11 (unused))"
   },
   "456": {
-    "last_updated": "2021-04-24",
+    "last_updated": "2021-07-12",
     "name": "Crawling Hand (Level 12 (unused 1))"
   },
   "457": {
-    "last_updated": "2021-04-24",
+    "last_updated": "2021-07-12",
     "name": "Crawling Hand (Level 12 (unused 2))"
   },
   "458": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Lizard"
   },
   "459": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Desert Lizard"
   },
   "462": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Small Lizard"
   },
   "464": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Harpie Bug Swarm"
   },
   "465": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Skeletal Wyvern (2)"
   },
   "466": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Skeletal Wyvern (3)"
   },
   "467": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Skeletal Wyvern (4)"
   },
   "468": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Skeletal Wyvern (1)"
   },
   "469": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Killerwatt (Attacking)"
   },
   "470": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Killerwatt (Idle)"
   },
   "476": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Wall beast (Beast)"
   },
   "480": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Cave slime"
   },
   "481": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Cave bug (Level 6)"
   },
   "483": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Cave bug (Level 96)"
   },
   "484": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Bloodveld (Standard)"
   },
   "492": {
@@ -496,15 +500,15 @@
     "name": "Cave kraken"
   },
   "494": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Kraken (Kraken)"
   },
   "498": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Smoke devil"
   },
   "499": {
-    "last_updated": "2021-04-08",
+    "last_updated": "2021-07-12",
     "name": "Thermonuclear smoke devil"
   },
   "508": {
@@ -512,7 +516,7 @@
     "name": "Soulless"
   },
   "509": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Death wing"
   },
   "511": {
@@ -524,27 +528,31 @@
     "name": "Mugger"
   },
   "516": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Black Knight"
   },
   "518": {
-    "last_updated": "2021-06-18",
-    "name": "Highwayman"
+    "last_updated": "2021-07-12",
+    "name": "Highwayman (No hood)"
+  },
+  "519": {
+    "last_updated": "2021-07-12",
+    "name": "Highwayman (Hood)"
   },
   "520": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Chaos druid"
   },
   "521": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Pirate (Pirate's Cove)"
   },
   "522": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Pirate (Brimhaven)"
   },
   "523": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Pirate (Asgarnian Ice Dungeon)"
   },
   "525": {
@@ -552,7 +560,7 @@
     "name": "Thug"
   },
   "526": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Rogue (Level 15)"
   },
   "527": {
@@ -572,167 +580,167 @@
     "name": "Tribesman"
   },
   "531": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Dark warrior (Level 8)"
   },
   "532": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Chaos druid warrior"
   },
   "561": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Sorebones"
   },
   "563": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Zombie pirate (7)"
   },
   "565": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Zombie pirate (8)"
   },
   "567": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Zombie pirate (9)"
   },
   "568": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Zombie pirate (10)"
   },
   "569": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Zombie pirate (11)"
   },
   "571": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Zombie pirate (12)"
   },
   "572": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Zombie pirate (13)"
   },
   "573": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Zombie pirate (14)"
   },
   "574": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Zombie pirate (15)"
   },
   "575": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Zombie pirate (16)"
   },
   "576": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Zombie pirate (17)"
   },
   "577": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Zombie pirate (18)"
   },
   "578": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Zombie pirate (19)"
   },
   "579": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Zombie pirate (20)"
   },
   "580": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Zombie pirate (21)"
   },
   "581": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Zombie pirate (22)"
   },
   "582": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Zombie pirate (23)"
   },
   "584": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Zombie pirate (24)"
   },
   "586": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Zombie pirate (25)"
   },
   "588": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Zombie pirate (26)"
   },
   "590": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Zombie pirate (27)"
   },
   "592": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Zombie pirate (28)"
   },
   "593": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Zombie pirate (29)"
   },
   "595": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Zombie pirate (30)"
   },
   "597": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Zombie pirate (31)"
   },
   "599": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Zombie pirate (32)"
   },
   "613": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Zombie pirate (1)"
   },
   "614": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Zombie pirate (2)"
   },
   "615": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Zombie pirate (3)"
   },
   "616": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Zombie pirate (4)"
   },
   "617": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Zombie pirate (5)"
   },
   "618": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Zombie pirate (6)"
   },
   "619": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Zombie swab (1)"
   },
   "620": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Zombie swab (2)"
   },
   "621": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Zombie swab (3)"
   },
   "622": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Zombie swab (4)"
   },
   "623": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Zombie swab (5)"
   },
   "624": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Zombie swab (6)"
   },
   "625": {
@@ -740,7 +748,7 @@
     "name": "Evil spirit"
   },
   "626": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Fever spider"
   },
   "639": {
@@ -748,43 +756,43 @@
     "name": "Tyras guard"
   },
   "643": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Arrg (Normal)"
   },
   "645": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Ice wolf (Level 96)"
   },
   "647": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Ice wolf (Level 132)"
   },
   "648": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Ice troll (Level 124)"
   },
   "649": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Ice troll (Level 123)"
   },
   "650": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Ice troll (Level 120)"
   },
   "651": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Ice troll (Level 121)"
   },
   "655": {
-    "last_updated": "2021-05-30",
+    "last_updated": "2021-07-12",
     "name": "Goblin (Goblin Village) (Red)"
   },
   "662": {
-    "last_updated": "2021-05-30",
+    "last_updated": "2021-07-12",
     "name": "Goblin (Goblin Village) (Green)"
   },
   "674": {
-    "last_updated": "2021-05-30",
+    "last_updated": "2021-07-12",
     "name": "Goblin (Level 2)"
   },
   "677": {
@@ -824,11 +832,11 @@
     "name": "Bandit champion"
   },
   "762": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Baby Roc"
   },
   "763": {
-    "last_updated": "2021-05-30",
+    "last_updated": "2021-07-12",
     "name": "Giant Roc (Normal)"
   },
   "785": {
@@ -840,51 +848,51 @@
     "name": "Me (Female)"
   },
   "787": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Suqah"
   },
   "794": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Scarab mage (Level 93)"
   },
   "795": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Locust rider (Lancer)"
   },
   "796": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Locust rider (Ranger)"
   },
   "797": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Giant scarab (Normal)"
   },
   "799": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Scarab mage (Level 66 (Quest))"
   },
   "800": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Locust rider (Lancer (Quest))"
   },
   "801": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Locust rider (Ranger (Quest))"
   },
   "820": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Wormbrain"
   },
   "852": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Icelord"
   },
   "866": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Zogre"
   },
   "872": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Skogre"
   },
   "880": {
@@ -895,28 +903,32 @@
     "last_updated": "2020-12-25",
     "name": "Slash Bash"
   },
+  "911": {
+    "last_updated": "2021-07-12",
+    "name": "Agrith Naar (Normal)"
+  },
   "924": {
-    "last_updated": "2021-04-15",
+    "last_updated": "2021-07-12",
     "name": "Skeleton (The Restless Ghost)"
   },
   "926": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Stick"
   },
   "927": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Pee Hat"
   },
   "928": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Kraka"
   },
   "931": {
-    "last_updated": "2021-03-11",
+    "last_updated": "2021-07-12",
     "name": "Thrower Troll"
   },
   "936": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Mountain troll (Level 69)"
   },
   "946": {
@@ -932,15 +944,15 @@
     "name": "Kalphite Soldier"
   },
   "959": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Kalphite Guardian"
   },
   "963": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Kalphite Queen (Crawling)"
   },
   "965": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Kalphite Queen (Airborne)"
   },
   "970": {
@@ -952,7 +964,7 @@
     "name": "Dagannoth (Level 92 (1))"
   },
   "979": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Dagannoth (Horror from the Deep)"
   },
   "983": {
@@ -964,19 +976,19 @@
     "name": "Guard (Edgeville)"
   },
   "1024": {
-    "last_updated": "2021-05-30",
+    "last_updated": "2021-07-12",
     "name": "Zygomite"
   },
   "1025": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Necromancer (Necromancer Tower)"
   },
   "1026": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Bandit (Level 22)"
   },
   "1027": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Guard Bandit"
   },
   "1037": {
@@ -984,7 +996,7 @@
     "name": "Snake (Mos Le'Harmless)"
   },
   "1039": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Albino bat"
   },
   "1041": {
@@ -992,11 +1004,11 @@
     "name": "Giant mosquito"
   },
   "1042": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Jungle horror"
   },
   "1047": {
-    "last_updated": "2021-02-12",
+    "last_updated": "2021-07-12",
     "name": "Cave horror"
   },
   "1062": {
@@ -1004,11 +1016,11 @@
     "name": "Angry giant rat (Level 45)"
   },
   "1097": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Sea Snake Young"
   },
   "1098": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Sea Snake Hatchling"
   },
   "1101": {
@@ -1024,15 +1036,15 @@
     "name": "Woman (West Ardougne) (Level 3 (1))"
   },
   "1127": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Giant scarab (Hard)"
   },
   "1128": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Dessous (Hard)"
   },
   "1129": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Kamil (Hard)"
   },
   "1130": {
@@ -1072,19 +1084,19 @@
     "name": "Paladin (Ardougne)"
   },
   "1153": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Ogre (Level 63)"
   },
   "1163": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Tree spirit (Lost City) (Normal)"
   },
   "1173": {
-    "last_updated": "2021-03-25",
+    "last_updated": "2021-07-12",
     "name": "Chicken (Normal)"
   },
   "1175": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Rooster (Level 3)"
   },
   "1204": {
@@ -1102,6 +1114,10 @@
   "1208": {
     "last_updated": "2020-12-25",
     "name": "Khazard Guard"
+  },
+  "1224": {
+    "last_updated": "2021-07-12",
+    "name": "Bouncer (Normal)"
   },
   "1261": {
     "last_updated": "2021-01-14",
@@ -1124,7 +1140,7 @@
     "name": "Ram (Monastery)"
   },
   "1267": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Vulture"
   },
   "1273": {
@@ -1140,35 +1156,35 @@
     "name": "Experiment (Level 25 (sheep))"
   },
   "1277": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Loar Shade (Shade)"
   },
   "1279": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Phrin Shade (Shadow)"
   },
   "1280": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Phrin Shade (Shade)"
   },
   "1281": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Riyl Shade (Shadow)"
   },
   "1282": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Riyl Shade (Shade)"
   },
   "1284": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Asyn Shade (Shade)"
   },
   "1285": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Fiyr Shade (Shadow)"
   },
   "1286": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Fiyr Shade (Shade)"
   },
   "1293": {
@@ -1188,23 +1204,23 @@
     "name": "Afflicted (Level 30)"
   },
   "1338": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Seagull (Level 2)"
   },
   "1339": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Seagull (Level 3)"
   },
   "1354": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Dwarf gang member (Level 44)"
   },
   "1355": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Dwarf gang member (Level 48)"
   },
   "1356": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Dwarf gang member (Level 49)"
   },
   "1362": {
@@ -1256,19 +1272,23 @@
     "name": "Camp dweller (Level 25)"
   },
   "1408": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Dwarf (Level 7)"
   },
   "1409": {
-    "last_updated": "2021-05-30",
+    "last_updated": "2021-07-12",
     "name": "Black Guard (Level 25)"
   },
   "1429": {
     "last_updated": "2020-12-25",
     "name": "Foreman"
   },
+  "1443": {
+    "last_updated": "2021-07-12",
+    "name": "Jungle Demon (Normal)"
+  },
   "1447": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Pirate (Port Sarim)"
   },
   "1448": {
@@ -1276,7 +1296,7 @@
     "name": "Thief (Standard)"
   },
   "1475": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Chompy bird"
   },
   "1494": {
@@ -1284,23 +1304,23 @@
     "name": "Kebbit"
   },
   "1537": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Skeleton hero"
   },
   "1538": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Skeleton brute"
   },
   "1539": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Skeleton warlord"
   },
   "1540": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Skeleton heavy"
   },
   "1541": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Skeleton thug"
   },
   "1546": {
@@ -1336,39 +1356,39 @@
     "name": "Battle mage (Guthix)"
   },
   "1672": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Ahrim the Blighted"
   },
   "1673": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Dharok the Wretched"
   },
   "1674": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Guthan the Infested"
   },
   "1675": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Karil the Tainted"
   },
   "1676": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Torag the Corrupted"
   },
   "1677": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Verac the Defiled"
   },
   "1679": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Crypt rat"
   },
   "1680": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Giant crypt rat"
   },
   "1685": {
-    "last_updated": "2021-04-15",
+    "last_updated": "2021-07-12",
     "name": "Skeleton (Barrows)"
   },
   "1777": {
@@ -1416,7 +1436,7 @@
     "name": "Gorak (Level 145)"
   },
   "1838": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Duck"
   },
   "1845": {
@@ -1452,79 +1472,63 @@
     "name": "Tree spirit (Level 159)"
   },
   "1870": {
-    "last_updated": "2021-05-30",
+    "last_updated": "2021-07-12",
     "name": "Evil Chicken (Normal)"
   },
   "1871": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Baby black dragon"
   },
-  "1874": {
-    "last_updated": "2020-12-25",
-    "name": "Ice troll runt"
-  },
-  "1875": {
-    "last_updated": "2020-12-25",
-    "name": "Ice troll male"
-  },
-  "1876": {
-    "last_updated": "2020-12-25",
-    "name": "Ice troll female"
-  },
-  "1877": {
-    "last_updated": "2020-12-25",
-    "name": "Ice troll grunt"
-  },
   "2005": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Lesser demon (Level 82)"
   },
   "2025": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Greater demon (Level 92)"
   },
   "2042": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Zulrah (Serpentine)"
   },
   "2043": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Zulrah (Magma)"
   },
   "2044": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Zulrah (Tanzanite)"
   },
   "2054": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Chaos Elemental"
   },
   "2062": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Oomlie bird"
   },
   "2064": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Terrorbird"
   },
   "2067": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Mounted terrorbird gnome (Level 31)"
   },
   "2068": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Mounted terrorbird gnome (Level 49)"
   },
   "2075": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Fire giant (Level 86)"
   },
   "2085": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Ice giant (Level 53)"
   },
   "2090": {
-    "last_updated": "2021-02-04",
+    "last_updated": "2021-07-12",
     "name": "Moss giant (Level 42)"
   },
   "2094": {
@@ -1532,31 +1536,31 @@
     "name": "Jogre (Normal)"
   },
   "2097": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Cyclops (Level 56)"
   },
   "2098": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Hill Giant (1)"
   },
   "2099": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Hill Giant (2)"
   },
   "2100": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Hill Giant (3)"
   },
   "2101": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Hill Giant (4)"
   },
   "2102": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Hill Giant (5)"
   },
   "2103": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Hill Giant (6)"
   },
   "2120": {
@@ -1564,11 +1568,11 @@
     "name": "Market Guard (Draynor)"
   },
   "2137": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Cyclops (Level 106)"
   },
   "2145": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Undead Druid"
   },
   "2161": {
@@ -1588,7 +1592,7 @@
     "name": "TzHaar-Xil (Ring)"
   },
   "2205": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Commander Zilyana"
   },
   "2206": {
@@ -1608,15 +1612,15 @@
     "name": "Saradomin priest"
   },
   "2210": {
-    "last_updated": "2021-01-11",
+    "last_updated": "2021-07-12",
     "name": "Spiritual warrior (Saradomin)"
   },
   "2211": {
-    "last_updated": "2021-01-11",
+    "last_updated": "2021-07-12",
     "name": "Spiritual ranger (Saradomin)"
   },
   "2212": {
-    "last_updated": "2021-01-11",
+    "last_updated": "2021-07-12",
     "name": "Spiritual mage (Saradomin)"
   },
   "2213": {
@@ -1628,23 +1632,23 @@
     "name": "Knight of Saradomin (Level 101)"
   },
   "2215": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "General Graardor"
   },
   "2216": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Sergeant Strongstack"
   },
   "2217": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Sergeant Steelwill"
   },
   "2218": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Sergeant Grimspike"
   },
   "2233": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Ogre (Level 58)"
   },
   "2234": {
@@ -1652,7 +1656,7 @@
     "name": "Jogre (GWD)"
   },
   "2235": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Cyclops (Level 81)"
   },
   "2237": {
@@ -1660,39 +1664,39 @@
     "name": "Ork"
   },
   "2241": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Hobgoblin (Level 47)"
   },
   "2242": {
-    "last_updated": "2021-01-11",
+    "last_updated": "2021-07-12",
     "name": "Spiritual ranger (Bandos)"
   },
   "2243": {
-    "last_updated": "2021-01-11",
+    "last_updated": "2021-07-12",
     "name": "Spiritual warrior (Bandos)"
   },
   "2244": {
-    "last_updated": "2021-01-11",
+    "last_updated": "2021-07-12",
     "name": "Spiritual mage (Bandos)"
   },
   "2245": {
-    "last_updated": "2021-05-30",
+    "last_updated": "2021-07-12",
     "name": "Goblin (God Wars Dungeon) (Level 17)"
   },
   "2246": {
-    "last_updated": "2021-05-30",
+    "last_updated": "2021-07-12",
     "name": "Goblin (God Wars Dungeon) (Level 12)"
   },
   "2247": {
-    "last_updated": "2021-05-30",
+    "last_updated": "2021-07-12",
     "name": "Goblin (God Wars Dungeon) (Level 12 (banner))"
   },
   "2248": {
-    "last_updated": "2021-05-30",
+    "last_updated": "2021-07-12",
     "name": "Goblin (God Wars Dungeon) (Level 15)"
   },
   "2249": {
-    "last_updated": "2021-05-30",
+    "last_updated": "2021-07-12",
     "name": "Goblin (God Wars Dungeon) (Level 13)"
   },
   "2261": {
@@ -1704,23 +1708,23 @@
     "name": "Dagannoth fledgeling"
   },
   "2265": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Dagannoth Supreme"
   },
   "2266": {
-    "last_updated": "2021-03-11",
+    "last_updated": "2021-07-12",
     "name": "Dagannoth Prime"
   },
   "2267": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Dagannoth Rex"
   },
   "2316": {
-    "last_updated": "2021-02-04",
+    "last_updated": "2021-07-12",
     "name": "Guard (Cave goblin) (Bone club)"
   },
   "2317": {
-    "last_updated": "2021-02-04",
+    "last_updated": "2021-07-12",
     "name": "Guard (Cave goblin) (Bone spear)"
   },
   "2450": {
@@ -1752,7 +1756,7 @@
     "name": "Animated Rune Armour"
   },
   "2464": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Cyclops (Level 76)"
   },
   "2474": {
@@ -1768,115 +1772,115 @@
     "name": "Catablepon (Level 68)"
   },
   "2477": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Giant spider (Level 50)"
   },
   "2478": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Spider (Stronghold of Security)"
   },
   "2479": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Scorpion (Level 59)"
   },
   "2480": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Scorpion (Level 37)"
   },
   "2481": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Minotaur (Level 12)"
   },
   "2483": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Minotaur (Level 27)"
   },
   "2484": {
-    "last_updated": "2021-05-30",
+    "last_updated": "2021-07-12",
     "name": "Goblin (Vault of War) (Level 5)"
   },
   "2485": {
-    "last_updated": "2021-05-30",
+    "last_updated": "2021-07-12",
     "name": "Goblin (Vault of War) (Level 13)"
   },
   "2486": {
-    "last_updated": "2021-05-30",
+    "last_updated": "2021-07-12",
     "name": "Goblin (Vault of War) (Level 11)"
   },
   "2487": {
-    "last_updated": "2021-05-30",
+    "last_updated": "2021-07-12",
     "name": "Goblin (Vault of War) (Level 16)"
   },
   "2488": {
-    "last_updated": "2021-05-30",
+    "last_updated": "2021-07-12",
     "name": "Goblin (Vault of War) (Level 25)"
   },
   "2490": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Wolf (Level 14)"
   },
   "2492": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Rat (Level 1 (SoS))"
   },
   "2498": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Flesh Crawler (Level 28)"
   },
   "2499": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Flesh Crawler (Level 35)"
   },
   "2500": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Flesh Crawler (Level 41)"
   },
   "2501": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Zombie (Level 30)"
   },
   "2504": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Zombie (Level 44)"
   },
   "2507": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Zombie (Level 53)"
   },
   "2510": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Giant rat (Level 26)"
   },
   "2514": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Ankou (Level 75)"
   },
   "2515": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Ankou (Level 82)"
   },
   "2516": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Ankou (Level 86)"
   },
   "2520": {
-    "last_updated": "2021-04-15",
+    "last_updated": "2021-07-12",
     "name": "Skeleton (Level 68)"
   },
   "2521": {
-    "last_updated": "2021-04-15",
+    "last_updated": "2021-07-12",
     "name": "Skeleton (Level 60)"
   },
   "2524": {
-    "last_updated": "2021-04-15",
+    "last_updated": "2021-07-12",
     "name": "Skeleton (Level 85)"
   },
   "2527": {
-    "last_updated": "2021-05-30",
+    "last_updated": "2021-07-12",
     "name": "Ghost (Level 77)"
   },
   "2531": {
-    "last_updated": "2021-05-30",
+    "last_updated": "2021-07-12",
     "name": "Ghost (Level 76)"
   },
   "2536": {
@@ -1896,23 +1900,23 @@
     "name": "Monk (Level 5)"
   },
   "2584": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Abyssal leech"
   },
   "2585": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Abyssal guardian"
   },
   "2586": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Abyssal walker"
   },
   "2592": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Mogre"
   },
   "2593": {
-    "last_updated": "2021-01-14",
+    "last_updated": "2021-07-12",
     "name": "Werewolf (Level 88)"
   },
   "2613": {
@@ -2016,35 +2020,35 @@
     "name": "Ochre Blamish Snail (Pointed)"
   },
   "2790": {
-    "last_updated": "2021-04-24",
+    "last_updated": "2021-07-12",
     "name": "Cow (1)"
   },
   "2791": {
-    "last_updated": "2021-04-24",
+    "last_updated": "2021-07-12",
     "name": "Cow (2)"
   },
   "2792": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Cow calf"
   },
   "2793": {
-    "last_updated": "2021-05-30",
+    "last_updated": "2021-07-12",
     "name": "Cow (3)"
   },
   "2795": {
-    "last_updated": "2021-05-30",
+    "last_updated": "2021-07-12",
     "name": "Cow (Isle of Souls)"
   },
   "2804": {
-    "last_updated": "2021-03-25",
+    "last_updated": "2021-07-12",
     "name": "Chicken (Falador Farm)"
   },
   "2827": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Bat"
   },
   "2834": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Giant bat (Normal)"
   },
   "2836": {
@@ -2056,27 +2060,27 @@
     "name": "Unicorn"
   },
   "2838": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Grizzly bear (Level 21)"
   },
   "2839": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Black bear"
   },
   "2840": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Earth warrior"
   },
   "2841": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Ice warrior"
   },
   "2843": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Otherworldly being"
   },
   "2844": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Magic axe"
   },
   "2845": {
@@ -2088,35 +2092,35 @@
     "name": "Black unicorn"
   },
   "2853": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Shadow warrior"
   },
   "2854": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Rat (Level 1)"
   },
   "2856": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Giant rat (Level 3)"
   },
   "2862": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Giant rat (Level 6)"
   },
   "2865": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Dungeon rat (Large)"
   },
   "2916": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Waterfiend"
   },
   "2918": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Brutal green dragon"
   },
   "2919": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Mithril dragon"
   },
   "2920": {
@@ -2152,19 +2156,19 @@
     "name": "Big Snake"
   },
   "2992": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Undead cow"
   },
   "2993": {
-    "last_updated": "2021-03-17",
+    "last_updated": "2021-07-12",
     "name": "Undead chicken"
   },
   "2994": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Giant lobster (Ghosts Ahoy)"
   },
   "2999": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Tortured soul"
   },
   "3010": {
@@ -2180,59 +2184,59 @@
     "name": "Woman (Varrock)"
   },
   "3016": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Shadow spider"
   },
   "3017": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Giant spider (Level 2)"
   },
   "3018": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Giant spider (Level 27)"
   },
   "3019": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Spider (Common)"
   },
   "3020": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Jungle spider"
   },
   "3021": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Deadly red spider"
   },
   "3022": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Ice spider"
   },
   "3023": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Poison spider (Level 64)"
   },
   "3024": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Scorpion (Level 14)"
   },
   "3025": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Poison Scorpion"
   },
   "3026": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Pit Scorpion"
   },
   "3027": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "King Scorpion"
   },
   "3045": {
-    "last_updated": "2021-05-30",
+    "last_updated": "2021-07-12",
     "name": "Goblin (Level 5)"
   },
   "3046": {
-    "last_updated": "2021-05-30",
+    "last_updated": "2021-07-12",
     "name": "Goblin (Level 13)"
   },
   "3047": {
@@ -2244,11 +2248,11 @@
     "name": "Goblin (historical) (Green (updated))"
   },
   "3049": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Hobgoblin (Level 28)"
   },
   "3050": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Hobgoblin (Level 42)"
   },
   "3055": {
@@ -2360,47 +2364,47 @@
     "name": "TzTok-Jad"
   },
   "3129": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "K'ril Tsutsaroth"
   },
   "3130": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Tstanon Karlak"
   },
   "3131": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Zakl'n Gritch"
   },
   "3132": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Balfrug Kreeyath"
   },
   "3133": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Hellhound (Level 127)"
   },
   "3134": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Imp (GWD)"
   },
   "3135": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Werewolf (Level 93)"
   },
   "3137": {
-    "last_updated": "2021-03-11",
+    "last_updated": "2021-07-12",
     "name": "Feral Vampyre (Level 77)"
   },
   "3138": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Bloodveld (God Wars)"
   },
   "3139": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Pyrefiend (GWD)"
   },
   "3140": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Icefiend (Level 18)"
   },
   "3141": {
@@ -2408,103 +2412,103 @@
     "name": "Gorak (Level 149)"
   },
   "3159": {
-    "last_updated": "2021-01-11",
+    "last_updated": "2021-07-12",
     "name": "Spiritual warrior (Zamorak)"
   },
   "3160": {
-    "last_updated": "2021-01-11",
+    "last_updated": "2021-07-12",
     "name": "Spiritual ranger (Zamorak)"
   },
   "3161": {
-    "last_updated": "2021-01-11",
+    "last_updated": "2021-07-12",
     "name": "Spiritual mage (Zamorak)"
   },
   "3162": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Kree'arra"
   },
   "3163": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Wingman Skree"
   },
   "3164": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Flockleader Geerin"
   },
   "3165": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Flight Kilisa"
   },
   "3166": {
-    "last_updated": "2021-01-11",
+    "last_updated": "2021-07-12",
     "name": "Spiritual warrior (Armadyl)"
   },
   "3167": {
-    "last_updated": "2021-01-11",
+    "last_updated": "2021-07-12",
     "name": "Spiritual ranger (Armadyl)"
   },
   "3168": {
-    "last_updated": "2021-01-11",
+    "last_updated": "2021-07-12",
     "name": "Spiritual mage (Armadyl)"
   },
   "3169": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Aviansie (Level 69)"
   },
   "3170": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Aviansie (Level 79 (1))"
   },
   "3171": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Aviansie (Level 84)"
   },
   "3172": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Aviansie (Level 83)"
   },
   "3173": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Aviansie (Level 92)"
   },
   "3174": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Aviansie (Level 97 (1))"
   },
   "3175": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Aviansie (Level 137)"
   },
   "3176": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Aviansie (Level 148)"
   },
   "3177": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Aviansie (Level 71)"
   },
   "3178": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Aviansie (Level 73)"
   },
   "3179": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Aviansie (Level 79 (2))"
   },
   "3180": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Aviansie (Level 89)"
   },
   "3181": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Aviansie (Level 94)"
   },
   "3182": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Aviansie (Level 97 (2))"
   },
   "3183": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Aviansie (Level 131)"
   },
   "3184": {
@@ -2512,11 +2516,11 @@
     "name": "Dagannoth spawn"
   },
   "3234": {
-    "last_updated": "2021-03-11",
+    "last_updated": "2021-07-12",
     "name": "Feral Vampyre (Level 72)"
   },
   "3237": {
-    "last_updated": "2021-03-11",
+    "last_updated": "2021-07-12",
     "name": "Feral Vampyre (Level 61)"
   },
   "3256": {
@@ -2640,7 +2644,7 @@
     "name": "Knight of Ardougne (unused)"
   },
   "3313": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Giant rat (Tutorial Island)"
   },
   "3316": {
@@ -2652,27 +2656,27 @@
     "name": "Giant Champion"
   },
   "3361": {
-    "last_updated": "2021-06-18",
-    "name": "Guard (Deadman Mode)"
+    "last_updated": "2021-07-12",
+    "name": "Guard (Shayzien)"
   },
   "3420": {
     "last_updated": "2021-01-14",
     "name": "Rabbit (Tirannwn)"
   },
   "3423": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Grizzly bear (Level 42)"
   },
   "3424": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Grizzly bear cub (Level 33)"
   },
   "3425": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Grizzly bear cub (Level 36)"
   },
   "3426": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Dire Wolf (Normal)"
   },
   "3428": {
@@ -2692,7 +2696,7 @@
     "name": "Guardian of Armadyl (Female)"
   },
   "3449": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Shadow Hound"
   },
   "3456": {
@@ -2700,11 +2704,11 @@
     "name": "Fareed (Normal)"
   },
   "3458": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Kamil (Normal)"
   },
   "3459": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Dessous (Normal)"
   },
   "3477": {
@@ -2714,6 +2718,10 @@
   "3486": {
     "last_updated": "2020-12-25",
     "name": "Monk of Zamorak (Level 30)"
+  },
+  "3508": {
+    "last_updated": "2021-07-12",
+    "name": "Bouncer (ghost)"
   },
   "3517": {
     "last_updated": "2020-12-25",
@@ -2736,7 +2744,7 @@
     "name": "Tough Guy"
   },
   "3565": {
-    "last_updated": "2021-04-15",
+    "last_updated": "2021-07-12",
     "name": "Skeleton (Draynor Manor)"
   },
   "3600": {
@@ -2764,7 +2772,7 @@
     "name": "Newtroost"
   },
   "3607": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Dungeon rat (Small)"
   },
   "3612": {
@@ -2772,7 +2780,7 @@
     "name": "Possessed pickaxe"
   },
   "3615": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Skeletal miner"
   },
   "3616": {
@@ -2780,7 +2788,7 @@
     "name": "Treus Dayth (Normal)"
   },
   "3625": {
-    "last_updated": "2021-05-30",
+    "last_updated": "2021-07-12",
     "name": "Ghost (Level 29)"
   },
   "3652": {
@@ -2788,11 +2796,11 @@
     "name": "Man (Karamja)"
   },
   "3661": {
-    "last_updated": "2021-03-25",
+    "last_updated": "2021-07-12",
     "name": "Chicken (Miscellania)"
   },
   "3663": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Rooster (Level 2)"
   },
   "3664": {
@@ -2824,31 +2832,31 @@
     "name": "Ragnvald"
   },
   "3692": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Vampyre Juvenile (Meiyerditch/Darkmeyer)"
   },
   "3707": {
-    "last_updated": "2021-03-11",
+    "last_updated": "2021-07-12",
     "name": "Feral Vampyre (Level 64)"
   },
   "3717": {
-    "last_updated": "2021-03-17",
+    "last_updated": "2021-07-12",
     "name": "Vyrewatch (Level 105)"
   },
   "3718": {
-    "last_updated": "2021-03-17",
+    "last_updated": "2021-07-12",
     "name": "Vyrewatch (Level 110)"
   },
   "3719": {
-    "last_updated": "2021-03-17",
+    "last_updated": "2021-07-12",
     "name": "Vyrewatch (Level 120)"
   },
   "3720": {
-    "last_updated": "2021-03-17",
+    "last_updated": "2021-07-12",
     "name": "Vyrewatch (Level 125)"
   },
   "3851": {
-    "last_updated": "2021-02-04",
+    "last_updated": "2021-07-12",
     "name": "Moss giant (Level 48)"
   },
   "3863": {
@@ -2876,11 +2884,11 @@
     "name": "Bunny (2)"
   },
   "3908": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Bear Cub (1)"
   },
   "3909": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Bear Cub (2)"
   },
   "3910": {
@@ -2892,7 +2900,7 @@
     "name": "Black unicorn Foal"
   },
   "3912": {
-    "last_updated": "2021-04-24",
+    "last_updated": "2021-07-12",
     "name": "Wolf (Level 64 (Rellekka))"
   },
   "3938": {
@@ -2924,63 +2932,63 @@
     "name": "Jungle savage"
   },
   "3969": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Zombie rat (1)"
   },
   "3970": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Zombie rat (2)"
   },
   "3971": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Zombie rat (3)"
   },
   "3972": {
-    "last_updated": "2021-04-15",
+    "last_updated": "2021-07-12",
     "name": "Skeleton (Melzar's Maze) (1)"
   },
   "3973": {
-    "last_updated": "2021-04-15",
+    "last_updated": "2021-07-12",
     "name": "Skeleton (Melzar's Maze) (2)"
   },
   "3974": {
-    "last_updated": "2021-04-15",
+    "last_updated": "2021-07-12",
     "name": "Skeleton (Melzar's Maze) (3)"
   },
   "3975": {
-    "last_updated": "2021-05-30",
+    "last_updated": "2021-07-12",
     "name": "Ghost (Melzar's Maze) (1)"
   },
   "3976": {
-    "last_updated": "2021-05-30",
+    "last_updated": "2021-07-12",
     "name": "Ghost (Melzar's Maze) (2)"
   },
   "3977": {
-    "last_updated": "2021-05-30",
+    "last_updated": "2021-07-12",
     "name": "Ghost (Melzar's Maze) (3)"
   },
   "3978": {
-    "last_updated": "2021-05-30",
+    "last_updated": "2021-07-12",
     "name": "Ghost (Melzar's Maze) (4)"
   },
   "3979": {
-    "last_updated": "2021-05-30",
+    "last_updated": "2021-07-12",
     "name": "Ghost (Melzar's Maze) (5)"
   },
   "3980": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Zombie (Melzar's Maze)"
   },
   "3982": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Lesser demon (Melzar's Maze)"
   },
   "4005": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Dark beast"
   },
   "4043": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Pirate (Cabin Fever)"
   },
   "4067": {
@@ -3028,47 +3036,47 @@
     "name": "Fareed (Hard)"
   },
   "4120": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Troll general (Sword)"
   },
   "4121": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Troll general (Hammer (grey))"
   },
   "4122": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Troll general (Hammer (brown))"
   },
   "4123": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Troll spectator"
   },
   "4130": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Dad (Normal)"
   },
   "4131": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Twig (Awake)"
   },
   "4132": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Berry (Awake)"
   },
   "4133": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Twig (Sleeping)"
   },
   "4134": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Berry (Sleeping)"
   },
   "4135": {
-    "last_updated": "2021-03-11",
+    "last_updated": "2021-07-12",
     "name": "Thrower troll (Trollheim)"
   },
   "4143": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Mountain troll (Level 71)"
   },
   "4163": {
@@ -3080,11 +3088,11 @@
     "name": "Outlaw"
   },
   "4184": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Crocodile"
   },
   "4185": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Jackal"
   },
   "4186": {
@@ -3096,7 +3104,7 @@
     "name": "Possessed Priest"
   },
   "4246": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Monk (Level 3)"
   },
   "4247": {
@@ -3112,19 +3120,19 @@
     "name": "Jail guard"
   },
   "4319": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Skeleton Mage (Level 83)"
   },
   "4362": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Ogre chieftain"
   },
   "4367": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Gorad"
   },
   "4381": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Enclave guard"
   },
   "4405": {
@@ -3136,19 +3144,19 @@
     "name": "Colonel Radick"
   },
   "4436": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Vampyre Juvenile (Burgh de Rott)"
   },
   "4491": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Skeleton fremennik (Level 40)"
   },
   "4494": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Skeleton fremennik (Level 50)"
   },
   "4497": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Skeleton fremennik (Level 60)"
   },
   "4500": {
@@ -3156,11 +3164,11 @@
     "name": "Ulfric"
   },
   "4501": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Brine rat"
   },
   "4504": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Giant bat (Sven's cave)"
   },
   "4522": {
@@ -3168,15 +3176,15 @@
     "name": "Guard (H.A.M. storeroom)"
   },
   "4534": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Blessed giant rat (1)"
   },
   "4535": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Blessed giant rat (2)"
   },
   "4561": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Spider (Underground Pass)"
   },
   "4634": {
@@ -3192,7 +3200,7 @@
     "name": "Shantay Guard"
   },
   "4649": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Desert Wolf"
   },
   "4652": {
@@ -3244,11 +3252,11 @@
     "name": "Fortress Guard"
   },
   "4800": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Giant lobster"
   },
   "4813": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Icefiend (Level 13)"
   },
   "4820": {
@@ -3284,7 +3292,7 @@
     "name": "Pirate Guard"
   },
   "4927": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Entrana firebird"
   },
   "4959": {
@@ -3304,15 +3312,15 @@
     "name": "Gnome troop (Level 1)"
   },
   "4987": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Chronozon (Normal)"
   },
   "5007": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Imp (Regular)"
   },
   "5054": {
-    "last_updated": "2021-01-14",
+    "last_updated": "2021-07-12",
     "name": "Skeleton Hellhound (Normal)"
   },
   "5126": {
@@ -3332,15 +3340,15 @@
     "name": "Glod (Normal)"
   },
   "5185": {
-    "last_updated": "2021-02-04",
+    "last_updated": "2021-07-12",
     "name": "Guard (dwarf)"
   },
   "5192": {
-    "last_updated": "2021-05-30",
+    "last_updated": "2021-07-12",
     "name": "Goblin (Level 2 (armed))"
   },
   "5194": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Baby green dragon (1)"
   },
   "5211": {
@@ -3356,19 +3364,19 @@
     "name": "Thief (Varrock Gang)"
   },
   "5237": {
-    "last_updated": "2021-04-15",
+    "last_updated": "2021-07-12",
     "name": "Skeleton (Ape Atoll)"
   },
   "5238": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Spider (Ape Atoll)"
   },
   "5242": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Scorpion (Level 38)"
   },
   "5243": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Jungle spider (Ape Atoll)"
   },
   "5244": {
@@ -3400,27 +3408,27 @@
     "name": "Monkey Guard (ninja)"
   },
   "5272": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Monkey Archer"
   },
   "5275": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Monkey Guard (Unbearded)"
   },
   "5276": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Monkey Guard (Bearded)"
   },
   "5281": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Monkey Zombie (Level 98)"
   },
   "5282": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Monkey Zombie (Level 129)"
   },
   "5283": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Monkey Zombie (Level 82)"
   },
   "5293": {
@@ -3440,87 +3448,87 @@
     "name": "Elf Archer (2)"
   },
   "5330": {
-    "last_updated": "2021-01-14",
+    "last_updated": "2021-07-12",
     "name": "Cave goblin miner (1)"
   },
   "5331": {
-    "last_updated": "2021-01-14",
+    "last_updated": "2021-07-12",
     "name": "Cave goblin miner (2)"
   },
   "5332": {
-    "last_updated": "2021-01-14",
+    "last_updated": "2021-07-12",
     "name": "Cave goblin miner (3)"
   },
   "5333": {
-    "last_updated": "2021-01-14",
+    "last_updated": "2021-07-12",
     "name": "Cave goblin miner (4)"
   },
   "5334": {
-    "last_updated": "2021-02-04",
+    "last_updated": "2021-07-12",
     "name": "Cave goblin guard (Level 26)"
   },
   "5335": {
-    "last_updated": "2021-02-04",
+    "last_updated": "2021-07-12",
     "name": "Cave goblin guard (Level 24)"
   },
   "5336": {
-    "last_updated": "2021-02-04",
+    "last_updated": "2021-07-12",
     "name": "Cave goblin miner (5)"
   },
   "5337": {
-    "last_updated": "2021-02-04",
+    "last_updated": "2021-07-12",
     "name": "Cave goblin miner (6)"
   },
   "5338": {
-    "last_updated": "2021-02-04",
+    "last_updated": "2021-07-12",
     "name": "Cave goblin miner (7)"
   },
   "5339": {
-    "last_updated": "2021-02-04",
+    "last_updated": "2021-07-12",
     "name": "Cave goblin miner (8)"
   },
   "5342": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Undead one (Level 68 (Skeletal))"
   },
   "5344": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Undead one (Level 61)"
   },
   "5346": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Undead one (Level 68 (Zombie))"
   },
   "5349": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Undead one (Level 73)"
   },
   "5353": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Nazastarool (Zombie)"
   },
   "5354": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Nazastarool (Skeleton)"
   },
   "5355": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Nazastarool (Ghost)"
   },
   "5369": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Goblin guard"
   },
   "5370": {
-    "last_updated": "2021-05-30",
+    "last_updated": "2021-07-12",
     "name": "Ghost (Grave of Scorpius)"
   },
   "5372": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Grave scorpion"
   },
   "5373": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Poison spider (Level 31)"
   },
   "5418": {
@@ -3564,63 +3572,63 @@
     "name": "Giant snail (Level 139)"
   },
   "5631": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Riyl shadow (Temple Trekking)"
   },
   "5633": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Shade (Temple Trekking)"
   },
   "5640": {
-    "last_updated": "2021-03-11",
+    "last_updated": "2021-07-12",
     "name": "Feral Vampyre (Level 70)"
   },
   "5641": {
-    "last_updated": "2021-03-11",
+    "last_updated": "2021-07-12",
     "name": "Feral Vampyre (Level 100)"
   },
   "5642": {
-    "last_updated": "2021-03-11",
+    "last_updated": "2021-07-12",
     "name": "Feral Vampyre (Level 130)"
   },
   "5647": {
-    "last_updated": "2021-05-30",
+    "last_updated": "2021-07-12",
     "name": "Zombie (Temple Trekking)"
   },
   "5648": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Undead Lumberjack (Level 30)"
   },
   "5656": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Undead Lumberjack (Level 35)"
   },
   "5665": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Undead Lumberjack (Level 40)"
   },
   "5673": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Undead Lumberjack (Level 45)"
   },
   "5681": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Undead Lumberjack (Level 50)"
   },
   "5689": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Undead Lumberjack (Level 55)"
   },
   "5697": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Undead Lumberjack (Level 60)"
   },
   "5705": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Undead Lumberjack (Level 64)"
   },
   "5713": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Undead Lumberjack (Level 70)"
   },
   "5739": {
@@ -3696,7 +3704,7 @@
     "name": "Penance Ranger (Wave 9)"
   },
   "5779": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Giant Mole"
   },
   "5816": {
@@ -3704,7 +3712,7 @@
     "name": "Yak"
   },
   "5842": {
-    "last_updated": "2021-05-30",
+    "last_updated": "2021-07-12",
     "name": "Cow (Zanaris)"
   },
   "5848": {
@@ -3720,32 +3728,40 @@
     "name": "Baby tanglefoot (Brown)"
   },
   "5862": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Cerberus"
   },
   "5872": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Baby green dragon (2)"
   },
   "5873": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Baby green dragon (3)"
   },
   "5886": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Abyssal Sire (Phase 1)"
   },
   "5890": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Abyssal Sire (Phase 2)"
   },
   "5891": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Abyssal Sire (Phase 3 (stage 1))"
   },
   "5908": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Abyssal Sire (Phase 3 (stage 2))"
+  },
+  "5916": {
+    "last_updated": "2021-07-12",
+    "name": "Spawn"
+  },
+  "5918": {
+    "last_updated": "2021-07-12",
+    "name": "Scion"
   },
   "5935": {
     "last_updated": "2020-12-25",
@@ -3776,19 +3792,19 @@
     "name": "Gnome (Level 1)"
   },
   "6046": {
-    "last_updated": "2021-05-30",
+    "last_updated": "2021-07-12",
     "name": "Black Guard (Level 48)"
   },
   "6050": {
-    "last_updated": "2021-05-30",
+    "last_updated": "2021-07-12",
     "name": "Black Guard Berserker (Red)"
   },
   "6051": {
-    "last_updated": "2021-05-30",
+    "last_updated": "2021-07-12",
     "name": "Black Guard Berserker (Blue)"
   },
   "6052": {
-    "last_updated": "2021-05-30",
+    "last_updated": "2021-07-12",
     "name": "Black Guard Berserker (Green)"
   },
   "6056": {
@@ -3840,11 +3856,11 @@
     "name": "Bush snake"
   },
   "6118": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Elvarg (Hard)"
   },
   "6143": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Urium Shade (Shadow)"
   },
   "6272": {
@@ -3856,11 +3872,15 @@
     "name": "Tanglefoot (Hard)"
   },
   "6292": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Chronozon (Hard)"
   },
+  "6293": {
+    "last_updated": "2021-07-12",
+    "name": "Bouncer (Hard)"
+  },
   "6295": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Black demon (Hard)"
   },
   "6297": {
@@ -3880,7 +3900,7 @@
     "name": "Dagannoth mother (Hard)"
   },
   "6306": {
-    "last_updated": "2021-05-30",
+    "last_updated": "2021-07-12",
     "name": "Evil Chicken (Hard)"
   },
   "6307": {
@@ -3899,12 +3919,16 @@
     "last_updated": "2020-12-25",
     "name": "Me (NMZ (hard))"
   },
+  "6321": {
+    "last_updated": "2021-07-12",
+    "name": "Jungle Demon (Hard)"
+  },
   "6322": {
     "last_updated": "2020-12-25",
     "name": "The Kendal (Hard)"
   },
   "6323": {
-    "last_updated": "2021-05-30",
+    "last_updated": "2021-07-12",
     "name": "Giant Roc (Hard)"
   },
   "6324": {
@@ -3912,19 +3936,23 @@
     "name": "Slagilith (Hard)"
   },
   "6326": {
-    "last_updated": "2021-01-14",
+    "last_updated": "2021-07-12",
     "name": "Skeleton Hellhound (Hard)"
+  },
+  "6327": {
+    "last_updated": "2021-07-12",
+    "name": "Agrith Naar (Hard)"
   },
   "6329": {
     "last_updated": "2020-12-25",
     "name": "Khazard warlord (Hard)"
   },
   "6330": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Dad (Hard)"
   },
   "6331": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Arrg (Hard)"
   },
   "6337": {
@@ -3940,11 +3968,11 @@
     "name": "Nazastarool (Ghost (hard))"
   },
   "6340": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Cow (Nightmare Zone) (Hard)"
   },
   "6349": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Elvarg (Normal)"
   },
   "6381": {
@@ -3956,7 +3984,7 @@
     "name": "Khazard warlord (Normal)"
   },
   "6401": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Cow (Nightmare Zone) (Normal)"
   },
   "6409": {
@@ -3976,115 +4004,115 @@
     "name": "Animated steel armour (Tarn's Lair)"
   },
   "6441": {
-    "last_updated": "2021-04-15",
+    "last_updated": "2021-07-12",
     "name": "Skeleton (mage)"
   },
   "6442": {
-    "last_updated": "2021-04-15",
+    "last_updated": "2021-07-12",
     "name": "Skeleton (Tarn's Lair) (Level 77)"
   },
   "6443": {
-    "last_updated": "2021-04-15",
+    "last_updated": "2021-07-12",
     "name": "Skeleton (Tarn's Lair) (Level 81)"
   },
   "6444": {
-    "last_updated": "2021-04-15",
+    "last_updated": "2021-07-12",
     "name": "Skeleton (Tarn's Lair) (Level 42 (Sword))"
   },
   "6445": {
-    "last_updated": "2021-04-15",
+    "last_updated": "2021-07-12",
     "name": "Skeleton (Tarn's Lair) (Level 59)"
   },
   "6446": {
-    "last_updated": "2021-04-15",
+    "last_updated": "2021-07-12",
     "name": "Skeleton (Tarn's Lair) (Level 42 (Hammer))"
   },
   "6447": {
-    "last_updated": "2021-04-15",
+    "last_updated": "2021-07-12",
     "name": "Skeleton (Tarn's Lair) (Level 63)"
   },
   "6448": {
-    "last_updated": "2021-04-15",
+    "last_updated": "2021-07-12",
     "name": "Skeleton (Tarn's Lair) (Level 40)"
   },
   "6449": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Zombie (Tarn's Lair) (Level 40)"
   },
   "6450": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Zombie (Tarn's Lair) (Level 42)"
   },
   "6451": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Zombie (Tarn's Lair) (Level 47)"
   },
   "6452": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Zombie (Tarn's Lair) (Level 50)"
   },
   "6453": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Zombie (Tarn's Lair) (Level 56)"
   },
   "6454": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Zombie (Tarn's Lair) (Level 61)"
   },
   "6455": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Zombie (Tarn's Lair) (Level 67)"
   },
   "6456": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Zombie (Tarn's Lair) (Level 70)"
   },
   "6457": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Zombie (Tarn's Lair) (Level 72)"
   },
   "6458": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Zombie (Tarn's Lair) (Level 76)"
   },
   "6459": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Zombie (Tarn's Lair) (Level 80)"
   },
   "6460": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Zombie (Tarn's Lair) (Level 85)"
   },
   "6461": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Zombie (Tarn's Lair) (Level 86)"
   },
   "6462": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Zombie (Tarn's Lair) (Level 90)"
   },
   "6463": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Zombie (Tarn's Lair) (Level 95)"
   },
   "6464": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Zombie (Tarn's Lair) (Level 98)"
   },
   "6465": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Zombie (Tarn's Lair) (Level 100)"
   },
   "6466": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Zombie (Tarn's Lair) (Level 81)"
   },
   "6467": {
-    "last_updated": "2021-04-15",
+    "last_updated": "2021-07-12",
     "name": "Skeleton (Tarn's Lair) (Level 72)"
   },
   "6468": {
-    "last_updated": "2021-04-15",
+    "last_updated": "2021-07-12",
     "name": "Skeleton (Tarn's Lair) (Level 87)"
   },
   "6470": {
@@ -4092,28 +4120,44 @@
     "name": "Animated spade"
   },
   "6503": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Callisto"
   },
   "6504": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Venenatis"
   },
   "6574": {
-    "last_updated": "2021-06-18",
-    "name": "Guard (Deadman Mode) (Ghost guard)"
+    "last_updated": "2021-07-12",
+    "name": "Guard (Deadman Mode) (Gnome guard)"
+  },
+  "6575": {
+    "last_updated": "2021-07-12",
+    "name": "Guard (Deadman Mode) (Seers' Village)"
+  },
+  "6576": {
+    "last_updated": "2021-07-12",
+    "name": "Guard (Deadman Mode) (Catherby)"
   },
   "6579": {
-    "last_updated": "2021-06-18",
-    "name": "Guard (Deadman Mode) (Falador)"
+    "last_updated": "2021-07-12",
+    "name": "Guard (Deadman Mode) (East Ardougne)"
+  },
+  "6580": {
+    "last_updated": "2021-07-12",
+    "name": "Guard (Deadman Mode) (Yanille)"
   },
   "6581": {
-    "last_updated": "2021-06-18",
-    "name": "Guard (Deadman Mode) (Varrock)"
+    "last_updated": "2021-07-12",
+    "name": "Guard (Deadman Mode) (Falador)"
   },
   "6582": {
-    "last_updated": "2021-06-18",
-    "name": "Guard (Deadman Mode) (Sophanem)"
+    "last_updated": "2021-07-12",
+    "name": "Guard (Deadman Mode) (Varrock)"
+  },
+  "6583": {
+    "last_updated": "2021-07-12",
+    "name": "Guard (Deadman Mode) (Lumbridge)"
   },
   "6587": {
     "last_updated": "2021-05-30",
@@ -4124,7 +4168,7 @@
     "name": "Bandosian guard"
   },
   "6593": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Lava dragon"
   },
   "6594": {
@@ -4132,68 +4176,72 @@
     "name": "Ent"
   },
   "6603": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Rogue (Level 135)"
   },
   "6604": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Mammoth"
   },
   "6605": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Bandit (Level 130)"
   },
   "6606": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Dark warrior (Level 145)"
   },
   "6607": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Elder Chaos druid"
   },
   "6611": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Vet'ion (Normal)"
   },
   "6612": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Vet'ion (Reborn)"
   },
   "6613": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Skeleton Hellhound (Vet'ion)"
   },
   "6614": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Greater Skeleton Hellhound"
   },
   "6615": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Scorpia"
   },
   "6617": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Scorpia's guardian"
   },
   "6618": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Crazy archaeologist"
   },
   "6619": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Chaos Fanatic"
   },
   "6699": {
-    "last_updated": "2021-06-18",
-    "name": "Guard (Deadman Mode) (Fremennik)"
+    "last_updated": "2021-07-12",
+    "name": "Guard (Deadman Mode) (Sophanem)"
   },
   "6700": {
-    "last_updated": "2021-06-18",
-    "name": "Guard (Deadman Mode) (Fremennik 2)"
+    "last_updated": "2021-07-12",
+    "name": "Guard (Deadman Mode) (Fremennik Isles)"
+  },
+  "6701": {
+    "last_updated": "2021-07-12",
+    "name": "Guard (Deadman Mode) (Void Knights' Outpost)"
   },
   "6702": {
-    "last_updated": "2021-06-18",
-    "name": "Guard (Deadman Mode) (Gnome guard)"
+    "last_updated": "2021-07-12",
+    "name": "Guard (Deadman Mode) (Rellekka)"
   },
   "6716": {
     "last_updated": "2020-12-25",
@@ -4204,39 +4252,39 @@
     "name": "Chaotic death spawn (Ranged)"
   },
   "6732": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "River troll (Level 14)"
   },
   "6733": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "River troll (Level 29)"
   },
   "6734": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "River troll (Level 49)"
   },
   "6735": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "River troll (Level 79)"
   },
   "6736": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "River troll (Level 120)"
   },
   "6737": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "River troll (Level 159)"
   },
   "6740": {
-    "last_updated": "2021-05-30",
+    "last_updated": "2021-07-12",
     "name": "Shade (Stronghold of Security)"
   },
   "6741": {
-    "last_updated": "2021-05-30",
+    "last_updated": "2021-07-12",
     "name": "Zombie (Sepulchre of Death)"
   },
   "6762": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Pyrelord (1)"
   },
   "6766": {
@@ -4244,7 +4292,7 @@
     "name": "Lizardman shaman (Standard)"
   },
   "6795": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Pyrelord (2)"
   },
   "6803": {
@@ -4280,7 +4328,7 @@
     "name": "Lizardman brute (Standard)"
   },
   "7095": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Tortured gorilla (Level 142)"
   },
   "7119": {
@@ -4288,11 +4336,11 @@
     "name": "Maniacal Monkey Archer"
   },
   "7144": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Demonic gorilla"
   },
   "7150": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Tortured gorilla (Level 141)"
   },
   "7238": {
@@ -4300,67 +4348,67 @@
     "name": "Forester (Normal)"
   },
   "7241": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Abyssal demon (Catacombs of Kourend)"
   },
   "7242": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Black demon (Level 184)"
   },
   "7243": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Black demon (Level 178)"
   },
   "7244": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Greater demon (Level 101)"
   },
   "7245": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Greater demon (Level 100)"
   },
   "7246": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Greater demon (Level 113)"
   },
   "7247": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Lesser demon (Level 87)"
   },
   "7248": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Lesser demon (Level 94)"
   },
   "7249": {
-    "last_updated": "2021-03-11",
+    "last_updated": "2021-07-12",
     "name": "Dust devil (Level 110)"
   },
   "7251": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Fire giant (Level 109)"
   },
   "7252": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Fire giant (Level 104)"
   },
   "7253": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Bronze dragon (Catacombs of Kourend)"
   },
   "7254": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Iron dragon (Catacombs of Kourend)"
   },
   "7255": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Steel dragon (Catacombs of Kourend)"
   },
   "7257": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Ankou (Level 95)"
   },
   "7258": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Shade (Catacombs of Kourend)"
   },
   "7259": {
@@ -4371,44 +4419,48 @@
     "last_updated": "2020-12-25",
     "name": "Dagannoth (Level 92 (2))"
   },
+  "7261": {
+    "last_updated": "2021-07-12",
+    "name": "Hill Giant (Dark)"
+  },
   "7266": {
     "last_updated": "2020-12-25",
     "name": "King Sand Crab (Active)"
   },
   "7272": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Twisted Banshee"
   },
   "7273": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Brutal blue dragon"
   },
   "7274": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Brutal red dragon"
   },
   "7275": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Brutal black dragon"
   },
   "7276": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Mutated Bloodveld"
   },
   "7277": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Warped Jelly"
   },
   "7278": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Greater Nechryael"
   },
   "7279": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Deviant spectre"
   },
   "7286": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Skotizo"
   },
   "7307": {
@@ -4432,23 +4484,23 @@
     "name": "Double agent (Level 141)"
   },
   "7388": {
-    "last_updated": "2021-02-04",
+    "last_updated": "2021-07-12",
     "name": "Crushing hand"
   },
   "7389": {
-    "last_updated": "2021-02-04",
+    "last_updated": "2021-07-12",
     "name": "Chasm Crawler"
   },
   "7390": {
-    "last_updated": "2021-02-04",
+    "last_updated": "2021-07-12",
     "name": "Screaming banshee"
   },
   "7391": {
-    "last_updated": "2021-02-04",
+    "last_updated": "2021-07-12",
     "name": "Screaming twisted banshee"
   },
   "7392": {
-    "last_updated": "2021-02-04",
+    "last_updated": "2021-07-12",
     "name": "Giant rockslug"
   },
   "7393": {
@@ -4456,47 +4508,47 @@
     "name": "Cockathrice"
   },
   "7394": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Flaming pyrelord"
   },
   "7395": {
-    "last_updated": "2021-02-04",
+    "last_updated": "2021-07-12",
     "name": "Monstrous basilisk"
   },
   "7396": {
-    "last_updated": "2021-02-04",
+    "last_updated": "2021-07-12",
     "name": "Malevolent Mage"
   },
   "7397": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Insatiable Bloodveld"
   },
   "7398": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Insatiable mutated Bloodveld"
   },
   "7399": {
-    "last_updated": "2021-02-04",
+    "last_updated": "2021-07-12",
     "name": "Vitreous Jelly"
   },
   "7400": {
-    "last_updated": "2021-02-04",
+    "last_updated": "2021-07-12",
     "name": "Vitreous warped Jelly"
   },
   "7401": {
-    "last_updated": "2021-02-12",
+    "last_updated": "2021-07-12",
     "name": "Cave abomination"
   },
   "7402": {
-    "last_updated": "2021-02-04",
+    "last_updated": "2021-07-12",
     "name": "Abhorrent spectre"
   },
   "7403": {
-    "last_updated": "2021-02-04",
+    "last_updated": "2021-07-12",
     "name": "Repugnant spectre"
   },
   "7404": {
-    "last_updated": "2021-02-04",
+    "last_updated": "2021-07-12",
     "name": "Choke devil"
   },
   "7405": {
@@ -4504,27 +4556,27 @@
     "name": "King kurask"
   },
   "7406": {
-    "last_updated": "2021-02-04",
+    "last_updated": "2021-07-12",
     "name": "Nuclear smoke devil"
   },
   "7407": {
-    "last_updated": "2021-02-04",
+    "last_updated": "2021-07-12",
     "name": "Marble gargoyle"
   },
   "7409": {
-    "last_updated": "2021-02-04",
+    "last_updated": "2021-07-12",
     "name": "Night beast"
   },
   "7410": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Greater abyssal demon"
   },
   "7411": {
-    "last_updated": "2021-02-04",
+    "last_updated": "2021-07-12",
     "name": "Nechryarch"
   },
   "7416": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Obor"
   },
   "7418": {
@@ -4560,24 +4612,24 @@
     "name": "Zamorak crafter"
   },
   "7485": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Zombie (Level 70)"
   },
   "7486": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Zombie (Level 56)"
   },
   "7487": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Zombie (Level 76)"
   },
   "7488": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Zombie (Level 72)"
   },
   "7526": {
-    "last_updated": "2020-12-25",
-    "name": "Vanguard (Magic)"
+    "last_updated": "2021-07-12",
+    "name": "Vanguard (Moving)"
   },
   "7527": {
     "last_updated": "2020-12-25",
@@ -4639,8 +4691,16 @@
     "last_updated": "2021-04-26",
     "name": "Lizardman shaman (Chambers of Xeric)"
   },
+  "7584": {
+    "last_updated": "2021-07-12",
+    "name": "Ice demon (Normal)"
+  },
+  "7585": {
+    "last_updated": "2021-07-12",
+    "name": "Ice demon (Challenge Mode)"
+  },
   "7604": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Skeletal Mystic"
   },
   "7649": {
@@ -4652,27 +4712,27 @@
     "name": "TzKal-Zuk"
   },
   "7792": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Long-tailed Wyvern"
   },
   "7793": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Taloned Wyvern"
   },
   "7794": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Spitting Wyvern"
   },
   "7795": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Ancient Wyvern"
   },
   "7796": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Lobstrosity"
   },
   "7797": {
-    "last_updated": "2021-05-30",
+    "last_updated": "2021-07-12",
     "name": "Ancient Zygomite"
   },
   "7799": {
@@ -4688,7 +4748,7 @@
     "name": "Tar Monster"
   },
   "7806": {
-    "last_updated": "2021-01-28",
+    "last_updated": "2021-07-12",
     "name": "Deranged archaeologist"
   },
   "7858": {
@@ -4700,43 +4760,43 @@
     "name": "Derwen"
   },
   "7860": {
-    "last_updated": "2021-03-17",
+    "last_updated": "2021-07-12",
     "name": "Porazdir"
   },
   "7861": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Black dragon (Level 247)"
   },
   "7864": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Ankou (Level 98)"
   },
   "7865": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Lesser demon (Level 94 (Wilderness Slayer Cave))"
   },
   "7868": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Green dragon (Level 88)"
   },
   "7871": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Greater demon (Level 104)"
   },
   "7874": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Black demon (Level 188)"
   },
   "7877": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Hellhound (Level 136)"
   },
   "7878": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Ice giant (Level 67)"
   },
   "7881": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Revenant imp"
   },
   "7916": {
@@ -4744,51 +4804,51 @@
     "name": "Thief (The Warrens)"
   },
   "7931": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Revenant goblin"
   },
   "7932": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Revenant pyrefiend"
   },
   "7933": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Revenant hobgoblin"
   },
   "7934": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Revenant cyclops"
   },
   "7935": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Revenant hellhound"
   },
   "7936": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Revenant demon"
   },
   "7937": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Revenant ork"
   },
   "7938": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Revenant dark beast"
   },
   "7939": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Revenant knight"
   },
   "7940": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Revenant dragon"
   },
   "7989": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Ogress Warrior"
   },
   "7991": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Ogress Shaman"
   },
   "7996": {
@@ -4804,55 +4864,59 @@
     "name": "Rune dragon (Construction)"
   },
   "8030": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Adamant dragon"
   },
   "8031": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Rune dragon"
   },
+  "8056": {
+    "last_updated": "2021-07-12",
+    "name": "Spawn (Dragon Slayer II)"
+  },
   "8060": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Vorkath (Dragon Slayer II)"
   },
   "8061": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Vorkath (Post-quest)"
   },
   "8067": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Zombie (Shayzien Crypts) (Melee)"
   },
   "8068": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Zombie (Shayzien Crypts) (Range)"
   },
   "8069": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Zombie (Shayzien Crypts) (Magic)"
   },
   "8070": {
-    "last_updated": "2021-04-15",
+    "last_updated": "2021-07-12",
     "name": "Skeleton (Shayzien Crypts) (Melee)"
   },
   "8071": {
-    "last_updated": "2021-04-15",
+    "last_updated": "2021-07-12",
     "name": "Skeleton (Shayzien Crypts) (Range)"
   },
   "8072": {
-    "last_updated": "2021-04-15",
+    "last_updated": "2021-07-12",
     "name": "Skeleton (Shayzien Crypts) (Magic)"
   },
   "8137": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Spider (Ungael)"
   },
   "8195": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Bryophyta"
   },
   "8256": {
-    "last_updated": "2021-03-17",
+    "last_updated": "2021-07-12",
     "name": "Vyrewatch (Level 87)"
   },
   "8297": {
@@ -4864,7 +4928,7 @@
     "name": "Swamp Crab (Bloomed)"
   },
   "8340": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Xarpus"
   },
   "8355": {
@@ -4872,31 +4936,35 @@
     "name": "Nylocas Vasilias (Hard)"
   },
   "8359": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Pestilent Bloat"
   },
   "8360": {
-    "last_updated": "2021-06-18",
-    "name": "The Maiden of Sugadinti (Normal)"
+    "last_updated": "2021-07-12",
+    "name": "The Maiden of Sugadinti (Hard Mode)"
   },
   "8361": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "The Maiden of Sugadinti (70% Health)"
   },
   "8362": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "The Maiden of Sugadinti (50% Health)"
   },
   "8363": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "The Maiden of Sugadinti (30% Health)"
+  },
+  "8364": {
+    "last_updated": "2021-07-12",
+    "name": "The Maiden of Sugadinti (Story Mode)"
   },
   "8370": {
     "last_updated": "2021-06-18",
     "name": "Verzik Vitur"
   },
   "8388": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Sotetseg"
   },
   "8564": {
@@ -4916,19 +4984,19 @@
     "name": "Hydra"
   },
   "8610": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Wyrm (Idle)"
   },
   "8611": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Wyrm (Attacking)"
   },
   "8612": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Drake"
   },
   "8614": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Sulphur Lizard"
   },
   "8615": {
@@ -4960,7 +5028,7 @@
     "name": "Frog"
   },
   "8703": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Temple Spider"
   },
   "8709": {
@@ -4968,11 +5036,11 @@
     "name": "Shaeded Beast"
   },
   "8713": {
-    "last_updated": "2021-03-11",
+    "last_updated": "2021-07-12",
     "name": "Sarachnis"
   },
   "8736": {
-    "last_updated": "2021-02-04",
+    "last_updated": "2021-07-12",
     "name": "Moss giant (Level 84)"
   },
   "8759": {
@@ -4988,11 +5056,11 @@
     "name": "Mourner"
   },
   "8849": {
-    "last_updated": "2021-02-04",
+    "last_updated": "2021-07-12",
     "name": "Paladin (Song of the Elves (lvl 49))"
   },
   "8850": {
-    "last_updated": "2021-02-04",
+    "last_updated": "2021-07-12",
     "name": "Paladin (Song of the Elves (lvl 121))"
   },
   "8851": {
@@ -5016,15 +5084,15 @@
     "name": "Sir Harry"
   },
   "8994": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Othainian"
   },
   "8995": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Doomion"
   },
   "8996": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Holthion"
   },
   "8997": {
@@ -5104,15 +5172,15 @@
     "name": "Corrupted Dark Beast"
   },
   "9049": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Zalcano"
   },
   "9118": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Rabbit (Prifddinas)"
   },
   "9181": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Dire Wolf (Albino)"
   },
   "9182": {
@@ -5144,67 +5212,71 @@
     "name": "Guard (Prifddinas) (7)"
   },
   "9258": {
-    "last_updated": "2021-02-04",
+    "last_updated": "2021-07-12",
     "name": "Basilisk Sentinel"
   },
   "9282": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Basilisk Youngling"
   },
   "9293": {
-    "last_updated": "2021-04-15",
+    "last_updated": "2021-07-12",
     "name": "Basilisk Knight"
   },
+  "9416": {
+    "last_updated": "2021-07-12",
+    "name": "Phosani's Nightmare"
+  },
   "9425": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "The Nightmare"
   },
   "9465": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Infernal pyrelord"
   },
   "9756": {
-    "last_updated": "2021-04-15",
+    "last_updated": "2021-07-12",
     "name": "Vyrewatch Sentinel (1)"
   },
   "9757": {
-    "last_updated": "2021-04-15",
+    "last_updated": "2021-07-12",
     "name": "Vyrewatch Sentinel (2)"
   },
   "9758": {
-    "last_updated": "2021-04-15",
+    "last_updated": "2021-07-12",
     "name": "Vyrewatch Sentinel (7)"
   },
   "9759": {
-    "last_updated": "2021-04-15",
+    "last_updated": "2021-07-12",
     "name": "Vyrewatch Sentinel (6)"
   },
   "9760": {
-    "last_updated": "2021-04-15",
+    "last_updated": "2021-07-12",
     "name": "Vyrewatch Sentinel (3)"
   },
   "9761": {
-    "last_updated": "2021-04-15",
+    "last_updated": "2021-07-12",
     "name": "Vyrewatch Sentinel (8)"
   },
   "9762": {
-    "last_updated": "2021-04-15",
+    "last_updated": "2021-07-12",
     "name": "Vyrewatch Sentinel (4)"
   },
   "9763": {
-    "last_updated": "2021-04-15",
+    "last_updated": "2021-07-12",
     "name": "Vyrewatch Sentinel (5)"
   },
   "10374": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Hill Giant (Desert Plateau) (Brassard)"
   },
   "10375": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Hill Giant (Desert Plateau) (Hammer)"
   },
   "10376": {
-    "last_updated": "2020-12-25",
+    "last_updated": "2021-07-12",
     "name": "Hill Giant (Desert Plateau) (Tank top)"
   },
   "10397": {
@@ -5212,11 +5284,15 @@
     "name": "Spiked Turoth"
   },
   "10398": {
-    "last_updated": "2021-02-04",
-    "name": "Shadow Wyrm"
+    "last_updated": "2021-07-12",
+    "name": "Shadow Wyrm (Idle)"
+  },
+  "10399": {
+    "last_updated": "2021-07-12",
+    "name": "Shadow Wyrm (Attacking)"
   },
   "10400": {
-    "last_updated": "2021-02-04",
+    "last_updated": "2021-07-12",
     "name": "Guardian Drake"
   },
   "10402": {
@@ -5224,8 +5300,12 @@
     "name": "Colossal Hydra"
   },
   "10435": {
-    "last_updated": "2021-04-08",
-    "name": "Sourhog"
+    "last_updated": "2021-07-12",
+    "name": "Sourhog (Post-quest)"
+  },
+  "10436": {
+    "last_updated": "2021-07-12",
+    "name": "Sourhog (A Porcine of Interest)"
   },
   "10493": {
     "last_updated": "2020-12-25",
@@ -5244,15 +5324,15 @@
     "name": "Forgotten Soul (Soul Wars) (Level 76)"
   },
   "10544": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Forgotten Soul (1)"
   },
   "10545": {
-    "last_updated": "2021-02-24",
+    "last_updated": "2021-07-12",
     "name": "Forgotten Soul (2)"
   },
   "10589": {
-    "last_updated": "2021-02-04",
+    "last_updated": "2021-07-12",
     "name": "Urium Shade (Shade)"
   },
   "10591": {
@@ -5268,7 +5348,7 @@
     "name": "Chaos Golem"
   },
   "10691": {
-    "last_updated": "2021-05-30",
+    "last_updated": "2021-07-12",
     "name": "Body Golem (Golem)"
   },
   "10693": {
@@ -5283,20 +5363,44 @@
     "last_updated": "2021-06-18",
     "name": "Nylocas Vasilias (Story)"
   },
+  "10984": {
+    "last_updated": "2021-07-12",
+    "name": "Barbarian (Barbarian Camp) (Level 10 (2h sword))"
+  },
+  "10985": {
+    "last_updated": "2021-07-12",
+    "name": "Barbarian (Barbarian Camp) (Level 10 (greataxe))"
+  },
+  "10986": {
+    "last_updated": "2021-07-12",
+    "name": "Barbarian (Barbarian Camp) (Level 15)"
+  },
+  "10987": {
+    "last_updated": "2021-07-12",
+    "name": "Barbarian (Barbarian Camp) (Level 10 (spear))"
+  },
+  "10988": {
+    "last_updated": "2021-07-12",
+    "name": "Barbarian (Barbarian Camp) (Level 9)"
+  },
+  "11063": {
+    "last_updated": "2021-07-12",
+    "name": "Bandit (Shayzien)"
+  },
   "11066": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Boar (Level 5)"
   },
   "11067": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Boar (Level 7)"
   },
   "11068": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Lynx (Level 21)"
   },
   "11069": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Lynx (Level 24)"
   },
   "11071": {
@@ -5304,7 +5408,23 @@
     "name": "Lynx Tamer"
   },
   "11088": {
-    "last_updated": "2021-06-18",
+    "last_updated": "2021-07-12",
     "name": "Necromancer"
+  },
+  "11093": {
+    "last_updated": "2021-07-12",
+    "name": "Head Guard"
+  },
+  "11109": {
+    "last_updated": "2021-07-12",
+    "name": "Dark warrior (Level 62)"
+  },
+  "11110": {
+    "last_updated": "2021-07-12",
+    "name": "Dark warrior (Level 51)"
+  },
+  "11111": {
+    "last_updated": "2021-07-12",
+    "name": "Dark warrior (Level 37)"
   }
 }

@@ -1,16 +1,16 @@
 {
-  "guiLog_AutoShowStats": "1",
+  "guiLog_AutoShowStats": 0,
   "guiLog_DropSize": "33",
   "guiLog_ItemImageType": "Wiki Small",
   "guiLog_MaxRowDrops": "8",
   "guiLog_TablesMergeBelowX": "27",
-  "guiLog_X": 375,
-  "guiLog_Y": 375,
+  "guiLog_X": 518,
+  "guiLog_Y": 418,
   "guiStatsH": 400,
   "guiStatsW": 570,
-  "guiStatsX": 912,
-  "guiStatsY": 249,
+  "guiStatsX": 1046,
+  "guiStatsY": 310,
   "previousLogFile": "D:\\Programming and projects\\ahk-app-osrs-drop-logger\\Dev\\myDebugDropLogfile.json",
-  "previousMob": "Vorkath (Post-quest)",
+  "previousMob": "Night beast",
   "setupHasRan": 0
 }

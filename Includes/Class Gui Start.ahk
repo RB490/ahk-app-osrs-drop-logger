@@ -105,7 +105,7 @@ class ClassGuiStart extends gui {
         ; show the drop log gui
         this.Enable()
         this.Hide()
-        LOG_GUI.Get()
+        GUI_LOG.Get()
     }
 
     ContextMenu() {

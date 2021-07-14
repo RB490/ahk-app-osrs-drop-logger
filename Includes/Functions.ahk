@@ -51,7 +51,7 @@ ON_WM_LBUTTONDOWN(wParam, lParam, msg, hWnd) {
     Obj.Delete("rolls")
 
     If !IsInteger(obj.quantity) { ; contains separator: '#' or '-'
-        LOG_GUI.Disable()
+        GUI_LOG.Disable()
         QUANTITY_GUI.Get(obj) ; directly modifies 'SELECTED_DROPS' because slow WinWaitClose 
         Msgbox Todo: Quantity select gui
         return

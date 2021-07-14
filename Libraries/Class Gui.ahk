@@ -198,6 +198,7 @@
 	}
 	
 	Escape() {
+		this.IsVisible := false
 		this.Close()
 	}
 	

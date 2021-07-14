@@ -2,6 +2,7 @@ Class ClassGuiStats extends gui {
     Get() {
         If this.IsVisible {
             this.Activate()
+            tooltip Returning
             return
         }
         
@@ -200,7 +201,7 @@ Class ClassGuiStats extends gui {
 
     Close() {
         SCRIPT_SETTINGS.guiLog_AutoShowStats := false
-        STATS_GUI.SavePos()
-        STATS_GUI.Hide()
+        GUI_STATS.SavePos()
+        GUI_STATS.Hide()
     }
 }
