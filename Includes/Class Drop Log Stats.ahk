@@ -183,7 +183,11 @@ Class ClassDropLogStats {
 
                     loop % drops.length() {
                         drop := drops.pop() ; take & remove drop from source obj
-                        
+
+                        ; skip duplicate drops removed by _countAndRemoveUniqueDropsFrom
+                        If !IsObject(drop)
+                            Continue
+
                         occurences := 0
                         occurences += this._countAndRemoveUniqueDropsFrom(obj, drop.name, drop.quantity)
                         occurences += 1 ; 'seed'/starting item

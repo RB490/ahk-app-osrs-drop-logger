@@ -71,7 +71,8 @@
 
 ; Subroutines
     debugScript:
-        myDebugDropLogfile := A_ScriptDir "\Dev\myDebugDropLogfile.json"
+        ; myDebugDropLogfile := A_ScriptDir "\Dev\myDebugDropLogfile.json"
+        myDebugDropLogfile := "D:\Downloads\mydroplog.json"
         SCRIPT_SETTINGS.previousLogFile := myDebugDropLogfile
         DROP_LOG.LoadFile(myDebugDropLogfile)
         

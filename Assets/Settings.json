@@ -8,9 +8,9 @@
   "guiLog_Y": 418,
   "guiStatsH": 400,
   "guiStatsW": 570,
-  "guiStatsX": 1046,
-  "guiStatsY": 310,
-  "previousLogFile": "D:\\Programming and projects\\ahk-app-osrs-drop-logger\\Dev\\myDebugDropLogfile.json",
+  "guiStatsX": 1200,
+  "guiStatsY": 343,
+  "previousLogFile": "D:\\Downloads\\mydroplog.json",
   "previousMob": "Night beast",
   "setupHasRan": 0
 }
