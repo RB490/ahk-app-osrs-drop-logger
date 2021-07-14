@@ -84,7 +84,7 @@
 
         ; DROP_LOG.StartTrip()
 
-        GUI_LOG.Get()
+        ; GUI_LOG.Get()
         ; GUI_STATS.Get()
         ; GUI_START.Get()
 

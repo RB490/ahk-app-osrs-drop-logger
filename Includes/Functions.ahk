@@ -283,9 +283,11 @@ GetDropImage(itemName, itemId) {
     If !IsValidImage(path) {
         FileDelete % path
 
-        FileCopy, D:\Downloads\static.runelite.net-gh-pages\cache\item\icon\%itemId%.png, % path
-        ; url := "https://raw.githubusercontent.com/runelite/static.runelite.net/gh-pages/cache/item/icon/" itemId ".png"
-        ; DownloadImageOrReload(url, path)
+        url := "https://raw.githubusercontent.com/runelite/static.runelite.net/gh-pages/cache/item/icon/" itemId ".png"
+        DownloadImageOrReload(url, path)
+        CutRuneLiteImageTo32by32(path)
+        ; not adding a 3 border because that just makes them identical to the wiki small icons except slightly lower quality because of the way ahk works with images
+        ; AddBorderToImage(A_LoopFileFullPath, 3)
     }
 }
 
@@ -338,6 +340,28 @@ AddBorderToImage(img, borderSize := 10) {
     ; pBrush := Gdip_BrushCreateSolid(0xffffffff)
     ; Gdip_FillRectangle(G, pBrush, 0, 0, canvasW, canvasH)
     ; Gdip_DeleteBrush(pBrush)
+
+    Gdip_DrawImage(G, pBitmapFile1, imgX, imgY, imgW, imgH, 0, 0, imgW, imgH)
+    Gdip_DisposeImage(pBitmapFile1)
+
+    Gdip_SaveBitmapToFile(pBitmap, img)
+    Gdip_DisposeImage(pBitmap)
+    Gdip_DeleteGraphics(G)
+    Gdip_Shutdown(pToken)
+}
+
+CutRuneLiteImageTo32by32(img) {
+    If !pToken := Gdip_Startup()
+        Msg("Error", A_ThisFunc, "Gdiplus failed to start")
+    pBitmapFile1 := Gdip_CreateBitmapFromFile(img)
+
+    imgX := 0
+    imgY := 0
+    imgW := 32
+    imgH := 32
+
+    pBitmap := Gdip_CreateBitmap(imgW, imgH)
+    G := Gdip_GraphicsFromImage(pBitmap)
 
     Gdip_DrawImage(G, pBitmapFile1, imgX, imgY, imgW, imgH, 0, 0, imgW, imgH)
     Gdip_DisposeImage(pBitmapFile1)
