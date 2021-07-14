@@ -254,7 +254,7 @@ GetMobImage(mobName, mobId) {
 
 GetDropImage(itemName, itemId) {
     If !IsValidImage(DIR_ITEM_IMAGES_ICONS "\" itemId ".png") or !IsValidImage(DIR_ITEM_IMAGES_DETAILED "\" itemId ".png")
-        wikiImageUrlObj := WIKI_API_LEGACY.img.GetItemImages(itemName, 50)
+        wikiImageUrlObj := WIKI_SCRAPER.img.GetItemImages(itemName, 50)
         ; wikiImageUrlObj := WIKI_API.GetItemUrls(itemName)
         
 

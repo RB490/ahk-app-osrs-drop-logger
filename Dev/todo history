@@ -253,3 +253,8 @@ wiki api -> new wiki api replacing the old one
 wontfix -> structure -> integrate gui position code into the class. using the built in ini stuff to save position information
 	in the same spot as the class files. or maybe in temporary folder or something
 		save pos, restore pos, check correct pos
+
+wontfix -> structure -> wiki class -> Add the droptable category class wiki api calls inside the wiki class
+	^ reason: increases code complexity for minor cleanliness improvement
+
+structure -> wiki class -> more documentation

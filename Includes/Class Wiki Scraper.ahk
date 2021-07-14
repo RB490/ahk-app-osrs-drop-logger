@@ -1,5 +1,15 @@
-; purpose = retrieves anything required from the osrs wiki
-class ClassWikiApi {
+/*
+    ClassWikiScraper
+        Purpose
+            Retrieve information from osrs wiki pages. For example images or drop tables
+
+        Usage
+            WIKI_SCRAPER.img.GetItemImages("Abyssal Whip")
+            WIKI_SCRAPER.table.GetDroptable("Vorkath")
+*/
+
+; purpose = 
+class ClassWikiScraper {
     __New() {
         this.url := "https://oldschool.runescape.wiki"
         this.img := new this.ClassImages(this)

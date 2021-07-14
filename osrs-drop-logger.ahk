@@ -39,7 +39,7 @@
 
     ; Class objects
     , P                         := new ClassGuiProgress(APP_NAME)
-    , WIKI_API_LEGACY           := new ClassWikiApi
+    , WIKI_SCRAPER              := new ClassWikiScraper
     , ITEM_DB                   := new ClassDatabaseItems
     , MOB_DB                    := new ClassDatabaseMobs
     , DROP_LOG                  := new ClassDropLog
@@ -92,7 +92,6 @@
 
 ; Includes
     #Include, %A_ScriptDir%\Includes
-    #Include, Class Wiki Api.ahk
     #Include, Class Database Items.ahk
     #Include, Class Database Mobs.ahk
     #Include, Class Drop Log.ahk
@@ -105,6 +104,7 @@
     #Include, Class Gui Settings.ahk
     #Include, Class Gui Start.ahk
     #Include, Class Gui Stats.ahk
+    #Include, Class Wiki Scraper.ahk
     #Include, Functions.ahk
 
 ; Libraries

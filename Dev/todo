@@ -29,8 +29,6 @@ FEATURES -----------------------------------------------------------------------
             mob db = 0.04
 
 STRUCTURE ----------------------------------------------------------------------------------------------------------------------------------
-    structure -> wiki class -> more documentation
-    structure -> wiki class -> Add the droptable category class wiki api calls inside the wiki class
 
 BUGS ---------------------------------------------------------------------------------------------------------------------------------------
     bug -> added a Rune dragon kill with a lot of drops. this glitched out the unique stats, showing a bunch of drops with just 'x'
