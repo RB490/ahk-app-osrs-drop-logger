@@ -262,3 +262,7 @@ structure -> wiki class -> more documentation
 bug -> added a Rune dragon kill with a lot of drops. this glitched out the unique stats, showing a bunch of drops with just 'x'
 	1 x Grimy torstol, 1 x Grimy snapdragon, 1 x Grimy ranarr weed, 1 x Grimy ranarr weed, 1 x Grimy avantoe, 1 x Grimy torstol, 1 x Draconic visage, 1 x Draconic visage, 1 x Draconic visage, 1 x Draconic visage, 1 x Draconic visage
 	Saved log file to myDebugDropLogfileWithRuneDragonBug.json in /dev/
+
+bug -> first drop of night beast doesn't have a shortest and max dry steak value, reproduce: 
+	1 x Belladonna seed, 1 x Poison ivy seed, 1 x Avantoe seed, 1 x Poison ivy seed, 1 x Poison ivy seed, 1 x Belladonna seed, 1 x Lantadyme seed, 1 x Cadantine seed
+	^ match found variables werent cleared before looping another unique item

@@ -30,9 +30,8 @@ FEATURES -----------------------------------------------------------------------
 
 STRUCTURE ----------------------------------------------------------------------------------------------------------------------------------
 
-BUGS ---------------------------------------------------------------------------------------------------------------------------------------
-    bug -> first drop of night beast doesn't have a shortest and max dry steak value, reproduce: 
-        1 x Belladonna seed, 1 x Poison ivy seed, 1 x Avantoe seed, 1 x Poison ivy seed, 1 x Poison ivy seed, 1 x Belladonna seed, 1 x Lantadyme seed, 1 x Cadantine seed
+BUGS ---------------------------------------------------------------------------------------------------------------------------------------   
+    bug -> stats -> unique drop shortest dry streak and longest dry streak are empty if only gotten once. though the
 
     bug -> whenever log gui is shown also refetch the drop table so changes are taken into accoutn. for example after changing settings
         specifically putting the drop table in specific categories setting

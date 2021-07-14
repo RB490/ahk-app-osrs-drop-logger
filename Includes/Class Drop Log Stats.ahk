@@ -263,6 +263,7 @@ Class ClassDropLogStats {
                         }
                     }
                 }
+
                 this.uniqueDrops[uniqueDropIndex].dryStreak := output
             }
         }
@@ -272,6 +273,11 @@ Class ClassDropLogStats {
                 uniqueDropIndex := A_Index
                 uniqueDrop := this.uniqueDrops[uniqueDropIndex]
 
+                ; msgbox % json.dump(this.uniqueDrops,,2)
+
+
+                match1Found := ""
+                match2Found := ""
                 output := {}
                 loop % this.obj.length() {
                     kills := this.obj[A_Index].kills
@@ -285,6 +291,7 @@ Class ClassDropLogStats {
 
                             If (drop.name = uniqueDrop.name) and (drop.quantity = uniqueDrop.quantity) {
                                 
+
                                 If !match1Found
                                     match1Found := dropIndex
                                 else
@@ -295,12 +302,15 @@ Class ClassDropLogStats {
                                     match1Found := ""
                                     match2Found := ""
                                 }
+                                ; msgbox % drop.name " `n`nand`n`n" json.dump(output,,2)
                             }
                         }
                     }
                 }
                 this.uniqueDrops[uniqueDropIndex].dryStreakRecordLow := output.MinIndex()
                 this.uniqueDrops[uniqueDropIndex].dryStreakRecordHigh := output.MaxIndex()
+
+                ; msgbox % json.dump(output,,2)
             }
         }
     }
