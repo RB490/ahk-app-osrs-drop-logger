@@ -28,10 +28,14 @@ Class ClassDatabaseMobs {
         }
 
         ; update if database list unavailable or more than x hours old
-        If !IsObject(obj) or (hoursOld > 168)
+        If !IsObject(obj) or 
             obj := this._Update()
         else
             obj := json.load(FileRead(PATH_DATABASE_MOBS))
+
+        ; if necessary, update database in the background if we already have a database available
+        If (hoursOld > 168) or (A_DDDD = "Friday") ; friday is a day after osrs gets updated
+            SetTimer, updateMobDb, -60000
 
         ; check if the database is now available
         If !IsObject(obj)
@@ -42,8 +46,9 @@ Class ClassDatabaseMobs {
         P.Destroy()
     }
 
-    _Update() {
-        P.Get(A_ThisFunc, "Updating mob database", A_Space, A_Space) ; title-text1-bar1-bar1text
+    _Update(silent := false) {
+        If !silent
+            P.Get(A_ThisFunc, "Updating mob database", A_Space, A_Space) ; title-text1-bar1-bar1text
 
         ; input := FileRead(A_ScriptDir "\Dev\monsters-complete-1page.txt")
         input := DownloadToString(this.monstersCompleteUrl)
@@ -89,6 +94,8 @@ Class ClassDatabaseMobs {
         FileAppend, % json.dump(output,,2), % PATH_DATABASE_MOBS
 
         P.Destroy()
+        If silent ; inform user through traytrip
+            TrayTip, % APP_NAME, Updated monster database!`nRestart to take effect, 5, 17
         return output
     }
 

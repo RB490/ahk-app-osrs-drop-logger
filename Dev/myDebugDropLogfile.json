@@ -595,6 +595,15 @@
           }
         ],
         "killEnd": "20210706221537975"
+      },
+      {
+        "drops": [
+          {
+            "name": "Grimy cadantine",
+            "quantity": "2"
+          }
+        ],
+        "killEnd": "20210714222907692"
       }
     ],
     "tripEnd": "",

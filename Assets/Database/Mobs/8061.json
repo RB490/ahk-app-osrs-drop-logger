@@ -1,7 +1,7 @@
 {
   "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
-  "_etag": "eb8080f4cb0386f8d5612cea6991131785f98d81",
-  "_id": "60cd28b2cfb7392d009078a5",
+  "_etag": "f6f93f9f2a38b4b1fa08aad0044ba497494a0b5c",
+  "_id": "60ebb3b1c1c55bf074a5ec3f",
   "_links": {
     "collection": {
       "href": "monsters",
@@ -12,7 +12,7 @@
       "title": "home"
     },
     "self": {
-      "href": "monsters/60cd28b2cfb7392d009078a5",
+      "href": "monsters/60ebb3b1c1c55bf074a5ec3f",
       "title": "Monster"
     }
   },
@@ -35,9 +35,9 @@
     "undead"
   ],
   "category": [
-    "blue dragon",
-    "zombie",
-    "boss"
+    "blue dragons",
+    "zombies",
+    "bosses"
   ],
   "combat_level": 732,
   "defence_crush": 108,
@@ -604,7 +604,7 @@
   "immune_poison": 1,
   "immune_venom": 1,
   "incomplete": 1,
-  "last_updated": "2020-12-25",
+  "last_updated": "2021-07-12",
   "magic_bonus": 0,
   "magic_level": 150,
   "max_hit": 30,

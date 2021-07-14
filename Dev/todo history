@@ -268,3 +268,10 @@ bug -> first drop of night beast doesn't have a shortest and max dry steak value
 	^ match found variables werent cleared before looping another unique item
 
 feature -> ON_WM_LBUTTONDOWN -> quantity select gui
+
+feature/idea/wontfix -> instead of showing the entire mob list in the start gui show  a 'favourites' list mobs can be added to and removed from
+	listview using the mob images
+	^ reason: previous mob is already saved and the search function works fine. this could be added but its not necessary
+
+feature idea -> Update ClassMobDatabase._Update() in the background so it doesn't take 20 seconds
+	^ it's only once a week though

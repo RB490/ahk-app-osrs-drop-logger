@@ -1,7 +1,4 @@
 FEATURES -----------------------------------------------------------------------------------------------------------------------------------
-    feature -> instead of showing the entire mob list in the start gui show  a 'favourites' list mobs can be added to and removed from
-        listview using the mob images
-    
     feature -> try center align runelite images or close as possible
         cut 4 pixels off to the right as they are 32x36
         or try something along those lines
@@ -16,9 +13,6 @@ FEATURES -----------------------------------------------------------------------
                 ^ first get all the item category sizes to determine which to start with
                 start with separating the largest category OR the one that gets the nearest below X
                 this prevents item categories with very few items
-
-    feature idea -> Update ClassMobDatabase._Update() in the background so it doesn't take 20 seconds
-        ^ it's only once a week though
 
     feature -> speed up item db load time? would be able to do this with an item name:id list of the items
         that are actually in drop tables and only storing necessary item prices

@@ -82,8 +82,8 @@
         DROP_LOG.LoadFile(myDebugDropLogfile)
 
         ; DROP_LOG.StartTrip()
-        
-        GUI_LOG.Get()
+
+        ; GUI_LOG.Get()
         ; GUI_STATS.Get()
         ; GUI_START.Get()
 
@@ -91,6 +91,9 @@
     return
     updateStats:
         GUI_STATS.Set(DROP_LOG.Stats.Get())
+    return
+    updateMobDb:
+        MOB_DB._Update("silent")
     return
     disableTooltip:
         tooltip

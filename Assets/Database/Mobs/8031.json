@@ -1,7 +1,7 @@
 {
   "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
-  "_etag": "2fa4163a80fba572c723369cd160c6f59e026f70",
-  "_id": "60cd28b2cfb7392d009078a0",
+  "_etag": "4e8cfe850d2aff8a543a595614edfa0de7fc75c4",
+  "_id": "60ebb3b1c1c55bf074a5ec3a",
   "_links": {
     "collection": {
       "href": "monsters",
@@ -12,7 +12,7 @@
       "title": "home"
     },
     "self": {
-      "href": "monsters/60cd28b2cfb7392d009078a0",
+      "href": "monsters/60ebb3b1c1c55bf074a5ec3a",
       "title": "Monster"
     }
   },
@@ -34,7 +34,7 @@
     "fiery"
   ],
   "category": [
-    "rune dragon"
+    "rune dragons"
   ],
   "combat_level": 380,
   "defence_crush": 90,
@@ -331,7 +331,7 @@
   "immune_poison": 1,
   "immune_venom": 1,
   "incomplete": 1,
-  "last_updated": "2020-12-25",
+  "last_updated": "2021-07-12",
   "magic_bonus": 0,
   "magic_level": 196,
   "max_hit": 38,
