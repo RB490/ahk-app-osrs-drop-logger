@@ -289,3 +289,9 @@ gui log images
 	bug -> gui log runelite images are all broken
 	bug -> gui log detailed images some are broken atleast for 'night beast'
 	bug -> gui log settings change image type, then gui is reshown but images arent changed until restarting script
+
+bug -> gui log detailed images for night beast has several black images
+	^ several errors retrieving images
+	^ fixed itself by restarting the script a few times. seems the wiki website might have been limiting/throttling downloads or something?
+
+bug -> gui_log -> menu open drop log file, windows doesnt open the .json for some reason

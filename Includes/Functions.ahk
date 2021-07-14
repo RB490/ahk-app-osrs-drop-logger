@@ -270,7 +270,7 @@ GetDropImage(itemName, itemId) {
     
     ; wiki detail
     path := DIR_ITEM_IMAGES_DETAILED "\" itemId ".png"
-    If !IsValidImage(path) {
+    If !IsValidImage(path, 59) {
         FileDelete % path
         url := wikiImageUrlObj.detail
         DownloadImageOrReload(url, path)
@@ -280,7 +280,7 @@ GetDropImage(itemName, itemId) {
 
     ; runelite
     path := DIR_ITEM_IMAGES_RUNELITE "\" itemId ".png"
-    If !IsValidImage(path) {
+    If !IsValidImage(path, 31) {
         FileDelete % path
 
         url := "https://raw.githubusercontent.com/runelite/static.runelite.net/gh-pages/cache/item/icon/" itemId ".png"
@@ -385,7 +385,7 @@ ResizeImage(img, scale) {
     Gdip_Shutdown(pToken)  ; Close Gdip
 }
 
-IsValidImage(img, pix := 3) { ; adamant dart is 9x17
+IsValidImage(img, pix := 7) { ; adamant dart is 9x17
     IsValidImage := IsPicture(img, imgW, imgH)
     If !IsValidImage or (imgW < pix) or (imgH < pix)
         return false

@@ -12,17 +12,16 @@ FEATURES -----------------------------------------------------------------------
 
 STRUCTURE ----------------------------------------------------------------------------------------------------------------------------------
 
-BUGS ---------------------------------------------------------------------------------------------------------------------------------------   
+BUGS ---------------------------------------------------------------------------------------------------------------------------------------       
+    bug -> whenever log gui is shown also refetch the drop table so changes are taken into accoutn. for example after changing settings
+        specifically putting the drop table in specific categories setting
+
     unique drops
         might just rewrite the unique drops method from scratch here
             bug -> stats -> current dry streak doesnt seem to be right, either
             bug -> stats -> unique drop shortest dry streak and longest dry streak are empty if only gotten once
             bug -> stats -> unique drop cadantine dry streak stays at 1 even adding a lot of other drops
 
-    bug -> whenever log gui is shown also refetch the drop table so changes are taken into accoutn. for example after changing settings
-        specifically putting the drop table in specific categories setting
-
-    bug -> gui_log -> menu open drop log file, windows doesnt open the .json for some reason
 
 DOLAST ------------------------------------------------------------------------------------------------------------------------------------
     refactoring -> go through every file and if necessary add comments, rename stuff or whatever
