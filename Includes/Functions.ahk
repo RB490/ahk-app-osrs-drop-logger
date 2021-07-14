@@ -3,6 +3,7 @@ GetGuiLogDropsImageType() {
     {
         case "Wiki Small": output := DIR_ITEM_IMAGES_ICONS
         case "Wiki Detailed": output := DIR_ITEM_IMAGES_DETAILED
+        case "RuneLite": output := DIR_ITEM_IMAGES_RUNELITE
     }
     return output
 }
@@ -52,8 +53,8 @@ ON_WM_LBUTTONDOWN(wParam, lParam, msg, hWnd) {
 
     If !IsInteger(obj.quantity) { ; contains separator: '#' or '-'
         GUI_LOG.Disable()
-        QUANTITY_GUI.Get(obj) ; directly modifies 'SELECTED_DROPS' because slow WinWaitClose 
-        Msgbox Todo: Quantity select gui
+        ; msgbox % json.dump(obj,,2)
+        GUI_QUANTITY.Get(obj) ; directly modifies 'SELECTED_DROPS' because slow WinWaitClose 
         return
     }
     SELECTED_DROPS.push(obj)

@@ -1,6 +1,4 @@
 FEATURES -----------------------------------------------------------------------------------------------------------------------------------
-    feature -> ON_WM_LBUTTONDOWN -> quantity select gui
-
     feature -> instead of showing the entire mob list in the start gui show  a 'favourites' list mobs can be added to and removed from
         listview using the mob images
     
@@ -31,7 +29,16 @@ FEATURES -----------------------------------------------------------------------
 STRUCTURE ----------------------------------------------------------------------------------------------------------------------------------
 
 BUGS ---------------------------------------------------------------------------------------------------------------------------------------   
-    bug -> stats -> unique drop shortest dry streak and longest dry streak are empty if only gotten once. though the
+    unique drops
+        might just rewrite the unique drops method from scratch here
+            bug -> stats -> current dry streak doesnt seem to be right, either
+            bug -> stats -> unique drop shortest dry streak and longest dry streak are empty if only gotten once
+            bug -> stats -> unique drop cadantine dry streak stays at 1 even adding a lot of other drops
+
+    gui log images
+        bug -> gui log runelite images are all broken
+        bug -> gui log detailed images some are broken atleast for 'night beast'
+        bug -> gui log settings change image type, then gui is reshown but images arent changed until restarting script
 
     bug -> whenever log gui is shown also refetch the drop table so changes are taken into accoutn. for example after changing settings
         specifically putting the drop table in specific categories setting

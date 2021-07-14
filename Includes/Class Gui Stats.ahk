@@ -2,7 +2,6 @@ Class ClassGuiStats extends gui {
     Get() {
         If this.IsVisible {
             this.Activate()
-            tooltip Returning
             return
         }
         

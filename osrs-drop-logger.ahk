@@ -48,6 +48,7 @@
     , DROP_CATEGORIES           := new ClassDropCategories
     , GUI_START                 := new ClassGuiStart
     , GUI_LOG                   := new ClassGuiLog
+    , GUI_QUANTITY              := new ClassGuiQuantity
     , GUI_SETTINGS              := new ClassGuiSettings
     , GUI_ABOUT                 := new ClassGuiAbout
     , GUI_STATS                 := new ClassGuiStats
@@ -71,13 +72,19 @@
 
 ; Subroutines
     debugScript:
-        ; myDebugDropLogfile := A_ScriptDir "\Dev\myDebugDropLogfile.json"
-        myDebugDropLogfile := "D:\Downloads\mydroplog.json"
+        myDebugDropLogfile := A_ScriptDir "\Dev\myDebugDropLogfile.json"
+        ; myDebugDropLogfile := "D:\Downloads\debugDrystreak.json"
+        
+        ; FileDelete, % myDebugDropLogfile
+        ; FileAppend, {}, % myDebugDropLogfile
+
         SCRIPT_SETTINGS.previousLogFile := myDebugDropLogfile
         DROP_LOG.LoadFile(myDebugDropLogfile)
+
+        ; DROP_LOG.StartTrip()
         
         GUI_LOG.Get()
-        GUI_STATS.Get()
+        ; GUI_STATS.Get()
         ; GUI_START.Get()
 
         ; Msg("Info", "Auto-execute section", "End of Auto-execute section")
@@ -103,6 +110,7 @@
     #Include, Class Gui Log.ahk
     #Include, Class Gui Progress.ahk
     #Include, Class Gui Settings.ahk
+    #Include, Class Gui Quantity.ahk
     #Include, Class Gui Start.ahk
     #Include, Class Gui Stats.ahk
     #Include, Class Wiki Scraper.ahk

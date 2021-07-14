@@ -266,3 +266,5 @@ bug -> added a Rune dragon kill with a lot of drops. this glitched out the uniqu
 bug -> first drop of night beast doesn't have a shortest and max dry steak value, reproduce: 
 	1 x Belladonna seed, 1 x Poison ivy seed, 1 x Avantoe seed, 1 x Poison ivy seed, 1 x Poison ivy seed, 1 x Belladonna seed, 1 x Lantadyme seed, 1 x Cadantine seed
 	^ match found variables werent cleared before looping another unique item
+
+feature -> ON_WM_LBUTTONDOWN -> quantity select gui
