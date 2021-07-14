@@ -1,375 +1,402 @@
 {
-    "id": 3134,
-    "name": "Imp",
-    "last_updated": "2021-06-18",
-    "incomplete": true,
-    "members": true,
-    "release_date": "2013-10-17",
-    "combat_level": 7,
-    "size": 1,
-    "hitpoints": 10,
-    "max_hit": 1,
-    "attack_type": [
-        "stab"
-    ],
-    "attack_speed": 4,
-    "aggressive": false,
-    "poisonous": false,
-    "venomous": false,
-    "immune_poison": false,
-    "immune_venom": false,
-    "attributes": [
-        "demon"
-    ],
-    "category": [],
-    "slayer_monster": false,
-    "slayer_level": null,
-    "slayer_xp": null,
-    "slayer_masters": [],
-    "duplicate": false,
-    "examine": "Have you checked your pockets lately?",
-    "wiki_name": "Imp (GWD)",
-    "wiki_url": "https://oldschool.runescape.wiki/w/Imp#GWD",
-    "attack_level": 5,
-    "strength_level": 5,
-    "defence_level": 6,
-    "magic_level": 1,
-    "ranged_level": 1,
-    "attack_bonus": -42,
-    "strength_bonus": -37,
-    "attack_magic": 0,
-    "magic_bonus": 0,
-    "attack_ranged": 0,
-    "ranged_bonus": 0,
-    "defence_stab": -42,
-    "defence_slash": -42,
-    "defence_crush": -42,
-    "defence_magic": -42,
-    "defence_ranged": -42,
-    "drops": [
-        {
-            "id": 2311,
-            "name": "Burnt bread",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.03125,
-            "rolls": 1
-        },
-        {
-            "id": 2146,
-            "name": "Burnt meat",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.03125,
-            "rolls": 1
-        },
-        {
-            "id": 1965,
-            "name": "Cabbage",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.015625,
-            "rolls": 1
-        },
-        {
-            "id": 2307,
-            "name": "Bread dough",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.015625,
-            "rolls": 1
-        },
-        {
-            "id": 2309,
-            "name": "Bread",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 2142,
-            "name": "Cooked meat",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 2347,
-            "name": "Hammer",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0625,
-            "rolls": 1
-        },
-        {
-            "id": 590,
-            "name": "Tinderbox",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0390625,
-            "rolls": 1
-        },
-        {
-            "id": 1735,
-            "name": "Shears",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.03125,
-            "rolls": 1
-        },
-        {
-            "id": 1925,
-            "name": "Bucket",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.03125,
-            "rolls": 1
-        },
-        {
-            "id": 1474,
-            "name": "Black bead",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0390625,
-            "rolls": 1
-        },
-        {
-            "id": 1929,
-            "name": "Bucket of water",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.015625,
-            "rolls": 1
-        },
-        {
-            "id": 1935,
-            "name": "Jug",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.015625,
-            "rolls": 1
-        },
-        {
-            "id": 1937,
-            "name": "Jug of water",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.015625,
-            "rolls": 1
-        },
-        {
-            "id": 1931,
-            "name": "Pot",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.015625,
-            "rolls": 1
-        },
-        {
-            "id": 1933,
-            "name": "Pot of flour",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.015625,
-            "rolls": 1
-        },
-        {
-            "id": 1759,
-            "name": "Ball of wool",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0625,
-            "rolls": 1
-        },
-        {
-            "id": 1448,
-            "name": "Mind talisman",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0546875,
-            "rolls": 1
-        },
-        {
-            "id": 592,
-            "name": "Ashes",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.046875,
-            "rolls": 1
-        },
-        {
-            "id": 434,
-            "name": "Clay",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.03125,
-            "rolls": 1
-        },
-        {
-            "id": 753,
-            "name": "Cadava berries",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.03125,
-            "rolls": 1
-        },
-        {
-            "id": 1470,
-            "name": "Red bead",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0390625,
-            "rolls": 1
-        },
-        {
-            "id": 1947,
-            "name": "Grain",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0234375,
-            "rolls": 1
-        },
-        {
-            "id": 1949,
-            "name": "Chef's hat",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.015625,
-            "rolls": 1
-        },
-        {
-            "id": 956,
-            "name": "Flyer",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.015625,
-            "rolls": 1
-        },
-        {
-            "id": 195,
-            "name": "Potion",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 13453,
-            "name": "Ensouled imp head",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.04,
-            "rolls": 1
-        },
-        {
-            "id": 11941,
-            "name": "Looting bag",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.06666666666666667,
-            "rolls": 1
-        },
-        {
-            "id": 11942,
-            "name": "Ecumenical key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.016666666666666666,
-            "rolls": 1
-        },
-        {
-            "id": 6803,
-            "name": "Imp champion scroll",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0002,
-            "rolls": 1
-        },
-        {
-            "id": 1476,
-            "name": "White bead",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0390625,
-            "rolls": 1
-        },
-        {
-            "id": 1472,
-            "name": "Yellow bead",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0390625,
-            "rolls": 1
-        },
-        {
-            "id": 877,
-            "name": "Bronze bolts",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0625,
-            "rolls": 1
-        },
-        {
-            "id": 579,
-            "name": "Blue wizard hat",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0625,
-            "rolls": 1
-        },
-        {
-            "id": 1944,
-            "name": "Egg",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0390625,
-            "rolls": 1
-        },
-        {
-            "id": 2138,
-            "name": "Raw chicken",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0390625,
-            "rolls": 1
-        }
-    ]
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "c4b5effbefc8aef2dfde2c0957f90594d7ba3c52",
+  "_id": "60ebb3afc1c55bf074a5e710",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3afc1c55bf074a5e710",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 0,
+  "attack_bonus": -42,
+  "attack_level": 5,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "stab"
+  ],
+  "attributes": [
+    "demon"
+  ],
+  "category": [],
+  "combat_level": 7,
+  "defence_crush": -42,
+  "defence_level": 6,
+  "defence_magic": -42,
+  "defence_ranged": -42,
+  "defence_slash": -42,
+  "defence_stab": -42,
+  "drops": [
+    {
+      "id": 25766,
+      "members": 1,
+      "name": "Fiendish ashes",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 2311,
+      "members": 0,
+      "name": "Burnt bread",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.03125",
+      "rolls": 1
+    },
+    {
+      "id": 2146,
+      "members": 0,
+      "name": "Burnt meat",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.03125",
+      "rolls": 1
+    },
+    {
+      "id": 1965,
+      "members": 0,
+      "name": "Cabbage",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 2307,
+      "members": 0,
+      "name": "Bread dough",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 2309,
+      "members": 0,
+      "name": "Bread",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 2142,
+      "members": 0,
+      "name": "Cooked meat",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 2347,
+      "members": 0,
+      "name": "Hammer",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0625",
+      "rolls": 1
+    },
+    {
+      "id": 590,
+      "members": 0,
+      "name": "Tinderbox",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0390625",
+      "rolls": 1
+    },
+    {
+      "id": 1735,
+      "members": 0,
+      "name": "Shears",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.03125",
+      "rolls": 1
+    },
+    {
+      "id": 1925,
+      "members": 0,
+      "name": "Bucket",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.03125",
+      "rolls": 1
+    },
+    {
+      "id": 1474,
+      "members": 0,
+      "name": "Black bead",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0390625",
+      "rolls": 1
+    },
+    {
+      "id": 1929,
+      "members": 0,
+      "name": "Bucket of water",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 1935,
+      "members": 0,
+      "name": "Jug",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 1937,
+      "members": 0,
+      "name": "Jug of water",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 1931,
+      "members": 0,
+      "name": "Pot",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 1933,
+      "members": 0,
+      "name": "Pot of flour",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 1759,
+      "members": 0,
+      "name": "Ball of wool",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0625",
+      "rolls": 1
+    },
+    {
+      "id": 1448,
+      "members": 0,
+      "name": "Mind talisman",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0546875",
+      "rolls": 1
+    },
+    {
+      "id": 592,
+      "members": 0,
+      "name": "Ashes",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.046875",
+      "rolls": 1
+    },
+    {
+      "id": 434,
+      "members": 0,
+      "name": "Clay",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.03125",
+      "rolls": 1
+    },
+    {
+      "id": 753,
+      "members": 0,
+      "name": "Cadava berries",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.03125",
+      "rolls": 1
+    },
+    {
+      "id": 1470,
+      "members": 0,
+      "name": "Red bead",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0390625",
+      "rolls": 1
+    },
+    {
+      "id": 1947,
+      "members": 0,
+      "name": "Grain",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0234375",
+      "rolls": 1
+    },
+    {
+      "id": 1949,
+      "members": 0,
+      "name": "Chef's hat",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 956,
+      "members": 0,
+      "name": "Flyer",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 195,
+      "members": 0,
+      "name": "Potion",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 13453,
+      "members": 1,
+      "name": "Ensouled imp head",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.04",
+      "rolls": 1
+    },
+    {
+      "id": 11941,
+      "members": 1,
+      "name": "Looting bag",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.06666666666666667",
+      "rolls": 1
+    },
+    {
+      "id": 11942,
+      "members": 1,
+      "name": "Ecumenical key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.016666666666666666",
+      "rolls": 1
+    },
+    {
+      "id": 6803,
+      "members": 1,
+      "name": "Imp champion scroll",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0002",
+      "rolls": 1
+    },
+    {
+      "id": 1476,
+      "members": 0,
+      "name": "White bead",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0390625",
+      "rolls": 1
+    },
+    {
+      "id": 1472,
+      "members": 0,
+      "name": "Yellow bead",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0390625",
+      "rolls": 1
+    },
+    {
+      "id": 877,
+      "members": 0,
+      "name": "Bronze bolts",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0625",
+      "rolls": 1
+    },
+    {
+      "id": 579,
+      "members": 0,
+      "name": "Blue wizard hat",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0625",
+      "rolls": 1
+    },
+    {
+      "id": 1944,
+      "members": 0,
+      "name": "Egg",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0390625",
+      "rolls": 1
+    },
+    {
+      "id": 2138,
+      "members": 0,
+      "name": "Raw chicken",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0390625",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "Have you checked your pockets lately?",
+  "hitpoints": 10,
+  "id": "3134",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 1,
+  "members": 1,
+  "name": "Imp",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2013-10-17",
+  "size": 1,
+  "slayer_level": "",
+  "slayer_masters": [],
+  "slayer_monster": 0,
+  "slayer_xp": "",
+  "strength_bonus": -37,
+  "strength_level": 5,
+  "venomous": 0,
+  "wiki_name": "Imp (GWD)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Imp#GWD"
 }

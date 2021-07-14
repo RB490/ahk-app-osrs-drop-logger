@@ -1,0 +1,80 @@
+{
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "c2b25f82ca6cbea1f2726a42600da12ae73a9926",
+  "_id": "60ebb3b1c1c55bf074a5ebcf",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3b1c1c55bf074a5ebcf",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 0,
+  "attack_bonus": 0,
+  "attack_level": 1,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 3,
+  "attack_type": [
+    "ranged",
+    "magic"
+  ],
+  "attributes": [
+    "demon",
+    "xerician"
+  ],
+  "category": [],
+  "combat_level": 0,
+  "defence_crush": 110,
+  "defence_level": 240,
+  "defence_magic": 60,
+  "defence_ranged": 140,
+  "defence_slash": 70,
+  "defence_stab": 70,
+  "drops": [
+    {
+      "id": 25766,
+      "members": 1,
+      "name": "Fiendish ashes",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "Lord of the Icefiends.",
+  "hitpoints": 210,
+  "id": "7585",
+  "immune_poison": 1,
+  "immune_venom": 1,
+  "incomplete": 1,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 585,
+  "max_hit": "",
+  "members": 1,
+  "name": "Ice demon",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 585,
+  "release_date": "2018-05-17",
+  "size": 2,
+  "slayer_level": "",
+  "slayer_masters": [],
+  "slayer_monster": 0,
+  "slayer_xp": "",
+  "strength_bonus": 0,
+  "strength_level": 1,
+  "venomous": 0,
+  "wiki_name": "Ice demon (Challenge Mode)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Ice_demon#Challenge_Mode"
+}

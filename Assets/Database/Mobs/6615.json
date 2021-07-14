@@ -1,447 +1,357 @@
 {
-    "id": 6615,
-    "name": "Scorpia",
-    "last_updated": "2020-12-25",
-    "incomplete": true,
-    "members": true,
-    "release_date": "2014-03-13",
-    "combat_level": 225,
-    "size": 5,
-    "hitpoints": 200,
-    "max_hit": 16,
-    "attack_type": [
-        "stab"
-    ],
-    "attack_speed": 4,
-    "aggressive": true,
-    "poisonous": true,
-    "venomous": false,
-    "immune_poison": false,
-    "immune_venom": false,
-    "attributes": [],
-    "category": [
-        "boss",
-        "scorpion"
-    ],
-    "slayer_monster": true,
-    "slayer_level": 1,
-    "slayer_xp": 260.0,
-    "slayer_masters": [
-        "turael",
-        "spria",
-        "krystilia",
-        "mazchna",
-        "konar",
-        "nieve",
-        "duradel"
-    ],
-    "duplicate": false,
-    "examine": "Queen of the Scorpions.",
-    "wiki_name": "Scorpia",
-    "wiki_url": "https://oldschool.runescape.wiki/w/Scorpia",
-    "attack_level": 250,
-    "strength_level": 150,
-    "defence_level": 180,
-    "magic_level": 1,
-    "ranged_level": 1,
-    "attack_bonus": 60,
-    "strength_bonus": 0,
-    "attack_magic": 0,
-    "magic_bonus": 0,
-    "attack_ranged": 0,
-    "ranged_bonus": 0,
-    "defence_stab": 246,
-    "defence_slash": 284,
-    "defence_crush": 284,
-    "defence_magic": 44,
-    "defence_ranged": 284,
-    "drops": [
-        {
-            "id": 1623,
-            "name": "Uncut sapphire",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 1621,
-            "name": "Uncut emerald",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.00390625,
-            "rolls": 1
-        },
-        {
-            "id": 1619,
-            "name": "Uncut ruby",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.001953125,
-            "rolls": 1
-        },
-        {
-            "id": 1452,
-            "name": "Chaos talisman",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0007323646590110147,
-            "rolls": 1
-        },
-        {
-            "id": 1462,
-            "name": "Nature talisman",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0007323646590110147,
-            "rolls": 1
-        },
-        {
-            "id": 1617,
-            "name": "Uncut diamond",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.00048828125,
-            "rolls": 1
-        },
-        {
-            "id": 830,
-            "name": "Rune javelin",
-            "members": true,
-            "quantity": "5",
-            "noted": false,
-            "rarity": 0.000244140625,
-            "rolls": 1
-        },
-        {
-            "id": 987,
-            "name": "Loop half of key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.000244140625,
-            "rolls": 1
-        },
-        {
-            "id": 985,
-            "name": "Tooth half of key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.000244140625,
-            "rolls": 1
-        },
-        {
-            "id": 1247,
-            "name": "Rune spear",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.52587890625e-05,
-            "rolls": 1
-        },
-        {
-            "id": 2366,
-            "name": "Shield left half",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 7.62939453125e-06,
-            "rolls": 1
-        },
-        {
-            "id": 1249,
-            "name": "Dragon spear",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 5.721598898523552e-06,
-            "rolls": 1
-        },
-        {
-            "id": 11930,
-            "name": "Odium shard 3",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.00390625,
-            "rolls": 1
-        },
-        {
-            "id": 4587,
-            "name": "Dragon scimitar",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 213,
-            "name": "Grimy kwuarm",
-            "members": true,
-            "quantity": "4",
-            "noted": true,
-            "rarity": 0.0625,
-            "rolls": 1
-        },
-        {
-            "id": 1783,
-            "name": "Bucket of sand",
-            "members": true,
-            "quantity": "25",
-            "noted": true,
-            "rarity": 0.046875,
-            "rolls": 1
-        },
-        {
-            "id": 6016,
-            "name": "Cactus spine",
-            "members": true,
-            "quantity": "10",
-            "noted": true,
-            "rarity": 0.046875,
-            "rolls": 1
-        },
-        {
-            "id": 1621,
-            "name": "Uncut emerald",
-            "members": false,
-            "quantity": "6",
-            "noted": true,
-            "rarity": 0.0390625,
-            "rolls": 1
-        },
-        {
-            "id": 1623,
-            "name": "Uncut sapphire",
-            "members": false,
-            "quantity": "4",
-            "noted": true,
-            "rarity": 0.0390625,
-            "rolls": 1
-        },
-        {
-            "id": 7198,
-            "name": "Admiral pie",
-            "members": true,
-            "quantity": "3",
-            "noted": false,
-            "rarity": 0.0625,
-            "rolls": 1
-        },
-        {
-            "id": 2434,
-            "name": "Prayer potion(4)",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0625,
-            "rolls": 1
-        },
-        {
-            "id": 385,
-            "name": "Shark",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0625,
-            "rolls": 1
-        },
-        {
-            "id": 2297,
-            "name": "Anchovy pizza",
-            "members": false,
-            "quantity": "8",
-            "noted": true,
-            "rarity": 0.03125,
-            "rolls": 1
-        },
-        {
-            "id": 11933,
-            "name": "Malediction shard 3",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.00390625,
-            "rolls": 1
-        },
-        {
-            "id": 2448,
-            "name": "Superantipoison(4)",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.015625,
-            "rolls": 1
-        },
-        {
-            "id": 995,
-            "name": "Coins",
-            "members": false,
-            "quantity": "499-3998",
-            "noted": false,
-            "rarity": 0.140625,
-            "rolls": 1
-        },
-        {
-            "id": 11090,
-            "name": "Phoenix necklace",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0546875,
-            "rolls": 1
-        },
-        {
-            "id": 4696,
-            "name": "Dust rune",
-            "members": true,
-            "quantity": "30",
-            "noted": false,
-            "rarity": 0.03125,
-            "rolls": 1
-        },
-        {
-            "id": 5940,
-            "name": "Weapon poison(++)",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.03125,
-            "rolls": 1
-        },
-        {
-            "id": 1319,
-            "name": "Rune 2h sword",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0390625,
-            "rolls": 1
-        },
-        {
-            "id": 1275,
-            "name": "Rune pickaxe",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0390625,
-            "rolls": 1
-        },
-        {
-            "id": 1247,
-            "name": "Rune spear",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0390625,
-            "rolls": 1
-        },
-        {
-            "id": 11941,
-            "name": "Looting bag",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.3333333333333333,
-            "rolls": 1
-        },
-        {
-            "id": 13459,
-            "name": "Ensouled scorpion head",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.05555555555555555,
-            "rolls": 1
-        },
-        {
-            "id": 23083,
-            "name": "Brimstone key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.013333333333333334,
-            "rolls": 1
-        },
-        {
-            "id": 2722,
-            "name": "Clue scroll (hard)",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.01,
-            "rolls": 1
-        },
-        {
-            "id": 13181,
-            "name": "Scorpia's offspring",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0004960932655339203,
-            "rolls": 1
-        },
-        {
-            "id": 23490,
-            "name": "Larran's key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.013888888888888888,
-            "rolls": 1
-        },
-        {
-            "id": 21257,
-            "name": "Slayer's enchantment",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.03333333333333333,
-            "rolls": 1
-        },
-        {
-            "id": 1113,
-            "name": "Rune chainbody",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.03125,
-            "rolls": 1
-        },
-        {
-            "id": 1333,
-            "name": "Rune scimitar",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.03125,
-            "rolls": 1
-        },
-        {
-            "id": 1289,
-            "name": "Rune sword",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.03125,
-            "rolls": 1
-        },
-        {
-            "id": 1347,
-            "name": "Rune warhammer",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.03125,
-            "rolls": 1
-        }
-    ]
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "39827c14c33634973fbbdfe92907c95d4465a213",
+  "_id": "60ebb3b1c1c55bf074a5eaee",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3b1c1c55bf074a5eaee",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 60,
+  "attack_level": 250,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "stab"
+  ],
+  "attributes": [],
+  "category": [
+    "bosses",
+    "scorpions"
+  ],
+  "combat_level": 225,
+  "defence_crush": 284,
+  "defence_level": 180,
+  "defence_magic": 44,
+  "defence_ranged": 284,
+  "defence_slash": 284,
+  "defence_stab": 246,
+  "drops": [
+    {
+      "id": 11930,
+      "members": 1,
+      "name": "Odium shard 3",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00390625",
+      "rolls": 1
+    },
+    {
+      "id": 4587,
+      "members": 1,
+      "name": "Dragon scimitar",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 213,
+      "members": 1,
+      "name": "Grimy kwuarm",
+      "noted": 1,
+      "quantity": "4",
+      "rarity": "0.0625",
+      "rolls": 1
+    },
+    {
+      "id": 1783,
+      "members": 1,
+      "name": "Bucket of sand",
+      "noted": 1,
+      "quantity": "25",
+      "rarity": "0.046875",
+      "rolls": 1
+    },
+    {
+      "id": 6016,
+      "members": 1,
+      "name": "Cactus spine",
+      "noted": 1,
+      "quantity": "10",
+      "rarity": "0.046875",
+      "rolls": 1
+    },
+    {
+      "id": 1621,
+      "members": 0,
+      "name": "Uncut emerald",
+      "noted": 1,
+      "quantity": "6",
+      "rarity": "0.0390625",
+      "rolls": 1
+    },
+    {
+      "id": 1623,
+      "members": 0,
+      "name": "Uncut sapphire",
+      "noted": 1,
+      "quantity": "4",
+      "rarity": "0.0390625",
+      "rolls": 1
+    },
+    {
+      "id": 7198,
+      "members": 1,
+      "name": "Admiral pie",
+      "noted": 0,
+      "quantity": "3",
+      "rarity": "0.0625",
+      "rolls": 1
+    },
+    {
+      "id": 2434,
+      "members": 1,
+      "name": "Prayer potion(4)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0625",
+      "rolls": 1
+    },
+    {
+      "id": 385,
+      "members": 1,
+      "name": "Shark",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0625",
+      "rolls": 1
+    },
+    {
+      "id": 2297,
+      "members": 0,
+      "name": "Anchovy pizza",
+      "noted": 1,
+      "quantity": "8",
+      "rarity": "0.03125",
+      "rolls": 1
+    },
+    {
+      "id": 11933,
+      "members": 1,
+      "name": "Malediction shard 3",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00390625",
+      "rolls": 1
+    },
+    {
+      "id": 2448,
+      "members": 1,
+      "name": "Superantipoison(4)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "499-3998",
+      "rarity": "0.140625",
+      "rolls": 1
+    },
+    {
+      "id": 11090,
+      "members": 1,
+      "name": "Phoenix necklace",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0546875",
+      "rolls": 1
+    },
+    {
+      "id": 4696,
+      "members": 1,
+      "name": "Dust rune",
+      "noted": 0,
+      "quantity": "30",
+      "rarity": "0.03125",
+      "rolls": 1
+    },
+    {
+      "id": 5940,
+      "members": 1,
+      "name": "Weapon poison(++)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.03125",
+      "rolls": 1
+    },
+    {
+      "id": 1319,
+      "members": 0,
+      "name": "Rune 2h sword",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0390625",
+      "rolls": 1
+    },
+    {
+      "id": 1275,
+      "members": 0,
+      "name": "Rune pickaxe",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0390625",
+      "rolls": 1
+    },
+    {
+      "id": 1247,
+      "members": 1,
+      "name": "Rune spear",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0390625",
+      "rolls": 1
+    },
+    {
+      "id": 11941,
+      "members": 1,
+      "name": "Looting bag",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.3333333333333333",
+      "rolls": 1
+    },
+    {
+      "id": 13459,
+      "members": 1,
+      "name": "Ensouled scorpion head",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.05555555555555555",
+      "rolls": 1
+    },
+    {
+      "id": 23083,
+      "members": 1,
+      "name": "Brimstone key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.013333333333333334",
+      "rolls": 1
+    },
+    {
+      "id": 2722,
+      "members": 1,
+      "name": "Clue scroll (hard)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.01",
+      "rolls": 1
+    },
+    {
+      "id": 13181,
+      "members": 1,
+      "name": "Scorpia's offspring",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0004960932655339203",
+      "rolls": 1
+    },
+    {
+      "id": 23490,
+      "members": 1,
+      "name": "Larran's key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.013888888888888888",
+      "rolls": 1
+    },
+    {
+      "id": 21257,
+      "members": 1,
+      "name": "Slayer's enchantment",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.03333333333333333",
+      "rolls": 1
+    },
+    {
+      "id": 1113,
+      "members": 0,
+      "name": "Rune chainbody",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.03125",
+      "rolls": 1
+    },
+    {
+      "id": 1333,
+      "members": 0,
+      "name": "Rune scimitar",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.03125",
+      "rolls": 1
+    },
+    {
+      "id": 1289,
+      "members": 0,
+      "name": "Rune sword",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.03125",
+      "rolls": 1
+    },
+    {
+      "id": 1347,
+      "members": 0,
+      "name": "Rune warhammer",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.03125",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "Queen of the Scorpions.",
+  "hitpoints": 200,
+  "id": "6615",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 16,
+  "members": 1,
+  "name": "Scorpia",
+  "poisonous": 1,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2014-03-13",
+  "size": 5,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "turael",
+    "spria",
+    "krystilia",
+    "mazchna",
+    "konar",
+    "nieve",
+    "duradel"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "260.0",
+  "strength_bonus": 0,
+  "strength_level": 150,
+  "venomous": 0,
+  "wiki_name": "Scorpia",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Scorpia"
 }

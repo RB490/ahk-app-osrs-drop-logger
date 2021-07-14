@@ -1,616 +1,634 @@
 {
-    "id": 8060,
-    "name": "Vorkath",
-    "last_updated": "2020-12-25",
-    "incomplete": true,
-    "members": true,
-    "release_date": "2018-01-04",
-    "combat_level": 392,
-    "size": 7,
-    "hitpoints": 460,
-    "max_hit": 30,
-    "attack_type": [
-        "slash",
-        "ranged",
-        "magic",
-        "dragonfire"
-    ],
-    "attack_speed": 5,
-    "aggressive": false,
-    "poisonous": true,
-    "venomous": true,
-    "immune_poison": true,
-    "immune_venom": true,
-    "attributes": [
-        "dragon",
-        "fiery",
-        "undead"
-    ],
-    "category": [
-        "blue dragon",
-        "zombie",
-        "boss"
-    ],
-    "slayer_monster": true,
-    "slayer_level": 1,
-    "slayer_xp": 460.0,
-    "slayer_masters": [
-        "turael",
-        "spria",
-        "mazchna",
-        "konar",
-        "nieve",
-        "duradel"
-    ],
-    "duplicate": false,
-    "examine": "Let sleeping dragons lie.",
-    "wiki_name": "Vorkath (Dragon Slayer II)",
-    "wiki_url": "https://oldschool.runescape.wiki/w/Vorkath#Dragon_Slayer_II",
-    "attack_level": 560,
-    "strength_level": 268,
-    "defence_level": 164,
-    "magic_level": 148,
-    "ranged_level": 268,
-    "attack_bonus": 14,
-    "strength_bonus": 0,
-    "attack_magic": 148,
-    "magic_bonus": 0,
-    "attack_ranged": 96,
-    "ranged_bonus": 0,
-    "defence_stab": 66,
-    "defence_slash": 126,
-    "defence_crush": 126,
-    "defence_magic": 204,
-    "defence_ranged": 80,
-    "drops": [
-        {
-            "id": 22124,
-            "name": "Superior dragon bones",
-            "members": true,
-            "quantity": "2",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        },
-        {
-            "id": 562,
-            "name": "Chaos rune",
-            "members": false,
-            "quantity": "650-1000",
-            "noted": false,
-            "rarity": 0.04,
-            "rolls": 2
-        },
-        {
-            "id": 560,
-            "name": "Death rune",
-            "members": false,
-            "quantity": "300-500",
-            "noted": false,
-            "rarity": 0.04,
-            "rolls": 2
-        },
-        {
-            "id": 21880,
-            "name": "Wrath rune",
-            "members": true,
-            "quantity": "30-60",
-            "noted": false,
-            "rarity": 0.02,
-            "rolls": 2
-        },
-        {
-            "id": 1751,
-            "name": "Blue dragonhide",
-            "members": true,
-            "quantity": "25-30",
-            "noted": true,
-            "rarity": 0.05333333333333334,
-            "rolls": 2
-        },
-        {
-            "id": 1753,
-            "name": "Green dragonhide",
-            "members": true,
-            "quantity": "25-30",
-            "noted": true,
-            "rarity": 0.04666666666666667,
-            "rolls": 2
-        },
-        {
-            "id": 1749,
-            "name": "Red dragonhide",
-            "members": true,
-            "quantity": "20-25",
-            "noted": true,
-            "rarity": 0.04666666666666667,
-            "rolls": 2
-        },
-        {
-            "id": 1747,
-            "name": "Black dragonhide",
-            "members": true,
-            "quantity": "15-25",
-            "noted": true,
-            "rarity": 0.04666666666666667,
-            "rolls": 2
-        },
-        {
-            "id": 21930,
-            "name": "Dragon bolts (unf)",
-            "members": true,
-            "quantity": "50-100",
-            "noted": false,
-            "rarity": 0.05333333333333334,
-            "rolls": 2
-        },
-        {
-            "id": 9189,
-            "name": "Sapphire bolt tips",
-            "members": true,
-            "quantity": "25-30",
-            "noted": false,
-            "rarity": 0.0018018018018018018,
-            "rolls": 2
-        },
-        {
-            "id": 9190,
-            "name": "Emerald bolt tips",
-            "members": true,
-            "quantity": "25-30",
-            "noted": false,
-            "rarity": 0.007207207207207207,
-            "rolls": 2
-        },
-        {
-            "id": 1751,
-            "name": "Blue dragonhide",
-            "members": true,
-            "quantity": "2",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        },
-        {
-            "id": 9191,
-            "name": "Ruby bolt tips",
-            "members": true,
-            "quantity": "25-30",
-            "noted": false,
-            "rarity": 0.007207207207207207,
-            "rolls": 2
-        },
-        {
-            "id": 9192,
-            "name": "Diamond bolt tips",
-            "members": true,
-            "quantity": "25-30",
-            "noted": false,
-            "rarity": 0.009009009009009009,
-            "rolls": 2
-        },
-        {
-            "id": 9193,
-            "name": "Dragonstone bolt tips",
-            "members": true,
-            "quantity": "11-25",
-            "noted": false,
-            "rarity": 0.03333333333333333,
-            "rolls": 2
-        },
-        {
-            "id": 9193,
-            "name": "Dragonstone bolt tips",
-            "members": true,
-            "quantity": "25-30",
-            "noted": false,
-            "rarity": 0.005405405405405406,
-            "rolls": 2
-        },
-        {
-            "id": 9194,
-            "name": "Onyx bolt tips",
-            "members": true,
-            "quantity": "5-10",
-            "noted": false,
-            "rarity": 0.02666666666666667,
-            "rolls": 2
-        },
-        {
-            "id": 9194,
-            "name": "Onyx bolt tips",
-            "members": true,
-            "quantity": "25-30",
-            "noted": false,
-            "rarity": 0.002702702702702703,
-            "rolls": 2
-        },
-        {
-            "id": 824,
-            "name": "Rune dart tip",
-            "members": true,
-            "quantity": "75-100",
-            "noted": false,
-            "rarity": 0.02,
-            "rolls": 2
-        },
-        {
-            "id": 11232,
-            "name": "Dragon dart tip",
-            "members": true,
-            "quantity": "10-50",
-            "noted": false,
-            "rarity": 0.04,
-            "rolls": 2
-        },
-        {
-            "id": 11237,
-            "name": "Dragon arrowtips",
-            "members": true,
-            "quantity": "25-50",
-            "noted": false,
-            "rarity": 0.02,
-            "rolls": 2
-        },
-        {
-            "id": 5295,
-            "name": "Ranarr seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0023998080153587713,
-            "rolls": 2
-        },
-        {
-            "id": 1303,
-            "name": "Rune longsword",
-            "members": false,
-            "quantity": "2-3",
-            "noted": false,
-            "rarity": 0.03333333333333333,
-            "rolls": 2
-        },
-        {
-            "id": 5300,
-            "name": "Snapdragon seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.008904719501335707,
-            "rolls": 2
-        },
-        {
-            "id": 5304,
-            "name": "Torstol seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.008424599831508003,
-            "rolls": 2
-        },
-        {
-            "id": 5321,
-            "name": "Watermelon seed",
-            "members": true,
-            "quantity": "15",
-            "noted": false,
-            "rarity": 0.0016,
-            "rolls": 2
-        },
-        {
-            "id": 5313,
-            "name": "Willow seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0016,
-            "rolls": 2
-        },
-        {
-            "id": 21488,
-            "name": "Mahogany seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0014400921658986176,
-            "rolls": 2
-        },
-        {
-            "id": 5314,
-            "name": "Maple seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0014400921658986176,
-            "rolls": 2
-        },
-        {
-            "id": 21486,
-            "name": "Teak seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0014400921658986176,
-            "rolls": 2
-        },
-        {
-            "id": 5315,
-            "name": "Yew seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0014400921658986176,
-            "rolls": 2
-        },
-        {
-            "id": 5288,
-            "name": "Papaya tree seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0011199462425803561,
-            "rolls": 2
-        },
-        {
-            "id": 5316,
-            "name": "Magic seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0009599692809830085,
-            "rolls": 2
-        },
-        {
-            "id": 1201,
-            "name": "Rune kiteshield",
-            "members": false,
-            "quantity": "2-3",
-            "noted": false,
-            "rarity": 0.03333333333333333,
-            "rolls": 2
-        },
-        {
-            "id": 5289,
-            "name": "Palm tree seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0008,
-            "rolls": 2
-        },
-        {
-            "id": 5317,
-            "name": "Spirit seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.00064,
-            "rolls": 2
-        },
-        {
-            "id": 22877,
-            "name": "Dragonfruit tree seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.00048000768012288196,
-            "rolls": 2
-        },
-        {
-            "id": 22869,
-            "name": "Celastrus seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.00032,
-            "rolls": 2
-        },
-        {
-            "id": 22871,
-            "name": "Redwood tree seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.00032,
-            "rolls": 2
-        },
-        {
-            "id": 449,
-            "name": "Adamantite ore",
-            "members": false,
-            "quantity": "10-30",
-            "noted": true,
-            "rarity": 0.04666666666666667,
-            "rolls": 2
-        },
-        {
-            "id": 995,
-            "name": "Coins",
-            "members": false,
-            "quantity": "20000-81000",
-            "noted": false,
-            "rarity": 0.03333333333333333,
-            "rolls": 2
-        },
-        {
-            "id": 1987,
-            "name": "Grapes",
-            "members": false,
-            "quantity": "250-300",
-            "noted": true,
-            "rarity": 0.03333333333333333,
-            "rolls": 2
-        },
-        {
-            "id": 1513,
-            "name": "Magic logs",
-            "members": true,
-            "quantity": "50",
-            "noted": true,
-            "rarity": 0.03333333333333333,
-            "rolls": 2
-        },
-        {
-            "id": 391,
-            "name": "Manta ray",
-            "members": true,
-            "quantity": "35-55",
-            "noted": true,
-            "rarity": 0.02666666666666667,
-            "rolls": 2
-        },
-        {
-            "id": 1391,
-            "name": "Battlestaff",
-            "members": true,
-            "quantity": "5-15",
-            "noted": true,
-            "rarity": 0.02666666666666667,
-            "rolls": 2
-        },
-        {
-            "id": 536,
-            "name": "Dragon bones",
-            "members": true,
-            "quantity": "15-20",
-            "noted": true,
-            "rarity": 0.02666666666666667,
-            "rolls": 2
-        },
-        {
-            "id": 1601,
-            "name": "Diamond",
-            "members": false,
-            "quantity": "10-20",
-            "noted": true,
-            "rarity": 0.02666666666666667,
-            "rolls": 2
-        },
-        {
-            "id": 1615,
-            "name": "Dragonstone",
-            "members": true,
-            "quantity": "2-3",
-            "noted": true,
-            "rarity": 0.02,
-            "rolls": 2
-        },
-        {
-            "id": 22118,
-            "name": "Wrath talisman",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.02,
-            "rolls": 2
-        },
-        {
-            "id": 1377,
-            "name": "Dragon battleaxe",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.013333333333333334,
-            "rolls": 2
-        },
-        {
-            "id": 1305,
-            "name": "Dragon longsword",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.013333333333333334,
-            "rolls": 2
-        },
-        {
-            "id": 4087,
-            "name": "Dragon platelegs",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.013333333333333334,
-            "rolls": 2
-        },
-        {
-            "id": 2425,
-            "name": "Vorkath's head",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.02,
-            "rolls": 1
-        },
-        {
-            "id": 23083,
-            "name": "Brimstone key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.02,
-            "rolls": 1
-        },
-        {
-            "id": 12073,
-            "name": "Clue scroll (elite)",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.015384615384615385,
-            "rolls": 1
-        },
-        {
-            "id": 22111,
-            "name": "Dragonbone necklace",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.001,
-            "rolls": 1
-        },
-        {
-            "id": 22106,
-            "name": "Jar of decay",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0003333333333333333,
-            "rolls": 1
-        },
-        {
-            "id": 21992,
-            "name": "Vorki",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0003333333333333333,
-            "rolls": 1
-        },
-        {
-            "id": 11286,
-            "name": "Draconic visage",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0002,
-            "rolls": 1
-        },
-        {
-            "id": 22006,
-            "name": "Skeletal visage",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0002,
-            "rolls": 1
-        },
-        {
-            "id": 4585,
-            "name": "Dragon plateskirt",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.013333333333333334,
-            "rolls": 2
-        }
-    ]
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "8cf51955f2e1e79c7201170daac051300fe8c445",
+  "_id": "60ebb3b1c1c55bf074a5ec3e",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3b1c1c55bf074a5ec3e",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 0,
+  "attack_bonus": 14,
+  "attack_level": 560,
+  "attack_magic": 148,
+  "attack_ranged": 96,
+  "attack_speed": 5,
+  "attack_type": [
+    "slash",
+    "ranged",
+    "magic",
+    "dragonfire"
+  ],
+  "attributes": [
+    "dragon",
+    "fiery",
+    "undead"
+  ],
+  "category": [
+    "blue dragons",
+    "zombies",
+    "bosses"
+  ],
+  "combat_level": 392,
+  "defence_crush": 126,
+  "defence_level": 164,
+  "defence_magic": 204,
+  "defence_ranged": 80,
+  "defence_slash": 126,
+  "defence_stab": 66,
+  "drops": [
+    {
+      "id": 22124,
+      "members": 1,
+      "name": "Superior dragon bones",
+      "noted": 0,
+      "quantity": "2",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 562,
+      "members": 0,
+      "name": "Chaos rune",
+      "noted": 0,
+      "quantity": "650-1000",
+      "rarity": "0.04",
+      "rolls": 2
+    },
+    {
+      "id": 560,
+      "members": 0,
+      "name": "Death rune",
+      "noted": 0,
+      "quantity": "300-500",
+      "rarity": "0.04",
+      "rolls": 2
+    },
+    {
+      "id": 21880,
+      "members": 1,
+      "name": "Wrath rune",
+      "noted": 0,
+      "quantity": "30-60",
+      "rarity": "0.02",
+      "rolls": 2
+    },
+    {
+      "id": 1751,
+      "members": 1,
+      "name": "Blue dragonhide",
+      "noted": 1,
+      "quantity": "25-30",
+      "rarity": "0.05333333333333334",
+      "rolls": 2
+    },
+    {
+      "id": 1753,
+      "members": 1,
+      "name": "Green dragonhide",
+      "noted": 1,
+      "quantity": "25-30",
+      "rarity": "0.04666666666666667",
+      "rolls": 2
+    },
+    {
+      "id": 1749,
+      "members": 1,
+      "name": "Red dragonhide",
+      "noted": 1,
+      "quantity": "20-25",
+      "rarity": "0.04666666666666667",
+      "rolls": 2
+    },
+    {
+      "id": 1747,
+      "members": 1,
+      "name": "Black dragonhide",
+      "noted": 1,
+      "quantity": "15-25",
+      "rarity": "0.04666666666666667",
+      "rolls": 2
+    },
+    {
+      "id": 21930,
+      "members": 1,
+      "name": "Dragon bolts (unf)",
+      "noted": 0,
+      "quantity": "50-100",
+      "rarity": "0.05333333333333334",
+      "rolls": 2
+    },
+    {
+      "id": 9189,
+      "members": 1,
+      "name": "Sapphire bolt tips",
+      "noted": 0,
+      "quantity": "25-30",
+      "rarity": "0.0018018018018018018",
+      "rolls": 2
+    },
+    {
+      "id": 9190,
+      "members": 1,
+      "name": "Emerald bolt tips",
+      "noted": 0,
+      "quantity": "25-30",
+      "rarity": "0.007207207207207207",
+      "rolls": 2
+    },
+    {
+      "id": 1751,
+      "members": 1,
+      "name": "Blue dragonhide",
+      "noted": 0,
+      "quantity": "2",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 9191,
+      "members": 1,
+      "name": "Ruby bolt tips",
+      "noted": 0,
+      "quantity": "25-30",
+      "rarity": "0.007207207207207207",
+      "rolls": 2
+    },
+    {
+      "id": 9192,
+      "members": 1,
+      "name": "Diamond bolt tips",
+      "noted": 0,
+      "quantity": "25-30",
+      "rarity": "0.009009009009009009",
+      "rolls": 2
+    },
+    {
+      "id": 9193,
+      "members": 1,
+      "name": "Dragonstone bolt tips",
+      "noted": 0,
+      "quantity": "11-25",
+      "rarity": "0.03333333333333333",
+      "rolls": 2
+    },
+    {
+      "id": 9193,
+      "members": 1,
+      "name": "Dragonstone bolt tips",
+      "noted": 0,
+      "quantity": "25-30",
+      "rarity": "0.005405405405405406",
+      "rolls": 2
+    },
+    {
+      "id": 9194,
+      "members": 1,
+      "name": "Onyx bolt tips",
+      "noted": 0,
+      "quantity": "5-10",
+      "rarity": "0.02666666666666667",
+      "rolls": 2
+    },
+    {
+      "id": 9194,
+      "members": 1,
+      "name": "Onyx bolt tips",
+      "noted": 0,
+      "quantity": "25-30",
+      "rarity": "0.002702702702702703",
+      "rolls": 2
+    },
+    {
+      "id": 824,
+      "members": 1,
+      "name": "Rune dart tip",
+      "noted": 0,
+      "quantity": "75-100",
+      "rarity": "0.02",
+      "rolls": 2
+    },
+    {
+      "id": 11232,
+      "members": 1,
+      "name": "Dragon dart tip",
+      "noted": 0,
+      "quantity": "10-50",
+      "rarity": "0.04",
+      "rolls": 2
+    },
+    {
+      "id": 11237,
+      "members": 1,
+      "name": "Dragon arrowtips",
+      "noted": 0,
+      "quantity": "25-50",
+      "rarity": "0.02",
+      "rolls": 2
+    },
+    {
+      "id": 5295,
+      "members": 1,
+      "name": "Ranarr seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0023998080153587713",
+      "rolls": 2
+    },
+    {
+      "id": 1303,
+      "members": 0,
+      "name": "Rune longsword",
+      "noted": 0,
+      "quantity": "2-3",
+      "rarity": "0.03333333333333333",
+      "rolls": 2
+    },
+    {
+      "id": 5300,
+      "members": 1,
+      "name": "Snapdragon seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.008904719501335707",
+      "rolls": 2
+    },
+    {
+      "id": 5304,
+      "members": 1,
+      "name": "Torstol seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.008424599831508003",
+      "rolls": 2
+    },
+    {
+      "id": 5321,
+      "members": 1,
+      "name": "Watermelon seed",
+      "noted": 0,
+      "quantity": "15",
+      "rarity": "0.0016",
+      "rolls": 2
+    },
+    {
+      "id": 5313,
+      "members": 1,
+      "name": "Willow seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0016",
+      "rolls": 2
+    },
+    {
+      "id": 21488,
+      "members": 1,
+      "name": "Mahogany seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0014400921658986176",
+      "rolls": 2
+    },
+    {
+      "id": 5314,
+      "members": 1,
+      "name": "Maple seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0014400921658986176",
+      "rolls": 2
+    },
+    {
+      "id": 21486,
+      "members": 1,
+      "name": "Teak seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0014400921658986176",
+      "rolls": 2
+    },
+    {
+      "id": 5315,
+      "members": 1,
+      "name": "Yew seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0014400921658986176",
+      "rolls": 2
+    },
+    {
+      "id": 5288,
+      "members": 1,
+      "name": "Papaya tree seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0011199462425803561",
+      "rolls": 2
+    },
+    {
+      "id": 5316,
+      "members": 1,
+      "name": "Magic seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0009599692809830085",
+      "rolls": 2
+    },
+    {
+      "id": 1201,
+      "members": 0,
+      "name": "Rune kiteshield",
+      "noted": 0,
+      "quantity": "2-3",
+      "rarity": "0.03333333333333333",
+      "rolls": 2
+    },
+    {
+      "id": 5289,
+      "members": 1,
+      "name": "Palm tree seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0008",
+      "rolls": 2
+    },
+    {
+      "id": 5317,
+      "members": 1,
+      "name": "Spirit seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00064",
+      "rolls": 2
+    },
+    {
+      "id": 22877,
+      "members": 1,
+      "name": "Dragonfruit tree seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00048000768012288196",
+      "rolls": 2
+    },
+    {
+      "id": 22869,
+      "members": 1,
+      "name": "Celastrus seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00032",
+      "rolls": 2
+    },
+    {
+      "id": 22871,
+      "members": 1,
+      "name": "Redwood tree seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00032",
+      "rolls": 2
+    },
+    {
+      "id": 449,
+      "members": 0,
+      "name": "Adamantite ore",
+      "noted": 1,
+      "quantity": "10-30",
+      "rarity": "0.04666666666666667",
+      "rolls": 2
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "20000-81000",
+      "rarity": "0.03333333333333333",
+      "rolls": 2
+    },
+    {
+      "id": 1987,
+      "members": 0,
+      "name": "Grapes",
+      "noted": 1,
+      "quantity": "250-300",
+      "rarity": "0.03333333333333333",
+      "rolls": 2
+    },
+    {
+      "id": 1513,
+      "members": 1,
+      "name": "Magic logs",
+      "noted": 1,
+      "quantity": "50",
+      "rarity": "0.03333333333333333",
+      "rolls": 2
+    },
+    {
+      "id": 391,
+      "members": 1,
+      "name": "Manta ray",
+      "noted": 1,
+      "quantity": "35-55",
+      "rarity": "0.02666666666666667",
+      "rolls": 2
+    },
+    {
+      "id": 1391,
+      "members": 1,
+      "name": "Battlestaff",
+      "noted": 1,
+      "quantity": "5-15",
+      "rarity": "0.02666666666666667",
+      "rolls": 2
+    },
+    {
+      "id": 536,
+      "members": 1,
+      "name": "Dragon bones",
+      "noted": 1,
+      "quantity": "15-20",
+      "rarity": "0.02666666666666667",
+      "rolls": 2
+    },
+    {
+      "id": 1601,
+      "members": 0,
+      "name": "Diamond",
+      "noted": 1,
+      "quantity": "10-20",
+      "rarity": "0.02666666666666667",
+      "rolls": 2
+    },
+    {
+      "id": 1615,
+      "members": 1,
+      "name": "Dragonstone",
+      "noted": 1,
+      "quantity": "2-3",
+      "rarity": "0.02",
+      "rolls": 2
+    },
+    {
+      "id": 22118,
+      "members": 1,
+      "name": "Wrath talisman",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.02",
+      "rolls": 2
+    },
+    {
+      "id": 1377,
+      "members": 1,
+      "name": "Dragon battleaxe",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.013333333333333334",
+      "rolls": 2
+    },
+    {
+      "id": 1305,
+      "members": 1,
+      "name": "Dragon longsword",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.013333333333333334",
+      "rolls": 2
+    },
+    {
+      "id": 4087,
+      "members": 1,
+      "name": "Dragon platelegs",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.013333333333333334",
+      "rolls": 2
+    },
+    {
+      "id": 2425,
+      "members": 1,
+      "name": "Vorkath's head",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.02",
+      "rolls": 1
+    },
+    {
+      "id": 23083,
+      "members": 1,
+      "name": "Brimstone key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.02",
+      "rolls": 1
+    },
+    {
+      "id": 12073,
+      "members": 1,
+      "name": "Clue scroll (elite)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.015384615384615385",
+      "rolls": 1
+    },
+    {
+      "id": 22111,
+      "members": 1,
+      "name": "Dragonbone necklace",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.001",
+      "rolls": 1
+    },
+    {
+      "id": 22106,
+      "members": 1,
+      "name": "Jar of decay",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0003333333333333333",
+      "rolls": 1
+    },
+    {
+      "id": 21992,
+      "members": 1,
+      "name": "Vorki",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0003333333333333333",
+      "rolls": 1
+    },
+    {
+      "id": 11286,
+      "members": 1,
+      "name": "Draconic visage",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0002",
+      "rolls": 1
+    },
+    {
+      "id": 22006,
+      "members": 1,
+      "name": "Skeletal visage",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0002",
+      "rolls": 1
+    },
+    {
+      "id": 4585,
+      "members": 1,
+      "name": "Dragon plateskirt",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.013333333333333334",
+      "rolls": 2
+    }
+  ],
+  "duplicate": 0,
+  "examine": "Let sleeping dragons lie.",
+  "hitpoints": 460,
+  "id": "8060",
+  "immune_poison": 1,
+  "immune_venom": 1,
+  "incomplete": 1,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 148,
+  "max_hit": 30,
+  "members": 1,
+  "name": "Vorkath",
+  "poisonous": 1,
+  "ranged_bonus": 0,
+  "ranged_level": 268,
+  "release_date": "2018-01-04",
+  "size": 7,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "turael",
+    "spria",
+    "mazchna",
+    "konar",
+    "nieve",
+    "duradel"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "460.0",
+  "strength_bonus": 0,
+  "strength_level": 268,
+  "venomous": 1,
+  "wiki_name": "Vorkath (Dragon Slayer II)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Vorkath#Dragon_Slayer_II"
 }

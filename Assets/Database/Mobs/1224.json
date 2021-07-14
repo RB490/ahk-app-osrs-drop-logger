@@ -1,0 +1,86 @@
+{
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "bec8a71f31293ef021c34cf883abbc571e63fc69",
+  "_id": "60ebb3aec1c55bf074a5e4a1",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3aec1c55bf074a5e4a1",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 0,
+  "attack_level": 120,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "stab"
+  ],
+  "attributes": [
+    "demon"
+  ],
+  "category": [
+    "hellhounds"
+  ],
+  "combat_level": 137,
+  "defence_crush": 0,
+  "defence_level": 120,
+  "defence_magic": 0,
+  "defence_ranged": 0,
+  "defence_slash": 0,
+  "defence_stab": 0,
+  "drops": [
+    {
+      "id": 25769,
+      "members": 1,
+      "name": "Vile ashes",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "Postie Pete's worst nightmare.",
+  "hitpoints": 116,
+  "id": "1224",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 13,
+  "members": 1,
+  "name": "Bouncer",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2002-07-23",
+  "size": 2,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "krystilia",
+    "vannaka",
+    "chaeldar",
+    "nieve",
+    "duradel"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "116.0",
+  "strength_bonus": 0,
+  "strength_level": 120,
+  "venomous": 0,
+  "wiki_name": "Bouncer (Normal)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Bouncer#Normal"
+}

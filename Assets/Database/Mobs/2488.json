@@ -1,7 +1,7 @@
 {
   "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
-  "_etag": "2c7e4a4f3cfd1125e56910dd573c652d911fca0a",
-  "_id": "60cd28b0cfb7392d00907280",
+  "_etag": "8c82a2481a60597d3a7f7e6955ff9afbaac3ca95",
+  "_id": "60ebb3afc1c55bf074a5e61a",
   "_links": {
     "collection": {
       "href": "monsters",
@@ -12,7 +12,7 @@
       "title": "home"
     },
     "self": {
-      "href": "monsters/60cd28b0cfb7392d00907280",
+      "href": "monsters/60ebb3afc1c55bf074a5e61a",
       "title": "Monster"
     }
   },
@@ -28,7 +28,7 @@
   ],
   "attributes": [],
   "category": [
-    "goblin"
+    "goblins"
   ],
   "combat_level": 25,
   "defence_crush": 18,
@@ -271,7 +271,7 @@
   "immune_poison": 0,
   "immune_venom": 0,
   "incomplete": 1,
-  "last_updated": "2021-05-30",
+  "last_updated": "2021-07-12",
   "magic_bonus": 0,
   "magic_level": 1,
   "max_hit": 3,

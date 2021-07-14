@@ -1,7 +1,7 @@
 {
   "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
-  "_etag": "d074f4bbaa418df3d5e5cc5093160e9df23573c8",
-  "_id": "60cd28b1cfb7392d00907531",
+  "_etag": "863d687016905ff313d095ee8f8c0b5a30959ff6",
+  "_id": "60ebb3b0c1c55bf074a5e8cb",
   "_links": {
     "collection": {
       "href": "monsters",
@@ -12,7 +12,7 @@
       "title": "home"
     },
     "self": {
-      "href": "monsters/60cd28b1cfb7392d00907531",
+      "href": "monsters/60ebb3b0c1c55bf074a5e8cb",
       "title": "Monster"
     }
   },
@@ -31,7 +31,7 @@
     "demon"
   ],
   "category": [
-    "icefiend"
+    "icefiends"
   ],
   "combat_level": 13,
   "defence_crush": 0,
@@ -150,6 +150,15 @@
       "rolls": 1
     },
     {
+      "id": 25766,
+      "members": 1,
+      "name": "Fiendish ashes",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
       "id": 11941,
       "members": 1,
       "name": "Looting bag",
@@ -220,7 +229,7 @@
   "immune_poison": 0,
   "immune_venom": 0,
   "incomplete": 1,
-  "last_updated": "2021-06-18",
+  "last_updated": "2021-07-12",
   "magic_bonus": 0,
   "magic_level": 1,
   "max_hit": 2,

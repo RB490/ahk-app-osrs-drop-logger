@@ -1,7 +1,7 @@
 {
   "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
-  "_etag": "c95c712865394ddc6b44b31d07e8fb7a2a0c39ba",
-  "_id": "60cd28aecfb7392d00906f52",
+  "_etag": "e0fe201c32a46e732841973bd6a0a6e89db09536",
+  "_id": "60ebb3aec1c55bf074a5e2ec",
   "_links": {
     "collection": {
       "href": "monsters",
@@ -12,7 +12,7 @@
       "title": "home"
     },
     "self": {
-      "href": "monsters/60cd28aecfb7392d00906f52",
+      "href": "monsters/60ebb3aec1c55bf074a5e2ec",
       "title": "Monster"
     }
   },
@@ -30,7 +30,7 @@
     "dragon"
   ],
   "category": [
-    "red dragon"
+    "red dragons"
   ],
   "combat_level": 48,
   "defence_crush": 50,
@@ -102,7 +102,7 @@
   "immune_poison": 0,
   "immune_venom": 0,
   "incomplete": 1,
-  "last_updated": "2020-12-25",
+  "last_updated": "2021-07-12",
   "magic_bonus": 0,
   "magic_level": 1,
   "max_hit": 5,

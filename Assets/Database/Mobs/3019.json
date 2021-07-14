@@ -1,7 +1,7 @@
 {
   "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
-  "_etag": "2b74ee3341e032ad06282b27299398ab84fb9194",
-  "_id": "60cd28b0cfb7392d00907322",
+  "_etag": "66a9d5cc5d3b9181bd76e3f6697099cbcb97dfeb",
+  "_id": "60ebb3afc1c55bf074a5e6bc",
   "_links": {
     "collection": {
       "href": "monsters",
@@ -12,7 +12,7 @@
       "title": "home"
     },
     "self": {
-      "href": "monsters/60cd28b0cfb7392d00907322",
+      "href": "monsters/60ebb3afc1c55bf074a5e6bc",
       "title": "Monster"
     }
   },
@@ -28,7 +28,7 @@
   ],
   "attributes": [],
   "category": [
-    "spider"
+    "spiders"
   ],
   "combat_level": 1,
   "defence_crush": -53,
@@ -82,7 +82,7 @@
   "immune_poison": 0,
   "immune_venom": 0,
   "incomplete": 1,
-  "last_updated": "2020-12-25",
+  "last_updated": "2021-07-12",
   "magic_bonus": 0,
   "magic_level": 1,
   "max_hit": 0,

@@ -1,91 +1,109 @@
 {
-    "id": 3016,
-    "name": "Shadow spider",
-    "last_updated": "2020-12-25",
-    "incomplete": true,
-    "members": true,
-    "release_date": "2002-05-10",
-    "combat_level": 52,
-    "size": 1,
-    "hitpoints": 55,
-    "max_hit": 5,
-    "attack_type": [
-        "stab"
-    ],
-    "attack_speed": 4,
-    "aggressive": true,
-    "poisonous": false,
-    "venomous": false,
-    "immune_poison": false,
-    "immune_venom": false,
-    "attributes": [],
-    "category": [
-        "spider"
-    ],
-    "slayer_monster": true,
-    "slayer_level": 1,
-    "slayer_xp": 55.0,
-    "slayer_masters": [
-        "turael",
-        "spria",
-        "krystilia"
-    ],
-    "duplicate": false,
-    "examine": "Is it a spider or is it a shadow?",
-    "wiki_name": "Shadow spider",
-    "wiki_url": "https://oldschool.runescape.wiki/w/Shadow_spider",
-    "attack_level": 44,
-    "strength_level": 42,
-    "defence_level": 44,
-    "magic_level": 1,
-    "ranged_level": 1,
-    "attack_bonus": 0,
-    "strength_bonus": 0,
-    "attack_magic": 0,
-    "magic_bonus": 0,
-    "attack_ranged": 0,
-    "ranged_bonus": 0,
-    "defence_stab": 20,
-    "defence_slash": 15,
-    "defence_crush": 10,
-    "defence_magic": 15,
-    "defence_ranged": 15,
-    "drops": [
-        {
-            "id": 11941,
-            "name": "Looting bag",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.3333333333333333,
-            "rolls": 1
-        },
-        {
-            "id": 23182,
-            "name": "Clue scroll (beginner)",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 23490,
-            "name": "Larran's key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0029850746268656717,
-            "rolls": 1
-        },
-        {
-            "id": 21257,
-            "name": "Slayer's enchantment",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0036231884057971015,
-            "rolls": 1
-        }
-    ]
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "a732d73683fdcaa8916e982a073987396be4f97f",
+  "_id": "60ebb3afc1c55bf074a5e6b9",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3afc1c55bf074a5e6b9",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 0,
+  "attack_level": 44,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "stab"
+  ],
+  "attributes": [],
+  "category": [
+    "spiders"
+  ],
+  "combat_level": 52,
+  "defence_crush": 10,
+  "defence_level": 44,
+  "defence_magic": 15,
+  "defence_ranged": 15,
+  "defence_slash": 15,
+  "defence_stab": 20,
+  "drops": [
+    {
+      "id": 11941,
+      "members": 1,
+      "name": "Looting bag",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.3333333333333333",
+      "rolls": 1
+    },
+    {
+      "id": 23182,
+      "members": 0,
+      "name": "Clue scroll (beginner)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 23490,
+      "members": 1,
+      "name": "Larran's key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0029850746268656717",
+      "rolls": 1
+    },
+    {
+      "id": 21257,
+      "members": 1,
+      "name": "Slayer's enchantment",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0036231884057971015",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "Is it a spider or is it a shadow?",
+  "hitpoints": 55,
+  "id": "3016",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 5,
+  "members": 1,
+  "name": "Shadow spider",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2002-05-08",
+  "size": 1,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "turael",
+    "spria",
+    "krystilia"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "55.0",
+  "strength_bonus": 0,
+  "strength_level": 42,
+  "venomous": 0,
+  "wiki_name": "Shadow spider",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Shadow_spider"
 }

@@ -1,497 +1,515 @@
 {
-    "id": 926,
-    "name": "Stick",
-    "last_updated": "2020-12-25",
-    "incomplete": true,
-    "members": true,
-    "release_date": "2004-08-09",
-    "combat_level": 104,
-    "size": 2,
-    "hitpoints": 135,
-    "max_hit": 27,
-    "attack_type": [
-        "crush"
-    ],
-    "attack_speed": 6,
-    "aggressive": true,
-    "poisonous": false,
-    "venomous": false,
-    "immune_poison": false,
-    "immune_venom": false,
-    "attributes": [],
-    "category": [
-        "troll"
-    ],
-    "slayer_monster": true,
-    "slayer_level": 1,
-    "slayer_xp": 141.5,
-    "slayer_masters": [
-        "vannaka",
-        "chaeldar",
-        "nieve",
-        "duradel"
-    ],
-    "duplicate": false,
-    "examine": "A big, bad troll.",
-    "wiki_name": "Stick",
-    "wiki_url": "https://oldschool.runescape.wiki/w/Stick",
-    "attack_level": 60,
-    "strength_level": 110,
-    "defence_level": 60,
-    "magic_level": 0,
-    "ranged_level": 0,
-    "attack_bonus": 50,
-    "strength_bonus": 80,
-    "attack_magic": 0,
-    "magic_bonus": 0,
-    "attack_ranged": 0,
-    "ranged_bonus": 0,
-    "defence_stab": 30,
-    "defence_slash": 30,
-    "defence_crush": 50,
-    "defence_magic": 200,
-    "defence_ranged": 200,
-    "drops": [
-        {
-            "id": 1623,
-            "name": "Uncut sapphire",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.009765625,
-            "rolls": 1
-        },
-        {
-            "id": 1621,
-            "name": "Uncut emerald",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0048828125,
-            "rolls": 1
-        },
-        {
-            "id": 1619,
-            "name": "Uncut ruby",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.00244140625,
-            "rolls": 1
-        },
-        {
-            "id": 1452,
-            "name": "Chaos talisman",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0009154558237637684,
-            "rolls": 1
-        },
-        {
-            "id": 1462,
-            "name": "Nature talisman",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0009154558237637684,
-            "rolls": 1
-        },
-        {
-            "id": 1617,
-            "name": "Uncut diamond",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0006103515625,
-            "rolls": 1
-        },
-        {
-            "id": 830,
-            "name": "Rune javelin",
-            "members": true,
-            "quantity": "5",
-            "noted": false,
-            "rarity": 0.00030517578125,
-            "rolls": 1
-        },
-        {
-            "id": 987,
-            "name": "Loop half of key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.00030517578125,
-            "rolls": 1
-        },
-        {
-            "id": 985,
-            "name": "Tooth half of key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.00030517578125,
-            "rolls": 1
-        },
-        {
-            "id": 1247,
-            "name": "Rune spear",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.9073486328125e-05,
-            "rolls": 1
-        },
-        {
-            "id": 2366,
-            "name": "Shield left half",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 9.5367431640625e-06,
-            "rolls": 1
-        },
-        {
-            "id": 1249,
-            "name": "Dragon spear",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 7.1519986231544404e-06,
-            "rolls": 1
-        },
-        {
-            "id": 532,
-            "name": "Big bones",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        },
-        {
-            "id": 557,
-            "name": "Earth rune",
-            "members": false,
-            "quantity": "80",
-            "noted": false,
-            "rarity": 0.0625,
-            "rolls": 1
-        },
-        {
-            "id": 561,
-            "name": "Nature rune",
-            "members": false,
-            "quantity": "16",
-            "noted": false,
-            "rarity": 0.0390625,
-            "rolls": 1
-        },
-        {
-            "id": 563,
-            "name": "Law rune",
-            "members": false,
-            "quantity": "4",
-            "noted": false,
-            "rarity": 0.0234375,
-            "rolls": 1
-        },
-        {
-            "id": 557,
-            "name": "Earth rune",
-            "members": false,
-            "quantity": "65",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 557,
-            "name": "Earth rune",
-            "members": false,
-            "quantity": "25",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 199,
-            "name": "Grimy guam leaf",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.02932551319648094,
-            "rolls": 1
-        },
-        {
-            "id": 201,
-            "name": "Grimy marrentill",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.02197802197802198,
-            "rolls": 1
-        },
-        {
-            "id": 203,
-            "name": "Grimy tarromin",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.016474464579901153,
-            "rolls": 1
-        },
-        {
-            "id": 205,
-            "name": "Grimy harralander",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.01282051282051282,
-            "rolls": 1
-        },
-        {
-            "id": 207,
-            "name": "Grimy ranarr weed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.010070493454179255,
-            "rolls": 1
-        },
-        {
-            "id": 1119,
-            "name": "Steel platebody",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.03125,
-            "rolls": 1
-        },
-        {
-            "id": 209,
-            "name": "Grimy irit leaf",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.007326007326007326,
-            "rolls": 1
-        },
-        {
-            "id": 211,
-            "name": "Grimy avantoe",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.005494505494505495,
-            "rolls": 1
-        },
-        {
-            "id": 213,
-            "name": "Grimy kwuarm",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.004576659038901602,
-            "rolls": 1
-        },
-        {
-            "id": 215,
-            "name": "Grimy cadantine",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.003661662394727206,
-            "rolls": 1
-        },
-        {
-            "id": 2485,
-            "name": "Grimy lantadyme",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0027464982147761604,
-            "rolls": 1
-        },
-        {
-            "id": 217,
-            "name": "Grimy dwarf weed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0027464982147761604,
-            "rolls": 1
-        },
-        {
-            "id": 995,
-            "name": "Coins",
-            "members": false,
-            "quantity": "40",
-            "noted": false,
-            "rarity": 0.2265625,
-            "rolls": 1
-        },
-        {
-            "id": 995,
-            "name": "Coins",
-            "members": false,
-            "quantity": "135",
-            "noted": false,
-            "rarity": 0.1953125,
-            "rolls": 1
-        },
-        {
-            "id": 995,
-            "name": "Coins",
-            "members": false,
-            "quantity": "190",
-            "noted": false,
-            "rarity": 0.078125,
-            "rolls": 1
-        },
-        {
-            "id": 995,
-            "name": "Coins",
-            "members": false,
-            "quantity": "20",
-            "noted": false,
-            "rarity": 0.03125,
-            "rolls": 1
-        },
-        {
-            "id": 1341,
-            "name": "Black warhammer",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0234375,
-            "rolls": 1
-        },
-        {
-            "id": 995,
-            "name": "Coins",
-            "members": false,
-            "quantity": "420",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 453,
-            "name": "Coal",
-            "members": false,
-            "quantity": "6",
-            "noted": true,
-            "rarity": 0.0234375,
-            "rolls": 1
-        },
-        {
-            "id": 359,
-            "name": "Raw tuna",
-            "members": false,
-            "quantity": "4",
-            "noted": true,
-            "rarity": 0.015625,
-            "rolls": 1
-        },
-        {
-            "id": 1339,
-            "name": "Steel warhammer",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0234375,
-            "rolls": 1
-        },
-        {
-            "id": 7884,
-            "name": "Troll bone",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.25,
-            "rolls": 1
-        },
-        {
-            "id": 13483,
-            "name": "Ensouled troll head",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.03571428571428571,
-            "rolls": 1
-        },
-        {
-            "id": 23083,
-            "name": "Brimstone key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.010101010101010102,
-            "rolls": 1
-        },
-        {
-            "id": 10976,
-            "name": "Long bone",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0025,
-            "rolls": 1
-        },
-        {
-            "id": 10977,
-            "name": "Curved bone",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.00019950124688279303,
-            "rolls": 1
-        },
-        {
-            "id": 1357,
-            "name": "Adamant axe",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.015625,
-            "rolls": 1
-        },
-        {
-            "id": 1183,
-            "name": "Adamant sq shield",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 3122,
-            "name": "Granite shield",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 1121,
-            "name": "Mithril platebody",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 1347,
-            "name": "Rune warhammer",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        }
-    ]
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "da3c9aa802ce4327c81978b04678a1c092222197",
+  "_id": "60ebb3aec1c55bf074a5e42f",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3aec1c55bf074a5e42f",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 50,
+  "attack_level": 60,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 6,
+  "attack_type": [
+    "crush"
+  ],
+  "attributes": [],
+  "category": [
+    "trolls"
+  ],
+  "combat_level": 104,
+  "defence_crush": 50,
+  "defence_level": 60,
+  "defence_magic": 200,
+  "defence_ranged": 200,
+  "defence_slash": 30,
+  "defence_stab": 30,
+  "drops": [
+    {
+      "id": 1623,
+      "members": 1,
+      "name": "Uncut sapphire",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.009765625",
+      "rolls": 1
+    },
+    {
+      "id": 1621,
+      "members": 1,
+      "name": "Uncut emerald",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0048828125",
+      "rolls": 1
+    },
+    {
+      "id": 1619,
+      "members": 1,
+      "name": "Uncut ruby",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00244140625",
+      "rolls": 1
+    },
+    {
+      "id": 1452,
+      "members": 1,
+      "name": "Chaos talisman",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0009154558237637684",
+      "rolls": 1
+    },
+    {
+      "id": 1462,
+      "members": 1,
+      "name": "Nature talisman",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0009154558237637684",
+      "rolls": 1
+    },
+    {
+      "id": 1617,
+      "members": 1,
+      "name": "Uncut diamond",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0006103515625",
+      "rolls": 1
+    },
+    {
+      "id": 830,
+      "members": 1,
+      "name": "Rune javelin",
+      "noted": 0,
+      "quantity": "5",
+      "rarity": "0.00030517578125",
+      "rolls": 1
+    },
+    {
+      "id": 987,
+      "members": 1,
+      "name": "Loop half of key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00030517578125",
+      "rolls": 1
+    },
+    {
+      "id": 985,
+      "members": 1,
+      "name": "Tooth half of key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00030517578125",
+      "rolls": 1
+    },
+    {
+      "id": 1247,
+      "members": 1,
+      "name": "Rune spear",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.9073486328125e-05",
+      "rolls": 1
+    },
+    {
+      "id": 2366,
+      "members": 1,
+      "name": "Shield left half",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "9.5367431640625e-06",
+      "rolls": 1
+    },
+    {
+      "id": 1249,
+      "members": 1,
+      "name": "Dragon spear",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "7.1519986231544404e-06",
+      "rolls": 1
+    },
+    {
+      "id": 532,
+      "members": 0,
+      "name": "Big bones",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 557,
+      "members": 0,
+      "name": "Earth rune",
+      "noted": 0,
+      "quantity": "80",
+      "rarity": "0.0625",
+      "rolls": 1
+    },
+    {
+      "id": 561,
+      "members": 0,
+      "name": "Nature rune",
+      "noted": 0,
+      "quantity": "16",
+      "rarity": "0.0390625",
+      "rolls": 1
+    },
+    {
+      "id": 563,
+      "members": 0,
+      "name": "Law rune",
+      "noted": 0,
+      "quantity": "4",
+      "rarity": "0.0234375",
+      "rolls": 1
+    },
+    {
+      "id": 557,
+      "members": 0,
+      "name": "Earth rune",
+      "noted": 0,
+      "quantity": "65",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 557,
+      "members": 0,
+      "name": "Earth rune",
+      "noted": 0,
+      "quantity": "25",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 199,
+      "members": 1,
+      "name": "Grimy guam leaf",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.02932551319648094",
+      "rolls": 1
+    },
+    {
+      "id": 201,
+      "members": 1,
+      "name": "Grimy marrentill",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.02197802197802198",
+      "rolls": 1
+    },
+    {
+      "id": 203,
+      "members": 1,
+      "name": "Grimy tarromin",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.016474464579901153",
+      "rolls": 1
+    },
+    {
+      "id": 205,
+      "members": 1,
+      "name": "Grimy harralander",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.01282051282051282",
+      "rolls": 1
+    },
+    {
+      "id": 207,
+      "members": 1,
+      "name": "Grimy ranarr weed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.010070493454179255",
+      "rolls": 1
+    },
+    {
+      "id": 1119,
+      "members": 0,
+      "name": "Steel platebody",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.03125",
+      "rolls": 1
+    },
+    {
+      "id": 209,
+      "members": 1,
+      "name": "Grimy irit leaf",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.007326007326007326",
+      "rolls": 1
+    },
+    {
+      "id": 211,
+      "members": 1,
+      "name": "Grimy avantoe",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.005494505494505495",
+      "rolls": 1
+    },
+    {
+      "id": 213,
+      "members": 1,
+      "name": "Grimy kwuarm",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.004576659038901602",
+      "rolls": 1
+    },
+    {
+      "id": 215,
+      "members": 1,
+      "name": "Grimy cadantine",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.003661662394727206",
+      "rolls": 1
+    },
+    {
+      "id": 2485,
+      "members": 1,
+      "name": "Grimy lantadyme",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0027464982147761604",
+      "rolls": 1
+    },
+    {
+      "id": 217,
+      "members": 1,
+      "name": "Grimy dwarf weed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0027464982147761604",
+      "rolls": 1
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "40",
+      "rarity": "0.2265625",
+      "rolls": 1
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "135",
+      "rarity": "0.1953125",
+      "rolls": 1
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "190",
+      "rarity": "0.078125",
+      "rolls": 1
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "20",
+      "rarity": "0.03125",
+      "rolls": 1
+    },
+    {
+      "id": 1341,
+      "members": 0,
+      "name": "Black warhammer",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0234375",
+      "rolls": 1
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "420",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 453,
+      "members": 0,
+      "name": "Coal",
+      "noted": 1,
+      "quantity": "6",
+      "rarity": "0.0234375",
+      "rolls": 1
+    },
+    {
+      "id": 359,
+      "members": 0,
+      "name": "Raw tuna",
+      "noted": 1,
+      "quantity": "4",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 1339,
+      "members": 0,
+      "name": "Steel warhammer",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0234375",
+      "rolls": 1
+    },
+    {
+      "id": 7884,
+      "members": 1,
+      "name": "Troll bone",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.25",
+      "rolls": 1
+    },
+    {
+      "id": 13483,
+      "members": 1,
+      "name": "Ensouled troll head",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.03571428571428571",
+      "rolls": 1
+    },
+    {
+      "id": 23083,
+      "members": 1,
+      "name": "Brimstone key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.010101010101010102",
+      "rolls": 1
+    },
+    {
+      "id": 10976,
+      "members": 1,
+      "name": "Long bone",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0025",
+      "rolls": 1
+    },
+    {
+      "id": 10977,
+      "members": 1,
+      "name": "Curved bone",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00019950124688279303",
+      "rolls": 1
+    },
+    {
+      "id": 1357,
+      "members": 0,
+      "name": "Adamant axe",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 1183,
+      "members": 0,
+      "name": "Adamant sq shield",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 3122,
+      "members": 1,
+      "name": "Granite shield",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 1121,
+      "members": 0,
+      "name": "Mithril platebody",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 1347,
+      "members": 0,
+      "name": "Rune warhammer",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "A big, bad troll.",
+  "hitpoints": 135,
+  "id": "926",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 0,
+  "max_hit": 27,
+  "members": 1,
+  "name": "Stick",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 0,
+  "release_date": "2004-08-09",
+  "size": 2,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "vannaka",
+    "chaeldar",
+    "nieve",
+    "duradel"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "141.5",
+  "strength_bonus": 80,
+  "strength_level": 110,
+  "venomous": 0,
+  "wiki_name": "Stick",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Stick"
 }

@@ -1,7 +1,7 @@
 {
   "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
-  "_etag": "5abf631c2178e6e8ddb2c7e7c29895fd8bfbeda0",
-  "_id": "60cd28aecfb7392d00906fbe",
+  "_etag": "ffaae5bee4922d30861363c162307e784d6bfb4e",
+  "_id": "60ebb3aec1c55bf074a5e358",
   "_links": {
     "collection": {
       "href": "monsters",
@@ -12,7 +12,7 @@
       "title": "home"
     },
     "self": {
-      "href": "monsters/60cd28aecfb7392d00906fbe",
+      "href": "monsters/60ebb3aec1c55bf074a5e358",
       "title": "Monster"
     }
   },
@@ -31,7 +31,7 @@
     "dragon"
   ],
   "category": [
-    "skeletal wyvern"
+    "skeletal wyverns"
   ],
   "combat_level": 140,
   "defence_crush": 90,
@@ -481,7 +481,7 @@
   "immune_poison": 0,
   "immune_venom": 0,
   "incomplete": 0,
-  "last_updated": "2020-12-25",
+  "last_updated": "2021-07-12",
   "magic_bonus": 0,
   "magic_level": 125,
   "max_hit": 13,

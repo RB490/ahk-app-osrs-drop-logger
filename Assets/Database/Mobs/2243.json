@@ -1,7 +1,7 @@
 {
   "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
-  "_etag": "e15de2c0f154920639c06d1a9ce32bfce8be711c",
-  "_id": "60cd28b0cfb7392d00907256",
+  "_etag": "ba077ae6733ac049b4ff291cdfa4735c18307f74",
+  "_id": "60ebb3afc1c55bf074a5e5f0",
   "_links": {
     "collection": {
       "href": "monsters",
@@ -12,7 +12,7 @@
       "title": "home"
     },
     "self": {
-      "href": "monsters/60cd28b0cfb7392d00907256",
+      "href": "monsters/60ebb3afc1c55bf074a5e5f0",
       "title": "Monster"
     }
   },
@@ -28,7 +28,7 @@
   ],
   "attributes": [],
   "category": [
-    "spiritual creature"
+    "spiritual creatures"
   ],
   "combat_level": 134,
   "defence_crush": 13,
@@ -379,7 +379,7 @@
   "immune_poison": 0,
   "immune_venom": 0,
   "incomplete": 0,
-  "last_updated": "2021-01-11",
+  "last_updated": "2021-07-12",
   "magic_bonus": 0,
   "magic_level": 1,
   "max_hit": 16,
@@ -399,7 +399,7 @@
     "duradel"
   ],
   "slayer_monster": 1,
-  "slayer_xp": "131.0",
+  "slayer_xp": "135.0",
   "strength_bonus": 13,
   "strength_level": 120,
   "venomous": 0,

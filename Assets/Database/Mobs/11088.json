@@ -1,7 +1,7 @@
 {
   "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
-  "_etag": "3a582bce8e8a290fb511955e421603b211d685ba",
-  "_id": "60cd28b3cfb7392d00907a53",
+  "_etag": "ea011b6c377bddec9c0e1bb2f5ff697f48e20222",
+  "_id": "60ebb3b2c1c55bf074a5edfd",
   "_links": {
     "collection": {
       "href": "monsters",
@@ -12,7 +12,7 @@
       "title": "home"
     },
     "self": {
-      "href": "monsters/60cd28b3cfb7392d00907a53",
+      "href": "monsters/60ebb3b2c1c55bf074a5edfd",
       "title": "Monster"
     }
   },
@@ -46,12 +46,174 @@
       "rolls": 1
     },
     {
+      "id": 561,
+      "members": 0,
+      "name": "Nature rune",
+      "noted": 0,
+      "quantity": "10-15",
+      "rarity": "0.057692307692307696",
+      "rolls": 1
+    },
+    {
+      "id": 563,
+      "members": 0,
+      "name": "Law rune",
+      "noted": 0,
+      "quantity": "10-15",
+      "rarity": "0.057692307692307696",
+      "rolls": 1
+    },
+    {
+      "id": 560,
+      "members": 0,
+      "name": "Death rune",
+      "noted": 0,
+      "quantity": "4-8",
+      "rarity": "0.038461538461538464",
+      "rolls": 1
+    },
+    {
+      "id": 565,
+      "members": 1,
+      "name": "Blood rune",
+      "noted": 0,
+      "quantity": "4-8",
+      "rarity": "0.038461538461538464",
+      "rolls": 1
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "10-50",
+      "rarity": "0.038461538461538464",
+      "rolls": 1
+    },
+    {
+      "id": 1379,
+      "members": 0,
+      "name": "Staff",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.038461538461538464",
+      "rolls": 1
+    },
+    {
+      "id": 1438,
+      "members": 0,
+      "name": "Air talisman",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.019230769230769232",
+      "rolls": 1
+    },
+    {
+      "id": 1444,
+      "members": 0,
+      "name": "Water talisman",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.019230769230769232",
+      "rolls": 1
+    },
+    {
+      "id": 1440,
+      "members": 0,
+      "name": "Earth talisman",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.019230769230769232",
+      "rolls": 1
+    },
+    {
+      "id": 1442,
+      "members": 0,
+      "name": "Fire talisman",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.019230769230769232",
+      "rolls": 1
+    },
+    {
       "id": 556,
       "members": 0,
       "name": "Air rune",
       "noted": 0,
-      "quantity": "23-30",
-      "rarity": "0.125",
+      "quantity": "20-30",
+      "rarity": "0.07692307692307693",
+      "rolls": 1
+    },
+    {
+      "id": 2801,
+      "members": 1,
+      "name": "Clue scroll (medium)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 555,
+      "members": 0,
+      "name": "Water rune",
+      "noted": 0,
+      "quantity": "20-30",
+      "rarity": "0.07692307692307693",
+      "rolls": 1
+    },
+    {
+      "id": 557,
+      "members": 0,
+      "name": "Earth rune",
+      "noted": 0,
+      "quantity": "20-30",
+      "rarity": "0.07692307692307693",
+      "rolls": 1
+    },
+    {
+      "id": 554,
+      "members": 0,
+      "name": "Fire rune",
+      "noted": 0,
+      "quantity": "20-30",
+      "rarity": "0.07692307692307693",
+      "rolls": 1
+    },
+    {
+      "id": 558,
+      "members": 0,
+      "name": "Mind rune",
+      "noted": 0,
+      "quantity": "20-30",
+      "rarity": "0.07692307692307693",
+      "rolls": 1
+    },
+    {
+      "id": 559,
+      "members": 0,
+      "name": "Body rune",
+      "noted": 0,
+      "quantity": "20-30",
+      "rarity": "0.07692307692307693",
+      "rolls": 1
+    },
+    {
+      "id": 564,
+      "members": 0,
+      "name": "Cosmic rune",
+      "noted": 0,
+      "quantity": "10-15",
+      "rarity": "0.057692307692307696",
+      "rolls": 1
+    },
+    {
+      "id": 562,
+      "members": 0,
+      "name": "Chaos rune",
+      "noted": 0,
+      "quantity": "10-15",
+      "rarity": "0.057692307692307696",
       "rolls": 1
     }
   ],
@@ -62,7 +224,7 @@
   "immune_poison": 0,
   "immune_venom": 0,
   "incomplete": 1,
-  "last_updated": "2021-06-18",
+  "last_updated": "2021-07-12",
   "magic_bonus": 10,
   "magic_level": 60,
   "max_hit": 7,

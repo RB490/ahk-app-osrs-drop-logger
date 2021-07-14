@@ -1,7 +1,7 @@
 {
   "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
-  "_etag": "9724bfbeee7cb8210d04e2d692027c7252ebd52d",
-  "_id": "60cd28b1cfb7392d00907715",
+  "_etag": "b401eab6f5bc8a80acb7d361fb6806bf3a238c73",
+  "_id": "60ebb3b1c1c55bf074a5eaaf",
   "_links": {
     "collection": {
       "href": "monsters",
@@ -12,7 +12,7 @@
       "title": "home"
     },
     "self": {
-      "href": "monsters/60cd28b1cfb7392d00907715",
+      "href": "monsters/60ebb3b1c1c55bf074a5eaaf",
       "title": "Monster"
     }
   },
@@ -30,7 +30,7 @@
     "undead"
   ],
   "category": [
-    "zombie"
+    "zombies"
   ],
   "combat_level": 67,
   "defence_crush": 0,
@@ -1380,7 +1380,7 @@
   "immune_poison": 0,
   "immune_venom": 0,
   "incomplete": 1,
-  "last_updated": "2021-02-24",
+  "last_updated": "2021-07-12",
   "magic_bonus": 0,
   "magic_level": 1,
   "max_hit": 8,

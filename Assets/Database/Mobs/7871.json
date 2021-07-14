@@ -1,7 +1,7 @@
 {
   "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
-  "_etag": "1732fa600aa47e7607352338d08e65f363600194",
-  "_id": "60cd28b2cfb7392d00907878",
+  "_etag": "7d3acdb232ecdef0511d8e98119149cdd99e15d9",
+  "_id": "60ebb3b1c1c55bf074a5ec12",
   "_links": {
     "collection": {
       "href": "monsters",
@@ -12,7 +12,7 @@
       "title": "home"
     },
     "self": {
-      "href": "monsters/60cd28b2cfb7392d00907878",
+      "href": "monsters/60ebb3b1c1c55bf074a5ec12",
       "title": "Monster"
     }
   },
@@ -30,7 +30,7 @@
     "demon"
   ],
   "category": [
-    "greater demon"
+    "greater demons"
   ],
   "combat_level": 104,
   "defence_crush": 0,
@@ -146,6 +146,15 @@
       "noted": 0,
       "quantity": "1",
       "rarity": "7.1519986231544404e-06",
+      "rolls": 1
+    },
+    {
+      "id": 25769,
+      "members": 1,
+      "name": "Vile ashes",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
       "rolls": 1
     },
     {
@@ -354,7 +363,7 @@
   "immune_poison": 0,
   "immune_venom": 0,
   "incomplete": 1,
-  "last_updated": "2021-06-18",
+  "last_updated": "2021-07-12",
   "magic_bonus": 0,
   "magic_level": 1,
   "max_hit": 10,

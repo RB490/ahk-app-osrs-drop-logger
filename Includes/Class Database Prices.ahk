@@ -13,7 +13,7 @@
             - using the weekly downloaded monsters-complete to create a list with the item names and id's <- added benefit this could only include items in drop tables
 */
 
-Class ClassDatabaseItems {
+Class ClassDatabasePrices {
     wikiApiPricesUrl := "https://prices.runescape.wiki/api/v1/osrs/latest"
 
     __New() {
@@ -65,11 +65,18 @@ Class ClassDatabaseItems {
             return false
         }
 
+        ; only store items that are inside drop tables
+        output := {}
+        dropList := DB_MOB.GetDropList()
+        for id in obj
+            If dropList.HasKey(id)
+                output[id] := obj[id]
+
         ; save to disk for future use
         FileDelete, % PATH_DATABASE_ITEMS
-        FileAppend, % json.Dump(obj,,2), % PATH_DATABASE_ITEMS
+        FileAppend, % json.Dump(output,,2), % PATH_DATABASE_ITEMS
 
         P.Destroy()
-        return obj
+        return output
     }
 }

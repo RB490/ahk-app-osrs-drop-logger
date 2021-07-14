@@ -1,7 +1,7 @@
 {
   "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
-  "_etag": "09ad8d44b49462a1e90a5c7fd70e366e0ac0afb9",
-  "_id": "60cd28afcfb7392d00907212",
+  "_etag": "198eb785d3e12dd5d14f9a2b905b7b91c2ffff77",
+  "_id": "60ebb3afc1c55bf074a5e5ac",
   "_links": {
     "collection": {
       "href": "monsters",
@@ -12,7 +12,7 @@
       "title": "home"
     },
     "self": {
-      "href": "monsters/60cd28afcfb7392d00907212",
+      "href": "monsters/60ebb3afc1c55bf074a5e5ac",
       "title": "Monster"
     }
   },
@@ -28,7 +28,7 @@
   ],
   "attributes": [],
   "category": [
-    "hill giant"
+    "hill giants"
   ],
   "combat_level": 28,
   "defence_crush": 0,
@@ -579,42 +579,6 @@
       "rolls": 1
     },
     {
-      "id": 19677,
-      "members": 1,
-      "name": "Ancient shard",
-      "noted": 0,
-      "quantity": "1",
-      "rarity": "0.0032258064516129032",
-      "rolls": 1
-    },
-    {
-      "id": 19679,
-      "members": 1,
-      "name": "Dark totem base",
-      "noted": 0,
-      "quantity": "1",
-      "rarity": "0.002150537634408602",
-      "rolls": 1
-    },
-    {
-      "id": 19681,
-      "members": 1,
-      "name": "Dark totem middle",
-      "noted": 0,
-      "quantity": "1",
-      "rarity": "0.002150537634408602",
-      "rolls": 1
-    },
-    {
-      "id": 19683,
-      "members": 1,
-      "name": "Dark totem top",
-      "noted": 0,
-      "quantity": "1",
-      "rarity": "0.002150537634408602",
-      "rolls": 1
-    },
-    {
       "id": 554,
       "members": 0,
       "name": "Fire rune",
@@ -649,7 +613,7 @@
   "immune_poison": 0,
   "immune_venom": 0,
   "incomplete": 1,
-  "last_updated": "2020-12-25",
+  "last_updated": "2021-07-12",
   "magic_bonus": 0,
   "magic_level": 1,
   "max_hit": 4,

@@ -275,3 +275,12 @@ feature/idea/wontfix -> instead of showing the entire mob list in the start gui 
 
 feature idea -> Update ClassMobDatabase._Update() in the background so it doesn't take 20 seconds
 	^ it's only once a week though
+
+feature -> speed up item db load time? would be able to do this with an item name:id list of the items
+	that are actually in drop tables and only storing necessary item prices
+		wiki api = instant
+		item db = 0.200
+		mob db = 0.04
+
+structure -> Rename items database
+	probably to DB_PRICES and prices database on disk

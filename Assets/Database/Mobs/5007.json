@@ -1,7 +1,7 @@
 {
   "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
-  "_etag": "7ba00f37ae05bc0b3df511756472c187672896e5",
-  "_id": "60cd28b1cfb7392d0090754e",
+  "_etag": "c61725a0e700bac18debc2f5ff8e3baa44b4df77",
+  "_id": "60ebb3b0c1c55bf074a5e8e8",
   "_links": {
     "collection": {
       "href": "monsters",
@@ -12,7 +12,7 @@
       "title": "home"
     },
     "self": {
-      "href": "monsters/60cd28b1cfb7392d0090754e",
+      "href": "monsters/60ebb3b0c1c55bf074a5e8e8",
       "title": "Monster"
     }
   },
@@ -38,6 +38,15 @@
   "defence_slash": -42,
   "defence_stab": -42,
   "drops": [
+    {
+      "id": 25766,
+      "members": 1,
+      "name": "Fiendish ashes",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
     {
       "id": 2311,
       "members": 0,
@@ -370,7 +379,7 @@
   "immune_poison": 0,
   "immune_venom": 0,
   "incomplete": 1,
-  "last_updated": "2021-06-18",
+  "last_updated": "2021-07-12",
   "magic_bonus": 0,
   "magic_level": 1,
   "max_hit": 1,

@@ -1,419 +1,437 @@
 {
-    "id": 7407,
-    "name": "Marble gargoyle",
-    "last_updated": "2021-02-04",
-    "incomplete": true,
-    "members": true,
-    "release_date": "2016-09-15",
-    "combat_level": 349,
-    "size": 3,
-    "hitpoints": 270,
-    "max_hit": 38,
-    "attack_type": [
-        "slash",
-        "ranged",
-        "magic"
-    ],
-    "attack_speed": 4,
-    "aggressive": false,
-    "poisonous": false,
-    "venomous": false,
-    "immune_poison": false,
-    "immune_venom": false,
-    "attributes": [],
-    "category": [
-        "gargoyle"
-    ],
-    "slayer_monster": true,
-    "slayer_level": 75,
-    "slayer_xp": 2768.0,
-    "slayer_masters": [
-        "vannaka",
-        "chaeldar",
-        "konar",
-        "nieve",
-        "duradel"
-    ],
-    "duplicate": false,
-    "examine": "Am I losing my marbles?",
-    "wiki_name": "Marble gargoyle",
-    "wiki_url": "https://oldschool.runescape.wiki/w/Marble_gargoyle",
-    "attack_level": 230,
-    "strength_level": 250,
-    "defence_level": 190,
-    "magic_level": 1,
-    "ranged_level": 220,
-    "attack_bonus": 0,
-    "strength_bonus": 0,
-    "attack_magic": 0,
-    "magic_bonus": 0,
-    "attack_ranged": 0,
-    "ranged_bonus": 20,
-    "defence_stab": 50,
-    "defence_slash": 50,
-    "defence_crush": 0,
-    "defence_magic": 50,
-    "defence_ranged": 50,
-    "drops": [
-        {
-            "id": 1623,
-            "name": "Uncut sapphire",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.009765625,
-            "rolls": 1
-        },
-        {
-            "id": 1621,
-            "name": "Uncut emerald",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0048828125,
-            "rolls": 1
-        },
-        {
-            "id": 1619,
-            "name": "Uncut ruby",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.00244140625,
-            "rolls": 1
-        },
-        {
-            "id": 1452,
-            "name": "Chaos talisman",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0009154558237637684,
-            "rolls": 1
-        },
-        {
-            "id": 1462,
-            "name": "Nature talisman",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0009154558237637684,
-            "rolls": 1
-        },
-        {
-            "id": 1617,
-            "name": "Uncut diamond",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0006103515625,
-            "rolls": 1
-        },
-        {
-            "id": 830,
-            "name": "Rune javelin",
-            "members": true,
-            "quantity": "5",
-            "noted": false,
-            "rarity": 0.00030517578125,
-            "rolls": 1
-        },
-        {
-            "id": 987,
-            "name": "Loop half of key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.00030517578125,
-            "rolls": 1
-        },
-        {
-            "id": 985,
-            "name": "Tooth half of key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.00030517578125,
-            "rolls": 1
-        },
-        {
-            "id": 1247,
-            "name": "Rune spear",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.9073486328125e-05,
-            "rolls": 1
-        },
-        {
-            "id": 2366,
-            "name": "Shield left half",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 9.5367431640625e-06,
-            "rolls": 1
-        },
-        {
-            "id": 1249,
-            "name": "Dragon spear",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 7.1519986231544404e-06,
-            "rolls": 1
-        },
-        {
-            "id": 4153,
-            "name": "Granite maul",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.00390625,
-            "rolls": 3
-        },
-        {
-            "id": 562,
-            "name": "Chaos rune",
-            "members": false,
-            "quantity": "30",
-            "noted": false,
-            "rarity": 0.0625,
-            "rolls": 3
-        },
-        {
-            "id": 554,
-            "name": "Fire rune",
-            "members": false,
-            "quantity": "150",
-            "noted": false,
-            "rarity": 0.046875,
-            "rolls": 3
-        },
-        {
-            "id": 560,
-            "name": "Death rune",
-            "members": false,
-            "quantity": "15",
-            "noted": false,
-            "rarity": 0.0390625,
-            "rolls": 3
-        },
-        {
-            "id": 444,
-            "name": "Gold ore",
-            "members": false,
-            "quantity": "10-20",
-            "noted": true,
-            "rarity": 0.078125,
-            "rolls": 3
-        },
-        {
-            "id": 7936,
-            "name": "Pure essence",
-            "members": false,
-            "quantity": "150",
-            "noted": true,
-            "rarity": 0.046875,
-            "rolls": 3
-        },
-        {
-            "id": 2353,
-            "name": "Steel bar",
-            "members": false,
-            "quantity": "15",
-            "noted": true,
-            "rarity": 0.046875,
-            "rolls": 3
-        },
-        {
-            "id": 2357,
-            "name": "Gold bar",
-            "members": false,
-            "quantity": "10-15",
-            "noted": true,
-            "rarity": 0.0234375,
-            "rolls": 3
-        },
-        {
-            "id": 2359,
-            "name": "Mithril bar",
-            "members": false,
-            "quantity": "15",
-            "noted": true,
-            "rarity": 0.015625,
-            "rolls": 3
-        },
-        {
-            "id": 451,
-            "name": "Runite ore",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.015625,
-            "rolls": 3
-        },
-        {
-            "id": 995,
-            "name": "Coins",
-            "members": false,
-            "quantity": "400-800",
-            "noted": false,
-            "rarity": 0.21875,
-            "rolls": 3
-        },
-        {
-            "id": 4101,
-            "name": "Mystic robe top (dark)",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.001953125,
-            "rolls": 3
-        },
-        {
-            "id": 995,
-            "name": "Coins",
-            "members": false,
-            "quantity": "500-1000",
-            "noted": false,
-            "rarity": 0.15625,
-            "rolls": 3
-        },
-        {
-            "id": 995,
-            "name": "Coins",
-            "members": false,
-            "quantity": "10000",
-            "noted": false,
-            "rarity": 0.0390625,
-            "rolls": 3
-        },
-        {
-            "id": 1073,
-            "name": "Adamant platelegs",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.03125,
-            "rolls": 3
-        },
-        {
-            "id": 2722,
-            "name": "Clue scroll (hard)",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.078125,
-            "rolls": 1
-        },
-        {
-            "id": 23083,
-            "name": "Brimstone key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.025,
-            "rolls": 1
-        },
-        {
-            "id": 21724,
-            "name": "Brittle key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.006666666666666667,
-            "rolls": 1
-        },
-        {
-            "id": 20730,
-            "name": "Mist battlestaff",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.006711409395973154,
-            "rolls": 1
-        },
-        {
-            "id": 20736,
-            "name": "Dust battlestaff",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.006711409395973154,
-            "rolls": 1
-        },
-        {
-            "id": 21270,
-            "name": "Eternal gem",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0019230769230769232,
-            "rolls": 1
-        },
-        {
-            "id": 20724,
-            "name": "Imbued heart",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0019230769230769232,
-            "rolls": 1
-        },
-        {
-            "id": 1163,
-            "name": "Rune full helm",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0234375,
-            "rolls": 3
-        },
-        {
-            "id": 1319,
-            "name": "Rune 2h sword",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.015625,
-            "rolls": 3
-        },
-        {
-            "id": 4129,
-            "name": "Adamant boots",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 3
-        },
-        {
-            "id": 1373,
-            "name": "Rune battleaxe",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 3
-        },
-        {
-            "id": 1079,
-            "name": "Rune platelegs",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 3
-        },
-        {
-            "id": 554,
-            "name": "Fire rune",
-            "members": false,
-            "quantity": "75",
-            "noted": false,
-            "rarity": 0.078125,
-            "rolls": 3
-        }
-    ]
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "5e030e1b0992427f9ab88d188a53f0eb28b8ffc1",
+  "_id": "60ebb3b1c1c55bf074a5eba0",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3b1c1c55bf074a5eba0",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 0,
+  "attack_bonus": 0,
+  "attack_level": 230,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "slash",
+    "ranged",
+    "magic"
+  ],
+  "attributes": [],
+  "category": [
+    "gargoyles"
+  ],
+  "combat_level": 349,
+  "defence_crush": 0,
+  "defence_level": 190,
+  "defence_magic": 50,
+  "defence_ranged": 50,
+  "defence_slash": 50,
+  "defence_stab": 50,
+  "drops": [
+    {
+      "id": 1623,
+      "members": 1,
+      "name": "Uncut sapphire",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.009765625",
+      "rolls": 1
+    },
+    {
+      "id": 1621,
+      "members": 1,
+      "name": "Uncut emerald",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0048828125",
+      "rolls": 1
+    },
+    {
+      "id": 1619,
+      "members": 1,
+      "name": "Uncut ruby",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00244140625",
+      "rolls": 1
+    },
+    {
+      "id": 1452,
+      "members": 1,
+      "name": "Chaos talisman",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0009154558237637684",
+      "rolls": 1
+    },
+    {
+      "id": 1462,
+      "members": 1,
+      "name": "Nature talisman",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0009154558237637684",
+      "rolls": 1
+    },
+    {
+      "id": 1617,
+      "members": 1,
+      "name": "Uncut diamond",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0006103515625",
+      "rolls": 1
+    },
+    {
+      "id": 830,
+      "members": 1,
+      "name": "Rune javelin",
+      "noted": 0,
+      "quantity": "5",
+      "rarity": "0.00030517578125",
+      "rolls": 1
+    },
+    {
+      "id": 987,
+      "members": 1,
+      "name": "Loop half of key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00030517578125",
+      "rolls": 1
+    },
+    {
+      "id": 985,
+      "members": 1,
+      "name": "Tooth half of key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00030517578125",
+      "rolls": 1
+    },
+    {
+      "id": 1247,
+      "members": 1,
+      "name": "Rune spear",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.9073486328125e-05",
+      "rolls": 1
+    },
+    {
+      "id": 2366,
+      "members": 1,
+      "name": "Shield left half",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "9.5367431640625e-06",
+      "rolls": 1
+    },
+    {
+      "id": 1249,
+      "members": 1,
+      "name": "Dragon spear",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "7.1519986231544404e-06",
+      "rolls": 1
+    },
+    {
+      "id": 4153,
+      "members": 1,
+      "name": "Granite maul",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00390625",
+      "rolls": 3
+    },
+    {
+      "id": 562,
+      "members": 0,
+      "name": "Chaos rune",
+      "noted": 0,
+      "quantity": "30",
+      "rarity": "0.0625",
+      "rolls": 3
+    },
+    {
+      "id": 554,
+      "members": 0,
+      "name": "Fire rune",
+      "noted": 0,
+      "quantity": "150",
+      "rarity": "0.046875",
+      "rolls": 3
+    },
+    {
+      "id": 560,
+      "members": 0,
+      "name": "Death rune",
+      "noted": 0,
+      "quantity": "15",
+      "rarity": "0.0390625",
+      "rolls": 3
+    },
+    {
+      "id": 444,
+      "members": 0,
+      "name": "Gold ore",
+      "noted": 1,
+      "quantity": "10-20",
+      "rarity": "0.078125",
+      "rolls": 3
+    },
+    {
+      "id": 7936,
+      "members": 0,
+      "name": "Pure essence",
+      "noted": 1,
+      "quantity": "150",
+      "rarity": "0.046875",
+      "rolls": 3
+    },
+    {
+      "id": 2353,
+      "members": 0,
+      "name": "Steel bar",
+      "noted": 1,
+      "quantity": "15",
+      "rarity": "0.046875",
+      "rolls": 3
+    },
+    {
+      "id": 2357,
+      "members": 0,
+      "name": "Gold bar",
+      "noted": 1,
+      "quantity": "10-15",
+      "rarity": "0.0234375",
+      "rolls": 3
+    },
+    {
+      "id": 2359,
+      "members": 0,
+      "name": "Mithril bar",
+      "noted": 1,
+      "quantity": "15",
+      "rarity": "0.015625",
+      "rolls": 3
+    },
+    {
+      "id": 451,
+      "members": 0,
+      "name": "Runite ore",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.015625",
+      "rolls": 3
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "400-800",
+      "rarity": "0.21875",
+      "rolls": 3
+    },
+    {
+      "id": 4101,
+      "members": 1,
+      "name": "Mystic robe top (dark)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.001953125",
+      "rolls": 3
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "500-1000",
+      "rarity": "0.15625",
+      "rolls": 3
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "10000",
+      "rarity": "0.0390625",
+      "rolls": 3
+    },
+    {
+      "id": 1073,
+      "members": 0,
+      "name": "Adamant platelegs",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.03125",
+      "rolls": 3
+    },
+    {
+      "id": 2722,
+      "members": 1,
+      "name": "Clue scroll (hard)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.078125",
+      "rolls": 1
+    },
+    {
+      "id": 23083,
+      "members": 1,
+      "name": "Brimstone key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.025",
+      "rolls": 1
+    },
+    {
+      "id": 21724,
+      "members": 1,
+      "name": "Brittle key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.006666666666666667",
+      "rolls": 1
+    },
+    {
+      "id": 20730,
+      "members": 1,
+      "name": "Mist battlestaff",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.006711409395973154",
+      "rolls": 1
+    },
+    {
+      "id": 20736,
+      "members": 1,
+      "name": "Dust battlestaff",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.006711409395973154",
+      "rolls": 1
+    },
+    {
+      "id": 21270,
+      "members": 1,
+      "name": "Eternal gem",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0019230769230769232",
+      "rolls": 1
+    },
+    {
+      "id": 20724,
+      "members": 1,
+      "name": "Imbued heart",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0019230769230769232",
+      "rolls": 1
+    },
+    {
+      "id": 1163,
+      "members": 0,
+      "name": "Rune full helm",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0234375",
+      "rolls": 3
+    },
+    {
+      "id": 1319,
+      "members": 0,
+      "name": "Rune 2h sword",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.015625",
+      "rolls": 3
+    },
+    {
+      "id": 4129,
+      "members": 1,
+      "name": "Adamant boots",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 3
+    },
+    {
+      "id": 1373,
+      "members": 0,
+      "name": "Rune battleaxe",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 3
+    },
+    {
+      "id": 1079,
+      "members": 0,
+      "name": "Rune platelegs",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 3
+    },
+    {
+      "id": 554,
+      "members": 0,
+      "name": "Fire rune",
+      "noted": 0,
+      "quantity": "75",
+      "rarity": "0.078125",
+      "rolls": 3
+    }
+  ],
+  "duplicate": 0,
+  "examine": "Am I losing my marbles?",
+  "hitpoints": 270,
+  "id": "7407",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 38,
+  "members": 1,
+  "name": "Marble gargoyle",
+  "poisonous": 0,
+  "ranged_bonus": 20,
+  "ranged_level": 220,
+  "release_date": "2016-09-15",
+  "size": 3,
+  "slayer_level": 75,
+  "slayer_masters": [
+    "vannaka",
+    "chaeldar",
+    "konar",
+    "nieve",
+    "duradel"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "2768.0",
+  "strength_bonus": 0,
+  "strength_level": 250,
+  "venomous": 0,
+  "wiki_name": "Marble gargoyle",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Marble_gargoyle"
 }

@@ -1,116 +1,134 @@
 {
-    "id": 5648,
-    "name": "Undead Lumberjack",
-    "last_updated": "2021-02-24",
-    "incomplete": true,
-    "members": true,
-    "release_date": "2007-03-13",
-    "combat_level": 30,
-    "size": 1,
-    "hitpoints": 10,
-    "max_hit": 2,
-    "attack_type": [
-        "crush"
-    ],
-    "attack_speed": 4,
-    "aggressive": true,
-    "poisonous": false,
-    "venomous": false,
-    "immune_poison": false,
-    "immune_venom": false,
-    "attributes": [
-        "undead"
-    ],
-    "category": [
-        "zombie"
-    ],
-    "slayer_monster": false,
-    "slayer_level": null,
-    "slayer_xp": 0.0,
-    "slayer_masters": [],
-    "duplicate": false,
-    "examine": "He is one, but he's not alright.",
-    "wiki_name": "Undead Lumberjack (Level 30)",
-    "wiki_url": "https://oldschool.runescape.wiki/w/Undead_Lumberjack#Level_30",
-    "attack_level": 73,
-    "strength_level": 6,
-    "defence_level": 10,
-    "magic_level": 1,
-    "ranged_level": 1,
-    "attack_bonus": 0,
-    "strength_bonus": 0,
-    "attack_magic": 0,
-    "magic_bonus": 0,
-    "attack_ranged": 0,
-    "ranged_bonus": 0,
-    "defence_stab": 0,
-    "defence_slash": 0,
-    "defence_crush": 0,
-    "defence_magic": 0,
-    "defence_ranged": 0,
-    "drops": [
-        {
-            "id": 526,
-            "name": "Bones",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        },
-        {
-            "id": 960,
-            "name": "Plank",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        },
-        {
-            "id": 10939,
-            "name": "Lumberjack top",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.25,
-            "rolls": 1
-        },
-        {
-            "id": 10940,
-            "name": "Lumberjack legs",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.25,
-            "rolls": 1
-        },
-        {
-            "id": 10941,
-            "name": "Lumberjack hat",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.25,
-            "rolls": 1
-        },
-        {
-            "id": 10933,
-            "name": "Lumberjack boots",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.25,
-            "rolls": 1
-        },
-        {
-            "id": 6807,
-            "name": "Zombie champion scroll",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0002,
-            "rolls": 1
-        }
-    ]
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "43d538a7ae5449ed3eb59eae8c0bfb10fbe61fdc",
+  "_id": "60ebb3b0c1c55bf074a5e96f",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3b0c1c55bf074a5e96f",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 0,
+  "attack_level": 73,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "crush"
+  ],
+  "attributes": [
+    "undead"
+  ],
+  "category": [
+    "zombies"
+  ],
+  "combat_level": 30,
+  "defence_crush": 0,
+  "defence_level": 10,
+  "defence_magic": 0,
+  "defence_ranged": 0,
+  "defence_slash": 0,
+  "defence_stab": 0,
+  "drops": [
+    {
+      "id": 526,
+      "members": 0,
+      "name": "Bones",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 960,
+      "members": 0,
+      "name": "Plank",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 10939,
+      "members": 1,
+      "name": "Lumberjack top",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.25",
+      "rolls": 1
+    },
+    {
+      "id": 10940,
+      "members": 1,
+      "name": "Lumberjack legs",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.25",
+      "rolls": 1
+    },
+    {
+      "id": 10941,
+      "members": 1,
+      "name": "Lumberjack hat",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.25",
+      "rolls": 1
+    },
+    {
+      "id": 10933,
+      "members": 1,
+      "name": "Lumberjack boots",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.25",
+      "rolls": 1
+    },
+    {
+      "id": 6807,
+      "members": 1,
+      "name": "Zombie champion scroll",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0002",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "He is one, but he's not alright.",
+  "hitpoints": 10,
+  "id": "5648",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 2,
+  "members": 1,
+  "name": "Undead Lumberjack",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2007-03-13",
+  "size": 1,
+  "slayer_level": "",
+  "slayer_masters": [],
+  "slayer_monster": 0,
+  "slayer_xp": "0.0",
+  "strength_bonus": 0,
+  "strength_level": 6,
+  "venomous": 0,
+  "wiki_name": "Undead Lumberjack (Level 30)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Undead_Lumberjack#Level_30"
 }

@@ -1,82 +1,100 @@
 {
-    "id": 5353,
-    "name": "Nazastarool",
-    "last_updated": "2020-12-25",
-    "incomplete": true,
-    "members": true,
-    "release_date": "2003-01-27",
-    "combat_level": 91,
-    "size": 2,
-    "hitpoints": 70,
-    "max_hit": 9,
-    "attack_type": [
-        "slash"
-    ],
-    "attack_speed": 4,
-    "aggressive": true,
-    "poisonous": false,
-    "venomous": false,
-    "immune_poison": false,
-    "immune_venom": false,
-    "attributes": [],
-    "category": [
-        "zombie"
-    ],
-    "slayer_monster": true,
-    "slayer_level": 1,
-    "slayer_xp": 70.0,
-    "slayer_masters": [
-        "turael",
-        "spria",
-        "mazchna"
-    ],
-    "duplicate": false,
-    "examine": "A giant zombie of huge strength and devastating power.",
-    "wiki_name": "Nazastarool (Zombie)",
-    "wiki_url": "https://oldschool.runescape.wiki/w/Nazastarool#Zombie",
-    "attack_level": 85,
-    "strength_level": 80,
-    "defence_level": 80,
-    "magic_level": 0,
-    "ranged_level": 0,
-    "attack_bonus": 0,
-    "strength_bonus": 0,
-    "attack_magic": 0,
-    "magic_bonus": 0,
-    "attack_ranged": 0,
-    "ranged_bonus": 0,
-    "defence_stab": 0,
-    "defence_slash": 0,
-    "defence_crush": 0,
-    "defence_magic": 0,
-    "defence_ranged": 0,
-    "drops": [
-        {
-            "id": 609,
-            "name": "Rashiliyia corpse",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        },
-        {
-            "id": 6806,
-            "name": "Skeleton champion scroll",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0002,
-            "rolls": 1
-        },
-        {
-            "id": 6807,
-            "name": "Zombie champion scroll",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0002,
-            "rolls": 1
-        }
-    ]
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "8e0c82987019fca8098dde27cb0dd9daebf838f8",
+  "_id": "60ebb3b0c1c55bf074a5e945",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3b0c1c55bf074a5e945",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 0,
+  "attack_level": 85,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "slash"
+  ],
+  "attributes": [],
+  "category": [
+    "zombies"
+  ],
+  "combat_level": 91,
+  "defence_crush": 0,
+  "defence_level": 80,
+  "defence_magic": 0,
+  "defence_ranged": 0,
+  "defence_slash": 0,
+  "defence_stab": 0,
+  "drops": [
+    {
+      "id": 609,
+      "members": 1,
+      "name": "Rashiliyia corpse",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 6806,
+      "members": 1,
+      "name": "Skeleton champion scroll",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0002",
+      "rolls": 1
+    },
+    {
+      "id": 6807,
+      "members": 1,
+      "name": "Zombie champion scroll",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0002",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "A giant zombie of huge strength and devastating power.",
+  "hitpoints": 70,
+  "id": "5353",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 0,
+  "max_hit": 9,
+  "members": 1,
+  "name": "Nazastarool",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 0,
+  "release_date": "2003-01-27",
+  "size": 2,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "turael",
+    "spria",
+    "mazchna"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "70.0",
+  "strength_bonus": 0,
+  "strength_level": 80,
+  "venomous": 0,
+  "wiki_name": "Nazastarool (Zombie)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Nazastarool#Zombie"
 }

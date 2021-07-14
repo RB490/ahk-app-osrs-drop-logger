@@ -1,64 +1,82 @@
 {
-    "id": 1675,
-    "name": "Karil the Tainted",
-    "last_updated": "2020-12-25",
-    "incomplete": true,
-    "members": true,
-    "release_date": "2005-05-09",
-    "combat_level": 98,
-    "size": 1,
-    "hitpoints": 100,
-    "max_hit": 20,
-    "attack_type": [
-        "ranged"
-    ],
-    "attack_speed": 4,
-    "aggressive": true,
-    "poisonous": false,
-    "venomous": false,
-    "immune_poison": false,
-    "immune_venom": false,
-    "attributes": [],
-    "category": [
-        "boss"
-    ],
-    "slayer_monster": true,
-    "slayer_level": 1,
-    "slayer_xp": 100.0,
-    "slayer_masters": [
-        "konar",
-        "nieve",
-        "duradel"
-    ],
-    "duplicate": false,
-    "examine": "A vengeful spirit corrupted by dark magic.",
-    "wiki_name": "Karil the Tainted",
-    "wiki_url": "https://oldschool.runescape.wiki/w/Karil_the_Tainted",
-    "attack_level": 1,
-    "strength_level": 1,
-    "defence_level": 100,
-    "magic_level": 1,
-    "ranged_level": 100,
-    "attack_bonus": 0,
-    "strength_bonus": 0,
-    "attack_magic": -26,
-    "magic_bonus": 0,
-    "attack_ranged": 134,
-    "ranged_bonus": 55,
-    "defence_stab": 79,
-    "defence_slash": 71,
-    "defence_crush": 90,
-    "defence_magic": 106,
-    "defence_ranged": 100,
-    "drops": [
-        {
-            "id": 23083,
-            "name": "Brimstone key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.01,
-            "rolls": 1
-        }
-    ]
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "edad29fbce5d0f1ac11ece6937554094b30976ba",
+  "_id": "60ebb3afc1c55bf074a5e506",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3afc1c55bf074a5e506",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 0,
+  "attack_level": 1,
+  "attack_magic": -26,
+  "attack_ranged": 134,
+  "attack_speed": 4,
+  "attack_type": [
+    "ranged"
+  ],
+  "attributes": [],
+  "category": [
+    "bosses"
+  ],
+  "combat_level": 98,
+  "defence_crush": 90,
+  "defence_level": 100,
+  "defence_magic": 106,
+  "defence_ranged": 100,
+  "defence_slash": 71,
+  "defence_stab": 79,
+  "drops": [
+    {
+      "id": 23083,
+      "members": 1,
+      "name": "Brimstone key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.01",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "A vengeful spirit corrupted by dark magic.",
+  "hitpoints": 100,
+  "id": "1675",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 20,
+  "members": 1,
+  "name": "Karil the Tainted",
+  "poisonous": 0,
+  "ranged_bonus": 55,
+  "ranged_level": 100,
+  "release_date": "2005-05-09",
+  "size": 1,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "konar",
+    "nieve",
+    "duradel"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "100.0",
+  "strength_bonus": 0,
+  "strength_level": 1,
+  "venomous": 0,
+  "wiki_name": "Karil the Tainted",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Karil_the_Tainted"
 }

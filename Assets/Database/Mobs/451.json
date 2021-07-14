@@ -1,7 +1,7 @@
 {
   "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
-  "_etag": "9a1ce54e5153d04b2d4189467f571b45f73d12a4",
-  "_id": "60cd28aecfb7392d00906fae",
+  "_etag": "0a3ef31cb20d83aba61cb67408c95b943fa106ab",
+  "_id": "60ebb3aec1c55bf074a5e348",
   "_links": {
     "collection": {
       "href": "monsters",
@@ -12,7 +12,7 @@
       "title": "home"
     },
     "self": {
-      "href": "monsters/60cd28aecfb7392d00906fae",
+      "href": "monsters/60ebb3aec1c55bf074a5e348",
       "title": "Monster"
     }
   },
@@ -30,7 +30,7 @@
     "undead"
   ],
   "category": [
-    "crawling hand"
+    "crawling hands"
   ],
   "combat_level": 8,
   "defence_crush": 0,
@@ -264,7 +264,7 @@
   "immune_poison": 0,
   "immune_venom": 0,
   "incomplete": 0,
-  "last_updated": "2021-04-24",
+  "last_updated": "2021-07-12",
   "magic_bonus": 0,
   "magic_level": 1,
   "max_hit": 2,

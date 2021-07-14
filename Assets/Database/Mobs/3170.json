@@ -1,7 +1,7 @@
 {
   "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
-  "_etag": "bee3ff3678641130b5233a329a7041b7024c6efe",
-  "_id": "60cd28b0cfb7392d00907389",
+  "_etag": "1606ea74c6bf595e5dbfa84f0d26bd632a07cf99",
+  "_id": "60ebb3afc1c55bf074a5e723",
   "_links": {
     "collection": {
       "href": "monsters",
@@ -12,7 +12,7 @@
       "title": "home"
     },
     "self": {
-      "href": "monsters/60cd28b0cfb7392d00907389",
+      "href": "monsters/60ebb3afc1c55bf074a5e723",
       "title": "Monster"
     }
   },
@@ -28,7 +28,7 @@
   ],
   "attributes": [],
   "category": [
-    "aviansie"
+    "aviansies"
   ],
   "combat_level": 79,
   "defence_crush": 0,
@@ -460,7 +460,7 @@
   "immune_poison": 0,
   "immune_venom": 0,
   "incomplete": 1,
-  "last_updated": "2020-12-25",
+  "last_updated": "2021-07-12",
   "magic_bonus": 0,
   "magic_level": 1,
   "max_hit": 9,

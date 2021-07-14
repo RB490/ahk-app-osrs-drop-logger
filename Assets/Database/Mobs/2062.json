@@ -1,72 +1,90 @@
 {
-    "id": 2062,
-    "name": "Oomlie bird",
-    "last_updated": "2020-12-25",
-    "incomplete": true,
-    "members": true,
-    "release_date": "2003-08-20",
-    "combat_level": 46,
-    "size": 1,
-    "hitpoints": 40,
-    "max_hit": 5,
-    "attack_type": [
-        "stab"
-    ],
-    "attack_speed": 4,
-    "aggressive": false,
-    "poisonous": false,
-    "venomous": false,
-    "immune_poison": false,
-    "immune_venom": false,
-    "attributes": [],
-    "category": [
-        "bird"
-    ],
-    "slayer_monster": true,
-    "slayer_level": 1,
-    "slayer_xp": 40.0,
-    "slayer_masters": [
-        "turael",
-        "spria"
-    ],
-    "duplicate": false,
-    "examine": "A jungle version of the chicken, but more vicious.",
-    "wiki_name": "Oomlie bird",
-    "wiki_url": "https://oldschool.runescape.wiki/w/Oomlie_bird",
-    "attack_level": 40,
-    "strength_level": 40,
-    "defence_level": 40,
-    "magic_level": 1,
-    "ranged_level": 1,
-    "attack_bonus": 0,
-    "strength_bonus": 0,
-    "attack_magic": 0,
-    "magic_bonus": 0,
-    "attack_ranged": 0,
-    "ranged_bonus": 0,
-    "defence_stab": 0,
-    "defence_slash": 0,
-    "defence_crush": 0,
-    "defence_magic": 0,
-    "defence_ranged": 0,
-    "drops": [
-        {
-            "id": 526,
-            "name": "Bones",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        },
-        {
-            "id": 2337,
-            "name": "Raw oomlie",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        }
-    ]
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "71156311f0ffac1aa8c067dd2a980ad9ab321b52",
+  "_id": "60ebb3afc1c55bf074a5e58b",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3afc1c55bf074a5e58b",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 0,
+  "attack_bonus": 0,
+  "attack_level": 40,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "stab"
+  ],
+  "attributes": [],
+  "category": [
+    "birds"
+  ],
+  "combat_level": 46,
+  "defence_crush": 0,
+  "defence_level": 40,
+  "defence_magic": 0,
+  "defence_ranged": 0,
+  "defence_slash": 0,
+  "defence_stab": 0,
+  "drops": [
+    {
+      "id": 526,
+      "members": 0,
+      "name": "Bones",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 2337,
+      "members": 1,
+      "name": "Raw oomlie",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "A jungle version of the chicken, but more vicious.",
+  "hitpoints": 40,
+  "id": "2062",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 5,
+  "members": 1,
+  "name": "Oomlie bird",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2003-08-20",
+  "size": 1,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "turael",
+    "spria"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "40.0",
+  "strength_bonus": 0,
+  "strength_level": 40,
+  "venomous": 0,
+  "wiki_name": "Oomlie bird",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Oomlie_bird"
 }

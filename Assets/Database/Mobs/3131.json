@@ -1,219 +1,246 @@
 {
-    "id": 3131,
-    "name": "Zakl'n Gritch",
-    "last_updated": "2021-06-18",
-    "incomplete": true,
-    "members": true,
-    "release_date": "2013-10-17",
-    "combat_level": 142,
-    "size": 2,
-    "hitpoints": 150,
-    "max_hit": 21,
-    "attack_type": [
-        "ranged"
-    ],
-    "attack_speed": 5,
-    "aggressive": true,
-    "poisonous": false,
-    "venomous": false,
-    "immune_poison": false,
-    "immune_venom": false,
-    "attributes": [
-        "demon"
-    ],
-    "category": [
-        "lesser demon"
-    ],
-    "slayer_monster": true,
-    "slayer_level": 1,
-    "slayer_xp": 150.0,
-    "slayer_masters": [
-        "vannaka",
-        "chaeldar",
-        "nieve"
-    ],
-    "duplicate": false,
-    "examine": "Scourge of Light.",
-    "wiki_name": "Zakl'n Gritch",
-    "wiki_url": "https://oldschool.runescape.wiki/w/Zakl'n_Gritch",
-    "attack_level": 83,
-    "strength_level": 76,
-    "defence_level": 127,
-    "magic_level": 50,
-    "ranged_level": 150,
-    "attack_bonus": 0,
-    "strength_bonus": 0,
-    "attack_magic": 0,
-    "magic_bonus": 0,
-    "attack_ranged": 20,
-    "ranged_bonus": 20,
-    "defence_stab": 0,
-    "defence_slash": 0,
-    "defence_crush": 0,
-    "defence_magic": -5,
-    "defence_ranged": 0,
-    "drops": [
-        {
-            "id": 560,
-            "name": "Death rune",
-            "members": false,
-            "quantity": "5-10",
-            "noted": false,
-            "rarity": 0.06299212598425197,
-            "rolls": 1
-        },
-        {
-            "id": 565,
-            "name": "Blood rune",
-            "members": true,
-            "quantity": "5-10",
-            "noted": false,
-            "rarity": 0.06299212598425197,
-            "rolls": 1
-        },
-        {
-            "id": 995,
-            "name": "Coins",
-            "members": false,
-            "quantity": "1300-1400",
-            "noted": false,
-            "rarity": 0.5196850393700787,
-            "rolls": 1
-        },
-        {
-            "id": 385,
-            "name": "Shark",
-            "members": true,
-            "quantity": "3",
-            "noted": false,
-            "rarity": 0.06299212598425197,
-            "rolls": 1
-        },
-        {
-            "id": 7060,
-            "name": "Tuna potato",
-            "members": true,
-            "quantity": "2",
-            "noted": false,
-            "rarity": 0.06299212598425197,
-            "rolls": 1
-        },
-        {
-            "id": 245,
-            "name": "Wine of zamorak",
-            "members": false,
-            "quantity": "5-10",
-            "noted": true,
-            "rarity": 0.06299212598425197,
-            "rolls": 1
-        },
-        {
-            "id": 145,
-            "name": "Super attack(3)",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.015748031496062992,
-            "rolls": 1
-        },
-        {
-            "id": 157,
-            "name": "Super strength(3)",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.015748031496062992,
-            "rolls": 1
-        },
-        {
-            "id": 2722,
-            "name": "Clue scroll (hard)",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 6805,
-            "name": "Lesser demon champion scroll",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0002,
-            "rolls": 1
-        },
-        {
-            "id": 11824,
-            "name": "Zamorakian spear",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.000186000372000744,
-            "rolls": 1
-        },
-        {
-            "id": 995,
-            "name": "Coins",
-            "members": false,
-            "quantity": "1300-1400",
-            "noted": false,
-            "rarity": 0.007688015376030752,
-            "rolls": 1
-        },
-        {
-            "id": 11818,
-            "name": "Godsword shard 1",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0006561679790026247,
-            "rolls": 1
-        },
-        {
-            "id": 11820,
-            "name": "Godsword shard 2",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0006561679790026247,
-            "rolls": 1
-        },
-        {
-            "id": 11822,
-            "name": "Godsword shard 3",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0006561679790026247,
-            "rolls": 1
-        },
-        {
-            "id": 995,
-            "name": "Coins",
-            "members": false,
-            "quantity": "1300-1400",
-            "noted": false,
-            "rarity": 0.005905511811023622,
-            "rolls": 1
-        },
-        {
-            "id": 886,
-            "name": "Steel arrow",
-            "members": false,
-            "quantity": "95-100",
-            "noted": false,
-            "rarity": 0.05511811023622047,
-            "rolls": 1
-        },
-        {
-            "id": 808,
-            "name": "Steel dart",
-            "members": true,
-            "quantity": "95-100",
-            "noted": false,
-            "rarity": 0.06299212598425197,
-            "rolls": 1
-        }
-    ]
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "abb89c74841dd7e8fa47dce6b576a066a66a09ff",
+  "_id": "60ebb3afc1c55bf074a5e70d",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3afc1c55bf074a5e70d",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 0,
+  "attack_level": 83,
+  "attack_magic": 0,
+  "attack_ranged": 20,
+  "attack_speed": 5,
+  "attack_type": [
+    "ranged"
+  ],
+  "attributes": [
+    "demon"
+  ],
+  "category": [
+    "lesser demons"
+  ],
+  "combat_level": 142,
+  "defence_crush": 0,
+  "defence_level": 127,
+  "defence_magic": -5,
+  "defence_ranged": 0,
+  "defence_slash": 0,
+  "defence_stab": 0,
+  "drops": [
+    {
+      "id": 25772,
+      "members": 1,
+      "name": "Malicious ashes",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 560,
+      "members": 0,
+      "name": "Death rune",
+      "noted": 0,
+      "quantity": "5-10",
+      "rarity": "0.06299212598425197",
+      "rolls": 1
+    },
+    {
+      "id": 565,
+      "members": 1,
+      "name": "Blood rune",
+      "noted": 0,
+      "quantity": "5-10",
+      "rarity": "0.06299212598425197",
+      "rolls": 1
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "1300-1400",
+      "rarity": "0.5196850393700787",
+      "rolls": 1
+    },
+    {
+      "id": 385,
+      "members": 1,
+      "name": "Shark",
+      "noted": 0,
+      "quantity": "3",
+      "rarity": "0.06299212598425197",
+      "rolls": 1
+    },
+    {
+      "id": 7060,
+      "members": 1,
+      "name": "Tuna potato",
+      "noted": 0,
+      "quantity": "2",
+      "rarity": "0.06299212598425197",
+      "rolls": 1
+    },
+    {
+      "id": 245,
+      "members": 0,
+      "name": "Wine of zamorak",
+      "noted": 1,
+      "quantity": "5-10",
+      "rarity": "0.06299212598425197",
+      "rolls": 1
+    },
+    {
+      "id": 145,
+      "members": 1,
+      "name": "Super attack(3)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.015748031496062992",
+      "rolls": 1
+    },
+    {
+      "id": 157,
+      "members": 1,
+      "name": "Super strength(3)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.015748031496062992",
+      "rolls": 1
+    },
+    {
+      "id": 2722,
+      "members": 1,
+      "name": "Clue scroll (hard)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 6805,
+      "members": 1,
+      "name": "Lesser demon champion scroll",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0002",
+      "rolls": 1
+    },
+    {
+      "id": 11824,
+      "members": 1,
+      "name": "Zamorakian spear",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.000186000372000744",
+      "rolls": 1
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "1300-1400",
+      "rarity": "0.007688015376030752",
+      "rolls": 1
+    },
+    {
+      "id": 11818,
+      "members": 1,
+      "name": "Godsword shard 1",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0006561679790026247",
+      "rolls": 1
+    },
+    {
+      "id": 11820,
+      "members": 1,
+      "name": "Godsword shard 2",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0006561679790026247",
+      "rolls": 1
+    },
+    {
+      "id": 11822,
+      "members": 1,
+      "name": "Godsword shard 3",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0006561679790026247",
+      "rolls": 1
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "1300-1400",
+      "rarity": "0.005905511811023622",
+      "rolls": 1
+    },
+    {
+      "id": 886,
+      "members": 0,
+      "name": "Steel arrow",
+      "noted": 0,
+      "quantity": "95-100",
+      "rarity": "0.05511811023622047",
+      "rolls": 1
+    },
+    {
+      "id": 808,
+      "members": 1,
+      "name": "Steel dart",
+      "noted": 0,
+      "quantity": "95-100",
+      "rarity": "0.06299212598425197",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "Scourge of Light.",
+  "hitpoints": 150,
+  "id": "3131",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 50,
+  "max_hit": 21,
+  "members": 1,
+  "name": "Zakl'n Gritch",
+  "poisonous": 0,
+  "ranged_bonus": 20,
+  "ranged_level": 150,
+  "release_date": "2013-10-17",
+  "size": 2,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "vannaka",
+    "chaeldar",
+    "nieve"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "150.0",
+  "strength_bonus": 0,
+  "strength_level": 76,
+  "venomous": 0,
+  "wiki_name": "Zakl'n Gritch",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Zakl'n_Gritch"
 }

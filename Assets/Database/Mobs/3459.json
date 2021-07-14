@@ -1,67 +1,85 @@
 {
-    "id": 3459,
-    "name": "Dessous",
-    "last_updated": "2020-12-25",
-    "incomplete": true,
-    "members": true,
-    "release_date": "2005-04-18",
-    "combat_level": 139,
-    "size": 1,
-    "hitpoints": 200,
-    "max_hit": 19,
-    "attack_type": [
-        "crush",
-        "ranged",
-        "magic"
-    ],
-    "attack_speed": 3,
-    "aggressive": true,
-    "poisonous": false,
-    "venomous": false,
-    "immune_poison": true,
-    "immune_venom": true,
-    "attributes": [
-        "vampyre"
-    ],
-    "category": [
-        "vampyre"
-    ],
-    "slayer_monster": true,
-    "slayer_level": 1,
-    "slayer_xp": 220.0,
-    "slayer_masters": [
-        "mazchna",
-        "vannaka"
-    ],
-    "duplicate": false,
-    "examine": "Vampyre warrior of Zamorak.",
-    "wiki_name": "Dessous (Normal)",
-    "wiki_url": "https://oldschool.runescape.wiki/w/Dessous#Normal",
-    "attack_level": 99,
-    "strength_level": 99,
-    "defence_level": 99,
-    "magic_level": 1,
-    "ranged_level": 1,
-    "attack_bonus": 50,
-    "strength_bonus": 50,
-    "attack_magic": 0,
-    "magic_bonus": 0,
-    "attack_ranged": 0,
-    "ranged_bonus": 0,
-    "defence_stab": 10,
-    "defence_slash": 150,
-    "defence_crush": 150,
-    "defence_magic": 0,
-    "defence_ranged": 0,
-    "drops": [
-        {
-            "id": 3325,
-            "name": "Vampyre dust",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        }
-    ]
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "4e1eda4e21711eff6b988ef93531b8f5585a17e5",
+  "_id": "60ebb3b0c1c55bf074a5e785",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3b0c1c55bf074a5e785",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 50,
+  "attack_level": 99,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 3,
+  "attack_type": [
+    "crush",
+    "ranged",
+    "magic"
+  ],
+  "attributes": [
+    "vampyre"
+  ],
+  "category": [
+    "vampyres"
+  ],
+  "combat_level": 139,
+  "defence_crush": 150,
+  "defence_level": 99,
+  "defence_magic": 0,
+  "defence_ranged": 0,
+  "defence_slash": 150,
+  "defence_stab": 10,
+  "drops": [
+    {
+      "id": 3325,
+      "members": 1,
+      "name": "Vampyre dust",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "Vampyre warrior of Zamorak.",
+  "hitpoints": 200,
+  "id": "3459",
+  "immune_poison": 1,
+  "immune_venom": 1,
+  "incomplete": 1,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 19,
+  "members": 1,
+  "name": "Dessous",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2005-04-18",
+  "size": 1,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "mazchna",
+    "vannaka"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "220.0",
+  "strength_bonus": 50,
+  "strength_level": 99,
+  "venomous": 0,
+  "wiki_name": "Dessous (Normal)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Dessous#Normal"
 }

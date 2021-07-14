@@ -1,99 +1,117 @@
 {
-    "id": 1173,
-    "name": "Chicken",
-    "last_updated": "2021-03-25",
-    "incomplete": true,
-    "members": false,
-    "release_date": "2001-01-04",
-    "combat_level": 1,
-    "size": 1,
-    "hitpoints": 3,
-    "max_hit": 0,
-    "attack_type": [
-        "stab"
-    ],
-    "attack_speed": 4,
-    "aggressive": false,
-    "poisonous": false,
-    "venomous": false,
-    "immune_poison": false,
-    "immune_venom": false,
-    "attributes": [],
-    "category": [
-        "bird"
-    ],
-    "slayer_monster": true,
-    "slayer_level": 1,
-    "slayer_xp": 3.0,
-    "slayer_masters": [
-        "turael",
-        "spria"
-    ],
-    "duplicate": false,
-    "examine": "Yep. Definitely a chicken.",
-    "wiki_name": "Chicken (Normal)",
-    "wiki_url": "https://oldschool.runescape.wiki/w/Chicken#Normal",
-    "attack_level": 1,
-    "strength_level": 1,
-    "defence_level": 1,
-    "magic_level": 1,
-    "ranged_level": 1,
-    "attack_bonus": -47,
-    "strength_bonus": -42,
-    "attack_magic": 0,
-    "magic_bonus": 0,
-    "attack_ranged": 0,
-    "ranged_bonus": 0,
-    "defence_stab": -42,
-    "defence_slash": -42,
-    "defence_crush": -42,
-    "defence_magic": -42,
-    "defence_ranged": -42,
-    "drops": [
-        {
-            "id": 526,
-            "name": "Bones",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        },
-        {
-            "id": 2138,
-            "name": "Raw chicken",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        },
-        {
-            "id": 314,
-            "name": "Feather",
-            "members": false,
-            "quantity": "5",
-            "noted": false,
-            "rarity": 0.5,
-            "rolls": 1
-        },
-        {
-            "id": 314,
-            "name": "Feather",
-            "members": false,
-            "quantity": "15",
-            "noted": false,
-            "rarity": 0.25,
-            "rolls": 1
-        },
-        {
-            "id": 23182,
-            "name": "Clue scroll (beginner)",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0033333333333333335,
-            "rolls": 1
-        }
-    ]
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "135a4a46b5a159d77b9ce31a518066f3df83f027",
+  "_id": "60ebb3aec1c55bf074a5e496",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3aec1c55bf074a5e496",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 0,
+  "attack_bonus": -47,
+  "attack_level": 1,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "stab"
+  ],
+  "attributes": [],
+  "category": [
+    "birds"
+  ],
+  "combat_level": 1,
+  "defence_crush": -42,
+  "defence_level": 1,
+  "defence_magic": -42,
+  "defence_ranged": -42,
+  "defence_slash": -42,
+  "defence_stab": -42,
+  "drops": [
+    {
+      "id": 526,
+      "members": 0,
+      "name": "Bones",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 2138,
+      "members": 0,
+      "name": "Raw chicken",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 314,
+      "members": 0,
+      "name": "Feather",
+      "noted": 0,
+      "quantity": "5",
+      "rarity": "0.5",
+      "rolls": 1
+    },
+    {
+      "id": 314,
+      "members": 0,
+      "name": "Feather",
+      "noted": 0,
+      "quantity": "15",
+      "rarity": "0.25",
+      "rolls": 1
+    },
+    {
+      "id": 23182,
+      "members": 0,
+      "name": "Clue scroll (beginner)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0033333333333333335",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "Yep. Definitely a chicken.",
+  "hitpoints": 3,
+  "id": "1173",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 0,
+  "members": 0,
+  "name": "Chicken",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2001-01-04",
+  "size": 1,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "turael",
+    "spria"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "3.0",
+  "strength_bonus": -42,
+  "strength_level": 1,
+  "venomous": 0,
+  "wiki_name": "Chicken (Normal)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Chicken#Normal"
 }

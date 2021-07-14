@@ -1,352 +1,370 @@
 {
-    "id": 421,
-    "name": "Rockslug",
-    "last_updated": "2020-12-25",
-    "incomplete": true,
-    "members": true,
-    "release_date": "2005-01-26",
-    "combat_level": 29,
-    "size": 1,
-    "hitpoints": 27,
-    "max_hit": 4,
-    "attack_type": [
-        "melee"
-    ],
-    "attack_speed": 4,
-    "aggressive": false,
-    "poisonous": false,
-    "venomous": false,
-    "immune_poison": false,
-    "immune_venom": false,
-    "attributes": [],
-    "category": [
-        "rockslug"
-    ],
-    "slayer_monster": true,
-    "slayer_level": 20,
-    "slayer_xp": 27.0,
-    "slayer_masters": [
-        "mazchna",
-        "vannaka",
-        "chaeldar"
-    ],
-    "duplicate": false,
-    "examine": "The slime of evil.",
-    "wiki_name": "Rockslug",
-    "wiki_url": "https://oldschool.runescape.wiki/w/Rockslug",
-    "attack_level": 22,
-    "strength_level": 27,
-    "defence_level": 27,
-    "magic_level": 1,
-    "ranged_level": 1,
-    "attack_bonus": 0,
-    "strength_bonus": 0,
-    "attack_magic": 0,
-    "magic_bonus": 0,
-    "attack_ranged": 0,
-    "ranged_bonus": 0,
-    "defence_stab": 0,
-    "defence_slash": 0,
-    "defence_crush": 0,
-    "defence_magic": 0,
-    "defence_ranged": 0,
-    "drops": [
-        {
-            "id": 1623,
-            "name": "Uncut sapphire",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.01171875,
-            "rolls": 1
-        },
-        {
-            "id": 1621,
-            "name": "Uncut emerald",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.005859375,
-            "rolls": 1
-        },
-        {
-            "id": 1619,
-            "name": "Uncut ruby",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0029296875,
-            "rolls": 1
-        },
-        {
-            "id": 1452,
-            "name": "Chaos talisman",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.001098546988516522,
-            "rolls": 1
-        },
-        {
-            "id": 1462,
-            "name": "Nature talisman",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.001098546988516522,
-            "rolls": 1
-        },
-        {
-            "id": 1617,
-            "name": "Uncut diamond",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.000732421875,
-            "rolls": 1
-        },
-        {
-            "id": 830,
-            "name": "Rune javelin",
-            "members": true,
-            "quantity": "5",
-            "noted": false,
-            "rarity": 0.0003662109375,
-            "rolls": 1
-        },
-        {
-            "id": 987,
-            "name": "Loop half of key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0003662109375,
-            "rolls": 1
-        },
-        {
-            "id": 985,
-            "name": "Tooth half of key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0003662109375,
-            "rolls": 1
-        },
-        {
-            "id": 1247,
-            "name": "Rune spear",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 2.288818359375e-05,
-            "rolls": 1
-        },
-        {
-            "id": 2366,
-            "name": "Shield left half",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.1444091796875e-05,
-            "rolls": 1
-        },
-        {
-            "id": 1249,
-            "name": "Dragon spear",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 8.582398347785329e-06,
-            "rolls": 1
-        },
-        {
-            "id": 4115,
-            "name": "Mystic gloves (light)",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.001953125,
-            "rolls": 1
-        },
-        {
-            "id": 438,
-            "name": "Tin ore",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0625,
-            "rolls": 1
-        },
-        {
-            "id": 447,
-            "name": "Mithril ore",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 5318,
-            "name": "Potato seed",
-            "members": true,
-            "quantity": "4",
-            "noted": false,
-            "rarity": 0.02631578947368421,
-            "rolls": 1
-        },
-        {
-            "id": 5319,
-            "name": "Onion seed",
-            "members": true,
-            "quantity": "4",
-            "noted": false,
-            "rarity": 0.0196078431372549,
-            "rolls": 1
-        },
-        {
-            "id": 5324,
-            "name": "Cabbage seed",
-            "members": true,
-            "quantity": "4",
-            "noted": false,
-            "rarity": 0.012987012987012988,
-            "rolls": 1
-        },
-        {
-            "id": 5322,
-            "name": "Tomato seed",
-            "members": true,
-            "quantity": "3",
-            "noted": false,
-            "rarity": 0.0064516129032258064,
-            "rolls": 1
-        },
-        {
-            "id": 5320,
-            "name": "Sweetcorn seed",
-            "members": true,
-            "quantity": "3",
-            "noted": false,
-            "rarity": 0.003215434083601286,
-            "rolls": 1
-        },
-        {
-            "id": 5323,
-            "name": "Strawberry seed",
-            "members": true,
-            "quantity": "2",
-            "noted": false,
-            "rarity": 0.0016051364365971107,
-            "rolls": 1
-        },
-        {
-            "id": 5321,
-            "name": "Watermelon seed",
-            "members": true,
-            "quantity": "2",
-            "noted": false,
-            "rarity": 0.0007674597083653108,
-            "rolls": 1
-        },
-        {
-            "id": 22879,
-            "name": "Snape grass seed",
-            "members": true,
-            "quantity": "2",
-            "noted": false,
-            "rarity": 0.0005580357142857143,
-            "rolls": 1
-        },
-        {
-            "id": 557,
-            "name": "Earth rune",
-            "members": false,
-            "quantity": "5",
-            "noted": false,
-            "rarity": 0.234375,
-            "rolls": 1
-        },
-        {
-            "id": 1913,
-            "name": "Dwarven stout",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.1015625,
-            "rolls": 1
-        },
-        {
-            "id": 2347,
-            "name": "Hammer",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.078125,
-            "rolls": 1
-        },
-        {
-            "id": 557,
-            "name": "Earth rune",
-            "members": false,
-            "quantity": "42",
-            "noted": false,
-            "rarity": 0.03125,
-            "rolls": 1
-        },
-        {
-            "id": 562,
-            "name": "Chaos rune",
-            "members": false,
-            "quantity": "2",
-            "noted": false,
-            "rarity": 0.03125,
-            "rolls": 1
-        },
-        {
-            "id": 453,
-            "name": "Coal",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.1015625,
-            "rolls": 1
-        },
-        {
-            "id": 440,
-            "name": "Iron ore",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.171875,
-            "rolls": 1
-        },
-        {
-            "id": 2349,
-            "name": "Bronze bar",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.015625,
-            "rolls": 1
-        },
-        {
-            "id": 2351,
-            "name": "Iron bar",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0234375,
-            "rolls": 1
-        },
-        {
-            "id": 436,
-            "name": "Copper ore",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0234375,
-            "rolls": 1
-        }
-    ]
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "606235229cf2e5faf554091eaa1e643ea673ded0",
+  "_id": "60ebb3aec1c55bf074a5e32c",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3aec1c55bf074a5e32c",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 0,
+  "attack_bonus": 0,
+  "attack_level": 22,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "melee"
+  ],
+  "attributes": [],
+  "category": [
+    "rockslugs"
+  ],
+  "combat_level": 29,
+  "defence_crush": 0,
+  "defence_level": 27,
+  "defence_magic": 0,
+  "defence_ranged": 0,
+  "defence_slash": 0,
+  "defence_stab": 0,
+  "drops": [
+    {
+      "id": 1623,
+      "members": 1,
+      "name": "Uncut sapphire",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.01171875",
+      "rolls": 1
+    },
+    {
+      "id": 1621,
+      "members": 1,
+      "name": "Uncut emerald",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.005859375",
+      "rolls": 1
+    },
+    {
+      "id": 1619,
+      "members": 1,
+      "name": "Uncut ruby",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0029296875",
+      "rolls": 1
+    },
+    {
+      "id": 1452,
+      "members": 1,
+      "name": "Chaos talisman",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.001098546988516522",
+      "rolls": 1
+    },
+    {
+      "id": 1462,
+      "members": 1,
+      "name": "Nature talisman",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.001098546988516522",
+      "rolls": 1
+    },
+    {
+      "id": 1617,
+      "members": 1,
+      "name": "Uncut diamond",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.000732421875",
+      "rolls": 1
+    },
+    {
+      "id": 830,
+      "members": 1,
+      "name": "Rune javelin",
+      "noted": 0,
+      "quantity": "5",
+      "rarity": "0.0003662109375",
+      "rolls": 1
+    },
+    {
+      "id": 987,
+      "members": 1,
+      "name": "Loop half of key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0003662109375",
+      "rolls": 1
+    },
+    {
+      "id": 985,
+      "members": 1,
+      "name": "Tooth half of key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0003662109375",
+      "rolls": 1
+    },
+    {
+      "id": 1247,
+      "members": 1,
+      "name": "Rune spear",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "2.288818359375e-05",
+      "rolls": 1
+    },
+    {
+      "id": 2366,
+      "members": 1,
+      "name": "Shield left half",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.1444091796875e-05",
+      "rolls": 1
+    },
+    {
+      "id": 1249,
+      "members": 1,
+      "name": "Dragon spear",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "8.582398347785329e-06",
+      "rolls": 1
+    },
+    {
+      "id": 4115,
+      "members": 1,
+      "name": "Mystic gloves (light)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.001953125",
+      "rolls": 1
+    },
+    {
+      "id": 438,
+      "members": 0,
+      "name": "Tin ore",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0625",
+      "rolls": 1
+    },
+    {
+      "id": 447,
+      "members": 0,
+      "name": "Mithril ore",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 5318,
+      "members": 1,
+      "name": "Potato seed",
+      "noted": 0,
+      "quantity": "4",
+      "rarity": "0.02631578947368421",
+      "rolls": 1
+    },
+    {
+      "id": 5319,
+      "members": 1,
+      "name": "Onion seed",
+      "noted": 0,
+      "quantity": "4",
+      "rarity": "0.0196078431372549",
+      "rolls": 1
+    },
+    {
+      "id": 5324,
+      "members": 1,
+      "name": "Cabbage seed",
+      "noted": 0,
+      "quantity": "4",
+      "rarity": "0.012987012987012988",
+      "rolls": 1
+    },
+    {
+      "id": 5322,
+      "members": 1,
+      "name": "Tomato seed",
+      "noted": 0,
+      "quantity": "3",
+      "rarity": "0.0064516129032258064",
+      "rolls": 1
+    },
+    {
+      "id": 5320,
+      "members": 1,
+      "name": "Sweetcorn seed",
+      "noted": 0,
+      "quantity": "3",
+      "rarity": "0.003215434083601286",
+      "rolls": 1
+    },
+    {
+      "id": 5323,
+      "members": 1,
+      "name": "Strawberry seed",
+      "noted": 0,
+      "quantity": "2",
+      "rarity": "0.0016051364365971107",
+      "rolls": 1
+    },
+    {
+      "id": 5321,
+      "members": 1,
+      "name": "Watermelon seed",
+      "noted": 0,
+      "quantity": "2",
+      "rarity": "0.0007674597083653108",
+      "rolls": 1
+    },
+    {
+      "id": 22879,
+      "members": 1,
+      "name": "Snape grass seed",
+      "noted": 0,
+      "quantity": "2",
+      "rarity": "0.0005580357142857143",
+      "rolls": 1
+    },
+    {
+      "id": 557,
+      "members": 0,
+      "name": "Earth rune",
+      "noted": 0,
+      "quantity": "5",
+      "rarity": "0.234375",
+      "rolls": 1
+    },
+    {
+      "id": 1913,
+      "members": 0,
+      "name": "Dwarven stout",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.1015625",
+      "rolls": 1
+    },
+    {
+      "id": 2347,
+      "members": 0,
+      "name": "Hammer",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.078125",
+      "rolls": 1
+    },
+    {
+      "id": 557,
+      "members": 0,
+      "name": "Earth rune",
+      "noted": 0,
+      "quantity": "42",
+      "rarity": "0.03125",
+      "rolls": 1
+    },
+    {
+      "id": 562,
+      "members": 0,
+      "name": "Chaos rune",
+      "noted": 0,
+      "quantity": "2",
+      "rarity": "0.03125",
+      "rolls": 1
+    },
+    {
+      "id": 453,
+      "members": 0,
+      "name": "Coal",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.1015625",
+      "rolls": 1
+    },
+    {
+      "id": 440,
+      "members": 0,
+      "name": "Iron ore",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.171875",
+      "rolls": 1
+    },
+    {
+      "id": 2349,
+      "members": 0,
+      "name": "Bronze bar",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 2351,
+      "members": 0,
+      "name": "Iron bar",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0234375",
+      "rolls": 1
+    },
+    {
+      "id": 436,
+      "members": 0,
+      "name": "Copper ore",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0234375",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "The slime of evil.",
+  "hitpoints": 27,
+  "id": "421",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 4,
+  "members": 1,
+  "name": "Rockslug",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2005-01-26",
+  "size": 1,
+  "slayer_level": 20,
+  "slayer_masters": [
+    "mazchna",
+    "vannaka",
+    "chaeldar"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "27.0",
+  "strength_bonus": 0,
+  "strength_level": 27,
+  "venomous": 0,
+  "wiki_name": "Rockslug",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Rockslug"
 }

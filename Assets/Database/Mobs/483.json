@@ -1,7 +1,7 @@
 {
   "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
-  "_etag": "347c32da74099bf8255aceb4ed4cb2279426cbb8",
-  "_id": "60cd28aecfb7392d00906fca",
+  "_etag": "83cd8ba660f9d560f7d789ba148eceffa3890954",
+  "_id": "60ebb3aec1c55bf074a5e364",
   "_links": {
     "collection": {
       "href": "monsters",
@@ -12,7 +12,7 @@
       "title": "home"
     },
     "self": {
-      "href": "monsters/60cd28aecfb7392d00906fca",
+      "href": "monsters/60ebb3aec1c55bf074a5e364",
       "title": "Monster"
     }
   },
@@ -28,7 +28,7 @@
   ],
   "attributes": [],
   "category": [
-    "cave bug"
+    "cave bugs"
   ],
   "combat_level": 96,
   "defence_crush": 35,
@@ -154,7 +154,7 @@
   "immune_poison": 0,
   "immune_venom": 0,
   "incomplete": 1,
-  "last_updated": "2020-12-25",
+  "last_updated": "2021-07-12",
   "magic_bonus": 0,
   "magic_level": 1,
   "max_hit": 9,

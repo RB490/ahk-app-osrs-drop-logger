@@ -1,73 +1,91 @@
 {
-    "id": 232,
-    "name": "Jungle Wolf",
-    "last_updated": "2020-12-25",
-    "incomplete": true,
-    "members": true,
-    "release_date": "2003-08-20",
-    "combat_level": 64,
-    "size": 2,
-    "hitpoints": 69,
-    "max_hit": 6,
-    "attack_type": [
-        "melee"
-    ],
-    "attack_speed": 4,
-    "aggressive": true,
-    "poisonous": false,
-    "venomous": false,
-    "immune_poison": false,
-    "immune_venom": false,
-    "attributes": [],
-    "category": [
-        "wolf"
-    ],
-    "slayer_monster": true,
-    "slayer_level": 1,
-    "slayer_xp": 70.0,
-    "slayer_masters": [
-        "turael",
-        "spria",
-        "mazchna"
-    ],
-    "duplicate": false,
-    "examine": "A rare jungle wolf - specific to the Kharazi jungle.",
-    "wiki_name": "Jungle Wolf",
-    "wiki_url": "https://oldschool.runescape.wiki/w/Jungle_Wolf",
-    "attack_level": 50,
-    "strength_level": 55,
-    "defence_level": 52,
-    "magic_level": 1,
-    "ranged_level": 1,
-    "attack_bonus": 0,
-    "strength_bonus": 0,
-    "attack_magic": 0,
-    "magic_bonus": 0,
-    "attack_ranged": 0,
-    "ranged_bonus": 0,
-    "defence_stab": 0,
-    "defence_slash": 0,
-    "defence_crush": 0,
-    "defence_magic": 0,
-    "defence_ranged": 0,
-    "drops": [
-        {
-            "id": 2859,
-            "name": "Wolf bones",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        },
-        {
-            "id": 7830,
-            "name": "Wolf bone",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.25,
-            "rolls": 1
-        }
-    ]
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "0d54801f388c86ccd760a95b2a2fb1680e36ccf1",
+  "_id": "60ebb3aec1c55bf074a5e2e4",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3aec1c55bf074a5e2e4",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 0,
+  "attack_level": 50,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "melee"
+  ],
+  "attributes": [],
+  "category": [
+    "wolves"
+  ],
+  "combat_level": 64,
+  "defence_crush": 0,
+  "defence_level": 52,
+  "defence_magic": 0,
+  "defence_ranged": 0,
+  "defence_slash": 0,
+  "defence_stab": 0,
+  "drops": [
+    {
+      "id": 2859,
+      "members": 1,
+      "name": "Wolf bones",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 7830,
+      "members": 1,
+      "name": "Wolf bone",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.25",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "A rare jungle wolf - specific to the Kharazi jungle.",
+  "hitpoints": 69,
+  "id": "232",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 6,
+  "members": 1,
+  "name": "Jungle Wolf",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2003-08-20",
+  "size": 2,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "turael",
+    "spria",
+    "mazchna"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "70.0",
+  "strength_bonus": 0,
+  "strength_level": 55,
+  "venomous": 0,
+  "wiki_name": "Jungle Wolf",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Jungle_Wolf"
 }

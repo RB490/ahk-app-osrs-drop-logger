@@ -1,96 +1,123 @@
 {
-    "id": 104,
-    "name": "Hellhound",
-    "last_updated": "2021-06-18",
-    "incomplete": true,
-    "members": true,
-    "release_date": "2002-02-27",
-    "combat_level": 122,
-    "size": 2,
-    "hitpoints": 116,
-    "max_hit": 11,
-    "attack_type": [
-        "stab"
-    ],
-    "attack_speed": 4,
-    "aggressive": true,
-    "poisonous": false,
-    "venomous": false,
-    "immune_poison": false,
-    "immune_venom": false,
-    "attributes": [
-        "demon"
-    ],
-    "category": [
-        "hellhound"
-    ],
-    "slayer_monster": true,
-    "slayer_level": 1,
-    "slayer_xp": 116.0,
-    "slayer_masters": [
-        "krystilia",
-        "vannaka",
-        "chaeldar",
-        "konar",
-        "nieve",
-        "duradel"
-    ],
-    "duplicate": false,
-    "examine": "Hello, nice doggy...",
-    "wiki_name": "Hellhound (Level 122)",
-    "wiki_url": "https://oldschool.runescape.wiki/w/Hellhound#Level_122",
-    "attack_level": 105,
-    "strength_level": 104,
-    "defence_level": 102,
-    "magic_level": 1,
-    "ranged_level": 1,
-    "attack_bonus": 0,
-    "strength_bonus": 0,
-    "attack_magic": 0,
-    "magic_bonus": 0,
-    "attack_ranged": 0,
-    "ranged_bonus": 0,
-    "defence_stab": 0,
-    "defence_slash": 0,
-    "defence_crush": 0,
-    "defence_magic": 0,
-    "defence_ranged": 0,
-    "drops": [
-        {
-            "id": 13233,
-            "name": "Smouldering stone",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 3.0517578125e-05,
-            "rolls": 1
-        },
-        {
-            "id": 11941,
-            "name": "Looting bag",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.3333333333333333,
-            "rolls": 1
-        },
-        {
-            "id": 2722,
-            "name": "Clue scroll (hard)",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.015625,
-            "rolls": 1
-        },
-        {
-            "id": 23083,
-            "name": "Brimstone key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.010526315789473684,
-            "rolls": 1
-        }
-    ]
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "4ff97e61a36810fedc9d8f269acb4ef998fdccc2",
+  "_id": "60ebb3aec1c55bf074a5e2c8",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3aec1c55bf074a5e2c8",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 0,
+  "attack_level": 105,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "stab"
+  ],
+  "attributes": [
+    "demon"
+  ],
+  "category": [
+    "hellhounds"
+  ],
+  "combat_level": 122,
+  "defence_crush": 0,
+  "defence_level": 102,
+  "defence_magic": 0,
+  "defence_ranged": 0,
+  "defence_slash": 0,
+  "defence_stab": 0,
+  "drops": [
+    {
+      "id": 25769,
+      "members": 1,
+      "name": "Vile ashes",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 13233,
+      "members": 1,
+      "name": "Smouldering stone",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "3.0517578125e-05",
+      "rolls": 1
+    },
+    {
+      "id": 11941,
+      "members": 1,
+      "name": "Looting bag",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.3333333333333333",
+      "rolls": 1
+    },
+    {
+      "id": 2722,
+      "members": 1,
+      "name": "Clue scroll (hard)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 23083,
+      "members": 1,
+      "name": "Brimstone key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.010526315789473684",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "Hello, nice doggy...",
+  "hitpoints": 116,
+  "id": "104",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 11,
+  "members": 1,
+  "name": "Hellhound",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2002-02-27",
+  "size": 2,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "krystilia",
+    "vannaka",
+    "chaeldar",
+    "konar",
+    "nieve",
+    "duradel"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "116.0",
+  "strength_bonus": 0,
+  "strength_level": 104,
+  "venomous": 0,
+  "wiki_name": "Hellhound (Level 122)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Hellhound#Level_122"
 }

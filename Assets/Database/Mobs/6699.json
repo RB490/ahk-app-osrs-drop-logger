@@ -1,7 +1,7 @@
 {
   "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
-  "_etag": "7cdc46f182e107ffc3549411d4fd603ecd56bf71",
-  "_id": "60cd28b2cfb7392d0090775b",
+  "_etag": "d53b56f58d7fd499487f49afd8a04543dc36e4c7",
+  "_id": "60ebb3b1c1c55bf074a5eaf5",
   "_links": {
     "collection": {
       "href": "monsters",
@@ -12,7 +12,7 @@
       "title": "home"
     },
     "self": {
-      "href": "monsters/60cd28b2cfb7392d0090775b",
+      "href": "monsters/60ebb3b1c1c55bf074a5eaf5",
       "title": "Monster"
     }
   },
@@ -326,13 +326,13 @@
     }
   ],
   "duplicate": 0,
-  "examine": "?",
+  "examine": "A guard of Sophanem.",
   "hitpoints": 800,
   "id": "6699",
   "immune_poison": 0,
   "immune_venom": 0,
   "incomplete": 1,
-  "last_updated": "2021-06-18",
+  "last_updated": "2021-07-12",
   "magic_bonus": 0,
   "magic_level": 1,
   "max_hit": 45,
@@ -350,6 +350,6 @@
   "strength_bonus": 7,
   "strength_level": 400,
   "venomous": 0,
-  "wiki_name": "Guard (Deadman Mode) (Fremennik)",
-  "wiki_url": "https://oldschool.runescape.wiki/w/Guard_(Deadman_Mode)#Fremennik"
+  "wiki_name": "Guard (Deadman Mode) (Sophanem)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Guard_(Deadman_Mode)#Sophanem"
 }

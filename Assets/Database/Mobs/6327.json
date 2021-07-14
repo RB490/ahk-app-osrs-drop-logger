@@ -1,0 +1,77 @@
+{
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "bc321292e079887573e018b601c31425ae49b9cb",
+  "_id": "60ebb3b0c1c55bf074a5ea4d",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3b0c1c55bf074a5ea4d",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 0,
+  "attack_level": 182,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "crush",
+    "magic"
+  ],
+  "attributes": [],
+  "category": [],
+  "combat_level": 196,
+  "defence_crush": 0,
+  "defence_level": 82,
+  "defence_magic": 0,
+  "defence_ranged": 0,
+  "defence_slash": 0,
+  "defence_stab": 0,
+  "drops": [
+    {
+      "id": 25769,
+      "members": 1,
+      "name": "Vile ashes",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "A summoned demon.",
+  "hitpoints": 209,
+  "id": "6327",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 220,
+  "max_hit": 21,
+  "members": 1,
+  "name": "Agrith Naar (hard)",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 220,
+  "release_date": "2013-09-05",
+  "size": 3,
+  "slayer_level": "",
+  "slayer_masters": [],
+  "slayer_monster": 0,
+  "slayer_xp": "",
+  "strength_bonus": 0,
+  "strength_level": 198,
+  "venomous": 0,
+  "wiki_name": "Agrith Naar (Hard)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Agrith_Naar#Hard"
+}

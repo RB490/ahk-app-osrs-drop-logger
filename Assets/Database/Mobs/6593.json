@@ -1,579 +1,489 @@
 {
-    "id": 6593,
-    "name": "Lava dragon",
-    "last_updated": "2020-12-25",
-    "incomplete": true,
-    "members": true,
-    "release_date": "2014-03-13",
-    "combat_level": 252,
-    "size": 4,
-    "hitpoints": 230,
-    "max_hit": 23,
-    "attack_type": [
-        "melee",
-        "dragonfire"
-    ],
-    "attack_speed": 4,
-    "aggressive": true,
-    "poisonous": false,
-    "venomous": false,
-    "immune_poison": false,
-    "immune_venom": false,
-    "attributes": [
-        "dragon",
-        "fiery"
-    ],
-    "category": [
-        "lava dragon"
-    ],
-    "slayer_monster": true,
-    "slayer_level": 1,
-    "slayer_xp": 248.0,
-    "slayer_masters": [
-        "krystilia"
-    ],
-    "duplicate": false,
-    "examine": "It's dripping with molten lava.",
-    "wiki_name": "Lava dragon",
-    "wiki_url": "https://oldschool.runescape.wiki/w/Lava_dragon",
-    "attack_level": 240,
-    "strength_level": 220,
-    "defence_level": 220,
-    "magic_level": 1,
-    "ranged_level": 1,
-    "attack_bonus": 0,
-    "strength_bonus": 0,
-    "attack_magic": 0,
-    "magic_bonus": 0,
-    "attack_ranged": 0,
-    "ranged_bonus": 0,
-    "defence_stab": 70,
-    "defence_slash": 90,
-    "defence_crush": 90,
-    "defence_magic": 80,
-    "defence_ranged": 70,
-    "drops": [
-        {
-            "id": 1623,
-            "name": "Uncut sapphire",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.009765625,
-            "rolls": 1
-        },
-        {
-            "id": 1621,
-            "name": "Uncut emerald",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0048828125,
-            "rolls": 1
-        },
-        {
-            "id": 1619,
-            "name": "Uncut ruby",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.00244140625,
-            "rolls": 1
-        },
-        {
-            "id": 1452,
-            "name": "Chaos talisman",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0009154558237637684,
-            "rolls": 1
-        },
-        {
-            "id": 1462,
-            "name": "Nature talisman",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0009154558237637684,
-            "rolls": 1
-        },
-        {
-            "id": 1617,
-            "name": "Uncut diamond",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0006103515625,
-            "rolls": 1
-        },
-        {
-            "id": 830,
-            "name": "Rune javelin",
-            "members": true,
-            "quantity": "5",
-            "noted": false,
-            "rarity": 0.00030517578125,
-            "rolls": 1
-        },
-        {
-            "id": 987,
-            "name": "Loop half of key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.00030517578125,
-            "rolls": 1
-        },
-        {
-            "id": 985,
-            "name": "Tooth half of key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.00030517578125,
-            "rolls": 1
-        },
-        {
-            "id": 1247,
-            "name": "Rune spear",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.9073486328125e-05,
-            "rolls": 1
-        },
-        {
-            "id": 2366,
-            "name": "Shield left half",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 9.5367431640625e-06,
-            "rolls": 1
-        },
-        {
-            "id": 1249,
-            "name": "Dragon spear",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 7.1519986231544404e-06,
-            "rolls": 1
-        },
-        {
-            "id": 11943,
-            "name": "Lava dragon bones",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        },
-        {
-            "id": 1201,
-            "name": "Rune kiteshield",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.015625,
-            "rolls": 1
-        },
-        {
-            "id": 1303,
-            "name": "Rune longsword",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.015625,
-            "rolls": 1
-        },
-        {
-            "id": 1147,
-            "name": "Rune med helm",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 1163,
-            "name": "Rune full helm",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 830,
-            "name": "Rune javelin",
-            "members": true,
-            "quantity": "20",
-            "noted": false,
-            "rarity": 0.078125,
-            "rolls": 1
-        },
-        {
-            "id": 554,
-            "name": "Fire rune",
-            "members": false,
-            "quantity": "75",
-            "noted": false,
-            "rarity": 0.0546875,
-            "rolls": 1
-        },
-        {
-            "id": 565,
-            "name": "Blood rune",
-            "members": true,
-            "quantity": "20",
-            "noted": false,
-            "rarity": 0.0546875,
-            "rolls": 1
-        },
-        {
-            "id": 9144,
-            "name": "Runite bolts",
-            "members": true,
-            "quantity": "30",
-            "noted": false,
-            "rarity": 0.046875,
-            "rolls": 1
-        },
-        {
-            "id": 560,
-            "name": "Death rune",
-            "members": false,
-            "quantity": "20",
-            "noted": false,
-            "rarity": 0.0390625,
-            "rolls": 1
-        },
-        {
-            "id": 563,
-            "name": "Law rune",
-            "members": false,
-            "quantity": "20",
-            "noted": false,
-            "rarity": 0.0390625,
-            "rolls": 1
-        },
-        {
-            "id": 1747,
-            "name": "Black dragonhide",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        },
-        {
-            "id": 4699,
-            "name": "Lava rune",
-            "members": true,
-            "quantity": "15",
-            "noted": false,
-            "rarity": 0.03125,
-            "rolls": 1
-        },
-        {
-            "id": 4699,
-            "name": "Lava rune",
-            "members": true,
-            "quantity": "30",
-            "noted": false,
-            "rarity": 0.03125,
-            "rolls": 1
-        },
-        {
-            "id": 199,
-            "name": "Grimy guam leaf",
-            "members": true,
-            "quantity": "1-2",
-            "noted": false,
-            "rarity": 0.009765625,
-            "rolls": 1
-        },
-        {
-            "id": 201,
-            "name": "Grimy marrentill",
-            "members": true,
-            "quantity": "1-2",
-            "noted": false,
-            "rarity": 0.007326007326007326,
-            "rolls": 1
-        },
-        {
-            "id": 203,
-            "name": "Grimy tarromin",
-            "members": true,
-            "quantity": "1-2",
-            "noted": false,
-            "rarity": 0.005494505494505495,
-            "rolls": 1
-        },
-        {
-            "id": 205,
-            "name": "Grimy harralander",
-            "members": true,
-            "quantity": "1-2",
-            "noted": false,
-            "rarity": 0.004271678769756515,
-            "rolls": 1
-        },
-        {
-            "id": 207,
-            "name": "Grimy ranarr weed",
-            "members": true,
-            "quantity": "1-2",
-            "noted": false,
-            "rarity": 0.003356831151393085,
-            "rolls": 1
-        },
-        {
-            "id": 209,
-            "name": "Grimy irit leaf",
-            "members": true,
-            "quantity": "1-2",
-            "noted": false,
-            "rarity": 0.00244140625,
-            "rolls": 1
-        },
-        {
-            "id": 211,
-            "name": "Grimy avantoe",
-            "members": true,
-            "quantity": "1-2",
-            "noted": false,
-            "rarity": 0.0018311664530305805,
-            "rolls": 1
-        },
-        {
-            "id": 213,
-            "name": "Grimy kwuarm",
-            "members": true,
-            "quantity": "1-2",
-            "noted": false,
-            "rarity": 0.0015257857796765334,
-            "rolls": 1
-        },
-        {
-            "id": 11992,
-            "name": "Lava scale",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        },
-        {
-            "id": 215,
-            "name": "Grimy cadantine",
-            "members": true,
-            "quantity": "1-2",
-            "noted": false,
-            "rarity": 0.001220703125,
-            "rolls": 1
-        },
-        {
-            "id": 2485,
-            "name": "Grimy lantadyme",
-            "members": true,
-            "quantity": "1-2",
-            "noted": false,
-            "rarity": 0.0009154994049253868,
-            "rolls": 1
-        },
-        {
-            "id": 217,
-            "name": "Grimy dwarf weed",
-            "members": true,
-            "quantity": "1-2",
-            "noted": false,
-            "rarity": 0.0009154994049253868,
-            "rolls": 1
-        },
-        {
-            "id": 995,
-            "name": "Coins",
-            "members": false,
-            "quantity": "66",
-            "noted": false,
-            "rarity": 0.1171875,
-            "rolls": 1
-        },
-        {
-            "id": 995,
-            "name": "Coins",
-            "members": false,
-            "quantity": "2960",
-            "noted": false,
-            "rarity": 0.0546875,
-            "rolls": 1
-        },
-        {
-            "id": 995,
-            "name": "Coins",
-            "members": false,
-            "quantity": "690",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 1442,
-            "name": "Fire talisman",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 569,
-            "name": "Fire orb",
-            "members": true,
-            "quantity": "15",
-            "noted": true,
-            "rarity": 0.0390625,
-            "rolls": 1
-        },
-        {
-            "id": 1897,
-            "name": "Chocolate cake",
-            "members": false,
-            "quantity": "3",
-            "noted": false,
-            "rarity": 0.0234375,
-            "rolls": 1
-        },
-        {
-            "id": 2361,
-            "name": "Adamantite bar",
-            "members": false,
-            "quantity": "2",
-            "noted": false,
-            "rarity": 0.0390625,
-            "rolls": 1
-        },
-        {
-            "id": 811,
-            "name": "Rune dart",
-            "members": true,
-            "quantity": "12",
-            "noted": false,
-            "rarity": 0.046875,
-            "rolls": 1
-        },
-        {
-            "id": 9194,
-            "name": "Onyx bolt tips",
-            "members": true,
-            "quantity": "12",
-            "noted": false,
-            "rarity": 0.0390625,
-            "rolls": 1
-        },
-        {
-            "id": 19582,
-            "name": "Dragon javelin heads",
-            "members": true,
-            "quantity": "15",
-            "noted": false,
-            "rarity": 0.0546875,
-            "rolls": 1
-        },
-        {
-            "id": 868,
-            "name": "Rune knife",
-            "members": true,
-            "quantity": "8",
-            "noted": false,
-            "rarity": 0.03125,
-            "rolls": 1
-        },
-        {
-            "id": 3053,
-            "name": "Lava battlestaff",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0234375,
-            "rolls": 1
-        },
-        {
-            "id": 11941,
-            "name": "Looting bag",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.3333333333333333,
-            "rolls": 1
-        },
-        {
-            "id": 12073,
-            "name": "Clue scroll (elite)",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.004,
-            "rolls": 1
-        },
-        {
-            "id": 1317,
-            "name": "Adamant 2h sword",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.015625,
-            "rolls": 1
-        },
-        {
-            "id": 11286,
-            "name": "Draconic visage",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0001,
-            "rolls": 1
-        },
-        {
-            "id": 23490,
-            "name": "Larran's key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.014925373134328358,
-            "rolls": 1
-        },
-        {
-            "id": 21257,
-            "name": "Slayer's enchantment",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.007352941176470588,
-            "rolls": 1
-        },
-        {
-            "id": 1123,
-            "name": "Adamant platebody",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.015625,
-            "rolls": 1
-        },
-        {
-            "id": 1359,
-            "name": "Rune axe",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.015625,
-            "rolls": 1
-        }
-    ]
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "a9ff63b424a2cd6c9896f094f5420f54b449a38c",
+  "_id": "60ebb3b1c1c55bf074a5eadc",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3b1c1c55bf074a5eadc",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 0,
+  "attack_level": 240,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "melee",
+    "dragonfire"
+  ],
+  "attributes": [
+    "dragon",
+    "fiery"
+  ],
+  "category": [
+    "lava dragons"
+  ],
+  "combat_level": 252,
+  "defence_crush": 90,
+  "defence_level": 220,
+  "defence_magic": 80,
+  "defence_ranged": 70,
+  "defence_slash": 90,
+  "defence_stab": 70,
+  "drops": [
+    {
+      "id": 11943,
+      "members": 1,
+      "name": "Lava dragon bones",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 1201,
+      "members": 0,
+      "name": "Rune kiteshield",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 1303,
+      "members": 0,
+      "name": "Rune longsword",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 1147,
+      "members": 0,
+      "name": "Rune med helm",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 1163,
+      "members": 0,
+      "name": "Rune full helm",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 830,
+      "members": 1,
+      "name": "Rune javelin",
+      "noted": 0,
+      "quantity": "20",
+      "rarity": "0.078125",
+      "rolls": 1
+    },
+    {
+      "id": 554,
+      "members": 0,
+      "name": "Fire rune",
+      "noted": 0,
+      "quantity": "75",
+      "rarity": "0.0546875",
+      "rolls": 1
+    },
+    {
+      "id": 565,
+      "members": 1,
+      "name": "Blood rune",
+      "noted": 0,
+      "quantity": "20",
+      "rarity": "0.0546875",
+      "rolls": 1
+    },
+    {
+      "id": 9144,
+      "members": 1,
+      "name": "Runite bolts",
+      "noted": 0,
+      "quantity": "30",
+      "rarity": "0.046875",
+      "rolls": 1
+    },
+    {
+      "id": 560,
+      "members": 0,
+      "name": "Death rune",
+      "noted": 0,
+      "quantity": "20",
+      "rarity": "0.0390625",
+      "rolls": 1
+    },
+    {
+      "id": 563,
+      "members": 0,
+      "name": "Law rune",
+      "noted": 0,
+      "quantity": "20",
+      "rarity": "0.0390625",
+      "rolls": 1
+    },
+    {
+      "id": 1747,
+      "members": 1,
+      "name": "Black dragonhide",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 4699,
+      "members": 1,
+      "name": "Lava rune",
+      "noted": 0,
+      "quantity": "15",
+      "rarity": "0.03125",
+      "rolls": 1
+    },
+    {
+      "id": 4699,
+      "members": 1,
+      "name": "Lava rune",
+      "noted": 0,
+      "quantity": "30",
+      "rarity": "0.03125",
+      "rolls": 1
+    },
+    {
+      "id": 199,
+      "members": 1,
+      "name": "Grimy guam leaf",
+      "noted": 0,
+      "quantity": "1-2",
+      "rarity": "0.009765625",
+      "rolls": 1
+    },
+    {
+      "id": 201,
+      "members": 1,
+      "name": "Grimy marrentill",
+      "noted": 0,
+      "quantity": "1-2",
+      "rarity": "0.007326007326007326",
+      "rolls": 1
+    },
+    {
+      "id": 203,
+      "members": 1,
+      "name": "Grimy tarromin",
+      "noted": 0,
+      "quantity": "1-2",
+      "rarity": "0.005494505494505495",
+      "rolls": 1
+    },
+    {
+      "id": 205,
+      "members": 1,
+      "name": "Grimy harralander",
+      "noted": 0,
+      "quantity": "1-2",
+      "rarity": "0.004271678769756515",
+      "rolls": 1
+    },
+    {
+      "id": 207,
+      "members": 1,
+      "name": "Grimy ranarr weed",
+      "noted": 0,
+      "quantity": "1-2",
+      "rarity": "0.003356831151393085",
+      "rolls": 1
+    },
+    {
+      "id": 209,
+      "members": 1,
+      "name": "Grimy irit leaf",
+      "noted": 0,
+      "quantity": "1-2",
+      "rarity": "0.00244140625",
+      "rolls": 1
+    },
+    {
+      "id": 211,
+      "members": 1,
+      "name": "Grimy avantoe",
+      "noted": 0,
+      "quantity": "1-2",
+      "rarity": "0.0018311664530305805",
+      "rolls": 1
+    },
+    {
+      "id": 213,
+      "members": 1,
+      "name": "Grimy kwuarm",
+      "noted": 0,
+      "quantity": "1-2",
+      "rarity": "0.0015257857796765334",
+      "rolls": 1
+    },
+    {
+      "id": 11992,
+      "members": 1,
+      "name": "Lava scale",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 215,
+      "members": 1,
+      "name": "Grimy cadantine",
+      "noted": 0,
+      "quantity": "1-2",
+      "rarity": "0.001220703125",
+      "rolls": 1
+    },
+    {
+      "id": 2485,
+      "members": 1,
+      "name": "Grimy lantadyme",
+      "noted": 0,
+      "quantity": "1-2",
+      "rarity": "0.0009154994049253868",
+      "rolls": 1
+    },
+    {
+      "id": 217,
+      "members": 1,
+      "name": "Grimy dwarf weed",
+      "noted": 0,
+      "quantity": "1-2",
+      "rarity": "0.0009154994049253868",
+      "rolls": 1
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "66",
+      "rarity": "0.1171875",
+      "rolls": 1
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "2960",
+      "rarity": "0.0546875",
+      "rolls": 1
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "690",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 1442,
+      "members": 0,
+      "name": "Fire talisman",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 569,
+      "members": 1,
+      "name": "Fire orb",
+      "noted": 1,
+      "quantity": "15",
+      "rarity": "0.0390625",
+      "rolls": 1
+    },
+    {
+      "id": 1897,
+      "members": 0,
+      "name": "Chocolate cake",
+      "noted": 0,
+      "quantity": "3",
+      "rarity": "0.0234375",
+      "rolls": 1
+    },
+    {
+      "id": 2361,
+      "members": 0,
+      "name": "Adamantite bar",
+      "noted": 0,
+      "quantity": "2",
+      "rarity": "0.0390625",
+      "rolls": 1
+    },
+    {
+      "id": 811,
+      "members": 1,
+      "name": "Rune dart",
+      "noted": 0,
+      "quantity": "12",
+      "rarity": "0.046875",
+      "rolls": 1
+    },
+    {
+      "id": 9194,
+      "members": 1,
+      "name": "Onyx bolt tips",
+      "noted": 0,
+      "quantity": "12",
+      "rarity": "0.0390625",
+      "rolls": 1
+    },
+    {
+      "id": 19582,
+      "members": 1,
+      "name": "Dragon javelin heads",
+      "noted": 0,
+      "quantity": "15",
+      "rarity": "0.0546875",
+      "rolls": 1
+    },
+    {
+      "id": 868,
+      "members": 1,
+      "name": "Rune knife",
+      "noted": 0,
+      "quantity": "8",
+      "rarity": "0.03125",
+      "rolls": 1
+    },
+    {
+      "id": 3053,
+      "members": 1,
+      "name": "Lava battlestaff",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0234375",
+      "rolls": 1
+    },
+    {
+      "id": 11941,
+      "members": 1,
+      "name": "Looting bag",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.3333333333333333",
+      "rolls": 1
+    },
+    {
+      "id": 12073,
+      "members": 1,
+      "name": "Clue scroll (elite)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.004",
+      "rolls": 1
+    },
+    {
+      "id": 1317,
+      "members": 0,
+      "name": "Adamant 2h sword",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 11286,
+      "members": 1,
+      "name": "Draconic visage",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0001",
+      "rolls": 1
+    },
+    {
+      "id": 23490,
+      "members": 1,
+      "name": "Larran's key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.014925373134328358",
+      "rolls": 1
+    },
+    {
+      "id": 21257,
+      "members": 1,
+      "name": "Slayer's enchantment",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.007352941176470588",
+      "rolls": 1
+    },
+    {
+      "id": 1123,
+      "members": 0,
+      "name": "Adamant platebody",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 1359,
+      "members": 0,
+      "name": "Rune axe",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.015625",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "It's dripping with molten lava.",
+  "hitpoints": 230,
+  "id": "6593",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 23,
+  "members": 1,
+  "name": "Lava dragon",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2014-03-13",
+  "size": 4,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "krystilia"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "248.0",
+  "strength_bonus": 0,
+  "strength_level": 220,
+  "venomous": 0,
+  "wiki_name": "Lava dragon",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Lava_dragon"
 }

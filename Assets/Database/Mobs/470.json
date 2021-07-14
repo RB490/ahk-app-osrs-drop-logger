@@ -1,7 +1,7 @@
 {
   "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
-  "_etag": "34b7882b58df8058d47715eed5a143ce4537d519",
-  "_id": "60cd28aecfb7392d00906fc1",
+  "_etag": "4001693f200a7f9b00f168e1082fc5bab02819bd",
+  "_id": "60ebb3aec1c55bf074a5e35b",
   "_links": {
     "collection": {
       "href": "monsters",
@@ -12,7 +12,7 @@
       "title": "home"
     },
     "self": {
-      "href": "monsters/60cd28aecfb7392d00906fc1",
+      "href": "monsters/60ebb3aec1c55bf074a5e35b",
       "title": "Monster"
     }
   },
@@ -30,7 +30,7 @@
   ],
   "attributes": [],
   "category": [
-    "killerwatt"
+    "killerwatts"
   ],
   "combat_level": 55,
   "defence_crush": 10,
@@ -462,7 +462,7 @@
   "immune_poison": 0,
   "immune_venom": 0,
   "incomplete": 1,
-  "last_updated": "2020-12-25",
+  "last_updated": "2021-07-12",
   "magic_bonus": 0,
   "magic_level": 67,
   "max_hit": 6,

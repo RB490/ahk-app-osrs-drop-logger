@@ -1,688 +1,598 @@
 {
-    "id": 2266,
-    "name": "Dagannoth Prime",
-    "last_updated": "2021-03-11",
-    "incomplete": true,
-    "members": true,
-    "release_date": "2005-11-07",
-    "combat_level": 303,
-    "size": 3,
-    "hitpoints": 255,
-    "max_hit": 50,
-    "attack_type": [
-        "magic"
-    ],
-    "attack_speed": 4,
-    "aggressive": true,
-    "poisonous": false,
-    "venomous": false,
-    "immune_poison": false,
-    "immune_venom": false,
-    "attributes": [],
-    "category": [
-        "boss",
-        "dagannoth"
-    ],
-    "slayer_monster": true,
-    "slayer_level": 1,
-    "slayer_xp": 331.5,
-    "slayer_masters": [
-        "vannaka",
-        "chaeldar",
-        "konar",
-        "nieve",
-        "duradel"
-    ],
-    "duplicate": false,
-    "examine": "A legendary Dagannoth King, rumoured to fly on the north winds.",
-    "wiki_name": "Dagannoth Prime",
-    "wiki_url": "https://oldschool.runescape.wiki/w/Dagannoth_Prime",
-    "attack_level": 255,
-    "strength_level": 255,
-    "defence_level": 255,
-    "magic_level": 255,
-    "ranged_level": 0,
-    "attack_bonus": 0,
-    "strength_bonus": 0,
-    "attack_magic": 0,
-    "magic_bonus": 0,
-    "attack_ranged": 0,
-    "ranged_bonus": 0,
-    "defence_stab": 255,
-    "defence_slash": 255,
-    "defence_crush": 255,
-    "defence_magic": 255,
-    "defence_ranged": 10,
-    "drops": [
-        {
-            "id": 1623,
-            "name": "Uncut sapphire",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.01953125,
-            "rolls": 1
-        },
-        {
-            "id": 1621,
-            "name": "Uncut emerald",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.009765625,
-            "rolls": 1
-        },
-        {
-            "id": 1619,
-            "name": "Uncut ruby",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0048828125,
-            "rolls": 1
-        },
-        {
-            "id": 1452,
-            "name": "Chaos talisman",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0018309116475275368,
-            "rolls": 1
-        },
-        {
-            "id": 1462,
-            "name": "Nature talisman",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0018309116475275368,
-            "rolls": 1
-        },
-        {
-            "id": 1617,
-            "name": "Uncut diamond",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.001220703125,
-            "rolls": 1
-        },
-        {
-            "id": 830,
-            "name": "Rune javelin",
-            "members": true,
-            "quantity": "5",
-            "noted": false,
-            "rarity": 0.0006103515625,
-            "rolls": 1
-        },
-        {
-            "id": 987,
-            "name": "Loop half of key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0006103515625,
-            "rolls": 1
-        },
-        {
-            "id": 985,
-            "name": "Tooth half of key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0006103515625,
-            "rolls": 1
-        },
-        {
-            "id": 1247,
-            "name": "Rune spear",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 3.814697265625e-05,
-            "rolls": 1
-        },
-        {
-            "id": 2366,
-            "name": "Shield left half",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.9073486328125e-05,
-            "rolls": 1
-        },
-        {
-            "id": 1249,
-            "name": "Dragon spear",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.4303997246308881e-05,
-            "rolls": 1
-        },
-        {
-            "id": 6729,
-            "name": "Dagannoth bones",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        },
-        {
-            "id": 6562,
-            "name": "Mud battlestaff",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 6739,
-            "name": "Dragon axe",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 3755,
-            "name": "Farseer helm",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 6139,
-            "name": "Skeletal top",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 6141,
-            "name": "Skeletal bottoms",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 6731,
-            "name": "Seers ring",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 556,
-            "name": "Air rune",
-            "members": false,
-            "quantity": "100-200",
-            "noted": false,
-            "rarity": 0.046875,
-            "rolls": 1
-        },
-        {
-            "id": 557,
-            "name": "Earth rune",
-            "members": false,
-            "quantity": "50-100",
-            "noted": false,
-            "rarity": 0.0390625,
-            "rolls": 1
-        },
-        {
-            "id": 565,
-            "name": "Blood rune",
-            "members": true,
-            "quantity": "25-75",
-            "noted": false,
-            "rarity": 0.015625,
-            "rolls": 1
-        },
-        {
-            "id": 563,
-            "name": "Law rune",
-            "members": false,
-            "quantity": "10-75",
-            "noted": false,
-            "rarity": 0.015625,
-            "rolls": 1
-        },
-        {
-            "id": 6155,
-            "name": "Dagannoth hide",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        },
-        {
-            "id": 561,
-            "name": "Nature rune",
-            "members": false,
-            "quantity": "25-50",
-            "noted": false,
-            "rarity": 0.015625,
-            "rolls": 1
-        },
-        {
-            "id": 4698,
-            "name": "Mud rune",
-            "members": true,
-            "quantity": "25-75",
-            "noted": false,
-            "rarity": 0.015625,
-            "rolls": 1
-        },
-        {
-            "id": 560,
-            "name": "Death rune",
-            "members": false,
-            "quantity": "25-85",
-            "noted": false,
-            "rarity": 0.015625,
-            "rolls": 1
-        },
-        {
-            "id": 5296,
-            "name": "Toadflax seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.010893246187363835,
-            "rolls": 1
-        },
-        {
-            "id": 5297,
-            "name": "Irit seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.007412898443291327,
-            "rolls": 1
-        },
-        {
-            "id": 5281,
-            "name": "Belladonna seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.007183908045977011,
-            "rolls": 1
-        },
-        {
-            "id": 5106,
-            "name": "Poison ivy seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0050968399592252805,
-            "rolls": 1
-        },
-        {
-            "id": 5298,
-            "name": "Avantoe seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0050968399592252805,
-            "rolls": 1
-        },
-        {
-            "id": 5280,
-            "name": "Cactus seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.004866180048661801,
-            "rolls": 1
-        },
-        {
-            "id": 22873,
-            "name": "Potato cactus seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.003475842891901286,
-            "rolls": 1
-        },
-        {
-            "id": 1399,
-            "name": "Earth battlestaff",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.078125,
-            "rolls": 1
-        },
-        {
-            "id": 5299,
-            "name": "Kwuarm seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.003475842891901286,
-            "rolls": 1
-        },
-        {
-            "id": 5300,
-            "name": "Snapdragon seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.002317497103128621,
-            "rolls": 1
-        },
-        {
-            "id": 5301,
-            "name": "Cadantine seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0016220600162206002,
-            "rolls": 1
-        },
-        {
-            "id": 5302,
-            "name": "Lantadyme seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0011586142973004287,
-            "rolls": 1
-        },
-        {
-            "id": 22879,
-            "name": "Snape grass seed",
-            "members": true,
-            "quantity": "3",
-            "noted": false,
-            "rarity": 0.0009268699601445917,
-            "rolls": 1
-        },
-        {
-            "id": 5303,
-            "name": "Dwarf weed seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0006951685783802572,
-            "rolls": 1
-        },
-        {
-            "id": 5304,
-            "name": "Torstol seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.00046345645826574594,
-            "rolls": 1
-        },
-        {
-            "id": 1438,
-            "name": "Air talisman",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0011160714285714285,
-            "rolls": 1
-        },
-        {
-            "id": 1446,
-            "name": "Body talisman",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0011160714285714285,
-            "rolls": 1
-        },
-        {
-            "id": 1440,
-            "name": "Earth talisman",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0011160714285714285,
-            "rolls": 1
-        },
-        {
-            "id": 1395,
-            "name": "Water battlestaff",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0390625,
-            "rolls": 1
-        },
-        {
-            "id": 1442,
-            "name": "Fire talisman",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0011160714285714285,
-            "rolls": 1
-        },
-        {
-            "id": 1448,
-            "name": "Mind talisman",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0011160714285714285,
-            "rolls": 1
-        },
-        {
-            "id": 1444,
-            "name": "Water talisman",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0011160714285714285,
-            "rolls": 1
-        },
-        {
-            "id": 1454,
-            "name": "Cosmic talisman",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0004464285714285714,
-            "rolls": 1
-        },
-        {
-            "id": 1452,
-            "name": "Chaos talisman",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.00033481769176683295,
-            "rolls": 1
-        },
-        {
-            "id": 1462,
-            "name": "Nature talisman",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.00033481769176683295,
-            "rolls": 1
-        },
-        {
-            "id": 1440,
-            "name": "Earth talisman",
-            "members": false,
-            "quantity": "25-75",
-            "noted": true,
-            "rarity": 0.078125,
-            "rolls": 1
-        },
-        {
-            "id": 1438,
-            "name": "Air talisman",
-            "members": false,
-            "quantity": "25-75",
-            "noted": true,
-            "rarity": 0.0546875,
-            "rolls": 1
-        },
-        {
-            "id": 1444,
-            "name": "Water talisman",
-            "members": false,
-            "quantity": "1-76",
-            "noted": true,
-            "rarity": 0.0546875,
-            "rolls": 1
-        },
-        {
-            "id": 385,
-            "name": "Shark",
-            "members": true,
-            "quantity": "5",
-            "noted": false,
-            "rarity": 0.078125,
-            "rolls": 1
-        },
-        {
-            "id": 1397,
-            "name": "Air battlestaff",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.03125,
-            "rolls": 1
-        },
-        {
-            "id": 995,
-            "name": "Coins",
-            "members": false,
-            "quantity": "500-1109",
-            "noted": false,
-            "rarity": 0.0234375,
-            "rolls": 1
-        },
-        {
-            "id": 413,
-            "name": "Oyster pearls",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0390625,
-            "rolls": 1
-        },
-        {
-            "id": 7936,
-            "name": "Pure essence",
-            "members": false,
-            "quantity": "150",
-            "noted": true,
-            "rarity": 0.0390625,
-            "rolls": 1
-        },
-        {
-            "id": 207,
-            "name": "Grimy ranarr weed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0390625,
-            "rolls": 1
-        },
-        {
-            "id": 1391,
-            "name": "Battlestaff",
-            "members": true,
-            "quantity": "1-10",
-            "noted": true,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 3757,
-            "name": "Fremennik blade",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 3758,
-            "name": "Fremennik shield",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 13492,
-            "name": "Ensouled dagannoth head",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.05,
-            "rolls": 1
-        },
-        {
-            "id": 2722,
-            "name": "Clue scroll (hard)",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.023809523809523808,
-            "rolls": 1
-        },
-        {
-            "id": 23083,
-            "name": "Brimstone key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.01694915254237288,
-            "rolls": 1
-        },
-        {
-            "id": 12073,
-            "name": "Clue scroll (elite)",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0013333333333333333,
-            "rolls": 1
-        },
-        {
-            "id": 12644,
-            "name": "Pet dagannoth prime",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0002,
-            "rolls": 1
-        },
-        {
-            "id": 3748,
-            "name": "Fremennik helm",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        }
-    ]
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "3fa098c5979af25c99d2101eabc6c6ff022f1104",
+  "_id": "60ebb3afc1c55bf074a5e5fb",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3afc1c55bf074a5e5fb",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 0,
+  "attack_level": 255,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "magic"
+  ],
+  "attributes": [],
+  "category": [
+    "bosses",
+    "dagannoth"
+  ],
+  "combat_level": 303,
+  "defence_crush": 255,
+  "defence_level": 255,
+  "defence_magic": 255,
+  "defence_ranged": 10,
+  "defence_slash": 255,
+  "defence_stab": 255,
+  "drops": [
+    {
+      "id": 6729,
+      "members": 1,
+      "name": "Dagannoth bones",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 6562,
+      "members": 1,
+      "name": "Mud battlestaff",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 6739,
+      "members": 1,
+      "name": "Dragon axe",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 3755,
+      "members": 1,
+      "name": "Farseer helm",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 6139,
+      "members": 1,
+      "name": "Skeletal top",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 6141,
+      "members": 1,
+      "name": "Skeletal bottoms",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 6731,
+      "members": 1,
+      "name": "Seers ring",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 556,
+      "members": 0,
+      "name": "Air rune",
+      "noted": 0,
+      "quantity": "100-200",
+      "rarity": "0.046875",
+      "rolls": 1
+    },
+    {
+      "id": 557,
+      "members": 0,
+      "name": "Earth rune",
+      "noted": 0,
+      "quantity": "50-100",
+      "rarity": "0.0390625",
+      "rolls": 1
+    },
+    {
+      "id": 565,
+      "members": 1,
+      "name": "Blood rune",
+      "noted": 0,
+      "quantity": "25-75",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 563,
+      "members": 0,
+      "name": "Law rune",
+      "noted": 0,
+      "quantity": "10-75",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 6155,
+      "members": 1,
+      "name": "Dagannoth hide",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 561,
+      "members": 0,
+      "name": "Nature rune",
+      "noted": 0,
+      "quantity": "25-50",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 4698,
+      "members": 1,
+      "name": "Mud rune",
+      "noted": 0,
+      "quantity": "25-75",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 560,
+      "members": 0,
+      "name": "Death rune",
+      "noted": 0,
+      "quantity": "25-85",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 5296,
+      "members": 1,
+      "name": "Toadflax seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.010893246187363835",
+      "rolls": 1
+    },
+    {
+      "id": 5297,
+      "members": 1,
+      "name": "Irit seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.007412898443291327",
+      "rolls": 1
+    },
+    {
+      "id": 5281,
+      "members": 1,
+      "name": "Belladonna seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.007183908045977011",
+      "rolls": 1
+    },
+    {
+      "id": 5106,
+      "members": 1,
+      "name": "Poison ivy seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0050968399592252805",
+      "rolls": 1
+    },
+    {
+      "id": 5298,
+      "members": 1,
+      "name": "Avantoe seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0050968399592252805",
+      "rolls": 1
+    },
+    {
+      "id": 5280,
+      "members": 1,
+      "name": "Cactus seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.004866180048661801",
+      "rolls": 1
+    },
+    {
+      "id": 22873,
+      "members": 1,
+      "name": "Potato cactus seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.003475842891901286",
+      "rolls": 1
+    },
+    {
+      "id": 1399,
+      "members": 1,
+      "name": "Earth battlestaff",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.078125",
+      "rolls": 1
+    },
+    {
+      "id": 5299,
+      "members": 1,
+      "name": "Kwuarm seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.003475842891901286",
+      "rolls": 1
+    },
+    {
+      "id": 5300,
+      "members": 1,
+      "name": "Snapdragon seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.002317497103128621",
+      "rolls": 1
+    },
+    {
+      "id": 5301,
+      "members": 1,
+      "name": "Cadantine seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0016220600162206002",
+      "rolls": 1
+    },
+    {
+      "id": 5302,
+      "members": 1,
+      "name": "Lantadyme seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0011586142973004287",
+      "rolls": 1
+    },
+    {
+      "id": 22879,
+      "members": 1,
+      "name": "Snape grass seed",
+      "noted": 0,
+      "quantity": "3",
+      "rarity": "0.0009268699601445917",
+      "rolls": 1
+    },
+    {
+      "id": 5303,
+      "members": 1,
+      "name": "Dwarf weed seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0006951685783802572",
+      "rolls": 1
+    },
+    {
+      "id": 5304,
+      "members": 1,
+      "name": "Torstol seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00046345645826574594",
+      "rolls": 1
+    },
+    {
+      "id": 1438,
+      "members": 0,
+      "name": "Air talisman",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0011160714285714285",
+      "rolls": 1
+    },
+    {
+      "id": 1446,
+      "members": 0,
+      "name": "Body talisman",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0011160714285714285",
+      "rolls": 1
+    },
+    {
+      "id": 1440,
+      "members": 0,
+      "name": "Earth talisman",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0011160714285714285",
+      "rolls": 1
+    },
+    {
+      "id": 1395,
+      "members": 1,
+      "name": "Water battlestaff",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0390625",
+      "rolls": 1
+    },
+    {
+      "id": 1442,
+      "members": 0,
+      "name": "Fire talisman",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0011160714285714285",
+      "rolls": 1
+    },
+    {
+      "id": 1448,
+      "members": 0,
+      "name": "Mind talisman",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0011160714285714285",
+      "rolls": 1
+    },
+    {
+      "id": 1444,
+      "members": 0,
+      "name": "Water talisman",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0011160714285714285",
+      "rolls": 1
+    },
+    {
+      "id": 1454,
+      "members": 1,
+      "name": "Cosmic talisman",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0004464285714285714",
+      "rolls": 1
+    },
+    {
+      "id": 1452,
+      "members": 1,
+      "name": "Chaos talisman",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00033481769176683295",
+      "rolls": 1
+    },
+    {
+      "id": 1462,
+      "members": 1,
+      "name": "Nature talisman",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00033481769176683295",
+      "rolls": 1
+    },
+    {
+      "id": 1440,
+      "members": 0,
+      "name": "Earth talisman",
+      "noted": 1,
+      "quantity": "25-75",
+      "rarity": "0.078125",
+      "rolls": 1
+    },
+    {
+      "id": 1438,
+      "members": 0,
+      "name": "Air talisman",
+      "noted": 1,
+      "quantity": "25-75",
+      "rarity": "0.0546875",
+      "rolls": 1
+    },
+    {
+      "id": 1444,
+      "members": 0,
+      "name": "Water talisman",
+      "noted": 1,
+      "quantity": "1-76",
+      "rarity": "0.0546875",
+      "rolls": 1
+    },
+    {
+      "id": 385,
+      "members": 1,
+      "name": "Shark",
+      "noted": 0,
+      "quantity": "5",
+      "rarity": "0.078125",
+      "rolls": 1
+    },
+    {
+      "id": 1397,
+      "members": 1,
+      "name": "Air battlestaff",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.03125",
+      "rolls": 1
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "500-1109",
+      "rarity": "0.0234375",
+      "rolls": 1
+    },
+    {
+      "id": 413,
+      "members": 1,
+      "name": "Oyster pearls",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0390625",
+      "rolls": 1
+    },
+    {
+      "id": 7936,
+      "members": 0,
+      "name": "Pure essence",
+      "noted": 1,
+      "quantity": "150",
+      "rarity": "0.0390625",
+      "rolls": 1
+    },
+    {
+      "id": 207,
+      "members": 1,
+      "name": "Grimy ranarr weed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0390625",
+      "rolls": 1
+    },
+    {
+      "id": 1391,
+      "members": 1,
+      "name": "Battlestaff",
+      "noted": 1,
+      "quantity": "1-10",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 3757,
+      "members": 1,
+      "name": "Fremennik blade",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 3758,
+      "members": 1,
+      "name": "Fremennik shield",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 13492,
+      "members": 1,
+      "name": "Ensouled dagannoth head",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.05",
+      "rolls": 1
+    },
+    {
+      "id": 2722,
+      "members": 1,
+      "name": "Clue scroll (hard)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.023809523809523808",
+      "rolls": 1
+    },
+    {
+      "id": 23083,
+      "members": 1,
+      "name": "Brimstone key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.01694915254237288",
+      "rolls": 1
+    },
+    {
+      "id": 12073,
+      "members": 1,
+      "name": "Clue scroll (elite)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0013333333333333333",
+      "rolls": 1
+    },
+    {
+      "id": 12644,
+      "members": 1,
+      "name": "Pet dagannoth prime",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0002",
+      "rolls": 1
+    },
+    {
+      "id": 3748,
+      "members": 1,
+      "name": "Fremennik helm",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "A legendary Dagannoth King, rumoured to fly on the north winds.",
+  "hitpoints": 255,
+  "id": "2266",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 255,
+  "max_hit": 50,
+  "members": 1,
+  "name": "Dagannoth Prime",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 0,
+  "release_date": "2005-11-07",
+  "size": 3,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "vannaka",
+    "chaeldar",
+    "konar",
+    "nieve",
+    "duradel"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "331.5",
+  "strength_bonus": 0,
+  "strength_level": 255,
+  "venomous": 0,
+  "wiki_name": "Dagannoth Prime",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Dagannoth_Prime"
 }

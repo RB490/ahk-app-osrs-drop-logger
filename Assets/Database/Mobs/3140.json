@@ -1,228 +1,255 @@
 {
-    "id": 3140,
-    "name": "Icefiend",
-    "last_updated": "2021-06-18",
-    "incomplete": true,
-    "members": true,
-    "release_date": "2013-10-17",
-    "combat_level": 18,
-    "size": 1,
-    "hitpoints": 20,
-    "max_hit": 3,
-    "attack_type": [
-        "melee",
-        "magic"
-    ],
-    "attack_speed": 4,
-    "aggressive": true,
-    "poisonous": false,
-    "venomous": false,
-    "immune_poison": false,
-    "immune_venom": false,
-    "attributes": [
-        "demon"
-    ],
-    "category": [
-        "icefiend"
-    ],
-    "slayer_monster": true,
-    "slayer_level": 1,
-    "slayer_xp": 20.0,
-    "slayer_masters": [
-        "turael",
-        "spria"
-    ],
-    "duplicate": false,
-    "examine": "A small ice demon.",
-    "wiki_name": "Icefiend (Level 18)",
-    "wiki_url": "https://oldschool.runescape.wiki/w/Icefiend#Level_18",
-    "attack_level": 12,
-    "strength_level": 16,
-    "defence_level": 19,
-    "magic_level": 1,
-    "ranged_level": 1,
-    "attack_bonus": 0,
-    "strength_bonus": 0,
-    "attack_magic": 0,
-    "magic_bonus": 0,
-    "attack_ranged": 0,
-    "ranged_bonus": 0,
-    "defence_stab": 0,
-    "defence_slash": 0,
-    "defence_crush": 0,
-    "defence_magic": 0,
-    "defence_ranged": 0,
-    "drops": [
-        {
-            "id": 1623,
-            "name": "Uncut sapphire",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.005859375,
-            "rolls": 1
-        },
-        {
-            "id": 1621,
-            "name": "Uncut emerald",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0029296875,
-            "rolls": 1
-        },
-        {
-            "id": 1619,
-            "name": "Uncut ruby",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.00146484375,
-            "rolls": 1
-        },
-        {
-            "id": 1452,
-            "name": "Chaos talisman",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.000549273494258261,
-            "rolls": 1
-        },
-        {
-            "id": 1462,
-            "name": "Nature talisman",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.000549273494258261,
-            "rolls": 1
-        },
-        {
-            "id": 1617,
-            "name": "Uncut diamond",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0003662109375,
-            "rolls": 1
-        },
-        {
-            "id": 830,
-            "name": "Rune javelin",
-            "members": true,
-            "quantity": "5",
-            "noted": false,
-            "rarity": 0.00018310546875,
-            "rolls": 1
-        },
-        {
-            "id": 987,
-            "name": "Loop half of key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.00018310546875,
-            "rolls": 1
-        },
-        {
-            "id": 985,
-            "name": "Tooth half of key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.00018310546875,
-            "rolls": 1
-        },
-        {
-            "id": 1247,
-            "name": "Rune spear",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.1444091796875e-05,
-            "rolls": 1
-        },
-        {
-            "id": 2366,
-            "name": "Shield left half",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 5.7220458984375e-06,
-            "rolls": 1
-        },
-        {
-            "id": 1249,
-            "name": "Dragon spear",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 4.291199173892664e-06,
-            "rolls": 1
-        },
-        {
-            "id": 11941,
-            "name": "Looting bag",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.125,
-            "rolls": 1
-        },
-        {
-            "id": 11942,
-            "name": "Ecumenical key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.016666666666666666,
-            "rolls": 1
-        },
-        {
-            "id": 556,
-            "name": "Air rune",
-            "members": false,
-            "quantity": "1-5",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 2677,
-            "name": "Clue scroll (easy)",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 555,
-            "name": "Water rune",
-            "members": false,
-            "quantity": "1-5",
-            "noted": false,
-            "rarity": 0.03125,
-            "rolls": 1
-        },
-        {
-            "id": 995,
-            "name": "Coins",
-            "members": false,
-            "quantity": "1-30",
-            "noted": false,
-            "rarity": 0.03125,
-            "rolls": 1
-        },
-        {
-            "id": 995,
-            "name": "Coins",
-            "members": false,
-            "quantity": "1-20",
-            "noted": false,
-            "rarity": 0.03125,
-            "rolls": 1
-        }
-    ]
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "9d4a8b623413b2f0fc5f1e21e4d91b2c29f597f3",
+  "_id": "60ebb3afc1c55bf074a5e716",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3afc1c55bf074a5e716",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 0,
+  "attack_level": 12,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "melee",
+    "magic"
+  ],
+  "attributes": [
+    "demon"
+  ],
+  "category": [
+    "icefiends"
+  ],
+  "combat_level": 18,
+  "defence_crush": 0,
+  "defence_level": 19,
+  "defence_magic": 0,
+  "defence_ranged": 0,
+  "defence_slash": 0,
+  "defence_stab": 0,
+  "drops": [
+    {
+      "id": 1623,
+      "members": 1,
+      "name": "Uncut sapphire",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.005859375",
+      "rolls": 1
+    },
+    {
+      "id": 1621,
+      "members": 1,
+      "name": "Uncut emerald",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0029296875",
+      "rolls": 1
+    },
+    {
+      "id": 1619,
+      "members": 1,
+      "name": "Uncut ruby",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00146484375",
+      "rolls": 1
+    },
+    {
+      "id": 1452,
+      "members": 1,
+      "name": "Chaos talisman",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.000549273494258261",
+      "rolls": 1
+    },
+    {
+      "id": 1462,
+      "members": 1,
+      "name": "Nature talisman",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.000549273494258261",
+      "rolls": 1
+    },
+    {
+      "id": 1617,
+      "members": 1,
+      "name": "Uncut diamond",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0003662109375",
+      "rolls": 1
+    },
+    {
+      "id": 830,
+      "members": 1,
+      "name": "Rune javelin",
+      "noted": 0,
+      "quantity": "5",
+      "rarity": "0.00018310546875",
+      "rolls": 1
+    },
+    {
+      "id": 987,
+      "members": 1,
+      "name": "Loop half of key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00018310546875",
+      "rolls": 1
+    },
+    {
+      "id": 985,
+      "members": 1,
+      "name": "Tooth half of key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00018310546875",
+      "rolls": 1
+    },
+    {
+      "id": 1247,
+      "members": 1,
+      "name": "Rune spear",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.1444091796875e-05",
+      "rolls": 1
+    },
+    {
+      "id": 2366,
+      "members": 1,
+      "name": "Shield left half",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "5.7220458984375e-06",
+      "rolls": 1
+    },
+    {
+      "id": 1249,
+      "members": 1,
+      "name": "Dragon spear",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "4.291199173892664e-06",
+      "rolls": 1
+    },
+    {
+      "id": 25766,
+      "members": 1,
+      "name": "Fiendish ashes",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 11941,
+      "members": 1,
+      "name": "Looting bag",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.125",
+      "rolls": 1
+    },
+    {
+      "id": 11942,
+      "members": 1,
+      "name": "Ecumenical key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.016666666666666666",
+      "rolls": 1
+    },
+    {
+      "id": 556,
+      "members": 0,
+      "name": "Air rune",
+      "noted": 0,
+      "quantity": "1-5",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 2677,
+      "members": 1,
+      "name": "Clue scroll (easy)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 555,
+      "members": 0,
+      "name": "Water rune",
+      "noted": 0,
+      "quantity": "1-5",
+      "rarity": "0.03125",
+      "rolls": 1
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "1-30",
+      "rarity": "0.03125",
+      "rolls": 1
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "1-20",
+      "rarity": "0.03125",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "A small ice demon.",
+  "hitpoints": 20,
+  "id": "3140",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 3,
+  "members": 1,
+  "name": "Icefiend",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2013-10-17",
+  "size": 1,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "turael",
+    "spria"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "20.0",
+  "strength_bonus": 0,
+  "strength_level": 16,
+  "venomous": 0,
+  "wiki_name": "Icefiend (Level 18)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Icefiend#Level_18"
 }

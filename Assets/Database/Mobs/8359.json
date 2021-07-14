@@ -1,60 +1,78 @@
 {
-    "id": 8359,
-    "name": "Pestilent Bloat",
-    "last_updated": "2021-06-18",
-    "incomplete": true,
-    "members": true,
-    "release_date": "2018-06-07",
-    "combat_level": 870,
-    "size": 5,
-    "hitpoints": 2000,
-    "max_hit": null,
-    "attack_type": [
-        "ranged"
-    ],
-    "attack_speed": 1,
-    "aggressive": true,
-    "poisonous": false,
-    "venomous": false,
-    "immune_poison": true,
-    "immune_venom": true,
-    "attributes": [
-        "undead"
-    ],
-    "category": [],
-    "slayer_monster": false,
-    "slayer_level": null,
-    "slayer_xp": null,
-    "slayer_masters": [],
-    "duplicate": false,
-    "examine": "An infinite mass of decay and death.",
-    "wiki_name": "Pestilent Bloat",
-    "wiki_url": "https://oldschool.runescape.wiki/w/Pestilent_Bloat",
-    "attack_level": 250,
-    "strength_level": 340,
-    "defence_level": 100,
-    "magic_level": 150,
-    "ranged_level": 180,
-    "attack_bonus": 150,
-    "strength_bonus": 82,
-    "attack_magic": 0,
-    "magic_bonus": 0,
-    "attack_ranged": 180,
-    "ranged_bonus": 4,
-    "defence_stab": 40,
-    "defence_slash": 20,
-    "defence_crush": 40,
-    "defence_magic": 600,
-    "defence_ranged": 800,
-    "drops": [
-        {
-            "id": 22506,
-            "name": "The butcher",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        }
-    ]
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "8d57d4fbb85db02c67001006bf5a2ee5d3703f67",
+  "_id": "60ebb3b1c1c55bf074a5ec7f",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3b1c1c55bf074a5ec7f",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 0,
+  "attack_level": 0,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 1,
+  "attack_type": [
+    "ranged"
+  ],
+  "attributes": [
+    "undead"
+  ],
+  "category": [],
+  "combat_level": 870,
+  "defence_crush": 0,
+  "defence_level": 0,
+  "defence_magic": 600,
+  "defence_ranged": 800,
+  "defence_slash": 0,
+  "defence_stab": 0,
+  "drops": [
+    {
+      "id": 22506,
+      "members": 1,
+      "name": "The butcher",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "An infinite mass of decay and death.",
+  "hitpoints": "",
+  "id": "8359",
+  "immune_poison": 1,
+  "immune_venom": 1,
+  "incomplete": 1,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 0,
+  "max_hit": "",
+  "members": 1,
+  "name": "Pestilent Bloat",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 0,
+  "release_date": "",
+  "size": 5,
+  "slayer_level": "",
+  "slayer_masters": [],
+  "slayer_monster": 0,
+  "slayer_xp": "",
+  "strength_bonus": 0,
+  "strength_level": 0,
+  "venomous": 0,
+  "wiki_name": "Pestilent Bloat",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Pestilent_Bloat"
 }

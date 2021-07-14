@@ -1,7 +1,7 @@
 {
   "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
-  "_etag": "49aaa53de5c9b4b5c3b5912b89c220ae6bde8012",
-  "_id": "60cd28afcfb7392d00907144",
+  "_etag": "ca6c6a36ae9736ff44ab7ee17c3f983e3a3671af",
+  "_id": "60ebb3afc1c55bf074a5e4de",
   "_links": {
     "collection": {
       "href": "monsters",
@@ -12,7 +12,7 @@
       "title": "home"
     },
     "self": {
-      "href": "monsters/60cd28afcfb7392d00907144",
+      "href": "monsters/60ebb3afc1c55bf074a5e4de",
       "title": "Monster"
     }
   },
@@ -28,7 +28,7 @@
   ],
   "attributes": [],
   "category": [
-    "dwarf"
+    "dwarves"
   ],
   "combat_level": 7,
   "defence_crush": 0,
@@ -487,7 +487,7 @@
   "immune_poison": 0,
   "immune_venom": 0,
   "incomplete": 1,
-  "last_updated": "2020-12-25",
+  "last_updated": "2021-07-12",
   "magic_bonus": 0,
   "magic_level": 1,
   "max_hit": 2,

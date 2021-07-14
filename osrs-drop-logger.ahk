@@ -22,16 +22,17 @@
     , GUI_LOG_ITEM_IMAGE_TYPES  := "Wiki Small|Wiki Detailed|RuneLite"
 
     ; Path variables
-    , PATH_SCRIPT_SETTINGS      := A_ScriptDir "\Assets\Settings.json"
-    , PATH_DATABASE_MOBS        := A_ScriptDir "\Assets\Database\Mobs database.json"
-    , PATH_DATABASE_ITEMS       := A_ScriptDir "\Assets\Database\Items database.json"
-    , PATH_DATABASE_CATEGORIES  := A_ScriptDir "\Assets\Database\Item category database.json"
-    , DIR_DATABASE_MOBS         := A_ScriptDir "\Assets\Database\Mobs"
-    , DIR_MOB_IMAGES            := A_ScriptDir "\Assets\Images\Mobs"
-    , DIR_GUI_ICONS             := A_ScriptDir "\Assets\Images\Gui"
-    , DIR_ITEM_IMAGES_ICONS     := A_ScriptDir "\Assets\Images\Items\Icons"
-    , DIR_ITEM_IMAGES_DETAILED  := A_ScriptDir "\Assets\Images\Items\Detailed"
-    , DIR_ITEM_IMAGES_RUNELITE  := A_ScriptDir "\Assets\Images\Items\RuneLite"
+    , PATH_SCRIPT_SETTINGS          := A_ScriptDir "\Assets\Settings.json"
+    , PATH_DATABASE_MOBS            := A_ScriptDir "\Assets\Database\Mobs database.json"
+    , PATH_DATABASE_MOBS_DROP_LIST  := A_ScriptDir "\Assets\Database\Mobs database drop list.json"
+    , PATH_DATABASE_ITEMS           := A_ScriptDir "\Assets\Database\Prices database.json"
+    , PATH_DATABASE_CATEGORIES      := A_ScriptDir "\Assets\Database\Item category database.json"
+    , DIR_DATABASE_MOBS             := A_ScriptDir "\Assets\Database\Mobs"
+    , DIR_MOB_IMAGES                := A_ScriptDir "\Assets\Images\Mobs"
+    , DIR_GUI_ICONS                 := A_ScriptDir "\Assets\Images\Gui"
+    , DIR_ITEM_IMAGES_ICONS         := A_ScriptDir "\Assets\Images\Items\Icons"
+    , DIR_ITEM_IMAGES_DETAILED      := A_ScriptDir "\Assets\Images\Items\Detailed"
+    , DIR_ITEM_IMAGES_RUNELITE      := A_ScriptDir "\Assets\Images\Items\RuneLite"
     
     ; Objects
     , SCRIPT_SETTINGS           := LoadSettings()
@@ -40,8 +41,8 @@
     ; Class objects
     , P                         := new ClassGuiProgress(APP_NAME)
     , WIKI_SCRAPER              := new ClassWikiScraper
-    , ITEM_DB                   := new ClassDatabaseItems
-    , MOB_DB                    := new ClassDatabaseMobs
+    , DB_MOB                    := new ClassDatabaseMobs
+    , DB_PRICES                 := new ClassDatabasePrices
     , DROP_LOG                  := new ClassDropLog
     , DROP_LOG_STATS            := new ClassDropLogStats
     , DROP_TABLE                := new ClassDropTable
@@ -85,7 +86,13 @@
 
         ; GUI_LOG.Get()
         ; GUI_STATS.Get()
-        ; GUI_START.Get()
+        GUI_START.Get()
+
+        ; _QPC("reset")
+        ; DB_MOB                    := new ClassDatabaseMobs
+        ; DB_PRICES                   := new ClassDatabasePrices
+        ; DB_PRICES._Update()
+        ; msgbox % _QPC()
 
         ; Msg("Info", "Auto-execute section", "End of Auto-execute section")
     return
@@ -93,7 +100,7 @@
         GUI_STATS.Set(DROP_LOG.Stats.Get())
     return
     updateMobDb:
-        MOB_DB._Update("silent")
+        DB_MOB._Update("silent")
     return
     disableTooltip:
         tooltip
@@ -103,7 +110,7 @@
 
 ; Includes
     #Include, %A_ScriptDir%\Includes
-    #Include, Class Database Items.ahk
+    #Include, Class Database Prices.ahk
     #Include, Class Database Mobs.ahk
     #Include, Class Drop Log.ahk
     #Include, Class Drop Log Stats.ahk

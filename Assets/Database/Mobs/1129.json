@@ -1,70 +1,88 @@
 {
-    "id": 1129,
-    "name": "Kamil (hard)",
-    "last_updated": "2020-12-25",
-    "incomplete": true,
-    "members": true,
-    "release_date": "2013-09-05",
-    "combat_level": 273,
-    "size": 1,
-    "hitpoints": 255,
-    "max_hit": 43,
-    "attack_type": [
-        "melee",
-        "magic"
-    ],
-    "attack_speed": 4,
-    "aggressive": true,
-    "poisonous": false,
-    "venomous": false,
-    "immune_poison": false,
-    "immune_venom": false,
-    "attributes": [],
-    "category": [
-        "ice warrior"
-    ],
-    "slayer_monster": false,
-    "slayer_level": null,
-    "slayer_xp": null,
-    "slayer_masters": [],
-    "duplicate": false,
-    "examine": "Ice warrior.",
-    "wiki_name": "Kamil (Hard)",
-    "wiki_url": "https://oldschool.runescape.wiki/w/Kamil#Hard",
-    "attack_level": 380,
-    "strength_level": 160,
-    "defence_level": 135,
-    "magic_level": 1,
-    "ranged_level": 1,
-    "attack_bonus": 60,
-    "strength_bonus": 100,
-    "attack_magic": 0,
-    "magic_bonus": 0,
-    "attack_ranged": 0,
-    "ranged_bonus": 0,
-    "defence_stab": 35,
-    "defence_slash": 60,
-    "defence_crush": 35,
-    "defence_magic": 0,
-    "defence_ranged": 0,
-    "drops": [
-        {
-            "id": 1897,
-            "name": "Chocolate cake",
-            "members": false,
-            "quantity": "1,2",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        },
-        {
-            "id": 3024,
-            "name": "Super restore(4)",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        }
-    ]
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "b3a069ca197a7cd3c3d20f02edb01b862765e194",
+  "_id": "60ebb3aec1c55bf074a5e48a",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3aec1c55bf074a5e48a",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 60,
+  "attack_level": 380,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "melee",
+    "magic"
+  ],
+  "attributes": [],
+  "category": [
+    "ice warriors"
+  ],
+  "combat_level": 273,
+  "defence_crush": 35,
+  "defence_level": 135,
+  "defence_magic": 0,
+  "defence_ranged": 0,
+  "defence_slash": 60,
+  "defence_stab": 35,
+  "drops": [
+    {
+      "id": 1897,
+      "members": 0,
+      "name": "Chocolate cake",
+      "noted": 0,
+      "quantity": "1,2",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 3024,
+      "members": 1,
+      "name": "Super restore(4)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "Ice warrior.",
+  "hitpoints": 255,
+  "id": "1129",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 43,
+  "members": 1,
+  "name": "Kamil (hard)",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2013-09-05",
+  "size": 1,
+  "slayer_level": "",
+  "slayer_masters": [],
+  "slayer_monster": 0,
+  "slayer_xp": "",
+  "strength_bonus": 100,
+  "strength_level": 160,
+  "venomous": 0,
+  "wiki_name": "Kamil (Hard)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Kamil#Hard"
 }

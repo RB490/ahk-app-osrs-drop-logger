@@ -1,0 +1,76 @@
+{
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "c11575375ce3d61b5d2cfdc88e10338f5a41ade2",
+  "_id": "60ebb3b1c1c55bf074a5ec3c",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3b1c1c55bf074a5ec3c",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 0,
+  "attack_level": 100,
+  "attack_magic": 1,
+  "attack_ranged": 1,
+  "attack_speed": 4,
+  "attack_type": [
+    "slash"
+  ],
+  "attributes": [],
+  "category": [],
+  "combat_level": 100,
+  "defence_crush": 15,
+  "defence_level": 60,
+  "defence_magic": 0,
+  "defence_ranged": 5,
+  "defence_slash": 15,
+  "defence_stab": 5,
+  "drops": [
+    {
+      "id": 25766,
+      "members": 1,
+      "name": "Fiendish ashes",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "What on earth is that?",
+  "hitpoints": 80,
+  "id": "8056",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 11,
+  "members": 1,
+  "name": "Spawn",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2018-01-04",
+  "size": 1,
+  "slayer_level": "",
+  "slayer_masters": [],
+  "slayer_monster": 0,
+  "slayer_xp": "",
+  "strength_bonus": 0,
+  "strength_level": 100,
+  "venomous": 0,
+  "wiki_name": "Spawn (Dragon Slayer II)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Spawn_(Dragon_Slayer_II)"
+}

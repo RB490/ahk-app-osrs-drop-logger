@@ -1,688 +1,706 @@
 {
-    "id": 10400,
-    "name": "Guardian Drake",
-    "last_updated": "2021-02-04",
-    "incomplete": false,
-    "members": true,
-    "release_date": "2020-07-23",
-    "combat_level": 386,
-    "size": 5,
-    "hitpoints": 630,
-    "max_hit": 35,
-    "attack_type": [
-        "melee",
-        "ranged"
-    ],
-    "attack_speed": 4,
-    "aggressive": false,
-    "poisonous": false,
-    "venomous": false,
-    "immune_poison": true,
-    "immune_venom": false,
-    "attributes": [
-        "dragon"
-    ],
-    "category": [
-        "drake"
-    ],
-    "slayer_monster": true,
-    "slayer_level": 84,
-    "slayer_xp": 7245.0,
-    "slayer_masters": [
-        "konar",
-        "nieve",
-        "duradel"
-    ],
-    "duplicate": false,
-    "examine": "It's really winging the whole dragon thing, isn't it?",
-    "wiki_name": "Guardian Drake",
-    "wiki_url": "https://oldschool.runescape.wiki/w/Guardian_Drake",
-    "attack_level": 270,
-    "strength_level": 280,
-    "defence_level": 200,
-    "magic_level": 300,
-    "ranged_level": 240,
-    "attack_bonus": 0,
-    "strength_bonus": 12,
-    "attack_magic": 0,
-    "magic_bonus": 0,
-    "attack_ranged": 40,
-    "ranged_bonus": 0,
-    "defence_stab": 60,
-    "defence_slash": 100,
-    "defence_crush": 100,
-    "defence_magic": 20,
-    "defence_ranged": 150,
-    "drops": [
-        {
-            "id": 1623,
-            "name": "Uncut sapphire",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0029411764705882353,
-            "rolls": 1
-        },
-        {
-            "id": 1621,
-            "name": "Uncut emerald",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0014705882352941176,
-            "rolls": 1
-        },
-        {
-            "id": 1619,
-            "name": "Uncut ruby",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0007352941176470588,
-            "rolls": 1
-        },
-        {
-            "id": 1452,
-            "name": "Chaos talisman",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0002757137539806173,
-            "rolls": 1
-        },
-        {
-            "id": 1462,
-            "name": "Nature talisman",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0002757137539806173,
-            "rolls": 1
-        },
-        {
-            "id": 1617,
-            "name": "Uncut diamond",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0001838235294117647,
-            "rolls": 1
-        },
-        {
-            "id": 830,
-            "name": "Rune javelin",
-            "members": true,
-            "quantity": "5",
-            "noted": false,
-            "rarity": 9.191176470588235e-05,
-            "rolls": 1
-        },
-        {
-            "id": 987,
-            "name": "Loop half of key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 9.191176470588235e-05,
-            "rolls": 1
-        },
-        {
-            "id": 985,
-            "name": "Tooth half of key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 9.191176470588235e-05,
-            "rolls": 1
-        },
-        {
-            "id": 1247,
-            "name": "Rune spear",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 5.744485294117647e-06,
-            "rolls": 1
-        },
-        {
-            "id": 2366,
-            "name": "Shield left half",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 2.8722426470588235e-06,
-            "rolls": 1
-        },
-        {
-            "id": 1249,
-            "name": "Dragon spear",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 2.1540137029735725e-06,
-            "rolls": 1
-        },
-        {
-            "id": 22783,
-            "name": "Drake bones",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        },
-        {
-            "id": 1434,
-            "name": "Dragon mace",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.011764705882352941,
-            "rolls": 3
-        },
-        {
-            "id": 554,
-            "name": "Fire rune",
-            "members": false,
-            "quantity": "100-200",
-            "noted": false,
-            "rarity": 0.11764705882352941,
-            "rolls": 3
-        },
-        {
-            "id": 561,
-            "name": "Nature rune",
-            "members": false,
-            "quantity": "30-60",
-            "noted": false,
-            "rarity": 0.11764705882352941,
-            "rolls": 3
-        },
-        {
-            "id": 563,
-            "name": "Law rune",
-            "members": false,
-            "quantity": "25-50",
-            "noted": false,
-            "rarity": 0.11764705882352941,
-            "rolls": 3
-        },
-        {
-            "id": 560,
-            "name": "Death rune",
-            "members": false,
-            "quantity": "20-40",
-            "noted": false,
-            "rarity": 0.11764705882352941,
-            "rolls": 3
-        },
-        {
-            "id": 892,
-            "name": "Rune arrow",
-            "members": true,
-            "quantity": "35-65",
-            "noted": false,
-            "rarity": 0.11764705882352941,
-            "rolls": 3
-        },
-        {
-            "id": 199,
-            "name": "Grimy guam leaf",
-            "members": true,
-            "quantity": "1-3",
-            "noted": false,
-            "rarity": 0.014705882352941176,
-            "rolls": 3
-        },
-        {
-            "id": 201,
-            "name": "Grimy marrentill",
-            "members": true,
-            "quantity": "1-3",
-            "noted": false,
-            "rarity": 0.011025358324145534,
-            "rolls": 3
-        },
-        {
-            "id": 203,
-            "name": "Grimy tarromin",
-            "members": true,
-            "quantity": "1-3",
-            "noted": false,
-            "rarity": 0.008271298593879239,
-            "rolls": 3
-        },
-        {
-            "id": 205,
-            "name": "Grimy harralander",
-            "members": true,
-            "quantity": "1-3",
-            "noted": false,
-            "rarity": 0.006435006435006435,
-            "rolls": 3
-        },
-        {
-            "id": 22960,
-            "name": "Drake's tooth",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.000390625,
-            "rolls": 1
-        },
-        {
-            "id": 207,
-            "name": "Grimy ranarr weed",
-            "members": true,
-            "quantity": "1-3",
-            "noted": false,
-            "rarity": 0.005055611729019211,
-            "rolls": 3
-        },
-        {
-            "id": 209,
-            "name": "Grimy irit leaf",
-            "members": true,
-            "quantity": "1-3",
-            "noted": false,
-            "rarity": 0.003676470588235294,
-            "rolls": 3
-        },
-        {
-            "id": 211,
-            "name": "Grimy avantoe",
-            "members": true,
-            "quantity": "1-3",
-            "noted": false,
-            "rarity": 0.0027570995312930797,
-            "rolls": 3
-        },
-        {
-            "id": 213,
-            "name": "Grimy kwuarm",
-            "members": true,
-            "quantity": "1-3",
-            "noted": false,
-            "rarity": 0.002297794117647059,
-            "rolls": 3
-        },
-        {
-            "id": 215,
-            "name": "Grimy cadantine",
-            "members": true,
-            "quantity": "1-3",
-            "noted": false,
-            "rarity": 0.001838235294117647,
-            "rolls": 3
-        },
-        {
-            "id": 2485,
-            "name": "Grimy lantadyme",
-            "members": true,
-            "quantity": "1-3",
-            "noted": false,
-            "rarity": 0.0013787398317937406,
-            "rolls": 3
-        },
-        {
-            "id": 217,
-            "name": "Grimy dwarf weed",
-            "members": true,
-            "quantity": "1-3",
-            "noted": false,
-            "rarity": 0.0013787398317937406,
-            "rolls": 3
-        },
-        {
-            "id": 211,
-            "name": "Grimy avantoe",
-            "members": true,
-            "quantity": "1-3",
-            "noted": true,
-            "rarity": 0.011025358324145534,
-            "rolls": 3
-        },
-        {
-            "id": 213,
-            "name": "Grimy kwuarm",
-            "members": true,
-            "quantity": "1-3",
-            "noted": true,
-            "rarity": 0.011025358324145534,
-            "rolls": 3
-        },
-        {
-            "id": 207,
-            "name": "Grimy ranarr weed",
-            "members": true,
-            "quantity": "1-3",
-            "noted": true,
-            "rarity": 0.0088261253309797,
-            "rolls": 3
-        },
-        {
-            "id": 22957,
-            "name": "Drake's claw",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.000390625,
-            "rolls": 1
-        },
-        {
-            "id": 3051,
-            "name": "Grimy snapdragon",
-            "members": true,
-            "quantity": "1-3",
-            "noted": true,
-            "rarity": 0.0088261253309797,
-            "rolls": 3
-        },
-        {
-            "id": 215,
-            "name": "Grimy cadantine",
-            "members": true,
-            "quantity": "1-3",
-            "noted": true,
-            "rarity": 0.0088261253309797,
-            "rolls": 3
-        },
-        {
-            "id": 217,
-            "name": "Grimy dwarf weed",
-            "members": true,
-            "quantity": "1-3",
-            "noted": true,
-            "rarity": 0.0088261253309797,
-            "rolls": 3
-        },
-        {
-            "id": 2485,
-            "name": "Grimy lantadyme",
-            "members": true,
-            "quantity": "1-3",
-            "noted": true,
-            "rarity": 0.0066181336863004635,
-            "rolls": 3
-        },
-        {
-            "id": 219,
-            "name": "Grimy torstol",
-            "members": true,
-            "quantity": "1-3",
-            "noted": true,
-            "rarity": 0.0066181336863004635,
-            "rolls": 3
-        },
-        {
-            "id": 5296,
-            "name": "Toadflax seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0023430178069353325,
-            "rolls": 3
-        },
-        {
-            "id": 5297,
-            "name": "Irit seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0015951507417450949,
-            "rolls": 3
-        },
-        {
-            "id": 5281,
-            "name": "Belladonna seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0015453562046051615,
-            "rolls": 3
-        },
-        {
-            "id": 5106,
-            "name": "Poison ivy seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0010967317394165387,
-            "rolls": 3
-        },
-        {
-            "id": 5298,
-            "name": "Avantoe seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0010967317394165387,
-            "rolls": 3
-        },
-        {
-            "id": 20849,
-            "name": "Dragon thrownaxe",
-            "members": true,
-            "quantity": "100-200",
-            "noted": false,
-            "rarity": 0.0001,
-            "rolls": 1
-        },
-        {
-            "id": 5280,
-            "name": "Cactus seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0010469011725293131,
-            "rolls": 3
-        },
-        {
-            "id": 22873,
-            "name": "Potato cactus seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0007477753682793689,
-            "rolls": 3
-        },
-        {
-            "id": 5299,
-            "name": "Kwuarm seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0007477753682793689,
-            "rolls": 3
-        },
-        {
-            "id": 5300,
-            "name": "Snapdragon seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0004985044865403788,
-            "rolls": 3
-        },
-        {
-            "id": 5301,
-            "name": "Cadantine seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0003489548801339987,
-            "rolls": 3
-        },
-        {
-            "id": 5302,
-            "name": "Lantadyme seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0002492522432701894,
-            "rolls": 3
-        },
-        {
-            "id": 22879,
-            "name": "Snape grass seed",
-            "members": true,
-            "quantity": "3",
-            "noted": false,
-            "rarity": 0.00019940179461615153,
-            "rolls": 3
-        },
-        {
-            "id": 5303,
-            "name": "Dwarf weed seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.00014955060044566078,
-            "rolls": 3
-        },
-        {
-            "id": 5304,
-            "name": "Torstol seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 9.970089730807577e-05,
-            "rolls": 3
-        },
-        {
-            "id": 995,
-            "name": "Coins",
-            "members": false,
-            "quantity": "1000-2000",
-            "noted": false,
-            "rarity": 0.047058823529411764,
-            "rolls": 3
-        },
-        {
-            "id": 22804,
-            "name": "Dragon knife",
-            "members": true,
-            "quantity": "100-200",
-            "noted": false,
-            "rarity": 0.0001,
-            "rolls": 1
-        },
-        {
-            "id": 995,
-            "name": "Coins",
-            "members": false,
-            "quantity": "5000-7000",
-            "noted": false,
-            "rarity": 0.011764705882352941,
-            "rolls": 3
-        },
-        {
-            "id": 1601,
-            "name": "Diamond",
-            "members": false,
-            "quantity": "3-6",
-            "noted": true,
-            "rarity": 0.047058823529411764,
-            "rolls": 3
-        },
-        {
-            "id": 373,
-            "name": "Swordfish",
-            "members": false,
-            "quantity": "1-2",
-            "noted": false,
-            "rarity": 0.047058823529411764,
-            "rolls": 3
-        },
-        {
-            "id": 1163,
-            "name": "Rune full helm",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.03529411764705882,
-            "rolls": 3
-        },
-        {
-            "id": 23083,
-            "name": "Brimstone key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.025,
-            "rolls": 1
-        },
-        {
-            "id": 2722,
-            "name": "Clue scroll (hard)",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 20730,
-            "name": "Mist battlestaff",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.009523809523809525,
-            "rolls": 1
-        },
-        {
-            "id": 20736,
-            "name": "Dust battlestaff",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.009523809523809525,
-            "rolls": 1
-        },
-        {
-            "id": 21270,
-            "name": "Eternal gem",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.002717391304347826,
-            "rolls": 1
-        },
-        {
-            "id": 20724,
-            "name": "Imbued heart",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.002717391304347826,
-            "rolls": 1
-        },
-        {
-            "id": 2501,
-            "name": "Red d'hide body",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.023529411764705882,
-            "rolls": 3
-        },
-        {
-            "id": 2491,
-            "name": "Black d'hide vambraces",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.011764705882352941,
-            "rolls": 3
-        },
-        {
-            "id": 1407,
-            "name": "Mystic earth staff",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.011764705882352941,
-            "rolls": 3
-        }
-    ]
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "60362834c32664b9f3602dcf07e9b1bf92c1f13f",
+  "_id": "60ebb3b2c1c55bf074a5ed5f",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3b2c1c55bf074a5ed5f",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 0,
+  "attack_bonus": 0,
+  "attack_level": 270,
+  "attack_magic": 0,
+  "attack_ranged": 40,
+  "attack_speed": 4,
+  "attack_type": [
+    "melee",
+    "ranged"
+  ],
+  "attributes": [
+    "dragon"
+  ],
+  "category": [
+    "drakes"
+  ],
+  "combat_level": 386,
+  "defence_crush": 100,
+  "defence_level": 200,
+  "defence_magic": 20,
+  "defence_ranged": 150,
+  "defence_slash": 100,
+  "defence_stab": 60,
+  "drops": [
+    {
+      "id": 1623,
+      "members": 1,
+      "name": "Uncut sapphire",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0029411764705882353",
+      "rolls": 1
+    },
+    {
+      "id": 1621,
+      "members": 1,
+      "name": "Uncut emerald",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0014705882352941176",
+      "rolls": 1
+    },
+    {
+      "id": 1619,
+      "members": 1,
+      "name": "Uncut ruby",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0007352941176470588",
+      "rolls": 1
+    },
+    {
+      "id": 1452,
+      "members": 1,
+      "name": "Chaos talisman",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0002757137539806173",
+      "rolls": 1
+    },
+    {
+      "id": 1462,
+      "members": 1,
+      "name": "Nature talisman",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0002757137539806173",
+      "rolls": 1
+    },
+    {
+      "id": 1617,
+      "members": 1,
+      "name": "Uncut diamond",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0001838235294117647",
+      "rolls": 1
+    },
+    {
+      "id": 830,
+      "members": 1,
+      "name": "Rune javelin",
+      "noted": 0,
+      "quantity": "5",
+      "rarity": "9.191176470588235e-05",
+      "rolls": 1
+    },
+    {
+      "id": 987,
+      "members": 1,
+      "name": "Loop half of key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "9.191176470588235e-05",
+      "rolls": 1
+    },
+    {
+      "id": 985,
+      "members": 1,
+      "name": "Tooth half of key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "9.191176470588235e-05",
+      "rolls": 1
+    },
+    {
+      "id": 1247,
+      "members": 1,
+      "name": "Rune spear",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "5.744485294117647e-06",
+      "rolls": 1
+    },
+    {
+      "id": 2366,
+      "members": 1,
+      "name": "Shield left half",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "2.8722426470588235e-06",
+      "rolls": 1
+    },
+    {
+      "id": 1249,
+      "members": 1,
+      "name": "Dragon spear",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "2.1540137029735725e-06",
+      "rolls": 1
+    },
+    {
+      "id": 22783,
+      "members": 1,
+      "name": "Drake bones",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 1434,
+      "members": 1,
+      "name": "Dragon mace",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.011764705882352941",
+      "rolls": 3
+    },
+    {
+      "id": 554,
+      "members": 0,
+      "name": "Fire rune",
+      "noted": 0,
+      "quantity": "100-200",
+      "rarity": "0.11764705882352941",
+      "rolls": 3
+    },
+    {
+      "id": 561,
+      "members": 0,
+      "name": "Nature rune",
+      "noted": 0,
+      "quantity": "30-60",
+      "rarity": "0.11764705882352941",
+      "rolls": 3
+    },
+    {
+      "id": 563,
+      "members": 0,
+      "name": "Law rune",
+      "noted": 0,
+      "quantity": "25-50",
+      "rarity": "0.11764705882352941",
+      "rolls": 3
+    },
+    {
+      "id": 560,
+      "members": 0,
+      "name": "Death rune",
+      "noted": 0,
+      "quantity": "20-40",
+      "rarity": "0.11764705882352941",
+      "rolls": 3
+    },
+    {
+      "id": 892,
+      "members": 1,
+      "name": "Rune arrow",
+      "noted": 0,
+      "quantity": "35-65",
+      "rarity": "0.11764705882352941",
+      "rolls": 3
+    },
+    {
+      "id": 199,
+      "members": 1,
+      "name": "Grimy guam leaf",
+      "noted": 0,
+      "quantity": "1-3",
+      "rarity": "0.014705882352941176",
+      "rolls": 3
+    },
+    {
+      "id": 201,
+      "members": 1,
+      "name": "Grimy marrentill",
+      "noted": 0,
+      "quantity": "1-3",
+      "rarity": "0.011025358324145534",
+      "rolls": 3
+    },
+    {
+      "id": 203,
+      "members": 1,
+      "name": "Grimy tarromin",
+      "noted": 0,
+      "quantity": "1-3",
+      "rarity": "0.008271298593879239",
+      "rolls": 3
+    },
+    {
+      "id": 205,
+      "members": 1,
+      "name": "Grimy harralander",
+      "noted": 0,
+      "quantity": "1-3",
+      "rarity": "0.006435006435006435",
+      "rolls": 3
+    },
+    {
+      "id": 22960,
+      "members": 1,
+      "name": "Drake's tooth",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.000390625",
+      "rolls": 1
+    },
+    {
+      "id": 207,
+      "members": 1,
+      "name": "Grimy ranarr weed",
+      "noted": 0,
+      "quantity": "1-3",
+      "rarity": "0.005055611729019211",
+      "rolls": 3
+    },
+    {
+      "id": 209,
+      "members": 1,
+      "name": "Grimy irit leaf",
+      "noted": 0,
+      "quantity": "1-3",
+      "rarity": "0.003676470588235294",
+      "rolls": 3
+    },
+    {
+      "id": 211,
+      "members": 1,
+      "name": "Grimy avantoe",
+      "noted": 0,
+      "quantity": "1-3",
+      "rarity": "0.0027570995312930797",
+      "rolls": 3
+    },
+    {
+      "id": 213,
+      "members": 1,
+      "name": "Grimy kwuarm",
+      "noted": 0,
+      "quantity": "1-3",
+      "rarity": "0.002297794117647059",
+      "rolls": 3
+    },
+    {
+      "id": 215,
+      "members": 1,
+      "name": "Grimy cadantine",
+      "noted": 0,
+      "quantity": "1-3",
+      "rarity": "0.001838235294117647",
+      "rolls": 3
+    },
+    {
+      "id": 2485,
+      "members": 1,
+      "name": "Grimy lantadyme",
+      "noted": 0,
+      "quantity": "1-3",
+      "rarity": "0.0013787398317937406",
+      "rolls": 3
+    },
+    {
+      "id": 217,
+      "members": 1,
+      "name": "Grimy dwarf weed",
+      "noted": 0,
+      "quantity": "1-3",
+      "rarity": "0.0013787398317937406",
+      "rolls": 3
+    },
+    {
+      "id": 211,
+      "members": 1,
+      "name": "Grimy avantoe",
+      "noted": 1,
+      "quantity": "1-3",
+      "rarity": "0.011025358324145534",
+      "rolls": 3
+    },
+    {
+      "id": 213,
+      "members": 1,
+      "name": "Grimy kwuarm",
+      "noted": 1,
+      "quantity": "1-3",
+      "rarity": "0.011025358324145534",
+      "rolls": 3
+    },
+    {
+      "id": 207,
+      "members": 1,
+      "name": "Grimy ranarr weed",
+      "noted": 1,
+      "quantity": "1-3",
+      "rarity": "0.0088261253309797",
+      "rolls": 3
+    },
+    {
+      "id": 22957,
+      "members": 1,
+      "name": "Drake's claw",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.000390625",
+      "rolls": 1
+    },
+    {
+      "id": 3051,
+      "members": 1,
+      "name": "Grimy snapdragon",
+      "noted": 1,
+      "quantity": "1-3",
+      "rarity": "0.0088261253309797",
+      "rolls": 3
+    },
+    {
+      "id": 215,
+      "members": 1,
+      "name": "Grimy cadantine",
+      "noted": 1,
+      "quantity": "1-3",
+      "rarity": "0.0088261253309797",
+      "rolls": 3
+    },
+    {
+      "id": 217,
+      "members": 1,
+      "name": "Grimy dwarf weed",
+      "noted": 1,
+      "quantity": "1-3",
+      "rarity": "0.0088261253309797",
+      "rolls": 3
+    },
+    {
+      "id": 2485,
+      "members": 1,
+      "name": "Grimy lantadyme",
+      "noted": 1,
+      "quantity": "1-3",
+      "rarity": "0.0066181336863004635",
+      "rolls": 3
+    },
+    {
+      "id": 219,
+      "members": 1,
+      "name": "Grimy torstol",
+      "noted": 1,
+      "quantity": "1-3",
+      "rarity": "0.0066181336863004635",
+      "rolls": 3
+    },
+    {
+      "id": 5296,
+      "members": 1,
+      "name": "Toadflax seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0023430178069353325",
+      "rolls": 3
+    },
+    {
+      "id": 5297,
+      "members": 1,
+      "name": "Irit seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0015951507417450949",
+      "rolls": 3
+    },
+    {
+      "id": 5281,
+      "members": 1,
+      "name": "Belladonna seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0015453562046051615",
+      "rolls": 3
+    },
+    {
+      "id": 5106,
+      "members": 1,
+      "name": "Poison ivy seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0010967317394165387",
+      "rolls": 3
+    },
+    {
+      "id": 5298,
+      "members": 1,
+      "name": "Avantoe seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0010967317394165387",
+      "rolls": 3
+    },
+    {
+      "id": 20849,
+      "members": 1,
+      "name": "Dragon thrownaxe",
+      "noted": 0,
+      "quantity": "100-200",
+      "rarity": "0.0001",
+      "rolls": 1
+    },
+    {
+      "id": 5280,
+      "members": 1,
+      "name": "Cactus seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0010469011725293131",
+      "rolls": 3
+    },
+    {
+      "id": 22873,
+      "members": 1,
+      "name": "Potato cactus seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0007477753682793689",
+      "rolls": 3
+    },
+    {
+      "id": 5299,
+      "members": 1,
+      "name": "Kwuarm seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0007477753682793689",
+      "rolls": 3
+    },
+    {
+      "id": 5300,
+      "members": 1,
+      "name": "Snapdragon seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0004985044865403788",
+      "rolls": 3
+    },
+    {
+      "id": 5301,
+      "members": 1,
+      "name": "Cadantine seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0003489548801339987",
+      "rolls": 3
+    },
+    {
+      "id": 5302,
+      "members": 1,
+      "name": "Lantadyme seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0002492522432701894",
+      "rolls": 3
+    },
+    {
+      "id": 22879,
+      "members": 1,
+      "name": "Snape grass seed",
+      "noted": 0,
+      "quantity": "3",
+      "rarity": "0.00019940179461615153",
+      "rolls": 3
+    },
+    {
+      "id": 5303,
+      "members": 1,
+      "name": "Dwarf weed seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00014955060044566078",
+      "rolls": 3
+    },
+    {
+      "id": 5304,
+      "members": 1,
+      "name": "Torstol seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "9.970089730807577e-05",
+      "rolls": 3
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "1000-2000",
+      "rarity": "0.047058823529411764",
+      "rolls": 3
+    },
+    {
+      "id": 22804,
+      "members": 1,
+      "name": "Dragon knife",
+      "noted": 0,
+      "quantity": "100-200",
+      "rarity": "0.0001",
+      "rolls": 1
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "5000-7000",
+      "rarity": "0.011764705882352941",
+      "rolls": 3
+    },
+    {
+      "id": 1601,
+      "members": 0,
+      "name": "Diamond",
+      "noted": 1,
+      "quantity": "3-6",
+      "rarity": "0.047058823529411764",
+      "rolls": 3
+    },
+    {
+      "id": 373,
+      "members": 0,
+      "name": "Swordfish",
+      "noted": 0,
+      "quantity": "1-2",
+      "rarity": "0.047058823529411764",
+      "rolls": 3
+    },
+    {
+      "id": 1163,
+      "members": 0,
+      "name": "Rune full helm",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.03529411764705882",
+      "rolls": 3
+    },
+    {
+      "id": 23083,
+      "members": 1,
+      "name": "Brimstone key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.025",
+      "rolls": 1
+    },
+    {
+      "id": 2722,
+      "members": 1,
+      "name": "Clue scroll (hard)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 20730,
+      "members": 1,
+      "name": "Mist battlestaff",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.009523809523809525",
+      "rolls": 1
+    },
+    {
+      "id": 20736,
+      "members": 1,
+      "name": "Dust battlestaff",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.009523809523809525",
+      "rolls": 1
+    },
+    {
+      "id": 21270,
+      "members": 1,
+      "name": "Eternal gem",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.002717391304347826",
+      "rolls": 1
+    },
+    {
+      "id": 20724,
+      "members": 1,
+      "name": "Imbued heart",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.002717391304347826",
+      "rolls": 1
+    },
+    {
+      "id": 2501,
+      "members": 1,
+      "name": "Red d'hide body",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.023529411764705882",
+      "rolls": 3
+    },
+    {
+      "id": 2491,
+      "members": 1,
+      "name": "Black d'hide vambraces",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.011764705882352941",
+      "rolls": 3
+    },
+    {
+      "id": 1407,
+      "members": 1,
+      "name": "Mystic earth staff",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.011764705882352941",
+      "rolls": 3
+    }
+  ],
+  "duplicate": 0,
+  "examine": "It's really winging the whole dragon thing, isn't it?",
+  "hitpoints": 630,
+  "id": "10400",
+  "immune_poison": 1,
+  "immune_venom": 0,
+  "incomplete": 0,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 300,
+  "max_hit": 35,
+  "members": 1,
+  "name": "Guardian Drake",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 240,
+  "release_date": "2020-07-23",
+  "size": 5,
+  "slayer_level": 84,
+  "slayer_masters": [
+    "konar",
+    "nieve",
+    "duradel"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "7245.0",
+  "strength_bonus": 12,
+  "strength_level": 280,
+  "venomous": 0,
+  "wiki_name": "Guardian Drake",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Guardian_Drake"
 }

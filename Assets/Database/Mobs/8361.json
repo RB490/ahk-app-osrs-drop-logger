@@ -1,7 +1,7 @@
 {
   "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
-  "_etag": "bb7ea725bffc872a46a3e474fb6b5cd4cf74eaa2",
-  "_id": "60cd28b2cfb7392d009078e7",
+  "_etag": "77c90ccc696b540afea740ffd65885ca36076f7a",
+  "_id": "60ebb3b1c1c55bf074a5ec81",
   "_links": {
     "collection": {
       "href": "monsters",
@@ -12,7 +12,7 @@
       "title": "home"
     },
     "self": {
-      "href": "monsters/60cd28b2cfb7392d009078e7",
+      "href": "monsters/60ebb3b1c1c55bf074a5ec81",
       "title": "Monster"
     }
   },
@@ -48,12 +48,12 @@
   ],
   "duplicate": 0,
   "examine": "This is the fate of those who cross the vampyres.",
-  "hitpoints": 3500,
+  "hitpoints": 2450,
   "id": "8361",
   "immune_poison": 1,
   "immune_venom": 1,
   "incomplete": 1,
-  "last_updated": "2021-06-18",
+  "last_updated": "2021-07-12",
   "magic_bonus": 0,
   "magic_level": 350,
   "max_hit": 36,

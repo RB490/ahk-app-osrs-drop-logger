@@ -1,84 +1,102 @@
 {
-    "id": 5342,
-    "name": "Undead one",
-    "last_updated": "2020-12-25",
-    "incomplete": true,
-    "members": true,
-    "release_date": "2003-01-27",
-    "combat_level": 68,
-    "size": 1,
-    "hitpoints": 47,
-    "max_hit": 7,
-    "attack_type": [
-        "slash"
-    ],
-    "attack_speed": 4,
-    "aggressive": true,
-    "poisonous": false,
-    "venomous": false,
-    "immune_poison": false,
-    "immune_venom": false,
-    "attributes": [
-        "undead"
-    ],
-    "category": [
-        "skeleton"
-    ],
-    "slayer_monster": true,
-    "slayer_level": 1,
-    "slayer_xp": 50.0,
-    "slayer_masters": [
-        "turael",
-        "spria",
-        "mazchna"
-    ],
-    "duplicate": false,
-    "examine": "A minion of Rashiliyia.",
-    "wiki_name": "Undead one (Level 68 (Skeletal))",
-    "wiki_url": "https://oldschool.runescape.wiki/w/Undead_one#Level_68_(Skeletal)",
-    "attack_level": 63,
-    "strength_level": 63,
-    "defence_level": 63,
-    "magic_level": 0,
-    "ranged_level": 0,
-    "attack_bonus": 0,
-    "strength_bonus": 0,
-    "attack_magic": 0,
-    "magic_bonus": 0,
-    "attack_ranged": 0,
-    "ranged_bonus": 0,
-    "defence_stab": 0,
-    "defence_slash": 0,
-    "defence_crush": 0,
-    "defence_magic": 0,
-    "defence_ranged": 0,
-    "drops": [
-        {
-            "id": 526,
-            "name": "Bones",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        },
-        {
-            "id": 6806,
-            "name": "Skeleton champion scroll",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0002,
-            "rolls": 1
-        },
-        {
-            "id": 6807,
-            "name": "Zombie champion scroll",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0002,
-            "rolls": 1
-        }
-    ]
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "53d0940cf2ddf31727766ab051472a0490512a74",
+  "_id": "60ebb3b0c1c55bf074a5e93b",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3b0c1c55bf074a5e93b",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 0,
+  "attack_level": 63,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "slash"
+  ],
+  "attributes": [
+    "undead"
+  ],
+  "category": [
+    "skeletons"
+  ],
+  "combat_level": 68,
+  "defence_crush": 0,
+  "defence_level": 63,
+  "defence_magic": 0,
+  "defence_ranged": 0,
+  "defence_slash": 0,
+  "defence_stab": 0,
+  "drops": [
+    {
+      "id": 526,
+      "members": 0,
+      "name": "Bones",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 6806,
+      "members": 1,
+      "name": "Skeleton champion scroll",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0002",
+      "rolls": 1
+    },
+    {
+      "id": 6807,
+      "members": 1,
+      "name": "Zombie champion scroll",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0002",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "A minion of Rashiliyia.",
+  "hitpoints": 47,
+  "id": "5342",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 0,
+  "max_hit": 7,
+  "members": 1,
+  "name": "Undead one",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 0,
+  "release_date": "2003-01-27",
+  "size": 1,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "turael",
+    "spria",
+    "mazchna"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "50.0",
+  "strength_bonus": 0,
+  "strength_level": 63,
+  "venomous": 0,
+  "wiki_name": "Undead one (Level 68 (Skeletal))",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Undead_one#Level_68_(Skeletal)"
 }

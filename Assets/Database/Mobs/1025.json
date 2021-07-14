@@ -1,67 +1,247 @@
 {
-    "id": 1025,
-    "name": "Necromancer",
-    "last_updated": "2021-06-18",
-    "incomplete": true,
-    "members": true,
-    "release_date": "2002-05-28",
-    "combat_level": 26,
-    "size": 1,
-    "hitpoints": 40,
-    "max_hit": 3,
-    "attack_type": [
-        "melee"
-    ],
-    "attack_speed": 4,
-    "aggressive": true,
-    "poisonous": false,
-    "venomous": false,
-    "immune_poison": false,
-    "immune_venom": false,
-    "attributes": [],
-    "category": [],
-    "slayer_monster": false,
-    "slayer_level": null,
-    "slayer_xp": null,
-    "slayer_masters": [],
-    "duplicate": false,
-    "examine": "A crazy evil necromancer.",
-    "wiki_name": "Necromancer (Necromancer Tower)",
-    "wiki_url": "https://oldschool.runescape.wiki/w/Necromancer_(Necromancer_Tower)",
-    "attack_level": 18,
-    "strength_level": 18,
-    "defence_level": 18,
-    "magic_level": 18,
-    "ranged_level": 1,
-    "attack_bonus": 0,
-    "strength_bonus": 0,
-    "attack_magic": 0,
-    "magic_bonus": 0,
-    "attack_ranged": 0,
-    "ranged_bonus": 0,
-    "defence_stab": 0,
-    "defence_slash": 0,
-    "defence_crush": 0,
-    "defence_magic": 0,
-    "defence_ranged": 0,
-    "drops": [
-        {
-            "id": 526,
-            "name": "Bones",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        },
-        {
-            "id": 556,
-            "name": "Air rune",
-            "members": false,
-            "quantity": "23-30",
-            "noted": false,
-            "rarity": 0.125,
-            "rolls": 1
-        }
-    ]
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "81fff6c815050bf3d96d4515993e8ed8377655ff",
+  "_id": "60ebb3aec1c55bf074a5e461",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3aec1c55bf074a5e461",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 0,
+  "attack_level": 18,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "melee"
+  ],
+  "attributes": [],
+  "category": [],
+  "combat_level": 26,
+  "defence_crush": 0,
+  "defence_level": 18,
+  "defence_magic": 0,
+  "defence_ranged": 0,
+  "defence_slash": 0,
+  "defence_stab": 0,
+  "drops": [
+    {
+      "id": 526,
+      "members": 0,
+      "name": "Bones",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 561,
+      "members": 0,
+      "name": "Nature rune",
+      "noted": 0,
+      "quantity": "10-15",
+      "rarity": "0.057692307692307696",
+      "rolls": 1
+    },
+    {
+      "id": 563,
+      "members": 0,
+      "name": "Law rune",
+      "noted": 0,
+      "quantity": "10-15",
+      "rarity": "0.057692307692307696",
+      "rolls": 1
+    },
+    {
+      "id": 560,
+      "members": 0,
+      "name": "Death rune",
+      "noted": 0,
+      "quantity": "4-8",
+      "rarity": "0.038461538461538464",
+      "rolls": 1
+    },
+    {
+      "id": 565,
+      "members": 1,
+      "name": "Blood rune",
+      "noted": 0,
+      "quantity": "4-8",
+      "rarity": "0.038461538461538464",
+      "rolls": 1
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "10-50",
+      "rarity": "0.038461538461538464",
+      "rolls": 1
+    },
+    {
+      "id": 1379,
+      "members": 0,
+      "name": "Staff",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.038461538461538464",
+      "rolls": 1
+    },
+    {
+      "id": 1438,
+      "members": 0,
+      "name": "Air talisman",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.019230769230769232",
+      "rolls": 1
+    },
+    {
+      "id": 1444,
+      "members": 0,
+      "name": "Water talisman",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.019230769230769232",
+      "rolls": 1
+    },
+    {
+      "id": 1440,
+      "members": 0,
+      "name": "Earth talisman",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.019230769230769232",
+      "rolls": 1
+    },
+    {
+      "id": 1442,
+      "members": 0,
+      "name": "Fire talisman",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.019230769230769232",
+      "rolls": 1
+    },
+    {
+      "id": 556,
+      "members": 0,
+      "name": "Air rune",
+      "noted": 0,
+      "quantity": "20-30",
+      "rarity": "0.07692307692307693",
+      "rolls": 1
+    },
+    {
+      "id": 2801,
+      "members": 1,
+      "name": "Clue scroll (medium)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 555,
+      "members": 0,
+      "name": "Water rune",
+      "noted": 0,
+      "quantity": "20-30",
+      "rarity": "0.07692307692307693",
+      "rolls": 1
+    },
+    {
+      "id": 557,
+      "members": 0,
+      "name": "Earth rune",
+      "noted": 0,
+      "quantity": "20-30",
+      "rarity": "0.07692307692307693",
+      "rolls": 1
+    },
+    {
+      "id": 554,
+      "members": 0,
+      "name": "Fire rune",
+      "noted": 0,
+      "quantity": "20-30",
+      "rarity": "0.07692307692307693",
+      "rolls": 1
+    },
+    {
+      "id": 558,
+      "members": 0,
+      "name": "Mind rune",
+      "noted": 0,
+      "quantity": "20-30",
+      "rarity": "0.07692307692307693",
+      "rolls": 1
+    },
+    {
+      "id": 559,
+      "members": 0,
+      "name": "Body rune",
+      "noted": 0,
+      "quantity": "20-30",
+      "rarity": "0.07692307692307693",
+      "rolls": 1
+    },
+    {
+      "id": 564,
+      "members": 0,
+      "name": "Cosmic rune",
+      "noted": 0,
+      "quantity": "10-15",
+      "rarity": "0.057692307692307696",
+      "rolls": 1
+    },
+    {
+      "id": 562,
+      "members": 0,
+      "name": "Chaos rune",
+      "noted": 0,
+      "quantity": "10-15",
+      "rarity": "0.057692307692307696",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "A crazy evil necromancer.",
+  "hitpoints": 40,
+  "id": "1025",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 18,
+  "max_hit": 3,
+  "members": 1,
+  "name": "Necromancer",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2002-05-28",
+  "size": 1,
+  "slayer_level": "",
+  "slayer_masters": [],
+  "slayer_monster": 0,
+  "slayer_xp": "",
+  "strength_bonus": 0,
+  "strength_level": 18,
+  "venomous": 0,
+  "wiki_name": "Necromancer (Necromancer Tower)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Necromancer_(Necromancer_Tower)"
 }

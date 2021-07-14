@@ -1,402 +1,420 @@
 {
-    "id": 6504,
-    "name": "Venenatis",
-    "last_updated": "2020-12-25",
-    "incomplete": true,
-    "members": true,
-    "release_date": "2014-03-13",
-    "combat_level": 464,
-    "size": 4,
-    "hitpoints": 255,
-    "max_hit": 50,
-    "attack_type": [
-        "stab",
-        "magic"
-    ],
-    "attack_speed": null,
-    "aggressive": true,
-    "poisonous": true,
-    "venomous": false,
-    "immune_poison": false,
-    "immune_venom": false,
-    "attributes": [],
-    "category": [
-        "spider",
-        "boss"
-    ],
-    "slayer_monster": true,
-    "slayer_level": 1,
-    "slayer_xp": 388.8,
-    "slayer_masters": [
-        "turael",
-        "spria",
-        "krystilia",
-        "konar",
-        "nieve",
-        "duradel"
-    ],
-    "duplicate": false,
-    "examine": "That'll get your arachnophobia going...",
-    "wiki_name": "Venenatis",
-    "wiki_url": "https://oldschool.runescape.wiki/w/Venenatis",
-    "attack_level": 470,
-    "strength_level": 490,
-    "defence_level": 490,
-    "magic_level": 150,
-    "ranged_level": 1,
-    "attack_bonus": 0,
-    "strength_bonus": 0,
-    "attack_magic": 0,
-    "magic_bonus": 0,
-    "attack_ranged": 0,
-    "ranged_bonus": 0,
-    "defence_stab": 260,
-    "defence_slash": 260,
-    "defence_crush": 260,
-    "defence_magic": 850,
-    "defence_ranged": 100,
-    "drops": [
-        {
-            "id": 12605,
-            "name": "Treasonous ring",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.001953125,
-            "rolls": 1
-        },
-        {
-            "id": 9243,
-            "name": "Diamond bolts (e)",
-            "members": true,
-            "quantity": "100",
-            "noted": false,
-            "rarity": 0.0390625,
-            "rolls": 1
-        },
-        {
-            "id": 2,
-            "name": "Cannonball",
-            "members": true,
-            "quantity": "250",
-            "noted": false,
-            "rarity": 0.03125,
-            "rolls": 1
-        },
-        {
-            "id": 1619,
-            "name": "Uncut ruby",
-            "members": false,
-            "quantity": "20",
-            "noted": true,
-            "rarity": 0.0546875,
-            "rolls": 1
-        },
-        {
-            "id": 1617,
-            "name": "Uncut diamond",
-            "members": false,
-            "quantity": "10",
-            "noted": true,
-            "rarity": 0.0546875,
-            "rolls": 1
-        },
-        {
-            "id": 444,
-            "name": "Gold ore",
-            "members": false,
-            "quantity": "300",
-            "noted": true,
-            "rarity": 0.046875,
-            "rolls": 1
-        },
-        {
-            "id": 9194,
-            "name": "Onyx bolt tips",
-            "members": true,
-            "quantity": "60",
-            "noted": false,
-            "rarity": 0.0390625,
-            "rolls": 1
-        },
-        {
-            "id": 1513,
-            "name": "Magic logs",
-            "members": true,
-            "quantity": "100",
-            "noted": true,
-            "rarity": 0.0390625,
-            "rolls": 1
-        },
-        {
-            "id": 225,
-            "name": "Limpwurt root",
-            "members": false,
-            "quantity": "25",
-            "noted": true,
-            "rarity": 0.0390625,
-            "rolls": 1
-        },
-        {
-            "id": 223,
-            "name": "Red spiders' eggs",
-            "members": false,
-            "quantity": "500",
-            "noted": true,
-            "rarity": 0.0234375,
-            "rolls": 1
-        },
-        {
-            "id": 237,
-            "name": "Unicorn horn",
-            "members": true,
-            "quantity": "100",
-            "noted": true,
-            "rarity": 0.015625,
-            "rolls": 1
-        },
-        {
-            "id": 1275,
-            "name": "Rune pickaxe",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.09375,
-            "rolls": 1
-        },
-        {
-            "id": 1631,
-            "name": "Uncut dragonstone",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.015625,
-            "rolls": 1
-        },
-        {
-            "id": 3051,
-            "name": "Grimy snapdragon",
-            "members": true,
-            "quantity": "100",
-            "noted": true,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 995,
-            "name": "Coins",
-            "members": false,
-            "quantity": "15000-19999",
-            "noted": false,
-            "rarity": 0.1484375,
-            "rolls": 1
-        },
-        {
-            "id": 11936,
-            "name": "Dark crab",
-            "members": true,
-            "quantity": "8",
-            "noted": false,
-            "rarity": 0.078125,
-            "rolls": 1
-        },
-        {
-            "id": 3024,
-            "name": "Super restore(4)",
-            "members": true,
-            "quantity": "3",
-            "noted": false,
-            "rarity": 0.078125,
-            "rolls": 1
-        },
-        {
-            "id": 6034,
-            "name": "Supercompost",
-            "members": true,
-            "quantity": "100",
-            "noted": true,
-            "rarity": 0.037109375,
-            "rolls": 1
-        },
-        {
-            "id": 5952,
-            "name": "Antidote++(4)",
-            "members": true,
-            "quantity": "10",
-            "noted": true,
-            "rarity": 0.0234375,
-            "rolls": 1
-        },
-        {
-            "id": 11940,
-            "name": "Dark fishing bait",
-            "members": true,
-            "quantity": "375",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 5315,
-            "name": "Yew seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 5316,
-            "name": "Magic seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 868,
-            "name": "Rune knife",
-            "members": true,
-            "quantity": "60",
-            "noted": false,
-            "rarity": 0.0390625,
-            "rolls": 1
-        },
-        {
-            "id": 5289,
-            "name": "Palm tree seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 11941,
-            "name": "Looting bag",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.3333333333333333,
-            "rolls": 1
-        },
-        {
-            "id": 23083,
-            "name": "Brimstone key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.02,
-            "rolls": 1
-        },
-        {
-            "id": 12073,
-            "name": "Clue scroll (elite)",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.01,
-            "rolls": 1
-        },
-        {
-            "id": 10976,
-            "name": "Long bone",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0025,
-            "rolls": 1
-        },
-        {
-            "id": 13177,
-            "name": "Venenatis spiderling",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0005,
-            "rolls": 1
-        },
-        {
-            "id": 10977,
-            "name": "Curved bone",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.00019950124688279303,
-            "rolls": 1
-        },
-        {
-            "id": 23490,
-            "name": "Larran's key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.02,
-            "rolls": 1
-        },
-        {
-            "id": 21257,
-            "name": "Slayer's enchantment",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.03333333333333333,
-            "rolls": 1
-        },
-        {
-            "id": 1319,
-            "name": "Rune 2h sword",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0234375,
-            "rolls": 1
-        },
-        {
-            "id": 11920,
-            "name": "Dragon pickaxe",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.005859375,
-            "rolls": 1
-        },
-        {
-            "id": 7158,
-            "name": "Dragon 2h sword",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.00390625,
-            "rolls": 1
-        },
-        {
-            "id": 562,
-            "name": "Chaos rune",
-            "members": false,
-            "quantity": "400",
-            "noted": false,
-            "rarity": 0.0546875,
-            "rolls": 1
-        },
-        {
-            "id": 560,
-            "name": "Death rune",
-            "members": false,
-            "quantity": "300",
-            "noted": false,
-            "rarity": 0.0546875,
-            "rolls": 1
-        },
-        {
-            "id": 565,
-            "name": "Blood rune",
-            "members": true,
-            "quantity": "200",
-            "noted": false,
-            "rarity": 0.0546875,
-            "rolls": 1
-        }
-    ]
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "20c71d774fe0ab5c8f0be9f74655867198bdc502",
+  "_id": "60ebb3b1c1c55bf074a5eacf",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3b1c1c55bf074a5eacf",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 0,
+  "attack_level": 470,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": "",
+  "attack_type": [
+    "stab",
+    "magic"
+  ],
+  "attributes": [],
+  "category": [
+    "spiders",
+    "bosses"
+  ],
+  "combat_level": 464,
+  "defence_crush": 260,
+  "defence_level": 490,
+  "defence_magic": 850,
+  "defence_ranged": 100,
+  "defence_slash": 260,
+  "defence_stab": 260,
+  "drops": [
+    {
+      "id": 12605,
+      "members": 1,
+      "name": "Treasonous ring",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.001953125",
+      "rolls": 1
+    },
+    {
+      "id": 9243,
+      "members": 1,
+      "name": "Diamond bolts (e)",
+      "noted": 0,
+      "quantity": "100",
+      "rarity": "0.0390625",
+      "rolls": 1
+    },
+    {
+      "id": 2,
+      "members": 1,
+      "name": "Cannonball",
+      "noted": 0,
+      "quantity": "250",
+      "rarity": "0.03125",
+      "rolls": 1
+    },
+    {
+      "id": 1619,
+      "members": 0,
+      "name": "Uncut ruby",
+      "noted": 1,
+      "quantity": "20",
+      "rarity": "0.0546875",
+      "rolls": 1
+    },
+    {
+      "id": 1617,
+      "members": 0,
+      "name": "Uncut diamond",
+      "noted": 1,
+      "quantity": "10",
+      "rarity": "0.0546875",
+      "rolls": 1
+    },
+    {
+      "id": 444,
+      "members": 0,
+      "name": "Gold ore",
+      "noted": 1,
+      "quantity": "300",
+      "rarity": "0.046875",
+      "rolls": 1
+    },
+    {
+      "id": 9194,
+      "members": 1,
+      "name": "Onyx bolt tips",
+      "noted": 0,
+      "quantity": "60",
+      "rarity": "0.0390625",
+      "rolls": 1
+    },
+    {
+      "id": 1513,
+      "members": 1,
+      "name": "Magic logs",
+      "noted": 1,
+      "quantity": "100",
+      "rarity": "0.0390625",
+      "rolls": 1
+    },
+    {
+      "id": 225,
+      "members": 0,
+      "name": "Limpwurt root",
+      "noted": 1,
+      "quantity": "25",
+      "rarity": "0.0390625",
+      "rolls": 1
+    },
+    {
+      "id": 223,
+      "members": 0,
+      "name": "Red spiders' eggs",
+      "noted": 1,
+      "quantity": "500",
+      "rarity": "0.0234375",
+      "rolls": 1
+    },
+    {
+      "id": 237,
+      "members": 1,
+      "name": "Unicorn horn",
+      "noted": 1,
+      "quantity": "100",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 1275,
+      "members": 0,
+      "name": "Rune pickaxe",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.09375",
+      "rolls": 1
+    },
+    {
+      "id": 1631,
+      "members": 1,
+      "name": "Uncut dragonstone",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 3051,
+      "members": 1,
+      "name": "Grimy snapdragon",
+      "noted": 1,
+      "quantity": "100",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "15000-19999",
+      "rarity": "0.1484375",
+      "rolls": 1
+    },
+    {
+      "id": 11936,
+      "members": 1,
+      "name": "Dark crab",
+      "noted": 0,
+      "quantity": "8",
+      "rarity": "0.078125",
+      "rolls": 1
+    },
+    {
+      "id": 3024,
+      "members": 1,
+      "name": "Super restore(4)",
+      "noted": 0,
+      "quantity": "3",
+      "rarity": "0.078125",
+      "rolls": 1
+    },
+    {
+      "id": 6034,
+      "members": 1,
+      "name": "Supercompost",
+      "noted": 1,
+      "quantity": "100",
+      "rarity": "0.037109375",
+      "rolls": 1
+    },
+    {
+      "id": 5952,
+      "members": 1,
+      "name": "Antidote++(4)",
+      "noted": 1,
+      "quantity": "10",
+      "rarity": "0.0234375",
+      "rolls": 1
+    },
+    {
+      "id": 11940,
+      "members": 1,
+      "name": "Dark fishing bait",
+      "noted": 0,
+      "quantity": "375",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 5315,
+      "members": 1,
+      "name": "Yew seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 5316,
+      "members": 1,
+      "name": "Magic seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 868,
+      "members": 1,
+      "name": "Rune knife",
+      "noted": 0,
+      "quantity": "60",
+      "rarity": "0.0390625",
+      "rolls": 1
+    },
+    {
+      "id": 5289,
+      "members": 1,
+      "name": "Palm tree seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 11941,
+      "members": 1,
+      "name": "Looting bag",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.3333333333333333",
+      "rolls": 1
+    },
+    {
+      "id": 23083,
+      "members": 1,
+      "name": "Brimstone key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.02",
+      "rolls": 1
+    },
+    {
+      "id": 12073,
+      "members": 1,
+      "name": "Clue scroll (elite)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.01",
+      "rolls": 1
+    },
+    {
+      "id": 10976,
+      "members": 1,
+      "name": "Long bone",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0025",
+      "rolls": 1
+    },
+    {
+      "id": 13177,
+      "members": 1,
+      "name": "Venenatis spiderling",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0005",
+      "rolls": 1
+    },
+    {
+      "id": 10977,
+      "members": 1,
+      "name": "Curved bone",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00019950124688279303",
+      "rolls": 1
+    },
+    {
+      "id": 23490,
+      "members": 1,
+      "name": "Larran's key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.02",
+      "rolls": 1
+    },
+    {
+      "id": 21257,
+      "members": 1,
+      "name": "Slayer's enchantment",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.03333333333333333",
+      "rolls": 1
+    },
+    {
+      "id": 1319,
+      "members": 0,
+      "name": "Rune 2h sword",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0234375",
+      "rolls": 1
+    },
+    {
+      "id": 11920,
+      "members": 1,
+      "name": "Dragon pickaxe",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.005859375",
+      "rolls": 1
+    },
+    {
+      "id": 7158,
+      "members": 1,
+      "name": "Dragon 2h sword",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00390625",
+      "rolls": 1
+    },
+    {
+      "id": 562,
+      "members": 0,
+      "name": "Chaos rune",
+      "noted": 0,
+      "quantity": "400",
+      "rarity": "0.0546875",
+      "rolls": 1
+    },
+    {
+      "id": 560,
+      "members": 0,
+      "name": "Death rune",
+      "noted": 0,
+      "quantity": "300",
+      "rarity": "0.0546875",
+      "rolls": 1
+    },
+    {
+      "id": 565,
+      "members": 1,
+      "name": "Blood rune",
+      "noted": 0,
+      "quantity": "200",
+      "rarity": "0.0546875",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "That'll get your arachnophobia going...",
+  "hitpoints": 255,
+  "id": "6504",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 150,
+  "max_hit": 50,
+  "members": 1,
+  "name": "Venenatis",
+  "poisonous": 1,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2014-03-13",
+  "size": 4,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "turael",
+    "spria",
+    "krystilia",
+    "konar",
+    "nieve",
+    "duradel"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "388.8",
+  "strength_bonus": 0,
+  "strength_level": 490,
+  "venomous": 0,
+  "wiki_name": "Venenatis",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Venenatis"
 }

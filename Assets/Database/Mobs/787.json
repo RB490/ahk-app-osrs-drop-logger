@@ -1,244 +1,262 @@
 {
-    "id": 787,
-    "name": "Suqah",
-    "last_updated": "2020-12-25",
-    "incomplete": true,
-    "members": true,
-    "release_date": "2006-07-24",
-    "combat_level": 111,
-    "size": 2,
-    "hitpoints": 105,
-    "max_hit": 10,
-    "attack_type": [
-        "stab",
-        "magic"
-    ],
-    "attack_speed": 6,
-    "aggressive": true,
-    "poisonous": false,
-    "venomous": false,
-    "immune_poison": false,
-    "immune_venom": false,
-    "attributes": [],
-    "category": [
-        "suqah"
-    ],
-    "slayer_monster": true,
-    "slayer_level": 1,
-    "slayer_xp": 107.5,
-    "slayer_masters": [
-        "nieve",
-        "duradel"
-    ],
-    "duplicate": false,
-    "examine": "A strange creature unique to Lunar Isle.",
-    "wiki_name": "Suqah",
-    "wiki_url": "https://oldschool.runescape.wiki/w/Suqah",
-    "attack_level": 95,
-    "strength_level": 95,
-    "defence_level": 95,
-    "magic_level": 1,
-    "ranged_level": 1,
-    "attack_bonus": 0,
-    "strength_bonus": 0,
-    "attack_magic": 0,
-    "magic_bonus": 0,
-    "attack_ranged": 0,
-    "ranged_bonus": 0,
-    "defence_stab": 50,
-    "defence_slash": 70,
-    "defence_crush": 70,
-    "defence_magic": 90,
-    "defence_ranged": 50,
-    "drops": [
-        {
-            "id": 1623,
-            "name": "Uncut sapphire",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.009689922480620155,
-            "rolls": 1
-        },
-        {
-            "id": 1621,
-            "name": "Uncut emerald",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0048449612403100775,
-            "rolls": 1
-        },
-        {
-            "id": 1619,
-            "name": "Uncut ruby",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0024224806201550387,
-            "rolls": 1
-        },
-        {
-            "id": 1452,
-            "name": "Chaos talisman",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0009083592669904058,
-            "rolls": 1
-        },
-        {
-            "id": 1462,
-            "name": "Nature talisman",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0009083592669904058,
-            "rolls": 1
-        },
-        {
-            "id": 1617,
-            "name": "Uncut diamond",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0006056201550387597,
-            "rolls": 1
-        },
-        {
-            "id": 830,
-            "name": "Rune javelin",
-            "members": true,
-            "quantity": "5",
-            "noted": false,
-            "rarity": 0.00030281007751937984,
-            "rolls": 1
-        },
-        {
-            "id": 987,
-            "name": "Loop half of key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.00030281007751937984,
-            "rolls": 1
-        },
-        {
-            "id": 985,
-            "name": "Tooth half of key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.00030281007751937984,
-            "rolls": 1
-        },
-        {
-            "id": 1247,
-            "name": "Rune spear",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.892562984496124e-05,
-            "rolls": 1
-        },
-        {
-            "id": 2366,
-            "name": "Shield left half",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 9.46281492248062e-06,
-            "rolls": 1
-        },
-        {
-            "id": 1249,
-            "name": "Dragon spear",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 7.096556773362545e-06,
-            "rolls": 1
-        },
-        {
-            "id": 532,
-            "name": "Big bones",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        },
-        {
-            "id": 2722,
-            "name": "Clue scroll (hard)",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.007751937984496124,
-            "rolls": 1
-        },
-        {
-            "id": 10976,
-            "name": "Long bone",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0025,
-            "rolls": 1
-        },
-        {
-            "id": 9080,
-            "name": "Suqah hide",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        },
-        {
-            "id": 10977,
-            "name": "Curved bone",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.00019950124688279303,
-            "rolls": 1
-        },
-        {
-            "id": 9103,
-            "name": "A special tiara",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.125,
-            "rolls": 1
-        },
-        {
-            "id": 9079,
-            "name": "Suqah tooth",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.5348837209302325,
-            "rolls": 1
-        },
-        {
-            "id": 199,
-            "name": "Grimy guam leaf",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.23255813953488372,
-            "rolls": 1
-        },
-        {
-            "id": 201,
-            "name": "Grimy marrentill",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.1937984496124031,
-            "rolls": 1
-        }
-    ]
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "5650327cbc1f6e74e667985fc851d2eb0a7f3fe1",
+  "_id": "60ebb3aec1c55bf074a5e407",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3aec1c55bf074a5e407",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 0,
+  "attack_level": 95,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 6,
+  "attack_type": [
+    "stab",
+    "magic"
+  ],
+  "attributes": [],
+  "category": [
+    "suqahs"
+  ],
+  "combat_level": 111,
+  "defence_crush": 70,
+  "defence_level": 95,
+  "defence_magic": 90,
+  "defence_ranged": 50,
+  "defence_slash": 70,
+  "defence_stab": 50,
+  "drops": [
+    {
+      "id": 1623,
+      "members": 1,
+      "name": "Uncut sapphire",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.009689922480620155",
+      "rolls": 1
+    },
+    {
+      "id": 1621,
+      "members": 1,
+      "name": "Uncut emerald",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0048449612403100775",
+      "rolls": 1
+    },
+    {
+      "id": 1619,
+      "members": 1,
+      "name": "Uncut ruby",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0024224806201550387",
+      "rolls": 1
+    },
+    {
+      "id": 1452,
+      "members": 1,
+      "name": "Chaos talisman",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0009083592669904058",
+      "rolls": 1
+    },
+    {
+      "id": 1462,
+      "members": 1,
+      "name": "Nature talisman",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0009083592669904058",
+      "rolls": 1
+    },
+    {
+      "id": 1617,
+      "members": 1,
+      "name": "Uncut diamond",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0006056201550387597",
+      "rolls": 1
+    },
+    {
+      "id": 830,
+      "members": 1,
+      "name": "Rune javelin",
+      "noted": 0,
+      "quantity": "5",
+      "rarity": "0.00030281007751937984",
+      "rolls": 1
+    },
+    {
+      "id": 987,
+      "members": 1,
+      "name": "Loop half of key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00030281007751937984",
+      "rolls": 1
+    },
+    {
+      "id": 985,
+      "members": 1,
+      "name": "Tooth half of key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00030281007751937984",
+      "rolls": 1
+    },
+    {
+      "id": 1247,
+      "members": 1,
+      "name": "Rune spear",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.892562984496124e-05",
+      "rolls": 1
+    },
+    {
+      "id": 2366,
+      "members": 1,
+      "name": "Shield left half",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "9.46281492248062e-06",
+      "rolls": 1
+    },
+    {
+      "id": 1249,
+      "members": 1,
+      "name": "Dragon spear",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "7.096556773362545e-06",
+      "rolls": 1
+    },
+    {
+      "id": 532,
+      "members": 0,
+      "name": "Big bones",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 2722,
+      "members": 1,
+      "name": "Clue scroll (hard)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.007751937984496124",
+      "rolls": 1
+    },
+    {
+      "id": 10976,
+      "members": 1,
+      "name": "Long bone",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0025",
+      "rolls": 1
+    },
+    {
+      "id": 9080,
+      "members": 1,
+      "name": "Suqah hide",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 10977,
+      "members": 1,
+      "name": "Curved bone",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00019950124688279303",
+      "rolls": 1
+    },
+    {
+      "id": 9103,
+      "members": 1,
+      "name": "A special tiara",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.125",
+      "rolls": 1
+    },
+    {
+      "id": 9079,
+      "members": 1,
+      "name": "Suqah tooth",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.5348837209302325",
+      "rolls": 1
+    },
+    {
+      "id": 199,
+      "members": 1,
+      "name": "Grimy guam leaf",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.23255813953488372",
+      "rolls": 1
+    },
+    {
+      "id": 201,
+      "members": 1,
+      "name": "Grimy marrentill",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.1937984496124031",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "A strange creature unique to Lunar Isle.",
+  "hitpoints": 105,
+  "id": "787",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 10,
+  "members": 1,
+  "name": "Suqah",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2006-07-24",
+  "size": 2,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "nieve",
+    "duradel"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "107.5",
+  "strength_bonus": 0,
+  "strength_level": 95,
+  "venomous": 0,
+  "wiki_name": "Suqah",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Suqah"
 }

@@ -1,7 +1,7 @@
 {
   "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
-  "_etag": "041a341ec0800d9d4d30a1d40356c8abb922d851",
-  "_id": "60cd28b0cfb7392d009073d8",
+  "_etag": "1850f7be31d0b945fa938662bd8141a8a55a0c45",
+  "_id": "60ebb3b0c1c55bf074a5e772",
   "_links": {
     "collection": {
       "href": "monsters",
@@ -12,29 +12,29 @@
       "title": "home"
     },
     "self": {
-      "href": "monsters/60cd28b0cfb7392d009073d8",
+      "href": "monsters/60ebb3b0c1c55bf074a5e772",
       "title": "Monster"
     }
   },
   "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
-  "aggressive": 1,
-  "attack_bonus": 60,
-  "attack_level": 800,
+  "aggressive": 0,
+  "attack_bonus": 9,
+  "attack_level": 19,
   "attack_magic": 0,
   "attack_ranged": 0,
   "attack_speed": 4,
   "attack_type": [
-    "slash"
+    "crush"
   ],
   "attributes": [],
   "category": [],
   "combat_level": 1337,
-  "defence_crush": 7,
-  "defence_level": 300,
-  "defence_magic": 0,
-  "defence_ranged": 8,
-  "defence_slash": 9,
-  "defence_stab": 8,
+  "defence_crush": 19,
+  "defence_level": 14,
+  "defence_magic": -4,
+  "defence_ranged": 20,
+  "defence_slash": 25,
+  "defence_stab": 18,
   "drops": [
     {
       "id": 526,
@@ -326,30 +326,30 @@
     }
   ],
   "duplicate": 0,
-  "examine": "None",
-  "hitpoints": 800,
+  "examine": "I wonder if he gets stuck behind fences.",
+  "hitpoints": 22,
   "id": "3361",
   "immune_poison": 0,
   "immune_venom": 0,
   "incomplete": 1,
-  "last_updated": "2021-06-18",
+  "last_updated": "2021-07-12",
   "magic_bonus": 0,
   "magic_level": 1,
-  "max_hit": 45,
+  "max_hit": 3,
   "members": 1,
   "name": "Guard",
   "poisonous": 0,
   "ranged_bonus": 0,
   "ranged_level": 1,
-  "release_date": "2015-10-29",
+  "release_date": "2016-01-07",
   "size": 1,
   "slayer_level": "",
   "slayer_masters": [],
   "slayer_monster": 0,
   "slayer_xp": "",
   "strength_bonus": 7,
-  "strength_level": 400,
+  "strength_level": 18,
   "venomous": 0,
-  "wiki_name": "Guard (Deadman Mode)",
-  "wiki_url": "https://oldschool.runescape.wiki/w/Guard_(Deadman_Mode)"
+  "wiki_name": "Guard (Shayzien)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Guard_(Shayzien)"
 }

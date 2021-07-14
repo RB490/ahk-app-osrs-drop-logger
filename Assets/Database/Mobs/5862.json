@@ -1,413 +1,440 @@
 {
-    "id": 5862,
-    "name": "Cerberus",
-    "last_updated": "2021-06-18",
-    "incomplete": false,
-    "members": true,
-    "release_date": "2015-08-27",
-    "combat_level": 318,
-    "size": 5,
-    "hitpoints": 600,
-    "max_hit": 23,
-    "attack_type": [
-        "stab",
-        "ranged",
-        "magic"
-    ],
-    "attack_speed": 6,
-    "aggressive": true,
-    "poisonous": false,
-    "venomous": false,
-    "immune_poison": false,
-    "immune_venom": false,
-    "attributes": [
-        "demon"
-    ],
-    "category": [
-        "hellhound",
-        "boss"
-    ],
-    "slayer_monster": true,
-    "slayer_level": 91,
-    "slayer_xp": 690.0,
-    "slayer_masters": [
-        "vannaka",
-        "chaeldar",
-        "konar",
-        "nieve",
-        "duradel"
-    ],
-    "duplicate": false,
-    "examine": "A three-headed gigantic hound. Guardian of the River of Souls.",
-    "wiki_name": "Cerberus",
-    "wiki_url": "https://oldschool.runescape.wiki/w/Cerberus",
-    "attack_level": 220,
-    "strength_level": 220,
-    "defence_level": 100,
-    "magic_level": 220,
-    "ranged_level": 220,
-    "attack_bonus": 50,
-    "strength_bonus": 0,
-    "attack_magic": 50,
-    "magic_bonus": 0,
-    "attack_ranged": 50,
-    "ranged_bonus": 0,
-    "defence_stab": 50,
-    "defence_slash": 100,
-    "defence_crush": 25,
-    "defence_magic": 100,
-    "defence_ranged": 100,
-    "drops": [
-        {
-            "id": 1359,
-            "name": "Rune axe",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0234375,
-            "rolls": 1
-        },
-        {
-            "id": 1275,
-            "name": "Rune pickaxe",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0234375,
-            "rolls": 1
-        },
-        {
-            "id": 1391,
-            "name": "Battlestaff",
-            "members": true,
-            "quantity": "6",
-            "noted": true,
-            "rarity": 0.0234375,
-            "rolls": 1
-        },
-        {
-            "id": 1163,
-            "name": "Rune full helm",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0234375,
-            "rolls": 1
-        },
-        {
-            "id": 3053,
-            "name": "Lava battlestaff",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.015625,
-            "rolls": 1
-        },
-        {
-            "id": 3202,
-            "name": "Rune halberd",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.015625,
-            "rolls": 1
-        },
-        {
-            "id": 554,
-            "name": "Fire rune",
-            "members": false,
-            "quantity": "300",
-            "noted": false,
-            "rarity": 0.046875,
-            "rolls": 1
-        },
-        {
-            "id": 566,
-            "name": "Soul rune",
-            "members": true,
-            "quantity": "100",
-            "noted": false,
-            "rarity": 0.046875,
-            "rolls": 1
-        },
-        {
-            "id": 7936,
-            "name": "Pure essence",
-            "members": false,
-            "quantity": "300",
-            "noted": true,
-            "rarity": 0.0390625,
-            "rolls": 1
-        },
-        {
-            "id": 565,
-            "name": "Blood rune",
-            "members": true,
-            "quantity": "60",
-            "noted": false,
-            "rarity": 0.03125,
-            "rolls": 1
-        },
-        {
-            "id": 13231,
-            "name": "Primordial crystal",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.001953125,
-            "rolls": 1
-        },
-        {
-            "id": 2,
-            "name": "Cannonball",
-            "members": true,
-            "quantity": "50",
-            "noted": false,
-            "rarity": 0.03125,
-            "rolls": 1
-        },
-        {
-            "id": 9381,
-            "name": "Runite bolts (unf)",
-            "members": true,
-            "quantity": "40",
-            "noted": false,
-            "rarity": 0.03125,
-            "rolls": 1
-        },
-        {
-            "id": 560,
-            "name": "Death rune",
-            "members": false,
-            "quantity": "100",
-            "noted": false,
-            "rarity": 0.0234375,
-            "rolls": 1
-        },
-        {
-            "id": 453,
-            "name": "Coal",
-            "members": false,
-            "quantity": "120",
-            "noted": true,
-            "rarity": 0.046875,
-            "rolls": 1
-        },
-        {
-            "id": 3024,
-            "name": "Super restore(4)",
-            "members": true,
-            "quantity": "2",
-            "noted": false,
-            "rarity": 0.046875,
-            "rolls": 1
-        },
-        {
-            "id": 7218,
-            "name": "Summer pie",
-            "members": true,
-            "quantity": "3",
-            "noted": false,
-            "rarity": 0.046875,
-            "rolls": 1
-        },
-        {
-            "id": 995,
-            "name": "Coins",
-            "members": false,
-            "quantity": "10000-20000",
-            "noted": false,
-            "rarity": 0.0390625,
-            "rolls": 1
-        },
-        {
-            "id": 536,
-            "name": "Dragon bones",
-            "members": true,
-            "quantity": "20",
-            "noted": true,
-            "rarity": 0.0390625,
-            "rolls": 1
-        },
-        {
-            "id": 1724,
-            "name": "Unholy symbol",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0390625,
-            "rolls": 1
-        },
-        {
-            "id": 245,
-            "name": "Wine of zamorak",
-            "members": false,
-            "quantity": "15",
-            "noted": true,
-            "rarity": 0.0390625,
-            "rolls": 1
-        },
-        {
-            "id": 13229,
-            "name": "Pegasian crystal",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.001953125,
-            "rolls": 1
-        },
-        {
-            "id": 592,
-            "name": "Ashes",
-            "members": false,
-            "quantity": "50",
-            "noted": true,
-            "rarity": 0.03125,
-            "rolls": 1
-        },
-        {
-            "id": 569,
-            "name": "Fire orb",
-            "members": true,
-            "quantity": "20",
-            "noted": true,
-            "rarity": 0.03125,
-            "rolls": 1
-        },
-        {
-            "id": 219,
-            "name": "Grimy torstol",
-            "members": true,
-            "quantity": "6",
-            "noted": true,
-            "rarity": 0.03125,
-            "rolls": 1
-        },
-        {
-            "id": 451,
-            "name": "Runite ore",
-            "members": false,
-            "quantity": "5",
-            "noted": true,
-            "rarity": 0.0234375,
-            "rolls": 1
-        },
-        {
-            "id": 1617,
-            "name": "Uncut diamond",
-            "members": false,
-            "quantity": "5",
-            "noted": true,
-            "rarity": 0.0234375,
-            "rolls": 1
-        },
-        {
-            "id": 13249,
-            "name": "Key master teleport",
-            "members": true,
-            "quantity": "3",
-            "noted": false,
-            "rarity": 0.015625,
-            "rolls": 1
-        },
-        {
-            "id": 5304,
-            "name": "Torstol seed",
-            "members": true,
-            "quantity": "3",
-            "noted": false,
-            "rarity": 0.015625,
-            "rolls": 1
-        },
-        {
-            "id": 13227,
-            "name": "Eternal crystal",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.001953125,
-            "rolls": 1
-        },
-        {
-            "id": 13233,
-            "name": "Smouldering stone",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.001953125,
-            "rolls": 1
-        },
-        {
-            "id": 1127,
-            "name": "Rune platebody",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0390625,
-            "rolls": 1
-        },
-        {
-            "id": 23083,
-            "name": "Brimstone key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.017857142857142856,
-            "rolls": 1
-        },
-        {
-            "id": 12073,
-            "name": "Clue scroll (elite)",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.01,
-            "rolls": 1
-        },
-        {
-            "id": 13245,
-            "name": "Jar of souls",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0005,
-            "rolls": 1
-        },
-        {
-            "id": 13247,
-            "name": "Hellpuppy",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0003333333333333333,
-            "rolls": 1
-        },
-        {
-            "id": 1113,
-            "name": "Rune chainbody",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.03125,
-            "rolls": 1
-        },
-        {
-            "id": 1319,
-            "name": "Rune 2h sword",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.03125,
-            "rolls": 1
-        },
-        {
-            "id": 2503,
-            "name": "Black d'hide body",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0234375,
-            "rolls": 1
-        }
-    ]
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "a01858db1b505f761d4b943a1f593fdfdc903c95",
+  "_id": "60ebb3b0c1c55bf074a5e9dc",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3b0c1c55bf074a5e9dc",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 50,
+  "attack_level": 220,
+  "attack_magic": 50,
+  "attack_ranged": 50,
+  "attack_speed": 6,
+  "attack_type": [
+    "stab",
+    "ranged",
+    "magic"
+  ],
+  "attributes": [
+    "demon"
+  ],
+  "category": [
+    "hellhounds",
+    "bosses"
+  ],
+  "combat_level": 318,
+  "defence_crush": 25,
+  "defence_level": 100,
+  "defence_magic": 100,
+  "defence_ranged": 100,
+  "defence_slash": 100,
+  "defence_stab": 50,
+  "drops": [
+    {
+      "id": 25775,
+      "members": 1,
+      "name": "Infernal ashes",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 1359,
+      "members": 0,
+      "name": "Rune axe",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0234375",
+      "rolls": 1
+    },
+    {
+      "id": 1275,
+      "members": 0,
+      "name": "Rune pickaxe",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0234375",
+      "rolls": 1
+    },
+    {
+      "id": 1391,
+      "members": 1,
+      "name": "Battlestaff",
+      "noted": 1,
+      "quantity": "6",
+      "rarity": "0.0234375",
+      "rolls": 1
+    },
+    {
+      "id": 1163,
+      "members": 0,
+      "name": "Rune full helm",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0234375",
+      "rolls": 1
+    },
+    {
+      "id": 3053,
+      "members": 1,
+      "name": "Lava battlestaff",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 3202,
+      "members": 1,
+      "name": "Rune halberd",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 554,
+      "members": 0,
+      "name": "Fire rune",
+      "noted": 0,
+      "quantity": "300",
+      "rarity": "0.046875",
+      "rolls": 1
+    },
+    {
+      "id": 566,
+      "members": 1,
+      "name": "Soul rune",
+      "noted": 0,
+      "quantity": "100",
+      "rarity": "0.046875",
+      "rolls": 1
+    },
+    {
+      "id": 7936,
+      "members": 0,
+      "name": "Pure essence",
+      "noted": 1,
+      "quantity": "300",
+      "rarity": "0.0390625",
+      "rolls": 1
+    },
+    {
+      "id": 565,
+      "members": 1,
+      "name": "Blood rune",
+      "noted": 0,
+      "quantity": "60",
+      "rarity": "0.03125",
+      "rolls": 1
+    },
+    {
+      "id": 13231,
+      "members": 1,
+      "name": "Primordial crystal",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.001953125",
+      "rolls": 1
+    },
+    {
+      "id": 2,
+      "members": 1,
+      "name": "Cannonball",
+      "noted": 0,
+      "quantity": "50",
+      "rarity": "0.03125",
+      "rolls": 1
+    },
+    {
+      "id": 9381,
+      "members": 1,
+      "name": "Runite bolts (unf)",
+      "noted": 0,
+      "quantity": "40",
+      "rarity": "0.03125",
+      "rolls": 1
+    },
+    {
+      "id": 560,
+      "members": 0,
+      "name": "Death rune",
+      "noted": 0,
+      "quantity": "100",
+      "rarity": "0.0234375",
+      "rolls": 1
+    },
+    {
+      "id": 453,
+      "members": 0,
+      "name": "Coal",
+      "noted": 1,
+      "quantity": "120",
+      "rarity": "0.046875",
+      "rolls": 1
+    },
+    {
+      "id": 3024,
+      "members": 1,
+      "name": "Super restore(4)",
+      "noted": 0,
+      "quantity": "2",
+      "rarity": "0.046875",
+      "rolls": 1
+    },
+    {
+      "id": 7218,
+      "members": 1,
+      "name": "Summer pie",
+      "noted": 0,
+      "quantity": "3",
+      "rarity": "0.046875",
+      "rolls": 1
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "10000-20000",
+      "rarity": "0.0390625",
+      "rolls": 1
+    },
+    {
+      "id": 536,
+      "members": 1,
+      "name": "Dragon bones",
+      "noted": 1,
+      "quantity": "20",
+      "rarity": "0.0390625",
+      "rolls": 1
+    },
+    {
+      "id": 1724,
+      "members": 1,
+      "name": "Unholy symbol",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0390625",
+      "rolls": 1
+    },
+    {
+      "id": 245,
+      "members": 0,
+      "name": "Wine of zamorak",
+      "noted": 1,
+      "quantity": "15",
+      "rarity": "0.0390625",
+      "rolls": 1
+    },
+    {
+      "id": 13229,
+      "members": 1,
+      "name": "Pegasian crystal",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.001953125",
+      "rolls": 1
+    },
+    {
+      "id": 592,
+      "members": 0,
+      "name": "Ashes",
+      "noted": 1,
+      "quantity": "50",
+      "rarity": "0.03125",
+      "rolls": 1
+    },
+    {
+      "id": 569,
+      "members": 1,
+      "name": "Fire orb",
+      "noted": 1,
+      "quantity": "20",
+      "rarity": "0.03125",
+      "rolls": 1
+    },
+    {
+      "id": 219,
+      "members": 1,
+      "name": "Grimy torstol",
+      "noted": 1,
+      "quantity": "6",
+      "rarity": "0.03125",
+      "rolls": 1
+    },
+    {
+      "id": 451,
+      "members": 0,
+      "name": "Runite ore",
+      "noted": 1,
+      "quantity": "5",
+      "rarity": "0.0234375",
+      "rolls": 1
+    },
+    {
+      "id": 1617,
+      "members": 0,
+      "name": "Uncut diamond",
+      "noted": 1,
+      "quantity": "5",
+      "rarity": "0.0234375",
+      "rolls": 1
+    },
+    {
+      "id": 13249,
+      "members": 1,
+      "name": "Key master teleport",
+      "noted": 0,
+      "quantity": "3",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 5304,
+      "members": 1,
+      "name": "Torstol seed",
+      "noted": 0,
+      "quantity": "3",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 13227,
+      "members": 1,
+      "name": "Eternal crystal",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.001953125",
+      "rolls": 1
+    },
+    {
+      "id": 13233,
+      "members": 1,
+      "name": "Smouldering stone",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.001953125",
+      "rolls": 1
+    },
+    {
+      "id": 1127,
+      "members": 0,
+      "name": "Rune platebody",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0390625",
+      "rolls": 1
+    },
+    {
+      "id": 23083,
+      "members": 1,
+      "name": "Brimstone key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.017857142857142856",
+      "rolls": 1
+    },
+    {
+      "id": 12073,
+      "members": 1,
+      "name": "Clue scroll (elite)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.01",
+      "rolls": 1
+    },
+    {
+      "id": 13245,
+      "members": 1,
+      "name": "Jar of souls",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0005",
+      "rolls": 1
+    },
+    {
+      "id": 13247,
+      "members": 1,
+      "name": "Hellpuppy",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0003333333333333333",
+      "rolls": 1
+    },
+    {
+      "id": 1113,
+      "members": 0,
+      "name": "Rune chainbody",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.03125",
+      "rolls": 1
+    },
+    {
+      "id": 1319,
+      "members": 0,
+      "name": "Rune 2h sword",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.03125",
+      "rolls": 1
+    },
+    {
+      "id": 2503,
+      "members": 1,
+      "name": "Black d'hide body",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0234375",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "A three-headed gigantic hound. Guardian of the River of Souls.",
+  "hitpoints": 600,
+  "id": "5862",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 0,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 220,
+  "max_hit": 23,
+  "members": 1,
+  "name": "Cerberus",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 220,
+  "release_date": "2015-08-27",
+  "size": 5,
+  "slayer_level": 91,
+  "slayer_masters": [
+    "vannaka",
+    "chaeldar",
+    "konar",
+    "nieve",
+    "duradel"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "690.0",
+  "strength_bonus": 0,
+  "strength_level": 220,
+  "venomous": 0,
+  "wiki_name": "Cerberus",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Cerberus"
 }

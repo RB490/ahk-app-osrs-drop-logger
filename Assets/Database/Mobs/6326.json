@@ -1,103 +1,121 @@
 {
-    "id": 6326,
-    "name": "Skeleton Hellhound (hard)",
-    "last_updated": "2021-01-14",
-    "incomplete": true,
-    "members": true,
-    "release_date": "2013-09-05",
-    "combat_level": 198,
-    "size": 2,
-    "hitpoints": 132,
-    "max_hit": 27,
-    "attack_type": [
-        "crush"
-    ],
-    "attack_speed": 4,
-    "aggressive": true,
-    "poisonous": false,
-    "venomous": false,
-    "immune_poison": false,
-    "immune_venom": false,
-    "attributes": [
-        "demon"
-    ],
-    "category": [
-        "hellhound"
-    ],
-    "slayer_monster": true,
-    "slayer_level": 1,
-    "slayer_xp": 55.0,
-    "slayer_masters": [
-        "vannaka",
-        "chaeldar",
-        "nieve",
-        "duradel"
-    ],
-    "duplicate": false,
-    "examine": "A creature summoned by Vanstrom to kill the remaining Myreque.",
-    "wiki_name": "Skeleton Hellhound (Hard)",
-    "wiki_url": "https://oldschool.runescape.wiki/w/Skeleton_Hellhound#Hard",
-    "attack_level": 168,
-    "strength_level": 264,
-    "defence_level": 100,
-    "magic_level": 1,
-    "ranged_level": 1,
-    "attack_bonus": 0,
-    "strength_bonus": 0,
-    "attack_magic": 0,
-    "magic_bonus": 0,
-    "attack_ranged": 0,
-    "ranged_bonus": 0,
-    "defence_stab": 0,
-    "defence_slash": 0,
-    "defence_crush": 0,
-    "defence_magic": 0,
-    "defence_ranged": 0,
-    "drops": [
-        {
-            "id": 532,
-            "name": "Big bones",
-            "members": false,
-            "quantity": "4",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        },
-        {
-            "id": 532,
-            "name": "Big bones",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        },
-        {
-            "id": 1619,
-            "name": "Uncut ruby",
-            "members": false,
-            "quantity": "2",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        },
-        {
-            "id": 10976,
-            "name": "Long bone",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0025,
-            "rolls": 1
-        },
-        {
-            "id": 10977,
-            "name": "Curved bone",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.00019950124688279303,
-            "rolls": 1
-        }
-    ]
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "bdad63f38024a9751a0677187989648abc244688",
+  "_id": "60ebb3b0c1c55bf074a5ea4c",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3b0c1c55bf074a5ea4c",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 0,
+  "attack_level": 168,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "crush"
+  ],
+  "attributes": [
+    "demon"
+  ],
+  "category": [
+    "hellhounds"
+  ],
+  "combat_level": 198,
+  "defence_crush": 0,
+  "defence_level": 100,
+  "defence_magic": 0,
+  "defence_ranged": 0,
+  "defence_slash": 0,
+  "defence_stab": 0,
+  "drops": [
+    {
+      "id": 532,
+      "members": 0,
+      "name": "Big bones",
+      "noted": 0,
+      "quantity": "4",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 532,
+      "members": 0,
+      "name": "Big bones",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 1619,
+      "members": 0,
+      "name": "Uncut ruby",
+      "noted": 0,
+      "quantity": "2",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 10976,
+      "members": 1,
+      "name": "Long bone",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0025",
+      "rolls": 1
+    },
+    {
+      "id": 10977,
+      "members": 1,
+      "name": "Curved bone",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00019950124688279303",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "A creature summoned by Vanstrom to kill the remaining Myreque.",
+  "hitpoints": 132,
+  "id": "6326",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 27,
+  "members": 1,
+  "name": "Skeleton Hellhound (hard)",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2013-09-05",
+  "size": 2,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "vannaka",
+    "chaeldar",
+    "nieve",
+    "duradel"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "55.0",
+  "strength_bonus": 0,
+  "strength_level": 264,
+  "venomous": 0,
+  "wiki_name": "Skeleton Hellhound (Hard)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Skeleton_Hellhound#Hard"
 }

@@ -149,7 +149,7 @@ Class ClassDropLogStats {
                     loop % kill.drops.length() {
                         drop := kill.drops[A_Index]
 
-                        output += ITEM_DB.GetPrice(drop.id)
+                        output += DB_PRICES.GetPrice(drop.id)
                     }
                 }
             }
@@ -227,7 +227,7 @@ Class ClassDropLogStats {
             loop % this.uniqueDrops.length() {
                 drop := this.uniqueDrops[A_Index]
                 totalItems := drop.quantity * drop.occurences
-                price := ITEM_DB.GetPrice(drop.id)
+                price := DB_PRICES.GetPrice(drop.id)
                 drop.totalValue := totalItems * price
                 If !drop.totalValue
                     drop.totalValue := "-"

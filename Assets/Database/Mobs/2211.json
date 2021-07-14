@@ -1,282 +1,300 @@
 {
-    "id": 2211,
-    "name": "Spiritual ranger",
-    "last_updated": "2021-01-11",
-    "incomplete": false,
-    "members": true,
-    "release_date": "2013-10-17",
-    "combat_level": 122,
-    "size": 1,
-    "hitpoints": 106,
-    "max_hit": 16,
-    "attack_type": [
-        "ranged"
-    ],
-    "attack_speed": 4,
-    "aggressive": false,
-    "poisonous": false,
-    "venomous": false,
-    "immune_poison": false,
-    "immune_venom": false,
-    "attributes": [],
-    "category": [
-        "spiritual creature"
-    ],
-    "slayer_monster": true,
-    "slayer_level": 63,
-    "slayer_xp": 106.0,
-    "slayer_masters": [
-        "krystilia",
-        "vannaka",
-        "chaeldar",
-        "nieve",
-        "duradel"
-    ],
-    "duplicate": false,
-    "examine": "A ranger spirit dedicated to Saradomin.",
-    "wiki_name": "Spiritual ranger (Saradomin)",
-    "wiki_url": "https://oldschool.runescape.wiki/w/Spiritual_ranger#Saradomin",
-    "attack_level": 1,
-    "strength_level": 1,
-    "defence_level": 100,
-    "magic_level": 1,
-    "ranged_level": 146,
-    "attack_bonus": 0,
-    "strength_bonus": 0,
-    "attack_magic": 0,
-    "magic_bonus": 0,
-    "attack_ranged": 0,
-    "ranged_bonus": 0,
-    "defence_stab": 3,
-    "defence_slash": 5,
-    "defence_crush": 13,
-    "defence_magic": 16,
-    "defence_ranged": 23,
-    "drops": [
-        {
-            "id": 843,
-            "name": "Oak shortbow",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0390625,
-            "rolls": 1
-        },
-        {
-            "id": 559,
-            "name": "Body rune",
-            "members": false,
-            "quantity": "12",
-            "noted": false,
-            "rarity": 0.03125,
-            "rolls": 1
-        },
-        {
-            "id": 892,
-            "name": "Rune arrow",
-            "members": true,
-            "quantity": "5",
-            "noted": false,
-            "rarity": 0.015625,
-            "rolls": 1
-        },
-        {
-            "id": 890,
-            "name": "Adamant arrow",
-            "members": false,
-            "quantity": "12",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 5626,
-            "name": "Adamant arrow(p++)",
-            "members": true,
-            "quantity": "3",
-            "noted": false,
-            "rarity": 0.0234375,
-            "rolls": 1
-        },
-        {
-            "id": 2538,
-            "name": "Adamant fire arrow",
-            "members": true,
-            "quantity": "4",
-            "noted": false,
-            "rarity": 0.015625,
-            "rolls": 1
-        },
-        {
-            "id": 53,
-            "name": "Headless arrow",
-            "members": true,
-            "quantity": "12",
-            "noted": false,
-            "rarity": 0.078125,
-            "rolls": 1
-        },
-        {
-            "id": 40,
-            "name": "Iron arrowtips",
-            "members": true,
-            "quantity": "5",
-            "noted": false,
-            "rarity": 0.0859375,
-            "rolls": 1
-        },
-        {
-            "id": 43,
-            "name": "Adamant arrowtips",
-            "members": true,
-            "quantity": "13",
-            "noted": false,
-            "rarity": 0.0703125,
-            "rolls": 1
-        },
-        {
-            "id": 1777,
-            "name": "Bow string",
-            "members": true,
-            "quantity": "7",
-            "noted": false,
-            "rarity": 0.140625,
-            "rolls": 1
-        },
-        {
-            "id": 687,
-            "name": "Broken arrow",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 9179,
-            "name": "Steel crossbow",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0234375,
-            "rolls": 1
-        },
-        {
-            "id": 56,
-            "name": "Oak longbow (u)",
-            "members": true,
-            "quantity": "12",
-            "noted": false,
-            "rarity": 0.0703125,
-            "rolls": 1
-        },
-        {
-            "id": 11941,
-            "name": "Looting bag",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.3333333333333333,
-            "rolls": 1
-        },
-        {
-            "id": 11942,
-            "name": "Ecumenical key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.016666666666666666,
-            "rolls": 1
-        },
-        {
-            "id": 2722,
-            "name": "Clue scroll (hard)",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 23490,
-            "name": "Larran's key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0136986301369863,
-            "rolls": 1
-        },
-        {
-            "id": 21257,
-            "name": "Slayer's enchantment",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.004016064257028112,
-            "rolls": 1
-        },
-        {
-            "id": 851,
-            "name": "Maple longbow",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.03125,
-            "rolls": 1
-        },
-        {
-            "id": 861,
-            "name": "Magic shortbow",
-            "members": true,
-            "quantity": "1-2",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 5619,
-            "name": "Mithril arrow(p+)",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0859375,
-            "rolls": 1
-        },
-        {
-            "id": 886,
-            "name": "Steel arrow",
-            "members": false,
-            "quantity": "12",
-            "noted": false,
-            "rarity": 0.03125,
-            "rolls": 1
-        },
-        {
-            "id": 884,
-            "name": "Iron arrow",
-            "members": false,
-            "quantity": "12",
-            "noted": false,
-            "rarity": 0.1171875,
-            "rolls": 1
-        },
-        {
-            "id": 882,
-            "name": "Bronze arrow",
-            "members": false,
-            "quantity": "16",
-            "noted": false,
-            "rarity": 0.1015625,
-            "rolls": 1
-        },
-        {
-            "id": 5616,
-            "name": "Bronze arrow(p+)",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        }
-    ]
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "e6807615e7fce532af38d9423568d824bfea93a8",
+  "_id": "60ebb3afc1c55bf074a5e5de",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3afc1c55bf074a5e5de",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 0,
+  "attack_bonus": 0,
+  "attack_level": 1,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "ranged"
+  ],
+  "attributes": [],
+  "category": [
+    "spiritual creatures"
+  ],
+  "combat_level": 122,
+  "defence_crush": 13,
+  "defence_level": 100,
+  "defence_magic": 16,
+  "defence_ranged": 23,
+  "defence_slash": 5,
+  "defence_stab": 3,
+  "drops": [
+    {
+      "id": 843,
+      "members": 0,
+      "name": "Oak shortbow",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0390625",
+      "rolls": 1
+    },
+    {
+      "id": 559,
+      "members": 0,
+      "name": "Body rune",
+      "noted": 0,
+      "quantity": "12",
+      "rarity": "0.03125",
+      "rolls": 1
+    },
+    {
+      "id": 892,
+      "members": 1,
+      "name": "Rune arrow",
+      "noted": 0,
+      "quantity": "5",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 890,
+      "members": 0,
+      "name": "Adamant arrow",
+      "noted": 0,
+      "quantity": "12",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 5626,
+      "members": 1,
+      "name": "Adamant arrow(p++)",
+      "noted": 0,
+      "quantity": "3",
+      "rarity": "0.0234375",
+      "rolls": 1
+    },
+    {
+      "id": 2538,
+      "members": 1,
+      "name": "Adamant fire arrow",
+      "noted": 0,
+      "quantity": "4",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 53,
+      "members": 1,
+      "name": "Headless arrow",
+      "noted": 0,
+      "quantity": "12",
+      "rarity": "0.078125",
+      "rolls": 1
+    },
+    {
+      "id": 40,
+      "members": 1,
+      "name": "Iron arrowtips",
+      "noted": 0,
+      "quantity": "5",
+      "rarity": "0.0859375",
+      "rolls": 1
+    },
+    {
+      "id": 43,
+      "members": 1,
+      "name": "Adamant arrowtips",
+      "noted": 0,
+      "quantity": "13",
+      "rarity": "0.0703125",
+      "rolls": 1
+    },
+    {
+      "id": 1777,
+      "members": 1,
+      "name": "Bow string",
+      "noted": 0,
+      "quantity": "7",
+      "rarity": "0.140625",
+      "rolls": 1
+    },
+    {
+      "id": 687,
+      "members": 1,
+      "name": "Broken arrow",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 9179,
+      "members": 1,
+      "name": "Steel crossbow",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0234375",
+      "rolls": 1
+    },
+    {
+      "id": 56,
+      "members": 1,
+      "name": "Oak longbow (u)",
+      "noted": 0,
+      "quantity": "12",
+      "rarity": "0.0703125",
+      "rolls": 1
+    },
+    {
+      "id": 11941,
+      "members": 1,
+      "name": "Looting bag",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.3333333333333333",
+      "rolls": 1
+    },
+    {
+      "id": 11942,
+      "members": 1,
+      "name": "Ecumenical key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.016666666666666666",
+      "rolls": 1
+    },
+    {
+      "id": 2722,
+      "members": 1,
+      "name": "Clue scroll (hard)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 23490,
+      "members": 1,
+      "name": "Larran's key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0136986301369863",
+      "rolls": 1
+    },
+    {
+      "id": 21257,
+      "members": 1,
+      "name": "Slayer's enchantment",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.004016064257028112",
+      "rolls": 1
+    },
+    {
+      "id": 851,
+      "members": 0,
+      "name": "Maple longbow",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.03125",
+      "rolls": 1
+    },
+    {
+      "id": 861,
+      "members": 1,
+      "name": "Magic shortbow",
+      "noted": 0,
+      "quantity": "1-2",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 5619,
+      "members": 1,
+      "name": "Mithril arrow(p+)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0859375",
+      "rolls": 1
+    },
+    {
+      "id": 886,
+      "members": 0,
+      "name": "Steel arrow",
+      "noted": 0,
+      "quantity": "12",
+      "rarity": "0.03125",
+      "rolls": 1
+    },
+    {
+      "id": 884,
+      "members": 0,
+      "name": "Iron arrow",
+      "noted": 0,
+      "quantity": "12",
+      "rarity": "0.1171875",
+      "rolls": 1
+    },
+    {
+      "id": 882,
+      "members": 0,
+      "name": "Bronze arrow",
+      "noted": 0,
+      "quantity": "16",
+      "rarity": "0.1015625",
+      "rolls": 1
+    },
+    {
+      "id": 5616,
+      "members": 1,
+      "name": "Bronze arrow(p+)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "A ranger spirit dedicated to Saradomin.",
+  "hitpoints": 106,
+  "id": "2211",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 0,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 16,
+  "members": 1,
+  "name": "Spiritual ranger",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 146,
+  "release_date": "2013-10-17",
+  "size": 1,
+  "slayer_level": 63,
+  "slayer_masters": [
+    "krystilia",
+    "vannaka",
+    "chaeldar",
+    "nieve",
+    "duradel"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "106.0",
+  "strength_bonus": 0,
+  "strength_level": 1,
+  "venomous": 0,
+  "wiki_name": "Spiritual ranger (Saradomin)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Spiritual_ranger#Saradomin"
 }

@@ -1,285 +1,312 @@
 {
-    "id": 3129,
-    "name": "K'ril Tsutsaroth",
-    "last_updated": "2021-06-18",
-    "incomplete": true,
-    "members": true,
-    "release_date": "2013-10-17",
-    "combat_level": 650,
-    "size": 5,
-    "hitpoints": 255,
-    "max_hit": 30,
-    "attack_type": [
-        "slash",
-        "magic"
-    ],
-    "attack_speed": 6,
-    "aggressive": true,
-    "poisonous": true,
-    "venomous": false,
-    "immune_poison": true,
-    "immune_venom": true,
-    "attributes": [
-        "demon"
-    ],
-    "category": [
-        "boss",
-        "greater demon"
-    ],
-    "slayer_monster": true,
-    "slayer_level": 1,
-    "slayer_xp": 350.5,
-    "slayer_masters": [
-        "chaeldar",
-        "konar",
-        "nieve",
-        "duradel"
-    ],
-    "duplicate": false,
-    "examine": "A servant of the god Zamorak.",
-    "wiki_name": "K'ril Tsutsaroth",
-    "wiki_url": "https://oldschool.runescape.wiki/w/K'ril_Tsutsaroth",
-    "attack_level": 340,
-    "strength_level": 300,
-    "defence_level": 270,
-    "magic_level": 200,
-    "ranged_level": 1,
-    "attack_bonus": 160,
-    "strength_bonus": 31,
-    "attack_magic": 0,
-    "magic_bonus": 0,
-    "attack_ranged": 0,
-    "ranged_bonus": 0,
-    "defence_stab": 80,
-    "defence_slash": 80,
-    "defence_crush": 80,
-    "defence_magic": 130,
-    "defence_ranged": 80,
-    "drops": [
-        {
-            "id": 1333,
-            "name": "Rune scimitar",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.06299212598425197,
-            "rolls": 1
-        },
-        {
-            "id": 1123,
-            "name": "Adamant platebody",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.06299212598425197,
-            "rolls": 1
-        },
-        {
-            "id": 1079,
-            "name": "Rune platelegs",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.05511811023622047,
-            "rolls": 1
-        },
-        {
-            "id": 5698,
-            "name": "Dragon dagger(p++)",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.015748031496062992,
-            "rolls": 1
-        },
-        {
-            "id": 145,
-            "name": "Super attack(3)",
-            "members": true,
-            "quantity": "3",
-            "noted": false,
-            "rarity": 0.06299212598425197,
-            "rolls": 1
-        },
-        {
-            "id": 157,
-            "name": "Super strength(3)",
-            "members": true,
-            "quantity": "3",
-            "noted": false,
-            "rarity": 0.06299212598425197,
-            "rolls": 1
-        },
-        {
-            "id": 3026,
-            "name": "Super restore(3)",
-            "members": true,
-            "quantity": "3",
-            "noted": false,
-            "rarity": 0.06299212598425197,
-            "rolls": 1
-        },
-        {
-            "id": 189,
-            "name": "Zamorak brew(3)",
-            "members": true,
-            "quantity": "3",
-            "noted": false,
-            "rarity": 0.06299212598425197,
-            "rolls": 1
-        },
-        {
-            "id": 995,
-            "name": "Coins",
-            "members": false,
-            "quantity": "19500-20000",
-            "noted": false,
-            "rarity": 0.2889763779527559,
-            "rolls": 1
-        },
-        {
-            "id": 2485,
-            "name": "Grimy lantadyme",
-            "members": true,
-            "quantity": "10",
-            "noted": true,
-            "rarity": 0.06299212598425197,
-            "rolls": 1
-        },
-        {
-            "id": 11787,
-            "name": "Steam battlestaff",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.007874015748031496,
-            "rolls": 1
-        },
-        {
-            "id": 5302,
-            "name": "Lantadyme seed",
-            "members": true,
-            "quantity": "3",
-            "noted": false,
-            "rarity": 0.06299212598425197,
-            "rolls": 1
-        },
-        {
-            "id": 560,
-            "name": "Death rune",
-            "members": false,
-            "quantity": "120-125",
-            "noted": false,
-            "rarity": 0.06299212598425197,
-            "rolls": 1
-        },
-        {
-            "id": 565,
-            "name": "Blood rune",
-            "members": true,
-            "quantity": "80-85",
-            "noted": false,
-            "rarity": 0.06299212598425197,
-            "rolls": 1
-        },
-        {
-            "id": 1289,
-            "name": "Rune sword",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0024606299212598425,
-            "rolls": 1
-        },
-        {
-            "id": 11824,
-            "name": "Zamorakian spear",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.007874015748031496,
-            "rolls": 1
-        },
-        {
-            "id": 11791,
-            "name": "Staff of the dead",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.001968503937007874,
-            "rolls": 1
-        },
-        {
-            "id": 23083,
-            "name": "Brimstone key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.02,
-            "rolls": 1
-        },
-        {
-            "id": 12073,
-            "name": "Clue scroll (elite)",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.004,
-            "rolls": 1
-        },
-        {
-            "id": 11816,
-            "name": "Zamorak hilt",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.001968503937007874,
-            "rolls": 1
-        },
-        {
-            "id": 12652,
-            "name": "Pet k'ril tsutsaroth",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0002,
-            "rolls": 1
-        },
-        {
-            "id": 11818,
-            "name": "Godsword shard 1",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0013123359580052493,
-            "rolls": 1
-        },
-        {
-            "id": 11820,
-            "name": "Godsword shard 2",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0013123359580052493,
-            "rolls": 1
-        },
-        {
-            "id": 11822,
-            "name": "Godsword shard 3",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0013123359580052493,
-            "rolls": 1
-        },
-        {
-            "id": 5626,
-            "name": "Adamant arrow(p++)",
-            "members": true,
-            "quantity": "295-300",
-            "noted": false,
-            "rarity": 0.06299212598425197,
-            "rolls": 1
-        }
-    ]
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "f4362b0d1eb03719c76a3ccab999ff17adc33f36",
+  "_id": "60ebb3afc1c55bf074a5e70b",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3afc1c55bf074a5e70b",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 160,
+  "attack_level": 340,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 6,
+  "attack_type": [
+    "slash",
+    "magic"
+  ],
+  "attributes": [
+    "demon"
+  ],
+  "category": [
+    "bosses",
+    "greater demons"
+  ],
+  "combat_level": 650,
+  "defence_crush": 80,
+  "defence_level": 270,
+  "defence_magic": 130,
+  "defence_ranged": 80,
+  "defence_slash": 80,
+  "defence_stab": 80,
+  "drops": [
+    {
+      "id": 25775,
+      "members": 1,
+      "name": "Infernal ashes",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 1333,
+      "members": 0,
+      "name": "Rune scimitar",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.06299212598425197",
+      "rolls": 1
+    },
+    {
+      "id": 1123,
+      "members": 0,
+      "name": "Adamant platebody",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.06299212598425197",
+      "rolls": 1
+    },
+    {
+      "id": 1079,
+      "members": 0,
+      "name": "Rune platelegs",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.05511811023622047",
+      "rolls": 1
+    },
+    {
+      "id": 5698,
+      "members": 1,
+      "name": "Dragon dagger(p++)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.015748031496062992",
+      "rolls": 1
+    },
+    {
+      "id": 145,
+      "members": 1,
+      "name": "Super attack(3)",
+      "noted": 0,
+      "quantity": "3",
+      "rarity": "0.06299212598425197",
+      "rolls": 1
+    },
+    {
+      "id": 157,
+      "members": 1,
+      "name": "Super strength(3)",
+      "noted": 0,
+      "quantity": "3",
+      "rarity": "0.06299212598425197",
+      "rolls": 1
+    },
+    {
+      "id": 3026,
+      "members": 1,
+      "name": "Super restore(3)",
+      "noted": 0,
+      "quantity": "3",
+      "rarity": "0.06299212598425197",
+      "rolls": 1
+    },
+    {
+      "id": 189,
+      "members": 1,
+      "name": "Zamorak brew(3)",
+      "noted": 0,
+      "quantity": "3",
+      "rarity": "0.06299212598425197",
+      "rolls": 1
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "19500-20000",
+      "rarity": "0.2889763779527559",
+      "rolls": 1
+    },
+    {
+      "id": 2485,
+      "members": 1,
+      "name": "Grimy lantadyme",
+      "noted": 1,
+      "quantity": "10",
+      "rarity": "0.06299212598425197",
+      "rolls": 1
+    },
+    {
+      "id": 11787,
+      "members": 1,
+      "name": "Steam battlestaff",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.007874015748031496",
+      "rolls": 1
+    },
+    {
+      "id": 5302,
+      "members": 1,
+      "name": "Lantadyme seed",
+      "noted": 0,
+      "quantity": "3",
+      "rarity": "0.06299212598425197",
+      "rolls": 1
+    },
+    {
+      "id": 560,
+      "members": 0,
+      "name": "Death rune",
+      "noted": 0,
+      "quantity": "120-125",
+      "rarity": "0.06299212598425197",
+      "rolls": 1
+    },
+    {
+      "id": 565,
+      "members": 1,
+      "name": "Blood rune",
+      "noted": 0,
+      "quantity": "80-85",
+      "rarity": "0.06299212598425197",
+      "rolls": 1
+    },
+    {
+      "id": 1289,
+      "members": 0,
+      "name": "Rune sword",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0024606299212598425",
+      "rolls": 1
+    },
+    {
+      "id": 11824,
+      "members": 1,
+      "name": "Zamorakian spear",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.007874015748031496",
+      "rolls": 1
+    },
+    {
+      "id": 11791,
+      "members": 1,
+      "name": "Staff of the dead",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.001968503937007874",
+      "rolls": 1
+    },
+    {
+      "id": 23083,
+      "members": 1,
+      "name": "Brimstone key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.02",
+      "rolls": 1
+    },
+    {
+      "id": 12073,
+      "members": 1,
+      "name": "Clue scroll (elite)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.004",
+      "rolls": 1
+    },
+    {
+      "id": 11816,
+      "members": 1,
+      "name": "Zamorak hilt",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.001968503937007874",
+      "rolls": 1
+    },
+    {
+      "id": 12652,
+      "members": 1,
+      "name": "Pet k'ril tsutsaroth",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0002",
+      "rolls": 1
+    },
+    {
+      "id": 11818,
+      "members": 1,
+      "name": "Godsword shard 1",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0013123359580052493",
+      "rolls": 1
+    },
+    {
+      "id": 11820,
+      "members": 1,
+      "name": "Godsword shard 2",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0013123359580052493",
+      "rolls": 1
+    },
+    {
+      "id": 11822,
+      "members": 1,
+      "name": "Godsword shard 3",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0013123359580052493",
+      "rolls": 1
+    },
+    {
+      "id": 5626,
+      "members": 1,
+      "name": "Adamant arrow(p++)",
+      "noted": 0,
+      "quantity": "295-300",
+      "rarity": "0.06299212598425197",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "A servant of the god Zamorak.",
+  "hitpoints": 255,
+  "id": "3129",
+  "immune_poison": 1,
+  "immune_venom": 1,
+  "incomplete": 1,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 200,
+  "max_hit": 30,
+  "members": 1,
+  "name": "K'ril Tsutsaroth",
+  "poisonous": 1,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2013-10-17",
+  "size": 5,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "chaeldar",
+    "konar",
+    "nieve",
+    "duradel"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "350.5",
+  "strength_bonus": 31,
+  "strength_level": 300,
+  "venomous": 0,
+  "wiki_name": "K'ril Tsutsaroth",
+  "wiki_url": "https://oldschool.runescape.wiki/w/K'ril_Tsutsaroth"
 }

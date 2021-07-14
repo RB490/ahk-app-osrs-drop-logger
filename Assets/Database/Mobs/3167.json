@@ -1,7 +1,7 @@
 {
   "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
-  "_etag": "7bfc39ca2fefc260555d97109ec44c4070ec9a49",
-  "_id": "60cd28b0cfb7392d00907386",
+  "_etag": "715bbdf853a10c196d2f26014e97f5be040b0129",
+  "_id": "60ebb3afc1c55bf074a5e720",
   "_links": {
     "collection": {
       "href": "monsters",
@@ -12,7 +12,7 @@
       "title": "home"
     },
     "self": {
-      "href": "monsters/60cd28b0cfb7392d00907386",
+      "href": "monsters/60ebb3afc1c55bf074a5e720",
       "title": "Monster"
     }
   },
@@ -28,7 +28,7 @@
   ],
   "attributes": [],
   "category": [
-    "spiritual creature"
+    "spiritual creatures"
   ],
   "combat_level": 127,
   "defence_crush": 8,
@@ -271,7 +271,7 @@
   "immune_poison": 0,
   "immune_venom": 0,
   "incomplete": 0,
-  "last_updated": "2021-01-11",
+  "last_updated": "2021-07-12",
   "magic_bonus": 0,
   "magic_level": 1,
   "max_hit": 16,

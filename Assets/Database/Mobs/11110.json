@@ -1,0 +1,89 @@
+{
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "ee45d03adb690e92ee0f82251c81a188711b58c9",
+  "_id": "60ebb3b2c1c55bf074a5ee0f",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3b2c1c55bf074a5ee0f",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 0,
+  "attack_level": 40,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "slash"
+  ],
+  "attributes": [],
+  "category": [
+    "dark warriors"
+  ],
+  "combat_level": 51,
+  "defence_crush": 40,
+  "defence_level": 30,
+  "defence_magic": 0,
+  "defence_ranged": 0,
+  "defence_slash": 20,
+  "defence_stab": 10,
+  "drops": [
+    {
+      "id": 23490,
+      "members": 1,
+      "name": "Larran's key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0006042296072507553",
+      "rolls": 1
+    },
+    {
+      "id": 21257,
+      "members": 1,
+      "name": "Slayer's enchantment",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.003257328990228013",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "A warrior touched by chaos.",
+  "hitpoints": 70,
+  "id": "11110",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 15,
+  "max_hit": 5,
+  "members": 1,
+  "name": "Dark warrior",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2021-06-16",
+  "size": 1,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "krystilia"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "70.0",
+  "strength_bonus": 0,
+  "strength_level": 40,
+  "venomous": 0,
+  "wiki_name": "Dark warrior (Level 51)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Dark_warrior#Level_51"
+}

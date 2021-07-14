@@ -1,7 +1,7 @@
 {
   "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
-  "_etag": "9e09157f28bab361bc33ba61c10023a726edcccf",
-  "_id": "60cd28afcfb7392d0090712c",
+  "_etag": "55711e2df9f6db42ab2bbabc79d2b8015235be82",
+  "_id": "60ebb3aec1c55bf074a5e4c6",
   "_links": {
     "collection": {
       "href": "monsters",
@@ -12,7 +12,7 @@
       "title": "home"
     },
     "self": {
-      "href": "monsters/60cd28afcfb7392d0090712c",
+      "href": "monsters/60ebb3aec1c55bf074a5e4c6",
       "title": "Monster"
     }
   },
@@ -28,7 +28,7 @@
   ],
   "attributes": [],
   "category": [
-    "bird"
+    "birds"
   ],
   "combat_level": 3,
   "defence_crush": -42,
@@ -82,7 +82,7 @@
   "immune_poison": 0,
   "immune_venom": 0,
   "incomplete": 1,
-  "last_updated": "2021-02-24",
+  "last_updated": "2021-07-12",
   "magic_bonus": 0,
   "magic_level": 1,
   "max_hit": 0,

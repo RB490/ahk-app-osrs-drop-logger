@@ -1,7 +1,7 @@
 {
   "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
-  "_etag": "789a32ab844221dfe185116d585de618196a8599",
-  "_id": "60cd28b1cfb7392d009074b6",
+  "_etag": "f92c742f12341bafbc98518d63c44d21d3b60309",
+  "_id": "60ebb3b0c1c55bf074a5e850",
   "_links": {
     "collection": {
       "href": "monsters",
@@ -12,7 +12,7 @@
       "title": "home"
     },
     "self": {
-      "href": "monsters/60cd28b1cfb7392d009074b6",
+      "href": "monsters/60ebb3b0c1c55bf074a5e850",
       "title": "Monster"
     }
   },
@@ -53,7 +53,7 @@
   "immune_poison": 0,
   "immune_venom": 0,
   "incomplete": 1,
-  "last_updated": "2020-12-25",
+  "last_updated": "2021-07-12",
   "magic_bonus": 0,
   "magic_level": 1,
   "max_hit": 1,
@@ -62,7 +62,7 @@
   "poisonous": 0,
   "ranged_bonus": 0,
   "ranged_level": 1,
-  "release_date": "2002-05-28",
+  "release_date": "2004-03-29",
   "size": 1,
   "slayer_level": "",
   "slayer_masters": [],

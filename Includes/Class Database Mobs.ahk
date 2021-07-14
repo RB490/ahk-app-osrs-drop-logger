@@ -28,10 +28,9 @@ Class ClassDatabaseMobs {
         }
 
         ; update if database list unavailable or more than x hours old
-        If !IsObject(obj) or 
-            obj := this._Update()
-        else
-            obj := json.load(FileRead(PATH_DATABASE_MOBS))
+        If !IsObject(obj)
+            this._Update()
+        obj := json.load(FileRead(PATH_DATABASE_MOBS))
 
         ; if necessary, update database in the background if we already have a database available
         If (hoursOld > 168) or (A_DDDD = "Friday") ; friday is a day after osrs gets updated
@@ -49,7 +48,16 @@ Class ClassDatabaseMobs {
     _Update(silent := false) {
         If !silent
             P.Get(A_ThisFunc, "Updating mob database", A_Space, A_Space) ; title-text1-bar1-bar1text
+        
+        ; update files
+        this._UpdateMobsDatabase()
+        this._UpdateDropListDatabase()
 
+        P.Destroy()
+        If silent ; inform user through traytrip
+            TrayTip, % APP_NAME, Updated monster database!`nRestart to take effect, 5, 17
+    }
+    _UpdateMobsDatabase() {
         ; input := FileRead(A_ScriptDir "\Dev\monsters-complete-1page.txt")
         input := DownloadToString(this.monstersCompleteUrl)
 
@@ -92,15 +100,40 @@ Class ClassDatabaseMobs {
         ; save to disk
         FileDelete, % PATH_DATABASE_MOBS
         FileAppend, % json.dump(output,,2), % PATH_DATABASE_MOBS
-
-        P.Destroy()
-        If silent ; inform user through traytrip
-            TrayTip, % APP_NAME, Updated monster database!`nRestart to take effect, 5, 17
         return output
     }
 
-    ; return object with mob names
-    GetList() {
+    _UpdateDropListDatabase() {
+        output := {}
+        mobList := this.GetMobList()
+
+        for i, mob in mobList {
+            dropList := this.GetDropTable(mob)
+            for i, drop in dropList
+                output[drop.id] := drop.name
+        }
+
+        ; save to disk
+        FileDelete, % PATH_DATABASE_MOBS_DROP_LIST
+        FileAppend, % json.dump(output,,2), % PATH_DATABASE_MOBS_DROP_LIST
+
+        return output
+    }
+
+    ; return object with unique drops itemId:itemName
+    GetDropList() {
+        static output
+
+        If !IsObject(output)
+            output := json.load(FileRead(PATH_DATABASE_MOBS_DROP_LIST))
+        If (output.length() < 50)
+            Msg("Error", A_ThisFunc, "Drop list unavailable at:`n`n" PATH_DATABASE_MOBS_DROP_LIST)
+
+        return output
+    }
+
+    ; return object with mobName:mobId
+    GetMobList() {
         obj := this.obj
         output := []
 

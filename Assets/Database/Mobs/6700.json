@@ -1,7 +1,7 @@
 {
   "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
-  "_etag": "293a808bad090fed370dbf908713ab8ad1b304b6",
-  "_id": "60cd28b2cfb7392d0090775c",
+  "_etag": "abf34594ca8da57fd9c85cb05b99e3cd4704b0cb",
+  "_id": "60ebb3b1c1c55bf074a5eaf6",
   "_links": {
     "collection": {
       "href": "monsters",
@@ -12,7 +12,7 @@
       "title": "home"
     },
     "self": {
-      "href": "monsters/60cd28b2cfb7392d0090775c",
+      "href": "monsters/60ebb3b1c1c55bf074a5eaf6",
       "title": "Monster"
     }
   },
@@ -326,13 +326,13 @@
     }
   ],
   "duplicate": 0,
-  "examine": "?",
+  "examine": "Tries to keep the peace.",
   "hitpoints": 800,
   "id": "6700",
   "immune_poison": 0,
   "immune_venom": 0,
   "incomplete": 1,
-  "last_updated": "2021-06-18",
+  "last_updated": "2021-07-12",
   "magic_bonus": 0,
   "magic_level": 1,
   "max_hit": 45,
@@ -350,6 +350,6 @@
   "strength_bonus": 7,
   "strength_level": 400,
   "venomous": 0,
-  "wiki_name": "Guard (Deadman Mode) (Fremennik 2)",
-  "wiki_url": "https://oldschool.runescape.wiki/w/Guard_(Deadman_Mode)#Fremennik_2"
+  "wiki_name": "Guard (Deadman Mode) (Fremennik Isles)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Guard_(Deadman_Mode)#Fremennik_Isles"
 }

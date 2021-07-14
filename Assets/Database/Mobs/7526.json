@@ -1,114 +1,130 @@
 {
-    "id": 7526,
-    "name": "Vanguard",
-    "last_updated": "2020-12-25",
-    "incomplete": true,
-    "members": true,
-    "release_date": "2017-01-05",
-    "combat_level": 0,
-    "size": 3,
-    "hitpoints": 180,
-    "max_hit": 22,
-    "attack_type": [
-        "magic"
-    ],
-    "attack_speed": 4,
-    "aggressive": true,
-    "poisonous": false,
-    "venomous": false,
-    "immune_poison": true,
-    "immune_venom": true,
-    "attributes": [
-        "xerician"
-    ],
-    "category": [],
-    "slayer_monster": false,
-    "slayer_level": null,
-    "slayer_xp": null,
-    "slayer_masters": [],
-    "duplicate": false,
-    "examine": "Formerly a member of Xeric's elite tactical unit.",
-    "wiki_name": "Vanguard (Magic)",
-    "wiki_url": "https://oldschool.runescape.wiki/w/Vanguard#Magic",
-    "attack_level": 150,
-    "strength_level": 150,
-    "defence_level": 160,
-    "magic_level": 150,
-    "ranged_level": 150,
-    "attack_bonus": 0,
-    "strength_bonus": 0,
-    "attack_magic": 40,
-    "magic_bonus": 25,
-    "attack_ranged": 0,
-    "ranged_bonus": 0,
-    "defence_stab": 315,
-    "defence_slash": 340,
-    "defence_crush": 400,
-    "defence_magic": 110,
-    "defence_ranged": 50,
-    "drops": [
-        {
-            "id": 20895,
-            "name": "Vanguard judgement",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        },
-        {
-            "id": 20924,
-            "name": "Elder (+)(4)",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        },
-        {
-            "id": 20936,
-            "name": "Twisted (+)(4)",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        },
-        {
-            "id": 20948,
-            "name": "Kodai (+)(4)",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        },
-        {
-            "id": 20984,
-            "name": "Xeric's aid (+)(4)",
-            "members": true,
-            "quantity": "1-2",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        },
-        {
-            "id": 20960,
-            "name": "Revitalisation (+)(4)",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.5,
-            "rolls": 1
-        },
-        {
-            "id": 20996,
-            "name": "Overload (+)(4)",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.3333333333333333,
-            "rolls": 1
-        }
-    ]
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "9404c8ced369925bb2fb8830028893a7a92eee8a",
+  "_id": "60ebb3b1c1c55bf074a5ebb3",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3b1c1c55bf074a5ebb3",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 0,
+  "attack_level": 0,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [],
+  "attributes": [
+    "xerician"
+  ],
+  "category": [],
+  "combat_level": 0,
+  "defence_crush": 0,
+  "defence_level": 0,
+  "defence_magic": 0,
+  "defence_ranged": 0,
+  "defence_slash": 0,
+  "defence_stab": 0,
+  "drops": [
+    {
+      "id": 20895,
+      "members": 1,
+      "name": "Vanguard judgement",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 20924,
+      "members": 1,
+      "name": "Elder (+)(4)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 20936,
+      "members": 1,
+      "name": "Twisted (+)(4)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 20948,
+      "members": 1,
+      "name": "Kodai (+)(4)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 20984,
+      "members": 1,
+      "name": "Xeric's aid (+)(4)",
+      "noted": 0,
+      "quantity": "1-2",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 20960,
+      "members": 1,
+      "name": "Revitalisation (+)(4)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.5",
+      "rolls": 1
+    },
+    {
+      "id": 20996,
+      "members": 1,
+      "name": "Overload (+)(4)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.3333333333333333",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "Formerly a member of Xeric's elite tactical unit.",
+  "hitpoints": "",
+  "id": "7526",
+  "immune_poison": 1,
+  "immune_venom": 1,
+  "incomplete": 1,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 0,
+  "max_hit": "",
+  "members": 1,
+  "name": "Vanguard",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 0,
+  "release_date": "2017-01-05",
+  "size": 3,
+  "slayer_level": "",
+  "slayer_masters": [],
+  "slayer_monster": 0,
+  "slayer_xp": "",
+  "strength_bonus": 0,
+  "strength_level": 0,
+  "venomous": 0,
+  "wiki_name": "Vanguard (Moving)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Vanguard#Moving"
 }

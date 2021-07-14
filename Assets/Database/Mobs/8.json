@@ -1,482 +1,401 @@
 {
-    "id": 8,
-    "name": "Nechryael",
-    "last_updated": "2021-06-18",
-    "incomplete": false,
-    "members": true,
-    "release_date": "2005-01-26",
-    "combat_level": 115,
-    "size": 1,
-    "hitpoints": 105,
-    "max_hit": 11,
-    "attack_type": [
-        "crush"
-    ],
-    "attack_speed": 4,
-    "aggressive": false,
-    "poisonous": false,
-    "venomous": false,
-    "immune_poison": false,
-    "immune_venom": false,
-    "attributes": [
-        "demon"
-    ],
-    "category": [
-        "nechryael"
-    ],
-    "slayer_monster": true,
-    "slayer_level": 80,
-    "slayer_xp": 105.0,
-    "slayer_masters": [
-        "vannaka",
-        "chaeldar",
-        "konar",
-        "nieve",
-        "duradel"
-    ],
-    "duplicate": false,
-    "examine": "An evil death demon.",
-    "wiki_name": "Nechryael",
-    "wiki_url": "https://oldschool.runescape.wiki/w/Nechryael",
-    "attack_level": 97,
-    "strength_level": 97,
-    "defence_level": 105,
-    "magic_level": 1,
-    "ranged_level": 1,
-    "attack_bonus": 0,
-    "strength_bonus": 0,
-    "attack_magic": 0,
-    "magic_bonus": 0,
-    "attack_ranged": 0,
-    "ranged_bonus": 0,
-    "defence_stab": 20,
-    "defence_slash": 20,
-    "defence_crush": 20,
-    "defence_magic": 0,
-    "defence_ranged": 20,
-    "drops": [
-        {
-            "id": 1623,
-            "name": "Uncut sapphire",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.010775862068965518,
-            "rolls": 1
-        },
-        {
-            "id": 1621,
-            "name": "Uncut emerald",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.005387931034482759,
-            "rolls": 1
-        },
-        {
-            "id": 1619,
-            "name": "Uncut ruby",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0026939655172413795,
-            "rolls": 1
-        },
-        {
-            "id": 1452,
-            "name": "Chaos talisman",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0010101581503600204,
-            "rolls": 1
-        },
-        {
-            "id": 1462,
-            "name": "Nature talisman",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0010101581503600204,
-            "rolls": 1
-        },
-        {
-            "id": 1617,
-            "name": "Uncut diamond",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0006734913793103449,
-            "rolls": 1
-        },
-        {
-            "id": 830,
-            "name": "Rune javelin",
-            "members": true,
-            "quantity": "5",
-            "noted": false,
-            "rarity": 0.00033674568965517244,
-            "rolls": 1
-        },
-        {
-            "id": 987,
-            "name": "Loop half of key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.00033674568965517244,
-            "rolls": 1
-        },
-        {
-            "id": 985,
-            "name": "Tooth half of key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.00033674568965517244,
-            "rolls": 1
-        },
-        {
-            "id": 1247,
-            "name": "Rune spear",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 2.1046605603448277e-05,
-            "rolls": 1
-        },
-        {
-            "id": 2366,
-            "name": "Shield left half",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.0523302801724139e-05,
-            "rolls": 1
-        },
-        {
-            "id": 1249,
-            "name": "Dragon spear",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 7.89186054968766e-06,
-            "rolls": 1
-        },
-        {
-            "id": 563,
-            "name": "Law rune",
-            "members": false,
-            "quantity": "25-35",
-            "noted": false,
-            "rarity": 0.04310344827586207,
-            "rolls": 1
-        },
-        {
-            "id": 565,
-            "name": "Blood rune",
-            "members": true,
-            "quantity": "15-20",
-            "noted": false,
-            "rarity": 0.034482758620689655,
-            "rolls": 1
-        },
-        {
-            "id": 5100,
-            "name": "Limpwurt seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.05172413793103448,
-            "rolls": 1
-        },
-        {
-            "id": 5296,
-            "name": "Toadflax seed",
-            "members": true,
-            "quantity": "1-2",
-            "noted": false,
-            "rarity": 0.030864197530864196,
-            "rolls": 1
-        },
-        {
-            "id": 5297,
-            "name": "Irit seed",
-            "members": true,
-            "quantity": "1-2",
-            "noted": false,
-            "rarity": 0.021052631578947368,
-            "rolls": 1
-        },
-        {
-            "id": 5281,
-            "name": "Belladonna seed",
-            "members": true,
-            "quantity": "1-2",
-            "noted": false,
-            "rarity": 0.020366598778004074,
-            "rolls": 1
-        },
-        {
-            "id": 5106,
-            "name": "Poison ivy seed",
-            "members": true,
-            "quantity": "1-2",
-            "noted": false,
-            "rarity": 0.01447178002894356,
-            "rolls": 1
-        },
-        {
-            "id": 5298,
-            "name": "Avantoe seed",
-            "members": true,
-            "quantity": "1-2",
-            "noted": false,
-            "rarity": 0.01447178002894356,
-            "rolls": 1
-        },
-        {
-            "id": 5280,
-            "name": "Cactus seed",
-            "members": true,
-            "quantity": "1-2",
-            "noted": false,
-            "rarity": 0.013812154696132596,
-            "rolls": 1
-        },
-        {
-            "id": 22873,
-            "name": "Potato cactus seed",
-            "members": true,
-            "quantity": "1-2",
-            "noted": false,
-            "rarity": 0.009861932938856016,
-            "rolls": 1
-        },
-        {
-            "id": 1073,
-            "name": "Adamant platelegs",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.034482758620689655,
-            "rolls": 1
-        },
-        {
-            "id": 5299,
-            "name": "Kwuarm seed",
-            "members": true,
-            "quantity": "1-2",
-            "noted": false,
-            "rarity": 0.009861932938856016,
-            "rolls": 1
-        },
-        {
-            "id": 5300,
-            "name": "Snapdragon seed",
-            "members": true,
-            "quantity": "1-2",
-            "noted": false,
-            "rarity": 0.006574621959237344,
-            "rolls": 1
-        },
-        {
-            "id": 5301,
-            "name": "Cadantine seed",
-            "members": true,
-            "quantity": "1-2",
-            "noted": false,
-            "rarity": 0.004601932811780948,
-            "rolls": 1
-        },
-        {
-            "id": 5302,
-            "name": "Lantadyme seed",
-            "members": true,
-            "quantity": "1-2",
-            "noted": false,
-            "rarity": 0.003287310979618672,
-            "rolls": 1
-        },
-        {
-            "id": 22879,
-            "name": "Snape grass seed",
-            "members": true,
-            "quantity": "3-6",
-            "noted": false,
-            "rarity": 0.0026301946344029457,
-            "rolls": 1
-        },
-        {
-            "id": 5303,
-            "name": "Dwarf weed seed",
-            "members": true,
-            "quantity": "1-2",
-            "noted": false,
-            "rarity": 0.0019723865877712033,
-            "rolls": 1
-        },
-        {
-            "id": 5304,
-            "name": "Torstol seed",
-            "members": true,
-            "quantity": "1-2",
-            "noted": false,
-            "rarity": 0.0013150973172014729,
-            "rolls": 1
-        },
-        {
-            "id": 995,
-            "name": "Coins",
-            "members": false,
-            "quantity": "1000-1499",
-            "noted": false,
-            "rarity": 0.11206896551724138,
-            "rolls": 1
-        },
-        {
-            "id": 995,
-            "name": "Coins",
-            "members": false,
-            "quantity": "1500-2000",
-            "noted": false,
-            "rarity": 0.09051724137931035,
-            "rolls": 1
-        },
-        {
-            "id": 995,
-            "name": "Coins",
-            "members": false,
-            "quantity": "2500-2999",
-            "noted": false,
-            "rarity": 0.05172413793103448,
-            "rolls": 1
-        },
-        {
-            "id": 1319,
-            "name": "Rune 2h sword",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.034482758620689655,
-            "rolls": 1
-        },
-        {
-            "id": 995,
-            "name": "Coins",
-            "members": false,
-            "quantity": "3000-3500",
-            "noted": false,
-            "rarity": 0.02586206896551724,
-            "rolls": 1
-        },
-        {
-            "id": 995,
-            "name": "Coins",
-            "members": false,
-            "quantity": "500-999",
-            "noted": false,
-            "rarity": 0.021551724137931036,
-            "rolls": 1
-        },
-        {
-            "id": 995,
-            "name": "Coins",
-            "members": false,
-            "quantity": "5000",
-            "noted": false,
-            "rarity": 0.008620689655172414,
-            "rolls": 1
-        },
-        {
-            "id": 1761,
-            "name": "Soft clay",
-            "members": false,
-            "quantity": "25",
-            "noted": true,
-            "rarity": 0.034482758620689655,
-            "rolls": 1
-        },
-        {
-            "id": 361,
-            "name": "Tuna",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.02586206896551724,
-            "rolls": 1
-        },
-        {
-            "id": 1163,
-            "name": "Rune full helm",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.02586206896551724,
-            "rolls": 1
-        },
-        {
-            "id": 1199,
-            "name": "Adamant kiteshield",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.017241379310344827,
-            "rolls": 1
-        },
-        {
-            "id": 4131,
-            "name": "Rune boots",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.008620689655172414,
-            "rolls": 1
-        },
-        {
-            "id": 23083,
-            "name": "Brimstone key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.012987012987012988,
-            "rolls": 1
-        },
-        {
-            "id": 2722,
-            "name": "Clue scroll (hard)",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 562,
-            "name": "Chaos rune",
-            "members": false,
-            "quantity": "37",
-            "noted": false,
-            "rarity": 0.06896551724137931,
-            "rolls": 1
-        },
-        {
-            "id": 560,
-            "name": "Death rune",
-            "members": false,
-            "quantity": "5",
-            "noted": false,
-            "rarity": 0.05172413793103448,
-            "rolls": 1
-        },
-        {
-            "id": 560,
-            "name": "Death rune",
-            "members": false,
-            "quantity": "10",
-            "noted": false,
-            "rarity": 0.05172413793103448,
-            "rolls": 1
-        }
-    ]
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "8b85f02a27cd5505f1a3d31155c1b69a341d759a",
+  "_id": "60ebb3adc1c55bf074a5e279",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3adc1c55bf074a5e279",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 0,
+  "attack_bonus": 0,
+  "attack_level": 97,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "crush"
+  ],
+  "attributes": [
+    "demon"
+  ],
+  "category": [
+    "nechryael"
+  ],
+  "combat_level": 115,
+  "defence_crush": 20,
+  "defence_level": 105,
+  "defence_magic": 0,
+  "defence_ranged": 20,
+  "defence_slash": 20,
+  "defence_stab": 20,
+  "drops": [
+    {
+      "id": 25772,
+      "members": 1,
+      "name": "Malicious ashes",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 563,
+      "members": 0,
+      "name": "Law rune",
+      "noted": 0,
+      "quantity": "25-35",
+      "rarity": "0.04310344827586207",
+      "rolls": 1
+    },
+    {
+      "id": 565,
+      "members": 1,
+      "name": "Blood rune",
+      "noted": 0,
+      "quantity": "15-20",
+      "rarity": "0.034482758620689655",
+      "rolls": 1
+    },
+    {
+      "id": 5100,
+      "members": 1,
+      "name": "Limpwurt seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.05172413793103448",
+      "rolls": 1
+    },
+    {
+      "id": 5296,
+      "members": 1,
+      "name": "Toadflax seed",
+      "noted": 0,
+      "quantity": "1-2",
+      "rarity": "0.030864197530864196",
+      "rolls": 1
+    },
+    {
+      "id": 5297,
+      "members": 1,
+      "name": "Irit seed",
+      "noted": 0,
+      "quantity": "1-2",
+      "rarity": "0.021052631578947368",
+      "rolls": 1
+    },
+    {
+      "id": 5281,
+      "members": 1,
+      "name": "Belladonna seed",
+      "noted": 0,
+      "quantity": "1-2",
+      "rarity": "0.020366598778004074",
+      "rolls": 1
+    },
+    {
+      "id": 5106,
+      "members": 1,
+      "name": "Poison ivy seed",
+      "noted": 0,
+      "quantity": "1-2",
+      "rarity": "0.01447178002894356",
+      "rolls": 1
+    },
+    {
+      "id": 5298,
+      "members": 1,
+      "name": "Avantoe seed",
+      "noted": 0,
+      "quantity": "1-2",
+      "rarity": "0.01447178002894356",
+      "rolls": 1
+    },
+    {
+      "id": 5280,
+      "members": 1,
+      "name": "Cactus seed",
+      "noted": 0,
+      "quantity": "1-2",
+      "rarity": "0.013812154696132596",
+      "rolls": 1
+    },
+    {
+      "id": 22873,
+      "members": 1,
+      "name": "Potato cactus seed",
+      "noted": 0,
+      "quantity": "1-2",
+      "rarity": "0.009861932938856016",
+      "rolls": 1
+    },
+    {
+      "id": 1073,
+      "members": 0,
+      "name": "Adamant platelegs",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.034482758620689655",
+      "rolls": 1
+    },
+    {
+      "id": 5299,
+      "members": 1,
+      "name": "Kwuarm seed",
+      "noted": 0,
+      "quantity": "1-2",
+      "rarity": "0.009861932938856016",
+      "rolls": 1
+    },
+    {
+      "id": 5300,
+      "members": 1,
+      "name": "Snapdragon seed",
+      "noted": 0,
+      "quantity": "1-2",
+      "rarity": "0.006574621959237344",
+      "rolls": 1
+    },
+    {
+      "id": 5301,
+      "members": 1,
+      "name": "Cadantine seed",
+      "noted": 0,
+      "quantity": "1-2",
+      "rarity": "0.004601932811780948",
+      "rolls": 1
+    },
+    {
+      "id": 5302,
+      "members": 1,
+      "name": "Lantadyme seed",
+      "noted": 0,
+      "quantity": "1-2",
+      "rarity": "0.003287310979618672",
+      "rolls": 1
+    },
+    {
+      "id": 22879,
+      "members": 1,
+      "name": "Snape grass seed",
+      "noted": 0,
+      "quantity": "3-6",
+      "rarity": "0.0026301946344029457",
+      "rolls": 1
+    },
+    {
+      "id": 5303,
+      "members": 1,
+      "name": "Dwarf weed seed",
+      "noted": 0,
+      "quantity": "1-2",
+      "rarity": "0.0019723865877712033",
+      "rolls": 1
+    },
+    {
+      "id": 5304,
+      "members": 1,
+      "name": "Torstol seed",
+      "noted": 0,
+      "quantity": "1-2",
+      "rarity": "0.0013150973172014729",
+      "rolls": 1
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "1000-1499",
+      "rarity": "0.11206896551724138",
+      "rolls": 1
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "1500-2000",
+      "rarity": "0.09051724137931035",
+      "rolls": 1
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "2500-2999",
+      "rarity": "0.05172413793103448",
+      "rolls": 1
+    },
+    {
+      "id": 1319,
+      "members": 0,
+      "name": "Rune 2h sword",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.034482758620689655",
+      "rolls": 1
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "3000-3500",
+      "rarity": "0.02586206896551724",
+      "rolls": 1
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "500-999",
+      "rarity": "0.021551724137931036",
+      "rolls": 1
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "5000",
+      "rarity": "0.008620689655172414",
+      "rolls": 1
+    },
+    {
+      "id": 1761,
+      "members": 0,
+      "name": "Soft clay",
+      "noted": 1,
+      "quantity": "25",
+      "rarity": "0.034482758620689655",
+      "rolls": 1
+    },
+    {
+      "id": 361,
+      "members": 0,
+      "name": "Tuna",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.02586206896551724",
+      "rolls": 1
+    },
+    {
+      "id": 1163,
+      "members": 0,
+      "name": "Rune full helm",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.02586206896551724",
+      "rolls": 1
+    },
+    {
+      "id": 1199,
+      "members": 0,
+      "name": "Adamant kiteshield",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.017241379310344827",
+      "rolls": 1
+    },
+    {
+      "id": 4131,
+      "members": 1,
+      "name": "Rune boots",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.008620689655172414",
+      "rolls": 1
+    },
+    {
+      "id": 23083,
+      "members": 1,
+      "name": "Brimstone key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.012987012987012988",
+      "rolls": 1
+    },
+    {
+      "id": 2722,
+      "members": 1,
+      "name": "Clue scroll (hard)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 562,
+      "members": 0,
+      "name": "Chaos rune",
+      "noted": 0,
+      "quantity": "37",
+      "rarity": "0.06896551724137931",
+      "rolls": 1
+    },
+    {
+      "id": 560,
+      "members": 0,
+      "name": "Death rune",
+      "noted": 0,
+      "quantity": "5",
+      "rarity": "0.05172413793103448",
+      "rolls": 1
+    },
+    {
+      "id": 560,
+      "members": 0,
+      "name": "Death rune",
+      "noted": 0,
+      "quantity": "10",
+      "rarity": "0.05172413793103448",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "An evil death demon.",
+  "hitpoints": 105,
+  "id": "8",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 0,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 11,
+  "members": 1,
+  "name": "Nechryael",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2005-01-26",
+  "size": 1,
+  "slayer_level": 80,
+  "slayer_masters": [
+    "vannaka",
+    "chaeldar",
+    "konar",
+    "nieve",
+    "duradel"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "105.0",
+  "strength_bonus": 0,
+  "strength_level": 97,
+  "venomous": 0,
+  "wiki_name": "Nechryael",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Nechryael"
 }

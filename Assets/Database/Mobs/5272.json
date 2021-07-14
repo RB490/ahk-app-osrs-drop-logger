@@ -1,72 +1,90 @@
 {
-    "id": 5272,
-    "name": "Monkey Archer",
-    "last_updated": "2020-12-25",
-    "incomplete": true,
-    "members": true,
-    "release_date": "2004-12-06",
-    "combat_level": 86,
-    "size": 1,
-    "hitpoints": 50,
-    "max_hit": 20,
-    "attack_type": [
-        "ranged"
-    ],
-    "attack_speed": 4,
-    "aggressive": true,
-    "poisonous": false,
-    "venomous": false,
-    "immune_poison": false,
-    "immune_venom": false,
-    "attributes": [],
-    "category": [
-        "monkey"
-    ],
-    "slayer_monster": true,
-    "slayer_level": 1,
-    "slayer_xp": 50.0,
-    "slayer_masters": [
-        "turael",
-        "spria"
-    ],
-    "duplicate": false,
-    "examine": "A bow-wielding ninja monkey.",
-    "wiki_name": "Monkey Archer",
-    "wiki_url": "https://oldschool.runescape.wiki/w/Monkey_Archer",
-    "attack_level": 80,
-    "strength_level": 80,
-    "defence_level": 80,
-    "magic_level": 1,
-    "ranged_level": 110,
-    "attack_bonus": 0,
-    "strength_bonus": 0,
-    "attack_magic": 0,
-    "magic_bonus": 0,
-    "attack_ranged": 0,
-    "ranged_bonus": 0,
-    "defence_stab": 0,
-    "defence_slash": 0,
-    "defence_crush": 0,
-    "defence_magic": 0,
-    "defence_ranged": 0,
-    "drops": [
-        {
-            "id": 3179,
-            "name": "Monkey bones (small ninja)",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        },
-        {
-            "id": 13450,
-            "name": "Ensouled monkey head",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.02857142857142857,
-            "rolls": 1
-        }
-    ]
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "d4b243eb35d0aa200be906acb8a77529ec26bc01",
+  "_id": "60ebb3b0c1c55bf074a5e925",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3b0c1c55bf074a5e925",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 0,
+  "attack_level": 80,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "ranged"
+  ],
+  "attributes": [],
+  "category": [
+    "monkeys"
+  ],
+  "combat_level": 86,
+  "defence_crush": 0,
+  "defence_level": 80,
+  "defence_magic": 0,
+  "defence_ranged": 0,
+  "defence_slash": 0,
+  "defence_stab": 0,
+  "drops": [
+    {
+      "id": 3179,
+      "members": 1,
+      "name": "Monkey bones (small ninja)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 13450,
+      "members": 1,
+      "name": "Ensouled monkey head",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.02857142857142857",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "A bow-wielding ninja monkey.",
+  "hitpoints": 50,
+  "id": "5272",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 20,
+  "members": 1,
+  "name": "Monkey Archer",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 110,
+  "release_date": "2004-12-06",
+  "size": 1,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "turael",
+    "spria"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "50.0",
+  "strength_bonus": 0,
+  "strength_level": 80,
+  "venomous": 0,
+  "wiki_name": "Monkey Archer",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Monkey_Archer"
 }

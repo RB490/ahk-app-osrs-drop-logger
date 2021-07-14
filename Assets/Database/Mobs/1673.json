@@ -1,64 +1,82 @@
 {
-    "id": 1673,
-    "name": "Dharok the Wretched",
-    "last_updated": "2020-12-25",
-    "incomplete": true,
-    "members": true,
-    "release_date": "2005-05-09",
-    "combat_level": 115,
-    "size": 1,
-    "hitpoints": 100,
-    "max_hit": 29,
-    "attack_type": [
-        "slash"
-    ],
-    "attack_speed": 7,
-    "aggressive": true,
-    "poisonous": false,
-    "venomous": false,
-    "immune_poison": false,
-    "immune_venom": false,
-    "attributes": [],
-    "category": [
-        "boss"
-    ],
-    "slayer_monster": true,
-    "slayer_level": 1,
-    "slayer_xp": 115.0,
-    "slayer_masters": [
-        "konar",
-        "nieve",
-        "duradel"
-    ],
-    "duplicate": false,
-    "examine": "A vengeful spirit corrupted by dark magic.",
-    "wiki_name": "Dharok the Wretched",
-    "wiki_url": "https://oldschool.runescape.wiki/w/Dharok_the_Wretched",
-    "attack_level": 100,
-    "strength_level": 100,
-    "defence_level": 100,
-    "magic_level": 1,
-    "ranged_level": 1,
-    "attack_bonus": 0,
-    "strength_bonus": 105,
-    "attack_magic": -58,
-    "magic_bonus": 0,
-    "attack_ranged": -18,
-    "ranged_bonus": 0,
-    "defence_stab": 252,
-    "defence_slash": 250,
-    "defence_crush": 244,
-    "defence_magic": -11,
-    "defence_ranged": 249,
-    "drops": [
-        {
-            "id": 23083,
-            "name": "Brimstone key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.010309278350515464,
-            "rolls": 1
-        }
-    ]
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "042cbe03155fc145f227d50507fa82db5d6545d5",
+  "_id": "60ebb3afc1c55bf074a5e504",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3afc1c55bf074a5e504",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 0,
+  "attack_level": 100,
+  "attack_magic": -58,
+  "attack_ranged": -18,
+  "attack_speed": 7,
+  "attack_type": [
+    "slash"
+  ],
+  "attributes": [],
+  "category": [
+    "bosses"
+  ],
+  "combat_level": 115,
+  "defence_crush": 244,
+  "defence_level": 100,
+  "defence_magic": -11,
+  "defence_ranged": 249,
+  "defence_slash": 250,
+  "defence_stab": 252,
+  "drops": [
+    {
+      "id": 23083,
+      "members": 1,
+      "name": "Brimstone key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.010309278350515464",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "A vengeful spirit corrupted by dark magic.",
+  "hitpoints": 100,
+  "id": "1673",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 29,
+  "members": 1,
+  "name": "Dharok the Wretched",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2005-05-09",
+  "size": 1,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "konar",
+    "nieve",
+    "duradel"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "115.0",
+  "strength_bonus": 105,
+  "strength_level": 100,
+  "venomous": 0,
+  "wiki_name": "Dharok the Wretched",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Dharok_the_Wretched"
 }

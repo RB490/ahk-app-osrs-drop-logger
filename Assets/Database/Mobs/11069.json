@@ -1,7 +1,7 @@
 {
   "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
-  "_etag": "db3581aeba5cf44ce17ea6581d2703896c4f1aa4",
-  "_id": "60cd28b3cfb7392d00907a51",
+  "_etag": "9f02d84c7830bb3c440102ca102e82f5b4ad3acc",
+  "_id": "60ebb3b2c1c55bf074a5edeb",
   "_links": {
     "collection": {
       "href": "monsters",
@@ -12,7 +12,7 @@
       "title": "home"
     },
     "self": {
-      "href": "monsters/60cd28b3cfb7392d00907a51",
+      "href": "monsters/60ebb3b2c1c55bf074a5edeb",
       "title": "Monster"
     }
   },
@@ -44,6 +44,15 @@
       "quantity": "1",
       "rarity": "1.0",
       "rolls": 1
+    },
+    {
+      "id": 2677,
+      "members": 1,
+      "name": "Clue scroll (easy)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
     }
   ],
   "duplicate": 0,
@@ -53,7 +62,7 @@
   "immune_poison": 0,
   "immune_venom": 0,
   "incomplete": 1,
-  "last_updated": "2021-06-18",
+  "last_updated": "2021-07-12",
   "magic_bonus": 0,
   "magic_level": 1,
   "max_hit": 3,

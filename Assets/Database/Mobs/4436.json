@@ -1,7 +1,7 @@
 {
   "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
-  "_etag": "4b99d897b485a65d8ab5c9ea6451a5ec62d51c93",
-  "_id": "60cd28b1cfb7392d009074e1",
+  "_etag": "b762690b91a6887ce038f32c5df9b09996b7e2c1",
+  "_id": "60ebb3b0c1c55bf074a5e87b",
   "_links": {
     "collection": {
       "href": "monsters",
@@ -12,7 +12,7 @@
       "title": "home"
     },
     "self": {
-      "href": "monsters/60cd28b1cfb7392d009074e1",
+      "href": "monsters/60ebb3b0c1c55bf074a5e87b",
       "title": "Monster"
     }
   },
@@ -30,7 +30,7 @@
     "vampyre"
   ],
   "category": [
-    "vampyre"
+    "vampyres"
   ],
   "combat_level": 45,
   "defence_crush": 0,
@@ -57,7 +57,7 @@
   "immune_poison": 0,
   "immune_venom": 0,
   "incomplete": 1,
-  "last_updated": "2020-12-25",
+  "last_updated": "2021-07-12",
   "magic_bonus": 0,
   "magic_level": 1,
   "max_hit": 4,

@@ -1,7 +1,7 @@
 {
   "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
-  "_etag": "caa75410a9a8a8da24ab031e81082faef2c2a2ef",
-  "_id": "60cd28b2cfb7392d00907871",
+  "_etag": "fa7918c587095258db05b735deeaedd039631b6c",
+  "_id": "60ebb3b1c1c55bf074a5ec0b",
   "_links": {
     "collection": {
       "href": "monsters",
@@ -12,7 +12,7 @@
       "title": "home"
     },
     "self": {
-      "href": "monsters/60cd28b2cfb7392d00907871",
+      "href": "monsters/60ebb3b1c1c55bf074a5ec0b",
       "title": "Monster"
     }
   },
@@ -671,15 +671,6 @@
       "rolls": 1
     },
     {
-      "id": 11941,
-      "members": 1,
-      "name": "Looting bag",
-      "noted": 0,
-      "quantity": "1",
-      "rarity": "0.3333333333333333",
-      "rolls": 1
-    },
-    {
       "id": 23083,
       "members": 1,
       "name": "Brimstone key",
@@ -723,7 +714,7 @@
   "immune_poison": 0,
   "immune_venom": 0,
   "incomplete": 1,
-  "last_updated": "2021-06-18",
+  "last_updated": "2021-07-12",
   "magic_bonus": 0,
   "magic_level": 1,
   "max_hit": 10,

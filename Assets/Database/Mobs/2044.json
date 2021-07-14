@@ -1,7 +1,7 @@
 {
   "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
-  "_etag": "9e03379b8a77739b46e419f73df2168f1c0688dc",
-  "_id": "60cd28afcfb7392d009071e4",
+  "_etag": "43095018bce4456ca5fbd3964e65238386ef169e",
+  "_id": "60ebb3afc1c55bf074a5e57e",
   "_links": {
     "collection": {
       "href": "monsters",
@@ -12,7 +12,7 @@
       "title": "home"
     },
     "self": {
-      "href": "monsters/60cd28afcfb7392d009071e4",
+      "href": "monsters/60ebb3afc1c55bf074a5e57e",
       "title": "Monster"
     }
   },
@@ -29,7 +29,7 @@
   ],
   "attributes": [],
   "category": [
-    "boss"
+    "bosses"
   ],
   "combat_level": 725,
   "defence_crush": 0,
@@ -470,7 +470,7 @@
   "immune_poison": 0,
   "immune_venom": 0,
   "incomplete": 1,
-  "last_updated": "2020-12-25",
+  "last_updated": "2021-07-12",
   "magic_bonus": 20,
   "magic_level": 300,
   "max_hit": 41,

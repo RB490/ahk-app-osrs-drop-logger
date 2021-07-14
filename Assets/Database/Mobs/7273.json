@@ -1,530 +1,440 @@
 {
-    "id": 7273,
-    "name": "Brutal blue dragon",
-    "last_updated": "2020-12-25",
-    "incomplete": true,
-    "members": true,
-    "release_date": "2016-06-09",
-    "combat_level": 271,
-    "size": 4,
-    "hitpoints": 245,
-    "max_hit": 21,
-    "attack_type": [
-        "slash",
-        "magic",
-        "dragonfire"
-    ],
-    "attack_speed": 4,
-    "aggressive": true,
-    "poisonous": false,
-    "venomous": false,
-    "immune_poison": false,
-    "immune_venom": false,
-    "attributes": [
-        "dragon",
-        "fiery"
-    ],
-    "category": [
-        "blue dragon"
-    ],
-    "slayer_monster": true,
-    "slayer_level": 1,
-    "slayer_xp": 257.0,
-    "slayer_masters": [
-        "vannaka",
-        "chaeldar",
-        "konar",
-        "nieve",
-        "duradel"
-    ],
-    "duplicate": false,
-    "examine": "It appears to be intelligent and savage.",
-    "wiki_name": "Brutal blue dragon",
-    "wiki_url": "https://oldschool.runescape.wiki/w/Brutal_blue_dragon",
-    "attack_level": 298,
-    "strength_level": 198,
-    "defence_level": 198,
-    "magic_level": 198,
-    "ranged_level": 0,
-    "attack_bonus": 0,
-    "strength_bonus": 0,
-    "attack_magic": 0,
-    "magic_bonus": 0,
-    "attack_ranged": 0,
-    "ranged_bonus": 0,
-    "defence_stab": 50,
-    "defence_slash": 70,
-    "defence_crush": 70,
-    "defence_magic": 60,
-    "defence_ranged": 50,
-    "drops": [
-        {
-            "id": 1623,
-            "name": "Uncut sapphire",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 1621,
-            "name": "Uncut emerald",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.00390625,
-            "rolls": 1
-        },
-        {
-            "id": 1619,
-            "name": "Uncut ruby",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.001953125,
-            "rolls": 1
-        },
-        {
-            "id": 1452,
-            "name": "Chaos talisman",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0007323646590110147,
-            "rolls": 1
-        },
-        {
-            "id": 1462,
-            "name": "Nature talisman",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0007323646590110147,
-            "rolls": 1
-        },
-        {
-            "id": 1617,
-            "name": "Uncut diamond",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.00048828125,
-            "rolls": 1
-        },
-        {
-            "id": 830,
-            "name": "Rune javelin",
-            "members": true,
-            "quantity": "5",
-            "noted": false,
-            "rarity": 0.000244140625,
-            "rolls": 1
-        },
-        {
-            "id": 987,
-            "name": "Loop half of key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.000244140625,
-            "rolls": 1
-        },
-        {
-            "id": 985,
-            "name": "Tooth half of key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.000244140625,
-            "rolls": 1
-        },
-        {
-            "id": 1247,
-            "name": "Rune spear",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.52587890625e-05,
-            "rolls": 1
-        },
-        {
-            "id": 2366,
-            "name": "Shield left half",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 7.62939453125e-06,
-            "rolls": 1
-        },
-        {
-            "id": 1249,
-            "name": "Dragon spear",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 5.721598898523552e-06,
-            "rolls": 1
-        },
-        {
-            "id": 536,
-            "name": "Dragon bones",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        },
-        {
-            "id": 1215,
-            "name": "Dragon dagger",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 1305,
-            "name": "Dragon longsword",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 1149,
-            "name": "Dragon med helm",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 1163,
-            "name": "Rune full helm",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 1127,
-            "name": "Rune platebody",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 562,
-            "name": "Chaos rune",
-            "members": false,
-            "quantity": "18",
-            "noted": false,
-            "rarity": 0.0625,
-            "rolls": 1
-        },
-        {
-            "id": 560,
-            "name": "Death rune",
-            "members": false,
-            "quantity": "11",
-            "noted": false,
-            "rarity": 0.0625,
-            "rolls": 1
-        },
-        {
-            "id": 830,
-            "name": "Rune javelin",
-            "members": true,
-            "quantity": "20",
-            "noted": false,
-            "rarity": 0.0625,
-            "rolls": 1
-        },
-        {
-            "id": 556,
-            "name": "Air rune",
-            "members": false,
-            "quantity": "50",
-            "noted": false,
-            "rarity": 0.0546875,
-            "rolls": 1
-        },
-        {
-            "id": 563,
-            "name": "Law rune",
-            "members": false,
-            "quantity": "15",
-            "noted": false,
-            "rarity": 0.0546875,
-            "rolls": 1
-        },
-        {
-            "id": 1751,
-            "name": "Blue dragonhide",
-            "members": true,
-            "quantity": "2",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        },
-        {
-            "id": 892,
-            "name": "Rune arrow",
-            "members": true,
-            "quantity": "15",
-            "noted": false,
-            "rarity": 0.0546875,
-            "rolls": 1
-        },
-        {
-            "id": 810,
-            "name": "Adamant dart",
-            "members": true,
-            "quantity": "10",
-            "noted": false,
-            "rarity": 0.0390625,
-            "rolls": 1
-        },
-        {
-            "id": 868,
-            "name": "Rune knife",
-            "members": true,
-            "quantity": "5",
-            "noted": false,
-            "rarity": 0.015625,
-            "rolls": 1
-        },
-        {
-            "id": 805,
-            "name": "Rune thrownaxe",
-            "members": true,
-            "quantity": "10",
-            "noted": false,
-            "rarity": 0.015625,
-            "rolls": 1
-        },
-        {
-            "id": 243,
-            "name": "Blue dragon scale",
-            "members": true,
-            "quantity": "5",
-            "noted": true,
-            "rarity": 0.03125,
-            "rolls": 1
-        },
-        {
-            "id": 11232,
-            "name": "Dragon dart tip",
-            "members": true,
-            "quantity": "5",
-            "noted": false,
-            "rarity": 0.0234375,
-            "rolls": 1
-        },
-        {
-            "id": 11237,
-            "name": "Dragon arrowtips",
-            "members": true,
-            "quantity": "5",
-            "noted": false,
-            "rarity": 0.015625,
-            "rolls": 1
-        },
-        {
-            "id": 451,
-            "name": "Runite ore",
-            "members": false,
-            "quantity": "1",
-            "noted": true,
-            "rarity": 0.015625,
-            "rolls": 1
-        },
-        {
-            "id": 19582,
-            "name": "Dragon javelin heads",
-            "members": true,
-            "quantity": "12",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 995,
-            "name": "Coins",
-            "members": false,
-            "quantity": "370",
-            "noted": false,
-            "rarity": 0.0859375,
-            "rolls": 1
-        },
-        {
-            "id": 11375,
-            "name": "Adamant hasta",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.078125,
-            "rolls": 1
-        },
-        {
-            "id": 2011,
-            "name": "Curry",
-            "members": true,
-            "quantity": "2",
-            "noted": false,
-            "rarity": 0.0625,
-            "rolls": 1
-        },
-        {
-            "id": 995,
-            "name": "Coins",
-            "members": false,
-            "quantity": "621",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 1245,
-            "name": "Adamant spear",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.078125,
-            "rolls": 1
-        },
-        {
-            "id": 1073,
-            "name": "Adamant platelegs",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0546875,
-            "rolls": 1
-        },
-        {
-            "id": 13510,
-            "name": "Ensouled dragon head",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.05,
-            "rolls": 1
-        },
-        {
-            "id": 23083,
-            "name": "Brimstone key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.015384615384615385,
-            "rolls": 1
-        },
-        {
-            "id": 1159,
-            "name": "Mithril full helm",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0390625,
-            "rolls": 1
-        },
-        {
-            "id": 2722,
-            "name": "Clue scroll (hard)",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 12073,
-            "name": "Clue scroll (elite)",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0013333333333333333,
-            "rolls": 1
-        },
-        {
-            "id": 11286,
-            "name": "Draconic visage",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0001,
-            "rolls": 1
-        },
-        {
-            "id": 19677,
-            "name": "Ancient shard",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0058823529411764705,
-            "rolls": 1
-        },
-        {
-            "id": 19679,
-            "name": "Dark totem base",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.00392156862745098,
-            "rolls": 1
-        },
-        {
-            "id": 19681,
-            "name": "Dark totem middle",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.00392156862745098,
-            "rolls": 1
-        },
-        {
-            "id": 19683,
-            "name": "Dark totem top",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.00392156862745098,
-            "rolls": 1
-        },
-        {
-            "id": 1303,
-            "name": "Rune longsword",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0390625,
-            "rolls": 1
-        },
-        {
-            "id": 2499,
-            "name": "Blue d'hide body",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.015625,
-            "rolls": 1
-        },
-        {
-            "id": 2487,
-            "name": "Blue d'hide vambraces",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        }
-    ]
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "f3446f4cbe0246bec551f542a892422135c7d9e3",
+  "_id": "60ebb3b1c1c55bf074a5eb7a",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3b1c1c55bf074a5eb7a",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 0,
+  "attack_level": 298,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "slash",
+    "magic",
+    "dragonfire"
+  ],
+  "attributes": [
+    "dragon",
+    "fiery"
+  ],
+  "category": [
+    "blue dragons"
+  ],
+  "combat_level": 271,
+  "defence_crush": 70,
+  "defence_level": 198,
+  "defence_magic": 60,
+  "defence_ranged": 50,
+  "defence_slash": 70,
+  "defence_stab": 50,
+  "drops": [
+    {
+      "id": 536,
+      "members": 1,
+      "name": "Dragon bones",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 1215,
+      "members": 1,
+      "name": "Dragon dagger",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 1305,
+      "members": 1,
+      "name": "Dragon longsword",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 1149,
+      "members": 1,
+      "name": "Dragon med helm",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 1163,
+      "members": 0,
+      "name": "Rune full helm",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 1127,
+      "members": 0,
+      "name": "Rune platebody",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 562,
+      "members": 0,
+      "name": "Chaos rune",
+      "noted": 0,
+      "quantity": "18",
+      "rarity": "0.0625",
+      "rolls": 1
+    },
+    {
+      "id": 560,
+      "members": 0,
+      "name": "Death rune",
+      "noted": 0,
+      "quantity": "11",
+      "rarity": "0.0625",
+      "rolls": 1
+    },
+    {
+      "id": 830,
+      "members": 1,
+      "name": "Rune javelin",
+      "noted": 0,
+      "quantity": "20",
+      "rarity": "0.0625",
+      "rolls": 1
+    },
+    {
+      "id": 556,
+      "members": 0,
+      "name": "Air rune",
+      "noted": 0,
+      "quantity": "50",
+      "rarity": "0.0546875",
+      "rolls": 1
+    },
+    {
+      "id": 563,
+      "members": 0,
+      "name": "Law rune",
+      "noted": 0,
+      "quantity": "15",
+      "rarity": "0.0546875",
+      "rolls": 1
+    },
+    {
+      "id": 1751,
+      "members": 1,
+      "name": "Blue dragonhide",
+      "noted": 0,
+      "quantity": "2",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 892,
+      "members": 1,
+      "name": "Rune arrow",
+      "noted": 0,
+      "quantity": "15",
+      "rarity": "0.0546875",
+      "rolls": 1
+    },
+    {
+      "id": 810,
+      "members": 1,
+      "name": "Adamant dart",
+      "noted": 0,
+      "quantity": "10",
+      "rarity": "0.0390625",
+      "rolls": 1
+    },
+    {
+      "id": 868,
+      "members": 1,
+      "name": "Rune knife",
+      "noted": 0,
+      "quantity": "5",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 805,
+      "members": 1,
+      "name": "Rune thrownaxe",
+      "noted": 0,
+      "quantity": "10",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 243,
+      "members": 1,
+      "name": "Blue dragon scale",
+      "noted": 1,
+      "quantity": "5",
+      "rarity": "0.03125",
+      "rolls": 1
+    },
+    {
+      "id": 11232,
+      "members": 1,
+      "name": "Dragon dart tip",
+      "noted": 0,
+      "quantity": "5",
+      "rarity": "0.0234375",
+      "rolls": 1
+    },
+    {
+      "id": 11237,
+      "members": 1,
+      "name": "Dragon arrowtips",
+      "noted": 0,
+      "quantity": "5",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 451,
+      "members": 0,
+      "name": "Runite ore",
+      "noted": 1,
+      "quantity": "1",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 19582,
+      "members": 1,
+      "name": "Dragon javelin heads",
+      "noted": 0,
+      "quantity": "12",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "370",
+      "rarity": "0.0859375",
+      "rolls": 1
+    },
+    {
+      "id": 11375,
+      "members": 1,
+      "name": "Adamant hasta",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.078125",
+      "rolls": 1
+    },
+    {
+      "id": 2011,
+      "members": 1,
+      "name": "Curry",
+      "noted": 0,
+      "quantity": "2",
+      "rarity": "0.0625",
+      "rolls": 1
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "621",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 1245,
+      "members": 1,
+      "name": "Adamant spear",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.078125",
+      "rolls": 1
+    },
+    {
+      "id": 1073,
+      "members": 0,
+      "name": "Adamant platelegs",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0546875",
+      "rolls": 1
+    },
+    {
+      "id": 13510,
+      "members": 1,
+      "name": "Ensouled dragon head",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.05",
+      "rolls": 1
+    },
+    {
+      "id": 23083,
+      "members": 1,
+      "name": "Brimstone key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.015384615384615385",
+      "rolls": 1
+    },
+    {
+      "id": 1159,
+      "members": 0,
+      "name": "Mithril full helm",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0390625",
+      "rolls": 1
+    },
+    {
+      "id": 2722,
+      "members": 1,
+      "name": "Clue scroll (hard)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 12073,
+      "members": 1,
+      "name": "Clue scroll (elite)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0013333333333333333",
+      "rolls": 1
+    },
+    {
+      "id": 11286,
+      "members": 1,
+      "name": "Draconic visage",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0001",
+      "rolls": 1
+    },
+    {
+      "id": 19677,
+      "members": 1,
+      "name": "Ancient shard",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0058823529411764705",
+      "rolls": 1
+    },
+    {
+      "id": 19679,
+      "members": 1,
+      "name": "Dark totem base",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00392156862745098",
+      "rolls": 1
+    },
+    {
+      "id": 19681,
+      "members": 1,
+      "name": "Dark totem middle",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00392156862745098",
+      "rolls": 1
+    },
+    {
+      "id": 19683,
+      "members": 1,
+      "name": "Dark totem top",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00392156862745098",
+      "rolls": 1
+    },
+    {
+      "id": 1303,
+      "members": 0,
+      "name": "Rune longsword",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0390625",
+      "rolls": 1
+    },
+    {
+      "id": 2499,
+      "members": 1,
+      "name": "Blue d'hide body",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 2487,
+      "members": 1,
+      "name": "Blue d'hide vambraces",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "It appears to be intelligent and savage.",
+  "hitpoints": 245,
+  "id": "7273",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 198,
+  "max_hit": 21,
+  "members": 1,
+  "name": "Brutal blue dragon",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 0,
+  "release_date": "2016-06-09",
+  "size": 4,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "vannaka",
+    "chaeldar",
+    "konar",
+    "nieve",
+    "duradel"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "257.0",
+  "strength_bonus": 0,
+  "strength_level": 198,
+  "venomous": 0,
+  "wiki_name": "Brutal blue dragon",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Brutal_blue_dragon"
 }

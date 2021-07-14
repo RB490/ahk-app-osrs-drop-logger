@@ -1,7 +1,7 @@
 {
   "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
-  "_etag": "e81c8929b654418007aa790ec93c9a1c9946406e",
-  "_id": "60cd28afcfb7392d00907093",
+  "_etag": "568189f5da9feb769bbf9dc2d49e971c520ab44d",
+  "_id": "60ebb3aec1c55bf074a5e42d",
   "_links": {
     "collection": {
       "href": "monsters",
@@ -12,31 +12,32 @@
       "title": "home"
     },
     "self": {
-      "href": "monsters/60cd28afcfb7392d00907093",
+      "href": "monsters/60ebb3aec1c55bf074a5e42d",
       "title": "Monster"
     }
   },
   "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
   "aggressive": 1,
   "attack_bonus": 0,
-  "attack_level": 0,
-  "attack_magic": 0,
-  "attack_ranged": 0,
+  "attack_level": 10,
+  "attack_magic": 1,
+  "attack_ranged": 1,
   "attack_speed": 4,
   "attack_type": [
-    "melee"
+    "melee",
+    "crush"
   ],
   "attributes": [
     "undead"
   ],
   "category": [],
   "combat_level": 13,
-  "defence_crush": 0,
-  "defence_level": 0,
+  "defence_crush": -5,
+  "defence_level": 7,
   "defence_magic": 0,
-  "defence_ranged": 0,
-  "defence_slash": 0,
-  "defence_stab": 0,
+  "defence_ranged": 5,
+  "defence_slash": 5,
+  "defence_stab": 5,
   "drops": [
     {
       "id": 23490,
@@ -298,7 +299,7 @@
   "immune_poison": 0,
   "immune_venom": 0,
   "incomplete": 1,
-  "last_updated": "2021-04-15",
+  "last_updated": "2021-07-12",
   "magic_bonus": 0,
   "magic_level": 0,
   "max_hit": 2,
@@ -314,7 +315,7 @@
   "slayer_monster": 0,
   "slayer_xp": "",
   "strength_bonus": 0,
-  "strength_level": 0,
+  "strength_level": 11,
   "venomous": 0,
   "wiki_name": "Skeleton (The Restless Ghost)",
   "wiki_url": "https://oldschool.runescape.wiki/w/Skeleton_(The_Restless_Ghost)"

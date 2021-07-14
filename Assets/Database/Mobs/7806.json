@@ -1,560 +1,470 @@
 {
-    "id": 7806,
-    "name": "Deranged archaeologist",
-    "last_updated": "2021-01-28",
-    "incomplete": true,
-    "members": true,
-    "release_date": "2017-09-07",
-    "combat_level": 276,
-    "size": 1,
-    "hitpoints": 200,
-    "max_hit": 28,
-    "attack_type": [
-        "melee",
-        "ranged"
-    ],
-    "attack_speed": 3,
-    "aggressive": true,
-    "poisonous": false,
-    "venomous": false,
-    "immune_poison": false,
-    "immune_venom": false,
-    "attributes": [],
-    "category": [
-        "boss"
-    ],
-    "slayer_monster": true,
-    "slayer_level": 1,
-    "slayer_xp": 275.0,
-    "slayer_masters": [
-        "chaeldar",
-        "nieve",
-        "duradel"
-    ],
-    "duplicate": false,
-    "examine": "He's seen things that people wouldn't believe.",
-    "wiki_name": "Deranged archaeologist",
-    "wiki_url": "https://oldschool.runescape.wiki/w/Deranged_archaeologist",
-    "attack_level": 280,
-    "strength_level": 160,
-    "defence_level": 280,
-    "magic_level": 1,
-    "ranged_level": 320,
-    "attack_bonus": 280,
-    "strength_bonus": 30,
-    "attack_magic": 0,
-    "magic_bonus": 0,
-    "attack_ranged": 90,
-    "ranged_bonus": 90,
-    "defence_stab": 20,
-    "defence_slash": 20,
-    "defence_crush": 50,
-    "defence_magic": 300,
-    "defence_ranged": 300,
-    "drops": [
-        {
-            "id": 1623,
-            "name": "Uncut sapphire",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.01171875,
-            "rolls": 1
-        },
-        {
-            "id": 1621,
-            "name": "Uncut emerald",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.005859375,
-            "rolls": 1
-        },
-        {
-            "id": 1619,
-            "name": "Uncut ruby",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0029296875,
-            "rolls": 1
-        },
-        {
-            "id": 1452,
-            "name": "Chaos talisman",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.001098546988516522,
-            "rolls": 1
-        },
-        {
-            "id": 1462,
-            "name": "Nature talisman",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.001098546988516522,
-            "rolls": 1
-        },
-        {
-            "id": 1617,
-            "name": "Uncut diamond",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.000732421875,
-            "rolls": 1
-        },
-        {
-            "id": 830,
-            "name": "Rune javelin",
-            "members": true,
-            "quantity": "5",
-            "noted": false,
-            "rarity": 0.0003662109375,
-            "rolls": 1
-        },
-        {
-            "id": 987,
-            "name": "Loop half of key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0003662109375,
-            "rolls": 1
-        },
-        {
-            "id": 985,
-            "name": "Tooth half of key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0003662109375,
-            "rolls": 1
-        },
-        {
-            "id": 1247,
-            "name": "Rune spear",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 2.288818359375e-05,
-            "rolls": 1
-        },
-        {
-            "id": 2366,
-            "name": "Shield left half",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.1444091796875e-05,
-            "rolls": 1
-        },
-        {
-            "id": 1249,
-            "name": "Dragon spear",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 8.582398347785329e-06,
-            "rolls": 1
-        },
-        {
-            "id": 526,
-            "name": "Bones",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        },
-        {
-            "id": 5295,
-            "name": "Ranarr seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0009374707040404988,
-            "rolls": 1
-        },
-        {
-            "id": 5300,
-            "name": "Snapdragon seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0008749671887304226,
-            "rolls": 1
-        },
-        {
-            "id": 5304,
-            "name": "Torstol seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0006875214850464077,
-            "rolls": 1
-        },
-        {
-            "id": 5321,
-            "name": "Watermelon seed",
-            "members": true,
-            "quantity": "15",
-            "noted": false,
-            "rarity": 0.000625,
-            "rolls": 1
-        },
-        {
-            "id": 5313,
-            "name": "Willow seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.000625,
-            "rolls": 1
-        },
-        {
-            "id": 21488,
-            "name": "Mahogany seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0005624929688378895,
-            "rolls": 1
-        },
-        {
-            "id": 5314,
-            "name": "Maple seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0005624929688378895,
-            "rolls": 1
-        },
-        {
-            "id": 21486,
-            "name": "Teak seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0005624929688378895,
-            "rolls": 1
-        },
-        {
-            "id": 5315,
-            "name": "Yew seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0005624929688378895,
-            "rolls": 1
-        },
-        {
-            "id": 5288,
-            "name": "Papaya tree seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.00043750273439208993,
-            "rolls": 1
-        },
-        {
-            "id": 2503,
-            "name": "Black d'hide body",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.046875,
-            "rolls": 1
-        },
-        {
-            "id": 5316,
-            "name": "Magic seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.00037499531255859303,
-            "rolls": 1
-        },
-        {
-            "id": 5289,
-            "name": "Palm tree seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0003125,
-            "rolls": 1
-        },
-        {
-            "id": 5317,
-            "name": "Spirit seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.00025,
-            "rolls": 1
-        },
-        {
-            "id": 22877,
-            "name": "Dragonfruit tree seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.00018750117188232426,
-            "rolls": 1
-        },
-        {
-            "id": 22869,
-            "name": "Celastrus seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.000125,
-            "rolls": 1
-        },
-        {
-            "id": 22871,
-            "name": "Redwood tree seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.000125,
-            "rolls": 1
-        },
-        {
-            "id": 217,
-            "name": "Grimy dwarf weed",
-            "members": true,
-            "quantity": "4",
-            "noted": true,
-            "rarity": 0.0625,
-            "rolls": 1
-        },
-        {
-            "id": 239,
-            "name": "White berries",
-            "members": true,
-            "quantity": "10",
-            "noted": true,
-            "rarity": 0.0546875,
-            "rolls": 1
-        },
-        {
-            "id": 9431,
-            "name": "Runite limbs",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0390625,
-            "rolls": 1
-        },
-        {
-            "id": 1747,
-            "name": "Black dragonhide",
-            "members": true,
-            "quantity": "8",
-            "noted": true,
-            "rarity": 0.046875,
-            "rolls": 1
-        },
-        {
-            "id": 1319,
-            "name": "Rune 2h sword",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0234375,
-            "rolls": 1
-        },
-        {
-            "id": 444,
-            "name": "Gold ore",
-            "members": false,
-            "quantity": "10",
-            "noted": true,
-            "rarity": 0.046875,
-            "rolls": 1
-        },
-        {
-            "id": 1617,
-            "name": "Uncut diamond",
-            "members": false,
-            "quantity": "5",
-            "noted": true,
-            "rarity": 0.0390625,
-            "rolls": 1
-        },
-        {
-            "id": 9194,
-            "name": "Onyx bolt tips",
-            "members": true,
-            "quantity": "6",
-            "noted": false,
-            "rarity": 0.046875,
-            "rolls": 1
-        },
-        {
-            "id": 2297,
-            "name": "Anchovy pizza",
-            "members": false,
-            "quantity": "2",
-            "noted": false,
-            "rarity": 0.03125,
-            "rolls": 1
-        },
-        {
-            "id": 139,
-            "name": "Prayer potion(3)",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0625,
-            "rolls": 1
-        },
-        {
-            "id": 6705,
-            "name": "Potato with cheese",
-            "members": true,
-            "quantity": "3",
-            "noted": false,
-            "rarity": 0.0625,
-            "rolls": 1
-        },
-        {
-            "id": 385,
-            "name": "Shark",
-            "members": true,
-            "quantity": "2",
-            "noted": false,
-            "rarity": 0.0625,
-            "rolls": 1
-        },
-        {
-            "id": 989,
-            "name": "Crystal key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0546875,
-            "rolls": 1
-        },
-        {
-            "id": 10976,
-            "name": "Long bone",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.015625,
-            "rolls": 1
-        },
-        {
-            "id": 1289,
-            "name": "Rune sword",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.03125,
-            "rolls": 1
-        },
-        {
-            "id": 555,
-            "name": "Water rune",
-            "members": false,
-            "quantity": "100",
-            "noted": false,
-            "rarity": 0.046875,
-            "rolls": 1
-        },
-        {
-            "id": 4698,
-            "name": "Mud rune",
-            "members": true,
-            "quantity": "40",
-            "noted": false,
-            "rarity": 0.046875,
-            "rolls": 1
-        },
-        {
-            "id": 21555,
-            "name": "Numulite",
-            "members": true,
-            "quantity": "5-32",
-            "noted": false,
-            "rarity": 0.6171428571428571,
-            "rolls": 1
-        },
-        {
-            "id": 21562,
-            "name": "Unidentified small fossil",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.03428571428571429,
-            "rolls": 1
-        },
-        {
-            "id": 21564,
-            "name": "Unidentified medium fossil",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.017142857142857144,
-            "rolls": 1
-        },
-        {
-            "id": 21566,
-            "name": "Unidentified large fossil",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.06857142857142857,
-            "rolls": 1
-        },
-        {
-            "id": 21568,
-            "name": "Unidentified rare fossil",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0034285714285714284,
-            "rolls": 1
-        },
-        {
-            "id": 868,
-            "name": "Rune knife",
-            "members": true,
-            "quantity": "25",
-            "noted": false,
-            "rarity": 0.046875,
-            "rolls": 1
-        },
-        {
-            "id": 12073,
-            "name": "Clue scroll (elite)",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.005,
-            "rolls": 1
-        },
-        {
-            "id": 11212,
-            "name": "Dragon arrow",
-            "members": true,
-            "quantity": "60",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 2,
-            "name": "Cannonball",
-            "members": true,
-            "quantity": "80",
-            "noted": false,
-            "rarity": 0.03125,
-            "rolls": 1
-        }
-    ]
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "4587397f299fa4c5885459c9859c1bb89aab1ba5",
+  "_id": "60ebb3b1c1c55bf074a5ec01",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3b1c1c55bf074a5ec01",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 280,
+  "attack_level": 280,
+  "attack_magic": 0,
+  "attack_ranged": 90,
+  "attack_speed": 3,
+  "attack_type": [
+    "melee",
+    "ranged"
+  ],
+  "attributes": [],
+  "category": [
+    "bosses"
+  ],
+  "combat_level": 276,
+  "defence_crush": 50,
+  "defence_level": 280,
+  "defence_magic": 300,
+  "defence_ranged": 300,
+  "defence_slash": 20,
+  "defence_stab": 20,
+  "drops": [
+    {
+      "id": 526,
+      "members": 0,
+      "name": "Bones",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 5295,
+      "members": 1,
+      "name": "Ranarr seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0009374707040404988",
+      "rolls": 1
+    },
+    {
+      "id": 5300,
+      "members": 1,
+      "name": "Snapdragon seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0008749671887304226",
+      "rolls": 1
+    },
+    {
+      "id": 5304,
+      "members": 1,
+      "name": "Torstol seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0006875214850464077",
+      "rolls": 1
+    },
+    {
+      "id": 5321,
+      "members": 1,
+      "name": "Watermelon seed",
+      "noted": 0,
+      "quantity": "15",
+      "rarity": "0.000625",
+      "rolls": 1
+    },
+    {
+      "id": 5313,
+      "members": 1,
+      "name": "Willow seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.000625",
+      "rolls": 1
+    },
+    {
+      "id": 21488,
+      "members": 1,
+      "name": "Mahogany seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0005624929688378895",
+      "rolls": 1
+    },
+    {
+      "id": 5314,
+      "members": 1,
+      "name": "Maple seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0005624929688378895",
+      "rolls": 1
+    },
+    {
+      "id": 21486,
+      "members": 1,
+      "name": "Teak seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0005624929688378895",
+      "rolls": 1
+    },
+    {
+      "id": 5315,
+      "members": 1,
+      "name": "Yew seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0005624929688378895",
+      "rolls": 1
+    },
+    {
+      "id": 5288,
+      "members": 1,
+      "name": "Papaya tree seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00043750273439208993",
+      "rolls": 1
+    },
+    {
+      "id": 2503,
+      "members": 1,
+      "name": "Black d'hide body",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.046875",
+      "rolls": 1
+    },
+    {
+      "id": 5316,
+      "members": 1,
+      "name": "Magic seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00037499531255859303",
+      "rolls": 1
+    },
+    {
+      "id": 5289,
+      "members": 1,
+      "name": "Palm tree seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0003125",
+      "rolls": 1
+    },
+    {
+      "id": 5317,
+      "members": 1,
+      "name": "Spirit seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00025",
+      "rolls": 1
+    },
+    {
+      "id": 22877,
+      "members": 1,
+      "name": "Dragonfruit tree seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00018750117188232426",
+      "rolls": 1
+    },
+    {
+      "id": 22869,
+      "members": 1,
+      "name": "Celastrus seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.000125",
+      "rolls": 1
+    },
+    {
+      "id": 22871,
+      "members": 1,
+      "name": "Redwood tree seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.000125",
+      "rolls": 1
+    },
+    {
+      "id": 217,
+      "members": 1,
+      "name": "Grimy dwarf weed",
+      "noted": 1,
+      "quantity": "4",
+      "rarity": "0.0625",
+      "rolls": 1
+    },
+    {
+      "id": 239,
+      "members": 1,
+      "name": "White berries",
+      "noted": 1,
+      "quantity": "10",
+      "rarity": "0.0546875",
+      "rolls": 1
+    },
+    {
+      "id": 9431,
+      "members": 1,
+      "name": "Runite limbs",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0390625",
+      "rolls": 1
+    },
+    {
+      "id": 1747,
+      "members": 1,
+      "name": "Black dragonhide",
+      "noted": 1,
+      "quantity": "8",
+      "rarity": "0.046875",
+      "rolls": 1
+    },
+    {
+      "id": 1319,
+      "members": 0,
+      "name": "Rune 2h sword",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0234375",
+      "rolls": 1
+    },
+    {
+      "id": 444,
+      "members": 0,
+      "name": "Gold ore",
+      "noted": 1,
+      "quantity": "10",
+      "rarity": "0.046875",
+      "rolls": 1
+    },
+    {
+      "id": 1617,
+      "members": 0,
+      "name": "Uncut diamond",
+      "noted": 1,
+      "quantity": "5",
+      "rarity": "0.0390625",
+      "rolls": 1
+    },
+    {
+      "id": 9194,
+      "members": 1,
+      "name": "Onyx bolt tips",
+      "noted": 0,
+      "quantity": "6",
+      "rarity": "0.046875",
+      "rolls": 1
+    },
+    {
+      "id": 2297,
+      "members": 0,
+      "name": "Anchovy pizza",
+      "noted": 0,
+      "quantity": "2",
+      "rarity": "0.03125",
+      "rolls": 1
+    },
+    {
+      "id": 139,
+      "members": 1,
+      "name": "Prayer potion(3)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0625",
+      "rolls": 1
+    },
+    {
+      "id": 6705,
+      "members": 1,
+      "name": "Potato with cheese",
+      "noted": 0,
+      "quantity": "3",
+      "rarity": "0.0625",
+      "rolls": 1
+    },
+    {
+      "id": 385,
+      "members": 1,
+      "name": "Shark",
+      "noted": 0,
+      "quantity": "2",
+      "rarity": "0.0625",
+      "rolls": 1
+    },
+    {
+      "id": 989,
+      "members": 1,
+      "name": "Crystal key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0546875",
+      "rolls": 1
+    },
+    {
+      "id": 10976,
+      "members": 1,
+      "name": "Long bone",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 1289,
+      "members": 0,
+      "name": "Rune sword",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.03125",
+      "rolls": 1
+    },
+    {
+      "id": 555,
+      "members": 0,
+      "name": "Water rune",
+      "noted": 0,
+      "quantity": "100",
+      "rarity": "0.046875",
+      "rolls": 1
+    },
+    {
+      "id": 4698,
+      "members": 1,
+      "name": "Mud rune",
+      "noted": 0,
+      "quantity": "40",
+      "rarity": "0.046875",
+      "rolls": 1
+    },
+    {
+      "id": 21555,
+      "members": 1,
+      "name": "Numulite",
+      "noted": 0,
+      "quantity": "5-32",
+      "rarity": "0.6171428571428571",
+      "rolls": 1
+    },
+    {
+      "id": 21562,
+      "members": 1,
+      "name": "Unidentified small fossil",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.03428571428571429",
+      "rolls": 1
+    },
+    {
+      "id": 21564,
+      "members": 1,
+      "name": "Unidentified medium fossil",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.017142857142857144",
+      "rolls": 1
+    },
+    {
+      "id": 21566,
+      "members": 1,
+      "name": "Unidentified large fossil",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.06857142857142857",
+      "rolls": 1
+    },
+    {
+      "id": 21568,
+      "members": 1,
+      "name": "Unidentified rare fossil",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0034285714285714284",
+      "rolls": 1
+    },
+    {
+      "id": 868,
+      "members": 1,
+      "name": "Rune knife",
+      "noted": 0,
+      "quantity": "25",
+      "rarity": "0.046875",
+      "rolls": 1
+    },
+    {
+      "id": 12073,
+      "members": 1,
+      "name": "Clue scroll (elite)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.005",
+      "rolls": 1
+    },
+    {
+      "id": 11212,
+      "members": 1,
+      "name": "Dragon arrow",
+      "noted": 0,
+      "quantity": "60",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 2,
+      "members": 1,
+      "name": "Cannonball",
+      "noted": 0,
+      "quantity": "80",
+      "rarity": "0.03125",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "He's seen things that people wouldn't believe.",
+  "hitpoints": 200,
+  "id": "7806",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 28,
+  "members": 1,
+  "name": "Deranged archaeologist",
+  "poisonous": 0,
+  "ranged_bonus": 90,
+  "ranged_level": 320,
+  "release_date": "2017-09-07",
+  "size": 1,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "chaeldar",
+    "nieve",
+    "duradel"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "275.0",
+  "strength_bonus": 30,
+  "strength_level": 160,
+  "venomous": 0,
+  "wiki_name": "Deranged archaeologist",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Deranged_archaeologist"
 }

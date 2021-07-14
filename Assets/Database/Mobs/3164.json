@@ -1,236 +1,254 @@
 {
-    "id": 3164,
-    "name": "Flockleader Geerin",
-    "last_updated": "2020-12-25",
-    "incomplete": true,
-    "members": true,
-    "release_date": "2013-10-17",
-    "combat_level": 149,
-    "size": 2,
-    "hitpoints": 132,
-    "max_hit": 25,
-    "attack_type": [
-        "ranged"
-    ],
-    "attack_speed": 5,
-    "aggressive": true,
-    "poisonous": false,
-    "venomous": false,
-    "immune_poison": false,
-    "immune_venom": false,
-    "attributes": [],
-    "category": [
-        "aviansie"
-    ],
-    "slayer_monster": true,
-    "slayer_level": 1,
-    "slayer_xp": 132.5,
-    "slayer_masters": [
-        "chaeldar",
-        "konar",
-        "nieve",
-        "duradel"
-    ],
-    "duplicate": false,
-    "examine": "Graceful, bird-like creature.",
-    "wiki_name": "Flockleader Geerin",
-    "wiki_url": "https://oldschool.runescape.wiki/w/Flockleader_Geerin",
-    "attack_level": 80,
-    "strength_level": 80,
-    "defence_level": 175,
-    "magic_level": 50,
-    "ranged_level": 150,
-    "attack_bonus": 0,
-    "strength_bonus": 0,
-    "attack_magic": 0,
-    "magic_bonus": 0,
-    "attack_ranged": 60,
-    "ranged_bonus": 35,
-    "defence_stab": 0,
-    "defence_slash": 0,
-    "defence_crush": 0,
-    "defence_magic": 0,
-    "defence_ranged": 0,
-    "drops": [
-        {
-            "id": 526,
-            "name": "Bones",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        },
-        {
-            "id": 995,
-            "name": "Coins",
-            "members": false,
-            "quantity": "1000-1100",
-            "noted": false,
-            "rarity": 0.005905511811023622,
-            "rolls": 1
-        },
-        {
-            "id": 886,
-            "name": "Steel arrow",
-            "members": false,
-            "quantity": "91-101",
-            "noted": false,
-            "rarity": 0.05511811023622047,
-            "rolls": 1
-        },
-        {
-            "id": 808,
-            "name": "Steel dart",
-            "members": true,
-            "quantity": "91-101",
-            "noted": false,
-            "rarity": 0.06299212598425197,
-            "rolls": 1
-        },
-        {
-            "id": 4697,
-            "name": "Smoke rune",
-            "members": true,
-            "quantity": "10-15",
-            "noted": false,
-            "rarity": 0.06299212598425197,
-            "rolls": 1
-        },
-        {
-            "id": 391,
-            "name": "Manta ray",
-            "members": true,
-            "quantity": "2",
-            "noted": false,
-            "rarity": 0.06299212598425197,
-            "rolls": 1
-        },
-        {
-            "id": 7058,
-            "name": "Mushroom potato",
-            "members": true,
-            "quantity": "3",
-            "noted": false,
-            "rarity": 0.06299212598425197,
-            "rolls": 1
-        },
-        {
-            "id": 995,
-            "name": "Coins",
-            "members": false,
-            "quantity": "1000-1100",
-            "noted": false,
-            "rarity": 0.5511811023622047,
-            "rolls": 1
-        },
-        {
-            "id": 6693,
-            "name": "Crushed nest",
-            "members": true,
-            "quantity": "2",
-            "noted": true,
-            "rarity": 0.06299212598425197,
-            "rolls": 1
-        },
-        {
-            "id": 213,
-            "name": "Grimy kwuarm",
-            "members": true,
-            "quantity": "1",
-            "noted": true,
-            "rarity": 0.06299212598425197,
-            "rolls": 1
-        },
-        {
-            "id": 23083,
-            "name": "Brimstone key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.011111111111111112,
-            "rolls": 1
-        },
-        {
-            "id": 314,
-            "name": "Feather",
-            "members": false,
-            "quantity": "1-11",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        },
-        {
-            "id": 2722,
-            "name": "Clue scroll (hard)",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 11826,
-            "name": "Armadyl helmet",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 6.2000124000248e-05,
-            "rolls": 1
-        },
-        {
-            "id": 11828,
-            "name": "Armadyl chestplate",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 6.2000124000248e-05,
-            "rolls": 1
-        },
-        {
-            "id": 11830,
-            "name": "Armadyl chainskirt",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 6.2000124000248e-05,
-            "rolls": 1
-        },
-        {
-            "id": 995,
-            "name": "Coins",
-            "members": false,
-            "quantity": "1000-1100",
-            "noted": false,
-            "rarity": 0.007688015376030752,
-            "rolls": 1
-        },
-        {
-            "id": 11818,
-            "name": "Godsword shard 1",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0006561679790026247,
-            "rolls": 1
-        },
-        {
-            "id": 11820,
-            "name": "Godsword shard 2",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0006561679790026247,
-            "rolls": 1
-        },
-        {
-            "id": 11822,
-            "name": "Godsword shard 3",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0006561679790026247,
-            "rolls": 1
-        }
-    ]
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "7a5cf65b4eca7bf4339342a3080ed20ae00d0c4b",
+  "_id": "60ebb3afc1c55bf074a5e71d",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3afc1c55bf074a5e71d",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 0,
+  "attack_level": 80,
+  "attack_magic": 0,
+  "attack_ranged": 60,
+  "attack_speed": 5,
+  "attack_type": [
+    "ranged"
+  ],
+  "attributes": [],
+  "category": [
+    "aviansies"
+  ],
+  "combat_level": 149,
+  "defence_crush": 0,
+  "defence_level": 175,
+  "defence_magic": 0,
+  "defence_ranged": 0,
+  "defence_slash": 0,
+  "defence_stab": 0,
+  "drops": [
+    {
+      "id": 526,
+      "members": 0,
+      "name": "Bones",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "1000-1100",
+      "rarity": "0.005905511811023622",
+      "rolls": 1
+    },
+    {
+      "id": 886,
+      "members": 0,
+      "name": "Steel arrow",
+      "noted": 0,
+      "quantity": "91-101",
+      "rarity": "0.05511811023622047",
+      "rolls": 1
+    },
+    {
+      "id": 808,
+      "members": 1,
+      "name": "Steel dart",
+      "noted": 0,
+      "quantity": "91-101",
+      "rarity": "0.06299212598425197",
+      "rolls": 1
+    },
+    {
+      "id": 4697,
+      "members": 1,
+      "name": "Smoke rune",
+      "noted": 0,
+      "quantity": "10-15",
+      "rarity": "0.06299212598425197",
+      "rolls": 1
+    },
+    {
+      "id": 391,
+      "members": 1,
+      "name": "Manta ray",
+      "noted": 0,
+      "quantity": "2",
+      "rarity": "0.06299212598425197",
+      "rolls": 1
+    },
+    {
+      "id": 7058,
+      "members": 1,
+      "name": "Mushroom potato",
+      "noted": 0,
+      "quantity": "3",
+      "rarity": "0.06299212598425197",
+      "rolls": 1
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "1000-1100",
+      "rarity": "0.5511811023622047",
+      "rolls": 1
+    },
+    {
+      "id": 6693,
+      "members": 1,
+      "name": "Crushed nest",
+      "noted": 1,
+      "quantity": "2",
+      "rarity": "0.06299212598425197",
+      "rolls": 1
+    },
+    {
+      "id": 213,
+      "members": 1,
+      "name": "Grimy kwuarm",
+      "noted": 1,
+      "quantity": "1",
+      "rarity": "0.06299212598425197",
+      "rolls": 1
+    },
+    {
+      "id": 23083,
+      "members": 1,
+      "name": "Brimstone key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.011111111111111112",
+      "rolls": 1
+    },
+    {
+      "id": 314,
+      "members": 0,
+      "name": "Feather",
+      "noted": 0,
+      "quantity": "1-11",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 2722,
+      "members": 1,
+      "name": "Clue scroll (hard)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 11826,
+      "members": 1,
+      "name": "Armadyl helmet",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "6.2000124000248e-05",
+      "rolls": 1
+    },
+    {
+      "id": 11828,
+      "members": 1,
+      "name": "Armadyl chestplate",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "6.2000124000248e-05",
+      "rolls": 1
+    },
+    {
+      "id": 11830,
+      "members": 1,
+      "name": "Armadyl chainskirt",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "6.2000124000248e-05",
+      "rolls": 1
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "1000-1100",
+      "rarity": "0.007688015376030752",
+      "rolls": 1
+    },
+    {
+      "id": 11818,
+      "members": 1,
+      "name": "Godsword shard 1",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0006561679790026247",
+      "rolls": 1
+    },
+    {
+      "id": 11820,
+      "members": 1,
+      "name": "Godsword shard 2",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0006561679790026247",
+      "rolls": 1
+    },
+    {
+      "id": 11822,
+      "members": 1,
+      "name": "Godsword shard 3",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0006561679790026247",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "Graceful, bird-like creature.",
+  "hitpoints": 132,
+  "id": "3164",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 50,
+  "max_hit": 25,
+  "members": 1,
+  "name": "Flockleader Geerin",
+  "poisonous": 0,
+  "ranged_bonus": 35,
+  "ranged_level": 150,
+  "release_date": "2013-10-17",
+  "size": 2,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "chaeldar",
+    "konar",
+    "nieve",
+    "duradel"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "132.5",
+  "strength_bonus": 0,
+  "strength_level": 80,
+  "venomous": 0,
+  "wiki_name": "Flockleader Geerin",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Flockleader_Geerin"
 }

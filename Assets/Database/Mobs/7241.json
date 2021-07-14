@@ -1,7 +1,7 @@
 {
   "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
-  "_etag": "574872ab0afcbc24d73e0c82c99b85d7926b1e59",
-  "_id": "60cd28b2cfb7392d009077c1",
+  "_etag": "3d2532a6e1d50a65aadc1f101545189e3509e122",
+  "_id": "60ebb3b1c1c55bf074a5eb5b",
   "_links": {
     "collection": {
       "href": "monsters",
@@ -12,7 +12,7 @@
       "title": "home"
     },
     "self": {
-      "href": "monsters/60cd28b2cfb7392d009077c1",
+      "href": "monsters/60ebb3b1c1c55bf074a5eb5b",
       "title": "Monster"
     }
   },
@@ -30,7 +30,7 @@
     "demon"
   ],
   "category": [
-    "abyssal demon"
+    "abyssal demons"
   ],
   "combat_level": 124,
   "defence_crush": 20,
@@ -41,111 +41,12 @@
   "defence_stab": 20,
   "drops": [
     {
-      "id": 1623,
+      "id": 25775,
       "members": 1,
-      "name": "Uncut sapphire",
+      "name": "Abyssal ashes",
       "noted": 0,
       "quantity": "1",
-      "rarity": "0.009765625",
-      "rolls": 1
-    },
-    {
-      "id": 1621,
-      "members": 1,
-      "name": "Uncut emerald",
-      "noted": 0,
-      "quantity": "1",
-      "rarity": "0.0048828125",
-      "rolls": 1
-    },
-    {
-      "id": 1619,
-      "members": 1,
-      "name": "Uncut ruby",
-      "noted": 0,
-      "quantity": "1",
-      "rarity": "0.00244140625",
-      "rolls": 1
-    },
-    {
-      "id": 1452,
-      "members": 1,
-      "name": "Chaos talisman",
-      "noted": 0,
-      "quantity": "1",
-      "rarity": "0.0009154558237637684",
-      "rolls": 1
-    },
-    {
-      "id": 1462,
-      "members": 1,
-      "name": "Nature talisman",
-      "noted": 0,
-      "quantity": "1",
-      "rarity": "0.0009154558237637684",
-      "rolls": 1
-    },
-    {
-      "id": 1617,
-      "members": 1,
-      "name": "Uncut diamond",
-      "noted": 0,
-      "quantity": "1",
-      "rarity": "0.0006103515625",
-      "rolls": 1
-    },
-    {
-      "id": 830,
-      "members": 1,
-      "name": "Rune javelin",
-      "noted": 0,
-      "quantity": "5",
-      "rarity": "0.00030517578125",
-      "rolls": 1
-    },
-    {
-      "id": 987,
-      "members": 1,
-      "name": "Loop half of key",
-      "noted": 0,
-      "quantity": "1",
-      "rarity": "0.00030517578125",
-      "rolls": 1
-    },
-    {
-      "id": 985,
-      "members": 1,
-      "name": "Tooth half of key",
-      "noted": 0,
-      "quantity": "1",
-      "rarity": "0.00030517578125",
-      "rolls": 1
-    },
-    {
-      "id": 1247,
-      "members": 1,
-      "name": "Rune spear",
-      "noted": 0,
-      "quantity": "1",
-      "rarity": "1.9073486328125e-05",
-      "rolls": 1
-    },
-    {
-      "id": 2366,
-      "members": 1,
-      "name": "Shield left half",
-      "noted": 0,
-      "quantity": "1",
-      "rarity": "9.5367431640625e-06",
-      "rolls": 1
-    },
-    {
-      "id": 1249,
-      "members": 1,
-      "name": "Dragon spear",
-      "noted": 0,
-      "quantity": "1",
-      "rarity": "7.1519986231544404e-06",
+      "rarity": "1.0",
       "rolls": 1
     },
     {
@@ -543,7 +444,7 @@
   "immune_poison": 0,
   "immune_venom": 0,
   "incomplete": 0,
-  "last_updated": "2021-06-18",
+  "last_updated": "2021-07-12",
   "magic_bonus": 0,
   "magic_level": 1,
   "max_hit": 8,

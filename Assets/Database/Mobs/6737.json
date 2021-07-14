@@ -1,7 +1,7 @@
 {
   "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
-  "_etag": "76f39f0b3220efea1ce6e1dda61a9f09d4639b32",
-  "_id": "60cd28b2cfb7392d0090776c",
+  "_etag": "9f6635a747ef0a4eaaf034740adec3184b0f90a2",
+  "_id": "60ebb3b1c1c55bf074a5eb06",
   "_links": {
     "collection": {
       "href": "monsters",
@@ -12,7 +12,7 @@
       "title": "home"
     },
     "self": {
-      "href": "monsters/60cd28b2cfb7392d0090776c",
+      "href": "monsters/60ebb3b1c1c55bf074a5eb06",
       "title": "Monster"
     }
   },
@@ -28,7 +28,7 @@
   ],
   "attributes": [],
   "category": [
-    "troll"
+    "trolls"
   ],
   "combat_level": 159,
   "defence_crush": 0,
@@ -190,7 +190,7 @@
   "immune_poison": 0,
   "immune_venom": 0,
   "incomplete": 1,
-  "last_updated": "2021-02-24",
+  "last_updated": "2021-07-12",
   "magic_bonus": 0,
   "magic_level": 1,
   "max_hit": 14,

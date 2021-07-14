@@ -1,7 +1,7 @@
 {
   "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
-  "_etag": "5e3d5444c0b4d840f083203fcdbc7bec950e94f2",
-  "_id": "60cd28b2cfb7392d00907872",
+  "_etag": "fbbb1b263f74d8619f2b9a85dbffb32068ef3560",
+  "_id": "60ebb3b1c1c55bf074a5ec0c",
   "_links": {
     "collection": {
       "href": "monsters",
@@ -12,7 +12,7 @@
       "title": "home"
     },
     "self": {
-      "href": "monsters/60cd28b2cfb7392d00907872",
+      "href": "monsters/60ebb3b1c1c55bf074a5ec0c",
       "title": "Monster"
     }
   },
@@ -30,7 +30,7 @@
     "demon"
   ],
   "category": [
-    "lesser demon"
+    "lesser demons"
   ],
   "combat_level": 94,
   "defence_crush": 0,
@@ -156,7 +156,7 @@
   "immune_poison": 0,
   "immune_venom": 0,
   "incomplete": 1,
-  "last_updated": "2020-12-25",
+  "last_updated": "2021-07-12",
   "magic_bonus": 0,
   "magic_level": 1,
   "max_hit": 8,

@@ -1,320 +1,338 @@
 {
-    "id": 3162,
-    "name": "Kree'arra",
-    "last_updated": "2020-12-25",
-    "incomplete": true,
-    "members": true,
-    "release_date": "2013-10-17",
-    "combat_level": 580,
-    "size": 5,
-    "hitpoints": 255,
-    "max_hit": 69,
-    "attack_type": [
-        "melee",
-        "ranged",
-        "magic"
-    ],
-    "attack_speed": 3,
-    "aggressive": true,
-    "poisonous": false,
-    "venomous": false,
-    "immune_poison": true,
-    "immune_venom": true,
-    "attributes": [],
-    "category": [
-        "aviansie",
-        "boss"
-    ],
-    "slayer_monster": true,
-    "slayer_level": 1,
-    "slayer_xp": 357.0,
-    "slayer_masters": [
-        "chaeldar",
-        "konar",
-        "nieve",
-        "duradel"
-    ],
-    "duplicate": false,
-    "examine": "Graceful avatar of Armadyl.",
-    "wiki_name": "Kree'arra",
-    "wiki_url": "https://oldschool.runescape.wiki/w/Kree'arra",
-    "attack_level": 300,
-    "strength_level": 200,
-    "defence_level": 260,
-    "magic_level": 200,
-    "ranged_level": 380,
-    "attack_bonus": 136,
-    "strength_bonus": 12,
-    "attack_magic": 0,
-    "magic_bonus": 0,
-    "attack_ranged": 120,
-    "ranged_bonus": 50,
-    "defence_stab": 180,
-    "defence_slash": 180,
-    "defence_crush": 180,
-    "defence_magic": 200,
-    "defence_ranged": 200,
-    "drops": [
-        {
-            "id": 532,
-            "name": "Big bones",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        },
-        {
-            "id": 2503,
-            "name": "Black d'hide body",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.06299212598425197,
-            "rolls": 1
-        },
-        {
-            "id": 9185,
-            "name": "Rune crossbow",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.06299212598425197,
-            "rolls": 1
-        },
-        {
-            "id": 558,
-            "name": "Mind rune",
-            "members": false,
-            "quantity": "586-601",
-            "noted": false,
-            "rarity": 0.06299212598425197,
-            "rolls": 1
-        },
-        {
-            "id": 892,
-            "name": "Rune arrow",
-            "members": true,
-            "quantity": "100-105",
-            "noted": false,
-            "rarity": 0.06299212598425197,
-            "rolls": 1
-        },
-        {
-            "id": 9144,
-            "name": "Runite bolts",
-            "members": true,
-            "quantity": "20-25",
-            "noted": false,
-            "rarity": 0.06299212598425197,
-            "rolls": 1
-        },
-        {
-            "id": 9244,
-            "name": "Dragonstone bolts (e)",
-            "members": true,
-            "quantity": "5-10",
-            "noted": false,
-            "rarity": 0.06299212598425197,
-            "rolls": 1
-        },
-        {
-            "id": 995,
-            "name": "Coins",
-            "members": false,
-            "quantity": "19500-20000",
-            "noted": false,
-            "rarity": 0.34409448818897637,
-            "rolls": 1
-        },
-        {
-            "id": 169,
-            "name": "Ranging potion(3)",
-            "members": true,
-            "quantity": "3",
-            "noted": false,
-            "rarity": 0.06299212598425197,
-            "rolls": 1
-        },
-        {
-            "id": 163,
-            "name": "Super defence(3)",
-            "members": true,
-            "quantity": "3",
-            "noted": false,
-            "rarity": 0.06299212598425197,
-            "rolls": 1
-        },
-        {
-            "id": 217,
-            "name": "Grimy dwarf weed",
-            "members": true,
-            "quantity": "8-13",
-            "noted": true,
-            "rarity": 0.06299212598425197,
-            "rolls": 1
-        },
-        {
-            "id": 314,
-            "name": "Feather",
-            "members": false,
-            "quantity": "1-16",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        },
-        {
-            "id": 5303,
-            "name": "Dwarf weed seed",
-            "members": true,
-            "quantity": "3",
-            "noted": false,
-            "rarity": 0.06299212598425197,
-            "rolls": 1
-        },
-        {
-            "id": 995,
-            "name": "Coins",
-            "members": false,
-            "quantity": "20500-21000",
-            "noted": false,
-            "rarity": 0.00984251968503937,
-            "rolls": 1
-        },
-        {
-            "id": 989,
-            "name": "Crystal key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.007874015748031496,
-            "rolls": 1
-        },
-        {
-            "id": 5315,
-            "name": "Yew seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.007874015748031496,
-            "rolls": 1
-        },
-        {
-            "id": 1289,
-            "name": "Rune sword",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0024606299212598425,
-            "rolls": 1
-        },
-        {
-            "id": 11826,
-            "name": "Armadyl helmet",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0026246719160104987,
-            "rolls": 1
-        },
-        {
-            "id": 11828,
-            "name": "Armadyl chestplate",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0026246719160104987,
-            "rolls": 1
-        },
-        {
-            "id": 23083,
-            "name": "Brimstone key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.02,
-            "rolls": 1
-        },
-        {
-            "id": 11830,
-            "name": "Armadyl chainskirt",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0026246719160104987,
-            "rolls": 1
-        },
-        {
-            "id": 12073,
-            "name": "Clue scroll (elite)",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.004,
-            "rolls": 1
-        },
-        {
-            "id": 10976,
-            "name": "Long bone",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0025,
-            "rolls": 1
-        },
-        {
-            "id": 12649,
-            "name": "Pet kree'arra",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0002,
-            "rolls": 1
-        },
-        {
-            "id": 10977,
-            "name": "Curved bone",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.00019950124688279303,
-            "rolls": 1
-        },
-        {
-            "id": 11810,
-            "name": "Armadyl hilt",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.001968503937007874,
-            "rolls": 1
-        },
-        {
-            "id": 11818,
-            "name": "Godsword shard 1",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0013123359580052493,
-            "rolls": 1
-        },
-        {
-            "id": 11820,
-            "name": "Godsword shard 2",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0013123359580052493,
-            "rolls": 1
-        },
-        {
-            "id": 11822,
-            "name": "Godsword shard 3",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0013123359580052493,
-            "rolls": 1
-        }
-    ]
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "84e3a811bb1cdfe4d807f6e6cd787a53241393b7",
+  "_id": "60ebb3afc1c55bf074a5e71b",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3afc1c55bf074a5e71b",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 136,
+  "attack_level": 300,
+  "attack_magic": 0,
+  "attack_ranged": 120,
+  "attack_speed": 3,
+  "attack_type": [
+    "melee",
+    "ranged",
+    "magic"
+  ],
+  "attributes": [],
+  "category": [
+    "aviansies",
+    "bosses"
+  ],
+  "combat_level": 580,
+  "defence_crush": 180,
+  "defence_level": 260,
+  "defence_magic": 200,
+  "defence_ranged": 200,
+  "defence_slash": 180,
+  "defence_stab": 180,
+  "drops": [
+    {
+      "id": 532,
+      "members": 0,
+      "name": "Big bones",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 2503,
+      "members": 1,
+      "name": "Black d'hide body",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.06299212598425197",
+      "rolls": 1
+    },
+    {
+      "id": 9185,
+      "members": 1,
+      "name": "Rune crossbow",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.06299212598425197",
+      "rolls": 1
+    },
+    {
+      "id": 558,
+      "members": 0,
+      "name": "Mind rune",
+      "noted": 0,
+      "quantity": "586-601",
+      "rarity": "0.06299212598425197",
+      "rolls": 1
+    },
+    {
+      "id": 892,
+      "members": 1,
+      "name": "Rune arrow",
+      "noted": 0,
+      "quantity": "100-105",
+      "rarity": "0.06299212598425197",
+      "rolls": 1
+    },
+    {
+      "id": 9144,
+      "members": 1,
+      "name": "Runite bolts",
+      "noted": 0,
+      "quantity": "20-25",
+      "rarity": "0.06299212598425197",
+      "rolls": 1
+    },
+    {
+      "id": 9244,
+      "members": 1,
+      "name": "Dragonstone bolts (e)",
+      "noted": 0,
+      "quantity": "5-10",
+      "rarity": "0.06299212598425197",
+      "rolls": 1
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "19500-20000",
+      "rarity": "0.34409448818897637",
+      "rolls": 1
+    },
+    {
+      "id": 169,
+      "members": 1,
+      "name": "Ranging potion(3)",
+      "noted": 0,
+      "quantity": "3",
+      "rarity": "0.06299212598425197",
+      "rolls": 1
+    },
+    {
+      "id": 163,
+      "members": 1,
+      "name": "Super defence(3)",
+      "noted": 0,
+      "quantity": "3",
+      "rarity": "0.06299212598425197",
+      "rolls": 1
+    },
+    {
+      "id": 217,
+      "members": 1,
+      "name": "Grimy dwarf weed",
+      "noted": 1,
+      "quantity": "8-13",
+      "rarity": "0.06299212598425197",
+      "rolls": 1
+    },
+    {
+      "id": 314,
+      "members": 0,
+      "name": "Feather",
+      "noted": 0,
+      "quantity": "1-16",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 5303,
+      "members": 1,
+      "name": "Dwarf weed seed",
+      "noted": 0,
+      "quantity": "3",
+      "rarity": "0.06299212598425197",
+      "rolls": 1
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "20500-21000",
+      "rarity": "0.00984251968503937",
+      "rolls": 1
+    },
+    {
+      "id": 989,
+      "members": 1,
+      "name": "Crystal key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.007874015748031496",
+      "rolls": 1
+    },
+    {
+      "id": 5315,
+      "members": 1,
+      "name": "Yew seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.007874015748031496",
+      "rolls": 1
+    },
+    {
+      "id": 1289,
+      "members": 0,
+      "name": "Rune sword",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0024606299212598425",
+      "rolls": 1
+    },
+    {
+      "id": 11826,
+      "members": 1,
+      "name": "Armadyl helmet",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0026246719160104987",
+      "rolls": 1
+    },
+    {
+      "id": 11828,
+      "members": 1,
+      "name": "Armadyl chestplate",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0026246719160104987",
+      "rolls": 1
+    },
+    {
+      "id": 23083,
+      "members": 1,
+      "name": "Brimstone key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.02",
+      "rolls": 1
+    },
+    {
+      "id": 11830,
+      "members": 1,
+      "name": "Armadyl chainskirt",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0026246719160104987",
+      "rolls": 1
+    },
+    {
+      "id": 12073,
+      "members": 1,
+      "name": "Clue scroll (elite)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.004",
+      "rolls": 1
+    },
+    {
+      "id": 10976,
+      "members": 1,
+      "name": "Long bone",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0025",
+      "rolls": 1
+    },
+    {
+      "id": 12649,
+      "members": 1,
+      "name": "Pet kree'arra",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0002",
+      "rolls": 1
+    },
+    {
+      "id": 10977,
+      "members": 1,
+      "name": "Curved bone",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00019950124688279303",
+      "rolls": 1
+    },
+    {
+      "id": 11810,
+      "members": 1,
+      "name": "Armadyl hilt",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.001968503937007874",
+      "rolls": 1
+    },
+    {
+      "id": 11818,
+      "members": 1,
+      "name": "Godsword shard 1",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0013123359580052493",
+      "rolls": 1
+    },
+    {
+      "id": 11820,
+      "members": 1,
+      "name": "Godsword shard 2",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0013123359580052493",
+      "rolls": 1
+    },
+    {
+      "id": 11822,
+      "members": 1,
+      "name": "Godsword shard 3",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0013123359580052493",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "Graceful avatar of Armadyl.",
+  "hitpoints": 255,
+  "id": "3162",
+  "immune_poison": 1,
+  "immune_venom": 1,
+  "incomplete": 1,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 200,
+  "max_hit": 69,
+  "members": 1,
+  "name": "Kree'arra",
+  "poisonous": 0,
+  "ranged_bonus": 50,
+  "ranged_level": 380,
+  "release_date": "2013-10-17",
+  "size": 5,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "chaeldar",
+    "konar",
+    "nieve",
+    "duradel"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "357.0",
+  "strength_bonus": 12,
+  "strength_level": 200,
+  "venomous": 0,
+  "wiki_name": "Kree'arra",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Kree'arra"
 }

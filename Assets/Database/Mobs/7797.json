@@ -1,526 +1,544 @@
 {
-    "id": 7797,
-    "name": "Ancient Zygomite",
-    "last_updated": "2021-05-30",
-    "incomplete": true,
-    "members": true,
-    "release_date": "2017-09-07",
-    "combat_level": 109,
-    "size": 2,
-    "hitpoints": 150,
-    "max_hit": 9,
-    "attack_type": [
-        "melee",
-        "ranged",
-        "magic"
-    ],
-    "attack_speed": 4,
-    "aggressive": false,
-    "poisonous": false,
-    "venomous": false,
-    "immune_poison": false,
-    "immune_venom": false,
-    "attributes": [],
-    "category": [
-        "mutated zygomite"
-    ],
-    "slayer_monster": true,
-    "slayer_level": 57,
-    "slayer_xp": 154.0,
-    "slayer_masters": [
-        "chaeldar",
-        "konar",
-        "nieve",
-        "duradel"
-    ],
-    "duplicate": false,
-    "examine": "Not in the ground anymore! It looks a little wobbly.",
-    "wiki_name": "Ancient Zygomite",
-    "wiki_url": "https://oldschool.runescape.wiki/w/Ancient_Zygomite",
-    "attack_level": 80,
-    "strength_level": 80,
-    "defence_level": 80,
-    "magic_level": 80,
-    "ranged_level": 80,
-    "attack_bonus": 50,
-    "strength_bonus": 0,
-    "attack_magic": 0,
-    "magic_bonus": 0,
-    "attack_ranged": 0,
-    "ranged_bonus": 0,
-    "defence_stab": 20,
-    "defence_slash": 20,
-    "defence_crush": 20,
-    "defence_magic": 30,
-    "defence_ranged": 30,
-    "drops": [
-        {
-            "id": 1623,
-            "name": "Uncut sapphire",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.012711864406779662,
-            "rolls": 1
-        },
-        {
-            "id": 1621,
-            "name": "Uncut emerald",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.006355932203389831,
-            "rolls": 1
-        },
-        {
-            "id": 1619,
-            "name": "Uncut ruby",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0031779661016949155,
-            "rolls": 1
-        },
-        {
-            "id": 1452,
-            "name": "Chaos talisman",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0011916441909331766,
-            "rolls": 1
-        },
-        {
-            "id": 1462,
-            "name": "Nature talisman",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0011916441909331766,
-            "rolls": 1
-        },
-        {
-            "id": 1617,
-            "name": "Uncut diamond",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0007944915254237289,
-            "rolls": 1
-        },
-        {
-            "id": 830,
-            "name": "Rune javelin",
-            "members": true,
-            "quantity": "5",
-            "noted": false,
-            "rarity": 0.00039724576271186443,
-            "rolls": 1
-        },
-        {
-            "id": 987,
-            "name": "Loop half of key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.00039724576271186443,
-            "rolls": 1
-        },
-        {
-            "id": 985,
-            "name": "Tooth half of key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.00039724576271186443,
-            "rolls": 1
-        },
-        {
-            "id": 1247,
-            "name": "Rune spear",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 2.4827860169491527e-05,
-            "rolls": 1
-        },
-        {
-            "id": 2366,
-            "name": "Shield left half",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.2413930084745764e-05,
-            "rolls": 1
-        },
-        {
-            "id": 1249,
-            "name": "Dragon spear",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 9.309720241665442e-06,
-            "rolls": 1
-        },
-        {
-            "id": 2970,
-            "name": "Mort myre fungus",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        },
-        {
-            "id": 217,
-            "name": "Grimy dwarf weed",
-            "members": true,
-            "quantity": "1-2",
-            "noted": true,
-            "rarity": 0.025423728813559324,
-            "rolls": 1
-        },
-        {
-            "id": 2485,
-            "name": "Grimy lantadyme",
-            "members": true,
-            "quantity": "1-2",
-            "noted": true,
-            "rarity": 0.019067796610169493,
-            "rolls": 1
-        },
-        {
-            "id": 5282,
-            "name": "Mushroom spore",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0847457627118644,
-            "rolls": 1
-        },
-        {
-            "id": 5295,
-            "name": "Ranarr seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0010169836265636124,
-            "rolls": 1
-        },
-        {
-            "id": 5300,
-            "name": "Snapdragon seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0009491268033409263,
-            "rolls": 1
-        },
-        {
-            "id": 5304,
-            "name": "Torstol seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0007457677679170706,
-            "rolls": 1
-        },
-        {
-            "id": 5321,
-            "name": "Watermelon seed",
-            "members": true,
-            "quantity": "15",
-            "noted": false,
-            "rarity": 0.0006779661016949153,
-            "rolls": 1
-        },
-        {
-            "id": 5313,
-            "name": "Willow seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0006779661016949153,
-            "rolls": 1
-        },
-        {
-            "id": 21488,
-            "name": "Mahogany seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0006101653548111538,
-            "rolls": 1
-        },
-        {
-            "id": 5314,
-            "name": "Maple seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0006101653548111538,
-            "rolls": 1
-        },
-        {
-            "id": 1359,
-            "name": "Rune axe",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.025423728813559324,
-            "rolls": 1
-        },
-        {
-            "id": 21486,
-            "name": "Teak seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0006101653548111538,
-            "rolls": 1
-        },
-        {
-            "id": 5315,
-            "name": "Yew seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0006101653548111538,
-            "rolls": 1
-        },
-        {
-            "id": 5288,
-            "name": "Papaya tree seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.00047458592378150065,
-            "rolls": 1
-        },
-        {
-            "id": 5316,
-            "name": "Magic seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0004067851767481593,
-            "rolls": 1
-        },
-        {
-            "id": 5289,
-            "name": "Palm tree seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.00033898305084745765,
-            "rolls": 1
-        },
-        {
-            "id": 5317,
-            "name": "Spirit seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0002711864406779661,
-            "rolls": 1
-        },
-        {
-            "id": 22877,
-            "name": "Dragonfruit tree seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.00020338845160371795,
-            "rolls": 1
-        },
-        {
-            "id": 22869,
-            "name": "Celastrus seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.00013559322033898305,
-            "rolls": 1
-        },
-        {
-            "id": 22871,
-            "name": "Redwood tree seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.00013559322033898305,
-            "rolls": 1
-        },
-        {
-            "id": 21545,
-            "name": "Pyrophosphite",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.15254237288135594,
-            "rolls": 1
-        },
-        {
-            "id": 557,
-            "name": "Earth rune",
-            "members": false,
-            "quantity": "100",
-            "noted": false,
-            "rarity": 0.15254237288135594,
-            "rolls": 1
-        },
-        {
-            "id": 21543,
-            "name": "Calcite",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.15254237288135594,
-            "rolls": 1
-        },
-        {
-            "id": 6034,
-            "name": "Supercompost",
-            "members": true,
-            "quantity": "2",
-            "noted": true,
-            "rarity": 0.10847457627118644,
-            "rolls": 1
-        },
-        {
-            "id": 2970,
-            "name": "Mort myre fungus",
-            "members": true,
-            "quantity": "5",
-            "noted": true,
-            "rarity": 0.0847457627118644,
-            "rolls": 1
-        },
-        {
-            "id": 21622,
-            "name": "Volcanic ash",
-            "members": true,
-            "quantity": "2",
-            "noted": false,
-            "rarity": 0.02711864406779661,
-            "rolls": 1
-        },
-        {
-            "id": 563,
-            "name": "Law rune",
-            "members": false,
-            "quantity": "15",
-            "noted": false,
-            "rarity": 0.05084745762711865,
-            "rolls": 1
-        },
-        {
-            "id": 21555,
-            "name": "Numulite",
-            "members": true,
-            "quantity": "5-19",
-            "noted": false,
-            "rarity": 0.32,
-            "rolls": 1
-        },
-        {
-            "id": 21562,
-            "name": "Unidentified small fossil",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.02,
-            "rolls": 1
-        },
-        {
-            "id": 21564,
-            "name": "Unidentified medium fossil",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.01,
-            "rolls": 1
-        },
-        {
-            "id": 21566,
-            "name": "Unidentified large fossil",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.008,
-            "rolls": 1
-        },
-        {
-            "id": 21568,
-            "name": "Unidentified rare fossil",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.002,
-            "rolls": 1
-        },
-        {
-            "id": 564,
-            "name": "Cosmic rune",
-            "members": false,
-            "quantity": "15",
-            "noted": false,
-            "rarity": 0.05084745762711865,
-            "rolls": 1
-        },
-        {
-            "id": 23083,
-            "name": "Brimstone key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.01282051282051282,
-            "rolls": 1
-        },
-        {
-            "id": 2801,
-            "name": "Clue scroll (medium)",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 561,
-            "name": "Nature rune",
-            "members": false,
-            "quantity": "15",
-            "noted": false,
-            "rarity": 0.05084745762711865,
-            "rolls": 1
-        },
-        {
-            "id": 213,
-            "name": "Grimy kwuarm",
-            "members": true,
-            "quantity": "1-2",
-            "noted": true,
-            "rarity": 0.03177966101694915,
-            "rolls": 1
-        },
-        {
-            "id": 219,
-            "name": "Grimy torstol",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.05084745762711865,
-            "rolls": 1
-        },
-        {
-            "id": 215,
-            "name": "Grimy cadantine",
-            "members": true,
-            "quantity": "1-2",
-            "noted": true,
-            "rarity": 0.025423728813559324,
-            "rolls": 1
-        }
-    ]
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "1e0fa4143438461ddac20a7fed46d8ee4bee9f55",
+  "_id": "60ebb3b1c1c55bf074a5ebfd",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3b1c1c55bf074a5ebfd",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 0,
+  "attack_bonus": 50,
+  "attack_level": 80,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "melee",
+    "ranged",
+    "magic"
+  ],
+  "attributes": [],
+  "category": [
+    "mutated zygomites"
+  ],
+  "combat_level": 109,
+  "defence_crush": 20,
+  "defence_level": 80,
+  "defence_magic": 30,
+  "defence_ranged": 30,
+  "defence_slash": 20,
+  "defence_stab": 20,
+  "drops": [
+    {
+      "id": 1623,
+      "members": 1,
+      "name": "Uncut sapphire",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.012711864406779662",
+      "rolls": 1
+    },
+    {
+      "id": 1621,
+      "members": 1,
+      "name": "Uncut emerald",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.006355932203389831",
+      "rolls": 1
+    },
+    {
+      "id": 1619,
+      "members": 1,
+      "name": "Uncut ruby",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0031779661016949155",
+      "rolls": 1
+    },
+    {
+      "id": 1452,
+      "members": 1,
+      "name": "Chaos talisman",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0011916441909331766",
+      "rolls": 1
+    },
+    {
+      "id": 1462,
+      "members": 1,
+      "name": "Nature talisman",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0011916441909331766",
+      "rolls": 1
+    },
+    {
+      "id": 1617,
+      "members": 1,
+      "name": "Uncut diamond",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0007944915254237289",
+      "rolls": 1
+    },
+    {
+      "id": 830,
+      "members": 1,
+      "name": "Rune javelin",
+      "noted": 0,
+      "quantity": "5",
+      "rarity": "0.00039724576271186443",
+      "rolls": 1
+    },
+    {
+      "id": 987,
+      "members": 1,
+      "name": "Loop half of key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00039724576271186443",
+      "rolls": 1
+    },
+    {
+      "id": 985,
+      "members": 1,
+      "name": "Tooth half of key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00039724576271186443",
+      "rolls": 1
+    },
+    {
+      "id": 1247,
+      "members": 1,
+      "name": "Rune spear",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "2.4827860169491527e-05",
+      "rolls": 1
+    },
+    {
+      "id": 2366,
+      "members": 1,
+      "name": "Shield left half",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.2413930084745764e-05",
+      "rolls": 1
+    },
+    {
+      "id": 1249,
+      "members": 1,
+      "name": "Dragon spear",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "9.309720241665442e-06",
+      "rolls": 1
+    },
+    {
+      "id": 2970,
+      "members": 1,
+      "name": "Mort myre fungus",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 217,
+      "members": 1,
+      "name": "Grimy dwarf weed",
+      "noted": 1,
+      "quantity": "1-2",
+      "rarity": "0.025423728813559324",
+      "rolls": 1
+    },
+    {
+      "id": 2485,
+      "members": 1,
+      "name": "Grimy lantadyme",
+      "noted": 1,
+      "quantity": "1-2",
+      "rarity": "0.019067796610169493",
+      "rolls": 1
+    },
+    {
+      "id": 5282,
+      "members": 1,
+      "name": "Mushroom spore",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0847457627118644",
+      "rolls": 1
+    },
+    {
+      "id": 5295,
+      "members": 1,
+      "name": "Ranarr seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0010169836265636124",
+      "rolls": 1
+    },
+    {
+      "id": 5300,
+      "members": 1,
+      "name": "Snapdragon seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0009491268033409263",
+      "rolls": 1
+    },
+    {
+      "id": 5304,
+      "members": 1,
+      "name": "Torstol seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0007457677679170706",
+      "rolls": 1
+    },
+    {
+      "id": 5321,
+      "members": 1,
+      "name": "Watermelon seed",
+      "noted": 0,
+      "quantity": "15",
+      "rarity": "0.0006779661016949153",
+      "rolls": 1
+    },
+    {
+      "id": 5313,
+      "members": 1,
+      "name": "Willow seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0006779661016949153",
+      "rolls": 1
+    },
+    {
+      "id": 21488,
+      "members": 1,
+      "name": "Mahogany seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0006101653548111538",
+      "rolls": 1
+    },
+    {
+      "id": 5314,
+      "members": 1,
+      "name": "Maple seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0006101653548111538",
+      "rolls": 1
+    },
+    {
+      "id": 1359,
+      "members": 0,
+      "name": "Rune axe",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.025423728813559324",
+      "rolls": 1
+    },
+    {
+      "id": 21486,
+      "members": 1,
+      "name": "Teak seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0006101653548111538",
+      "rolls": 1
+    },
+    {
+      "id": 5315,
+      "members": 1,
+      "name": "Yew seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0006101653548111538",
+      "rolls": 1
+    },
+    {
+      "id": 5288,
+      "members": 1,
+      "name": "Papaya tree seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00047458592378150065",
+      "rolls": 1
+    },
+    {
+      "id": 5316,
+      "members": 1,
+      "name": "Magic seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0004067851767481593",
+      "rolls": 1
+    },
+    {
+      "id": 5289,
+      "members": 1,
+      "name": "Palm tree seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00033898305084745765",
+      "rolls": 1
+    },
+    {
+      "id": 5317,
+      "members": 1,
+      "name": "Spirit seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0002711864406779661",
+      "rolls": 1
+    },
+    {
+      "id": 22877,
+      "members": 1,
+      "name": "Dragonfruit tree seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00020338845160371795",
+      "rolls": 1
+    },
+    {
+      "id": 22869,
+      "members": 1,
+      "name": "Celastrus seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00013559322033898305",
+      "rolls": 1
+    },
+    {
+      "id": 22871,
+      "members": 1,
+      "name": "Redwood tree seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00013559322033898305",
+      "rolls": 1
+    },
+    {
+      "id": 21545,
+      "members": 1,
+      "name": "Pyrophosphite",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.15254237288135594",
+      "rolls": 1
+    },
+    {
+      "id": 557,
+      "members": 0,
+      "name": "Earth rune",
+      "noted": 0,
+      "quantity": "100",
+      "rarity": "0.15254237288135594",
+      "rolls": 1
+    },
+    {
+      "id": 21543,
+      "members": 1,
+      "name": "Calcite",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.15254237288135594",
+      "rolls": 1
+    },
+    {
+      "id": 6034,
+      "members": 1,
+      "name": "Supercompost",
+      "noted": 1,
+      "quantity": "2",
+      "rarity": "0.10847457627118644",
+      "rolls": 1
+    },
+    {
+      "id": 2970,
+      "members": 1,
+      "name": "Mort myre fungus",
+      "noted": 1,
+      "quantity": "5",
+      "rarity": "0.0847457627118644",
+      "rolls": 1
+    },
+    {
+      "id": 21622,
+      "members": 1,
+      "name": "Volcanic ash",
+      "noted": 0,
+      "quantity": "2",
+      "rarity": "0.02711864406779661",
+      "rolls": 1
+    },
+    {
+      "id": 563,
+      "members": 0,
+      "name": "Law rune",
+      "noted": 0,
+      "quantity": "15",
+      "rarity": "0.05084745762711865",
+      "rolls": 1
+    },
+    {
+      "id": 21555,
+      "members": 1,
+      "name": "Numulite",
+      "noted": 0,
+      "quantity": "5-19",
+      "rarity": "0.32",
+      "rolls": 1
+    },
+    {
+      "id": 21562,
+      "members": 1,
+      "name": "Unidentified small fossil",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.02",
+      "rolls": 1
+    },
+    {
+      "id": 21564,
+      "members": 1,
+      "name": "Unidentified medium fossil",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.01",
+      "rolls": 1
+    },
+    {
+      "id": 21566,
+      "members": 1,
+      "name": "Unidentified large fossil",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.008",
+      "rolls": 1
+    },
+    {
+      "id": 21568,
+      "members": 1,
+      "name": "Unidentified rare fossil",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.002",
+      "rolls": 1
+    },
+    {
+      "id": 564,
+      "members": 0,
+      "name": "Cosmic rune",
+      "noted": 0,
+      "quantity": "15",
+      "rarity": "0.05084745762711865",
+      "rolls": 1
+    },
+    {
+      "id": 23083,
+      "members": 1,
+      "name": "Brimstone key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.01282051282051282",
+      "rolls": 1
+    },
+    {
+      "id": 2801,
+      "members": 1,
+      "name": "Clue scroll (medium)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 561,
+      "members": 0,
+      "name": "Nature rune",
+      "noted": 0,
+      "quantity": "15",
+      "rarity": "0.05084745762711865",
+      "rolls": 1
+    },
+    {
+      "id": 213,
+      "members": 1,
+      "name": "Grimy kwuarm",
+      "noted": 1,
+      "quantity": "1-2",
+      "rarity": "0.03177966101694915",
+      "rolls": 1
+    },
+    {
+      "id": 219,
+      "members": 1,
+      "name": "Grimy torstol",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.05084745762711865",
+      "rolls": 1
+    },
+    {
+      "id": 215,
+      "members": 1,
+      "name": "Grimy cadantine",
+      "noted": 1,
+      "quantity": "1-2",
+      "rarity": "0.025423728813559324",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "Not in the ground anymore! It looks a little wobbly.",
+  "hitpoints": 150,
+  "id": "7797",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 80,
+  "max_hit": 9,
+  "members": 1,
+  "name": "Ancient Zygomite",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 80,
+  "release_date": "2017-09-07",
+  "size": 2,
+  "slayer_level": 57,
+  "slayer_masters": [
+    "chaeldar",
+    "konar",
+    "nieve",
+    "duradel"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "154.0",
+  "strength_bonus": 0,
+  "strength_level": 80,
+  "venomous": 0,
+  "wiki_name": "Ancient Zygomite",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Ancient_Zygomite"
 }

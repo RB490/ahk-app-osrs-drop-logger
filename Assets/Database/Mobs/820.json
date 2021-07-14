@@ -1,63 +1,81 @@
 {
-    "id": 820,
-    "name": "Wormbrain",
-    "last_updated": "2020-12-25",
-    "incomplete": true,
-    "members": false,
-    "release_date": "2001-09-23",
-    "combat_level": 2,
-    "size": 1,
-    "hitpoints": 5,
-    "max_hit": 1,
-    "attack_type": [
-        "crush"
-    ],
-    "attack_speed": 4,
-    "aggressive": false,
-    "poisonous": false,
-    "venomous": false,
-    "immune_poison": false,
-    "immune_venom": false,
-    "attributes": [],
-    "category": [
-        "goblin"
-    ],
-    "slayer_monster": true,
-    "slayer_level": 1,
-    "slayer_xp": 5.0,
-    "slayer_masters": [
-        "turael",
-        "spria"
-    ],
-    "duplicate": false,
-    "examine": "A badly-behaved goblin.",
-    "wiki_name": "Wormbrain",
-    "wiki_url": "https://oldschool.runescape.wiki/w/Wormbrain",
-    "attack_level": 1,
-    "strength_level": 1,
-    "defence_level": 1,
-    "magic_level": 1,
-    "ranged_level": 1,
-    "attack_bonus": 0,
-    "strength_bonus": 0,
-    "attack_magic": 0,
-    "magic_bonus": 0,
-    "attack_ranged": 0,
-    "ranged_bonus": 0,
-    "defence_stab": 0,
-    "defence_slash": 0,
-    "defence_crush": 0,
-    "defence_magic": 0,
-    "defence_ranged": 0,
-    "drops": [
-        {
-            "id": 1535,
-            "name": "Map part",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        }
-    ]
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "a6834ada508066d71934b0f58bd7e603e9e4f697",
+  "_id": "60ebb3aec1c55bf074a5e415",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3aec1c55bf074a5e415",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 0,
+  "attack_bonus": 0,
+  "attack_level": 1,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "crush"
+  ],
+  "attributes": [],
+  "category": [
+    "goblins"
+  ],
+  "combat_level": 2,
+  "defence_crush": 0,
+  "defence_level": 1,
+  "defence_magic": 0,
+  "defence_ranged": 0,
+  "defence_slash": 0,
+  "defence_stab": 0,
+  "drops": [
+    {
+      "id": 1535,
+      "members": 0,
+      "name": "Map part",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "A badly-behaved goblin.",
+  "hitpoints": 5,
+  "id": "820",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 1,
+  "members": 0,
+  "name": "Wormbrain",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2001-09-23",
+  "size": 1,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "turael",
+    "spria"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "5.0",
+  "strength_bonus": 0,
+  "strength_level": 1,
+  "venomous": 0,
+  "wiki_name": "Wormbrain",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Wormbrain"
 }

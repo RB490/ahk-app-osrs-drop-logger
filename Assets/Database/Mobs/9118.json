@@ -1,7 +1,7 @@
 {
   "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
-  "_etag": "4d62bef0bd412df8e22b059981f349eaec47224d",
-  "_id": "60cd28b2cfb7392d0090795f",
+  "_etag": "bec67f7d40c0989a093429c2292e3dc4dd2d8426",
+  "_id": "60ebb3b1c1c55bf074a5ecf9",
   "_links": {
     "collection": {
       "href": "monsters",
@@ -12,7 +12,7 @@
       "title": "home"
     },
     "self": {
-      "href": "monsters/60cd28b2cfb7392d0090795f",
+      "href": "monsters/60ebb3b1c1c55bf074a5ecf9",
       "title": "Monster"
     }
   },
@@ -24,7 +24,8 @@
   "attack_ranged": 0,
   "attack_speed": 3,
   "attack_type": [
-    "melee"
+    "melee",
+    "typeless"
   ],
   "attributes": [],
   "category": [],
@@ -71,7 +72,7 @@
   "immune_poison": 1,
   "immune_venom": 1,
   "incomplete": 1,
-  "last_updated": "2020-12-25",
+  "last_updated": "2021-07-12",
   "magic_bonus": 0,
   "magic_level": 300,
   "max_hit": 40,

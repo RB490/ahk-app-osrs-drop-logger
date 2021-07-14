@@ -1,76 +1,94 @@
 {
-    "id": 872,
-    "name": "Skogre",
-    "last_updated": "2020-12-25",
-    "incomplete": true,
-    "members": true,
-    "release_date": "2005-05-17",
-    "combat_level": 44,
-    "size": 2,
-    "hitpoints": 71,
-    "max_hit": 5,
-    "attack_type": [
-        "crush"
-    ],
-    "attack_speed": 6,
-    "aggressive": true,
-    "poisonous": false,
-    "venomous": false,
-    "immune_poison": false,
-    "immune_venom": false,
-    "attributes": [
-        "undead"
-    ],
-    "category": [
-        "ogre",
-        "skeleton"
-    ],
-    "slayer_monster": true,
-    "slayer_level": 1,
-    "slayer_xp": 71.0,
-    "slayer_masters": [
-        "turael",
-        "spria",
-        "vannaka"
-    ],
-    "duplicate": false,
-    "examine": "An undead skeletal ogre.",
-    "wiki_name": "Skogre",
-    "wiki_url": "https://oldschool.runescape.wiki/w/Skogre",
-    "attack_level": 20,
-    "strength_level": 36,
-    "defence_level": 35,
-    "magic_level": 1,
-    "ranged_level": 1,
-    "attack_bonus": 0,
-    "strength_bonus": 0,
-    "attack_magic": 0,
-    "magic_bonus": 0,
-    "attack_ranged": 0,
-    "ranged_bonus": 0,
-    "defence_stab": 0,
-    "defence_slash": 0,
-    "defence_crush": 0,
-    "defence_magic": 0,
-    "defence_ranged": 0,
-    "drops": [
-        {
-            "id": 4812,
-            "name": "Zogre bones",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        },
-        {
-            "id": 4850,
-            "name": "Ogre coffin key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        }
-    ]
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "10d9897fa111d13c708a2c41b7ea3dce576905b2",
+  "_id": "60ebb3aec1c55bf074a5e421",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3aec1c55bf074a5e421",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 0,
+  "attack_level": 20,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 6,
+  "attack_type": [
+    "crush"
+  ],
+  "attributes": [
+    "undead"
+  ],
+  "category": [
+    "ogres",
+    "skeletons"
+  ],
+  "combat_level": 44,
+  "defence_crush": 0,
+  "defence_level": 35,
+  "defence_magic": 0,
+  "defence_ranged": 0,
+  "defence_slash": 0,
+  "defence_stab": 0,
+  "drops": [
+    {
+      "id": 4812,
+      "members": 1,
+      "name": "Zogre bones",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 4850,
+      "members": 1,
+      "name": "Ogre coffin key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "An undead skeletal ogre.",
+  "hitpoints": 71,
+  "id": "872",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 5,
+  "members": 1,
+  "name": "Skogre",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2005-05-17",
+  "size": 2,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "turael",
+    "spria",
+    "vannaka"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "71.0",
+  "strength_bonus": 0,
+  "strength_level": 36,
+  "venomous": 0,
+  "wiki_name": "Skogre",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Skogre"
 }

@@ -1,73 +1,91 @@
 {
-    "id": 3025,
-    "name": "Poison Scorpion",
-    "last_updated": "2020-12-25",
-    "incomplete": true,
-    "members": true,
-    "release_date": "2002-02-27",
-    "combat_level": 20,
-    "size": 2,
-    "hitpoints": 23,
-    "max_hit": 3,
-    "attack_type": [
-        "stab"
-    ],
-    "attack_speed": 4,
-    "aggressive": true,
-    "poisonous": true,
-    "venomous": false,
-    "immune_poison": false,
-    "immune_venom": false,
-    "attributes": [],
-    "category": [
-        "scorpion"
-    ],
-    "slayer_monster": true,
-    "slayer_level": 1,
-    "slayer_xp": 23.0,
-    "slayer_masters": [
-        "turael",
-        "spria",
-        "mazchna"
-    ],
-    "duplicate": false,
-    "examine": "It has a very vicious looking tail.",
-    "wiki_name": "Poison Scorpion",
-    "wiki_url": "https://oldschool.runescape.wiki/w/Poison_Scorpion",
-    "attack_level": 16,
-    "strength_level": 17,
-    "defence_level": 15,
-    "magic_level": 1,
-    "ranged_level": 1,
-    "attack_bonus": 0,
-    "strength_bonus": 0,
-    "attack_magic": 0,
-    "magic_bonus": 0,
-    "attack_ranged": 0,
-    "ranged_bonus": 0,
-    "defence_stab": 5,
-    "defence_slash": 15,
-    "defence_crush": 15,
-    "defence_magic": 0,
-    "defence_ranged": 5,
-    "drops": [
-        {
-            "id": 13459,
-            "name": "Ensouled scorpion head",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.04,
-            "rolls": 1
-        },
-        {
-            "id": 23182,
-            "name": "Clue scroll (beginner)",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.01,
-            "rolls": 1
-        }
-    ]
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "c458f04237f201eb20832b8a4540c02c66b2b85f",
+  "_id": "60ebb3afc1c55bf074a5e6c2",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3afc1c55bf074a5e6c2",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 0,
+  "attack_level": 16,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "stab"
+  ],
+  "attributes": [],
+  "category": [
+    "scorpions"
+  ],
+  "combat_level": 20,
+  "defence_crush": 15,
+  "defence_level": 15,
+  "defence_magic": 0,
+  "defence_ranged": 5,
+  "defence_slash": 15,
+  "defence_stab": 5,
+  "drops": [
+    {
+      "id": 13459,
+      "members": 1,
+      "name": "Ensouled scorpion head",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.04",
+      "rolls": 1
+    },
+    {
+      "id": 23182,
+      "members": 0,
+      "name": "Clue scroll (beginner)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.01",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "It has a very vicious looking tail.",
+  "hitpoints": 23,
+  "id": "3025",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 3,
+  "members": 1,
+  "name": "Poison Scorpion",
+  "poisonous": 1,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2002-02-27",
+  "size": 2,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "turael",
+    "spria",
+    "mazchna"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "23.0",
+  "strength_bonus": 0,
+  "strength_level": 17,
+  "venomous": 0,
+  "wiki_name": "Poison Scorpion",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Poison_Scorpion"
 }

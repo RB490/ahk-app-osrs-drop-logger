@@ -27,7 +27,7 @@ Class ClassGuiProgress extends gui {
             this._text3 := this.add("text", "w" width " center", text3)
         }
 
-        this.Show()
+        this.Show("NoActivate")
     }
 
     T(title) {

@@ -29,7 +29,7 @@ class ClassGuiStart extends gui {
             searchString := this.GetText("Edit1")
 
             ; build display var
-            for id, mob in MOB_DB.GetList()
+            for id, mob in DB_MOB.GetMobList()
                 If InStr(mob, searchString)
                     output .= mob "|"
             output := RTrim(output, "|")
@@ -61,7 +61,7 @@ class ClassGuiStart extends gui {
             return  
         }
         
-        previousMobId := MOB_DB.GetId(SCRIPT_SETTINGS.previousMob)
+        previousMobId := DB_MOB.GetId(SCRIPT_SETTINGS.previousMob)
         GetMobImage(SCRIPT_SETTINGS.previousMob, previousMobId)
 
         this.SetText(this._btnLog, "       Log")

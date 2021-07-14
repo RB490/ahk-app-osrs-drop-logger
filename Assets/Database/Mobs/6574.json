@@ -1,7 +1,7 @@
 {
   "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
-  "_etag": "7e0c78aab6f2fa9b028a93131cb14627aa96f56d",
-  "_id": "60cd28b1cfb7392d00907738",
+  "_etag": "29f4c8a8d9ce0f45542b95bb70c6d5b138228ade",
+  "_id": "60ebb3b1c1c55bf074a5ead2",
   "_links": {
     "collection": {
       "href": "monsters",
@@ -12,7 +12,7 @@
       "title": "home"
     },
     "self": {
-      "href": "monsters/60cd28b1cfb7392d00907738",
+      "href": "monsters/60ebb3b1c1c55bf074a5ead2",
       "title": "Monster"
     }
   },
@@ -47,13 +47,13 @@
     }
   ],
   "duplicate": 0,
-  "examine": "This ghost guards the gates of Port Phasmatys.",
+  "examine": "A tree gnome guard.",
   "hitpoints": 800,
   "id": "6574",
   "immune_poison": 0,
   "immune_venom": 0,
   "incomplete": 1,
-  "last_updated": "2021-06-18",
+  "last_updated": "2021-07-12",
   "magic_bonus": 0,
   "magic_level": 1,
   "max_hit": 45,
@@ -71,6 +71,6 @@
   "strength_bonus": 7,
   "strength_level": 400,
   "venomous": 0,
-  "wiki_name": "Guard (Deadman Mode) (Ghost guard)",
-  "wiki_url": "https://oldschool.runescape.wiki/w/Guard_(Deadman_Mode)#Ghost_guard"
+  "wiki_name": "Guard (Deadman Mode) (Gnome guard)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Guard_(Deadman_Mode)#Gnome_guard"
 }

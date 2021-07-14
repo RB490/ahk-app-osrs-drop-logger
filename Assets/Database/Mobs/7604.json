@@ -1,108 +1,127 @@
 {
-    "id": 7604,
-    "name": "Skeletal Mystic",
-    "last_updated": "2020-12-25",
-    "incomplete": true,
-    "members": true,
-    "release_date": null,
-    "combat_level": 0,
-    "size": 2,
-    "hitpoints": null,
-    "max_hit": null,
-    "attack_type": [
-        "melee",
-        "magic"
-    ],
-    "attack_speed": 4,
-    "aggressive": false,
-    "poisonous": false,
-    "venomous": false,
-    "immune_poison": true,
-    "immune_venom": false,
-    "attributes": [
-        "xerician"
-    ],
-    "category": [
-        "skeleton"
-    ],
-    "slayer_monster": false,
-    "slayer_level": null,
-    "slayer_xp": null,
-    "slayer_masters": [],
-    "duplicate": false,
-    "examine": "Sounds like some kind of hybrid clothing, actually.",
-    "wiki_name": "Skeletal Mystic",
-    "wiki_url": "https://oldschool.runescape.wiki/w/Skeletal_Mystic",
-    "attack_level": 0,
-    "strength_level": 0,
-    "defence_level": 0,
-    "magic_level": 0,
-    "ranged_level": 1,
-    "attack_bonus": 85,
-    "strength_bonus": 50,
-    "attack_magic": 40,
-    "magic_bonus": 38,
-    "attack_ranged": 0,
-    "ranged_bonus": 0,
-    "defence_stab": 155,
-    "defence_slash": 155,
-    "defence_crush": 115,
-    "defence_magic": 140,
-    "defence_ranged": 115,
-    "drops": [
-        {
-            "id": 532,
-            "name": "Big bones",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        },
-        {
-            "id": 20906,
-            "name": "Golpar seed",
-            "members": true,
-            "quantity": "5-10",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        },
-        {
-            "id": 20909,
-            "name": "Buchu seed",
-            "members": true,
-            "quantity": "5-10",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        },
-        {
-            "id": 20903,
-            "name": "Noxifer seed",
-            "members": true,
-            "quantity": "5-10",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        },
-        {
-            "id": 10976,
-            "name": "Long bone",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0025,
-            "rolls": 1
-        },
-        {
-            "id": 10977,
-            "name": "Curved bone",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.00019950124688279303,
-            "rolls": 1
-        }
-    ]
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "3f0d2bdd8333e648f02a9617a5413c948c88829c",
+  "_id": "60ebb3b1c1c55bf074a5ebd0",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3b1c1c55bf074a5ebd0",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 0,
+  "attack_bonus": 85,
+  "attack_level": 0,
+  "attack_magic": 40,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "melee",
+    "magic"
+  ],
+  "attributes": [
+    "undead",
+    "xerician"
+  ],
+  "category": [
+    "skeletons"
+  ],
+  "combat_level": 0,
+  "defence_crush": 115,
+  "defence_level": 0,
+  "defence_magic": 140,
+  "defence_ranged": 115,
+  "defence_slash": 155,
+  "defence_stab": 155,
+  "drops": [
+    {
+      "id": 532,
+      "members": 0,
+      "name": "Big bones",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 20906,
+      "members": 1,
+      "name": "Golpar seed",
+      "noted": 0,
+      "quantity": "5-10",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 20909,
+      "members": 1,
+      "name": "Buchu seed",
+      "noted": 0,
+      "quantity": "5-10",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 20903,
+      "members": 1,
+      "name": "Noxifer seed",
+      "noted": 0,
+      "quantity": "5-10",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 10976,
+      "members": 1,
+      "name": "Long bone",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0025",
+      "rolls": 1
+    },
+    {
+      "id": 10977,
+      "members": 1,
+      "name": "Curved bone",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00019950124688279303",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "Sounds like some kind of hybrid clothing, actually.",
+  "hitpoints": "",
+  "id": "7604",
+  "immune_poison": 1,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 38,
+  "magic_level": 0,
+  "max_hit": "",
+  "members": 1,
+  "name": "Skeletal Mystic",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "",
+  "size": 2,
+  "slayer_level": "",
+  "slayer_masters": [],
+  "slayer_monster": 0,
+  "slayer_xp": "",
+  "strength_bonus": 50,
+  "strength_level": 0,
+  "venomous": 0,
+  "wiki_name": "Skeletal Mystic",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Skeletal_Mystic"
 }

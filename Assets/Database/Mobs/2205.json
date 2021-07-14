@@ -1,299 +1,317 @@
 {
-    "id": 2205,
-    "name": "Commander Zilyana",
-    "last_updated": "2020-12-25",
-    "incomplete": true,
-    "members": true,
-    "release_date": "2013-10-17",
-    "combat_level": 596,
-    "size": 2,
-    "hitpoints": 255,
-    "max_hit": 27,
-    "attack_type": [
-        "crush",
-        "magic"
-    ],
-    "attack_speed": 2,
-    "aggressive": true,
-    "poisonous": false,
-    "venomous": false,
-    "immune_poison": false,
-    "immune_venom": false,
-    "attributes": [],
-    "category": [
-        "boss"
-    ],
-    "slayer_monster": true,
-    "slayer_level": 1,
-    "slayer_xp": 350.0,
-    "slayer_masters": [
-        "konar",
-        "nieve",
-        "duradel"
-    ],
-    "duplicate": false,
-    "examine": "Commander of Saradomin's forces.",
-    "wiki_name": "Commander Zilyana",
-    "wiki_url": "https://oldschool.runescape.wiki/w/Commander_Zilyana",
-    "attack_level": 280,
-    "strength_level": 196,
-    "defence_level": 300,
-    "magic_level": 300,
-    "ranged_level": 250,
-    "attack_bonus": 195,
-    "strength_bonus": 20,
-    "attack_magic": 200,
-    "magic_bonus": 0,
-    "attack_ranged": 0,
-    "ranged_bonus": 0,
-    "defence_stab": 100,
-    "defence_slash": 100,
-    "defence_crush": 100,
-    "defence_magic": 100,
-    "defence_ranged": 100,
-    "drops": [
-        {
-            "id": 526,
-            "name": "Bones",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        },
-        {
-            "id": 811,
-            "name": "Rune dart",
-            "members": true,
-            "quantity": "35-40",
-            "noted": false,
-            "rarity": 0.06299212598425197,
-            "rolls": 1
-        },
-        {
-            "id": 1201,
-            "name": "Rune kiteshield",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.06299212598425197,
-            "rolls": 1
-        },
-        {
-            "id": 1093,
-            "name": "Rune plateskirt",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.06299212598425197,
-            "rolls": 1
-        },
-        {
-            "id": 2434,
-            "name": "Prayer potion(4)",
-            "members": true,
-            "quantity": "3",
-            "noted": false,
-            "rarity": 0.06299212598425197,
-            "rolls": 1
-        },
-        {
-            "id": 6687,
-            "name": "Saradomin brew(3)",
-            "members": true,
-            "quantity": "3",
-            "noted": false,
-            "rarity": 0.047244094488188976,
-            "rolls": 1
-        },
-        {
-            "id": 3024,
-            "name": "Super restore(4)",
-            "members": true,
-            "quantity": "3",
-            "noted": false,
-            "rarity": 0.047244094488188976,
-            "rolls": 1
-        },
-        {
-            "id": 163,
-            "name": "Super defence(3)",
-            "members": true,
-            "quantity": "3",
-            "noted": false,
-            "rarity": 0.06299212598425197,
-            "rolls": 1
-        },
-        {
-            "id": 3042,
-            "name": "Magic potion(3)",
-            "members": true,
-            "quantity": "3",
-            "noted": false,
-            "rarity": 0.06299212598425197,
-            "rolls": 1
-        },
-        {
-            "id": 995,
-            "name": "Coins",
-            "members": false,
-            "quantity": "19500-20000",
-            "noted": false,
-            "rarity": 0.24566929133858267,
-            "rolls": 1
-        },
-        {
-            "id": 1601,
-            "name": "Diamond",
-            "members": false,
-            "quantity": "6",
-            "noted": true,
-            "rarity": 0.06299212598425197,
-            "rolls": 1
-        },
-        {
-            "id": 11838,
-            "name": "Saradomin sword",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.007874015748031496,
-            "rolls": 1
-        },
-        {
-            "id": 563,
-            "name": "Law rune",
-            "members": false,
-            "quantity": "95-100",
-            "noted": false,
-            "rarity": 0.06299212598425197,
-            "rolls": 1
-        },
-        {
-            "id": 207,
-            "name": "Grimy ranarr weed",
-            "members": true,
-            "quantity": "5",
-            "noted": true,
-            "rarity": 0.06299212598425197,
-            "rolls": 1
-        },
-        {
-            "id": 5295,
-            "name": "Ranarr seed",
-            "members": true,
-            "quantity": "2",
-            "noted": false,
-            "rarity": 0.06299212598425197,
-            "rolls": 1
-        },
-        {
-            "id": 5316,
-            "name": "Magic seed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.007874015748031496,
-            "rolls": 1
-        },
-        {
-            "id": 1289,
-            "name": "Rune sword",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0024606299212598425,
-            "rolls": 1
-        },
-        {
-            "id": 13256,
-            "name": "Saradomin's light",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.003937007874015748,
-            "rolls": 1
-        },
-        {
-            "id": 11785,
-            "name": "Armadyl crossbow",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.001968503937007874,
-            "rolls": 1
-        },
-        {
-            "id": 23083,
-            "name": "Brimstone key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.02,
-            "rolls": 1
-        },
-        {
-            "id": 11814,
-            "name": "Saradomin hilt",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.001968503937007874,
-            "rolls": 1
-        },
-        {
-            "id": 12073,
-            "name": "Clue scroll (elite)",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.004,
-            "rolls": 1
-        },
-        {
-            "id": 12651,
-            "name": "Pet zilyana",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0002,
-            "rolls": 1
-        },
-        {
-            "id": 11818,
-            "name": "Godsword shard 1",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0013123359580052493,
-            "rolls": 1
-        },
-        {
-            "id": 11820,
-            "name": "Godsword shard 2",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0013123359580052493,
-            "rolls": 1
-        },
-        {
-            "id": 11822,
-            "name": "Godsword shard 3",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0013123359580052493,
-            "rolls": 1
-        },
-        {
-            "id": 1123,
-            "name": "Adamant platebody",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.06299212598425197,
-            "rolls": 1
-        }
-    ]
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "b41a8404b7fb7c33a36b09f6af9cad0d697378c1",
+  "_id": "60ebb3afc1c55bf074a5e5d8",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3afc1c55bf074a5e5d8",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 195,
+  "attack_level": 280,
+  "attack_magic": 200,
+  "attack_ranged": 0,
+  "attack_speed": 2,
+  "attack_type": [
+    "crush",
+    "magic"
+  ],
+  "attributes": [],
+  "category": [
+    "bosses"
+  ],
+  "combat_level": 596,
+  "defence_crush": 100,
+  "defence_level": 300,
+  "defence_magic": 100,
+  "defence_ranged": 100,
+  "defence_slash": 100,
+  "defence_stab": 100,
+  "drops": [
+    {
+      "id": 526,
+      "members": 0,
+      "name": "Bones",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 811,
+      "members": 1,
+      "name": "Rune dart",
+      "noted": 0,
+      "quantity": "35-40",
+      "rarity": "0.06299212598425197",
+      "rolls": 1
+    },
+    {
+      "id": 1201,
+      "members": 0,
+      "name": "Rune kiteshield",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.06299212598425197",
+      "rolls": 1
+    },
+    {
+      "id": 1093,
+      "members": 0,
+      "name": "Rune plateskirt",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.06299212598425197",
+      "rolls": 1
+    },
+    {
+      "id": 2434,
+      "members": 1,
+      "name": "Prayer potion(4)",
+      "noted": 0,
+      "quantity": "3",
+      "rarity": "0.06299212598425197",
+      "rolls": 1
+    },
+    {
+      "id": 6687,
+      "members": 1,
+      "name": "Saradomin brew(3)",
+      "noted": 0,
+      "quantity": "3",
+      "rarity": "0.047244094488188976",
+      "rolls": 1
+    },
+    {
+      "id": 3024,
+      "members": 1,
+      "name": "Super restore(4)",
+      "noted": 0,
+      "quantity": "3",
+      "rarity": "0.047244094488188976",
+      "rolls": 1
+    },
+    {
+      "id": 163,
+      "members": 1,
+      "name": "Super defence(3)",
+      "noted": 0,
+      "quantity": "3",
+      "rarity": "0.06299212598425197",
+      "rolls": 1
+    },
+    {
+      "id": 3042,
+      "members": 1,
+      "name": "Magic potion(3)",
+      "noted": 0,
+      "quantity": "3",
+      "rarity": "0.06299212598425197",
+      "rolls": 1
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "19500-20000",
+      "rarity": "0.24566929133858267",
+      "rolls": 1
+    },
+    {
+      "id": 1601,
+      "members": 0,
+      "name": "Diamond",
+      "noted": 1,
+      "quantity": "6",
+      "rarity": "0.06299212598425197",
+      "rolls": 1
+    },
+    {
+      "id": 11838,
+      "members": 1,
+      "name": "Saradomin sword",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.007874015748031496",
+      "rolls": 1
+    },
+    {
+      "id": 563,
+      "members": 0,
+      "name": "Law rune",
+      "noted": 0,
+      "quantity": "95-100",
+      "rarity": "0.06299212598425197",
+      "rolls": 1
+    },
+    {
+      "id": 207,
+      "members": 1,
+      "name": "Grimy ranarr weed",
+      "noted": 1,
+      "quantity": "5",
+      "rarity": "0.06299212598425197",
+      "rolls": 1
+    },
+    {
+      "id": 5295,
+      "members": 1,
+      "name": "Ranarr seed",
+      "noted": 0,
+      "quantity": "2",
+      "rarity": "0.06299212598425197",
+      "rolls": 1
+    },
+    {
+      "id": 5316,
+      "members": 1,
+      "name": "Magic seed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.007874015748031496",
+      "rolls": 1
+    },
+    {
+      "id": 1289,
+      "members": 0,
+      "name": "Rune sword",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0024606299212598425",
+      "rolls": 1
+    },
+    {
+      "id": 13256,
+      "members": 1,
+      "name": "Saradomin's light",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.003937007874015748",
+      "rolls": 1
+    },
+    {
+      "id": 11785,
+      "members": 1,
+      "name": "Armadyl crossbow",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.001968503937007874",
+      "rolls": 1
+    },
+    {
+      "id": 23083,
+      "members": 1,
+      "name": "Brimstone key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.02",
+      "rolls": 1
+    },
+    {
+      "id": 11814,
+      "members": 1,
+      "name": "Saradomin hilt",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.001968503937007874",
+      "rolls": 1
+    },
+    {
+      "id": 12073,
+      "members": 1,
+      "name": "Clue scroll (elite)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.004",
+      "rolls": 1
+    },
+    {
+      "id": 12651,
+      "members": 1,
+      "name": "Pet zilyana",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0002",
+      "rolls": 1
+    },
+    {
+      "id": 11818,
+      "members": 1,
+      "name": "Godsword shard 1",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0013123359580052493",
+      "rolls": 1
+    },
+    {
+      "id": 11820,
+      "members": 1,
+      "name": "Godsword shard 2",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0013123359580052493",
+      "rolls": 1
+    },
+    {
+      "id": 11822,
+      "members": 1,
+      "name": "Godsword shard 3",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0013123359580052493",
+      "rolls": 1
+    },
+    {
+      "id": 1123,
+      "members": 0,
+      "name": "Adamant platebody",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.06299212598425197",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "Commander of Saradomin's forces.",
+  "hitpoints": 255,
+  "id": "2205",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 300,
+  "max_hit": 27,
+  "members": 1,
+  "name": "Commander Zilyana",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 250,
+  "release_date": "2013-10-17",
+  "size": 2,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "konar",
+    "nieve",
+    "duradel"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "350.0",
+  "strength_bonus": 20,
+  "strength_level": 196,
+  "venomous": 0,
+  "wiki_name": "Commander Zilyana",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Commander_Zilyana"
 }

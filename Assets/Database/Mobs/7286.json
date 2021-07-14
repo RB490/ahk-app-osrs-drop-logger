@@ -1,348 +1,375 @@
 {
-    "id": 7286,
-    "name": "Skotizo",
-    "last_updated": "2021-06-18",
-    "incomplete": true,
-    "members": true,
-    "release_date": "2016-06-16",
-    "combat_level": 321,
-    "size": 5,
-    "hitpoints": 450,
-    "max_hit": 38,
-    "attack_type": [
-        "slash",
-        "magic"
-    ],
-    "attack_speed": 6,
-    "aggressive": true,
-    "poisonous": false,
-    "venomous": false,
-    "immune_poison": false,
-    "immune_venom": false,
-    "attributes": [
-        "demon"
-    ],
-    "category": [
-        "black demon",
-        "greater demon"
-    ],
-    "slayer_monster": true,
-    "slayer_level": 1,
-    "slayer_xp": 618.5,
-    "slayer_masters": [
-        "chaeldar",
-        "konar",
-        "nieve",
-        "duradel"
-    ],
-    "duplicate": false,
-    "examine": "A darkly altared demon.",
-    "wiki_name": "Skotizo",
-    "wiki_url": "https://oldschool.runescape.wiki/w/Skotizo",
-    "attack_level": 240,
-    "strength_level": 250,
-    "defence_level": 200,
-    "magic_level": 280,
-    "ranged_level": 1,
-    "attack_bonus": 160,
-    "strength_bonus": 31,
-    "attack_magic": 0,
-    "magic_bonus": 0,
-    "attack_ranged": 0,
-    "ranged_bonus": 0,
-    "defence_stab": 80,
-    "defence_slash": 80,
-    "defence_crush": 80,
-    "defence_magic": 130,
-    "defence_ranged": 130,
-    "drops": [
-        {
-            "id": 1127,
-            "name": "Rune platebody",
-            "members": false,
-            "quantity": "3",
-            "noted": true,
-            "rarity": 0.07,
-            "rolls": 1
-        },
-        {
-            "id": 1079,
-            "name": "Rune platelegs",
-            "members": false,
-            "quantity": "3",
-            "noted": true,
-            "rarity": 0.07,
-            "rolls": 1
-        },
-        {
-            "id": 1093,
-            "name": "Rune plateskirt",
-            "members": false,
-            "quantity": "3",
-            "noted": true,
-            "rarity": 0.07,
-            "rolls": 1
-        },
-        {
-            "id": 560,
-            "name": "Death rune",
-            "members": false,
-            "quantity": "500",
-            "noted": false,
-            "rarity": 0.07,
-            "rolls": 1
-        },
-        {
-            "id": 566,
-            "name": "Soul rune",
-            "members": true,
-            "quantity": "450",
-            "noted": false,
-            "rarity": 0.07,
-            "rolls": 1
-        },
-        {
-            "id": 565,
-            "name": "Blood rune",
-            "members": true,
-            "quantity": "450",
-            "noted": false,
-            "rarity": 0.07,
-            "rolls": 1
-        },
-        {
-            "id": 449,
-            "name": "Adamantite ore",
-            "members": false,
-            "quantity": "75",
-            "noted": true,
-            "rarity": 0.07,
-            "rolls": 1
-        },
-        {
-            "id": 3051,
-            "name": "Grimy snapdragon",
-            "members": true,
-            "quantity": "20",
-            "noted": true,
-            "rarity": 0.07,
-            "rolls": 1
-        },
-        {
-            "id": 219,
-            "name": "Grimy torstol",
-            "members": true,
-            "quantity": "20",
-            "noted": true,
-            "rarity": 0.07,
-            "rolls": 1
-        },
-        {
-            "id": 13439,
-            "name": "Raw anglerfish",
-            "members": true,
-            "quantity": "60",
-            "noted": true,
-            "rarity": 0.07,
-            "rolls": 1
-        },
-        {
-            "id": 2722,
-            "name": "Clue scroll (hard)",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        },
-        {
-            "id": 2363,
-            "name": "Runite bar",
-            "members": false,
-            "quantity": "20",
-            "noted": true,
-            "rarity": 0.07,
-            "rolls": 1
-        },
-        {
-            "id": 8782,
-            "name": "Mahogany plank",
-            "members": true,
-            "quantity": "150",
-            "noted": true,
-            "rarity": 0.07,
-            "rolls": 1
-        },
-        {
-            "id": 1391,
-            "name": "Battlestaff",
-            "members": true,
-            "quantity": "25",
-            "noted": true,
-            "rarity": 0.07,
-            "rolls": 1
-        },
-        {
-            "id": 9194,
-            "name": "Onyx bolt tips",
-            "members": true,
-            "quantity": "40",
-            "noted": false,
-            "rarity": 0.07,
-            "rolls": 1
-        },
-        {
-            "id": 2366,
-            "name": "Shield left half",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.01,
-            "rolls": 1
-        },
-        {
-            "id": 12073,
-            "name": "Clue scroll (elite)",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.2,
-            "rolls": 1
-        },
-        {
-            "id": 21275,
-            "name": "Dark claw",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.04,
-            "rolls": 1
-        },
-        {
-            "id": 23083,
-            "name": "Brimstone key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.01818181818181818,
-            "rolls": 1
-        },
-        {
-            "id": 21273,
-            "name": "Skotos",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.015384615384615385,
-            "rolls": 1
-        },
-        {
-            "id": 19679,
-            "name": "Dark totem base",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0234375,
-            "rolls": 1
-        },
-        {
-            "id": 19677,
-            "name": "Ancient shard",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.75,
-            "rolls": 1
-        },
-        {
-            "id": 19681,
-            "name": "Dark totem middle",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0234375,
-            "rolls": 1
-        },
-        {
-            "id": 19683,
-            "name": "Dark totem top",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0234375,
-            "rolls": 1
-        },
-        {
-            "id": 19685,
-            "name": "Dark totem",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 19701,
-            "name": "Jar of darkness",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0004,
-            "rolls": 1
-        },
-        {
-            "id": 19677,
-            "name": "Ancient shard",
-            "members": true,
-            "quantity": "2",
-            "noted": false,
-            "rarity": 0.15,
-            "rolls": 1
-        },
-        {
-            "id": 19677,
-            "name": "Ancient shard",
-            "members": true,
-            "quantity": "3",
-            "noted": false,
-            "rarity": 0.05,
-            "rolls": 1
-        },
-        {
-            "id": 19677,
-            "name": "Ancient shard",
-            "members": true,
-            "quantity": "4",
-            "noted": false,
-            "rarity": 0.04,
-            "rolls": 1
-        },
-        {
-            "id": 19677,
-            "name": "Ancient shard",
-            "members": true,
-            "quantity": "5",
-            "noted": false,
-            "rarity": 0.01,
-            "rolls": 1
-        },
-        {
-            "id": 1631,
-            "name": "Uncut dragonstone",
-            "members": true,
-            "quantity": "10",
-            "noted": true,
-            "rarity": 0.009,
-            "rolls": 1
-        },
-        {
-            "id": 6571,
-            "name": "Uncut onyx",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.001,
-            "rolls": 1
-        }
-    ]
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "546944c3d0e557f3b79e8f279b1b9932fcd367a4",
+  "_id": "60ebb3b1c1c55bf074a5eb81",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3b1c1c55bf074a5eb81",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 160,
+  "attack_level": 240,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 6,
+  "attack_type": [
+    "slash",
+    "magic"
+  ],
+  "attributes": [
+    "demon"
+  ],
+  "category": [
+    "black demons",
+    "greater demons"
+  ],
+  "combat_level": 321,
+  "defence_crush": 80,
+  "defence_level": 200,
+  "defence_magic": 130,
+  "defence_ranged": 130,
+  "defence_slash": 80,
+  "defence_stab": 80,
+  "drops": [
+    {
+      "id": 25775,
+      "members": 1,
+      "name": "Infernal ashes",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 1127,
+      "members": 0,
+      "name": "Rune platebody",
+      "noted": 1,
+      "quantity": "3",
+      "rarity": "0.07",
+      "rolls": 1
+    },
+    {
+      "id": 1079,
+      "members": 0,
+      "name": "Rune platelegs",
+      "noted": 1,
+      "quantity": "3",
+      "rarity": "0.07",
+      "rolls": 1
+    },
+    {
+      "id": 1093,
+      "members": 0,
+      "name": "Rune plateskirt",
+      "noted": 1,
+      "quantity": "3",
+      "rarity": "0.07",
+      "rolls": 1
+    },
+    {
+      "id": 560,
+      "members": 0,
+      "name": "Death rune",
+      "noted": 0,
+      "quantity": "500",
+      "rarity": "0.07",
+      "rolls": 1
+    },
+    {
+      "id": 566,
+      "members": 1,
+      "name": "Soul rune",
+      "noted": 0,
+      "quantity": "450",
+      "rarity": "0.07",
+      "rolls": 1
+    },
+    {
+      "id": 565,
+      "members": 1,
+      "name": "Blood rune",
+      "noted": 0,
+      "quantity": "450",
+      "rarity": "0.07",
+      "rolls": 1
+    },
+    {
+      "id": 449,
+      "members": 0,
+      "name": "Adamantite ore",
+      "noted": 1,
+      "quantity": "75",
+      "rarity": "0.07",
+      "rolls": 1
+    },
+    {
+      "id": 3051,
+      "members": 1,
+      "name": "Grimy snapdragon",
+      "noted": 1,
+      "quantity": "20",
+      "rarity": "0.07",
+      "rolls": 1
+    },
+    {
+      "id": 219,
+      "members": 1,
+      "name": "Grimy torstol",
+      "noted": 1,
+      "quantity": "20",
+      "rarity": "0.07",
+      "rolls": 1
+    },
+    {
+      "id": 13439,
+      "members": 1,
+      "name": "Raw anglerfish",
+      "noted": 1,
+      "quantity": "60",
+      "rarity": "0.07",
+      "rolls": 1
+    },
+    {
+      "id": 2722,
+      "members": 1,
+      "name": "Clue scroll (hard)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 2363,
+      "members": 0,
+      "name": "Runite bar",
+      "noted": 1,
+      "quantity": "20",
+      "rarity": "0.07",
+      "rolls": 1
+    },
+    {
+      "id": 8782,
+      "members": 1,
+      "name": "Mahogany plank",
+      "noted": 1,
+      "quantity": "150",
+      "rarity": "0.07",
+      "rolls": 1
+    },
+    {
+      "id": 1391,
+      "members": 1,
+      "name": "Battlestaff",
+      "noted": 1,
+      "quantity": "25",
+      "rarity": "0.07",
+      "rolls": 1
+    },
+    {
+      "id": 9194,
+      "members": 1,
+      "name": "Onyx bolt tips",
+      "noted": 0,
+      "quantity": "40",
+      "rarity": "0.07",
+      "rolls": 1
+    },
+    {
+      "id": 2366,
+      "members": 1,
+      "name": "Shield left half",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.01",
+      "rolls": 1
+    },
+    {
+      "id": 12073,
+      "members": 1,
+      "name": "Clue scroll (elite)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.2",
+      "rolls": 1
+    },
+    {
+      "id": 21275,
+      "members": 1,
+      "name": "Dark claw",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.04",
+      "rolls": 1
+    },
+    {
+      "id": 23083,
+      "members": 1,
+      "name": "Brimstone key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.01818181818181818",
+      "rolls": 1
+    },
+    {
+      "id": 21273,
+      "members": 1,
+      "name": "Skotos",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.015384615384615385",
+      "rolls": 1
+    },
+    {
+      "id": 19679,
+      "members": 1,
+      "name": "Dark totem base",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0234375",
+      "rolls": 1
+    },
+    {
+      "id": 19677,
+      "members": 1,
+      "name": "Ancient shard",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.75",
+      "rolls": 1
+    },
+    {
+      "id": 19681,
+      "members": 1,
+      "name": "Dark totem middle",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0234375",
+      "rolls": 1
+    },
+    {
+      "id": 19683,
+      "members": 1,
+      "name": "Dark totem top",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0234375",
+      "rolls": 1
+    },
+    {
+      "id": 19685,
+      "members": 1,
+      "name": "Dark totem",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 19701,
+      "members": 1,
+      "name": "Jar of darkness",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0004",
+      "rolls": 1
+    },
+    {
+      "id": 19677,
+      "members": 1,
+      "name": "Ancient shard",
+      "noted": 0,
+      "quantity": "2",
+      "rarity": "0.15",
+      "rolls": 1
+    },
+    {
+      "id": 19677,
+      "members": 1,
+      "name": "Ancient shard",
+      "noted": 0,
+      "quantity": "3",
+      "rarity": "0.05",
+      "rolls": 1
+    },
+    {
+      "id": 19677,
+      "members": 1,
+      "name": "Ancient shard",
+      "noted": 0,
+      "quantity": "4",
+      "rarity": "0.04",
+      "rolls": 1
+    },
+    {
+      "id": 19677,
+      "members": 1,
+      "name": "Ancient shard",
+      "noted": 0,
+      "quantity": "5",
+      "rarity": "0.01",
+      "rolls": 1
+    },
+    {
+      "id": 1631,
+      "members": 1,
+      "name": "Uncut dragonstone",
+      "noted": 1,
+      "quantity": "10",
+      "rarity": "0.009",
+      "rolls": 1
+    },
+    {
+      "id": 6571,
+      "members": 1,
+      "name": "Uncut onyx",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.001",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "A darkly altared demon.",
+  "hitpoints": 450,
+  "id": "7286",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 280,
+  "max_hit": 38,
+  "members": 1,
+  "name": "Skotizo",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2016-06-16",
+  "size": 5,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "chaeldar",
+    "konar",
+    "nieve",
+    "duradel"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "618.5",
+  "strength_bonus": 31,
+  "strength_level": 250,
+  "venomous": 0,
+  "wiki_name": "Skotizo",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Skotizo"
 }

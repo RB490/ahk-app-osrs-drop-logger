@@ -1,72 +1,90 @@
 {
-    "id": 626,
-    "name": "Fever spider",
-    "last_updated": "2021-06-18",
-    "incomplete": true,
-    "members": true,
-    "release_date": "2005-10-31",
-    "combat_level": 49,
-    "size": 2,
-    "hitpoints": 40,
-    "max_hit": 4,
-    "attack_type": [
-        "stab"
-    ],
-    "attack_speed": 4,
-    "aggressive": false,
-    "poisonous": false,
-    "venomous": false,
-    "immune_poison": false,
-    "immune_venom": false,
-    "attributes": [],
-    "category": [
-        "fever spider"
-    ],
-    "slayer_monster": true,
-    "slayer_level": 42,
-    "slayer_xp": 40.0,
-    "slayer_masters": [
-        "vannaka",
-        "chaeldar"
-    ],
-    "duplicate": false,
-    "examine": "A bunch of legs, eyes and teeth.",
-    "wiki_name": "Fever spider",
-    "wiki_url": "https://oldschool.runescape.wiki/w/Fever_spider",
-    "attack_level": 60,
-    "strength_level": 30,
-    "defence_level": 40,
-    "magic_level": 1,
-    "ranged_level": 1,
-    "attack_bonus": 0,
-    "strength_bonus": 0,
-    "attack_magic": 0,
-    "magic_bonus": 0,
-    "attack_ranged": 0,
-    "ranged_bonus": 0,
-    "defence_stab": 20,
-    "defence_slash": 15,
-    "defence_crush": 10,
-    "defence_magic": 15,
-    "defence_ranged": 15,
-    "drops": [
-        {
-            "id": 6718,
-            "name": "Fever spider body",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        },
-        {
-            "id": 213,
-            "name": "Grimy kwuarm",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.08333333333333333,
-            "rolls": 1
-        }
-    ]
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "9a038fddabaf334eced573d96947562ce99ad106",
+  "_id": "60ebb3aec1c55bf074a5e3bf",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3aec1c55bf074a5e3bf",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 0,
+  "attack_bonus": 0,
+  "attack_level": 60,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "stab"
+  ],
+  "attributes": [],
+  "category": [
+    "fever spiders"
+  ],
+  "combat_level": 49,
+  "defence_crush": 10,
+  "defence_level": 40,
+  "defence_magic": 15,
+  "defence_ranged": 15,
+  "defence_slash": 15,
+  "defence_stab": 20,
+  "drops": [
+    {
+      "id": 6718,
+      "members": 1,
+      "name": "Fever spider body",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 213,
+      "members": 1,
+      "name": "Grimy kwuarm",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.08333333333333333",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "A bunch of legs, eyes and teeth.",
+  "hitpoints": 40,
+  "id": "626",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 4,
+  "members": 1,
+  "name": "Fever spider",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2005-10-31",
+  "size": 2,
+  "slayer_level": 42,
+  "slayer_masters": [
+    "vannaka",
+    "chaeldar"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "40.0",
+  "strength_bonus": 0,
+  "strength_level": 30,
+  "venomous": 0,
+  "wiki_name": "Fever spider",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Fever_spider"
 }

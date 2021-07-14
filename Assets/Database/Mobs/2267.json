@@ -1,616 +1,526 @@
 {
-    "id": 2267,
-    "name": "Dagannoth Rex",
-    "last_updated": "2020-12-25",
-    "incomplete": true,
-    "members": true,
-    "release_date": "2005-11-07",
-    "combat_level": 303,
-    "size": 3,
-    "hitpoints": 255,
-    "max_hit": 26,
-    "attack_type": [
-        "slash"
-    ],
-    "attack_speed": 4,
-    "aggressive": true,
-    "poisonous": false,
-    "venomous": false,
-    "immune_poison": false,
-    "immune_venom": false,
-    "attributes": [],
-    "category": [
-        "boss",
-        "dagannoth"
-    ],
-    "slayer_monster": true,
-    "slayer_level": 1,
-    "slayer_xp": 331.5,
-    "slayer_masters": [
-        "vannaka",
-        "chaeldar",
-        "konar",
-        "nieve",
-        "duradel"
-    ],
-    "duplicate": false,
-    "examine": "Firstborn of the legendary Dagannoth Kings.",
-    "wiki_name": "Dagannoth Rex",
-    "wiki_url": "https://oldschool.runescape.wiki/w/Dagannoth_Rex",
-    "attack_level": 255,
-    "strength_level": 255,
-    "defence_level": 255,
-    "magic_level": 0,
-    "ranged_level": 255,
-    "attack_bonus": 0,
-    "strength_bonus": 0,
-    "attack_magic": 0,
-    "magic_bonus": 0,
-    "attack_ranged": 0,
-    "ranged_bonus": 0,
-    "defence_stab": 255,
-    "defence_slash": 255,
-    "defence_crush": 255,
-    "defence_magic": 10,
-    "defence_ranged": 255,
-    "drops": [
-        {
-            "id": 1623,
-            "name": "Uncut sapphire",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.01953125,
-            "rolls": 1
-        },
-        {
-            "id": 1621,
-            "name": "Uncut emerald",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.009765625,
-            "rolls": 1
-        },
-        {
-            "id": 1619,
-            "name": "Uncut ruby",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0048828125,
-            "rolls": 1
-        },
-        {
-            "id": 1452,
-            "name": "Chaos talisman",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0018309116475275368,
-            "rolls": 1
-        },
-        {
-            "id": 1462,
-            "name": "Nature talisman",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0018309116475275368,
-            "rolls": 1
-        },
-        {
-            "id": 1617,
-            "name": "Uncut diamond",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.001220703125,
-            "rolls": 1
-        },
-        {
-            "id": 830,
-            "name": "Rune javelin",
-            "members": true,
-            "quantity": "5",
-            "noted": false,
-            "rarity": 0.0006103515625,
-            "rolls": 1
-        },
-        {
-            "id": 987,
-            "name": "Loop half of key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0006103515625,
-            "rolls": 1
-        },
-        {
-            "id": 985,
-            "name": "Tooth half of key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0006103515625,
-            "rolls": 1
-        },
-        {
-            "id": 1247,
-            "name": "Rune spear",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 3.814697265625e-05,
-            "rolls": 1
-        },
-        {
-            "id": 2366,
-            "name": "Shield left half",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.9073486328125e-05,
-            "rolls": 1
-        },
-        {
-            "id": 1249,
-            "name": "Dragon spear",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.4303997246308881e-05,
-            "rolls": 1
-        },
-        {
-            "id": 6729,
-            "name": "Dagannoth bones",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        },
-        {
-            "id": 1359,
-            "name": "Rune axe",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 3758,
-            "name": "Fremennik shield",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 3748,
-            "name": "Fremennik helm",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 1315,
-            "name": "Mithril 2h sword",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 6739,
-            "name": "Dragon axe",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 2570,
-            "name": "Ring of life",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 6129,
-            "name": "Rock-shell plate",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 6130,
-            "name": "Rock-shell legs",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 6737,
-            "name": "Berserker ring",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 6735,
-            "name": "Warrior ring",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 6155,
-            "name": "Dagannoth hide",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        },
-        {
-            "id": 2456,
-            "name": "Antifire potion(2)",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 141,
-            "name": "Prayer potion(2)",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 129,
-            "name": "Restore potion(2)",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 147,
-            "name": "Super attack(2)",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 159,
-            "name": "Super strength(2)",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 165,
-            "name": "Super defence(2)",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 191,
-            "name": "Zamorak brew(2)",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 447,
-            "name": "Mithril ore",
-            "members": false,
-            "quantity": "25",
-            "noted": true,
-            "rarity": 0.078125,
-            "rolls": 1
-        },
-        {
-            "id": 2361,
-            "name": "Adamantite bar",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0234375,
-            "rolls": 1
-        },
-        {
-            "id": 453,
-            "name": "Coal",
-            "members": false,
-            "quantity": "100",
-            "noted": true,
-            "rarity": 0.015625,
-            "rolls": 1
-        },
-        {
-            "id": 1193,
-            "name": "Steel kiteshield",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.1328125,
-            "rolls": 1
-        },
-        {
-            "id": 440,
-            "name": "Iron ore",
-            "members": false,
-            "quantity": "150",
-            "noted": true,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 2353,
-            "name": "Steel bar",
-            "members": false,
-            "quantity": "15-30",
-            "noted": true,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 1438,
-            "name": "Air talisman",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0011160714285714285,
-            "rolls": 1
-        },
-        {
-            "id": 1446,
-            "name": "Body talisman",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0011160714285714285,
-            "rolls": 1
-        },
-        {
-            "id": 1440,
-            "name": "Earth talisman",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0011160714285714285,
-            "rolls": 1
-        },
-        {
-            "id": 1442,
-            "name": "Fire talisman",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0011160714285714285,
-            "rolls": 1
-        },
-        {
-            "id": 1448,
-            "name": "Mind talisman",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0011160714285714285,
-            "rolls": 1
-        },
-        {
-            "id": 1444,
-            "name": "Water talisman",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0011160714285714285,
-            "rolls": 1
-        },
-        {
-            "id": 1454,
-            "name": "Cosmic talisman",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0004464285714285714,
-            "rolls": 1
-        },
-        {
-            "id": 1452,
-            "name": "Chaos talisman",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.00033481769176683295,
-            "rolls": 1
-        },
-        {
-            "id": 1343,
-            "name": "Mithril warhammer",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0859375,
-            "rolls": 1
-        },
-        {
-            "id": 1462,
-            "name": "Nature talisman",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.00033481769176683295,
-            "rolls": 1
-        },
-        {
-            "id": 995,
-            "name": "Coins",
-            "members": false,
-            "quantity": "100-1209",
-            "noted": false,
-            "rarity": 0.078125,
-            "rolls": 1
-        },
-        {
-            "id": 207,
-            "name": "Grimy ranarr weed",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0546875,
-            "rolls": 1
-        },
-        {
-            "id": 365,
-            "name": "Bass",
-            "members": true,
-            "quantity": "5",
-            "noted": false,
-            "rarity": 0.0546875,
-            "rolls": 1
-        },
-        {
-            "id": 373,
-            "name": "Swordfish",
-            "members": false,
-            "quantity": "5",
-            "noted": false,
-            "rarity": 0.03125,
-            "rolls": 1
-        },
-        {
-            "id": 385,
-            "name": "Shark",
-            "members": true,
-            "quantity": "5",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 1357,
-            "name": "Adamant axe",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0546875,
-            "rolls": 1
-        },
-        {
-            "id": 1119,
-            "name": "Steel platebody",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.03125,
-            "rolls": 1
-        },
-        {
-            "id": 1273,
-            "name": "Mithril pickaxe",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0234375,
-            "rolls": 1
-        },
-        {
-            "id": 13492,
-            "name": "Ensouled dagannoth head",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.05,
-            "rolls": 1
-        },
-        {
-            "id": 2722,
-            "name": "Clue scroll (hard)",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.023809523809523808,
-            "rolls": 1
-        },
-        {
-            "id": 23083,
-            "name": "Brimstone key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.01694915254237288,
-            "rolls": 1
-        },
-        {
-            "id": 12073,
-            "name": "Clue scroll (elite)",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0013333333333333333,
-            "rolls": 1
-        },
-        {
-            "id": 12645,
-            "name": "Pet dagannoth rex",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0002,
-            "rolls": 1
-        },
-        {
-            "id": 1123,
-            "name": "Adamant platebody",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.015625,
-            "rolls": 1
-        },
-        {
-            "id": 3757,
-            "name": "Fremennik blade",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.015625,
-            "rolls": 1
-        }
-    ]
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "5ec3ad6eb17d0278fa628d26175162828e261389",
+  "_id": "60ebb3afc1c55bf074a5e5fc",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3afc1c55bf074a5e5fc",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 0,
+  "attack_level": 255,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "slash"
+  ],
+  "attributes": [],
+  "category": [
+    "bosses",
+    "dagannoth"
+  ],
+  "combat_level": 303,
+  "defence_crush": 255,
+  "defence_level": 255,
+  "defence_magic": 10,
+  "defence_ranged": 255,
+  "defence_slash": 255,
+  "defence_stab": 255,
+  "drops": [
+    {
+      "id": 6729,
+      "members": 1,
+      "name": "Dagannoth bones",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 1359,
+      "members": 0,
+      "name": "Rune axe",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 3758,
+      "members": 1,
+      "name": "Fremennik shield",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 3748,
+      "members": 1,
+      "name": "Fremennik helm",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 1315,
+      "members": 0,
+      "name": "Mithril 2h sword",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 6739,
+      "members": 1,
+      "name": "Dragon axe",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 2570,
+      "members": 1,
+      "name": "Ring of life",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 6129,
+      "members": 1,
+      "name": "Rock-shell plate",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 6130,
+      "members": 1,
+      "name": "Rock-shell legs",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 6737,
+      "members": 1,
+      "name": "Berserker ring",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 6735,
+      "members": 1,
+      "name": "Warrior ring",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 6155,
+      "members": 1,
+      "name": "Dagannoth hide",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 2456,
+      "members": 1,
+      "name": "Antifire potion(2)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 141,
+      "members": 1,
+      "name": "Prayer potion(2)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 129,
+      "members": 1,
+      "name": "Restore potion(2)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 147,
+      "members": 1,
+      "name": "Super attack(2)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 159,
+      "members": 1,
+      "name": "Super strength(2)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 165,
+      "members": 1,
+      "name": "Super defence(2)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 191,
+      "members": 1,
+      "name": "Zamorak brew(2)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 447,
+      "members": 0,
+      "name": "Mithril ore",
+      "noted": 1,
+      "quantity": "25",
+      "rarity": "0.078125",
+      "rolls": 1
+    },
+    {
+      "id": 2361,
+      "members": 0,
+      "name": "Adamantite bar",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0234375",
+      "rolls": 1
+    },
+    {
+      "id": 453,
+      "members": 0,
+      "name": "Coal",
+      "noted": 1,
+      "quantity": "100",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 1193,
+      "members": 0,
+      "name": "Steel kiteshield",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.1328125",
+      "rolls": 1
+    },
+    {
+      "id": 440,
+      "members": 0,
+      "name": "Iron ore",
+      "noted": 1,
+      "quantity": "150",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 2353,
+      "members": 0,
+      "name": "Steel bar",
+      "noted": 1,
+      "quantity": "15-30",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 1438,
+      "members": 0,
+      "name": "Air talisman",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0011160714285714285",
+      "rolls": 1
+    },
+    {
+      "id": 1446,
+      "members": 0,
+      "name": "Body talisman",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0011160714285714285",
+      "rolls": 1
+    },
+    {
+      "id": 1440,
+      "members": 0,
+      "name": "Earth talisman",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0011160714285714285",
+      "rolls": 1
+    },
+    {
+      "id": 1442,
+      "members": 0,
+      "name": "Fire talisman",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0011160714285714285",
+      "rolls": 1
+    },
+    {
+      "id": 1448,
+      "members": 0,
+      "name": "Mind talisman",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0011160714285714285",
+      "rolls": 1
+    },
+    {
+      "id": 1444,
+      "members": 0,
+      "name": "Water talisman",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0011160714285714285",
+      "rolls": 1
+    },
+    {
+      "id": 1454,
+      "members": 1,
+      "name": "Cosmic talisman",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0004464285714285714",
+      "rolls": 1
+    },
+    {
+      "id": 1452,
+      "members": 1,
+      "name": "Chaos talisman",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00033481769176683295",
+      "rolls": 1
+    },
+    {
+      "id": 1343,
+      "members": 0,
+      "name": "Mithril warhammer",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0859375",
+      "rolls": 1
+    },
+    {
+      "id": 1462,
+      "members": 1,
+      "name": "Nature talisman",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.00033481769176683295",
+      "rolls": 1
+    },
+    {
+      "id": 995,
+      "members": 0,
+      "name": "Coins",
+      "noted": 0,
+      "quantity": "100-1209",
+      "rarity": "0.078125",
+      "rolls": 1
+    },
+    {
+      "id": 207,
+      "members": 1,
+      "name": "Grimy ranarr weed",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0546875",
+      "rolls": 1
+    },
+    {
+      "id": 365,
+      "members": 1,
+      "name": "Bass",
+      "noted": 0,
+      "quantity": "5",
+      "rarity": "0.0546875",
+      "rolls": 1
+    },
+    {
+      "id": 373,
+      "members": 0,
+      "name": "Swordfish",
+      "noted": 0,
+      "quantity": "5",
+      "rarity": "0.03125",
+      "rolls": 1
+    },
+    {
+      "id": 385,
+      "members": 1,
+      "name": "Shark",
+      "noted": 0,
+      "quantity": "5",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 1357,
+      "members": 0,
+      "name": "Adamant axe",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0546875",
+      "rolls": 1
+    },
+    {
+      "id": 1119,
+      "members": 0,
+      "name": "Steel platebody",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.03125",
+      "rolls": 1
+    },
+    {
+      "id": 1273,
+      "members": 0,
+      "name": "Mithril pickaxe",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0234375",
+      "rolls": 1
+    },
+    {
+      "id": 13492,
+      "members": 1,
+      "name": "Ensouled dagannoth head",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.05",
+      "rolls": 1
+    },
+    {
+      "id": 2722,
+      "members": 1,
+      "name": "Clue scroll (hard)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.023809523809523808",
+      "rolls": 1
+    },
+    {
+      "id": 23083,
+      "members": 1,
+      "name": "Brimstone key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.01694915254237288",
+      "rolls": 1
+    },
+    {
+      "id": 12073,
+      "members": 1,
+      "name": "Clue scroll (elite)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0013333333333333333",
+      "rolls": 1
+    },
+    {
+      "id": 12645,
+      "members": 1,
+      "name": "Pet dagannoth rex",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0002",
+      "rolls": 1
+    },
+    {
+      "id": 1123,
+      "members": 0,
+      "name": "Adamant platebody",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 3757,
+      "members": 1,
+      "name": "Fremennik blade",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.015625",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "Firstborn of the legendary Dagannoth Kings.",
+  "hitpoints": 255,
+  "id": "2267",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 0,
+  "max_hit": 26,
+  "members": 1,
+  "name": "Dagannoth Rex",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 255,
+  "release_date": "2005-11-07",
+  "size": 3,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "vannaka",
+    "chaeldar",
+    "konar",
+    "nieve",
+    "duradel"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "331.5",
+  "strength_bonus": 0,
+  "strength_level": 255,
+  "venomous": 0,
+  "wiki_name": "Dagannoth Rex",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Dagannoth_Rex"
 }

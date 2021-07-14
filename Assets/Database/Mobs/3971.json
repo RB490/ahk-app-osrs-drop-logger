@@ -1,7 +1,7 @@
 {
   "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
-  "_etag": "6747808a7a893d1ab06e9b8c76c76aa0cdca7607",
-  "_id": "60cd28b0cfb7392d0090745f",
+  "_etag": "9af702819aaa301a81bee9d4b5e2110d5c27fb80",
+  "_id": "60ebb3b0c1c55bf074a5e7f9",
   "_links": {
     "collection": {
       "href": "monsters",
@@ -12,7 +12,7 @@
       "title": "home"
     },
     "self": {
-      "href": "monsters/60cd28b0cfb7392d0090745f",
+      "href": "monsters/60ebb3b0c1c55bf074a5e7f9",
       "title": "Monster"
     }
   },
@@ -28,8 +28,8 @@
   ],
   "attributes": [],
   "category": [
-    "rat",
-    "zombie"
+    "rats",
+    "zombies"
   ],
   "combat_level": 3,
   "defence_crush": 0,
@@ -56,7 +56,7 @@
   "immune_poison": 0,
   "immune_venom": 0,
   "incomplete": 1,
-  "last_updated": "2020-12-25",
+  "last_updated": "2021-07-12",
   "magic_bonus": 0,
   "magic_level": 1,
   "max_hit": 1,

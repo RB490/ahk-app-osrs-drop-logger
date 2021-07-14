@@ -1,7 +1,7 @@
 {
   "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
-  "_etag": "cac008cb1e3bbba8d30c594ff6dc0fb7770d965b",
-  "_id": "60cd28b0cfb7392d00907471",
+  "_etag": "e272dd99b79e610fa99902e7eee11f0081805b31",
+  "_id": "60ebb3b0c1c55bf074a5e80b",
   "_links": {
     "collection": {
       "href": "monsters",
@@ -12,7 +12,7 @@
       "title": "home"
     },
     "self": {
-      "href": "monsters/60cd28b0cfb7392d00907471",
+      "href": "monsters/60ebb3b0c1c55bf074a5e80b",
       "title": "Monster"
     }
   },
@@ -28,7 +28,7 @@
   ],
   "attributes": [],
   "category": [
-    "pirate"
+    "pirates"
   ],
   "combat_level": 57,
   "defence_crush": 0,
@@ -300,6 +300,15 @@
       "rolls": 1
     },
     {
+      "id": 526,
+      "members": 0,
+      "name": "Bones",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
       "id": 1321,
       "members": 0,
       "name": "Bronze scimitar",
@@ -361,7 +370,7 @@
   "immune_poison": 0,
   "immune_venom": 0,
   "incomplete": 1,
-  "last_updated": "2020-12-25",
+  "last_updated": "2021-07-12",
   "magic_bonus": 0,
   "magic_level": 0,
   "max_hit": "",

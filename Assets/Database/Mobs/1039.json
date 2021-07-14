@@ -1,64 +1,82 @@
 {
-    "id": 1039,
-    "name": "Albino bat",
-    "last_updated": "2020-12-25",
-    "incomplete": true,
-    "members": true,
-    "release_date": "2006-07-04",
-    "combat_level": 52,
-    "size": 2,
-    "hitpoints": 33,
-    "max_hit": 7,
-    "attack_type": [
-        "melee"
-    ],
-    "attack_speed": 4,
-    "aggressive": true,
-    "poisonous": false,
-    "venomous": false,
-    "immune_poison": false,
-    "immune_venom": false,
-    "attributes": [],
-    "category": [
-        "bat"
-    ],
-    "slayer_monster": true,
-    "slayer_level": 1,
-    "slayer_xp": 33.0,
-    "slayer_masters": [
-        "turael",
-        "spria",
-        "mazchna"
-    ],
-    "duplicate": false,
-    "examine": "It's all white by me.",
-    "wiki_name": "Albino bat",
-    "wiki_url": "https://oldschool.runescape.wiki/w/Albino_bat",
-    "attack_level": 57,
-    "strength_level": 57,
-    "defence_level": 30,
-    "magic_level": 1,
-    "ranged_level": 1,
-    "attack_bonus": 0,
-    "strength_bonus": 0,
-    "attack_magic": 0,
-    "magic_bonus": 0,
-    "attack_ranged": 0,
-    "ranged_bonus": 0,
-    "defence_stab": 0,
-    "defence_slash": 0,
-    "defence_crush": 0,
-    "defence_magic": 0,
-    "defence_ranged": 0,
-    "drops": [
-        {
-            "id": 530,
-            "name": "Bat bones",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        }
-    ]
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "5f4cd33f1b5ce0a10cabca0debbd54f43735aae8",
+  "_id": "60ebb3aec1c55bf074a5e466",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3aec1c55bf074a5e466",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 0,
+  "attack_level": 57,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "melee"
+  ],
+  "attributes": [],
+  "category": [
+    "bats"
+  ],
+  "combat_level": 52,
+  "defence_crush": 0,
+  "defence_level": 30,
+  "defence_magic": 0,
+  "defence_ranged": 0,
+  "defence_slash": 0,
+  "defence_stab": 0,
+  "drops": [
+    {
+      "id": 530,
+      "members": 1,
+      "name": "Bat bones",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "It's all white by me.",
+  "hitpoints": 33,
+  "id": "1039",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 7,
+  "members": 1,
+  "name": "Albino bat",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2006-07-04",
+  "size": 2,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "turael",
+    "spria",
+    "mazchna"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "33.0",
+  "strength_bonus": 0,
+  "strength_level": 57,
+  "venomous": 0,
+  "wiki_name": "Albino bat",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Albino_bat"
 }

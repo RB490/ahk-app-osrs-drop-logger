@@ -1,7 +1,7 @@
 {
   "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
-  "_etag": "29db4b55868133e9b222f0344b46852925c4b50d",
-  "_id": "60cd28b1cfb7392d0090763e",
+  "_etag": "12c1136988f67f97cd1090faf542ae090fd15596",
+  "_id": "60ebb3b0c1c55bf074a5e9d8",
   "_links": {
     "collection": {
       "href": "monsters",
@@ -12,7 +12,7 @@
       "title": "home"
     },
     "self": {
-      "href": "monsters/60cd28b1cfb7392d0090763e",
+      "href": "monsters/60ebb3b0c1c55bf074a5e9d8",
       "title": "Monster"
     }
   },
@@ -28,7 +28,7 @@
   ],
   "attributes": [],
   "category": [
-    "cow"
+    "cows"
   ],
   "combat_level": 2,
   "defence_crush": -21,
@@ -82,7 +82,7 @@
   "immune_poison": 0,
   "immune_venom": 0,
   "incomplete": 1,
-  "last_updated": "2021-05-30",
+  "last_updated": "2021-07-12",
   "magic_bonus": 0,
   "magic_level": 1,
   "max_hit": 1,

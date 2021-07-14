@@ -1,73 +1,91 @@
 {
-    "id": 112,
-    "name": "Wild dog",
-    "last_updated": "2021-04-24",
-    "incomplete": true,
-    "members": true,
-    "release_date": "2005-01-17",
-    "combat_level": 63,
-    "size": 1,
-    "hitpoints": 62,
-    "max_hit": 6,
-    "attack_type": [
-        "stab"
-    ],
-    "attack_speed": 4,
-    "aggressive": false,
-    "poisonous": false,
-    "venomous": false,
-    "immune_poison": false,
-    "immune_venom": false,
-    "attributes": [],
-    "category": [
-        "dog"
-    ],
-    "slayer_monster": true,
-    "slayer_level": 1,
-    "slayer_xp": 62.0,
-    "slayer_masters": [
-        "turael",
-        "spria",
-        "mazchna"
-    ],
-    "duplicate": false,
-    "examine": "Looks like it's got Rabies!",
-    "wiki_name": "Wild dog (Normal)",
-    "wiki_url": "https://oldschool.runescape.wiki/w/Wild_dog#Normal",
-    "attack_level": 53,
-    "strength_level": 54,
-    "defence_level": 54,
-    "magic_level": 1,
-    "ranged_level": 1,
-    "attack_bonus": 0,
-    "strength_bonus": 0,
-    "attack_magic": 0,
-    "magic_bonus": 0,
-    "attack_ranged": 0,
-    "ranged_bonus": 0,
-    "defence_stab": 0,
-    "defence_slash": 0,
-    "defence_crush": 0,
-    "defence_magic": 0,
-    "defence_ranged": 0,
-    "drops": [
-        {
-            "id": 526,
-            "name": "Bones",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        },
-        {
-            "id": 13468,
-            "name": "Ensouled dog head",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.04,
-            "rolls": 1
-        }
-    ]
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "3467dd503f5865a6f06b73f8f780c77b6255cb12",
+  "_id": "60ebb3aec1c55bf074a5e2cf",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3aec1c55bf074a5e2cf",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 0,
+  "attack_bonus": 0,
+  "attack_level": 53,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "stab"
+  ],
+  "attributes": [],
+  "category": [
+    "dogs"
+  ],
+  "combat_level": 63,
+  "defence_crush": 0,
+  "defence_level": 54,
+  "defence_magic": 0,
+  "defence_ranged": 0,
+  "defence_slash": 0,
+  "defence_stab": 0,
+  "drops": [
+    {
+      "id": 526,
+      "members": 0,
+      "name": "Bones",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 13468,
+      "members": 1,
+      "name": "Ensouled dog head",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.04",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "Looks like it's got Rabies!",
+  "hitpoints": 62,
+  "id": "112",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 6,
+  "members": 1,
+  "name": "Wild dog",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2005-01-17",
+  "size": 1,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "turael",
+    "spria",
+    "mazchna"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "62.0",
+  "strength_bonus": 0,
+  "strength_level": 54,
+  "venomous": 0,
+  "wiki_name": "Wild dog (Normal)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Wild_dog#Normal"
 }

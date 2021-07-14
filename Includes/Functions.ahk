@@ -221,7 +221,7 @@ hex2str(string)
 ; ========= IMAGES ======================================================================================================================
 
 GetMobImagesForAllMobs() {
-    mobList := MOB_DB.GetList()
+    mobList := DB_MOB.GetMobList()
     for mobId, mobName in mobList {
         GetMobImage(mobName, mobId)
         GetDropImagesForMob(mobId)
@@ -229,7 +229,7 @@ GetMobImagesForAllMobs() {
 }
 
 GetDropImagesForMob(mob) {
-    drops := MOB_DB.GetDropTable(mob)
+    drops := DB_MOB.GetDropTable(mob)
 
     for index, drop in drops {
         GetDropImage(drop.name, drop.id)

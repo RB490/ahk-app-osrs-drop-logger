@@ -1,420 +1,330 @@
 {
-    "id": 239,
-    "name": "King Black Dragon",
-    "last_updated": "2021-01-11",
-    "incomplete": true,
-    "members": true,
-    "release_date": "2002-09-24",
-    "combat_level": 276,
-    "size": 5,
-    "hitpoints": 240,
-    "max_hit": 25,
-    "attack_type": [
-        "slash",
-        "dragonfire"
-    ],
-    "attack_speed": 4,
-    "aggressive": true,
-    "poisonous": true,
-    "venomous": false,
-    "immune_poison": false,
-    "immune_venom": false,
-    "attributes": [
-        "dragon",
-        "fiery"
-    ],
-    "category": [
-        "black dragon",
-        "boss"
-    ],
-    "slayer_monster": true,
-    "slayer_level": 1,
-    "slayer_xp": 258.0,
-    "slayer_masters": [
-        "konar",
-        "nieve",
-        "duradel"
-    ],
-    "duplicate": false,
-    "examine": "One of the biggest, meanest dragons around.",
-    "wiki_name": "King Black Dragon",
-    "wiki_url": "https://oldschool.runescape.wiki/w/King_Black_Dragon",
-    "attack_level": 240,
-    "strength_level": 240,
-    "defence_level": 240,
-    "magic_level": 240,
-    "ranged_level": 1,
-    "attack_bonus": 0,
-    "strength_bonus": 0,
-    "attack_magic": 0,
-    "magic_bonus": 0,
-    "attack_ranged": 0,
-    "ranged_bonus": 0,
-    "defence_stab": 70,
-    "defence_slash": 90,
-    "defence_crush": 90,
-    "defence_magic": 80,
-    "defence_ranged": 70,
-    "drops": [
-        {
-            "id": 1623,
-            "name": "Uncut sapphire",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.00390625,
-            "rolls": 1
-        },
-        {
-            "id": 1621,
-            "name": "Uncut emerald",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.001953125,
-            "rolls": 1
-        },
-        {
-            "id": 1619,
-            "name": "Uncut ruby",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0009765625,
-            "rolls": 1
-        },
-        {
-            "id": 1452,
-            "name": "Chaos talisman",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.00036618232950550735,
-            "rolls": 1
-        },
-        {
-            "id": 1462,
-            "name": "Nature talisman",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.00036618232950550735,
-            "rolls": 1
-        },
-        {
-            "id": 1617,
-            "name": "Uncut diamond",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.000244140625,
-            "rolls": 1
-        },
-        {
-            "id": 830,
-            "name": "Rune javelin",
-            "members": true,
-            "quantity": "5",
-            "noted": false,
-            "rarity": 0.0001220703125,
-            "rolls": 1
-        },
-        {
-            "id": 987,
-            "name": "Loop half of key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0001220703125,
-            "rolls": 1
-        },
-        {
-            "id": 985,
-            "name": "Tooth half of key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0001220703125,
-            "rolls": 1
-        },
-        {
-            "id": 1247,
-            "name": "Rune spear",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 7.62939453125e-06,
-            "rolls": 1
-        },
-        {
-            "id": 2366,
-            "name": "Shield left half",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 3.814697265625e-06,
-            "rolls": 1
-        },
-        {
-            "id": 1249,
-            "name": "Dragon spear",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 2.860799449261776e-06,
-            "rolls": 1
-        },
-        {
-            "id": 536,
-            "name": "Dragon bones",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        },
-        {
-            "id": 884,
-            "name": "Iron arrow",
-            "members": false,
-            "quantity": "690",
-            "noted": false,
-            "rarity": 0.078125,
-            "rolls": 1
-        },
-        {
-            "id": 9144,
-            "name": "Runite bolts",
-            "members": true,
-            "quantity": "10-20",
-            "noted": false,
-            "rarity": 0.078125,
-            "rolls": 1
-        },
-        {
-            "id": 563,
-            "name": "Law rune",
-            "members": false,
-            "quantity": "30",
-            "noted": false,
-            "rarity": 0.0390625,
-            "rolls": 1
-        },
-        {
-            "id": 565,
-            "name": "Blood rune",
-            "members": true,
-            "quantity": "30",
-            "noted": false,
-            "rarity": 0.0390625,
-            "rolls": 1
-        },
-        {
-            "id": 1515,
-            "name": "Yew logs",
-            "members": false,
-            "quantity": "150",
-            "noted": true,
-            "rarity": 0.078125,
-            "rolls": 1
-        },
-        {
-            "id": 2361,
-            "name": "Adamantite bar",
-            "members": false,
-            "quantity": "3",
-            "noted": false,
-            "rarity": 0.0390625,
-            "rolls": 1
-        },
-        {
-            "id": 2363,
-            "name": "Runite bar",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0234375,
-            "rolls": 1
-        },
-        {
-            "id": 444,
-            "name": "Gold ore",
-            "members": false,
-            "quantity": "100",
-            "noted": true,
-            "rarity": 0.015625,
-            "rolls": 1
-        },
-        {
-            "id": 1731,
-            "name": "Amulet of power",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0546875,
-            "rolls": 1
-        },
-        {
-            "id": 11237,
-            "name": "Dragon arrowtips",
-            "members": true,
-            "quantity": "5-14",
-            "noted": false,
-            "rarity": 0.0390625,
-            "rolls": 1
-        },
-        {
-            "id": 1747,
-            "name": "Black dragonhide",
-            "members": true,
-            "quantity": "2",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        },
-        {
-            "id": 11232,
-            "name": "Dragon dart tip",
-            "members": true,
-            "quantity": "5-14",
-            "noted": false,
-            "rarity": 0.0390625,
-            "rolls": 1
-        },
-        {
-            "id": 19582,
-            "name": "Dragon javelin heads",
-            "members": true,
-            "quantity": "15",
-            "noted": false,
-            "rarity": 0.0390625,
-            "rolls": 1
-        },
-        {
-            "id": 9431,
-            "name": "Runite limbs",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.03125,
-            "rolls": 1
-        },
-        {
-            "id": 385,
-            "name": "Shark",
-            "members": true,
-            "quantity": "4",
-            "noted": false,
-            "rarity": 0.03125,
-            "rolls": 1
-        },
-        {
-            "id": 11920,
-            "name": "Dragon pickaxe",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0006666666666666666,
-            "rolls": 1
-        },
-        {
-            "id": 1303,
-            "name": "Rune longsword",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.078125,
-            "rolls": 1
-        },
-        {
-            "id": 1123,
-            "name": "Adamant platebody",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0703125,
-            "rolls": 1
-        },
-        {
-            "id": 23083,
-            "name": "Brimstone key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.015625,
-            "rolls": 1
-        },
-        {
-            "id": 7980,
-            "name": "Kbd heads",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 12073,
-            "name": "Clue scroll (elite)",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0022222222222222222,
-            "rolls": 1
-        },
-        {
-            "id": 12653,
-            "name": "Prince black dragon",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0003333333333333333,
-            "rolls": 1
-        },
-        {
-            "id": 11286,
-            "name": "Draconic visage",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0002,
-            "rolls": 1
-        },
-        {
-            "id": 1199,
-            "name": "Adamant kiteshield",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0234375,
-            "rolls": 1
-        },
-        {
-            "id": 1149,
-            "name": "Dragon med helm",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        },
-        {
-            "id": 554,
-            "name": "Fire rune",
-            "members": false,
-            "quantity": "300",
-            "noted": false,
-            "rarity": 0.0390625,
-            "rolls": 1
-        },
-        {
-            "id": 556,
-            "name": "Air rune",
-            "members": false,
-            "quantity": "300",
-            "noted": false,
-            "rarity": 0.078125,
-            "rolls": 1
-        }
-    ]
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "d5d0b1359c1f5e0479f11f59810281e22e9c95d5",
+  "_id": "60ebb3aec1c55bf074a5e2e5",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3aec1c55bf074a5e2e5",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 0,
+  "attack_level": 240,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "slash",
+    "dragonfire"
+  ],
+  "attributes": [
+    "dragon",
+    "fiery"
+  ],
+  "category": [
+    "black dragons",
+    "bosses"
+  ],
+  "combat_level": 276,
+  "defence_crush": 90,
+  "defence_level": 240,
+  "defence_magic": 80,
+  "defence_ranged": 70,
+  "defence_slash": 90,
+  "defence_stab": 70,
+  "drops": [
+    {
+      "id": 536,
+      "members": 1,
+      "name": "Dragon bones",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 884,
+      "members": 0,
+      "name": "Iron arrow",
+      "noted": 0,
+      "quantity": "690",
+      "rarity": "0.078125",
+      "rolls": 1
+    },
+    {
+      "id": 9144,
+      "members": 1,
+      "name": "Runite bolts",
+      "noted": 0,
+      "quantity": "10-20",
+      "rarity": "0.078125",
+      "rolls": 1
+    },
+    {
+      "id": 563,
+      "members": 0,
+      "name": "Law rune",
+      "noted": 0,
+      "quantity": "30",
+      "rarity": "0.0390625",
+      "rolls": 1
+    },
+    {
+      "id": 565,
+      "members": 1,
+      "name": "Blood rune",
+      "noted": 0,
+      "quantity": "30",
+      "rarity": "0.0390625",
+      "rolls": 1
+    },
+    {
+      "id": 1515,
+      "members": 0,
+      "name": "Yew logs",
+      "noted": 1,
+      "quantity": "150",
+      "rarity": "0.078125",
+      "rolls": 1
+    },
+    {
+      "id": 2361,
+      "members": 0,
+      "name": "Adamantite bar",
+      "noted": 0,
+      "quantity": "3",
+      "rarity": "0.0390625",
+      "rolls": 1
+    },
+    {
+      "id": 2363,
+      "members": 0,
+      "name": "Runite bar",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0234375",
+      "rolls": 1
+    },
+    {
+      "id": 444,
+      "members": 0,
+      "name": "Gold ore",
+      "noted": 1,
+      "quantity": "100",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 1731,
+      "members": 0,
+      "name": "Amulet of power",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0546875",
+      "rolls": 1
+    },
+    {
+      "id": 11237,
+      "members": 1,
+      "name": "Dragon arrowtips",
+      "noted": 0,
+      "quantity": "5-14",
+      "rarity": "0.0390625",
+      "rolls": 1
+    },
+    {
+      "id": 1747,
+      "members": 1,
+      "name": "Black dragonhide",
+      "noted": 0,
+      "quantity": "2",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 11232,
+      "members": 1,
+      "name": "Dragon dart tip",
+      "noted": 0,
+      "quantity": "5-14",
+      "rarity": "0.0390625",
+      "rolls": 1
+    },
+    {
+      "id": 19582,
+      "members": 1,
+      "name": "Dragon javelin heads",
+      "noted": 0,
+      "quantity": "15",
+      "rarity": "0.0390625",
+      "rolls": 1
+    },
+    {
+      "id": 9431,
+      "members": 1,
+      "name": "Runite limbs",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.03125",
+      "rolls": 1
+    },
+    {
+      "id": 385,
+      "members": 1,
+      "name": "Shark",
+      "noted": 0,
+      "quantity": "4",
+      "rarity": "0.03125",
+      "rolls": 1
+    },
+    {
+      "id": 11920,
+      "members": 1,
+      "name": "Dragon pickaxe",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0006666666666666666",
+      "rolls": 1
+    },
+    {
+      "id": 1303,
+      "members": 0,
+      "name": "Rune longsword",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.078125",
+      "rolls": 1
+    },
+    {
+      "id": 1123,
+      "members": 0,
+      "name": "Adamant platebody",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0703125",
+      "rolls": 1
+    },
+    {
+      "id": 23083,
+      "members": 1,
+      "name": "Brimstone key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.015625",
+      "rolls": 1
+    },
+    {
+      "id": 7980,
+      "members": 1,
+      "name": "Kbd heads",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 12073,
+      "members": 1,
+      "name": "Clue scroll (elite)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0022222222222222222",
+      "rolls": 1
+    },
+    {
+      "id": 12653,
+      "members": 1,
+      "name": "Prince black dragon",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0003333333333333333",
+      "rolls": 1
+    },
+    {
+      "id": 11286,
+      "members": 1,
+      "name": "Draconic visage",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0002",
+      "rolls": 1
+    },
+    {
+      "id": 1199,
+      "members": 0,
+      "name": "Adamant kiteshield",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0234375",
+      "rolls": 1
+    },
+    {
+      "id": 1149,
+      "members": 1,
+      "name": "Dragon med helm",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    },
+    {
+      "id": 554,
+      "members": 0,
+      "name": "Fire rune",
+      "noted": 0,
+      "quantity": "300",
+      "rarity": "0.0390625",
+      "rolls": 1
+    },
+    {
+      "id": 556,
+      "members": 0,
+      "name": "Air rune",
+      "noted": 0,
+      "quantity": "300",
+      "rarity": "0.078125",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "One of the biggest, meanest dragons around.",
+  "hitpoints": 240,
+  "id": "239",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 240,
+  "max_hit": 25,
+  "members": 1,
+  "name": "King Black Dragon",
+  "poisonous": 1,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2002-09-24",
+  "size": 5,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "konar",
+    "nieve",
+    "duradel"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "258.0",
+  "strength_bonus": 0,
+  "strength_level": 240,
+  "venomous": 0,
+  "wiki_name": "King Black Dragon",
+  "wiki_url": "https://oldschool.runescape.wiki/w/King_Black_Dragon"
 }

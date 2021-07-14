@@ -1,63 +1,81 @@
 {
-    "id": 2067,
-    "name": "Mounted terrorbird gnome",
-    "last_updated": "2020-12-25",
-    "incomplete": true,
-    "members": true,
-    "release_date": "2004-03-29",
-    "combat_level": 31,
-    "size": 2,
-    "hitpoints": 36,
-    "max_hit": 3,
-    "attack_type": [
-        "stab"
-    ],
-    "attack_speed": 4,
-    "aggressive": false,
-    "poisonous": false,
-    "venomous": false,
-    "immune_poison": false,
-    "immune_venom": false,
-    "attributes": [],
-    "category": [
-        "bird"
-    ],
-    "slayer_monster": true,
-    "slayer_level": 1,
-    "slayer_xp": 36.0,
-    "slayer_masters": [
-        "turael",
-        "spria"
-    ],
-    "duplicate": false,
-    "examine": "These gnomes know how to get around!",
-    "wiki_name": "Mounted terrorbird gnome (Level 31)",
-    "wiki_url": "https://oldschool.runescape.wiki/w/Mounted_terrorbird_gnome#Level_31",
-    "attack_level": 25,
-    "strength_level": 25,
-    "defence_level": 25,
-    "magic_level": 0,
-    "ranged_level": 0,
-    "attack_bonus": 0,
-    "strength_bonus": 0,
-    "attack_magic": 0,
-    "magic_bonus": 0,
-    "attack_ranged": 0,
-    "ranged_bonus": 0,
-    "defence_stab": 16,
-    "defence_slash": 16,
-    "defence_crush": 18,
-    "defence_magic": 15,
-    "defence_ranged": 10,
-    "drops": [
-        {
-            "id": 526,
-            "name": "Bones",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        }
-    ]
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "f2b82fc25f7a38c74e1fbc64b6210ab838c54858",
+  "_id": "60ebb3afc1c55bf074a5e590",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3afc1c55bf074a5e590",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 0,
+  "attack_bonus": 0,
+  "attack_level": 25,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "stab"
+  ],
+  "attributes": [],
+  "category": [
+    "birds"
+  ],
+  "combat_level": 31,
+  "defence_crush": 18,
+  "defence_level": 25,
+  "defence_magic": 15,
+  "defence_ranged": 10,
+  "defence_slash": 16,
+  "defence_stab": 16,
+  "drops": [
+    {
+      "id": 526,
+      "members": 0,
+      "name": "Bones",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "These gnomes know how to get around!",
+  "hitpoints": 36,
+  "id": "2067",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 0,
+  "max_hit": 3,
+  "members": 1,
+  "name": "Mounted terrorbird gnome",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 0,
+  "release_date": "2004-03-29",
+  "size": 2,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "turael",
+    "spria"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "36.0",
+  "strength_bonus": 0,
+  "strength_level": 25,
+  "venomous": 0,
+  "wiki_name": "Mounted terrorbird gnome (Level 31)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Mounted_terrorbird_gnome#Level_31"
 }

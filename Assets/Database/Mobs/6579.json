@@ -1,7 +1,7 @@
 {
   "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
-  "_etag": "9a18b1407df33118bd110878b29958fecd83a7b4",
-  "_id": "60cd28b1cfb7392d0090773b",
+  "_etag": "e304affe3bf88d0f42dc9772c5d1216c237f7dec",
+  "_id": "60ebb3b1c1c55bf074a5ead5",
   "_links": {
     "collection": {
       "href": "monsters",
@@ -12,7 +12,7 @@
       "title": "home"
     },
     "self": {
-      "href": "monsters/60cd28b1cfb7392d0090773b",
+      "href": "monsters/60ebb3b1c1c55bf074a5ead5",
       "title": "Monster"
     }
   },
@@ -326,13 +326,13 @@
     }
   ],
   "duplicate": 0,
-  "examine": "He tries to keep order around here.",
+  "examine": "Keeps the peace... kind of.",
   "hitpoints": 800,
   "id": "6579",
   "immune_poison": 0,
   "immune_venom": 0,
   "incomplete": 1,
-  "last_updated": "2021-06-18",
+  "last_updated": "2021-07-12",
   "magic_bonus": 0,
   "magic_level": 1,
   "max_hit": 45,
@@ -350,6 +350,6 @@
   "strength_bonus": 7,
   "strength_level": 400,
   "venomous": 0,
-  "wiki_name": "Guard (Deadman Mode) (Falador)",
-  "wiki_url": "https://oldschool.runescape.wiki/w/Guard_(Deadman_Mode)#Falador"
+  "wiki_name": "Guard (Deadman Mode) (East Ardougne)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Guard_(Deadman_Mode)#East_Ardougne"
 }

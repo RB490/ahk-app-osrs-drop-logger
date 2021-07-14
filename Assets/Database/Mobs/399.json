@@ -1,7 +1,7 @@
 {
   "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
-  "_etag": "388924d95b2eecd9613e3f6b15a0ef1586b9fff4",
-  "_id": "60cd28aecfb7392d00906f81",
+  "_etag": "a1664be5bc421d906e32aba60b7acedb495d871a",
+  "_id": "60ebb3aec1c55bf074a5e31b",
   "_links": {
     "collection": {
       "href": "monsters",
@@ -12,7 +12,7 @@
       "title": "home"
     },
     "self": {
-      "href": "monsters/60cd28aecfb7392d00906f81",
+      "href": "monsters/60ebb3aec1c55bf074a5e31b",
       "title": "Monster"
     }
   },
@@ -332,7 +332,7 @@
   "immune_poison": 0,
   "immune_venom": 0,
   "incomplete": 1,
-  "last_updated": "2021-06-18",
+  "last_updated": "2021-07-12",
   "magic_bonus": 0,
   "magic_level": 1,
   "max_hit": 3,
@@ -350,6 +350,6 @@
   "strength_bonus": 10,
   "strength_level": 15,
   "venomous": 0,
-  "wiki_name": "Town Guard (Hosidius) (Staff)",
-  "wiki_url": "https://oldschool.runescape.wiki/w/Town_Guard_(Hosidius)#Staff"
+  "wiki_name": "Guard (Hosidius) (Staff)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Guard_(Hosidius)#Staff"
 }

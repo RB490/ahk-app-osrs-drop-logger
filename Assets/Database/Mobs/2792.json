@@ -1,90 +1,108 @@
 {
-    "id": 2792,
-    "name": "Cow calf",
-    "last_updated": "2020-12-25",
-    "incomplete": true,
-    "members": false,
-    "release_date": "2005-02-22",
-    "combat_level": 2,
-    "size": 2,
-    "hitpoints": 6,
-    "max_hit": 1,
-    "attack_type": [
-        "crush"
-    ],
-    "attack_speed": 4,
-    "aggressive": false,
-    "poisonous": false,
-    "venomous": false,
-    "immune_poison": false,
-    "immune_venom": false,
-    "attributes": [],
-    "category": [
-        "cow"
-    ],
-    "slayer_monster": true,
-    "slayer_level": 1,
-    "slayer_xp": 6.0,
-    "slayer_masters": [
-        "turael",
-        "spria"
-    ],
-    "duplicate": false,
-    "examine": "Young, but still beefy.",
-    "wiki_name": "Cow calf",
-    "wiki_url": "https://oldschool.runescape.wiki/w/Cow_calf",
-    "attack_level": 1,
-    "strength_level": 1,
-    "defence_level": 1,
-    "magic_level": 1,
-    "ranged_level": 1,
-    "attack_bonus": -20,
-    "strength_bonus": -20,
-    "attack_magic": 0,
-    "magic_bonus": 0,
-    "attack_ranged": 0,
-    "ranged_bonus": 0,
-    "defence_stab": -26,
-    "defence_slash": -26,
-    "defence_crush": -26,
-    "defence_magic": -26,
-    "defence_ranged": -26,
-    "drops": [
-        {
-            "id": 1739,
-            "name": "Cowhide",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        },
-        {
-            "id": 2132,
-            "name": "Raw beef",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        },
-        {
-            "id": 526,
-            "name": "Bones",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        },
-        {
-            "id": 23182,
-            "name": "Clue scroll (beginner)",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0078125,
-            "rolls": 1
-        }
-    ]
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "518f6bbd444596516030ba77cf3994555bd4777a",
+  "_id": "60ebb3afc1c55bf074a5e67f",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3afc1c55bf074a5e67f",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 0,
+  "attack_bonus": -20,
+  "attack_level": 1,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "crush"
+  ],
+  "attributes": [],
+  "category": [
+    "cows"
+  ],
+  "combat_level": 2,
+  "defence_crush": -26,
+  "defence_level": 1,
+  "defence_magic": -26,
+  "defence_ranged": -26,
+  "defence_slash": -26,
+  "defence_stab": -26,
+  "drops": [
+    {
+      "id": 1739,
+      "members": 0,
+      "name": "Cowhide",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 2132,
+      "members": 0,
+      "name": "Raw beef",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 526,
+      "members": 0,
+      "name": "Bones",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 23182,
+      "members": 0,
+      "name": "Clue scroll (beginner)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0078125",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "Young, but still beefy.",
+  "hitpoints": 6,
+  "id": "2792",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 1,
+  "members": 0,
+  "name": "Cow calf",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2005-02-22",
+  "size": 2,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "turael",
+    "spria"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "6.0",
+  "strength_bonus": -20,
+  "strength_level": 1,
+  "venomous": 0,
+  "wiki_name": "Cow calf",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Cow_calf"
 }

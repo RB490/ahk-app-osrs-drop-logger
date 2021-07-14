@@ -1,7 +1,7 @@
 {
   "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
-  "_etag": "53c4b37adc60f059794e09456efdc5bb61f85b08",
-  "_id": "60cd28aecfb7392d00906f32",
+  "_etag": "7c6a1caeafa7a0ba22950b4e84637ed15adf5dcc",
+  "_id": "60ebb3aec1c55bf074a5e2cc",
   "_links": {
     "collection": {
       "href": "monsters",
@@ -12,7 +12,7 @@
       "title": "home"
     },
     "self": {
-      "href": "monsters/60cd28aecfb7392d00906f32",
+      "href": "monsters/60ebb3aec1c55bf074a5e2cc",
       "title": "Monster"
     }
   },
@@ -28,7 +28,7 @@
   ],
   "attributes": [],
   "category": [
-    "wolf"
+    "wolves"
   ],
   "combat_level": 38,
   "defence_crush": 0,
@@ -73,7 +73,7 @@
   "immune_poison": 0,
   "immune_venom": 0,
   "incomplete": 1,
-  "last_updated": "2020-12-25",
+  "last_updated": "2021-07-12",
   "magic_bonus": 0,
   "magic_level": 1,
   "max_hit": 4,

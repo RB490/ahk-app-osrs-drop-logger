@@ -1,7 +1,7 @@
 {
   "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
-  "_etag": "da0dd93d7117e9f537cc67042739d39005e49558",
-  "_id": "60cd28b1cfb7392d00907643",
+  "_etag": "a4fe706eeb16e2e482a480a102b59e9c3d8a0dfc",
+  "_id": "60ebb3b0c1c55bf074a5e9dd",
   "_links": {
     "collection": {
       "href": "monsters",
@@ -12,7 +12,7 @@
       "title": "home"
     },
     "self": {
-      "href": "monsters/60cd28b1cfb7392d00907643",
+      "href": "monsters/60ebb3b0c1c55bf074a5e9dd",
       "title": "Monster"
     }
   },
@@ -30,7 +30,7 @@
     "dragon"
   ],
   "category": [
-    "green dragon"
+    "green dragons"
   ],
   "combat_level": 48,
   "defence_crush": 50,
@@ -57,7 +57,7 @@
   "immune_poison": 0,
   "immune_venom": 0,
   "incomplete": 1,
-  "last_updated": "2020-12-25",
+  "last_updated": "2021-07-12",
   "magic_bonus": 0,
   "magic_level": 1,
   "max_hit": 5,

@@ -1,184 +1,202 @@
 {
-    "id": 10691,
-    "name": "Body Golem",
-    "last_updated": "2021-05-30",
-    "incomplete": true,
-    "members": false,
-    "release_date": "2021-04-14",
-    "combat_level": 50,
-    "size": 2,
-    "hitpoints": 60,
-    "max_hit": 7,
-    "attack_type": [
-        "slash"
-    ],
-    "attack_speed": 5,
-    "aggressive": false,
-    "poisonous": false,
-    "venomous": false,
-    "immune_poison": false,
-    "immune_venom": false,
-    "attributes": [],
-    "category": [],
-    "slayer_monster": false,
-    "slayer_level": null,
-    "slayer_xp": null,
-    "slayer_masters": [],
-    "duplicate": false,
-    "examine": "This golem looks like it's been imbued with body energy.",
-    "wiki_name": "Body Golem (Golem)",
-    "wiki_url": "https://oldschool.runescape.wiki/w/Body_Golem#Golem",
-    "attack_level": 33,
-    "strength_level": 43,
-    "defence_level": 45,
-    "magic_level": 1,
-    "ranged_level": 1,
-    "attack_bonus": 0,
-    "strength_bonus": 28,
-    "attack_magic": 0,
-    "magic_bonus": 0,
-    "attack_ranged": 0,
-    "ranged_bonus": 0,
-    "defence_stab": 5,
-    "defence_slash": 5,
-    "defence_crush": 0,
-    "defence_magic": 2,
-    "defence_ranged": 10,
-    "drops": [
-        {
-            "id": 434,
-            "name": "Clay",
-            "members": false,
-            "quantity": "3-4",
-            "noted": false,
-            "rarity": 0.11538461538461539,
-            "rolls": 1
-        },
-        {
-            "id": 1621,
-            "name": "Uncut emerald",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.038461538461538464,
-            "rolls": 1
-        },
-        {
-            "id": 1619,
-            "name": "Uncut ruby",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.019230769230769232,
-            "rolls": 1
-        },
-        {
-            "id": 25676,
-            "name": "Barronite shards",
-            "members": false,
-            "quantity": "10-20",
-            "noted": false,
-            "rarity": 0.2,
-            "rolls": 1
-        },
-        {
-            "id": 25698,
-            "name": "Body core",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.13333333333333333,
-            "rolls": 1
-        },
-        {
-            "id": 25639,
-            "name": "Barronite guard",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.004,
-            "rolls": 1
-        },
-        {
-            "id": 23182,
-            "name": "Clue scroll (beginner)",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.03125,
-            "rolls": 1
-        },
-        {
-            "id": 436,
-            "name": "Copper ore",
-            "members": false,
-            "quantity": "3-4",
-            "noted": false,
-            "rarity": 0.11538461538461539,
-            "rolls": 1
-        },
-        {
-            "id": 438,
-            "name": "Tin ore",
-            "members": false,
-            "quantity": "3-4",
-            "noted": false,
-            "rarity": 0.11538461538461539,
-            "rolls": 1
-        },
-        {
-            "id": 440,
-            "name": "Iron ore",
-            "members": false,
-            "quantity": "2-3",
-            "noted": false,
-            "rarity": 0.11538461538461539,
-            "rolls": 1
-        },
-        {
-            "id": 1436,
-            "name": "Rune essence",
-            "members": false,
-            "quantity": "4-6",
-            "noted": true,
-            "rarity": 0.11538461538461539,
-            "rolls": 1
-        },
-        {
-            "id": 1436,
-            "name": "Rune essence",
-            "members": false,
-            "quantity": "1",
-            "noted": true,
-            "rarity": 0.019230769230769232,
-            "rolls": 1
-        },
-        {
-            "id": 559,
-            "name": "Body rune",
-            "members": false,
-            "quantity": "5-10",
-            "noted": false,
-            "rarity": 0.15384615384615385,
-            "rolls": 1
-        },
-        {
-            "id": 559,
-            "name": "Body rune",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.11538461538461539,
-            "rolls": 1
-        },
-        {
-            "id": 1623,
-            "name": "Uncut sapphire",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.07692307692307693,
-            "rolls": 1
-        }
-    ]
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "d9005b9e9fdddfa100ddb8848e6f02fc96c5afa0",
+  "_id": "60ebb3b2c1c55bf074a5ed82",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3b2c1c55bf074a5ed82",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 0,
+  "attack_bonus": 0,
+  "attack_level": 33,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 5,
+  "attack_type": [
+    "slash"
+  ],
+  "attributes": [],
+  "category": [],
+  "combat_level": 50,
+  "defence_crush": 0,
+  "defence_level": 45,
+  "defence_magic": 2,
+  "defence_ranged": 10,
+  "defence_slash": 5,
+  "defence_stab": 5,
+  "drops": [
+    {
+      "id": 434,
+      "members": 0,
+      "name": "Clay",
+      "noted": 0,
+      "quantity": "3-4",
+      "rarity": "0.11538461538461539",
+      "rolls": 1
+    },
+    {
+      "id": 1621,
+      "members": 0,
+      "name": "Uncut emerald",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.038461538461538464",
+      "rolls": 1
+    },
+    {
+      "id": 1619,
+      "members": 0,
+      "name": "Uncut ruby",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.019230769230769232",
+      "rolls": 1
+    },
+    {
+      "id": 25676,
+      "members": 0,
+      "name": "Barronite shards",
+      "noted": 0,
+      "quantity": "10-20",
+      "rarity": "0.2",
+      "rolls": 1
+    },
+    {
+      "id": 25698,
+      "members": 0,
+      "name": "Body core",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.13333333333333333",
+      "rolls": 1
+    },
+    {
+      "id": 25639,
+      "members": 0,
+      "name": "Barronite guard",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.004",
+      "rolls": 1
+    },
+    {
+      "id": 23182,
+      "members": 0,
+      "name": "Clue scroll (beginner)",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.01",
+      "rolls": 1
+    },
+    {
+      "id": 436,
+      "members": 0,
+      "name": "Copper ore",
+      "noted": 0,
+      "quantity": "3-4",
+      "rarity": "0.11538461538461539",
+      "rolls": 1
+    },
+    {
+      "id": 438,
+      "members": 0,
+      "name": "Tin ore",
+      "noted": 0,
+      "quantity": "3-4",
+      "rarity": "0.11538461538461539",
+      "rolls": 1
+    },
+    {
+      "id": 440,
+      "members": 0,
+      "name": "Iron ore",
+      "noted": 0,
+      "quantity": "2-3",
+      "rarity": "0.11538461538461539",
+      "rolls": 1
+    },
+    {
+      "id": 1436,
+      "members": 0,
+      "name": "Rune essence",
+      "noted": 1,
+      "quantity": "4-6",
+      "rarity": "0.11538461538461539",
+      "rolls": 1
+    },
+    {
+      "id": 1436,
+      "members": 0,
+      "name": "Rune essence",
+      "noted": 1,
+      "quantity": "1",
+      "rarity": "0.019230769230769232",
+      "rolls": 1
+    },
+    {
+      "id": 559,
+      "members": 0,
+      "name": "Body rune",
+      "noted": 0,
+      "quantity": "5-10",
+      "rarity": "0.15384615384615385",
+      "rolls": 1
+    },
+    {
+      "id": 559,
+      "members": 0,
+      "name": "Body rune",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.11538461538461539",
+      "rolls": 1
+    },
+    {
+      "id": 1623,
+      "members": 0,
+      "name": "Uncut sapphire",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.07692307692307693",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "This golem looks like it's been imbued with body energy.",
+  "hitpoints": 60,
+  "id": "10691",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 7,
+  "members": 0,
+  "name": "Body Golem",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2021-04-14",
+  "size": 2,
+  "slayer_level": "",
+  "slayer_masters": [],
+  "slayer_monster": 0,
+  "slayer_xp": "",
+  "strength_bonus": 28,
+  "strength_level": 43,
+  "venomous": 0,
+  "wiki_name": "Body Golem (Golem)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Body_Golem#Golem"
 }

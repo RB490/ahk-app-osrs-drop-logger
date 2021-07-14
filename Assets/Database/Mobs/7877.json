@@ -1,7 +1,7 @@
 {
   "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
-  "_etag": "043f7a76b2205f4b475288d18ac291ceeea99ad9",
-  "_id": "60cd28b2cfb7392d0090787e",
+  "_etag": "ddc2c9e50f0b2d2583d8df49b624cf423648a0f2",
+  "_id": "60ebb3b1c1c55bf074a5ec18",
   "_links": {
     "collection": {
       "href": "monsters",
@@ -12,7 +12,7 @@
       "title": "home"
     },
     "self": {
-      "href": "monsters/60cd28b2cfb7392d0090787e",
+      "href": "monsters/60ebb3b1c1c55bf074a5ec18",
       "title": "Monster"
     }
   },
@@ -30,7 +30,7 @@
     "demon"
   ],
   "category": [
-    "hellhound"
+    "hellhounds"
   ],
   "combat_level": 136,
   "defence_crush": 0,
@@ -40,6 +40,15 @@
   "defence_slash": 0,
   "defence_stab": 0,
   "drops": [
+    {
+      "id": 25769,
+      "members": 1,
+      "name": "Vile ashes",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
     {
       "id": 13233,
       "members": 1,
@@ -84,7 +93,7 @@
   "immune_poison": 0,
   "immune_venom": 0,
   "incomplete": 1,
-  "last_updated": "2021-06-18",
+  "last_updated": "2021-07-12",
   "magic_bonus": 0,
   "magic_level": 1,
   "max_hit": 13,

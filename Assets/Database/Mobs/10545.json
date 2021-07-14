@@ -1,7 +1,7 @@
 {
   "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
-  "_etag": "bb23a26b6ea8ee1971f08afbb53b2a0713c3ab9a",
-  "_id": "60cd28b3cfb7392d009079e0",
+  "_etag": "7f3e5eb10248ea251933e0e67071126537d2cbc7",
+  "_id": "60ebb3b2c1c55bf074a5ed7a",
   "_links": {
     "collection": {
       "href": "monsters",
@@ -12,7 +12,7 @@
       "title": "home"
     },
     "self": {
-      "href": "monsters/60cd28b3cfb7392d009079e0",
+      "href": "monsters/60ebb3b2c1c55bf074a5ed7a",
       "title": "Monster"
     }
   },
@@ -30,7 +30,7 @@
     "undead"
   ],
   "category": [
-    "ghost"
+    "ghosts"
   ],
   "combat_level": 20,
   "defence_crush": 0,
@@ -462,7 +462,7 @@
   "immune_poison": 0,
   "immune_venom": 0,
   "incomplete": 1,
-  "last_updated": "2021-02-24",
+  "last_updated": "2021-07-12",
   "magic_bonus": 0,
   "magic_level": 10,
   "max_hit": 2,

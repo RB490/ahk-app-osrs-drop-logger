@@ -1,7 +1,7 @@
 {
   "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
-  "_etag": "9bdcfab85d7de3e10c18b9439242323d649d29a7",
-  "_id": "60cd28b0cfb7392d0090726d",
+  "_etag": "0f5fa07b9fc7e7f1cf01917bffde91f22e78b81b",
+  "_id": "60ebb3afc1c55bf074a5e607",
   "_links": {
     "collection": {
       "href": "monsters",
@@ -12,7 +12,7 @@
       "title": "home"
     },
     "self": {
-      "href": "monsters/60cd28b0cfb7392d0090726d",
+      "href": "monsters/60ebb3afc1c55bf074a5e607",
       "title": "Monster"
     }
   },
@@ -28,7 +28,7 @@
   ],
   "attributes": [],
   "category": [
-    "hill giant"
+    "hill giants"
   ],
   "combat_level": 76,
   "defence_crush": 0,
@@ -262,7 +262,7 @@
   "immune_poison": 0,
   "immune_venom": 0,
   "incomplete": 1,
-  "last_updated": "2020-12-25",
+  "last_updated": "2021-07-12",
   "magic_bonus": 0,
   "magic_level": 1,
   "max_hit": 7,

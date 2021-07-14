@@ -1,108 +1,126 @@
 {
-    "id": 6614,
-    "name": "Greater Skeleton Hellhound",
-    "last_updated": "2020-12-25",
-    "incomplete": true,
-    "members": true,
-    "release_date": "2014-03-13",
-    "combat_level": 281,
-    "size": 2,
-    "hitpoints": 190,
-    "max_hit": 32,
-    "attack_type": [
-        "crush"
-    ],
-    "attack_speed": 4,
-    "aggressive": true,
-    "poisonous": false,
-    "venomous": false,
-    "immune_poison": false,
-    "immune_venom": false,
-    "attributes": [
-        "undead"
-    ],
-    "category": [
-        "hellhound",
-        "skeleton"
-    ],
-    "slayer_monster": true,
-    "slayer_level": 1,
-    "slayer_xp": 214.5,
-    "slayer_masters": [
-        "turael",
-        "spria",
-        "krystilia",
-        "mazchna",
-        "vannaka",
-        "chaeldar",
-        "nieve",
-        "duradel"
-    ],
-    "duplicate": false,
-    "examine": "Can never possibly go hungry.",
-    "wiki_name": "Greater Skeleton Hellhound",
-    "wiki_url": "https://oldschool.runescape.wiki/w/Greater_Skeleton_Hellhound",
-    "attack_level": 240,
-    "strength_level": 310,
-    "defence_level": 220,
-    "magic_level": 1,
-    "ranged_level": 1,
-    "attack_bonus": 0,
-    "strength_bonus": 0,
-    "attack_magic": 0,
-    "magic_bonus": 0,
-    "attack_ranged": 0,
-    "ranged_bonus": 0,
-    "defence_stab": 150,
-    "defence_slash": 163,
-    "defence_crush": 20,
-    "defence_magic": 210,
-    "defence_ranged": 275,
-    "drops": [
-        {
-            "id": 526,
-            "name": "Bones",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        },
-        {
-            "id": 11941,
-            "name": "Looting bag",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.3333333333333333,
-            "rolls": 1
-        },
-        {
-            "id": 6806,
-            "name": "Skeleton champion scroll",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.0002,
-            "rolls": 1
-        },
-        {
-            "id": 23490,
-            "name": "Larran's key",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.016129032258064516,
-            "rolls": 1
-        },
-        {
-            "id": 21257,
-            "name": "Slayer's enchantment",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.005952380952380952,
-            "rolls": 1
-        }
-    ]
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "e89bcb36ef1b9a55c9fb448c42dd03701ea72fc4",
+  "_id": "60ebb3b1c1c55bf074a5eaed",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3b1c1c55bf074a5eaed",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 0,
+  "attack_level": 240,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "crush"
+  ],
+  "attributes": [
+    "undead"
+  ],
+  "category": [
+    "hellhounds",
+    "skeletons"
+  ],
+  "combat_level": 281,
+  "defence_crush": 20,
+  "defence_level": 220,
+  "defence_magic": 210,
+  "defence_ranged": 275,
+  "defence_slash": 163,
+  "defence_stab": 150,
+  "drops": [
+    {
+      "id": 526,
+      "members": 0,
+      "name": "Bones",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 11941,
+      "members": 1,
+      "name": "Looting bag",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.3333333333333333",
+      "rolls": 1
+    },
+    {
+      "id": 6806,
+      "members": 1,
+      "name": "Skeleton champion scroll",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.0002",
+      "rolls": 1
+    },
+    {
+      "id": 23490,
+      "members": 1,
+      "name": "Larran's key",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.016129032258064516",
+      "rolls": 1
+    },
+    {
+      "id": 21257,
+      "members": 1,
+      "name": "Slayer's enchantment",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.005952380952380952",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "Can never possibly go hungry.",
+  "hitpoints": 190,
+  "id": "6614",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 32,
+  "members": 1,
+  "name": "Greater Skeleton Hellhound",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2014-03-13",
+  "size": 2,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "turael",
+    "spria",
+    "krystilia",
+    "mazchna",
+    "vannaka",
+    "chaeldar",
+    "nieve",
+    "duradel"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "214.5",
+  "strength_bonus": 0,
+  "strength_level": 310,
+  "venomous": 0,
+  "wiki_name": "Greater Skeleton Hellhound",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Greater_Skeleton_Hellhound"
 }

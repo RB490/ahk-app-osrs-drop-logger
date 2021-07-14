@@ -1,0 +1,79 @@
+{
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "220e537db4883b6acf103a5afb386b328fe0f95a",
+  "_id": "60ebb3afc1c55bf074a5e4e5",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3afc1c55bf074a5e4e5",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 50,
+  "attack_level": 170,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 6,
+  "attack_type": [
+    "slash",
+    "magic"
+  ],
+  "attributes": [
+    "demon"
+  ],
+  "category": [],
+  "combat_level": 195,
+  "defence_crush": 0,
+  "defence_level": 170,
+  "defence_magic": 50,
+  "defence_ranged": 0,
+  "defence_slash": 50,
+  "defence_stab": 0,
+  "drops": [
+    {
+      "id": 25772,
+      "members": 1,
+      "name": "Malicious ashes",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "A Greater Jungle demon. A magical aura emanates from its hide.",
+  "hitpoints": 170,
+  "id": "1443",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 170,
+  "max_hit": 32,
+  "members": 1,
+  "name": "Jungle Demon",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2004-12-06",
+  "size": 3,
+  "slayer_level": "",
+  "slayer_masters": [],
+  "slayer_monster": 0,
+  "slayer_xp": "",
+  "strength_bonus": 50,
+  "strength_level": 170,
+  "venomous": 0,
+  "wiki_name": "Jungle Demon (Normal)",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Jungle_Demon#Normal"
+}

@@ -1,7 +1,7 @@
 {
   "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
-  "_etag": "69b4f21ef0be60611a4b766810787e1ccbd50560",
-  "_id": "60cd28afcfb7392d009070ba",
+  "_etag": "20f59a1bdddf16b39ed281331de55ae0c05abb4a",
+  "_id": "60ebb3aec1c55bf074a5e454",
   "_links": {
     "collection": {
       "href": "monsters",
@@ -12,25 +12,25 @@
       "title": "home"
     },
     "self": {
-      "href": "monsters/60cd28afcfb7392d009070ba",
+      "href": "monsters/60ebb3aec1c55bf074a5e454",
       "title": "Monster"
     }
   },
   "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
   "aggressive": 1,
   "attack_bonus": 0,
-  "attack_level": 0,
+  "attack_level": 78,
   "attack_magic": 0,
   "attack_ranged": 0,
-  "attack_speed": "",
+  "attack_speed": 4,
   "attack_type": [
-    "melee"
+    "stab"
   ],
   "attributes": [],
   "category": [],
   "combat_level": 100,
   "defence_crush": 0,
-  "defence_level": 0,
+  "defence_level": 81,
   "defence_magic": 0,
   "defence_ranged": 0,
   "defence_slash": 0,
@@ -525,20 +525,20 @@
   ],
   "duplicate": 0,
   "examine": "A horror from the ocean depths...",
-  "hitpoints": 160,
+  "hitpoints": 120,
   "id": "979",
   "immune_poison": 0,
   "immune_venom": 0,
   "incomplete": 1,
-  "last_updated": "2020-12-25",
+  "last_updated": "2021-07-12",
   "magic_bonus": 0,
-  "magic_level": 0,
+  "magic_level": 1,
   "max_hit": 9,
   "members": 1,
   "name": "Dagannoth",
   "poisonous": 0,
   "ranged_bonus": 0,
-  "ranged_level": 0,
+  "ranged_level": 50,
   "release_date": "2004-11-17",
   "size": 2,
   "slayer_level": "",
@@ -546,7 +546,7 @@
   "slayer_monster": 0,
   "slayer_xp": "",
   "strength_bonus": 0,
-  "strength_level": 0,
+  "strength_level": 78,
   "venomous": 0,
   "wiki_name": "Dagannoth (Horror from the Deep)",
   "wiki_url": "https://oldschool.runescape.wiki/w/Dagannoth_(Horror_from_the_Deep)"

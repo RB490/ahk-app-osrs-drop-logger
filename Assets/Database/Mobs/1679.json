@@ -1,72 +1,90 @@
 {
-    "id": 1679,
-    "name": "Crypt rat",
-    "last_updated": "2020-12-25",
-    "incomplete": true,
-    "members": true,
-    "release_date": "2005-05-09",
-    "combat_level": 43,
-    "size": 1,
-    "hitpoints": 35,
-    "max_hit": 3,
-    "attack_type": [
-        "stab"
-    ],
-    "attack_speed": 4,
-    "aggressive": true,
-    "poisonous": false,
-    "venomous": false,
-    "immune_poison": false,
-    "immune_venom": false,
-    "attributes": [],
-    "category": [
-        "rat"
-    ],
-    "slayer_monster": true,
-    "slayer_level": 1,
-    "slayer_xp": 35.0,
-    "slayer_masters": [
-        "turael",
-        "spria"
-    ],
-    "duplicate": false,
-    "examine": "A nasty little rodent.",
-    "wiki_name": "Crypt rat",
-    "wiki_url": "https://oldschool.runescape.wiki/w/Crypt_rat",
-    "attack_level": 70,
-    "strength_level": 20,
-    "defence_level": 20,
-    "magic_level": 1,
-    "ranged_level": 1,
-    "attack_bonus": 0,
-    "strength_bonus": 0,
-    "attack_magic": 0,
-    "magic_bonus": 0,
-    "attack_ranged": 0,
-    "ranged_bonus": 0,
-    "defence_stab": 0,
-    "defence_slash": 0,
-    "defence_crush": 0,
-    "defence_magic": 0,
-    "defence_ranged": 0,
-    "drops": [
-        {
-            "id": 526,
-            "name": "Bones",
-            "members": false,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        },
-        {
-            "id": 7836,
-            "name": "Rat bone",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 0.25,
-            "rolls": 1
-        }
-    ]
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "6800c5c7d5132f2c9ca8358fe1ece7777121e613",
+  "_id": "60ebb3afc1c55bf074a5e50a",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3afc1c55bf074a5e50a",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 0,
+  "attack_level": 70,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "stab"
+  ],
+  "attributes": [],
+  "category": [
+    "rats"
+  ],
+  "combat_level": 43,
+  "defence_crush": 0,
+  "defence_level": 20,
+  "defence_magic": 0,
+  "defence_ranged": 0,
+  "defence_slash": 0,
+  "defence_stab": 0,
+  "drops": [
+    {
+      "id": 526,
+      "members": 0,
+      "name": "Bones",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    },
+    {
+      "id": 7836,
+      "members": 1,
+      "name": "Rat bone",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "0.25",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "A nasty little rodent.",
+  "hitpoints": 35,
+  "id": "1679",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 3,
+  "members": 1,
+  "name": "Crypt rat",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2005-05-09",
+  "size": 1,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "turael",
+    "spria"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "35.0",
+  "strength_bonus": 0,
+  "strength_level": 20,
+  "venomous": 0,
+  "wiki_name": "Crypt rat",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Crypt_rat"
 }

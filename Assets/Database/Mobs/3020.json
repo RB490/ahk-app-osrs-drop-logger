@@ -1,63 +1,81 @@
 {
-    "id": 3020,
-    "name": "Jungle spider",
-    "last_updated": "2020-12-25",
-    "incomplete": true,
-    "members": true,
-    "release_date": "2003-01-27",
-    "combat_level": 44,
-    "size": 1,
-    "hitpoints": 50,
-    "max_hit": 5,
-    "attack_type": [
-        "stab"
-    ],
-    "attack_speed": 4,
-    "aggressive": true,
-    "poisonous": false,
-    "venomous": false,
-    "immune_poison": false,
-    "immune_venom": false,
-    "attributes": [],
-    "category": [
-        "spider"
-    ],
-    "slayer_monster": true,
-    "slayer_level": 1,
-    "slayer_xp": 50.0,
-    "slayer_masters": [
-        "turael",
-        "spria"
-    ],
-    "duplicate": false,
-    "examine": "A barely visible, deadly jungle spider.",
-    "wiki_name": "Jungle spider",
-    "wiki_url": "https://oldschool.runescape.wiki/w/Jungle_spider",
-    "attack_level": 35,
-    "strength_level": 37,
-    "defence_level": 35,
-    "magic_level": 1,
-    "ranged_level": 1,
-    "attack_bonus": 0,
-    "strength_bonus": 0,
-    "attack_magic": 0,
-    "magic_bonus": 0,
-    "attack_ranged": 0,
-    "ranged_bonus": 0,
-    "defence_stab": 20,
-    "defence_slash": 20,
-    "defence_crush": 10,
-    "defence_magic": 17,
-    "defence_ranged": 20,
-    "drops": [
-        {
-            "id": 6291,
-            "name": "Spider carcass",
-            "members": true,
-            "quantity": "1",
-            "noted": false,
-            "rarity": 1.0,
-            "rolls": 1
-        }
-    ]
+  "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "_etag": "52ecc166c6bc6d026630fc417a9dd11f2a3bf790",
+  "_id": "60ebb3afc1c55bf074a5e6bd",
+  "_links": {
+    "collection": {
+      "href": "monsters",
+      "title": "monsters"
+    },
+    "parent": {
+      "href": "/",
+      "title": "home"
+    },
+    "self": {
+      "href": "monsters/60ebb3afc1c55bf074a5e6bd",
+      "title": "Monster"
+    }
+  },
+  "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "aggressive": 1,
+  "attack_bonus": 0,
+  "attack_level": 35,
+  "attack_magic": 0,
+  "attack_ranged": 0,
+  "attack_speed": 4,
+  "attack_type": [
+    "stab"
+  ],
+  "attributes": [],
+  "category": [
+    "spiders"
+  ],
+  "combat_level": 44,
+  "defence_crush": 10,
+  "defence_level": 35,
+  "defence_magic": 17,
+  "defence_ranged": 20,
+  "defence_slash": 20,
+  "defence_stab": 20,
+  "drops": [
+    {
+      "id": 6291,
+      "members": 1,
+      "name": "Spider carcass",
+      "noted": 0,
+      "quantity": "1",
+      "rarity": "1.0",
+      "rolls": 1
+    }
+  ],
+  "duplicate": 0,
+  "examine": "A barely visible, deadly jungle spider.",
+  "hitpoints": 50,
+  "id": "3020",
+  "immune_poison": 0,
+  "immune_venom": 0,
+  "incomplete": 1,
+  "last_updated": "2021-07-12",
+  "magic_bonus": 0,
+  "magic_level": 1,
+  "max_hit": 5,
+  "members": 1,
+  "name": "Jungle spider",
+  "poisonous": 0,
+  "ranged_bonus": 0,
+  "ranged_level": 1,
+  "release_date": "2003-01-27",
+  "size": 1,
+  "slayer_level": 1,
+  "slayer_masters": [
+    "turael",
+    "spria"
+  ],
+  "slayer_monster": 1,
+  "slayer_xp": "50.0",
+  "strength_bonus": 0,
+  "strength_level": 37,
+  "venomous": 0,
+  "wiki_name": "Jungle spider",
+  "wiki_url": "https://oldschool.runescape.wiki/w/Jungle_spider"
 }
