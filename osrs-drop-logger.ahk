@@ -39,8 +39,7 @@
 
     ; Class objects
     , P                         := new ClassGuiProgress(APP_NAME)
-    , WIKI_API                  := new ClassWikiApi
-    , WIKI_API_LEGACY           := new ClassApiWiki
+    , WIKI_API_LEGACY           := new ClassWikiApi
     , ITEM_DB                   := new ClassDatabaseItems
     , MOB_DB                    := new ClassDatabaseMobs
     , DROP_LOG                  := new ClassDropLog
@@ -72,28 +71,6 @@
 
 ; Subroutines
     debugScript:
-        ; _QPC("reset")
-        ; url := WIKI_API_LEGACY.img.GetMobImage(mobName)
-        
-        ; itemName := "Ashes"
-        ; wikiImageUrlObj := WIKI_API_LEGACY.img.GetItemImages(itemName, 50)
-
-        ; testString := "https://oldschool.runescape.wiki/api.php?action=query&format=json&prop=imageinfo&iiprop=url&titles=File:Ashes_detail.png|File:Ashes.png"
-        ; DownloadToString(testSTring)
-
-        ; WIKI_API.GetItemUrls("Ashes")
-        ; msgbox % _QPC()
-        ; msgbox % json.dump(wikiImageUrlObj,,2)
-        
-        
-        ; GetMobImage("Gnome", 000000)
-        ; GetMobImage("Spinolyp (spinolyp)", 5947)
-        ; msgbox
-        ; GetDropImage("Abyssal Whip", 4151)
-        ; return
-        GetMobImagesForAllMobs()
-
-
         ; myDebugDropLogfile := A_ScriptDir "\Dev\myDebugDropLogfile.json"
         ; SCRIPT_SETTINGS.previousLogFile := myDebugDropLogfile
         ; DROP_LOG.LoadFile(myDebugDropLogfile)
@@ -116,7 +93,6 @@
 ; Includes
     #Include, %A_ScriptDir%\Includes
     #Include, Class Wiki Api.ahk
-    #Include, Class Api Wiki - Legacy.ahk
     #Include, Class Database Items.ahk
     #Include, Class Database Mobs.ahk
     #Include, Class Drop Log.ahk

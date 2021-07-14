@@ -1,118 +1,338 @@
-/*
-    ClassWikiApi
-        Purpose
-            Handle all data retrievals from the wiki
-
-    Misc/Temp
-        WIKI_API.img.GetItemImages(itemName, 50)
-        WIKI_API.img.GetMobImage(mobName)
-
-    Sources
-        Categories
-            https://oldschool.runescape.wiki/api.php?action=query&list=categorymembers&cmlimit=500&format=json&cmtitle=Category:Runes
-            https://www.mediawiki.org/wiki/API:Categorymembers
-            https://oldschool.runescape.wiki/api.php?action=help&modules=query
-            https://www.osrsbox.com/blog/2018/12/12/scraping-the-osrs-wiki-part1/#extract-all-categories
-
-        Images
-            https://www.mediawiki.org/wiki/API:Allimages
-            https://www.mediawiki.org/wiki/API:Images
-
-            https://oldschool.runescape.wiki/api.php?action=help&modules=query%2Bimageinfo
-            Seems wiki can scale images
-
-            Getting images for an item
-                1. list images on page
-                    https://oldschool.runescape.wiki/api.php?action=help&modules=query%2Bimages
-                    https://oldschool.runescape.wiki/api.php?action=query&generator=images&titles=Ashes
-                
-                2. use image name to find the url
-                    https://oldschool.runescape.wiki/api.php?action=help&modules=query%2Bimageinfo
-                    https://oldschool.runescape.wiki/api.php?action=query&titles=File:Ashes_detail.png&prop=imageinfo&iiprop=url
-
-            'titles' parameter: Maximum number of values is 50 (500 for clients allowed higher limits). Source: https://www.mediawiki.org/wiki/API:Query
-
-    Info
-        Reason to use the 'legacy' wiki api class is because doing multiple api calls to get a single image name/url is really inefficient 
-
-        Special characters
-            Convert + to %2B
-
-*/
-
-
-Class ClassWikiApi {
-    baseUrl := "https://oldschool.runescape.wiki/api.php?"
-    baseQuery := "action=query&format=json"
-
+; purpose = retrieves anything required from the osrs wiki
+class ClassWikiApi {
     __New() {
-        ; msgbox % A_ThisFunc
+        this.url := "https://oldschool.runescape.wiki"
+        this.img := new this.ClassImages(this)
+        this.table := new this.ClassDropTables(this)
     }
 
-    _ConvertStrangeCharactersToWikiFormat(string) {
-        return StrReplace(string, "+", "%2b")
+    GetPageUrl(pageName, useTitleCase := false) {
+        return this.url "/w/" this._GetPageNameInWikiFormat(pageName, useTitleCase)
     }
 
-    _GetUrl(url) {
-        outputInfo := A_ThisFunc "`n`n------------------------------`n`n"
-        outputInfo.= "Input(Url)`n`n" url "`n`n------------------------------`n`n"
-        
-        url := this._ConvertStrangeCharactersToWikiFormat(url)
-        outputInfo.= "Converted Input(Url)`n`n" url "`n`n------------------------------`n`n"
+    GetPageHtml(pageName) {
+        html := DownloadToString(this.GetPageUrl(pageName)) ; 'A_doubt'
 
-        ; call api
-        result := DownloadToString(url)
-        outputInfo.= "result`n`n" result "`n`n------------------------------`n`n"
-        
+        If this._IsErrorPage(html) ; retry with title case format: 'A_Doubt'
+            html := DownloadToString(this.GetPageUrl(pageName, "useTitleCase"))
 
-        ; return output
-        output := json.load(result)
-        outputInfo.= "output`n`n" json.dump(output,,2) "`n`n------------------------------`n`n"
-
-        return output
+        If this._IsErrorPage(html)
+            Msg("Error", A_ThisFunc, "Invalid wiki page for '" pageName "'!")
+        return html
     }
 
-    GetItemUrls(itemName) {
-        ; -------------------------------------------------------- one api call
+    GetPageDoc(pageHtml) {
+        doc := ComObjCreate("HTMLfile")
+        vHtml = <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        doc.write(vHtml) ; enable getElementsByClassName https://autohotkey.com/boards/viewtopic.php?f=5&t=31907
+        doc.write(pageHtml)
+        return doc
+    }
 
-        url := this.baseUrl this.baseQuery "&prop=imageinfo&iiprop=url&titles=File:" itemName ".png|File:" itemName "_detail.png"
-        obj := this._GetUrl(url).query.pages
-        
-        ; check valid amount of pages were returned
-        If (obj.count() > 2)
-            Msg("Info", A_ThisFunc, "Unexpectedly, more than 2 pages were found in api call")
+    _IsErrorPage(html) {
+        If InStr(html, "Nothing interesting happens") and InStr(html, "Weird_gloop_detail.png")
+            return true
+    }
 
-        ; fetch information
-        output := []
-        for page in obj {
-            title := obj[page].title
-            url := obj[page].imageinfo.pop().url
-
-            If InStr(title, "detail")
-                output["detail"] := url
-            else
-                output["icon"] := url
-
+    _GetPageNameInWikiFormat(pageName, useTitleCase := false) { ; eg. 'Rune Axe' becomes 'Rune_axe'
+        If (useTitleCase) {
+            StringUpper, output, output, T
+            output := StrReplace(pageName, A_Space, "_")
+            return output
         }
+        StringLower, output, pageName
+        output := StrReplace(pageName, A_Space, "_")
+
+        firstChar := SubStr(output, 1, 1)
+        If !IsInteger(firstChar) and !InStr(output, "(") ; eg: '3rd age amulet' or 'Bones (Ape Atoll)'
+            StringUpper, output, output, T
+
         return output
-        
-        ; -------------------------------------------------------- two api calls
+    }
 
-        detailUrl := this.baseUrl this.baseQuery "&prop=imageinfo&iiprop=url&titles=File:Ashes_detail.png"
-        iconUrl := this.baseUrl this.baseQuery  "&prop=imageinfo&iiprop=url&titles=File:Ashes.png"
-        urls := {"detail": detailUrl, "icon": iconUrl}
+    ; https://developer.mozilla.org/en-US/docs/Web/API/Element
+    _GetDocElementsBy(doc, method, searchTerm) {
+        switch method {
+            case "Tag": elements := doc.getElementsByTagName(searchTerm)
+            case "Class": elements := doc.getElementsByClassName(searchTerm)
+            case "Name": elements := doc.getElementsByName(searchTerm)
+            default: Msg("Error", ThisFunc,  "Could not retrieve item id for '" itemString "'")
+        }
+        If !elements.length
+            Msg("Error", A_ThisFunc, "Could not find any '" searchTerm "' elements")
+        return elements
+    }
 
-        output := []
-        for type, url in urls {
-            ; get api info
-            obj := this._GetUrl(url).query.pages
+    Class ClassDropTables {
+        __New(parentInstance) {
+            this.parent := parentInstance
+        }
 
-            ; assuming there is only one page result
-            obj := obj.pop() ; get page
-            itemUrl := obj.imageinfo.pop().url ; get imageinfo url
+        GetDroptable(pageName) {
+            this.pageName := pageName
+            this.html := this.parent.GetPageHtml(pageName)
+            this.doc := this.parent.GetPageDoc(this.html)
+            If !this._PageContainsTableTitles() ; otherwise invalid, eg: https://oldschool.runescape.wiki/w/Animated_steel_armour_(Tarn%27s_Lair)
+                return false
+            this.tables := this._GetDropTables(this.html)
+            If !this.tables.length
+                return false
+            output := {}
+            loop % this.tables.length {
+                tableHtmlIndex := A_Index-1
+                If !(this.tables[tableHtmlIndex].rows[0].cells.Length = 6)
+                    continue
+                table := {}
+                table.title := this._GetTableTitle(tableHtmlIndex)
+                table.drops := this._GetTableDrops(tableHtmlIndex)
+                output.push(table)
+            }
+            return output
+        }
+
+        _GetTableDrops(tableHtmlIndex) {
+            output := {}
+            table := this.tables[tableHtmlIndex]
+            loop % table.rows.length {
+                row := table.rows[A_Index-1]
+                If (A_Index = 1) ; skip 'header' row containing item, quantity, rarity etc.
+                    continue
+
+                item := {}
+                loop % row.cells.length {
+                    cell := row.cells[A_Index-1]
+
+                    switch A_Index {
+                        case 1: {
+                            ico := SubStr(cell.innerHtml, InStr(cell.innerHtml, "src=") + 5)
+                            ico := SubStr(ico, 1, InStr(ico, "?") - 1)
+                            item.iconWikiUrl := ico
+                        }
+                        case 2: {
+                            item.name := cell.innerText
+                            item.name := StrReplace(item.name, "(m)") ; members indicator in eg. 'ankou'
+                            item.name := StrReplace(item.name, "(f)") ; f2p indicator
+                        }
+                        case 3: item.quantity := this._GetQuantityFromWikiFormat(cell.innerText)
+                        case 4: item.rarity := cell.innerText
+                        case 5: item.price := cell.innerText
+                        case 6: item.highAlchPrice := cell.innerText
+                    }
+                }
+                output.push(item)
+            }
+            return output
+        }
+
+        _GetTableTitle(tableHtmlIndex) {
+            table := this.tables[tableHtmlIndex]
             
-            output[type] := itemUrl
+            ; retrieve drop table's first item image wiki 'url key' eg. '/images/f/fe/Larran%27s_key_1.png?c6772'
+            img := table.rows[1].cells[0].innerHtml
+            img := SubStr(img, InStr(img, "src=") + 5)
+            img := SubStr(img, 1, InStr(img, """") - 1) ; src=" end quote
+
+            ; get html with drop tables title in it
+            loop, parse, % this.html, `n ; cut off everything after '<item name>.png'
+            {
+                html .= A_LoopField "`n"
+                If InStr(A_LoopField, img) and InStr(A_LoopField, "inventory-image") ; check both because 'abyssal sire' uses Coins_10000.png multiple times
+                    break
+            }
+            html := SubStr(html, InStr(html, "mw-headline", false, 0) - 27) ; get last mw-header searching from the end of the string -- 17 is exact
+
+            ; use com to retrieve mw-headeline text
+            doc := this.parent.GetPageDoc(html)
+            mwHeadlines := this.parent._GetDocElementsBy(doc, "class", "mw-headline")
+            return mwHeadlines[0].innerText
         }
-        return output
+
+        _GetDropTables(html) {
+            tables := this.parent._GetDocElementsBy(this.doc, "tag", "table")
+            loop % tables.length {
+                firstRowLength := tables[A_Index-1].rows[0].cells.Length
+                If (firstRowLength = 6)
+                    return tables
+            }
+            return false
+        }
+
+        /*
+            wikiQuantity = {string} wiki item quantities eg:
+                1
+                N/A
+                3,000
+                250–499
+                20,000–81,000
+                ^ <quantity> + ' (noted)'
+            output = {integer} with 'junk' removed eg. 3,000 > 3000
+        */
+        _GetQuantityFromWikiFormat(wikiQuantity) {
+            output := wikiQuantity
+            If (output = "N/A")
+                output := 1
+            output := StrReplace(output, ",")
+            output := StrReplace(output, " (noted)")
+
+            ; replace any character besides integers with "-" because the wiki uses a weird dash
+            ; in their quantitites that glitches out ahk eg. 250-499 becomes 250â€“499
+            loop, parse, output
+            {
+                If A_LoopField is Integer
+                    LoopField .= A_LoopField
+                else
+                    LoopField .= "-"
+
+            }
+            output := LoopField
+
+            return output
+        }
+
+        _PageContainsTableTitles() {
+            elements := this.doc.getElementsByClassName("mw-headline")
+            If elements.length
+                return true
+        }
+    }
+
+    Class ClassImages {
+        __New(parentInstance) {
+            this.parent := parentInstance
+        }
+
+        __Call(caller, pageName) {
+            If !InStr(caller, "_") { ; assume class method is calling with underscore _
+                this.pageName := pageName
+                this.url := this.parent.GetPageUrl(pageName)
+                this.html := this.parent.GetPageHtml(pageName)
+                this.doc := this.parent.GetPageDoc(this.html)
+
+                If (caller = "GetItemImages") {
+                    this.potionDose := this._GetPotionDose(pageName)
+                    If (this.potionDose)
+                        this.htmlPotionDose := this.potionDose - 1 ; html arrays start at 0
+                    else
+                        this.htmlPotionDose := 0
+                }
+            }
+
+            If (pageName = "Spinolyp") {
+                elements := this.parent._GetDocElementsBy(this.doc, "tag", "meta")
+                
+                loop % elements.length {
+                    ; find og:image element
+                    If !(elements[A_Index-1].getAttribute("property") = "og:image")
+                        Continue
+                    
+                    output := elements[A_Index-1].outerHTML
+                    Break
+                }
+
+                ; output= <meta content="https://oldschool.runescape.wiki/images/thumb/c/c6/Spinolyp.png/1200px-Spinolyp.png?5998f" property="og:image">
+                url := SubStr(output, InStr(output, "https"))
+                url := SubStr(url, 1, InStr(url, """") - 2)
+            }
+        }
+
+        GetMobImage() { ; not scaling in output url as not every mob has a scalable 'thumb' image
+            
+            ; get image from og:image meta property
+            elements := this.parent._GetDocElementsBy(this.doc, "tag", "meta")
+            
+            loop % elements.length {
+                ; find og:image element
+                If !(elements[A_Index-1].getAttribute("property") = "og:image")
+                    Continue
+                
+                output := elements[A_Index-1].outerHTML
+                ; output= <meta content="https://oldschool.runescape.wiki/images/thumb/c/c6/Spinolyp.png/1200px-Spinolyp.png?5998f" property="og:image">
+                url := SubStr(output, InStr(output, "https"))
+                url := SubStr(url, 1, InStr(url, """") - 2)
+                return url
+            }
+
+            ; get image from infobox
+            elements := this.parent._GetDocElementsBy(this.doc, "class", "infobox-full-width-content") ; infobox-image
+            
+            If (elements.length = 1)
+                return this.parent.url "/" this._getImageFromInnerHtml(elements[0].innerHtml)
+
+            ; if infobox has multiple images eg. 'Arianwyn' or 'Glough'
+            loop % elements.length {
+                images := elements[A_Index-1].GetElementsByClassName("image")
+                If images.length {
+                    innerHtml := images[0].innerHtml
+                    If InStr(innerHtml, "srcset=") ; only the first image in mob infoboxes seems to have this property
+                        return this.parent.url "/" this._getImageFromInnerHtml(innerHtml)
+                }
+            }
+
+            Msg("Error", A_ThisFunc, "Could not find image for '" this.pageName "'")
+        }
+
+        GetItemImages() {
+            output := {}
+            output.icon := this._GetItemIcon() ; https://oldschool.runescape.wiki/images/a/a5/Superior_dragon_bones.png?105c4
+            output.detail := this._GetItemDetailed() ; https://oldschool.runescape.wiki/images/thumb/4/45/Ashes_detail.png/100px-Ashes_detail.png
+            return output
+        }
+
+        _GetItemIcon() {
+            ; get (last eg. 5 seeds) item html name from infobox
+            elements := this.parent._GetDocElementsBy(this.doc, "class", "inventory-image")
+            infoImages := elements[0].getElementsByClassName("image")
+            html := infoImages[infoImages.length-1].innerHtml
+            If !this.potionDose
+                return this.parent.url "/" this._getImageFromInnerHtml(html)
+
+            ; get item html name
+            htmlAlt := this._getAltFromInnerHtml(html)
+            htmlAlt := StrReplace(htmlAlt, "(1)", "(" this.potionDose ")")
+            
+            ; return correct image in image list 
+            images := this.parent._GetDocElementsBy(this.doc, "class", "image")
+            loop % images.length {
+                loopHtml := images[A_Index-1].innerHtml
+                loopAlt := this._getAltFromInnerHtml(loopHtml)
+                if (htmlAlt = loopAlt)
+                    return this.parent.url "/" this._getImageFromInnerHtml(loopHtml)
+            }
+
+            Msg("Error", A_ThisFunc, "Could not find icon for '" this.pageName "' with potion dose '" this.potionDose "'")
+        }
+
+        _GetItemDetailed() {
+            elements := this.parent._GetDocElementsBy(this.doc, "class", "floatleft")
+            return this.parent.url "/" this._getImageFromInnerHtml(elements[this.htmlPotionDose].innerHtml)
+        }
+
+        _GetPotionDose(pageName) {
+            potionDose := 0
+            elements := this.parent._GetDocElementsBy(this.doc, "class", "floatleft")
+            If (elements.length < 4) ; potions will have 4 images. 'Games necklace (2)' has 1
+                return potionDose
+
+            potionDose := InStr(pageName, "(1)") ? 1 : potionDose
+            potionDose := InStr(pageName, "(2)") ? 2 : potionDose
+            potionDose := InStr(pageName, "(3)") ? 3 : potionDose
+            potionDose := InStr(pageName, "(4)") ? 4 : potionDose
+            return potionDose
+        }
+
+        _getAltFromInnerHtml(innerHtml) {
+            html := innerHtml
+            html := SubStr(html, InStr(html, "alt=") + 5)
+            html := SubStr(html, 1, InStr(html, """") - 1)
+            return html
+        }
+
+        _getImageFromInnerHtml(innerHtml) {
+            html := innerHtml
+            imgNeedleStart = src="/images
+            html := SubStr(html, InStr(html, imgNeedleStart) + 6)
+            html := SubStr(html, 1, InStr(html, "?") - 1)
+            return html
+        }
     }
 }

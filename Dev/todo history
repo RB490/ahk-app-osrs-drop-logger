@@ -249,3 +249,7 @@ wiki api -> new wiki api replacing the old one
             eg. its not clear what the input parameter(s) are for GetMobImage
         bug ->  getmob image can't retrieve image for spinolyp
             the wiki page infobox for this mob has 'suspicious water' preselected instead of the actual spinolyp which is probably messing the script up
+
+wontfix -> structure -> integrate gui position code into the class. using the built in ini stuff to save position information
+	in the same spot as the class files. or maybe in temporary folder or something
+		save pos, restore pos, check correct pos

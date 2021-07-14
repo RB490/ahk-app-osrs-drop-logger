@@ -246,7 +246,7 @@ GetMobImage(mobName, mobId) {
     If InStr(mobName, "(")
         mobName := SubStr(mobName, 1, InStr(mobName, "(") - 2)
 
-    url := WIKI_API_LEGACY.img.GetMobImage(mobName)
+    url := WIKI_API.img.GetMobImage(mobName)
 
     DownloadImageOrReload(url, path)
     ResizeImage(path, 100)

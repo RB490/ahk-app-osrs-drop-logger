@@ -29,10 +29,6 @@ FEATURES -----------------------------------------------------------------------
             mob db = 0.04
 
 STRUCTURE ----------------------------------------------------------------------------------------------------------------------------------
-    structure -> integrate gui position code into the class. using the built in ini stuff to save position information
-        in the same spot as the class files. or maybe in temporary folder or something
-            save pos, restore pos, check correct pos
-
     structure -> wiki class -> more documentation
     structure -> wiki class -> Add the droptable category class wiki api calls inside the wiki class
 
@@ -46,7 +42,7 @@ BUGS ---------------------------------------------------------------------------
 
     bug -> gui_log -> menu open drop log file, windows doesnt open the .json for some reason
 
-DOLAST
+DOLAST ------------------------------------------------------------------------------------------------------------------------------------
     refactoring -> go through every file and if necessary add comments, rename stuff or whatever
 
     testing -> log a variety of mobs with different drop tables to adjust the categories and or add additional categories
