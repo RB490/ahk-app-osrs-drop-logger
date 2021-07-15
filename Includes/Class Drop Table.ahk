@@ -13,7 +13,7 @@
         ; download drop images
         for count, drop in obj
             GetDropImage(drop.name, drop.id)
-
+        
         ; sort drop table into categories. todo: separate RDT, Gem drop table, talisman drop table. etc.
         obj := DROP_CATEGORIES.Get(obj, SCRIPT_SETTINGS.guiLog_MaxTableSize)
 

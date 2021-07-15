@@ -4,12 +4,12 @@
   "guiLog_ItemImageType": "Wiki Detailed",
   "guiLog_MaxRowDrops": "8",
   "guiLog_MaxTableSize": "30",
-  "guiLog_X": 1112,
-  "guiLog_Y": 22,
+  "guiLog_X": 1138,
+  "guiLog_Y": 99,
   "guiStatsH": 400,
   "guiStatsW": 570,
   "guiStatsX": 1334,
   "guiStatsY": 143,
   "previousLogFile": "D:\\Programming and projects\\ahk-app-osrs-drop-logger\\Dev\\myDebugDropLogfile.json",
-  "previousMob": "Giant Mole"
+  "previousMob": "Yak"
 }

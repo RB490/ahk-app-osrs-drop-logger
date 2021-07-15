@@ -78,7 +78,7 @@ Class ClassDropCategories {
         }
 
         ; create the main category only if necessary. could be none of the drops had categories and maxMainTableSize is set to 0
-        If maxMainTableSize >= 1
+        If (maxMainTableSize >= 1) and !IsObject(output["Main"])
             output["Main"] := {}
         else
             return output

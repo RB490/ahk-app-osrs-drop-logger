@@ -92,9 +92,11 @@
         ; GetRDT()
 
         ; msgbox % OSRS.GetItemID("Abyssal Whip")
-        GUI_LOG.Get()
+        ; GUI_LOG.Get()
         ; GUI_STATS.Get()
-        ; GUI_START.Get()
+        GUI_START.Get()
+
+        ; obj := DROP_TABLE.Get("Yak")
 
         ; _QPC("reset")
         ; OSRS                    := new ClassOSRS
