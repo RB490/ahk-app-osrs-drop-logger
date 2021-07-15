@@ -75,15 +75,15 @@
 ; Subroutines
     debugScript:
         myDebugDropLogfile := A_ScriptDir "\Dev\myDebugDropLogfile.json"
-        ; myDebugDropLogfile := "D:\Downloads\debugDrystreak.json"
+        ; myDebugDropLogfile := "D:\Downloads\log.json"
         
-        ; FileDelete, % myDebugDropLogfile
-        ; FileAppend, {}, % myDebugDropLogfile
+        FileDelete, % myDebugDropLogfile
+        FileAppend, {}, % myDebugDropLogfile
 
+        SCRIPT_SETTINGS.previousMob := "Night Beast"
         SCRIPT_SETTINGS.previousLogFile := myDebugDropLogfile
         DROP_LOG.LoadFile(myDebugDropLogfile)
-
-        ; DROP_LOG.StartTrip()
+        DROP_LOG.StartTrip()
 
         ; DROP_TABLE.Get("Vorkath (Post-Quest)")
         ; DROP_TABLE.Get("Night Beast")
@@ -92,9 +92,9 @@
         ; GetRDT()
 
         ; msgbox % OSRS.GetItemID("Abyssal Whip")
-        ; GUI_LOG.Get()
-        ; GUI_STATS.Get()
-        GUI_START.Get()
+        GUI_LOG.Get()
+        GUI_STATS.Get()
+        ; GUI_START.Get()
 
         ; obj := DROP_TABLE.Get("Yak")
 

@@ -330,3 +330,9 @@ structure -> clean up OSRS class. possibly use a subclass for items and for mobs
 	this.items
 
 bug -> yak doesn't have any drops
+
+unique drops
+	might just rewrite the unique drops method from scratch here
+		bug -> stats -> current dry streak is incorrect
+		bug -> stats -> unique drop shortest dry streak and longest dry streak are empty if only gotten once
+		bug -> stats -> unique drop cadantine dry streak stays at 1 even adding a lot of other drops

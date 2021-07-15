@@ -62,6 +62,8 @@ Class ClassDropCategories {
     */
     Get(dropTable, maxMainTableSize) {
         output := []
+        output["Main"] := {}
+
 
         ; sort entire drop table into categories
         for i, drop in dropTable {
@@ -76,12 +78,6 @@ Class ClassDropCategories {
 
             output[category].push(drop)
         }
-
-        ; create the main category only if necessary. could be none of the drops had categories and maxMainTableSize is set to 0
-        If (maxMainTableSize >= 1) and !IsObject(output["Main"])
-            output["Main"] := {}
-        else
-            return output
 
         ; start merging categories into the 'main' category, starting with the smallest one until merging the smallest one would go over the max size
         ; loop the amount of categories that exist

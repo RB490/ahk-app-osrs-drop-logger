@@ -3,13 +3,13 @@
   "guiLog_DropSize": "33",
   "guiLog_ItemImageType": "Wiki Detailed",
   "guiLog_MaxRowDrops": "8",
-  "guiLog_MaxTableSize": "30",
-  "guiLog_X": 1138,
-  "guiLog_Y": 99,
+  "guiLog_MaxTableSize": "90",
+  "guiLog_X": 1205,
+  "guiLog_Y": 122,
   "guiStatsH": 400,
   "guiStatsW": 570,
-  "guiStatsX": 1334,
-  "guiStatsY": 143,
+  "guiStatsX": 1200,
+  "guiStatsY": 487,
   "previousLogFile": "D:\\Programming and projects\\ahk-app-osrs-drop-logger\\Dev\\myDebugDropLogfile.json",
-  "previousMob": "Yak"
+  "previousMob": "Night Beast"
 }

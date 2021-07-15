@@ -9,12 +9,6 @@ FEATURES -----------------------------------------------------------------------
 STRUCTURE ----------------------------------------------------------------------------------------------------------------------------------
 
 BUGS ---------------------------------------------------------------------------------------------------------------------------------------       
-    
-    unique drops
-        might just rewrite the unique drops method from scratch here
-            bug -> stats -> current dry streak doesnt seem to be right, either
-            bug -> stats -> unique drop shortest dry streak and longest dry streak are empty if only gotten once
-            bug -> stats -> unique drop cadantine dry streak stays at 1 even adding a lot of other drops
 
 DOLAST ------------------------------------------------------------------------------------------------------------------------------------
     
