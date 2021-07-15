@@ -320,3 +320,5 @@ bug -> night beast doesn't have rare drop table drops added
 feature -> drop categories -> separate the rare drop table and the others like gem drop table from the main drop table
 	^ seems atleast by checking vorkath the rare drop table isn't included. So always include the RDT into the gui,
 		either as a tab or an image that opens a separate gui
+
+structure -> Rename mob database to something more generic as it can do mobs but also items

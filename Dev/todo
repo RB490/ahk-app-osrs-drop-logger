@@ -2,8 +2,6 @@ CURRENT ------------------------------------------------------------------------
 
 FEATURES -----------------------------------------------------------------------------------------------------------------------------------
     
-    Rename mob database to something more generic as it can do mobs but also items
-
     drop table -> combine identical drops with separate values. eg: goblin has 5 different coin drops with different values
         take the different quantity formats into account here & possibly check how i used to do this
 
