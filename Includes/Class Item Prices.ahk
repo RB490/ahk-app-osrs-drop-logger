@@ -18,11 +18,11 @@ Class ClassItemPrices {
 
     __New() {
         ; check if the file is already available
-        obj := json.load(FileRead(PATH_DATABASE_ITEMS))
+        obj := json.load(FileRead(PATH_DATABASE_PRICES))
         
         ; check file creation time
-        If FileExist(PATH_DATABASE_ITEMS) {
-            FileGetTime, OutputVar , % PATH_DATABASE_ITEMS, C
+        If FileExist(PATH_DATABASE_PRICES) {
+            FileGetTime, OutputVar , % PATH_DATABASE_PRICES, C
             hoursOld := A_Now
             EnvSub, hoursOld, OutputVar, Hours
         }
@@ -73,8 +73,8 @@ Class ClassItemPrices {
                 output[id] := obj[id]
 
         ; save to disk for future use
-        FileDelete, % PATH_DATABASE_ITEMS
-        FileAppend, % json.Dump(output,,2), % PATH_DATABASE_ITEMS
+        FileDelete, % PATH_DATABASE_PRICES
+        FileAppend, % json.Dump(output,,2), % PATH_DATABASE_PRICES
 
         P.Destroy()
         return output

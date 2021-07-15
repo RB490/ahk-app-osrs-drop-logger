@@ -281,7 +281,7 @@ GetMobImagesForAllMobs() {
 }
 
 GetDropImagesForMob(mob) {
-    drops := OSRS.GetDropTable(mob)
+    drops := OSRS.GetMobTable(mob)
 
     for index, drop in drops {
         GetDropImage(drop.name, drop.id)

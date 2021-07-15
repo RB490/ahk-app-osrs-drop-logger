@@ -8,12 +8,6 @@ FEATURES -----------------------------------------------------------------------
 
 STRUCTURE ----------------------------------------------------------------------------------------------------------------------------------
 
-    structure -> clean up OSRS class. possibly use a subclass for items and for mobs right now its a bit of a mess. also rename
-        this.obj which currently stores the mob database but that needs to be more descriptive now that items are also handled
-        also load the items database into a class variable
-        this.mobs
-        this.items
-
 BUGS ---------------------------------------------------------------------------------------------------------------------------------------       
     
     unique drops

@@ -23,10 +23,10 @@
 
     ; Path variables
     , PATH_SCRIPT_SETTINGS          := A_ScriptDir "\Assets\Settings.json"
-    , PATH_DATABASE_MOBS            := A_ScriptDir "\Assets\Database\Mobs database.json"
-    , PATH_DATABASE_MOBS_DROP_LIST  := A_ScriptDir "\Assets\Database\Mobs database drop list.json"
-    , PATH_DATABASE_ITEMS           := A_ScriptDir "\Assets\Database\Prices database.json"
-    , PATH_DATABASE_CATEGORIES      := A_ScriptDir "\Assets\Database\Item category database.json"
+    , PATH_DATABASE_MOBS            := A_ScriptDir "\Assets\Database\Mobs.json"
+    , PATH_DATABASE_ITEMS           := A_ScriptDir "\Assets\Database\Items.json"
+    , PATH_DATABASE_PRICES          := A_ScriptDir "\Assets\Database\Prices.json"
+    , PATH_DATABASE_CATEGORIES      := A_ScriptDir "\Assets\Database\Item categories.json"
     , PATH_RDT_DROPTABLE            := A_ScriptDir "\Assets\Database\RDT.json"
     , DIR_DATABASE_MOBS             := A_ScriptDir "\Assets\Database\Mobs"
     , DIR_MOB_IMAGES                := A_ScriptDir "\Assets\Images\Mobs"

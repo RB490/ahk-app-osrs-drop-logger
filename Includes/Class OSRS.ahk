@@ -46,20 +46,39 @@ Class ClassOSRS {
         this.mobs := obj
 
         ; ITEMS ------------------------------------------------------------------------------------
-        obj := json.load(FileRead(PATH_DATABASE_MOBS_DROP_LIST))
+        obj := json.load(FileRead(PATH_DATABASE_ITEMS))
         If (obj.length() < 50)
-            Msg("Error", A_ThisFunc, "Drop list unavailable at:`n`n" PATH_DATABASE_MOBS_DROP_LIST)
+            Msg("Error", A_ThisFunc, "Drop list unavailable at:`n`n" PATH_DATABASE_ITEMS)
         this.items := obj
 
         P.Destroy()
     }
 
-    ; return object with unique drops itemId:itemName
-    GetItems() {
-        return this.items
+    ; returns mob object
+    _GetMob(mob) {
+        ; get mob id
+        If !IsInteger(mob)
+            mob := this.GetMobID(mob)
+        id := mob
+
+
+        ; build file path
+        file := DIR_DATABASE_MOBS "\" id ".json"
+        
+        ; check if we have this mob stored on disk
+        input := FileRead(file)
+        obj := json.load(input)
+        If !IsObject(obj) or (obj.last_updated != this.mobs[id].last_updated)
+            obj := this._UpdateMob(id)
+
+        ; can't continue if we weren't able to retrieve the mob
+        If !IsObject(obj)
+            Msg("Error", A_ThisFunc, "Was not able to retrieve mob info. ID: " id)
+
+        return obj
     }
 
-    ; return object with mobName:mobId
+    ; return object with all mobName:mobId
     GetMobs() {
         obj := this.mobs
         output := []
@@ -70,6 +89,7 @@ Class ClassOSRS {
         return output
     }
 
+    ; returns mobs ID
     GetMobID(mobName) {
         obj := this.mobs
         for mob in obj
@@ -80,6 +100,24 @@ Class ClassOSRS {
         Msg("Error", A_ThisFunc, "Unable to find mob id for: " mobName)
     }
 
+    ; returns the mobs wiki_url as retrieved by osrsbox.com
+    GetMobUrl(mob) {
+        obj := this._GetMob(mob)
+        return obj.wiki_url
+    }
+
+    ; returns the mobs drop table
+    GetMobTable(mob) {
+        obj := this._GetMob(mob)
+        return obj.drops
+    }
+
+    ; return object with all items that are in a droptable using format: ID:NAME
+    GetItems() {
+        return this.items
+    }
+
+    ; returns item id
     GetItemID(itemName) {
         for id, item in this.items
             If (item = itemName)
@@ -89,29 +127,22 @@ Class ClassOSRS {
         Msg("Error", A_ThisFunc, "Unable to find item id for: " itemName)
     }
 
-    GetWikiUrlForMob(mob) {
-        obj := this._GetMobObj(mob)
-        return obj.wiki_url
-    }
-
-    GetDropTable(mob) {
-        obj := this._GetMobObj(mob)
-        return obj.drops
-    }
-
+    ; update both mob and item databases
     _Update(silent := false) {
         If !silent
             P.Get(A_ThisFunc, "Updating mob database", A_Space, A_Space) ; title-text1-bar1-bar1text
         
         ; update files
-        this._UpdateMobsDatabase()
-        this._UpdateDropListDatabase()
+        this._UpdateMobDatabase()
+        this._UpdateItemDatabase()
 
         P.Destroy()
         If silent ; inform user through traytrip
             TrayTip, % APP_NAME, Updated monster database!`nRestart to take effect, 5, 17
     }
-    _UpdateMobsDatabase() {
+    
+    ; download up-to-date json from osrsbox.com
+    _UpdateMobDatabase() {
         ; input := FileRead(A_ScriptDir "\Dev\monsters-complete-1page.txt")
         input := DownloadToString(this.monstersCompleteUrl)
 
@@ -157,47 +188,25 @@ Class ClassOSRS {
         return output
     }
 
-    _UpdateDropListDatabase() {
+    ; create up-to-date json using the mob database
+    _UpdateItemDatabase() {
         output := {}
         mobList := this.GetMobs()
 
         for i, mob in mobList {
-            dropList := this.GetDropTable(mob)
+            dropList := this.GetMobTable(mob)
             for i, drop in dropList
                 output[drop.id] := drop.name
         }
 
         ; save to disk
-        FileDelete, % PATH_DATABASE_MOBS_DROP_LIST
-        FileAppend, % json.dump(output,,2), % PATH_DATABASE_MOBS_DROP_LIST
+        FileDelete, % PATH_DATABASE_ITEMS
+        FileAppend, % json.dump(output,,2), % PATH_DATABASE_ITEMS
 
         return output
     }
 
-    ; input [mob] either a mob name or mobID
-    _GetMobObj(mob) {
-        ; get mob id
-        If !IsInteger(mob)
-            mob := this.GetMobID(mob)
-        id := mob
-
-
-        ; build file path
-        file := DIR_DATABASE_MOBS "\" id ".json"
-        
-        ; check if we have this mob stored on disk
-        input := FileRead(file)
-        obj := json.load(input)
-        If !IsObject(obj) or (obj.last_updated != this.mobs[id].last_updated)
-            obj := this._UpdateMob(id)
-
-        ; can't continue if we weren't able to retrieve the mob
-        If !IsObject(obj)
-            Msg("Error", A_ThisFunc, "Was not able to retrieve mob info. ID: " id)
-
-        return obj
-    }
-
+    ; download up-to-date json from osrsbox.com
     _UpdateMob(mobID) {
         ; verify input
         If !IsInteger(mobID)

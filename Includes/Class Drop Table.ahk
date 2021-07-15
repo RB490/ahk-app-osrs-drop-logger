@@ -4,7 +4,7 @@
             P.Get(A_ThisFunc, "Retrieving drop table for " mobName)
         
         ; get drop table
-        obj := OSRS.GetDropTable(mobName)
+        obj := OSRS.GetMobTable(mobName)
         If !IsObject(obj) {
             Msg("Info", A_ThisFunc, "Could not retrieve drop table for" A_Space mobName)
             return false
