@@ -29,7 +29,7 @@ class ClassGuiStart extends gui {
             searchString := this.GetText("Edit1")
 
             ; build display var
-            for id, mob in DB_MOB.GetMobList()
+            for id, mob in OSRS.GetMobs()
                 If InStr(mob, searchString)
                     output .= mob "|"
             output := RTrim(output, "|")
@@ -61,7 +61,7 @@ class ClassGuiStart extends gui {
             return  
         }
         
-        previousMobId := DB_MOB.GetId(SCRIPT_SETTINGS.previousMob)
+        previousMobId := OSRS.GetMobID(SCRIPT_SETTINGS.previousMob)
         GetMobImage(SCRIPT_SETTINGS.previousMob, previousMobId)
 
         this.SetText(this._btnLog, "       Log")

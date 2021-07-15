@@ -1,6 +1,6 @@
 
 /*
- Purpose: Retrieve mob info. Such as last time it was updated on the wiki and the drop table
+ Purpose: Retrieve mob and items info. Such as last time a mob was updated on the wiki or a drop table
 
  Links:
     complete monsters list #1   = https://raw.githubusercontent.com/osrsbox/osrsbox-db/master/docs/monsters-complete.json
@@ -9,12 +9,15 @@
     specific monsters #2        = https://raw.githubusercontent.com/osrsbox/osrsbox-db/master/docs/monsters-json/<MONSTER_ID>.json
 */
 
-Class ClassDatabaseMobs {
+Class ClassOSRS {
     monstersCompleteUrl := "https://raw.githubusercontent.com/osrsbox/osrsbox-db/master/docs/monsters-complete.json"
     monsterSpecificBaseUrl := "https://api.osrsbox.com/monsters"
 
+    ; load json files and update them if necessary
     __New() {
         ; P.Get(A_ThisFunc, "Loading mob database", A_Space, A_Space)
+
+        ; MOBS -------------------------------------------------------------------------------------
 
         ; read database from disk
         input := FileRead(PATH_DATABASE_MOBS)
@@ -39,10 +42,61 @@ Class ClassDatabaseMobs {
         ; check if the database is now available
         If !IsObject(obj)
             Msg("Error", A_ThisFunc, "No mob database available")
+        
+        this.mobs := obj
 
-        this.obj := obj
+        ; ITEMS ------------------------------------------------------------------------------------
+        obj := json.load(FileRead(PATH_DATABASE_MOBS_DROP_LIST))
+        If (obj.length() < 50)
+            Msg("Error", A_ThisFunc, "Drop list unavailable at:`n`n" PATH_DATABASE_MOBS_DROP_LIST)
+        this.items := obj
 
         P.Destroy()
+    }
+
+    ; return object with unique drops itemId:itemName
+    GetItems() {
+        return this.items
+    }
+
+    ; return object with mobName:mobId
+    GetMobs() {
+        obj := this.mobs
+        output := []
+
+        for mobId in obj
+            output[mobId] := obj[mobId].name
+
+        return output
+    }
+
+    GetMobID(mobName) {
+        obj := this.mobs
+        for mob in obj
+            If obj[mob].name = mobName
+                return mob
+        
+        ; didnt find id
+        Msg("Error", A_ThisFunc, "Unable to find mob id for: " mobName)
+    }
+
+    GetItemID(itemName) {
+        for id, item in this.items
+            If (item = itemName)
+                return id
+
+        ; didnt find id
+        Msg("Error", A_ThisFunc, "Unable to find item id for: " itemName)
+    }
+
+    GetWikiUrlForMob(mob) {
+        obj := this._GetMobObj(mob)
+        return obj.wiki_url
+    }
+
+    GetDropTable(mob) {
+        obj := this._GetMobObj(mob)
+        return obj.drops
     }
 
     _Update(silent := false) {
@@ -105,7 +159,7 @@ Class ClassDatabaseMobs {
 
     _UpdateDropListDatabase() {
         output := {}
-        mobList := this.GetMobList()
+        mobList := this.GetMobs()
 
         for i, mob in mobList {
             dropList := this.GetDropTable(mob)
@@ -120,54 +174,11 @@ Class ClassDatabaseMobs {
         return output
     }
 
-    ; return object with unique drops itemId:itemName
-    GetDropList() {
-        static output
-
-        If !IsObject(output)
-            output := json.load(FileRead(PATH_DATABASE_MOBS_DROP_LIST))
-        If (output.length() < 50)
-            Msg("Error", A_ThisFunc, "Drop list unavailable at:`n`n" PATH_DATABASE_MOBS_DROP_LIST)
-
-        return output
-    }
-
-    ; return object with mobName:mobId
-    GetMobList() {
-        obj := this.obj
-        output := []
-
-        for mobId in obj
-            output[mobId] := obj[mobId].name
-
-        return output
-    }
-
-    GetId(mobName) {
-        obj := this.obj
-        for mob in obj
-            If obj[mob].name = mobName
-                return mob
-        
-        ; didnt find id
-        Msg("Error", A_ThisFunc, "Unable to find mob id for: " mobName)
-    }
-
-    GetWikiUrl(mob) {
-        obj := this._GetMobObj(mob)
-        return obj.wiki_url
-    }
-
-    GetDropTable(mob) {
-        obj := this._GetMobObj(mob)
-        return obj.drops
-    }
-
     ; input [mob] either a mob name or mobID
     _GetMobObj(mob) {
         ; get mob id
         If !IsInteger(mob)
-            mob := this.GetId(mob)
+            mob := this.GetMobID(mob)
         id := mob
 
 
@@ -177,7 +188,7 @@ Class ClassDatabaseMobs {
         ; check if we have this mob stored on disk
         input := FileRead(file)
         obj := json.load(input)
-        If !IsObject(obj) or (obj.last_updated != this.obj[id].last_updated)
+        If !IsObject(obj) or (obj.last_updated != this.mobs[id].last_updated)
             obj := this._UpdateMob(id)
 
         ; can't continue if we weren't able to retrieve the mob

@@ -283,7 +283,7 @@ feature -> speed up item db load time? would be able to do this with an item nam
 		mob db = 0.04
 
 structure -> Rename items database
-	probably to DB_PRICES and prices database on disk
+	probably to ITEM_PRICE and prices database on disk
 
 gui log images
 	bug -> gui log runelite images are all broken
@@ -301,3 +301,22 @@ feature -> drop categories -> take max drop table variable into account
 		^ first get all the item category sizes to determine which to start with
 		start with separating the largest category OR the one that gets the nearest below X
 		this prevents item categories with very few items
+
+bug -> fixed items without a category being removed from the drop table by the drop table category class, adding them into main now
+
+bug -> whenever log gui is shown also refetch the drop table so changes are taken into accoutn. for example after changing settings
+	specifically putting the drop table in specific categories setting
+
+bug -> night beast doesn't have rare drop table drops added
+	- possibly start fetching drop tables using my own wiki thing again, but without the drop table names
+	- check other mobs with rare drop tables
+	^ uhh.. it seems like A LOT of mobs have changed their id and possibly osrsbox is a bit outdated/bugged right now
+		abbysal demon has id 4149 on https://www.osrsbox.com/tools/item-search/
+		where it used to be 4151. also, in mobs database.json it has 415.json for some reason
+	^ manually or semi-manually fetch all the drops on https://oldschool.runescape.wiki/w/Rare_drop_table
+	and add these into a separate category that is visible for every mob right after the main drop table
+	update the rare drop table with the same interval as the mob database
+
+feature -> drop categories -> separate the rare drop table and the others like gem drop table from the main drop table
+	^ seems atleast by checking vorkath the rare drop table isn't included. So always include the RDT into the gui,
+		either as a tab or an image that opens a separate gui

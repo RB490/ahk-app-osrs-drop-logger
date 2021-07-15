@@ -27,6 +27,7 @@
     , PATH_DATABASE_MOBS_DROP_LIST  := A_ScriptDir "\Assets\Database\Mobs database drop list.json"
     , PATH_DATABASE_ITEMS           := A_ScriptDir "\Assets\Database\Prices database.json"
     , PATH_DATABASE_CATEGORIES      := A_ScriptDir "\Assets\Database\Item category database.json"
+    , PATH_RDT_DROPTABLE            := A_ScriptDir "\Assets\Database\RDT.json"
     , DIR_DATABASE_MOBS             := A_ScriptDir "\Assets\Database\Mobs"
     , DIR_MOB_IMAGES                := A_ScriptDir "\Assets\Images\Mobs"
     , DIR_GUI_ICONS                 := A_ScriptDir "\Assets\Images\Gui"
@@ -41,8 +42,8 @@
     ; Class objects
     , P                         := new ClassGuiProgress(APP_NAME)
     , WIKI_SCRAPER              := new ClassWikiScraper
-    , DB_MOB                    := new ClassDatabaseMobs
-    , DB_PRICES                 := new ClassDatabasePrices
+    , OSRS                      := new ClassOSRS
+    , ITEM_PRICE                := new ClassItemPrices
     , DROP_LOG                  := new ClassDropLog
     , DROP_LOG_STATS            := new ClassDropLogStats
     , DROP_TABLE                := new ClassDropTable
@@ -84,23 +85,21 @@
 
         ; DROP_LOG.StartTrip()
 
-        ; table := {}
-        ; table["food"] := {shark: 2}
-        ; table["armor"] := {sharkArmor: 5, sharkHelm: 69}
-        ; table.Delete("food")
-        ; msgbox % json.dump(table,,2)
-
         ; DROP_TABLE.Get("Vorkath (Post-Quest)")
-        DROP_TABLE.Get("Night Beast")
+        ; DROP_TABLE.Get("Night Beast")
+        ; DROP_TABLE.Get("Abyssal Demon (Standard)")
 
+        ; GetRDT()
+
+        ; msgbox % OSRS.GetItemID("Abyssal Whip")
         GUI_LOG.Get()
         ; GUI_STATS.Get()
         ; GUI_START.Get()
 
         ; _QPC("reset")
-        ; DB_MOB                    := new ClassDatabaseMobs
-        ; DB_PRICES                   := new ClassDatabasePrices
-        ; DB_PRICES._Update()
+        ; OSRS                    := new ClassOSRS
+        ; ITEM_PRICE                   := new ClassItemPrices
+        ; ITEM_PRICE._Update()
         ; msgbox % _QPC()
 
         ; Msg("Info", "Auto-execute section", "End of Auto-execute section")
@@ -109,7 +108,7 @@
         GUI_STATS.Set(DROP_LOG.Stats.Get())
     return
     updateMobDb:
-        DB_MOB._Update("silent")
+        OSRS._Update("silent")
     return
     disableTooltip:
         tooltip
@@ -119,8 +118,6 @@
 
 ; Includes
     #Include, %A_ScriptDir%\Includes
-    #Include, Class Database Prices.ahk
-    #Include, Class Database Mobs.ahk
     #Include, Class Drop Log.ahk
     #Include, Class Drop Log Stats.ahk
     #Include, Class Drop Table.ahk
@@ -132,6 +129,8 @@
     #Include, Class Gui Quantity.ahk
     #Include, Class Gui Start.ahk
     #Include, Class Gui Stats.ahk
+    #Include, Class Item Prices.ahk
+    #Include, Class OSRS.ahk
     #Include, Class Wiki Scraper.ahk
     #Include, Functions.ahk
 

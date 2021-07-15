@@ -67,19 +67,17 @@ Class ClassDropCategories {
         for i, drop in dropTable {
             name := drop.name
             category := this._GetCategoryForDrop(drop.name)
-            
-            ; temporarily limit the amount of categories for debugging
-            ; If (output.count() >= 3)
-            ;     category := "Main"
+            If !category
+                category := "Main"
 
+            ; create this category if necessary
             If !IsObject(output[category])
                 output[category] := []
 
-
             output[category].push(drop)
         }
-        
-        ; create the main category if necessary
+
+        ; create the main category only if necessary. could be none of the drops had categories and maxMainTableSize is set to 0
         If maxMainTableSize >= 1
             output["Main"] := {}
         else

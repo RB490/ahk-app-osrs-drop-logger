@@ -1,16 +1,23 @@
+CURRENT ------------------------------------------------------------------------------------------------------------------------------------
+
 FEATURES -----------------------------------------------------------------------------------------------------------------------------------
-    drop categories
-        feature -> drop categories -> separate the rare drop table and the others like gem drop table from the main drop table
-            ^ seems atleast by checking vorkath the rare drop table isn't included. So always include the RDT into the gui,
-                either as a tab or an image that opens a separate gui
+    
+    Rename mob database to something more generic as it can do mobs but also items
+
+    drop table -> combine identical drops with separate values. eg: goblin has 5 different coin drops with different values
+        take the different quantity formats into account here & possibly check how i used to do this
 
 
 STRUCTURE ----------------------------------------------------------------------------------------------------------------------------------
 
-BUGS ---------------------------------------------------------------------------------------------------------------------------------------       
-    bug -> whenever log gui is shown also refetch the drop table so changes are taken into accoutn. for example after changing settings
-        specifically putting the drop table in specific categories setting
+    structure -> clean up OSRS class. possibly use a subclass for items and for mobs right now its a bit of a mess. also rename
+        this.obj which currently stores the mob database but that needs to be more descriptive now that items are also handled
+        also load the items database into a class variable
+        this.mobs
+        this.items
 
+BUGS ---------------------------------------------------------------------------------------------------------------------------------------       
+    
     unique drops
         might just rewrite the unique drops method from scratch here
             bug -> stats -> current dry streak doesnt seem to be right, either
@@ -18,6 +25,7 @@ BUGS ---------------------------------------------------------------------------
             bug -> stats -> unique drop cadantine dry streak stays at 1 even adding a lot of other drops
 
 DOLAST ------------------------------------------------------------------------------------------------------------------------------------
+    
     refactoring -> go through every file and if necessary add comments, rename stuff or whatever
 
     testing -> log a variety of mobs with different drop tables to adjust the categories and or add additional categories

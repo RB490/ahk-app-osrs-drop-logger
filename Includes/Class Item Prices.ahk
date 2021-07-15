@@ -1,5 +1,5 @@
 /*
- Purpose: Retrieve item id's and prices
+ Purpose: Retrieve item prices
 
  Links:
     prices      = https://prices.runescape.wiki/api/v1/osrs/latest
@@ -13,7 +13,7 @@
             - using the weekly downloaded monsters-complete to create a list with the item names and id's <- added benefit this could only include items in drop tables
 */
 
-Class ClassDatabasePrices {
+Class ClassItemPrices {
     wikiApiPricesUrl := "https://prices.runescape.wiki/api/v1/osrs/latest"
 
     __New() {
@@ -38,7 +38,7 @@ Class ClassDatabasePrices {
         this.obj := obj
     }
 
-    GetPrice(id) {
+    Get(id) {
         price := this.obj[id]
 
         high := price.high
@@ -67,7 +67,7 @@ Class ClassDatabasePrices {
 
         ; only store items that are inside drop tables
         output := {}
-        dropList := DB_MOB.GetDropList()
+        dropList := OSRS.GetItems()
         for id in obj
             If dropList.HasKey(id)
                 output[id] := obj[id]

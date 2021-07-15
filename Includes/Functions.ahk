@@ -1,3 +1,56 @@
+; ========= MISC =========================================================================================================================
+
+GetRDT() {
+    ; get file age
+    If FileExist(PATH_RDT_DROPTABLE) {
+        FileGetTime, OutputVar , % PATH_RDT_DROPTABLE, C
+        hoursOld := A_Now
+        EnvSub, hoursOld, OutputVar, Hours
+    }
+    
+    ; determine if we need to update it
+    If !IsObject(obj) or (hoursOld > 720) { ; 720 hours = 30 days
+        _UpdateRDT()
+    }
+
+    ; get RDT from disk
+    input := FileRead(PATH_RDT_DROPTABLE)
+    obj := json.load(input)
+    If !IsObject(obj)
+        Msg("Error", A_ThisFunc, "No RDT available")
+    return obj
+}
+
+_UpdateRDT() {
+    ; receive RDT drop table
+    obj := WIKI_SCRAPER.table.GetDroptable("Rare_drop_table")
+
+    ; check if valid input was received
+    If !obj.length() {
+        Msg("Info", A_ThisFunc, "Invalid input received! Won't be able to update")
+        return
+    }
+
+    ; update the RDT
+    output := {}
+    for i, dropTable in obj {
+        drops := dropTable.drops
+
+        for in, drop in drops {
+            If (drop.highAlchPrice = "N/A")
+                Continue
+
+            obj := {}
+            obj.name := drop.name
+            obj.id := OSRS.GetItemID(drop.name)
+            obj.quantity := drop.quantity
+            output.push(obj)
+        }
+    }
+    FileDelete, % PATH_RDT_DROPTABLE
+    FileAppend, % json.dump(output,,2), % PATH_RDT_DROPTABLE
+}
+
 GetGuiLogDropsImageType() {
     switch SCRIPT_SETTINGS.guiLog_ItemImageType
     {
@@ -40,7 +93,7 @@ ON_WM_LBUTTONDOWN(wParam, lParam, msg, hWnd) {
     }
 
     ; turn string into object
-    obj := json.load(hex2str(mAssociatedVar))
+    obj := json.load(hex2str(StrSplit(mAssociatedVar, "#")[2]))
 
     ; remove useless information from the drop object
     ; Obj.Delete("id")
@@ -220,7 +273,7 @@ hex2str(string)
 ; ========= IMAGES ======================================================================================================================
 
 GetMobImagesForAllMobs() {
-    mobList := DB_MOB.GetMobList()
+    mobList := OSRS.GetMobs()
     for mobId, mobName in mobList {
         GetMobImage(mobName, mobId)
         GetDropImagesForMob(mobId)
@@ -228,7 +281,7 @@ GetMobImagesForAllMobs() {
 }
 
 GetDropImagesForMob(mob) {
-    drops := DB_MOB.GetDropTable(mob)
+    drops := OSRS.GetDropTable(mob)
 
     for index, drop in drops {
         GetDropImage(drop.name, drop.id)

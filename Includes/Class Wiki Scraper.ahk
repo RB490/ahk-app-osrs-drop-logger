@@ -17,6 +17,9 @@ class ClassWikiScraper {
     }
 
     GetPageUrl(pageName, useTitleCase := false) {
+        If !pageName
+            Msg("Error", A_ThisFunc, "No page name specified: " pageName)
+
         return this.url "/w/" this._GetPageNameInWikiFormat(pageName, useTitleCase)
     }
 
@@ -28,6 +31,7 @@ class ClassWikiScraper {
 
         If this._IsErrorPage(html)
             Msg("Error", A_ThisFunc, "Invalid wiki page for '" pageName "'!")
+
         return html
     }
 
@@ -40,6 +44,7 @@ class ClassWikiScraper {
     }
 
     _IsErrorPage(html) {
+        ; invalid page
         If InStr(html, "Nothing interesting happens") and InStr(html, "Weird_gloop_detail.png")
             return true
     }
