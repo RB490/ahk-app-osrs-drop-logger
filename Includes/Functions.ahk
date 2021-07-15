@@ -111,11 +111,10 @@ ValidateSettings(settingsObj := "") {
     defaultSettings.guiLog_AutoShowStats := false
     defaultSettings.guiLog_DropSize := 33
     defaultSettings.guiLog_MaxRowDrops := 8
-    defaultSettings.guiLog_TablesMergeBelowX := 27
+    defaultSettings.guiLog_MaxTableSize := 27
     defaultSettings.guiLog_ItemImageType := "Wiki Detailed"
     defaultSettings.previousLogFile := ""
     defaultSettings.previousMob := "Vorkath"
-    defaultSettings.setupHasRan := false
 
     ; verify all keys exist
     for defaultSetting in defaultSettings {

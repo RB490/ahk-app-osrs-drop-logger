@@ -4,11 +4,6 @@ FEATURES -----------------------------------------------------------------------
             ^ seems atleast by checking vorkath the rare drop table isn't included. So always include the RDT into the gui,
                 either as a tab or an image that opens a separate gui
 
-        feature -> drop categories -> take max drop table variable into account
-            if the drops list is above X, start adding items into categories until it is no longer above X
-                ^ first get all the item category sizes to determine which to start with
-                start with separating the largest category OR the one that gets the nearest below X
-                this prevents item categories with very few items
 
 STRUCTURE ----------------------------------------------------------------------------------------------------------------------------------
 
@@ -21,7 +16,6 @@ BUGS ---------------------------------------------------------------------------
             bug -> stats -> current dry streak doesnt seem to be right, either
             bug -> stats -> unique drop shortest dry streak and longest dry streak are empty if only gotten once
             bug -> stats -> unique drop cadantine dry streak stays at 1 even adding a lot of other drops
-
 
 DOLAST ------------------------------------------------------------------------------------------------------------------------------------
     refactoring -> go through every file and if necessary add comments, rename stuff or whatever

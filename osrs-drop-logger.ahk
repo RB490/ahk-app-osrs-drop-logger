@@ -84,6 +84,15 @@
 
         ; DROP_LOG.StartTrip()
 
+        ; table := {}
+        ; table["food"] := {shark: 2}
+        ; table["armor"] := {sharkArmor: 5, sharkHelm: 69}
+        ; table.Delete("food")
+        ; msgbox % json.dump(table,,2)
+
+        ; DROP_TABLE.Get("Vorkath (Post-Quest)")
+        DROP_TABLE.Get("Night Beast")
+
         GUI_LOG.Get()
         ; GUI_STATS.Get()
         ; GUI_START.Get()

@@ -295,3 +295,9 @@ bug -> gui log detailed images for night beast has several black images
 	^ fixed itself by restarting the script a few times. seems the wiki website might have been limiting/throttling downloads or something?
 
 bug -> gui_log -> menu open drop log file, windows doesnt open the .json for some reason
+
+feature -> drop categories -> take max drop table variable into account
+	if the drops list is above X, start adding items into categories until it is no longer above X
+		^ first get all the item category sizes to determine which to start with
+		start with separating the largest category OR the one that gets the nearest below X
+		this prevents item categories with very few items

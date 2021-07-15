@@ -60,16 +60,17 @@ Class ClassDropCategories {
                 },
             }
     */
-    Get(dropTable) {
+    Get(dropTable, maxMainTableSize) {
         output := []
 
-        for index, drop in dropTable {
+        ; sort entire drop table into categories
+        for i, drop in dropTable {
             name := drop.name
             category := this._GetCategoryForDrop(drop.name)
             
             ; temporarily limit the amount of categories for debugging
-            If (output.count() >= 3)
-                category := "Main"
+            ; If (output.count() >= 3)
+            ;     category := "Main"
 
             If !IsObject(output[category])
                 output[category] := []
@@ -77,6 +78,59 @@ Class ClassDropCategories {
 
             output[category].push(drop)
         }
+        
+        ; create the main category if necessary
+        If maxMainTableSize >= 1
+            output["Main"] := {}
+        else
+            return output
+
+        ; start merging categories into the 'main' category, starting with the smallest one until merging the smallest one would go over the max size
+        ; loop the amount of categories that exist
+        loop, % output.Count() {
+            ; check if we reached the main drop table max size
+            If (output["Main"].length() >= maxMainTableSize)
+                break
+            
+            ; merge the smallest category into the main drop table, if it doesnt exceed the limit
+            smallestCategory := this._GetSmallestCategory(output)
+            If (output["Main"].length() + smallestCategory.size >= maxMainTableSize)
+                break
+
+            ; merge this table
+            for i, drop in output[smallestCategory.name]
+                output["Main"].push(drop)
+            output.Delete(smallestCategory.name)
+            
+            ; msgbox % json.dump(output["Main"],,2)
+        }
+        return output
+    }
+
+    /*
+        Purpose
+            Used by Get()
+
+        input
+            DropTable sorted in categories
+        
+        output
+            object.name
+            object.size
+    */
+    _GetSmallestCategory(dropTableWithCategories) {
+        input := dropTableWithCategories
+        categoryList := {}
+        output := {}
+
+        for category in input {
+            If (category = "Main")
+                Continue
+            categoryList[input[category].length()] := category
+        }
+        
+        output.name := categoryList[categoryList.MinIndex()]
+        output.size := categoryList.MinIndex()
 
         return output
     }

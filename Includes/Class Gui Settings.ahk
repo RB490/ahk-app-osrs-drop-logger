@@ -22,9 +22,9 @@ class ClassGuiSettings extends gui {
             this.Add("edit", "limit2 number")
             this.Add("updown", "range1-999", SCRIPT_SETTINGS.guiLog_MaxRowDrops)
 
-            this.Add("text", , "Merge tables below")
+            this.Add("text", , "Max main table size")
             this.Add("edit", "limit2 number")
-            this.Add("updown", "range1-999", SCRIPT_SETTINGS.guiLog_TablesMergeBelowX)
+            this.Add("updown", "range1-999", SCRIPT_SETTINGS.guiLog_MaxTableSize)
 
             this.Add("text",, "Image type")
             this.Add("dropdownlist",, GUI_LOG_ITEM_IMAGE_TYPES)
@@ -42,7 +42,7 @@ class ClassGuiSettings extends gui {
         SCRIPT_SETTINGS.guiLog_AutoShowStats := this.ControlGet("Checked",,"Button1") ; Auto show stats
         SCRIPT_SETTINGS.guiLog_DropSize := this.GetText("edit1") ; Item size
         SCRIPT_SETTINGS.guiLog_MaxRowDrops := this.GetText("edit2") ; Row length
-        SCRIPT_SETTINGS.guiLog_TablesMergeBelowX := this.GetText("edit3") ; Merge tables below
+        SCRIPT_SETTINGS.guiLog_MaxTableSize := this.GetText("edit3") ; Max main table size
         SCRIPT_SETTINGS.guiLog_ItemImageType := this.GetText("ComboBox1") ; Image type
         ValidateSettings()
         this.savedSettings := true
