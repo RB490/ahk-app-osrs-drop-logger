@@ -52,6 +52,9 @@ class ClassGuiStart extends gui {
     MobListBoxHandler() {
         SCRIPT_SETTINGS.previousMob := this.GuiControlGet("", "ListBox1")
         this.Update("basicUpdate")
+
+        If (A_GuiEvent = "DoubleClick")
+            this.BtnLog()
     }
 
     _LoadMobImage() {
@@ -86,7 +89,7 @@ class ClassGuiStart extends gui {
         SplitPath, previousLogFile, OutFileName, previousLogFileDir, OutExtension, OutNameNoExt, OutDrive
         FileSelectFile, previousFile, 11, % manageGui.GetText("Edit1"), Select drop log, Json (*.json), %previousLogFileDir%
         If !previousFile {
-            Msg("Info", A_ThisFunc, "Can't log without a log file")
+            ; Msg("Info", A_ThisFunc, "Can't log without a log file")
             this.Enable()
             return false
         }

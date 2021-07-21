@@ -74,53 +74,9 @@
 
 ; Subroutines
     debugScript:
-        ; myDebugDropLogfile := A_ScriptDir "\Dev\myDebugDropLogfile.json"
-        ; myDebugDropLogfile := "D:\Downloads\log.json"
-        
-        ; FileDelete, % myDebugDropLogfile
-        ; FileAppend, {}, % myDebugDropLogfile
+        GUI_START.Get()
 
-
-        ; SCRIPT_SETTINGS.previousMob := "Abyssal Sire (Phase 1)"
-        ; SCRIPT_SETTINGS.previousLogFile := myDebugDropLogfile
-        ; DROP_LOG.LoadFile(myDebugDropLogfile)
-        ; DROP_LOG.StartTrip()
-
-        ; DROP_TABLE.Get("Vorkath (Post-Quest)")
-        ; DROP_TABLE.Get("Night Beast")
-        ; DROP_TABLE.Get("Abyssal Demon (Standard)")
-
-        ; RDT_Get()
-
-        ; FileDelete, % "D:\Programming and projects\ahk-app-osrs-drop-logger\Assets\Database\Item categories.json"
-        ; msgbox % OSRS.GetItemID("Abyssal Whip")
-        ; GUI_LOG.Get()
-        ; GUI_STATS.Get()
-        ; GUI_START.Get()
-        
-        ; ITEM_PRICE._Update()
-
-
-        ; SCRIPT_SETTINGS.previousMob := "Death Spawn"
-        ; obj := DROP_TABLE.Get("Death Spawn")
-        ; GetMobImage(SCRIPT_SETTINGS.previousMob, previousMobId)
-        ; GUI_LOG.Get()
-
-        GetMobImagesForAllMobs()
-        ; GetMobImage("Death spawn", 10)
-        ; url := WIKI_SCRAPER.img.GetMobImage("Death Spawn")
-        ; url := WIKI_SCRAPER.img.GetMobImage("Abyssal Sire (Phase 1)")
-        ; msgbox autoexec
-        ; msgbox % url
-        
-
-        ; _QPC("reset")
-        ; OSRS                    := new ClassOSRS
-        ; ITEM_PRICE                   := new ClassItemPrices
-        ; ITEM_PRICE._Update()
-        ; msgbox % _QPC()
-
-        Msg("Info", "Auto-execute section", "End of Auto-execute section")
+        ; Msg("Info", "Auto-execute section", "End of Auto-execute section")
     return
     updateStats:
         GUI_STATS.Set(DROP_LOG.Stats.Get())

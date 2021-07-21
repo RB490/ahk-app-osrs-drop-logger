@@ -83,6 +83,7 @@
 	
 	Enable() {
 		Gui % this.hwnd ":-Disabled"
+		WinActivate, % this.ahkid ; windows likes to put the gui behind another when re-enabling
 	}
 	
 	ControlGet(Command, Value := "", Control := "") {
