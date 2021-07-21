@@ -362,3 +362,12 @@ bug -> rdt function tries to update even through it notices it cant update
 
 testing -> test a variety of mobs without internet
 	restore all 'fileAge' vars to their original value
+
+bug -> images mob images
+	write function to retrieve mob images for every mob (didnt i already do this though..)
+	^ uh.. yeah. looks like no mob image urls are retrieved at all
+
+	bug -> gui start, log death spawn, could not retrieve death spawn image. doesnt have a url
+	bug -> gui start, log death spawn, could not retrieve Dark Warrior(51) image. doesnt have a url
+
+	turns out it was just a simple case of an incorrect variable name. didnt rename wiki_api to wiki_scraper in some places yet

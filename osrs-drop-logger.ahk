@@ -11,7 +11,7 @@
 
 ; Global variables
     ; Variables
-    Global DEBUG_MODE           := false
+    Global DEBUG_MODE           := true
     , APP_NAME                  := "Droplogger"
     , APP_URL                   := "https://github.com/RB490/ahk-app-osrs-drop-logger"
     , GUI_LOG_MIN_DROP_SIZE     := 10
@@ -81,7 +81,7 @@
         ; FileAppend, {}, % myDebugDropLogfile
 
 
-        SCRIPT_SETTINGS.previousMob := "Abyssal Sire (Phase 1)"
+        ; SCRIPT_SETTINGS.previousMob := "Abyssal Sire (Phase 1)"
         ; SCRIPT_SETTINGS.previousLogFile := myDebugDropLogfile
         ; DROP_LOG.LoadFile(myDebugDropLogfile)
         ; DROP_LOG.StartTrip()
@@ -100,8 +100,19 @@
         
         ; ITEM_PRICE._Update()
 
-        ; obj := DROP_TABLE.Get("Vorkath (post-quest)")
-        GUI_LOG.Get()
+
+        ; SCRIPT_SETTINGS.previousMob := "Death Spawn"
+        ; obj := DROP_TABLE.Get("Death Spawn")
+        ; GetMobImage(SCRIPT_SETTINGS.previousMob, previousMobId)
+        ; GUI_LOG.Get()
+
+        GetMobImagesForAllMobs()
+        ; GetMobImage("Death spawn", 10)
+        ; url := WIKI_SCRAPER.img.GetMobImage("Death Spawn")
+        ; url := WIKI_SCRAPER.img.GetMobImage("Abyssal Sire (Phase 1)")
+        ; msgbox autoexec
+        ; msgbox % url
+        
 
         ; _QPC("reset")
         ; OSRS                    := new ClassOSRS
@@ -109,7 +120,7 @@
         ; ITEM_PRICE._Update()
         ; msgbox % _QPC()
 
-        ; Msg("Info", "Auto-execute section", "End of Auto-execute section")
+        Msg("Info", "Auto-execute section", "End of Auto-execute section")
     return
     updateStats:
         GUI_STATS.Set(DROP_LOG.Stats.Get())

@@ -4,12 +4,12 @@
   "guiLog_ItemImageType": "Wiki Detailed",
   "guiLog_MaxRowDrops": "8",
   "guiLog_MaxTableSize": "40",
-  "guiLog_X": 728,
-  "guiLog_Y": 439,
+  "guiLog_X": 1003,
+  "guiLog_Y": 442,
   "guiStatsH": 400,
   "guiStatsW": 570,
   "guiStatsX": 85,
   "guiStatsY": 334,
   "previousLogFile": "D:\\Downloads\\my log.json",
-  "previousMob": "Abyssal Sire (Phase 1)"
+  "previousMob": "Death Spawn"
 }

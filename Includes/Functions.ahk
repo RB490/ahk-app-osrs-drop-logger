@@ -301,7 +301,8 @@ GetMobImage(mobName, mobId) {
     If InStr(mobName, "(")
         mobName := SubStr(mobName, 1, InStr(mobName, "(") - 2)
 
-    url := WIKI_API.img.GetMobImage(mobName)
+    url := WIKI_SCRAPER.img.GetMobImage(mobName)
+
 
     DownloadImageOrReload(url, path)
     ResizeImage(path, 100)
@@ -310,7 +311,7 @@ GetMobImage(mobName, mobId) {
 GetDropImage(itemName, itemId) {
     If !IsValidImage(DIR_ITEM_IMAGES_ICONS "\" itemId ".png") or !IsValidImage(DIR_ITEM_IMAGES_DETAILED "\" itemId ".png")
         wikiImageUrlObj := WIKI_SCRAPER.img.GetItemImages(itemName, 50)
-        ; wikiImageUrlObj := WIKI_API.GetItemUrls(itemName)
+        ; wikiImageUrlObj := WIKI_SCRAPER.GetItemUrls(itemName)
         
 
     ; wiki small
@@ -346,6 +347,23 @@ GetDropImage(itemName, itemId) {
 }
 
 DownloadImageOrReload(url, path) {
+    If !url or !path {
+        msgbox, 4160, ,
+        ( LTrim
+            %A_ThisFunc%: Missing parameter
+
+            URL:
+            %url%
+
+            PATH:
+            %path%
+
+            Reloading..
+        )
+        reload
+        return
+    }
+
     DownloadToFile(url, path)
 
     If !IsValidImage(path) {
@@ -353,11 +371,11 @@ DownloadImageOrReload(url, path) {
         ( LTrim
             %A_ThisFunc%: Could not retrieve image
 
-            URL
-            '%url%'
+            URL:
+            %url%
 
-            PATH
-            '%path%'
+            PATH:
+            %path%
 
             Reloading..
         )

@@ -254,7 +254,7 @@ class ClassWikiScraper {
             
             ; get image from og:image meta property
             elements := this.parent._GetDocElementsBy(this.doc, "tag", "meta")
-            
+
             loop % elements.length {
                 ; find og:image element
                 If !(elements[A_Index-1].getAttribute("property") = "og:image")
