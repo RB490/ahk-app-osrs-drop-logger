@@ -371,3 +371,9 @@ bug -> images mob images
 	bug -> gui start, log death spawn, could not retrieve Dark Warrior(51) image. doesnt have a url
 
 	turns out it was just a simple case of an incorrect variable name. didnt rename wiki_api to wiki_scraper in some places yet
+
+feature -> log a mob by double clicking the listview in gui start
+
+bug -> gui start, log a mob, choose log file, go into log gui, close it to get back to start, now the mob image wont get updated anmore
+	tooltip % this._btnLog <- control hwnd changes even though gui isnt reshown
+	^ gui log was calling gui_start.get() which just recreated the gui so the control hwnds were changing around
