@@ -1,1 +1,69 @@
-{}
+[
+  {
+    "deaths": {},
+    "kills": [
+      {
+        "drops": [
+          {
+            "id": 1113,
+            "name": "Rune chainbody",
+            "quantity": "1"
+          }
+        ],
+        "killEnd": "20210715184948336"
+      },
+      {
+        "drops": [
+          {
+            "id": 1113,
+            "name": "Rune chainbody",
+            "quantity": "1"
+          }
+        ],
+        "killEnd": "20210715184949101"
+      },
+      {
+        "drops": [
+          {
+            "id": 1373,
+            "name": "Rune battleaxe",
+            "quantity": "1"
+          }
+        ],
+        "killEnd": "20210715184953070"
+      },
+      {
+        "drops": [
+          {
+            "id": 1373,
+            "name": "Rune battleaxe",
+            "quantity": "1"
+          }
+        ],
+        "killEnd": "20210715185004678"
+      },
+      {
+        "drops": [
+          {
+            "id": 1373,
+            "name": "Rune battleaxe",
+            "quantity": "1"
+          }
+        ],
+        "killEnd": "20210715185022131"
+      },
+      {
+        "drops": [
+          {
+            "id": 1373,
+            "name": "Rune battleaxe",
+            "quantity": "1"
+          }
+        ],
+        "killEnd": "20210715185024272"
+      }
+    ],
+    "tripEnd": "",
+    "tripStart": "20210715184946072"
+  }
+]

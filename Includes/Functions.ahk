@@ -1,27 +1,30 @@
 ; ========= MISC =========================================================================================================================
 
-GetRDT() {
-    ; get file age
-    If FileExist(PATH_RDT_DROPTABLE) {
-        FileGetTime, OutputVar , % PATH_RDT_DROPTABLE, C
-        hoursOld := A_Now
-        EnvSub, hoursOld, OutputVar, Hours
-    }
-    
-    ; determine if we need to update it
-    If !IsObject(obj) or (hoursOld > 720) { ; 720 hours = 30 days
-        _UpdateRDT()
+
+
+RDT_Get() {
+    ; try to load file from disk
+    obj := json.load(FileRead(PATH_RDT_DROPTABLE))
+    fileAge := A_Now
+    fileAge -= obj.lastUpdated, Hours
+
+    ; update the file if neccessary
+    If !(obj.lastUpdated) or (fileAge > 720) { ; 720 hours = 30 days
+        output := RDT_Update()
+        If output.lastUpdated
+            obj := output
+        else
+            Msg("Info", A_ThisFunc, "Update failed")
     }
 
-    ; get RDT from disk
-    input := FileRead(PATH_RDT_DROPTABLE)
-    obj := json.load(input)
-    If !IsObject(obj)
-        Msg("Error", A_ThisFunc, "No RDT available")
-    return obj
+    ; verify input
+    If !obj.lastUpdated
+        Msg("Error", A_ThisFunc, "Data unavailable")
+
+    return obj.content
 }
 
-_UpdateRDT() {
+RDT_Update() {
     ; receive RDT drop table
     obj := WIKI_SCRAPER.table.GetDroptable("Rare_drop_table")
 
@@ -32,7 +35,7 @@ _UpdateRDT() {
     }
 
     ; update the RDT
-    output := {}
+    output := {lastUpdated: A_Now, content: {}}
     for i, dropTable in obj {
         drops := dropTable.drops
 
@@ -44,11 +47,12 @@ _UpdateRDT() {
             obj.name := drop.name
             obj.id := OSRS.GetItemID(drop.name)
             obj.quantity := drop.quantity
-            output.push(obj)
+            output["content"].push(obj)
         }
     }
     FileDelete, % PATH_RDT_DROPTABLE
     FileAppend, % json.dump(output,,2), % PATH_RDT_DROPTABLE
+    return output
 }
 
 GetGuiLogDropsImageType() {

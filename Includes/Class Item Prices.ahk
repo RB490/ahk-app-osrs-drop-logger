@@ -17,25 +17,25 @@ Class ClassItemPrices {
     wikiApiPricesUrl := "https://prices.runescape.wiki/api/v1/osrs/latest"
 
     __New() {
-        ; check if the file is already available
+        ; try to load file from disk
         obj := json.load(FileRead(PATH_DATABASE_PRICES))
-        
-        ; check file creation time
-        If FileExist(PATH_DATABASE_PRICES) {
-            FileGetTime, OutputVar , % PATH_DATABASE_PRICES, C
-            hoursOld := A_Now
-            EnvSub, hoursOld, OutputVar, Hours
-        }
+        fileAge := A_Now
+        fileAge -= obj.lastUpdated, Hours
 
         ; update the file if neccessary
-        If !IsObject(obj) or (hoursOld > 24)
-            obj := this._Update()
+        If !(obj.lastUpdated) or (fileAge > 720) { ; 720 hours = 30 days
+            output := this._Update()
+            If output.lastUpdated
+                obj := output
+            else
+                Msg("Info", A_ThisFunc, "Update failed")
+        }
 
-        ; check if we now have a valid input
-        If !IsObject(obj)
-            Msg("Error", A_ThisFunc, "Unable to continue without wiki api price info")
+        ; verify input
+        If !obj.lastUpdated
+            Msg("Error", A_ThisFunc, "Data unavailable")
 
-        this.obj := obj
+        this.obj := obj.content
     }
 
     Get(id) {
@@ -66,11 +66,11 @@ Class ClassItemPrices {
         }
 
         ; only store items that are inside drop tables
-        output := {}
+        output := {lastUpdated: A_Now, content: {}}
         dropList := OSRS.GetItems()
         for id in obj
             If dropList.HasKey(id)
-                output[id] := obj[id]
+                output["content"][id] := obj[id]
 
         ; save to disk for future use
         FileDelete, % PATH_DATABASE_PRICES

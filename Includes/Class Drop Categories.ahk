@@ -13,24 +13,25 @@ Class ClassDropCategories {
     baseUrl := "https://oldschool.runescape.wiki/api.php?action=query&list=categorymembers&cmlimit=500&format=json&cmtitle=Category:"       
 
     __New() {
+        ; try to load file from disk
         obj := json.load(FileRead(PATH_DATABASE_CATEGORIES))
-        
-        ; check when last updated
-        If FileExist(PATH_DATABASE_ITEMS) {
-            FileGetTime, OutputVar , % PATH_DATABASE_ITEMS, C
-            daysOld := A_Now
-            EnvSub, daysOld, OutputVar, Days
+        fileAge := A_Now
+        fileAge -= obj.lastUpdated, Hours
+
+        ; update the file if neccessary
+        If !(obj.lastUpdated) or (fileAge > 4368) { ; 4368 hours = 182 days
+            output := this._Update()
+            If output.lastUpdated
+                obj := output
+            else
+                Msg("Info", A_ThisFunc, "Update failed")
         }
 
-        ; determine if we need to update
-        If !IsObject(obj) or (daysOld > 182)
-            obj := this._Update()
+        ; verify input
+        If !obj.lastUpdated
+            Msg("Error", A_ThisFunc, "Data unavailable")
 
-        ; check if category list is available
-        If !IsObject(obj)
-            Msg("Error", A_ThisFunc, "Unable to continue without the required files")
-
-        this.obj := obj
+        this.obj := obj.content
     }
 
     /*
@@ -182,14 +183,14 @@ Class ClassDropCategories {
 
         categories.Weapons := ["Two-handed_slot_items", "Weapon_slot_items"]
 
-        output := []
 
         /*
             loop through categories
             loop through sub categories adding the items to the main categories
         */
+        output := {lastUpdated: A_Now, content: {}}
         for category in categories {
-            output[category] := []
+            obj["content"][category] := []
             for index, subCategory in categories[category] {
                 ; get drops list for this category
                 dropsList := this._GetDropListFor(subCategory)
@@ -202,7 +203,7 @@ Class ClassDropCategories {
 
                 ; add this subcategory to the main category
                 for index, drop in dropsList
-                    output[category].push(drop)
+                    output["content"][category].push(drop)
             }
         }
 

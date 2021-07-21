@@ -18,38 +18,52 @@ Class ClassOSRS {
         ; P.Get(A_ThisFunc, "Loading mob database", A_Space, A_Space)
 
         ; MOBS -------------------------------------------------------------------------------------
+        
+        ; try to load file from disk
+        obj := json.load(FileRead(PATH_DATABASE_MOBS))
+        fileAge := A_Now
+        fileAge -= obj.lastUpdated, Hours
 
-        ; read database from disk
-        input := FileRead(PATH_DATABASE_MOBS)
-        obj := json.load(input)
-
-        ; check database creation time
-        If FileExist(PATH_DATABASE_MOBS) {
-            FileGetTime, OutputVar , % PATH_DATABASE_MOBS, C
-            hoursOld := A_Now
-            EnvSub, hoursOld, OutputVar, Hours
+        ; update the file if neccessary
+        If !(obj.lastUpdated) {
+            output := this._UpdateMobDatabase()
+            If output.lastUpdated
+                obj := output
+            else
+                Msg("Info", A_ThisFunc, "Update failed")
         }
 
-        ; update if database list unavailable or more than x hours old
-        If !IsObject(obj)
-            this._Update()
-        obj := json.load(FileRead(PATH_DATABASE_MOBS))
+        ; verify input
+        If !obj.lastUpdated
+            Msg("Error", A_ThisFunc, "Data unavailable")
 
-        ; if necessary, update database in the background if we already have a database available
-        If (hoursOld > 168) or (A_DDDD = "Friday") ; friday is a day after osrs gets updated
+        this.mobs := obj.content
+
+        ; silently update in the background for next restart if already available and requirements are met
+        If (fileAge > 168) ; 168 hours = 1 week
             SetTimer, updateMobDb, -60000
 
-        ; check if the database is now available
-        If !IsObject(obj)
-            Msg("Error", A_ThisFunc, "No mob database available")
-        
-        this.mobs := obj
-
         ; ITEMS ------------------------------------------------------------------------------------
+        
+        ; try to load file from disk
         obj := json.load(FileRead(PATH_DATABASE_ITEMS))
-        If (obj.length() < 50)
-            Msg("Error", A_ThisFunc, "Drop list unavailable at:`n`n" PATH_DATABASE_ITEMS)
-        this.items := obj
+        fileAge := A_Now
+        fileAge -= obj.lastUpdated, Hours
+
+        ; update the file if neccessary
+        If !(obj.lastUpdated) {
+            output := this._UpdateItemDatabase()
+            If output.lastUpdated
+                obj := output
+            else
+                Msg("Info", A_ThisFunc, "Update failed")
+        }
+
+        ; verify input
+        If !obj.lastUpdated
+            Msg("Error", A_ThisFunc, "Data unavailable")
+
+        this.items := obj.content
 
         P.Destroy()
     }
@@ -127,22 +141,11 @@ Class ClassOSRS {
         Msg("Error", A_ThisFunc, "Unable to find item id for: " itemName)
     }
 
-    ; update both mob and item databases
-    _Update(silent := false) {
+    ; download up-to-date json from osrsbox.com
+    _UpdateMobDatabase(silent := false) {
         If !silent
             P.Get(A_ThisFunc, "Updating mob database", A_Space, A_Space) ; title-text1-bar1-bar1text
-        
-        ; update files
-        this._UpdateMobDatabase()
-        this._UpdateItemDatabase()
 
-        P.Destroy()
-        If silent ; inform user through traytrip
-            TrayTip, % APP_NAME, Updated monster database!`nRestart to take effect, 5, 17
-    }
-    
-    ; download up-to-date json from osrsbox.com
-    _UpdateMobDatabase() {
         ; input := FileRead(A_ScriptDir "\Dev\monsters-complete-1page.txt")
         input := DownloadToString(this.monstersCompleteUrl)
 
@@ -156,7 +159,7 @@ Class ClassOSRS {
         }
 
         ; cleanup the obj by only keeping usefull data
-        output := []
+        output := {lastUpdated: A_Now, content: {}}
         addedMobNames := [] ; keep track of added mob names so we can ignore duplicates
         for mob_id in input {
             mob := input[mob_id]
@@ -168,12 +171,12 @@ Class ClassOSRS {
             If addedMobNames.HasKey(mob.wiki_name)
                 Continue
 
-            output[mob_id] := [] ; add this mob to our new output object
-            output[mob_id].name := mob.wiki_name ; using wiki name to include different versions of the same mob
-            output[mob_id].last_updated := mob.last_updated
+            output["content"][mob_id] := [] ; add this mob to our new output object
+            output["content"][mob_id].name := mob.wiki_name ; using wiki name to include different versions of the same mob
+            output["content"][mob_id].last_updated := mob.last_updated
             addedMobNames[mob.wiki_name] := ""
-            ; output[mob_id].id := mob.id
-            ; output[mob_id].wiki_name := mob.wiki_name
+            ; output["content"][mob_id].id := mob.id
+            ; output["content"][mob_id].wiki_name := mob.wiki_name
             
             P.B1()
             P.T2(mob.wiki_name A_Space "(ID: " mob.id ")")
@@ -185,18 +188,23 @@ Class ClassOSRS {
         ; save to disk
         FileDelete, % PATH_DATABASE_MOBS
         FileAppend, % json.dump(output,,2), % PATH_DATABASE_MOBS
+
+        ; returning
+        P.Destroy()
+        If silent ; inform user through traytrip
+            TrayTip, % APP_NAME, Updated monster database!`nRestart to take effect, 5, 17
         return output
     }
 
     ; create up-to-date json using the mob database
     _UpdateItemDatabase() {
-        output := {}
+        output := {lastUpdated: A_Now, content: {}}
         mobList := this.GetMobs()
 
         for i, mob in mobList {
             dropList := this.GetMobTable(mob)
             for i, drop in dropList
-                output[drop.id] := drop.name
+                output["content"][drop.id] := drop.name
         }
 
         ; save to disk

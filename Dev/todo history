@@ -336,3 +336,6 @@ unique drops
 		bug -> stats -> current dry streak is incorrect
 		bug -> stats -> unique drop shortest dry streak and longest dry streak are empty if only gotten once
 		bug -> stats -> unique drop cadantine dry streak stays at 1 even adding a lot of other drops
+
+    feature -> drop table: combine identical drops with separate values. eg: goblin has 5 different coin drops with different values
+        take the different quantity formats into account here & possibly check how i used to do this

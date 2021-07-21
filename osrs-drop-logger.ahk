@@ -74,29 +74,32 @@
 
 ; Subroutines
     debugScript:
-        myDebugDropLogfile := A_ScriptDir "\Dev\myDebugDropLogfile.json"
+        ; myDebugDropLogfile := A_ScriptDir "\Dev\myDebugDropLogfile.json"
         ; myDebugDropLogfile := "D:\Downloads\log.json"
         
-        FileDelete, % myDebugDropLogfile
-        FileAppend, {}, % myDebugDropLogfile
+        ; FileDelete, % myDebugDropLogfile
+        ; FileAppend, {}, % myDebugDropLogfile
 
-        SCRIPT_SETTINGS.previousMob := "Night Beast"
-        SCRIPT_SETTINGS.previousLogFile := myDebugDropLogfile
-        DROP_LOG.LoadFile(myDebugDropLogfile)
-        DROP_LOG.StartTrip()
+        ; SCRIPT_SETTINGS.previousMob := "Night Beast"
+        ; SCRIPT_SETTINGS.previousLogFile := myDebugDropLogfile
+        ; DROP_LOG.LoadFile(myDebugDropLogfile)
+        ; DROP_LOG.StartTrip()
 
         ; DROP_TABLE.Get("Vorkath (Post-Quest)")
         ; DROP_TABLE.Get("Night Beast")
         ; DROP_TABLE.Get("Abyssal Demon (Standard)")
 
-        ; GetRDT()
+        ; RDT_Get()
 
+        ; FileDelete, % "D:\Programming and projects\ahk-app-osrs-drop-logger\Assets\Database\Item categories.json"
         ; msgbox % OSRS.GetItemID("Abyssal Whip")
         GUI_LOG.Get()
-        GUI_STATS.Get()
+        ; GUI_STATS.Get()
         ; GUI_START.Get()
+        
+        ; ITEM_PRICE._Update()
 
-        ; obj := DROP_TABLE.Get("Yak")
+        ; obj := DROP_TABLE.Get("Goblin (level 2)")
 
         ; _QPC("reset")
         ; OSRS                    := new ClassOSRS
@@ -110,7 +113,7 @@
         GUI_STATS.Set(DROP_LOG.Stats.Get())
     return
     updateMobDb:
-        OSRS._Update("silent")
+        OSRS._UpdateMobDatabase("silent")
     return
     disableTooltip:
         tooltip
