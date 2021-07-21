@@ -80,7 +80,7 @@
         ; FileDelete, % myDebugDropLogfile
         ; FileAppend, {}, % myDebugDropLogfile
 
-        ; SCRIPT_SETTINGS.previousMob := "Night Beast"
+        SCRIPT_SETTINGS.previousMob := "Vorkath (post-quest)"
         ; SCRIPT_SETTINGS.previousLogFile := myDebugDropLogfile
         ; DROP_LOG.LoadFile(myDebugDropLogfile)
         ; DROP_LOG.StartTrip()
@@ -99,7 +99,7 @@
         
         ; ITEM_PRICE._Update()
 
-        obj := DROP_TABLE.Get("Goblin (level 2)")
+        ; obj := DROP_TABLE.Get("Vorkath (post-quest)")
         GUI_LOG.Get()
 
         ; _QPC("reset")

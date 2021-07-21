@@ -80,8 +80,6 @@ Class ClassDropCategories {
             output[category].push(drop)
         }
 
-        OutputDebug, % json.dump(output,,2)
-
         ; start merging categories into the 'main' category, starting with the smallest one until merging the smallest one would go over the max size
         ; loop the amount of categories that exist
         loop, % output.Count() {

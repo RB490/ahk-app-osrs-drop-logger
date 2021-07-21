@@ -116,14 +116,12 @@ Class ClassOSRS {
 
     ; returns the mobs wiki_url as retrieved by osrsbox.com
     GetMobUrl(mob) {
-        obj := this._GetMob(mob)
-        return obj.wiki_url
+        return this._GetMob(mob).wiki_url
     }
 
     ; returns the mobs drop table
     GetMobTable(mob) {
-        obj := this._GetMob(mob)
-        return obj.drops
+        return this._GetMob(mob).drops
     }
 
     ; return object with all items that are in a droptable using format: ID:NAME

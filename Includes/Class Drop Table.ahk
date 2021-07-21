@@ -14,17 +14,27 @@
         for count, drop in obj
             GetDropImage(drop.name, drop.id)
         
+        ; remove unnecesary information from the drops, such as 'members' and 'noted' so str2hex doesnt get too big in guilog adding associated vars
+        obj := this._CleanupDrops(obj)
+
         ; combine duplicate drops
-        ; obj := this._CombineIdenticalDropsWithDifferentQuantities(obj)
+        obj := this._CombineIdenticalDropsWithDifferentQuantities(obj)
 
         ; sort drop table into categories. todo: separate RDT, Gem drop table, talisman drop table. etc.
         obj := DROP_CATEGORIES.Get(obj, SCRIPT_SETTINGS.guiLog_MaxTableSize)
-        ; OutputDebug, % json.dump(obj,,2)
-
 
         ; finish up
         P.Destroy()
         return obj
+    }
+
+    _CleanupDrops(inputTable) {
+        for i, drop in inputTable {
+            drop.Delete("rolls")
+            drop.Delete("members")
+            drop.Delete("noted")
+        }
+        return inputTable
     }
 
     _FindItemQuantitiesInTableAndRemoveThem(ByRef inputTable, inputItem) {

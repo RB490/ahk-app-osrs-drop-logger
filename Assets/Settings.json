@@ -3,7 +3,7 @@
   "guiLog_DropSize": "33",
   "guiLog_ItemImageType": "Wiki Detailed",
   "guiLog_MaxRowDrops": "8",
-  "guiLog_MaxTableSize": "1",
+  "guiLog_MaxTableSize": "40",
   "guiLog_X": 172,
   "guiLog_Y": 558,
   "guiStatsH": 400,
@@ -11,5 +11,5 @@
   "guiStatsX": 1200,
   "guiStatsY": 487,
   "previousLogFile": "D:\\Downloads\\my log.json",
-  "previousMob": "Abyssal Sire (Phase 1)"
+  "previousMob": "Vorkath (post-quest)"
 }
