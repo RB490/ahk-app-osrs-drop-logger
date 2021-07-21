@@ -1,6 +1,6 @@
 ﻿Class ClassDropTable {
-    Get(mobName) {
-        If !DEBUG_MODE
+    Get(mobName, silent := 0) {
+        If !silent
             P.Get(A_ThisFunc, "Retrieving drop table for " mobName)
         
         ; get drop table

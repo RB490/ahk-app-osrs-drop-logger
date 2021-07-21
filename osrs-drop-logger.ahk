@@ -11,7 +11,7 @@
 
 ; Global variables
     ; Variables
-    Global DEBUG_MODE           := true
+    Global DEBUG_MODE           := false
     , APP_NAME                  := "Droplogger"
     , APP_URL                   := "https://github.com/RB490/ahk-app-osrs-drop-logger"
     , GUI_LOG_MIN_DROP_SIZE     := 10
@@ -80,7 +80,9 @@
         ; FileDelete, % myDebugDropLogfile
         ; FileAppend, {}, % myDebugDropLogfile
 
-        SCRIPT_SETTINGS.previousMob := "Vorkath (post-quest)"
+
+
+        SCRIPT_SETTINGS.previousMob := "Abyssal Sire (Phase 1)"
         ; SCRIPT_SETTINGS.previousLogFile := myDebugDropLogfile
         ; DROP_LOG.LoadFile(myDebugDropLogfile)
         ; DROP_LOG.StartTrip()

@@ -15,8 +15,6 @@ Class ClassOSRS {
 
     ; load json files and update them if necessary
     __New() {
-        ; P.Get(A_ThisFunc, "Loading mob database", A_Space, A_Space)
-
         ; MOBS -------------------------------------------------------------------------------------
         
         ; try to load file from disk
@@ -239,6 +237,7 @@ Class ClassOSRS {
         FileDelete, % file
         FileAppend, % json.dump(obj,,2), % file
 
+        ; finish up
         P.Destroy()
         return obj
     }

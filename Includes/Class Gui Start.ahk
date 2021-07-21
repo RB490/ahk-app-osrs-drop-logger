@@ -99,7 +99,7 @@ class ClassGuiStart extends gui {
             return
 
         ; verify we have a drop table for selected mob
-        If !DROP_TABLE.Get(SCRIPT_SETTINGS.previousMob)
+        If !DROP_TABLE.Get(SCRIPT_SETTINGS.previousMob, "silent")
             return
 
         ; show the drop log gui

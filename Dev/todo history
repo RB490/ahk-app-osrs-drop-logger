@@ -351,3 +351,9 @@ wontfix: structure -> separate osrs class into items and mobs databse. use the l
 wontfix: structure -> some kind of 'database'/json class? since there is a lot of duplicate code going on
     ^ take into account servers going offline, so if there isnt a new json version available, just give a message but continue if object is available
     could be a base class that has a _Load() method and calls _Update() to receive new stuff, json classes would extend it, make rdt class if true
+
+Bug -> Vorkath post-quest gui log variable is too long
+
+bug -> gui log doesnt make categories anymore
+
+bug -> various unnecessary progress windows being shown for 0.001 seconds. only show them when necessary 
