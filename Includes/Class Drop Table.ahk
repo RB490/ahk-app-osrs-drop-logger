@@ -19,9 +19,6 @@
 
         ; sort drop table into categories. todo: separate RDT, Gem drop table, talisman drop table. etc.
         obj := DROP_CATEGORIES.Get(obj, SCRIPT_SETTINGS.guiLog_MaxTableSize)
-    
-        ; msgbox % json.dump(obj,,2)
-        ; OutputDebug, % json.dump(obj,,2)
 
         ; finish up
         P.Destroy()
@@ -49,34 +46,10 @@
             quantities .= quantity "#"
         quantities := RTrim(quantities, "#")
         inputItem.quantity := quantities
-        ; outputTable.push(inputItem)
-        
-        ; If InStr(quantities, "#") {
-        ;     msgbox % json.dump(inputItem,,2)
-        ;     OutputDebug, % json.dump(outputTable,,2)
-        ;     msgbox % json.dump(outputTable,,2)
-
-        ; }
-
-        ; msgbox % outputTable[inputItem].quantity
-
-        ; OutputDebug, % json.dump(outputTable,,2)
-        ; msgbox % json.dump(outputTable,,2)
-
+        ; outputTable.push(inputItem) ; adding the item in the 'main' method
 
         ; overwrite inputTable
-        ; If (inputItem.name = "Coins") {
-        ;     clipboard := "inputTable Before:`n`n" json.dump(inputTable,,2)
-        ;     msgbox % "inputTable Before:`n`n" json.dump(inputTable,,2)
-        ; }
         inputTable := outputTable
-        ; If (inputItem.name = "Coins") {
-
-        ;     clipboard := "inputTable After:`n`n" json.dump(inputTable,,2)
-        ;     msgbox % "inputTable After:`n`n" json.dump(inputTable,,2)
-        ; }
-        ; msgbox % inputItem.name
-
         return quantities
     }
 
@@ -101,50 +74,7 @@
 
 
             output.push(thisItem)
-
-            ; If (thisItem.name = "Coins") {
-                
-                ; clipboard := json.dump(table,,2)
-                ; msgbox % json.dump(table,,2)
-                ; msgbox % thisItem.name " quantity:`n`n " json.dump(quantities)
-            ; }
-
-            ; clipboard := json.dump(output,,2)
-            ; msgbox % json.dump(output,,2)
-
-            ; msgbox % json.dump(thisItem,,2)
         }
-
-        ; clipboard := json.dump(output,,2)
-        ; msgbox % json.dump(output,,2)
-
-        return output
-        loop, % table.length() {
-            ; take one drop
-            sourceDrop := table.pop()
-
-            ; find all duplicate occurences of this drop
-            for i, drop in table {
-                ; found duplicate drop
-                If (drop.name = sourceDrop.name) {
-                    ; save its quantity
-                    sourceDrop.quantity := sourceDrop.quantity "#" drop.quantity
-                }
-
-                ; remove duplicate drop
-                table.Delete(i-1)
-            }
-
-            ; add drop to output
-            obj := {}
-            obj.name := sourceDrop.name
-            obj.id := sourceDrop.id
-            obj.quantity := sourceDrop.quantity
-            output.push(obj)
-            
-            ; msgbox % json.dump(output,,2)
-        }
-
         return output
     }
 }
