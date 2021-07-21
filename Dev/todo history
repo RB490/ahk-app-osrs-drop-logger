@@ -379,3 +379,8 @@ bug -> gui start, log a mob, choose log file, go into log gui, close it to get b
 	^ gui log was calling gui_start.get() which just recreated the gui so the control hwnds were changing around
 
 feature -> added some hotkeys to the start gui
+
+testing -> log a variety of mobs with different drop tables to adjust the categories and or add additional categories
+
+refactoring -> go through every file and if necessary add comments, rename stuff or whatever
+	^ feel like ive done enough refactoring here
