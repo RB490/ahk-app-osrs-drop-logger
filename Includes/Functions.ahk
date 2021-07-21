@@ -13,8 +13,6 @@ RDT_Get() {
         output := RDT_Update()
         If output.lastUpdated
             obj := output
-        else
-            Msg("Info", A_ThisFunc, "Update failed")
     }
 
     ; verify input
@@ -30,7 +28,7 @@ RDT_Update() {
 
     ; check if valid input was received
     If !obj.length() {
-        Msg("Info", A_ThisFunc, "Invalid input received! Won't be able to update")
+        Msg("Info", A_ThisFunc, "Invalid input received! Unable to update")
         return
     }
 

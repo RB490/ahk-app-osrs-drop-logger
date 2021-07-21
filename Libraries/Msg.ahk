@@ -17,10 +17,7 @@ Msg(type, funcString, msgString) {
         }
     }
 
-    If DEBUG_MODE
-        msgbox, % id, % funcString, % msgString
-    else
-        msgbox, % id, % APP_NAME, % msgString
+    msgbox, % id, % APP_NAME, % funcString "():`n`n" msgString
 
     If (type = "Error") {
         If DEBUG_MODE

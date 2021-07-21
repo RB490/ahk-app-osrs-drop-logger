@@ -81,7 +81,6 @@
         ; FileAppend, {}, % myDebugDropLogfile
 
 
-
         SCRIPT_SETTINGS.previousMob := "Abyssal Sire (Phase 1)"
         ; SCRIPT_SETTINGS.previousLogFile := myDebugDropLogfile
         ; DROP_LOG.LoadFile(myDebugDropLogfile)

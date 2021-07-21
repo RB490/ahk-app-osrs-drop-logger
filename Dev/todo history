@@ -357,3 +357,8 @@ Bug -> Vorkath post-quest gui log variable is too long
 bug -> gui log doesnt make categories anymore
 
 bug -> various unnecessary progress windows being shown for 0.001 seconds. only show them when necessary 
+
+bug -> rdt function tries to update even through it notices it cant update
+
+testing -> test a variety of mobs without internet
+	restore all 'fileAge' vars to their original value

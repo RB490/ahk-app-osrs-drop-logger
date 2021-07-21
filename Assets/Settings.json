@@ -1,5 +1,5 @@
 {
-  "guiLog_AutoShowStats": "0",
+  "guiLog_AutoShowStats": 0,
   "guiLog_DropSize": "33",
   "guiLog_ItemImageType": "Wiki Detailed",
   "guiLog_MaxRowDrops": "8",
@@ -8,8 +8,8 @@
   "guiLog_Y": 439,
   "guiStatsH": 400,
   "guiStatsW": 570,
-  "guiStatsX": 1200,
-  "guiStatsY": 487,
+  "guiStatsX": 85,
+  "guiStatsY": 334,
   "previousLogFile": "D:\\Downloads\\my log.json",
   "previousMob": "Abyssal Sire (Phase 1)"
 }
