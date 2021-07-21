@@ -15,10 +15,12 @@
             GetDropImage(drop.name, drop.id)
         
         ; combine duplicate drops
-        obj := this._CombineIdenticalDropsWithDifferentQuantities(obj)
+        ; obj := this._CombineIdenticalDropsWithDifferentQuantities(obj)
 
         ; sort drop table into categories. todo: separate RDT, Gem drop table, talisman drop table. etc.
         obj := DROP_CATEGORIES.Get(obj, SCRIPT_SETTINGS.guiLog_MaxTableSize)
+        ; OutputDebug, % json.dump(obj,,2)
+
 
         ; finish up
         P.Destroy()

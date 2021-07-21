@@ -23,7 +23,7 @@ Class ClassItemPrices {
         fileAge -= obj.lastUpdated, Hours
 
         ; update the file if neccessary
-        If !(obj.lastUpdated) or (fileAge > 720) { ; 720 hours = 30 days
+        If !(obj.lastUpdated) or !(obj.content.count()) or (fileAge > 720) { ; 720 hours = 30 days
             output := this._Update()
             If output.lastUpdated
                 obj := output
@@ -32,7 +32,7 @@ Class ClassItemPrices {
         }
 
         ; verify input
-        If !obj.lastUpdated
+        If !obj.lastUpdated or !obj.content.count()
             Msg("Error", A_ThisFunc, "Data unavailable")
 
         this.obj := obj.content

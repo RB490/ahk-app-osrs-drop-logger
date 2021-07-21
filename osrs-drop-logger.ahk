@@ -93,13 +93,14 @@
 
         ; FileDelete, % "D:\Programming and projects\ahk-app-osrs-drop-logger\Assets\Database\Item categories.json"
         ; msgbox % OSRS.GetItemID("Abyssal Whip")
-        GUI_LOG.Get()
+        ; GUI_LOG.Get()
         ; GUI_STATS.Get()
         ; GUI_START.Get()
         
         ; ITEM_PRICE._Update()
 
-        ; obj := DROP_TABLE.Get("Goblin (level 2)")
+        obj := DROP_TABLE.Get("Goblin (level 2)")
+        GUI_LOG.Get()
 
         ; _QPC("reset")
         ; OSRS                    := new ClassOSRS

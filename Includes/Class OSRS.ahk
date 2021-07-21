@@ -25,7 +25,7 @@ Class ClassOSRS {
         fileAge -= obj.lastUpdated, Hours
 
         ; update the file if neccessary
-        If !(obj.lastUpdated) {
+        If !(obj.lastUpdated) or !(obj.content.count()) {
             output := this._UpdateMobDatabase()
             If output.lastUpdated
                 obj := output
@@ -34,7 +34,7 @@ Class ClassOSRS {
         }
 
         ; verify input
-        If !obj.lastUpdated
+        If !obj.lastUpdated or !obj.content.count()
             Msg("Error", A_ThisFunc, "Data unavailable")
 
         this.mobs := obj.content
@@ -51,7 +51,7 @@ Class ClassOSRS {
         fileAge -= obj.lastUpdated, Hours
 
         ; update the file if neccessary
-        If !(obj.lastUpdated) {
+        If !(obj.lastUpdated) or !(obj.content.count()) {
             output := this._UpdateItemDatabase()
             If output.lastUpdated
                 obj := output
@@ -60,7 +60,7 @@ Class ClassOSRS {
         }
 
         ; verify input
-        If !obj.lastUpdated
+        If !obj.lastUpdated or !obj.content.count()
             Msg("Error", A_ThisFunc, "Data unavailable")
 
         this.items := obj.content

@@ -9,7 +9,7 @@ RDT_Get() {
     fileAge -= obj.lastUpdated, Hours
 
     ; update the file if neccessary
-    If !(obj.lastUpdated) or (fileAge > 720) { ; 720 hours = 30 days
+    If !(obj.lastUpdated) or !(obj.content.count()) or (fileAge > 720) { ; 720 hours = 30 days
         output := RDT_Update()
         If output.lastUpdated
             obj := output
@@ -18,7 +18,7 @@ RDT_Get() {
     }
 
     ; verify input
-    If !obj.lastUpdated
+    If !obj.lastUpdated or !obj.content.count()
         Msg("Error", A_ThisFunc, "Data unavailable")
 
     return obj.content

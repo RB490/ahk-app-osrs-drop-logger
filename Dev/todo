@@ -7,9 +7,15 @@ STRUCTURE ----------------------------------------------------------------------
 
 BUGS ---------------------------------------------------------------------------------------------------------------------------------------       
 
+    Bug -> Vorkath post-quest gui log variable is too long
+
 DOLAST ------------------------------------------------------------------------------------------------------------------------------------
 
+
+
     refactoring -> go through every file and if necessary add comments, rename stuff or whatever
+
+    testing -> test a variety of mobs without internet
 
     testing -> log a variety of mobs with different drop tables to adjust the categories and or add additional categories
 

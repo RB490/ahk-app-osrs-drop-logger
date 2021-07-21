@@ -19,7 +19,7 @@ Class ClassDropCategories {
         fileAge -= obj.lastUpdated, Hours
 
         ; update the file if neccessary
-        If !(obj.lastUpdated) or (fileAge > 4368) { ; 4368 hours = 182 days
+        If !(obj.lastUpdated) or !(obj.content.count()) or (fileAge > 4368) { ; 4368 hours = 182 days
             output := this._Update()
             If output.lastUpdated
                 obj := output
@@ -28,7 +28,7 @@ Class ClassDropCategories {
         }
 
         ; verify input
-        If !obj.lastUpdated
+        If !obj.lastUpdated or !obj.content.count()
             Msg("Error", A_ThisFunc, "Data unavailable")
 
         this.obj := obj.content
@@ -79,6 +79,8 @@ Class ClassDropCategories {
 
             output[category].push(drop)
         }
+
+        OutputDebug, % json.dump(output,,2)
 
         ; start merging categories into the 'main' category, starting with the smallest one until merging the smallest one would go over the max size
         ; loop the amount of categories that exist
@@ -133,7 +135,6 @@ Class ClassDropCategories {
     _GetCategoryForDrop(inputDrop) {
         ; go through every category
         for category in this.obj {
-            
             
             ; go through every drop in this category
             for index, drop in this.obj[category] {
@@ -190,7 +191,7 @@ Class ClassDropCategories {
         */
         output := {lastUpdated: A_Now, content: {}}
         for category in categories {
-            obj["content"][category] := []
+            output["content"][category] := []
             for index, subCategory in categories[category] {
                 ; get drops list for this category
                 dropsList := this._GetDropListFor(subCategory)
