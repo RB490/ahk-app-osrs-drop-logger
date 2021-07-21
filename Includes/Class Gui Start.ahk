@@ -1,7 +1,8 @@
 class ClassGuiStart extends gui {
     Get() {
         ; events
-        this.Events["_HotkeyEnter"] := this.BtnAdd.Bind(this)
+        this.Events["_HotkeyEnter"] := this.btnHotkeyEnter.Bind(this)
+        this.Events["_HotkeyCtrlF"] := this.BtnFocusSearchBox.Bind(this)
 
         ; properties
         this.marginSize := 10
@@ -16,6 +17,10 @@ class ClassGuiStart extends gui {
         ; hotkeys
         Hotkey, IfWinActive, % this.ahkid
         Hotkey, Enter, ClassGuiStart_HotkeyEnter
+        Hotkey, IfWinActive
+
+        Hotkey, IfWinActive, % this.ahkid
+        Hotkey, ^f, ClassGuiStart_HotkeyCtrlF
         Hotkey, IfWinActive
 
         ; show
@@ -49,6 +54,24 @@ class ClassGuiStart extends gui {
         this._LoadMobImage()
     }
 
+    btnHotkeyEnter() {
+        ControlGetFocus, activeControl, % this.ahkid
+
+        ; search box -> mob list view
+        If (activeControl = "Edit1") {
+            ; select mob in listview, this method is a bitch sketch but it works
+            Send {tab}
+            Send {down}
+            Send {up}
+        }
+
+        ; mob list view -> log mob
+        If (activeControl = "ListBox1") {
+            ; select mob in listview, this method is a bitch sketch but it works
+            this.BtnLog()
+        }
+    }
+
     MobListBoxHandler() {
         SCRIPT_SETTINGS.previousMob := this.GuiControlGet("", "ListBox1")
         this.Update("basicUpdate")
@@ -63,13 +86,17 @@ class ClassGuiStart extends gui {
             GuiButtonIcon(this._btnLog, A_ScriptDir "\Assets\Images\Unavailable.png", 1, "s44 a0 l50 r0")
             return  
         }
-        
+
         previousMobId := OSRS.GetMobID(SCRIPT_SETTINGS.previousMob)
         GetMobImage(SCRIPT_SETTINGS.previousMob, previousMobId)
 
         this.SetText(this._btnLog, "       Log")
         path := DIR_MOB_IMAGES "\" previousMobId ".png"
         SetButtonIcon(this._btnLog, path, 1, 44) ; r2 = 30, r3 = 44
+    }
+
+    BtnFocusSearchBox() {
+        ControlFocus, Edit1, % this.ahkid
     }
 
     SearchBoxHandler() {
@@ -124,4 +151,11 @@ ClassGuiStart_HotkeyEnter() {
     for a, b in ClassGuiStart.Instances 
 		if (a = WinExist("A")+0) ; if instance gui hwnd is identical to currently active window hwnd
 			b["Events"]["_HotkeyEnter"].Call()
+}
+
+ClassGuiStart_HotkeyCtrlF() {
+    ; call the class's method
+    for a, b in ClassGuiStart.Instances 
+		if (a = WinExist("A")+0) ; if instance gui hwnd is identical to currently active window hwnd
+			b["Events"]["_HotkeyCtrlF"].Call()
 }

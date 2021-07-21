@@ -377,3 +377,5 @@ feature -> log a mob by double clicking the listview in gui start
 bug -> gui start, log a mob, choose log file, go into log gui, close it to get back to start, now the mob image wont get updated anmore
 	tooltip % this._btnLog <- control hwnd changes even though gui isnt reshown
 	^ gui log was calling gui_start.get() which just recreated the gui so the control hwnds were changing around
+
+feature -> added some hotkeys to the start gui
