@@ -339,3 +339,15 @@ unique drops
 
     feature -> drop table: combine identical drops with separate values. eg: goblin has 5 different coin drops with different values
         take the different quantity formats into account here & possibly check how i used to do this
+
+wontfix: structure -> separate osrs class into items and mobs databse. use the lastUpdated info from the mobs database to determine if we should update the items database. set the itemsdatabase
+        to the same lastUpdated timestamp
+        ^ update a bunch of classes at the same time, and in the right order
+        1. mobs
+        2. items ^ uses mobs
+        3. add prices to the items database
+        4. 
+
+wontfix: structure -> some kind of 'database'/json class? since there is a lot of duplicate code going on
+    ^ take into account servers going offline, so if there isnt a new json version available, just give a message but continue if object is available
+    could be a base class that has a _Load() method and calls _Update() to receive new stuff, json classes would extend it, make rdt class if true
